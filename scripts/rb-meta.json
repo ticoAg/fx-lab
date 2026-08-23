@@ -1,0 +1,3865 @@
+[
+  {
+    "id": "rb-ASCIIText",
+    "name": "ASCIIText",
+    "zh": "ASCII 文字",
+    "importPath": "../react-bits/ASCIIText/ASCIIText.jsx",
+    "webgl": true,
+    "defaults": {
+      "text": "ASCII 文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "asciiFontSize",
+      "textFontSize",
+      "textColor",
+      "planeBaseHeight",
+      "enableWaves"
+    ]
+  },
+  {
+    "id": "rb-AccordionGallery",
+    "name": "AccordionGallery",
+    "zh": "手风琴画廊",
+    "importPath": "../react-bits/AccordionGallery/AccordionGallery.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "手风琴画廊 1",
+        "手风琴画廊 2",
+        "手风琴画廊 3",
+        "手风琴画廊 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "defaultIndex",
+      "accentColor",
+      "overlayColor",
+      "textColor",
+      "height",
+      "gap",
+      "radius",
+      "expandRatio",
+      "orientation",
+      "duration",
+      "ease",
+      "parallax",
+      "tilt",
+      "stagger",
+      "trigger",
+      "showLabels",
+      "grayscale",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-AcidSquares",
+    "name": "AcidSquares",
+    "zh": "酸性方块",
+    "importPath": "../react-bits/AcidSquares/AcidSquares.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color1",
+      "color2",
+      "color3",
+      "detail",
+      "speed",
+      "waveDepth",
+      "zoom",
+      "density",
+      "glow",
+      "exposure",
+      "spread",
+      "stepSize",
+      "colorShift",
+      "contrast",
+      "brightness",
+      "opacity",
+      "mouseInteraction",
+      "mouseStrength",
+      "mouseRadius",
+      "blur"
+    ]
+  },
+  {
+    "id": "rb-AnimatedContent",
+    "name": "AnimatedContent",
+    "zh": "内容入场",
+    "importPath": "../react-bits/AnimatedContent/AnimatedContent.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "container",
+      "distance",
+      "direction",
+      "reverse",
+      "duration",
+      "ease",
+      "initialOpacity",
+      "animateOpacity",
+      "scale",
+      "threshold",
+      "delay",
+      "disappearAfter",
+      "disappearDuration",
+      "disappearEase",
+      "onComplete",
+      "onDisappearanceComplete",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-AnimatedList",
+    "name": "AnimatedList",
+    "zh": "交错列表",
+    "importPath": "../react-bits/AnimatedList/AnimatedList.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "delay",
+      "index",
+      "onMouseEnter",
+      "onClick"
+    ]
+  },
+  {
+    "id": "rb-Antigravity",
+    "name": "Antigravity",
+    "zh": "反重力粒子",
+    "importPath": "../react-bits/Antigravity/Antigravity.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "count",
+      "magnetRadius",
+      "ringRadius",
+      "waveSpeed",
+      "waveAmplitude",
+      "particleSize",
+      "lerpSpeed",
+      "color",
+      "autoAnimate",
+      "particleVariance",
+      "rotationSpeed",
+      "depthFactor",
+      "pulseSpeed",
+      "particleShape",
+      "fieldStrength"
+    ]
+  },
+  {
+    "id": "rb-Aurora",
+    "name": "Aurora",
+    "zh": "极光背景",
+    "importPath": "../react-bits/Aurora/Aurora.jsx",
+    "webgl": true,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": null,
+    "props": []
+  },
+  {
+    "id": "rb-Balatro",
+    "name": "Balatro",
+    "zh": "Balatro 着色",
+    "importPath": "../react-bits/Balatro/Balatro.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "spinRotation",
+      "spinSpeed",
+      "offset",
+      "color1",
+      "color2",
+      "color3",
+      "contrast",
+      "lighting",
+      "spinAmount",
+      "pixelFilter",
+      "spinEase",
+      "isRotate",
+      "mouseInteraction"
+    ]
+  },
+  {
+    "id": "rb-Ballpit",
+    "name": "Ballpit",
+    "zh": "球池",
+    "importPath": "../react-bits/Ballpit/Ballpit.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "followCursor"
+    ]
+  },
+  {
+    "id": "rb-Beams",
+    "name": "Beams",
+    "zh": "光束",
+    "importPath": "../react-bits/Beams/Beams.jsx",
+    "webgl": true,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": "tile",
+    "props": [
+      "children"
+    ]
+  },
+  {
+    "id": "rb-BlobCursor",
+    "name": "BlobCursor",
+    "zh": "液态光标",
+    "importPath": "../react-bits/BlobCursor/BlobCursor.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "blobType",
+      "fillColor",
+      "trailCount",
+      "sizes",
+      "innerSizes",
+      "innerColor",
+      "opacities",
+      "shadowColor",
+      "shadowBlur",
+      "shadowOffsetX",
+      "shadowOffsetY",
+      "filterId",
+      "filterStdDeviation",
+      "filterColorMatrixValues",
+      "useFilter",
+      "fastDuration",
+      "slowDuration",
+      "fastEase",
+      "slowEase",
+      "zIndex"
+    ]
+  },
+  {
+    "id": "rb-BlurText",
+    "name": "BlurText",
+    "zh": "模糊显现",
+    "importPath": "../react-bits/BlurText/BlurText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "模糊显现"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "delay",
+      "className",
+      "animateBy",
+      "direction",
+      "threshold",
+      "rootMargin",
+      "animationFrom",
+      "animationTo",
+      "easing",
+      "onAnimationComplete",
+      "stepDuration"
+    ]
+  },
+  {
+    "id": "rb-BorderGlow",
+    "name": "BorderGlow",
+    "zh": "边框辉光",
+    "importPath": "../react-bits/BorderGlow/BorderGlow.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "start",
+      "end",
+      "duration",
+      "delay",
+      "ease",
+      "onUpdate",
+      "onEnd"
+    ]
+  },
+  {
+    "id": "rb-BounceCards",
+    "name": "BounceCards",
+    "zh": "弹跳卡片",
+    "importPath": "../react-bits/BounceCards/BounceCards.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "images",
+      "containerWidth",
+      "containerHeight",
+      "animationDelay",
+      "animationStagger",
+      "easeType",
+      "transformStyles",
+      "enableHover"
+    ]
+  },
+  {
+    "id": "rb-BubbleMenu",
+    "name": "BubbleMenu",
+    "zh": "气泡菜单",
+    "importPath": "../react-bits/BubbleMenu/BubbleMenu.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "气泡菜单 1",
+        "气泡菜单 2",
+        "气泡菜单 3",
+        "气泡菜单 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "logo",
+      "onMenuClick",
+      "className",
+      "style",
+      "menuAriaLabel",
+      "menuBg",
+      "menuContentColor",
+      "useFixedPosition",
+      "items",
+      "animationEase",
+      "animationDuration",
+      "staggerDelay"
+    ]
+  },
+  {
+    "id": "rb-CardNav",
+    "name": "CardNav",
+    "zh": "卡片导航",
+    "importPath": "../react-bits/CardNav/CardNav.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "卡片导航 1",
+        "卡片导航 2",
+        "卡片导航 3",
+        "卡片导航 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "logo",
+      "logoAlt",
+      "items",
+      "className",
+      "ease",
+      "baseColor",
+      "menuColor",
+      "buttonBgColor",
+      "buttonTextColor"
+    ]
+  },
+  {
+    "id": "rb-CardSwap",
+    "name": "CardSwap",
+    "zh": "卡片交换",
+    "importPath": "../react-bits/CardSwap/CardSwap.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "width",
+      "height",
+      "cardDistance",
+      "verticalDistance",
+      "delay",
+      "pauseOnHover",
+      "onCardClick",
+      "skewAmount",
+      "easing",
+      "children"
+    ]
+  },
+  {
+    "id": "rb-Carousel",
+    "name": "Carousel",
+    "zh": "轮播",
+    "importPath": "../react-bits/Carousel/Carousel.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "item",
+      "index",
+      "itemWidth",
+      "round",
+      "trackItemOffset",
+      "x",
+      "transition"
+    ]
+  },
+  {
+    "id": "rb-ChromaGrid",
+    "name": "ChromaGrid",
+    "zh": "色度网格",
+    "importPath": "../react-bits/ChromaGrid/ChromaGrid.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "色度网格 1",
+        "色度网格 2",
+        "色度网格 3",
+        "色度网格 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "className",
+      "radius",
+      "columns",
+      "rows",
+      "damping",
+      "fadeOut",
+      "ease"
+    ]
+  },
+  {
+    "id": "rb-CircularGallery",
+    "name": "CircularGallery",
+    "zh": "环形画廊",
+    "importPath": "../react-bits/CircularGallery/CircularGallery.jsx",
+    "webgl": true,
+    "defaults": {
+      "items": [
+        "环形画廊 1",
+        "环形画廊 2",
+        "环形画廊 3",
+        "环形画廊 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "bend",
+      "textColor",
+      "borderRadius",
+      "font",
+      "fontUrl",
+      "scrollSpeed",
+      "scrollEase"
+    ]
+  },
+  {
+    "id": "rb-CircularText",
+    "name": "CircularText",
+    "zh": "环形文字",
+    "importPath": "../react-bits/CircularText/CircularText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "环形文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "spinDuration",
+      "onHover",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-ClickSpark",
+    "name": "ClickSpark",
+    "zh": "点击火花",
+    "importPath": "../react-bits/ClickSpark/ClickSpark.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "sparkColor",
+      "sparkSize",
+      "sparkRadius",
+      "sparkCount",
+      "duration",
+      "easing",
+      "extraScale",
+      "children"
+    ]
+  },
+  {
+    "id": "rb-ColorBends",
+    "name": "ColorBends",
+    "zh": "色彩弯折",
+    "importPath": "../react-bits/ColorBends/ColorBends.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "style",
+      "rotation",
+      "speed",
+      "colors",
+      "transparent",
+      "autoRotate",
+      "scale",
+      "frequency",
+      "warpStrength",
+      "mouseInfluence",
+      "parallax",
+      "noise",
+      "iterations",
+      "intensity",
+      "bandWidth"
+    ]
+  },
+  {
+    "id": "rb-CountUp",
+    "name": "CountUp",
+    "zh": "数字递增",
+    "importPath": "../react-bits/CountUp/CountUp.jsx",
+    "webgl": false,
+    "defaults": {
+      "to": 2026,
+      "from": 0
+    },
+    "childrenKind": null,
+    "props": [
+      "to",
+      "from",
+      "direction",
+      "delay",
+      "duration",
+      "className",
+      "startWhen",
+      "separator",
+      "onStart",
+      "onEnd"
+    ]
+  },
+  {
+    "id": "rb-Counter",
+    "name": "Counter",
+    "zh": "计数器",
+    "importPath": "../react-bits/Counter/Counter.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "mv",
+      "number",
+      "height"
+    ]
+  },
+  {
+    "id": "rb-Crosshair",
+    "name": "Crosshair",
+    "zh": "准星光标",
+    "importPath": "../react-bits/Crosshair/Crosshair.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "color",
+      "containerRef"
+    ]
+  },
+  {
+    "id": "rb-Cubes",
+    "name": "Cubes",
+    "zh": "立方体簇",
+    "importPath": "../react-bits/Cubes/Cubes.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "gridSize",
+      "cubeSize",
+      "maxAngle",
+      "radius",
+      "easing",
+      "duration",
+      "leave"
+    ]
+  },
+  {
+    "id": "rb-CursorGrid",
+    "name": "CursorGrid",
+    "zh": "光标网格",
+    "importPath": "../react-bits/CursorGrid/CursorGrid.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "cellSize",
+      "color",
+      "radius",
+      "falloff",
+      "holdTime",
+      "fadeDuration",
+      "lineWidth",
+      "maxOpacity",
+      "fillOpacity",
+      "gridOpacity",
+      "cellRadius",
+      "clickPulse",
+      "pulseSpeed",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-CurvedInput",
+    "name": "CurvedInput",
+    "zh": "弧形输入",
+    "importPath": "../react-bits/CurvedInput/CurvedInput.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "value",
+      "defaultValue",
+      "onChange",
+      "onSubmit",
+      "placeholder",
+      "buttonText",
+      "type",
+      "name",
+      "ariaLabel",
+      "theme",
+      "width",
+      "bend",
+      "height",
+      "cornerRadius",
+      "borderWidth",
+      "fontSize",
+      "backgroundColor",
+      "textColor",
+      "placeholderColor",
+      "borderColor"
+    ]
+  },
+  {
+    "id": "rb-CurvedLoop",
+    "name": "CurvedLoop",
+    "zh": "曲线循环字",
+    "importPath": "../react-bits/CurvedLoop/CurvedLoop.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "marqueeText",
+      "speed",
+      "className",
+      "curveAmount",
+      "direction",
+      "interactive"
+    ]
+  },
+  {
+    "id": "rb-DarkVeil",
+    "name": "DarkVeil",
+    "zh": "暗幕",
+    "importPath": "../react-bits/DarkVeil/DarkVeil.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "hueShift",
+      "noiseIntensity",
+      "scanlineIntensity",
+      "speed",
+      "scanlineFrequency",
+      "warpAmount",
+      "resolutionScale"
+    ]
+  },
+  {
+    "id": "rb-DecayCard",
+    "name": "DecayCard",
+    "zh": "消散卡片",
+    "importPath": "../react-bits/DecayCard/DecayCard.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "width",
+      "height",
+      "image",
+      "baseFrequency",
+      "numOctaves",
+      "seed",
+      "maxDisplacement",
+      "movementBound",
+      "children"
+    ]
+  },
+  {
+    "id": "rb-DecryptedText",
+    "name": "DecryptedText",
+    "zh": "解密文字",
+    "importPath": "../react-bits/DecryptedText/DecryptedText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "解密文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "speed",
+      "maxIterations",
+      "sequential",
+      "revealDirection",
+      "useOriginalCharsOnly",
+      "characters",
+      "className",
+      "parentClassName",
+      "encryptedClassName",
+      "animateOn",
+      "clickMode"
+    ]
+  },
+  {
+    "id": "rb-DepthCarousel",
+    "name": "DepthCarousel",
+    "zh": "纵深轮播",
+    "importPath": "../react-bits/DepthCarousel/DepthCarousel.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "纵深轮播 1",
+        "纵深轮播 2",
+        "纵深轮播 3",
+        "纵深轮播 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "cardWidth",
+      "cardHeight",
+      "radius",
+      "tint",
+      "depth",
+      "spread",
+      "tilt",
+      "tiltDirection",
+      "perspective",
+      "visibleCards",
+      "falloff",
+      "blur",
+      "duration",
+      "ease",
+      "autoplay",
+      "autoplayDelay",
+      "loop",
+      "showControls",
+      "showIndicators"
+    ]
+  },
+  {
+    "id": "rb-DepthText",
+    "name": "DepthText",
+    "zh": "纵深文字",
+    "importPath": "../react-bits/DepthText/DepthText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "纵深文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "layers",
+      "depth",
+      "faceColor",
+      "depthColor",
+      "tilt",
+      "pointerTracking",
+      "smoothing",
+      "perspective",
+      "autoOrbit",
+      "orbitSpeed",
+      "fontSize",
+      "fontWeight",
+      "shadow",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-Dither",
+    "name": "Dither",
+    "zh": "抖动背景",
+    "importPath": "../react-bits/Dither/Dither.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "waveSpeed",
+      "waveFrequency",
+      "waveAmplitude",
+      "waveColor",
+      "colorNum",
+      "pixelSize",
+      "disableAnimation",
+      "enableMouseInteraction",
+      "mouseRadius"
+    ]
+  },
+  {
+    "id": "rb-Dock",
+    "name": "Dock",
+    "zh": "程序坞",
+    "importPath": "../react-bits/Dock/Dock.jsx",
+    "webgl": false,
+    "defaults": {
+      "label": "程序坞"
+    },
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "className",
+      "onClick",
+      "mouseX",
+      "spring",
+      "distance",
+      "magnification",
+      "baseItemSize",
+      "label"
+    ]
+  },
+  {
+    "id": "rb-DomeGallery",
+    "name": "DomeGallery",
+    "zh": "穹顶画廊",
+    "importPath": "../react-bits/DomeGallery/DomeGallery.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "images",
+      "fit",
+      "fitBasis",
+      "minRadius",
+      "maxRadius",
+      "padFactor",
+      "overlayBlurColor",
+      "maxVerticalRotationDeg",
+      "dragSensitivity",
+      "enlargeTransitionMs",
+      "segments",
+      "dragDampening",
+      "openedImageWidth",
+      "openedImageHeight",
+      "imageBorderRadius",
+      "openedImageBorderRadius",
+      "grayscale"
+    ]
+  },
+  {
+    "id": "rb-DotField",
+    "name": "DotField",
+    "zh": "点阵场",
+    "importPath": "../react-bits/DotField/DotField.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": []
+  },
+  {
+    "id": "rb-DotGrid",
+    "name": "DotGrid",
+    "zh": "点阵网格",
+    "importPath": "../react-bits/DotGrid/DotGrid.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "dotSize",
+      "gap",
+      "baseColor",
+      "activeColor",
+      "proximity",
+      "speedTrigger",
+      "shockRadius",
+      "shockStrength",
+      "maxSpeed",
+      "resistance",
+      "returnDuration",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-DriftWall",
+    "name": "DriftWall",
+    "zh": "漂移墙",
+    "importPath": "../react-bits/DriftWall/DriftWall.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "漂移墙 1",
+        "漂移墙 2",
+        "漂移墙 3",
+        "漂移墙 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "columns",
+      "tileWidth",
+      "tileHeight",
+      "gap",
+      "radius",
+      "tilt",
+      "turn",
+      "roll",
+      "perspective",
+      "depth",
+      "speed",
+      "direction",
+      "variance",
+      "parallax",
+      "pauseOnHover",
+      "lift",
+      "fade",
+      "dim",
+      "grayscale"
+    ]
+  },
+  {
+    "id": "rb-EchoText",
+    "name": "EchoText",
+    "zh": "回声文字",
+    "importPath": "../react-bits/EchoText/EchoText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "回声文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "echoes",
+      "lag",
+      "offset",
+      "direction",
+      "fade",
+      "blur",
+      "tint",
+      "mode",
+      "cursorRadius",
+      "duration",
+      "ease",
+      "fontSize",
+      "fontWeight",
+      "color",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-ElasticMesh",
+    "name": "ElasticMesh",
+    "zh": "弹性网格",
+    "importPath": "../react-bits/ElasticMesh/ElasticMesh.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "image",
+      "color1",
+      "color2",
+      "highlight",
+      "showGrid",
+      "gridDensity",
+      "gridOpacity",
+      "gridColor",
+      "borderRadius",
+      "stiffness",
+      "damping",
+      "grabRadius",
+      "pull",
+      "wobble",
+      "tilt",
+      "shading",
+      "resolution",
+      "interaction",
+      "enabled",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-ElasticSlider",
+    "name": "ElasticSlider",
+    "zh": "弹性滑块",
+    "importPath": "../react-bits/ElasticSlider/ElasticSlider.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "defaultValue",
+      "startingValue",
+      "maxValue",
+      "className",
+      "isStepped",
+      "stepSize",
+      "leftIcon"
+    ]
+  },
+  {
+    "id": "rb-ElectricBorder",
+    "name": "ElectricBorder",
+    "zh": "电弧边框",
+    "importPath": "../react-bits/ElectricBorder/ElectricBorder.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "color",
+      "speed",
+      "chaos",
+      "borderRadius",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-EvilEye",
+    "name": "EvilEye",
+    "zh": "邪眼",
+    "importPath": "../react-bits/EvilEye/EvilEye.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "eyeColor",
+      "intensity",
+      "pupilSize",
+      "irisWidth",
+      "glowIntensity",
+      "scale",
+      "noiseScale",
+      "pupilFollow",
+      "flameSpeed",
+      "backgroundColor"
+    ]
+  },
+  {
+    "id": "rb-FadeContent",
+    "name": "FadeContent",
+    "zh": "淡入内容",
+    "importPath": "../react-bits/FadeContent/FadeContent.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "container",
+      "blur",
+      "duration",
+      "ease",
+      "delay",
+      "threshold",
+      "initialOpacity",
+      "disappearAfter",
+      "disappearDuration",
+      "disappearEase",
+      "onComplete",
+      "onDisappearanceComplete",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-FallingText",
+    "name": "FallingText",
+    "zh": "坠落文字",
+    "importPath": "../react-bits/FallingText/FallingText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "坠落文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "className",
+      "text",
+      "highlightWords",
+      "highlightClass",
+      "trigger",
+      "backgroundColor",
+      "wireframes",
+      "gravity",
+      "mouseConstraintStiffness",
+      "fontSize"
+    ]
+  },
+  {
+    "id": "rb-FaultyTerminal",
+    "name": "FaultyTerminal",
+    "zh": "故障终端",
+    "importPath": "../react-bits/FaultyTerminal/FaultyTerminal.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "scale",
+      "gridMul",
+      "digitSize",
+      "timeScale",
+      "pause",
+      "scanlineIntensity",
+      "glitchAmount",
+      "flickerAmount",
+      "noiseAmp",
+      "chromaticAberration",
+      "dither",
+      "curvature",
+      "tint",
+      "mouseReact",
+      "mouseStrength",
+      "dpr",
+      "pageLoadAnimation",
+      "brightness",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-Ferrofluid",
+    "name": "Ferrofluid",
+    "zh": "磁流体",
+    "importPath": "../react-bits/Ferrofluid/Ferrofluid.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "dpr",
+      "paused",
+      "colors",
+      "speed",
+      "scale",
+      "turbulence",
+      "fluidity",
+      "rimWidth",
+      "sharpness",
+      "shimmer",
+      "glow",
+      "flowDirection",
+      "opacity",
+      "mouseInteraction",
+      "mouseStrength",
+      "mouseRadius",
+      "mouseDampening",
+      "mixBlendMode"
+    ]
+  },
+  {
+    "id": "rb-FloatingLines",
+    "name": "FloatingLines",
+    "zh": "漂浮线",
+    "importPath": "../react-bits/FloatingLines/FloatingLines.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "linesGradient",
+      "enabledWaves",
+      "lineCount",
+      "lineDistance",
+      "topWavePosition",
+      "middleWavePosition",
+      "bottomWavePosition",
+      "y",
+      "rotate"
+    ]
+  },
+  {
+    "id": "rb-FlowingMenu",
+    "name": "FlowingMenu",
+    "zh": "流动菜单",
+    "importPath": "../react-bits/FlowingMenu/FlowingMenu.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "流动菜单 1",
+        "流动菜单 2",
+        "流动菜单 3",
+        "流动菜单 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "speed",
+      "textColor",
+      "bgColor",
+      "marqueeBgColor",
+      "marqueeTextColor",
+      "borderColor"
+    ]
+  },
+  {
+    "id": "rb-FluidGlass",
+    "name": "FluidGlass",
+    "zh": "流体玻璃",
+    "importPath": "../react-bits/FluidGlass/FluidGlass.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "mode",
+      "lensProps"
+    ]
+  },
+  {
+    "id": "rb-FlyingPosters",
+    "name": "FlyingPosters",
+    "zh": "飞行海报",
+    "importPath": "../react-bits/FlyingPosters/FlyingPosters.jsx",
+    "webgl": true,
+    "defaults": {
+      "items": [
+        "飞行海报 1",
+        "飞行海报 2",
+        "飞行海报 3",
+        "飞行海报 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "planeWidth",
+      "planeHeight",
+      "distortion",
+      "scrollEase",
+      "cameraFov",
+      "cameraZ",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-FoldText",
+    "name": "FoldText",
+    "zh": "折纸文字",
+    "importPath": "../react-bits/FoldText/FoldText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "折纸文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "splitBy",
+      "hinge",
+      "duration",
+      "stagger",
+      "ease",
+      "perspective",
+      "creaseShading",
+      "trigger",
+      "fontSize",
+      "fontWeight",
+      "color",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-Folder",
+    "name": "Folder",
+    "zh": "文件夹",
+    "importPath": "../react-bits/Folder/Folder.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "文件夹 1",
+        "文件夹 2",
+        "文件夹 3",
+        "文件夹 4"
+      ]
+    },
+    "childrenKind": "tile",
+    "props": [
+      "color",
+      "size",
+      "items",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-FuzzyText",
+    "name": "FuzzyText",
+    "zh": "毛刺文字",
+    "importPath": "../react-bits/FuzzyText/FuzzyText.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "children",
+      "fontSize",
+      "fontWeight",
+      "fontFamily",
+      "color",
+      "enableHover",
+      "baseIntensity",
+      "hoverIntensity",
+      "fuzzRange",
+      "fps",
+      "direction",
+      "transitionDuration",
+      "clickEffect",
+      "glitchMode",
+      "glitchInterval",
+      "glitchDuration",
+      "gradient",
+      "letterSpacing",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-Galaxy",
+    "name": "Galaxy",
+    "zh": "星系",
+    "importPath": "../react-bits/Galaxy/Galaxy.jsx",
+    "webgl": true,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": null,
+    "props": [
+      "focal",
+      "rotation",
+      "starSpeed",
+      "density",
+      "hueShift",
+      "disableAnimation",
+      "speed",
+      "mouseInteraction",
+      "glowIntensity",
+      "saturation",
+      "mouseRepulsion",
+      "repulsionStrength",
+      "twinkleIntensity",
+      "rotationSpeed",
+      "autoCenterRepulsion",
+      "transparent"
+    ]
+  },
+  {
+    "id": "rb-GhostCursor",
+    "name": "GhostCursor",
+    "zh": "幽灵光标",
+    "importPath": "../react-bits/GhostCursor/GhostCursor.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "style",
+      "trailLength",
+      "inertia",
+      "grainIntensity",
+      "bloomStrength",
+      "bloomRadius",
+      "bloomThreshold",
+      "brightness",
+      "color",
+      "mixBlendMode",
+      "edgeIntensity",
+      "maxDevicePixelRatio",
+      "targetPixels",
+      "fadeDelayMs",
+      "fadeDurationMs",
+      "zIndex"
+    ]
+  },
+  {
+    "id": "rb-GlareHover",
+    "name": "GlareHover",
+    "zh": "眩光悬停",
+    "importPath": "../react-bits/GlareHover/GlareHover.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "width",
+      "height",
+      "background",
+      "borderRadius",
+      "borderColor",
+      "children",
+      "glareColor",
+      "glareOpacity",
+      "glareAngle",
+      "glareSize",
+      "transitionDuration",
+      "playOnce",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-GlassIcons",
+    "name": "GlassIcons",
+    "zh": "玻璃图标",
+    "importPath": "../react-bits/GlassIcons/GlassIcons.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "玻璃图标 1",
+        "玻璃图标 2",
+        "玻璃图标 3",
+        "玻璃图标 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-GlassSurface",
+    "name": "GlassSurface",
+    "zh": "玻璃表面",
+    "importPath": "../react-bits/GlassSurface/GlassSurface.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "width",
+      "height",
+      "borderRadius",
+      "borderWidth",
+      "brightness",
+      "opacity",
+      "blur",
+      "displace",
+      "backgroundOpacity",
+      "saturation",
+      "distortionScale",
+      "redOffset",
+      "greenOffset",
+      "blueOffset",
+      "xChannel",
+      "yChannel",
+      "mixBlendMode",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-GlitchText",
+    "name": "GlitchText",
+    "zh": "故障文字",
+    "importPath": "../react-bits/GlitchText/GlitchText.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "children",
+      "speed",
+      "enableShadows",
+      "enableOnHover",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-GooeyNav",
+    "name": "GooeyNav",
+    "zh": "粘滞导航",
+    "importPath": "../react-bits/GooeyNav/GooeyNav.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "粘滞导航 1",
+        "粘滞导航 2",
+        "粘滞导航 3",
+        "粘滞导航 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "animationTime",
+      "particleCount",
+      "particleDistances",
+      "particleR",
+      "timeVariance",
+      "colors",
+      "initialActiveIndex"
+    ]
+  },
+  {
+    "id": "rb-GradientBlinds",
+    "name": "GradientBlinds",
+    "zh": "渐变百叶",
+    "importPath": "../react-bits/GradientBlinds/GradientBlinds.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "dpr",
+      "paused",
+      "gradientColors",
+      "angle",
+      "noise",
+      "blindCount",
+      "blindMinWidth",
+      "mouseDampening",
+      "mirrorGradient",
+      "spotlightRadius",
+      "spotlightSoftness",
+      "spotlightOpacity",
+      "distortAmount",
+      "shineDirection",
+      "mixBlendMode"
+    ]
+  },
+  {
+    "id": "rb-GradientText",
+    "name": "GradientText",
+    "zh": "渐变文字",
+    "importPath": "../react-bits/GradientText/GradientText.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "text",
+    "props": [
+      "children",
+      "className",
+      "colors",
+      "animationSpeed",
+      "showBorder",
+      "direction",
+      "pauseOnHover",
+      "yoyo"
+    ]
+  },
+  {
+    "id": "rb-GradientWaves",
+    "name": "GradientWaves",
+    "zh": "渐变波",
+    "importPath": "../react-bits/GradientWaves/GradientWaves.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "horizonColor",
+      "waveColor",
+      "crestColor",
+      "speed",
+      "amplitude",
+      "waveScale",
+      "waveRatio",
+      "swell",
+      "turbulence",
+      "tilt",
+      "zoom",
+      "height",
+      "fogDepth",
+      "detail",
+      "brightness",
+      "opacity",
+      "mouseInteraction",
+      "parallaxStrength",
+      "grain",
+      "grainIntensity"
+    ]
+  },
+  {
+    "id": "rb-GradualBlur",
+    "name": "GradualBlur",
+    "zh": "渐进去模糊",
+    "importPath": "../react-bits/GradualBlur/GradualBlur.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": []
+  },
+  {
+    "id": "rb-Grainient",
+    "name": "Grainient",
+    "zh": "颗粒渐变",
+    "importPath": "../react-bits/Grainient/Grainient.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "timeSpeed",
+      "colorBalance",
+      "warpStrength",
+      "warpFrequency",
+      "warpSpeed",
+      "warpAmplitude",
+      "blendAngle",
+      "blendSoftness",
+      "rotationAmount",
+      "noiseScale",
+      "grainAmount",
+      "grainScale",
+      "grainAnimated",
+      "contrast",
+      "gamma",
+      "saturation",
+      "centerX",
+      "centerY",
+      "zoom",
+      "color1"
+    ]
+  },
+  {
+    "id": "rb-GridDistortion",
+    "name": "GridDistortion",
+    "zh": "网格畸变",
+    "importPath": "../react-bits/GridDistortion/GridDistortion.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "grid",
+      "mouse",
+      "strength",
+      "relaxation",
+      "imageSrc",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-GridMotion",
+    "name": "GridMotion",
+    "zh": "网格运动",
+    "importPath": "../react-bits/GridMotion/GridMotion.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "网格运动 1",
+        "网格运动 2",
+        "网格运动 3",
+        "网格运动 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "gradientColor"
+    ]
+  },
+  {
+    "id": "rb-GridScan",
+    "name": "GridScan",
+    "zh": "网格扫描",
+    "importPath": "../react-bits/GridScan/GridScan.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "enableWebcam",
+      "showPreview",
+      "modelsPath",
+      "sensitivity",
+      "lineThickness",
+      "linesColor",
+      "scanColor",
+      "scanOpacity",
+      "gridScale",
+      "lineStyle",
+      "lineJitter",
+      "scanDirection",
+      "enablePost",
+      "bloomIntensity",
+      "bloomThreshold",
+      "bloomSmoothing",
+      "chromaticAberration",
+      "noiseIntensity",
+      "scanGlow",
+      "scanSoftness"
+    ]
+  },
+  {
+    "id": "rb-HalftoneReveal",
+    "name": "HalftoneReveal",
+    "zh": "半调显现",
+    "importPath": "../react-bits/HalftoneReveal/HalftoneReveal.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "src",
+      "inkColor",
+      "paperColor",
+      "mode",
+      "dotSize",
+      "dotDensity",
+      "angle",
+      "shape",
+      "contrast",
+      "invert",
+      "revealRadius",
+      "edge",
+      "follow",
+      "idleReveal",
+      "trigger",
+      "borderRadius",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-Hyperspeed",
+    "name": "Hyperspeed",
+    "zh": "超空间",
+    "importPath": "../react-bits/Hyperspeed/Hyperspeed.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "effectOptions"
+    ]
+  },
+  {
+    "id": "rb-ImageTrail",
+    "name": "ImageTrail",
+    "zh": "图像拖尾",
+    "importPath": "../react-bits/ImageTrail/ImageTrail.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "图像拖尾 1",
+        "图像拖尾 2",
+        "图像拖尾 3",
+        "图像拖尾 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "variant"
+    ]
+  },
+  {
+    "id": "rb-InfiniteMenu",
+    "name": "InfiniteMenu",
+    "zh": "无限菜单",
+    "importPath": "../react-bits/InfiniteMenu/InfiniteMenu.jsx",
+    "webgl": true,
+    "defaults": {
+      "items": [
+        "无限菜单 1",
+        "无限菜单 2",
+        "无限菜单 3",
+        "无限菜单 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "scale"
+    ]
+  },
+  {
+    "id": "rb-Iridescence",
+    "name": "Iridescence",
+    "zh": "虹彩",
+    "importPath": "../react-bits/Iridescence/Iridescence.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color",
+      "speed",
+      "amplitude",
+      "mouseReact"
+    ]
+  },
+  {
+    "id": "rb-Lanyard",
+    "name": "Lanyard",
+    "zh": "挂绳工牌",
+    "importPath": "../react-bits/Lanyard/Lanyard.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "position",
+      "gravity",
+      "fov",
+      "transparent",
+      "frontImage",
+      "backImage",
+      "imageFit",
+      "lanyardImage",
+      "lanyardWidth"
+    ]
+  },
+  {
+    "id": "rb-LaserFlow",
+    "name": "LaserFlow",
+    "zh": "激光流",
+    "importPath": "../react-bits/LaserFlow/LaserFlow.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "style",
+      "wispDensity",
+      "dpr",
+      "mouseSmoothTime",
+      "mouseTiltStrength",
+      "horizontalBeamOffset",
+      "verticalBeamOffset",
+      "flowSpeed",
+      "verticalSizing",
+      "horizontalSizing",
+      "fogIntensity",
+      "fogScale",
+      "wispSpeed",
+      "wispIntensity",
+      "flowStrength",
+      "decay",
+      "falloffStart",
+      "fogFallSpeed",
+      "color"
+    ]
+  },
+  {
+    "id": "rb-LetterGlitch",
+    "name": "LetterGlitch",
+    "zh": "字母故障",
+    "importPath": "../react-bits/LetterGlitch/LetterGlitch.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "glitchColors",
+      "className",
+      "glitchSpeed",
+      "centerVignette",
+      "outerVignette",
+      "smooth",
+      "characters"
+    ]
+  },
+  {
+    "id": "rb-LightPillar",
+    "name": "LightPillar",
+    "zh": "光柱",
+    "importPath": "../react-bits/LightPillar/LightPillar.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "topColor",
+      "bottomColor",
+      "intensity",
+      "rotationSpeed",
+      "interactive",
+      "className",
+      "glowAmount",
+      "pillarWidth",
+      "pillarHeight",
+      "noiseIntensity",
+      "mixBlendMode",
+      "pillarRotation",
+      "quality"
+    ]
+  },
+  {
+    "id": "rb-LightRays",
+    "name": "LightRays",
+    "zh": "体积光",
+    "importPath": "../react-bits/LightRays/LightRays.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "raysOrigin",
+      "raysColor",
+      "raysSpeed",
+      "lightSpread",
+      "rayLength",
+      "pulsating",
+      "fadeDistance",
+      "saturation",
+      "followMouse",
+      "mouseInfluence",
+      "noiseAmount",
+      "distortion",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-LightTunnel",
+    "name": "LightTunnel",
+    "zh": "光隧道",
+    "importPath": "../react-bits/LightTunnel/LightTunnel.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "cableColor",
+      "pulseColor",
+      "tunnelColor",
+      "tunnelOpacity",
+      "speed",
+      "flowDirection",
+      "pulseSpeed",
+      "pulseLength",
+      "pulseBlend",
+      "pulseWidth",
+      "cableCount",
+      "thickness",
+      "rimWidth",
+      "waviness",
+      "sway",
+      "size",
+      "centerX",
+      "centerY",
+      "glow",
+      "fadeNear"
+    ]
+  },
+  {
+    "id": "rb-Lightfall",
+    "name": "Lightfall",
+    "zh": "光雨",
+    "importPath": "../react-bits/Lightfall/Lightfall.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "dpr",
+      "paused",
+      "colors",
+      "backgroundColor",
+      "speed",
+      "streakCount",
+      "streakWidth",
+      "streakLength",
+      "glow",
+      "density",
+      "twinkle",
+      "zoom",
+      "backgroundGlow",
+      "opacity",
+      "mouseInteraction",
+      "mouseStrength",
+      "mouseRadius",
+      "mouseDampening",
+      "mixBlendMode"
+    ]
+  },
+  {
+    "id": "rb-Lightning",
+    "name": "Lightning",
+    "zh": "闪电",
+    "importPath": "../react-bits/Lightning/Lightning.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "hue",
+      "xOffset",
+      "speed",
+      "intensity",
+      "size"
+    ]
+  },
+  {
+    "id": "rb-LineSidebar",
+    "name": "LineSidebar",
+    "zh": "线型侧栏",
+    "importPath": "../react-bits/LineSidebar/LineSidebar.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "线型侧栏 1",
+        "线型侧栏 2",
+        "线型侧栏 3",
+        "线型侧栏 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "accentColor",
+      "textColor",
+      "markerColor",
+      "showIndex",
+      "showMarker",
+      "proximityRadius",
+      "maxShift",
+      "falloff",
+      "markerLength",
+      "markerGap",
+      "tickScale",
+      "scaleTick",
+      "itemGap",
+      "fontSize",
+      "smoothing",
+      "defaultActive",
+      "onItemClick",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-LineWaves",
+    "name": "LineWaves",
+    "zh": "线波",
+    "importPath": "../react-bits/LineWaves/LineWaves.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "speed",
+      "innerLineCount",
+      "outerLineCount",
+      "warpIntensity",
+      "rotation",
+      "edgeFadeWidth",
+      "colorCycleSpeed",
+      "brightness",
+      "color1",
+      "color2",
+      "color3",
+      "enableMouseInteraction",
+      "mouseInfluence"
+    ]
+  },
+  {
+    "id": "rb-LiquidChrome",
+    "name": "LiquidChrome",
+    "zh": "液态铬",
+    "importPath": "../react-bits/LiquidChrome/LiquidChrome.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "baseColor",
+      "speed",
+      "amplitude",
+      "frequencyX",
+      "frequencyY",
+      "interactive"
+    ]
+  },
+  {
+    "id": "rb-LiquidEther",
+    "name": "LiquidEther",
+    "zh": "液态以太",
+    "importPath": "../react-bits/LiquidEther/LiquidEther.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "mouseForce",
+      "cursorSize",
+      "isViscous",
+      "viscous",
+      "iterationsViscous",
+      "iterationsPoisson",
+      "dt",
+      "BFECC",
+      "resolution",
+      "isBounce",
+      "colors",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-LogoLoop",
+    "name": "LogoLoop",
+    "zh": "标志循环",
+    "importPath": "../react-bits/LogoLoop/LogoLoop.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": []
+  },
+  {
+    "id": "rb-MagicBento",
+    "name": "MagicBento",
+    "zh": "魔法便当格",
+    "importPath": "../react-bits/MagicBento/MagicBento.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "className",
+      "disableAnimations",
+      "style",
+      "particleCount",
+      "glowColor",
+      "enableTilt",
+      "clickEffect",
+      "enableMagnetism"
+    ]
+  },
+  {
+    "id": "rb-MagicRings",
+    "name": "MagicRings",
+    "zh": "魔法环",
+    "importPath": "../react-bits/MagicRings/MagicRings.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color",
+      "colorTwo",
+      "speed",
+      "ringCount",
+      "attenuation",
+      "lineThickness",
+      "baseRadius",
+      "radiusStep",
+      "scaleRate",
+      "opacity",
+      "blur",
+      "noiseAmount",
+      "rotation",
+      "ringGap",
+      "fadeIn",
+      "fadeOut",
+      "followMouse",
+      "mouseInfluence",
+      "hoverScale",
+      "parallax"
+    ]
+  },
+  {
+    "id": "rb-Magnet",
+    "name": "Magnet",
+    "zh": "磁力吸附",
+    "importPath": "../react-bits/Magnet/Magnet.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "button",
+    "props": [
+      "children",
+      "padding",
+      "disabled",
+      "magnetStrength",
+      "activeTransition",
+      "inactiveTransition",
+      "wrapperClassName",
+      "innerClassName"
+    ]
+  },
+  {
+    "id": "rb-MagnetLines",
+    "name": "MagnetLines",
+    "zh": "磁力线",
+    "importPath": "../react-bits/MagnetLines/MagnetLines.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "rows",
+      "columns",
+      "containerSize",
+      "lineColor",
+      "lineWidth",
+      "lineHeight",
+      "baseAngle",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-MaskedHeading",
+    "name": "MaskedHeading",
+    "zh": "蒙版标题",
+    "importPath": "../react-bits/MaskedHeading/MaskedHeading.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "蒙版标题"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "tag",
+      "mediaType",
+      "src",
+      "poster",
+      "fillScale",
+      "parallax",
+      "drift",
+      "brightness",
+      "saturation",
+      "grayscale",
+      "reveal",
+      "duration",
+      "stagger",
+      "trigger",
+      "align",
+      "weight",
+      "tracking",
+      "lineHeight",
+      "textScale"
+    ]
+  },
+  {
+    "id": "rb-Masonry",
+    "name": "Masonry",
+    "zh": "瀑布流",
+    "importPath": "../react-bits/Masonry/Masonry.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "瀑布流 1",
+        "瀑布流 2",
+        "瀑布流 3",
+        "瀑布流 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "ease",
+      "duration",
+      "stagger",
+      "animateFrom",
+      "scaleOnHover",
+      "hoverScale",
+      "blurToFocus",
+      "colorShiftOnHover"
+    ]
+  },
+  {
+    "id": "rb-MetaBalls",
+    "name": "MetaBalls",
+    "zh": "融球",
+    "importPath": "../react-bits/MetaBalls/MetaBalls.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "color",
+      "speed",
+      "enableMouseInteraction",
+      "hoverSmoothness",
+      "animationSize",
+      "ballCount",
+      "clumpFactor",
+      "cursorBallSize",
+      "cursorBallColor",
+      "enableTransparency"
+    ]
+  },
+  {
+    "id": "rb-MetallicPaint",
+    "name": "MetallicPaint",
+    "zh": "金属油漆",
+    "importPath": "../react-bits/MetallicPaint/MetallicPaint.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "imageSrc",
+      "seed",
+      "scale",
+      "refraction",
+      "blur",
+      "liquid",
+      "speed",
+      "brightness",
+      "contrast",
+      "angle",
+      "fresnel",
+      "lightColor",
+      "darkColor",
+      "patternSharpness",
+      "waveAmplitude",
+      "noiseScale",
+      "chromaticSpread",
+      "mouseAnimation",
+      "distortion",
+      "contour"
+    ]
+  },
+  {
+    "id": "rb-ModelViewer",
+    "name": "ModelViewer",
+    "zh": "模型查看器",
+    "importPath": "../react-bits/ModelViewer/ModelViewer.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "placeholderSrc"
+    ]
+  },
+  {
+    "id": "rb-MoltenMetal",
+    "name": "MoltenMetal",
+    "zh": "熔金",
+    "importPath": "../react-bits/MoltenMetal/MoltenMetal.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color1",
+      "color2",
+      "color3",
+      "speed",
+      "scale",
+      "detail",
+      "glow",
+      "coreSize",
+      "swirl",
+      "fold",
+      "blackPoint",
+      "brightness",
+      "colorMode",
+      "grain",
+      "grainIntensity",
+      "mouseInteraction",
+      "mouseStrength",
+      "opacity",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-MorphSlider",
+    "name": "MorphSlider",
+    "zh": "熔变滑块",
+    "importPath": "../react-bits/MorphSlider/MorphSlider.jsx",
+    "webgl": true,
+    "defaults": {
+      "items": [
+        "熔变滑块 1",
+        "熔变滑块 2",
+        "熔变滑块 3",
+        "熔变滑块 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "startIndex",
+      "transition",
+      "duration",
+      "ease",
+      "intensity",
+      "scale",
+      "aberration",
+      "drift",
+      "autoplay",
+      "autoplayDelay",
+      "loop",
+      "radius",
+      "overlayColor",
+      "showCaptions",
+      "showControls",
+      "showIndicators",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-Noise",
+    "name": "Noise",
+    "zh": "胶片噪点",
+    "importPath": "../react-bits/Noise/Noise.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "patternSize",
+      "patternScaleX",
+      "patternScaleY",
+      "patternRefreshInterval",
+      "patternAlpha"
+    ]
+  },
+  {
+    "id": "rb-OptionWheel",
+    "name": "OptionWheel",
+    "zh": "选项轮",
+    "importPath": "../react-bits/OptionWheel/OptionWheel.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "选项轮 1",
+        "选项轮 2",
+        "选项轮 3",
+        "选项轮 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "items",
+      "defaultSelected",
+      "onChange",
+      "textColor",
+      "activeColor",
+      "side",
+      "fontSize",
+      "spacing",
+      "curve",
+      "tilt",
+      "blur",
+      "fade",
+      "minOpacity",
+      "smoothing",
+      "inset",
+      "loop",
+      "draggable",
+      "soundUrl",
+      "soundVolume",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-Orb",
+    "name": "Orb",
+    "zh": "能量球",
+    "importPath": "../react-bits/Orb/Orb.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "hue",
+      "hoverIntensity",
+      "rotateOnHover",
+      "forceHoverState",
+      "backgroundColor"
+    ]
+  },
+  {
+    "id": "rb-OrbitImages",
+    "name": "OrbitImages",
+    "zh": "轨道图像",
+    "importPath": "../react-bits/OrbitImages/OrbitImages.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "item",
+      "index",
+      "totalItems",
+      "path",
+      "itemSize",
+      "rotation",
+      "progress",
+      "fill"
+    ]
+  },
+  {
+    "id": "rb-ParticleText",
+    "name": "ParticleText",
+    "zh": "粒子文字",
+    "importPath": "../react-bits/ParticleText/ParticleText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "粒子文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "particleSize",
+      "density",
+      "color",
+      "highlightColor",
+      "scatter",
+      "gatherDuration",
+      "stagger",
+      "pointerRepel",
+      "repelRadius",
+      "idleDrift",
+      "trigger",
+      "fontSize",
+      "fontWeight",
+      "fontFamily",
+      "glow",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-Particles",
+    "name": "Particles",
+    "zh": "粒子场",
+    "importPath": "../react-bits/Particles/Particles.jsx",
+    "webgl": true,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": null,
+    "props": [
+      "particleCount",
+      "particleSpread",
+      "speed",
+      "particleColors",
+      "moveParticlesOnHover",
+      "particleHoverFactor",
+      "alphaParticles",
+      "particleBaseSize",
+      "sizeRandomness",
+      "cameraDistance",
+      "disableRotation",
+      "pixelRatio",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-PillNav",
+    "name": "PillNav",
+    "zh": "胶囊导航",
+    "importPath": "../react-bits/PillNav/PillNav.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "胶囊导航 1",
+        "胶囊导航 2",
+        "胶囊导航 3",
+        "胶囊导航 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "logo",
+      "logoAlt",
+      "items",
+      "activeHref",
+      "className",
+      "ease",
+      "baseColor",
+      "pillColor",
+      "hoveredPillTextColor",
+      "pillTextColor",
+      "onMobileMenuClick",
+      "initialLoadAnimation"
+    ]
+  },
+  {
+    "id": "rb-PixelBlast",
+    "name": "PixelBlast",
+    "zh": "像素爆破",
+    "importPath": "../react-bits/PixelBlast/PixelBlast.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "variant",
+      "pixelSize",
+      "color",
+      "className",
+      "style",
+      "antialias",
+      "patternScale",
+      "patternDensity",
+      "liquid",
+      "liquidStrength",
+      "liquidRadius",
+      "pixelSizeJitter",
+      "enableRipples",
+      "rippleIntensityScale",
+      "rippleThickness",
+      "rippleSpeed",
+      "liquidWobbleSpeed",
+      "autoPauseOffscreen",
+      "speed",
+      "transparent"
+    ]
+  },
+  {
+    "id": "rb-PixelCard",
+    "name": "PixelCard",
+    "zh": "像素卡片",
+    "importPath": "../react-bits/PixelCard/PixelCard.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "variant",
+      "gap",
+      "speed",
+      "colors",
+      "noFocus",
+      "className",
+      "children"
+    ]
+  },
+  {
+    "id": "rb-PixelSnow",
+    "name": "PixelSnow",
+    "zh": "像素雪",
+    "importPath": "../react-bits/PixelSnow/PixelSnow.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color",
+      "flakeSize",
+      "minFlakeSize",
+      "pixelResolution",
+      "speed",
+      "depthFade",
+      "farPlane",
+      "brightness",
+      "gamma",
+      "density",
+      "variant",
+      "direction",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-PixelSwap",
+    "name": "PixelSwap",
+    "zh": "像素交换",
+    "importPath": "../react-bits/PixelSwap/PixelSwap.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "width",
+      "height",
+      "pixelSize",
+      "gap",
+      "pattern",
+      "randomness"
+    ]
+  },
+  {
+    "id": "rb-PixelTrail",
+    "name": "PixelTrail",
+    "zh": "像素拖尾",
+    "importPath": "../react-bits/PixelTrail/PixelTrail.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "id",
+      "strength"
+    ]
+  },
+  {
+    "id": "rb-PixelTransition",
+    "name": "PixelTransition",
+    "zh": "像素过渡",
+    "importPath": "../react-bits/PixelTransition/PixelTransition.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "firstContent",
+      "secondContent",
+      "gridSize",
+      "pixelColor",
+      "animationStepDuration",
+      "once",
+      "aspectRatio",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-Plasma",
+    "name": "Plasma",
+    "zh": "等离子",
+    "importPath": "../react-bits/Plasma/Plasma.jsx",
+    "webgl": true,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": null,
+    "props": [
+      "color",
+      "speed",
+      "direction",
+      "scale",
+      "opacity",
+      "mouseInteractive",
+      "renderScale",
+      "maxDpr",
+      "targetFps",
+      "iterations"
+    ]
+  },
+  {
+    "id": "rb-PlasmaWave",
+    "name": "PlasmaWave",
+    "zh": "等离子波",
+    "importPath": "../react-bits/PlasmaWave/PlasmaWave.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": []
+  },
+  {
+    "id": "rb-Prism",
+    "name": "Prism",
+    "zh": "棱镜",
+    "importPath": "../react-bits/Prism/Prism.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "height",
+      "baseWidth",
+      "animationType",
+      "glow",
+      "offset",
+      "y"
+    ]
+  },
+  {
+    "id": "rb-PrismaticBurst",
+    "name": "PrismaticBurst",
+    "zh": "棱镜爆发",
+    "importPath": "../react-bits/PrismaticBurst/PrismaticBurst.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "intensity",
+      "speed",
+      "animationType",
+      "colors",
+      "distort",
+      "paused",
+      "offset",
+      "y"
+    ]
+  },
+  {
+    "id": "rb-ProfileCard",
+    "name": "ProfileCard",
+    "zh": "资料卡",
+    "importPath": "../react-bits/ProfileCard/ProfileCard.jsx",
+    "webgl": false,
+    "defaults": {
+      "title": "资料卡"
+    },
+    "childrenKind": null,
+    "props": [
+      "avatarUrl",
+      "iconUrl",
+      "grainUrl",
+      "innerGradient",
+      "behindGlowEnabled",
+      "behindGlowColor",
+      "behindGlowSize",
+      "className",
+      "enableTilt",
+      "enableMobileTilt",
+      "mobileTiltSensitivity",
+      "miniAvatarUrl",
+      "name",
+      "title",
+      "handle",
+      "status",
+      "contactText",
+      "showUserInfo",
+      "onContactClick"
+    ]
+  },
+  {
+    "id": "rb-Radar",
+    "name": "Radar",
+    "zh": "雷达",
+    "importPath": "../react-bits/Radar/Radar.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "speed",
+      "scale",
+      "ringCount",
+      "spokeCount",
+      "ringThickness",
+      "spokeThickness",
+      "sweepSpeed",
+      "sweepWidth",
+      "sweepLobes",
+      "color",
+      "backgroundColor",
+      "falloff",
+      "brightness",
+      "enableMouseInteraction",
+      "mouseInfluence"
+    ]
+  },
+  {
+    "id": "rb-ReflectiveCard",
+    "name": "ReflectiveCard",
+    "zh": "反射卡片",
+    "importPath": "../react-bits/ReflectiveCard/ReflectiveCard.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "blurStrength",
+      "color",
+      "metalness",
+      "roughness",
+      "overlayColor",
+      "displacementStrength",
+      "noiseScale",
+      "specularConstant",
+      "grayscale",
+      "glassDistortion",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-Ribbons",
+    "name": "Ribbons",
+    "zh": "缎带",
+    "importPath": "../react-bits/Ribbons/Ribbons.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "colors",
+      "baseSpring",
+      "baseFriction",
+      "baseThickness",
+      "offsetFactor",
+      "maxAge",
+      "pointCount",
+      "speedMultiplier",
+      "enableFade",
+      "enableShaderEffect",
+      "effectAmplitude",
+      "backgroundColor"
+    ]
+  },
+  {
+    "id": "rb-RippleDistortion",
+    "name": "RippleDistortion",
+    "zh": "涟漪畸变",
+    "importPath": "../react-bits/RippleDistortion/RippleDistortion.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "src",
+      "brushSize",
+      "strength",
+      "swirl",
+      "rings",
+      "spread",
+      "fade",
+      "spacing",
+      "dispersion",
+      "glint",
+      "tint",
+      "tintAmount",
+      "grayscale",
+      "highlightColor",
+      "trigger",
+      "clickStrength",
+      "quality",
+      "enabled",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-RippleGrid",
+    "name": "RippleGrid",
+    "zh": "涟漪网格",
+    "importPath": "../react-bits/RippleGrid/RippleGrid.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "enableRainbow",
+      "gridColor",
+      "rippleIntensity",
+      "gridSize",
+      "gridThickness",
+      "fadeDistance",
+      "vignetteStrength",
+      "glowIntensity",
+      "opacity",
+      "gridRotation",
+      "mouseInteraction",
+      "mouseInteractionRadius"
+    ]
+  },
+  {
+    "id": "rb-RotatingText",
+    "name": "RotatingText",
+    "zh": "旋转文字",
+    "importPath": "../react-bits/RotatingText/RotatingText.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": []
+  },
+  {
+    "id": "rb-Scanner",
+    "name": "Scanner",
+    "zh": "扫描带",
+    "importPath": "../react-bits/Scanner/Scanner.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color1",
+      "color2",
+      "color3",
+      "speed",
+      "sweepSpeed",
+      "sweepWidth",
+      "sweepFalloff",
+      "scale",
+      "frequency",
+      "ripple",
+      "bandDensity",
+      "lineSharpness",
+      "glow",
+      "scanDirection",
+      "colorSpread",
+      "brightness",
+      "contrast",
+      "softness",
+      "vignette",
+      "scanline"
+    ]
+  },
+  {
+    "id": "rb-ScrambledText",
+    "name": "ScrambledText",
+    "zh": "扰动文字",
+    "importPath": "../react-bits/ScrambledText/ScrambledText.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "radius",
+      "duration",
+      "speed",
+      "scrambleChars",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-ScrollExpand",
+    "name": "ScrollExpand",
+    "zh": "滚动扩展",
+    "importPath": "../react-bits/ScrollExpand/ScrollExpand.jsx",
+    "webgl": false,
+    "defaults": {
+      "title": "滚动扩展"
+    },
+    "childrenKind": "tile",
+    "props": [
+      "src",
+      "mediaType",
+      "poster",
+      "alt",
+      "title",
+      "scrollHint",
+      "startWidth",
+      "startHeight",
+      "startRadius",
+      "endRadius",
+      "mediaZoom",
+      "scrollDistance",
+      "holdDistance",
+      "smoothing",
+      "overlayScrim",
+      "useWindowScroll",
+      "enabled",
+      "children",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-ScrollFloat",
+    "name": "ScrollFloat",
+    "zh": "滚动漂浮",
+    "importPath": "../react-bits/ScrollFloat/ScrollFloat.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "children",
+      "scrollContainerRef",
+      "containerClassName",
+      "textClassName",
+      "animationDuration",
+      "ease",
+      "scrollStart",
+      "scrollEnd",
+      "stagger"
+    ]
+  },
+  {
+    "id": "rb-ScrollReveal",
+    "name": "ScrollReveal",
+    "zh": "滚动显现",
+    "importPath": "../react-bits/ScrollReveal/ScrollReveal.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "children",
+      "scrollContainerRef",
+      "enableBlur",
+      "baseOpacity",
+      "baseRotation",
+      "blurStrength",
+      "containerClassName",
+      "textClassName",
+      "rotationEnd",
+      "wordAnimationEnd"
+    ]
+  },
+  {
+    "id": "rb-ScrollStack",
+    "name": "ScrollStack",
+    "zh": "滚动堆叠",
+    "importPath": "../react-bits/ScrollStack/ScrollStack.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "itemClassName"
+    ]
+  },
+  {
+    "id": "rb-ScrollVelocity",
+    "name": "ScrollVelocity",
+    "zh": "滚动速度字",
+    "importPath": "../react-bits/ScrollVelocity/ScrollVelocity.jsx",
+    "webgl": false,
+    "defaults": {
+      "texts": [
+        "滚动速度字",
+        "运动实验室",
+        "官方组件"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "scrollContainerRef",
+      "texts",
+      "velocity",
+      "className",
+      "damping",
+      "stiffness",
+      "numCopies",
+      "velocityMapping",
+      "output"
+    ]
+  },
+  {
+    "id": "rb-ShapeBlur",
+    "name": "ShapeBlur",
+    "zh": "形状模糊",
+    "importPath": "../react-bits/ShapeBlur/ShapeBlur.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "className",
+      "variation",
+      "pixelRatioProp",
+      "shapeSize",
+      "roundness",
+      "borderSize",
+      "circleSize",
+      "circleEdge"
+    ]
+  },
+  {
+    "id": "rb-ShapeGrid",
+    "name": "ShapeGrid",
+    "zh": "形状网格",
+    "importPath": "../react-bits/ShapeGrid/ShapeGrid.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "direction",
+      "speed",
+      "borderColor",
+      "squareSize",
+      "hoverFillColor",
+      "shape",
+      "hoverTrailAmount",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-ShinyText",
+    "name": "ShinyText",
+    "zh": "金属扫光字",
+    "importPath": "../react-bits/ShinyText/ShinyText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "金属扫光字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "disabled",
+      "speed",
+      "className",
+      "color",
+      "shineColor",
+      "spread",
+      "yoyo",
+      "pauseOnHover",
+      "direction",
+      "delay"
+    ]
+  },
+  {
+    "id": "rb-Shuffle",
+    "name": "Shuffle",
+    "zh": "洗牌文字",
+    "importPath": "../react-bits/Shuffle/Shuffle.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "洗牌文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-SideRays",
+    "name": "SideRays",
+    "zh": "侧向光",
+    "importPath": "../react-bits/SideRays/SideRays.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "speed",
+      "rayColor1",
+      "rayColor2",
+      "intensity",
+      "spread",
+      "origin",
+      "tilt",
+      "saturation",
+      "blend",
+      "falloff",
+      "opacity",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-Silk",
+    "name": "Silk",
+    "zh": "丝绸",
+    "importPath": "../react-bits/Silk/Silk.jsx",
+    "webgl": true,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": null,
+    "props": [
+      "uniforms"
+    ]
+  },
+  {
+    "id": "rb-SlicedWaves",
+    "name": "SlicedWaves",
+    "zh": "切片波",
+    "importPath": "../react-bits/SlicedWaves/SlicedWaves.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color1",
+      "color2",
+      "color3",
+      "columns",
+      "rows",
+      "barThickness",
+      "speed",
+      "travel",
+      "waveSpread",
+      "rowOffset",
+      "softness",
+      "glow",
+      "brightness",
+      "contrast",
+      "opacity",
+      "orientation",
+      "alternate",
+      "mouseInteraction",
+      "mouseStrength",
+      "mouseRadius"
+    ]
+  },
+  {
+    "id": "rb-SoftAurora",
+    "name": "SoftAurora",
+    "zh": "柔和极光",
+    "importPath": "../react-bits/SoftAurora/SoftAurora.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "speed",
+      "scale",
+      "brightness",
+      "color1",
+      "color2",
+      "noiseFrequency",
+      "noiseAmplitude",
+      "bandHeight",
+      "bandSpread",
+      "octaveDecay",
+      "layerOffset",
+      "colorSpeed",
+      "enableMouseInteraction",
+      "mouseInfluence"
+    ]
+  },
+  {
+    "id": "rb-SpecularButton",
+    "name": "SpecularButton",
+    "zh": "高光按钮",
+    "importPath": "../react-bits/SpecularButton/SpecularButton.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "size",
+      "radius",
+      "tint",
+      "tintOpacity",
+      "blur",
+      "textColor",
+      "lineColor",
+      "baseColor",
+      "intensity",
+      "shineSize",
+      "shineFade",
+      "thickness",
+      "speed",
+      "followMouse",
+      "proximity",
+      "autoAnimate",
+      "disabled",
+      "onClick",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-SplashCursor",
+    "name": "SplashCursor",
+    "zh": "飞溅光标",
+    "importPath": "../react-bits/SplashCursor/SplashCursor.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "SIM_RESOLUTION",
+      "DYE_RESOLUTION",
+      "CAPTURE_RESOLUTION",
+      "DENSITY_DISSIPATION",
+      "VELOCITY_DISSIPATION",
+      "PRESSURE",
+      "PRESSURE_ITERATIONS",
+      "CURL",
+      "SPLAT_RADIUS",
+      "SPLAT_FORCE",
+      "SHADING",
+      "COLOR_UPDATE_SPEED",
+      "BACK_COLOR",
+      "g",
+      "b"
+    ]
+  },
+  {
+    "id": "rb-SplitFlapText",
+    "name": "SplitFlapText",
+    "zh": "翻牌文字",
+    "importPath": "../react-bits/SplitFlapText/SplitFlapText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "翻牌文字",
+      "words": [
+        "运动",
+        "实验室",
+        "官方",
+        "组件"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "words",
+      "text",
+      "flipDuration",
+      "stagger",
+      "cycleDelay",
+      "charset",
+      "flipsPerChar",
+      "tileColor",
+      "textColor",
+      "tileRadius",
+      "gap",
+      "fontSize",
+      "loop",
+      "padTo",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-SplitText",
+    "name": "SplitText",
+    "zh": "拆分文字",
+    "importPath": "../react-bits/SplitText/SplitText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "拆分文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "className",
+      "delay",
+      "duration",
+      "ease",
+      "splitType",
+      "from",
+      "y"
+    ]
+  },
+  {
+    "id": "rb-SpotlightCard",
+    "name": "SpotlightCard",
+    "zh": "聚光卡片",
+    "importPath": "../react-bits/SpotlightCard/SpotlightCard.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "className",
+      "spotlightColor"
+    ]
+  },
+  {
+    "id": "rb-Stack",
+    "name": "Stack",
+    "zh": "层叠卡片",
+    "importPath": "../react-bits/Stack/Stack.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "onSendToBack",
+      "sensitivity",
+      "disableDrag"
+    ]
+  },
+  {
+    "id": "rb-StaggeredMenu",
+    "name": "StaggeredMenu",
+    "zh": "交错菜单",
+    "importPath": "../react-bits/StaggeredMenu/StaggeredMenu.jsx",
+    "webgl": false,
+    "defaults": {
+      "items": [
+        "交错菜单 1",
+        "交错菜单 2",
+        "交错菜单 3",
+        "交错菜单 4"
+      ]
+    },
+    "childrenKind": null,
+    "props": [
+      "position",
+      "colors",
+      "items",
+      "socialItems",
+      "displaySocials",
+      "displayItemNumbering",
+      "className",
+      "logoUrl",
+      "menuButtonColor",
+      "openMenuButtonColor",
+      "accentColor",
+      "changeMenuColorOnOpen",
+      "isFixed",
+      "closeOnClickAway",
+      "onMenuOpen",
+      "onMenuClose"
+    ]
+  },
+  {
+    "id": "rb-StarBorder",
+    "name": "StarBorder",
+    "zh": "星光边框",
+    "importPath": "../react-bits/StarBorder/StarBorder.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "as",
+      "className",
+      "color",
+      "speed",
+      "thickness",
+      "children"
+    ]
+  },
+  {
+    "id": "rb-Stepper",
+    "name": "Stepper",
+    "zh": "步骤条",
+    "importPath": "../react-bits/Stepper/Stepper.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "children",
+      "initialStep",
+      "onStepChange"
+    ]
+  },
+  {
+    "id": "rb-StickerPeel",
+    "name": "StickerPeel",
+    "zh": "贴纸揭起",
+    "importPath": "../react-bits/StickerPeel/StickerPeel.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "imageSrc",
+      "rotate",
+      "peelBackHoverPct",
+      "peelBackActivePct",
+      "peelEasing",
+      "peelHoverEasing",
+      "width",
+      "shadowIntensity",
+      "lightingIntensity",
+      "initialPosition",
+      "peelDirection",
+      "className"
+    ]
+  },
+  {
+    "id": "rb-Strands",
+    "name": "Strands",
+    "zh": "光丝",
+    "importPath": "../react-bits/Strands/Strands.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "colors",
+      "count",
+      "speed",
+      "amplitude",
+      "waviness",
+      "thickness",
+      "glow",
+      "taper",
+      "spread",
+      "hueShift",
+      "intensity",
+      "saturation",
+      "opacity",
+      "scale",
+      "glass",
+      "refraction",
+      "dispersion",
+      "glassSize",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-StrokeText",
+    "name": "StrokeText",
+    "zh": "描边文字",
+    "importPath": "../react-bits/StrokeText/StrokeText.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "描边文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "strokeColor",
+      "fillColor",
+      "strokeWidth",
+      "drawDuration",
+      "fillDelay",
+      "stagger",
+      "ease",
+      "trigger",
+      "fillMode",
+      "fontSize",
+      "fontWeight",
+      "letterSpacing",
+      "reverse",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-SwarmCursor",
+    "name": "SwarmCursor",
+    "zh": "蜂群光标",
+    "importPath": "../react-bits/SwarmCursor/SwarmCursor.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "color",
+      "accentColor",
+      "count",
+      "size",
+      "merge",
+      "glow",
+      "opacity",
+      "spread",
+      "separation",
+      "speed",
+      "wander",
+      "trail",
+      "scatterOnClick",
+      "enabled",
+      "children",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-TargetCursor",
+    "name": "TargetCursor",
+    "zh": "锁定光标",
+    "importPath": "../react-bits/TargetCursor/TargetCursor.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "targetSelector",
+      "spinDuration",
+      "hideDefaultCursor",
+      "hoverDuration",
+      "parallaxOn",
+      "cursorColor",
+      "cursorColorOnTarget"
+    ]
+  },
+  {
+    "id": "rb-TextCursor",
+    "name": "TextCursor",
+    "zh": "文字光标",
+    "importPath": "../react-bits/TextCursor/TextCursor.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "文字光标"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "spacing",
+      "followMouseDirection",
+      "randomFloat",
+      "exitDuration",
+      "removalInterval",
+      "maxPoints"
+    ]
+  },
+  {
+    "id": "rb-TextLoop",
+    "name": "TextLoop",
+    "zh": "文字循环",
+    "importPath": "../react-bits/TextLoop/TextLoop.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "文字循环"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "shape",
+      "path",
+      "speed",
+      "direction",
+      "separator",
+      "curviness",
+      "fontSize",
+      "fontWeight",
+      "letterSpacing",
+      "uppercase",
+      "color",
+      "ribbon",
+      "ribbonColor",
+      "ribbonWidth",
+      "pauseOnHover",
+      "className",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-TextPressure",
+    "name": "TextPressure",
+    "zh": "压力文字",
+    "importPath": "../react-bits/TextPressure/TextPressure.jsx",
+    "webgl": true,
+    "defaults": {
+      "text": "压力文字"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "fontFamily",
+      "fontUrl",
+      "wdth",
+      "width",
+      "weight",
+      "italic",
+      "alpha",
+      "flex",
+      "stroke",
+      "scale",
+      "textColor",
+      "strokeColor",
+      "className",
+      "minFontSize"
+    ]
+  },
+  {
+    "id": "rb-TextType",
+    "name": "TextType",
+    "zh": "打字机",
+    "importPath": "../react-bits/TextType/TextType.jsx",
+    "webgl": false,
+    "defaults": {
+      "text": "打字机"
+    },
+    "childrenKind": null,
+    "props": [
+      "text",
+      "as",
+      "typingSpeed",
+      "initialDelay",
+      "pauseDuration",
+      "deletingSpeed",
+      "loop",
+      "className",
+      "showCursor",
+      "hideCursorWhileTyping",
+      "cursorCharacter",
+      "cursorClassName",
+      "cursorBlinkDuration",
+      "textColors",
+      "variableSpeed",
+      "onSentenceComplete",
+      "startOnVisible",
+      "reverseMode"
+    ]
+  },
+  {
+    "id": "rb-Threads",
+    "name": "Threads",
+    "zh": "织线",
+    "importPath": "../react-bits/Threads/Threads.jsx",
+    "webgl": true,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": null,
+    "props": [
+      "color",
+      "amplitude",
+      "distance",
+      "enableMouseInteraction"
+    ]
+  },
+  {
+    "id": "rb-TiltedCard",
+    "name": "TiltedCard",
+    "zh": "倾斜卡片",
+    "importPath": "../react-bits/TiltedCard/TiltedCard.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": "tile",
+    "props": [
+      "imageSrc",
+      "altText",
+      "captionText",
+      "containerHeight",
+      "containerWidth",
+      "imageHeight",
+      "imageWidth",
+      "scaleOnHover",
+      "rotateAmplitude",
+      "showMobileWarning",
+      "showTooltip",
+      "overlayContent",
+      "displayOverlayContent"
+    ]
+  },
+  {
+    "id": "rb-Topography",
+    "name": "Topography",
+    "zh": "等高线",
+    "importPath": "../react-bits/Topography/Topography.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "lowColor",
+      "midColor",
+      "highColor",
+      "speed",
+      "morphAmount",
+      "morphSpeed",
+      "bands",
+      "thickness",
+      "scale",
+      "pixelSize",
+      "glow",
+      "colorMode",
+      "contrast",
+      "brightness",
+      "fillBands",
+      "opacity",
+      "grain",
+      "grainIntensity",
+      "mouseInteraction",
+      "mouseRadius"
+    ]
+  },
+  {
+    "id": "rb-TrueFocus",
+    "name": "TrueFocus",
+    "zh": "真焦点",
+    "importPath": "../react-bits/TrueFocus/TrueFocus.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "sentence",
+      "separator",
+      "manualMode",
+      "blurAmount",
+      "borderColor",
+      "glowColor",
+      "animationDuration",
+      "pauseBetweenAnimations"
+    ]
+  },
+  {
+    "id": "rb-VariableProximity",
+    "name": "VariableProximity",
+    "zh": "近距变体字",
+    "importPath": "../react-bits/VariableProximity/VariableProximity.jsx",
+    "webgl": false,
+    "defaults": {},
+    "childrenKind": null,
+    "props": []
+  },
+  {
+    "id": "rb-WarpText",
+    "name": "WarpText",
+    "zh": "扭曲文字",
+    "importPath": "../react-bits/WarpText/WarpText.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "container",
+      "width",
+      "height",
+      "dpr",
+      "props"
+    ]
+  },
+  {
+    "id": "rb-Waves",
+    "name": "Waves",
+    "zh": "波浪线",
+    "importPath": "../react-bits/Waves/Waves.jsx",
+    "webgl": false,
+    "defaults": {
+      "color": "#6366f1"
+    },
+    "childrenKind": null,
+    "props": [
+      "lineColor",
+      "backgroundColor",
+      "waveSpeedX",
+      "waveSpeedY",
+      "waveAmpX",
+      "waveAmpY",
+      "xGap",
+      "yGap",
+      "friction",
+      "tension",
+      "maxCursorMove",
+      "style"
+    ]
+  },
+  {
+    "id": "rb-WebThreads",
+    "name": "WebThreads",
+    "zh": "蛛网丝",
+    "importPath": "../react-bits/WebThreads/WebThreads.jsx",
+    "webgl": true,
+    "defaults": {},
+    "childrenKind": null,
+    "props": [
+      "color1",
+      "color2",
+      "color3",
+      "speed",
+      "threadCount",
+      "frequency",
+      "spread",
+      "taper",
+      "position",
+      "fanMode",
+      "glow",
+      "falloff",
+      "thickness",
+      "brightness",
+      "opacity",
+      "mirror",
+      "shimmer",
+      "grain",
+      "grainIntensity",
+      "mouseInteraction"
+    ]
+  }
+]
