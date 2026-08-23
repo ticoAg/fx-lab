@@ -23,10 +23,11 @@ Vite + React 动效馆。四个库里能跑的官方组件挂成画廊，点进�
 
 ## 部署
 
-Cloudflare Pages。构建输出 dist，Node 20。
-本机可用 wrangler 发布到项目 fx-lab。
+Cloudflare Pages 项目 fx-lab。构建输出 dist，Node 20。
+GitHub main 已绑定 Git 源，push 到 main 自动部署。
 生产域名 fx-lab-5do.pages.dev。
-CLI 无法绑定 Git 源；push 自动部署需在控制台连接仓库 ticoAg/fx-lab。
+构建命令只在 Pages 控制台配置，wrangler.toml 不放。
+架构、配置位置与坑：[docs/deploy.md](docs/deploy.md)
 
 ## 说明
 
