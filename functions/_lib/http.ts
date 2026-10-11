@@ -14,7 +14,7 @@ export type KitStore = {
 
 const SVG_TYPE = 'image/svg+xml; charset=utf-8'
 const JSON_TYPE = 'application/json; charset=utf-8'
-const MAX_SVG_BYTES = 512 * 1024
+const MAX_SVG_BYTES = 10 * 1024 * 1024
 
 export function jsonResponse(data: unknown, status = 200) {
   return new Response(JSON.stringify(data), {
