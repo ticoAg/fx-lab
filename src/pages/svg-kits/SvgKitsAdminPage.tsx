@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
+import { defaultKitStage, writeStoredKitStage, type KitStage } from '../../components/svg-kits/stageBg.ts'
 import {
   deleteSvgKit,
   fileStemToId,
@@ -185,9 +186,18 @@ export function SvgKitsAdminPage() {
 
   const categoryKeys = useMemo(() => draft.categories.map((c) => c.key).filter(Boolean), [draft.categories])
 
+  const [bg, setBg] = useState<KitStage>(defaultKitStage())
+
   return (
-    <div className="app kit-page">
-      <SvgKitsHeader crumb={zh ? '上传' : 'Upload'} />
+    <div className="app kit-page" data-stage={bg}>
+      <SvgKitsHeader
+        crumb={zh ? '上传' : 'Upload'}
+        bg={bg}
+        onBgChange={(nextBg) => {
+          setBg(nextBg)
+          writeStoredKitStage(nextBg)
+        }}
+      />
       <main className="kit-main kit-admin">
         <section className="kit-hero">
           <h2>{zh ? '上传 SVG 套件' : 'Upload SVG kits'}</h2>

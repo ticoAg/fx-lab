@@ -5,17 +5,23 @@ export function StageToggle({ bg, onChange }: { bg: KitStage; onChange: (bg: Kit
   const { lang } = useLang()
   const zh = lang === 'zh'
   return (
-    <div className="kit-seg" role="group" aria-label={zh ? '背景' : 'Background'}>
-      {KIT_STAGES.map((stage) => (
-        <button
-          key={stage}
-          type="button"
-          className={bg === stage ? 'active' : ''}
-          onClick={() => onChange(stage)}
-        >
-          {KIT_STAGE_LABEL[stage][lang]}
-        </button>
-      ))}
+    <div className="kit-seg kit-stage-toggle" role="group" aria-label={zh ? '背景风格' : 'Stage background'}>
+      {KIT_STAGES.map((stage) => {
+        const item = KIT_STAGE_LABEL[stage]
+        return (
+          <button
+            key={stage}
+            type="button"
+            className={bg === stage ? 'active' : ''}
+            onClick={() => onChange(stage)}
+            title={item[lang]}
+            aria-pressed={bg === stage}
+          >
+            <span className="stage-emoji" aria-hidden="true">{item.icon}</span>
+            <span className="stage-label">{item[lang]}</span>
+          </button>
+        )
+      })}
     </div>
   )
 }

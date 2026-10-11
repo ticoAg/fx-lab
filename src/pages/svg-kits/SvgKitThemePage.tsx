@@ -7,6 +7,7 @@ import { StageToggle } from '../../components/svg-kits/StageToggle.tsx'
 import { StrokePicker } from '../../components/svg-kits/StrokePicker.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
 import {
+  defaultKitStage,
   isKitStage,
   isStageDefaultStroke,
   normalizeStroke,
@@ -31,7 +32,7 @@ export function SvgKitThemePage() {
   const [q, setQ] = useState('')
   const [cat, setCat] = useState<string>('all')
   const urlBg = params.get('bg')
-  const bg: KitStage = isKitStage(urlBg) ? urlBg : (readStoredKitStage() ?? 'dark')
+  const bg: KitStage = isKitStage(urlBg) ? urlBg : defaultKitStage()
   const stroke = resolveKitStroke(bg, params.get('stroke'), readStoredKitStroke())
   const pageStyle = { '--svg-kit-stroke': stroke } as CSSProperties
 
@@ -148,17 +149,27 @@ export function SvgKitThemePage() {
 
   return (
     <div className="app kit-page" data-stage={bg} style={pageStyle}>
-      <SvgKitsHeader crumb={t(kit.title, lang)} />
+      <SvgKitsHeader crumb={t(kit.title, lang)} bg={bg} onBgChange={setBg} />
       <main className="kit-main">
         <section className="kit-hero">
-          <h2>
+          <div className="kit-hero-nav">
+            <Link className="kit-back-link" to="/svg-kits">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              <span>{zh ? '返回全部套件' : 'All kits'}</span>
+            </Link>
+          </div>
+
+          <h2 className="kit-hero-title">
             {t(kit.title, lang)}
-            <span className="kit-count">
-              {kit.icons.length} {zh ? '个图标' : 'icons'}
+            <span className="kit-count-badge">
+              {kit.icons.length} {zh ? '图标' : 'icons'}
             </span>
-            <span className="kit-kind">{t(SVG_KIT_KIND_LABELS[kit.kind ?? 'icon'], lang)}</span>
+            <span className={`kit-kind-badge kind-${kit.kind ?? 'icon'}`}>{t(SVG_KIT_KIND_LABELS[kit.kind ?? 'icon'], lang)}</span>
           </h2>
-          <p>{t(kit.description, lang)}</p>
+          <p className="kit-hero-desc">{t(kit.description, lang)}</p>
         </section>
 
         <div className="kit-filters">

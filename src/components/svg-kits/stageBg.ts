@@ -1,13 +1,17 @@
 export type KitStage = 'dark' | 'light' | 'checker'
 
-export const KIT_STAGES: KitStage[] = ['dark', 'light', 'checker']
+export const KIT_STAGES: KitStage[] = ['light', 'dark', 'checker']
 
 export const KIT_STAGE_KEY = 'fx-lab.svg-kits-bg'
 
-export const KIT_STAGE_LABEL: Record<KitStage, { zh: string; en: string }> = {
-  dark: { zh: '深色', en: 'Dark' },
-  light: { zh: '浅色', en: 'Light' },
-  checker: { zh: '透明', en: 'Alpha' },
+export const KIT_STAGE_LABEL: Record<KitStage, { zh: string; en: string; icon: string }> = {
+  light: { zh: '浅色', en: 'Light', icon: '☀️' },
+  dark: { zh: '深色', en: 'Dark', icon: '🌙' },
+  checker: { zh: '透明', en: 'Alpha', icon: '🏁' },
+}
+
+export function defaultKitStage(): KitStage {
+  return readStoredKitStage() ?? 'light'
 }
 
 export function isKitStage(value: string | null): value is KitStage {
