@@ -5,8 +5,8 @@
     "en": "Pastoral"
   },
   "description": {
-    "zh": "16 个田园简笔画图标：透明底上用随页面变色的描边勾勒草帽、洒水壶、风车、麦穗等乡野元素，点缀橄榄绿、麦金与陶土色。每个图标自带 pastoral- 前缀的轻柔 CSS 动画（漂浮 / 摇摆 / 旋转 / 呼吸 / 弹跳），并尊重减少动态效果设置。80×80 画布，单文件自包含，可直接内联。",
-    "en": "16 flat line-drawn countryside icons: strokes that follow the page color (currentColor), with olive green, wheat gold and terracotta accents — straw hat, watering can, windmill, wheat and more. Each icon ships a gentle pastoral- prefixed CSS animation (float / sway / spin / pulse / pop) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
+    "zh": "36 个田园图标，分为花园菜圃、农场劳作、乡野风光、农场动物与丰收餐桌五类：草帽、风车、谷仓、奶牛、绵羊、蜂巢、南瓜、面包等。透明底，外轮廓随页面变色（currentColor），麦金、叶绿、陶土红与奶油色平涂，加上明暗、高光和草编、木纹、砖瓦等质感。每个图标自带 pastoral-<id>- 前缀的轻柔 CSS 动画（漂浮 / 摇摆 / 旋转 / 呼吸 / 弹跳），可由宿主暂停，并尊重减少动态效果设置。80×80 画布，单文件自包含，可直接内联。",
+    "en": "36 countryside icons in five groups (garden, farm work, countryside, farm animals and the harvest table), from straw hat, windmill and barn to cow, sheep, beehive, pumpkin and bread. Transparent ground with outlines that follow the page color (currentColor), flat wheat gold, leaf green, terracotta and cream fills with shading, highlights and textures such as weave, wood grain and tiles. Each icon ships a gentle pastoral-<id>- prefixed CSS animation (float / sway / spin / pulse / pop) that the host can pause and that honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
   },
   "cover": "windmill",
   "categories": {
@@ -21,6 +21,14 @@
     "countryside": {
       "zh": "乡野风光",
       "en": "Countryside"
+    },
+    "animals": {
+      "zh": "农场动物",
+      "en": "Farm animals"
+    },
+    "harvest": {
+      "zh": "丰收餐桌",
+      "en": "Harvest table"
     }
   },
   "icons": [
@@ -31,11 +39,18 @@
         "en": "Straw hat"
       },
       "description": {
-        "zh": "宽檐编织草帽，陶土色帽带上别着一朵小雏菊，轻轻漂浮。用于夏日、田园生活与户外主题。",
-        "en": "Wide-brimmed woven straw hat with a terracotta band and a tiny daisy, gently floating. For summer, farm life and outdoor themes."
+        "zh": "宽檐编织草帽，帽顶有交叉草编纹，陶土色帽带垂下一段飘带，侧边别着小雏菊，轻轻漂浮。用于夏日、田园生活与户外主题。",
+        "en": "Wide-brimmed straw hat with a cross-woven crown, a terracotta band with a trailing ribbon and a tucked-in daisy, gently floating. For summer, farm life and outdoor themes."
       },
       "animation": "float",
-      "category": "garden"
+      "category": "garden",
+      "tags": [
+        "hat",
+        "summer",
+        "straw",
+        "草帽",
+        "夏天"
+      ]
     },
     {
       "id": "watering-can",
@@ -44,11 +59,18 @@
         "en": "Watering can"
       },
       "description": {
-        "zh": "叶绿色洒水壶，拱形提手配长壶嘴，水滴从喷头落下。用于园艺、照料与成长。",
-        "en": "Leaf-green watering can with an arched handle and a long spout, drops falling from the rose. For gardening, care and growth."
+        "zh": "叶绿色铁皮洒水壶，双提手、壶身小花贴纸，黄铜喷头洒下三滴水。用于园艺、照料与成长。",
+        "en": "Leaf-green tin watering can with two handles and a little flower decal, three drops falling from its brass rose. For gardening, care and growth."
       },
       "animation": "float",
-      "category": "garden"
+      "category": "garden",
+      "tags": [
+        "watering",
+        "garden",
+        "water",
+        "浇水",
+        "园艺"
+      ]
     },
     {
       "id": "carrot",
@@ -57,11 +79,18 @@
         "en": "Carrot"
       },
       "description": {
-        "zh": "饱满的橙色胡萝卜带横纹与三簇绿叶，在微风中摇摆。用于蔬菜、收获与健康饮食。",
-        "en": "Plump orange carrot with ridge lines and three leafy green tops, swaying in the breeze. For vegetables, harvest and healthy food."
+        "zh": "饱满的橙色胡萝卜，侧面带阴影和横纹，四片羽状绿叶在顶部张开，整根随风摇摆。用于蔬菜、收获与健康饮食。",
+        "en": "Plump orange carrot with side shading, ridge lines and four feathery leaves fanning out on top, swaying as a whole. For vegetables, harvest and healthy food."
       },
       "animation": "sway",
-      "category": "garden"
+      "category": "garden",
+      "tags": [
+        "carrot",
+        "vegetable",
+        "harvest",
+        "胡萝卜",
+        "蔬菜"
+      ]
     },
     {
       "id": "sunflower",
@@ -70,11 +99,18 @@
         "en": "Sunflower"
       },
       "description": {
-        "zh": "金黄向日葵配褐色花盘，长在带叶的高茎上左右点头。用于夏天、阳光与快乐。",
-        "en": "Golden sunflower with a seeded brown center on a tall leafy stem, nodding side to side. For summer, sunshine and happiness."
+        "zh": "两层金色花瓣的向日葵，褐色花盘布满种子点，长在两片叶子的茎上左右点头。用于夏天、阳光与快乐。",
+        "en": "Sunflower with two layers of golden petals and a seed-dotted brown disk on a two-leaf stem, nodding side to side. For summer, sunshine and happiness."
       },
       "animation": "sway",
-      "category": "garden"
+      "category": "garden",
+      "tags": [
+        "sunflower",
+        "flower",
+        "summer",
+        "向日葵",
+        "花"
+      ]
     },
     {
       "id": "daisy",
@@ -83,11 +119,19 @@
         "en": "Daisy"
       },
       "description": {
-        "zh": "白色雏菊配阳光般的黄色花心，花瓣像风车一样缓缓转动。用于春天、清新与小确幸。",
-        "en": "White daisy with a sunny yellow heart, its petals slowly turning like a pinwheel. For spring, freshness and simple joys."
+        "zh": "两层白色花瓣围着金黄花心缓缓转动，叶片上停着一只小瓢虫。用于春天、清新与小确幸。",
+        "en": "Two rings of white petals slowly turning around a golden heart, with a tiny ladybird resting on a leaf. For spring, freshness and simple joys."
       },
       "animation": "spin",
-      "category": "garden"
+      "category": "garden",
+      "tags": [
+        "daisy",
+        "flower",
+        "spring",
+        "ladybird",
+        "雏菊",
+        "瓢虫"
+      ]
     },
     {
       "id": "mushroom",
@@ -96,11 +140,18 @@
         "en": "Mushroom"
       },
       "description": {
-        "zh": "陶土色圆蘑菇伞盖缀着奶油色斑点，粗短菌柄立在草丛中欢快冒出。用于林地、采集与童趣。",
-        "en": "Round terracotta mushroom cap with cream spots on a stout stem among grass, popping up cheerfully. For forest floors, foraging and whimsy."
+        "zh": "红色圆伞盖缀着奶油色斑点，伞下有菌褶，旁边冒出一朵小蘑菇，草丛中轻快弹起。用于林地、采集与童趣。",
+        "en": "Round red cap with cream spots and gills underneath, a little sibling sprouting beside it, popping up among the grass. For forest floors, foraging and whimsy."
       },
       "animation": "pop",
-      "category": "garden"
+      "category": "garden",
+      "tags": [
+        "mushroom",
+        "forest",
+        "foraging",
+        "蘑菇",
+        "林地"
+      ]
     },
     {
       "id": "windmill",
@@ -109,11 +160,18 @@
         "en": "Windmill"
       },
       "description": {
-        "zh": "老式木质风车塔，四片格栅风帆随风稳稳转动。用于能源、乡村与四季流转。",
-        "en": "Old timber windmill tower with four lattice sails turning steadily in the wind. For energy, countryside and the turning of seasons."
+        "zh": "奶油色木板风车塔，红色塔顶、环形平台和拱门，四片格栅风帆在花草小丘上稳稳转动。用于能源、乡村与四季流转。",
+        "en": "Cream plank windmill with a red cap, a gallery and an arched door, four lattice sails turning steadily above a flowered hill. For energy, countryside and the turning of seasons."
       },
       "animation": "spin",
-      "category": "farm"
+      "category": "farm",
+      "tags": [
+        "windmill",
+        "wind",
+        "mill",
+        "风车",
+        "磨坊"
+      ]
     },
     {
       "id": "egg-basket",
@@ -122,11 +180,18 @@
         "en": "Egg basket"
       },
       "description": {
-        "zh": "编织柳条篮装满奶油色新鲜鸡蛋，上方是拱形提手。用于早餐、新鲜农产与农夫市集。",
-        "en": "Woven wicker basket brimming with fresh cream eggs under an arched handle. For breakfast, fresh produce and farm markets."
+        "zh": "柳条编织篮，扭绳篮沿和缠绕提手，五枚白色与浅褐色鸡蛋堆在上面，一角露出红布。用于早餐、新鲜农产与农夫市集。",
+        "en": "Wicker basket with a twisted rim and a wrapped handle, five white and light-brown eggs piled on top and a red cloth peeking out. For breakfast, fresh produce and farm markets."
       },
       "animation": "pop",
-      "category": "farm"
+      "category": "farm",
+      "tags": [
+        "eggs",
+        "basket",
+        "breakfast",
+        "鸡蛋",
+        "篮子"
+      ]
     },
     {
       "id": "wheat",
@@ -135,11 +200,19 @@
         "en": "Wheat stalks"
       },
       "description": {
-        "zh": "三株金色麦穗，颗粒饱满、麦芒细长，一起随风摇曳。用于谷物、面包、丰收与秋天。",
-        "en": "Three golden wheat stalks with plump grains and fine awns, swaying together. For grain, bread, harvest and autumn."
+        "zh": "三株金色麦穗用陶土色丝带扎成一束，颗粒饱满、麦芒细长，配两片麦叶一起摇曳。用于谷物、面包、丰收与秋天。",
+        "en": "Three golden wheat ears tied into a sheaf with a terracotta bow, plump grains and fine awns, swaying with two blades of leaf. For grain, bread, harvest and autumn."
       },
       "animation": "sway",
-      "category": "farm"
+      "category": "farm",
+      "tags": [
+        "wheat",
+        "grain",
+        "harvest",
+        "autumn",
+        "麦穗",
+        "丰收"
+      ]
     },
     {
       "id": "milk-jug",
@@ -148,11 +221,18 @@
         "en": "Milk churn"
       },
       "description": {
-        "zh": "经典奶场牛奶罐，圆顶盖、两侧提手与蓝色腰带，顶上一滴牛奶。用于乳制品、早餐与新鲜农产。",
-        "en": "Classic dairy milk churn with a domed lid, side handles and a blue band, a drop of milk on top. For dairy, breakfast and fresh farm goods."
+        "zh": "金属牛奶罐，圆顶盖、两侧提手和蓝色腰带，正面椭圆标签上画着一滴牛奶。用于乳制品、早餐与新鲜农产。",
+        "en": "Metal milk churn with a domed lid, side handles and a blue band, an oval label with a milk drop on the front. For dairy, breakfast and fresh farm goods."
       },
       "animation": "float",
-      "category": "farm"
+      "category": "farm",
+      "tags": [
+        "milk",
+        "dairy",
+        "churn",
+        "牛奶",
+        "乳制品"
+      ]
     },
     {
       "id": "pitchfork",
@@ -161,11 +241,18 @@
         "en": "Pitchfork"
       },
       "description": {
-        "zh": "木柄干草叉，三根弯曲铁齿，倚在一小堆干草旁。用于农活、晒草与农场劳作。",
-        "en": "Wooden pitchfork with three curved iron tines resting by a tuft of hay. For chores, hay making and farm work."
+        "zh": "木柄三齿干草叉斜插在一堆干草上，叉身轻轻摆动。用于农活、晒草与农场劳作。",
+        "en": "Wooden three-tine pitchfork stuck into a heap of hay, its shaft gently rocking. For chores, hay making and farm work."
       },
       "animation": "sway",
-      "category": "farm"
+      "category": "farm",
+      "tags": [
+        "pitchfork",
+        "hay",
+        "tools",
+        "干草叉",
+        "农具"
+      ]
     },
     {
       "id": "barn",
@@ -174,11 +261,18 @@
         "en": "Red barn"
       },
       "description": {
-        "zh": "陶土红色谷仓，复折式屋顶、交叉白色大门与草料阁楼窗，轻柔呼吸。用于农场、仓储与大本营。",
-        "en": "Terracotta red barn with a gambrel roof, crossed white doors and a hayloft window, breathing softly. For farms, storage and home base."
+        "zh": "红色木板谷仓，复折式深色屋顶、白色镶边、交叉大门和装着干草的阁楼窗，轻柔呼吸。用于农场、仓储与大本营。",
+        "en": "Red plank barn with a dark gambrel roof, white trim, crossed doors and a hay-filled loft window, breathing softly. For farms, storage and home base."
       },
       "animation": "pulse",
-      "category": "farm"
+      "category": "farm",
+      "tags": [
+        "barn",
+        "farm",
+        "building",
+        "谷仓",
+        "农场"
+      ]
     },
     {
       "id": "fence-gate",
@@ -187,11 +281,18 @@
         "en": "Fence gate"
       },
       "description": {
-        "zh": "乡村木质田间门，两根门柱之间有斜撑，脚下草丛随风摇摆。用于入口、边界与欢迎。",
-        "en": "Rustic wooden field gate with a diagonal brace between two posts, grass tufts swaying at its feet. For entrances, boundaries and welcome."
+        "zh": "两根尖顶木门柱之间的乡村田间门，三道横栏加斜撑、铁铰链和门闩，门柱旁野花随风摇摆。用于入口、边界与欢迎。",
+        "en": "Rustic field gate between two pointed posts, three rails with a diagonal brace, iron hinges and a latch, wildflowers swaying by the post. For entrances, boundaries and welcome."
       },
       "animation": "sway",
-      "category": "countryside"
+      "category": "countryside",
+      "tags": [
+        "gate",
+        "fence",
+        "entrance",
+        "篱笆",
+        "大门"
+      ]
     },
     {
       "id": "scarecrow",
@@ -200,11 +301,19 @@
         "en": "Scarecrow"
       },
       "description": {
-        "zh": "戴草帽的友好稻草人，缝线麻布脸与带补丁的衬衫挂在木十字架上，轻轻摇摆。用于田野、丰收与秋日趣味。",
-        "en": "Friendly scarecrow with a straw hat, stitched burlap face and patched shirt on a wooden cross, swaying. For fields, harvest and autumn fun."
+        "zh": "戴草帽的稻草人，麻布脸缝着笑容，格子衬衫打着补丁，袖口露出稻草，手臂上还停着一只小乌鸦，轻轻摇摆。用于田野、丰收与秋日趣味。",
+        "en": "Straw-hatted scarecrow with a stitched burlap smile, a patched plaid shirt and straw poking from the cuffs, a little crow perched on one arm, swaying. For fields, harvest and autumn fun."
       },
       "animation": "sway",
-      "category": "countryside"
+      "category": "countryside",
+      "tags": [
+        "scarecrow",
+        "field",
+        "crow",
+        "autumn",
+        "稻草人",
+        "乌鸦"
+      ]
     },
     {
       "id": "cottage",
@@ -213,11 +322,18 @@
         "en": "Cottage"
       },
       "description": {
-        "zh": "温馨的奶油色小屋，陶土色屋顶、圆顶木门，烟囱冒出缕缕轻烟。用于家园、舒适与乡村生活。",
-        "en": "Cozy cream cottage with a terracotta roof, a round-top door and a chimney puffing soft smoke. For home, comfort and village life."
+        "zh": "奶油色小屋，陶土瓦屋顶、拱顶木门和挂着花箱的窗，红砖烟囱冒出缕缕轻烟。用于家园、舒适与乡村生活。",
+        "en": "Cream cottage with a terracotta tiled roof, an arched wooden door and a window box of flowers, soft smoke drifting from the brick chimney. For home, comfort and village life."
       },
       "animation": "float",
-      "category": "countryside"
+      "category": "countryside",
+      "tags": [
+        "cottage",
+        "house",
+        "home",
+        "小屋",
+        "家"
+      ]
     },
     {
       "id": "barn-owl",
@@ -226,11 +342,433 @@
         "en": "Barn owl"
       },
       "description": {
-        "zh": "黄褐色仓鸮，浅色心形脸盘，栖在枝头，黑眼睛柔和闪动。用于夜晚、智慧与静静守望。",
-        "en": "Tawny barn owl with a pale heart-shaped face perched on a branch, its dark eyes softly pulsing. For night, wisdom and quiet watch."
+        "zh": "黄褐色仓鸮，白色心形脸盘、斑点翅膀和奶油色胸羽，栖在带叶的枝头，身体轻轻起伏。用于夜晚、智慧与静静守望。",
+        "en": "Tawny barn owl with a white heart-shaped face, speckled wings and a cream breast, perched on a leafy branch and gently breathing. For night, wisdom and quiet watch."
       },
       "animation": "pulse",
-      "category": "countryside"
+      "category": "countryside",
+      "tags": [
+        "owl",
+        "night",
+        "bird",
+        "猫头鹰",
+        "夜晚"
+      ]
+    },
+    {
+      "id": "seedling",
+      "title": {
+        "zh": "幼苗盆栽",
+        "en": "Seedling pot"
+      },
+      "description": {
+        "zh": "陶土花盆里冒出一株两叶幼苗，叶尖挂着一滴水，盆边插着小标签，嫩芽轻轻摇摆。用于播种、新开始与成长。",
+        "en": "A two-leaf seedling sprouting from a terracotta pot, a water drop by its leaf and a plant tag in the soil, the sprout gently swaying. For sowing, new beginnings and growth."
+      },
+      "animation": "sway",
+      "category": "garden",
+      "tags": [
+        "seedling",
+        "sprout",
+        "pot",
+        "growth",
+        "幼苗",
+        "发芽"
+      ]
+    },
+    {
+      "id": "tomato",
+      "title": {
+        "zh": "番茄藤",
+        "en": "Tomato vine"
+      },
+      "description": {
+        "zh": "绑在木桩上的番茄藤，挂着红、橙、青三颗番茄，绿色萼片与叶片随风轻摆。用于菜园、夏季收获与新鲜食材。",
+        "en": "A tomato vine tied to a wooden stake, hanging red, orange and green tomatoes with starry calyxes and leaves, swaying lightly. For kitchen gardens, summer harvest and fresh food."
+      },
+      "animation": "sway",
+      "category": "garden",
+      "tags": [
+        "tomato",
+        "vine",
+        "vegetable",
+        "番茄",
+        "菜园"
+      ]
+    },
+    {
+      "id": "tractor",
+      "title": {
+        "zh": "小拖拉机",
+        "en": "Tractor"
+      },
+      "description": {
+        "zh": "复古红色小拖拉机，大后轮、小前轮、奶油色顶篷和蓝色车窗，排气管冒烟，车身随路面轻轻颠动。用于耕作、农机与乡村出行。",
+        "en": "Vintage red tractor with a big rear wheel, a small front wheel, a cream canopy and a blue window, puffing from its exhaust as the body bobs over the field. For ploughing, farm machinery and country rides."
+      },
+      "animation": "float",
+      "category": "farm",
+      "tags": [
+        "tractor",
+        "machine",
+        "ploughing",
+        "拖拉机",
+        "农机"
+      ]
+    },
+    {
+      "id": "hay-bale",
+      "title": {
+        "zh": "方草捆",
+        "en": "Hay bale"
+      },
+      "description": {
+        "zh": "用两道麻绳捆好的方形干草捆，三面不同明暗的草纹，边角支出几根稻草，顶上站着一只小麻雀。用于晒草、储料与秋天。",
+        "en": "Square hay bale bound with two twine bands, straw texture shaded on three faces, a few strands poking out and a little sparrow perched on top. For hay making, fodder and autumn."
+      },
+      "animation": "pop",
+      "category": "farm",
+      "tags": [
+        "hay",
+        "bale",
+        "straw",
+        "sparrow",
+        "干草",
+        "草捆"
+      ]
+    },
+    {
+      "id": "apple-tree",
+      "title": {
+        "zh": "苹果树",
+        "en": "Apple tree"
+      },
+      "description": {
+        "zh": "圆润的双色树冠缀满红苹果，粗壮树干分出两根枝杈，树下落着一红一黄两颗果子，树冠轻轻摇摆。用于果园、四季与丰收。",
+        "en": "Rounded two-tone canopy full of red apples on a sturdy forked trunk, one red and one yellow apple fallen beneath, the crown gently swaying. For orchards, seasons and harvest."
+      },
+      "animation": "sway",
+      "category": "countryside",
+      "tags": [
+        "apple",
+        "tree",
+        "orchard",
+        "苹果树",
+        "果园"
+      ]
+    },
+    {
+      "id": "weathervane",
+      "title": {
+        "zh": "公鸡风向标",
+        "en": "Rooster weathervane"
+      },
+      "description": {
+        "zh": "谷仓屋顶的小塔楼上立着铜绿色公鸡风向标，箭头和公鸡随风轻摆，下方是方位横杆。用于天气、风向与农家屋顶。",
+        "en": "A verdigris rooster weathervane on a barn-roof cupola, the arrow and rooster swinging in the wind above the direction bar. For weather, wind and farmhouse rooftops."
+      },
+      "animation": "sway",
+      "category": "countryside",
+      "tags": [
+        "weathervane",
+        "rooster",
+        "wind",
+        "weather",
+        "风向标",
+        "公鸡"
+      ]
+    },
+    {
+      "id": "sunrise-hills",
+      "title": {
+        "zh": "山丘日出",
+        "en": "Sunrise over hills"
+      },
+      "description": {
+        "zh": "圆形取景里的田园晨景：太阳从层层绿丘和麦田后升起，光芒缓缓旋转，远处有两棵小树和飞鸟。用于清晨、希望与田园风景。",
+        "en": "A round country vignette: the sun rising behind layered green hills and a furrowed wheat field, its rays slowly turning, with two little trees and birds in the distance. For mornings, hope and rural landscapes."
+      },
+      "animation": "spin",
+      "category": "countryside",
+      "tags": [
+        "sunrise",
+        "hills",
+        "landscape",
+        "morning",
+        "日出",
+        "山丘"
+      ]
+    },
+    {
+      "id": "water-well",
+      "title": {
+        "zh": "石井",
+        "en": "Stone well"
+      },
+      "description": {
+        "zh": "石砌水井配陶土瓦顶、木架和摇柄，木桶挂在绳上轻轻摇晃。用于水源、村落与旧时光。",
+        "en": "Stone well with a terracotta tiled roof, a timber frame and a crank, its wooden bucket swinging gently on the rope. For water, villages and the old days."
+      },
+      "animation": "sway",
+      "category": "countryside",
+      "tags": [
+        "well",
+        "water",
+        "bucket",
+        "village",
+        "水井",
+        "木桶"
+      ]
+    },
+    {
+      "id": "cow",
+      "title": {
+        "zh": "奶牛",
+        "en": "Cow"
+      },
+      "description": {
+        "zh": "正面的黑白花奶牛，粉色口鼻、奶油色小角、额前一撮毛，脖子上挂着金色牛铃，轻轻呼吸。用于牧场、乳制品与可爱动物。",
+        "en": "Front-facing spotted cow with a pink muzzle, cream horns and a forelock tuft, a golden bell on its collar, breathing softly. For pastures, dairy and cute animals."
+      },
+      "animation": "pulse",
+      "category": "animals",
+      "tags": [
+        "cow",
+        "dairy",
+        "pasture",
+        "animal",
+        "奶牛",
+        "牧场"
+      ]
+    },
+    {
+      "id": "sheep",
+      "title": {
+        "zh": "绵羊",
+        "en": "Sheep"
+      },
+      "description": {
+        "zh": "奶油色卷毛绵羊，深色小脸和四条细腿，脖子上系着小铃铛，在草地上轻轻跳起。用于羊毛、牧场与安眠。",
+        "en": "Fluffy cream sheep with a dark little face and four slim legs, a tiny bell at its neck, bouncing lightly on the grass. For wool, pastures and sleepy nights."
+      },
+      "animation": "float",
+      "category": "animals",
+      "tags": [
+        "sheep",
+        "wool",
+        "lamb",
+        "animal",
+        "绵羊",
+        "羊毛"
+      ]
+    },
+    {
+      "id": "pig",
+      "title": {
+        "zh": "小猪",
+        "en": "Pig"
+      },
+      "description": {
+        "zh": "粉色小猪侧身站着，圆鼻头、竖起的耳朵和卷尾巴，背上沾着一块泥点，开心地蹦一下。用于农场动物、可爱与储蓄。",
+        "en": "Pink piglet standing side-on with a round snout, perky ears and a curly tail, a smudge of mud on its back, giving a happy little hop. For farm animals, cuteness and savings."
+      },
+      "animation": "pop",
+      "category": "animals",
+      "tags": [
+        "pig",
+        "piglet",
+        "animal",
+        "小猪",
+        "猪"
+      ]
+    },
+    {
+      "id": "hen",
+      "title": {
+        "zh": "母鸡与小鸡",
+        "en": "Hen and chick"
+      },
+      "description": {
+        "zh": "红棕色母鸡，鲜红鸡冠、肉垂和三色尾羽，身旁跟着一只黄色小鸡，母鸡轻轻一蹦。用于鸡蛋、农家院子与亲子。",
+        "en": "Russet hen with a bright red comb, wattle and three-tone tail feathers, a yellow chick by her side as she gives a little hop. For eggs, farmyards and family."
+      },
+      "animation": "pop",
+      "category": "animals",
+      "tags": [
+        "hen",
+        "chicken",
+        "chick",
+        "animal",
+        "母鸡",
+        "小鸡"
+      ]
+    },
+    {
+      "id": "duck",
+      "title": {
+        "zh": "池塘小鸭",
+        "en": "Pond duck"
+      },
+      "description": {
+        "zh": "白色鸭子和橙色扁嘴，在带波纹的蓝色池塘上漂浮，旁边一片睡莲叶托着粉色小花。用于池塘、夏天与悠闲。",
+        "en": "White duck with an orange bill bobbing on a rippled blue pond, beside a lily pad holding a pink blossom. For ponds, summer and lazy days."
+      },
+      "animation": "float",
+      "category": "animals",
+      "tags": [
+        "duck",
+        "pond",
+        "water",
+        "animal",
+        "鸭子",
+        "池塘"
+      ]
+    },
+    {
+      "id": "rabbit",
+      "title": {
+        "zh": "野兔",
+        "en": "Rabbit"
+      },
+      "description": {
+        "zh": "浅棕色兔子侧坐着，长耳朵内侧粉色，白色毛球尾巴，粉鼻头和胡须，轻轻一跳。用于春天、菜园访客与可爱动物。",
+        "en": "Fawn rabbit sitting side-on with pink-lined long ears, a white cotton tail, a pink nose and whiskers, giving a small hop. For spring, garden visitors and cute animals."
+      },
+      "animation": "pop",
+      "category": "animals",
+      "tags": [
+        "rabbit",
+        "bunny",
+        "spring",
+        "animal",
+        "兔子",
+        "野兔"
+      ]
+    },
+    {
+      "id": "beehive",
+      "title": {
+        "zh": "草编蜂巢",
+        "en": "Straw skep beehive"
+      },
+      "description": {
+        "zh": "一圈圈草绳盘成的圆顶蜂巢放在木台上，拱门入口边停着一只蜜蜂，另一只沿虚线轨迹在上方飞舞。用于蜂蜜、勤劳与花园授粉。",
+        "en": "Dome skep beehive coiled from straw rope on a wooden stand, one bee resting by the arched entrance and another hovering above along a dotted trail. For honey, hard work and pollination."
+      },
+      "animation": "float",
+      "category": "animals",
+      "tags": [
+        "bee",
+        "beehive",
+        "honey",
+        "skep",
+        "蜜蜂",
+        "蜂巢"
+      ]
+    },
+    {
+      "id": "pumpkin",
+      "title": {
+        "zh": "南瓜",
+        "en": "Pumpkin"
+      },
+      "description": {
+        "zh": "三瓣饱满的橙色南瓜，带木质瓜柄、卷曲藤须和一片叶子，从地面弹起。用于秋天、丰收节与万圣节。",
+        "en": "Plump three-lobed orange pumpkin with a woody stem, a curly tendril and a leaf, popping up from the ground. For autumn, harvest festivals and Halloween."
+      },
+      "animation": "pop",
+      "category": "harvest",
+      "tags": [
+        "pumpkin",
+        "autumn",
+        "harvest",
+        "halloween",
+        "南瓜",
+        "秋天"
+      ]
+    },
+    {
+      "id": "bread-loaf",
+      "title": {
+        "zh": "乡村面包",
+        "en": "Country loaf"
+      },
+      "description": {
+        "zh": "烤得金黄的乡村面包，四道割口露出浅色内里，表面撒着面粉，放在带挂孔的木砧板上，旁边一小枝麦穗。用于烘焙、早餐与家常饭食。",
+        "en": "Golden country loaf with four scored cuts showing pale crumb and a dusting of flour, resting on a wooden board with a hanging hole and a small wheat sprig. For baking, breakfast and home cooking."
+      },
+      "animation": "float",
+      "category": "harvest",
+      "tags": [
+        "bread",
+        "bakery",
+        "loaf",
+        "breakfast",
+        "面包",
+        "烘焙"
+      ]
+    },
+    {
+      "id": "honey-jar",
+      "title": {
+        "zh": "蜂蜜罐",
+        "en": "Honey jar"
+      },
+      "description": {
+        "zh": "金色蜂蜜装在玻璃罐里，红白格子布盖着罐口并用麻绳扎好，六边形标签画着小蜜蜂，旁边斜插木蜂蜜勺。用于甜食、早餐与农家产品。",
+        "en": "A glass jar of golden honey under a red gingham cloth tied with twine, a hexagon label with a little bee and a wooden dipper leaning in. For sweets, breakfast and farm goods."
+      },
+      "animation": "pulse",
+      "category": "harvest",
+      "tags": [
+        "honey",
+        "jar",
+        "bee",
+        "sweet",
+        "蜂蜜",
+        "罐子"
+      ]
+    },
+    {
+      "id": "cheese-wheel",
+      "title": {
+        "zh": "奶酪",
+        "en": "Cheese wedge"
+      },
+      "description": {
+        "zh": "带橙色外皮的大块楔形奶酪，切面布满气孔，前面还切下一小片。用于乳制品、野餐与农家美食。",
+        "en": "A big wedge of cheese with an orange rind and holes across the cut face, a small slice already cut in front. For dairy, picnics and farmhouse food."
+      },
+      "animation": "pop",
+      "category": "harvest",
+      "tags": [
+        "cheese",
+        "dairy",
+        "picnic",
+        "奶酪",
+        "乳酪"
+      ]
+    },
+    {
+      "id": "apple-crate",
+      "title": {
+        "zh": "苹果木箱",
+        "en": "Apple crate"
+      },
+      "description": {
+        "zh": "木板条箱里堆满红、青、黄苹果，箱面印着苹果标记，顶上一片绿叶。用于果园收获、集市与新鲜水果。",
+        "en": "A slatted wooden crate piled with red, green and yellow apples, an apple mark stamped on the front and a green leaf on top. For orchard harvests, markets and fresh fruit."
+      },
+      "animation": "pop",
+      "category": "harvest",
+      "tags": [
+        "apple",
+        "crate",
+        "fruit",
+        "market",
+        "苹果",
+        "水果"
+      ]
     }
   ]
 }
