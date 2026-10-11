@@ -10,7 +10,7 @@ function childFor(kind: string | null): ReactNode {
   return null
 }
 
-export function ReactBitsMount({ name }: { name: string }) {
+export function ReactBitsMount({ name, preview = false }: { name: string; preview?: boolean }) {
   const meta = RB_META[name]
   const [Comp, setComp] = useState<ComponentType<Record<string, unknown>> | null>(null)
   const [err, setErr] = useState<string | null>(null)
@@ -41,6 +41,7 @@ export function ReactBitsMount({ name }: { name: string }) {
 
   if (err) throw new Error(err)
   if (!Comp) return <div className="lazy-placeholder">加载 react-bits…</div>
-  const props = { ...(meta?.defaults ?? {}) }
+  const props: Record<string, unknown> = { ...(meta?.defaults ?? {}) }
+  if (name === 'ReflectiveCard') props.preview = preview
   return <Comp {...props}>{childFor(meta?.childrenKind ?? null)}</Comp>
 }

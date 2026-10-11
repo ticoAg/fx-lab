@@ -79,7 +79,7 @@ export const RB_META: Record<string, RbMeta> = {
   Grainient: { name: "Grainient", childrenKind: null, defaults: {}, webgl: true },
   GridDistortion: { name: "GridDistortion", childrenKind: null, defaults: {}, webgl: true },
   GridMotion: { name: "GridMotion", childrenKind: null, defaults: {"items": ["网格运动 1", "网格运动 2", "网格运动 3", "网格运动 4"]}, webgl: false },
-  GridScan: { name: "GridScan", childrenKind: null, defaults: {}, webgl: true },
+  GridScan: { name: "GridScan", childrenKind: null, defaults: { enableWebcam: false }, webgl: true },
   HalftoneReveal: { name: "HalftoneReveal", childrenKind: "tile", defaults: {}, webgl: true },
   Hyperspeed: { name: "Hyperspeed", childrenKind: null, defaults: {}, webgl: true },
   ImageTrail: { name: "ImageTrail", childrenKind: null, defaults: {"items": ["图像拖尾 1", "图像拖尾 2", "图像拖尾 3", "图像拖尾 4"]}, webgl: false },

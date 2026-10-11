@@ -5,7 +5,7 @@ import { CurveDemo } from './demos/curves/CurveDemo.tsx'
 import { officialCurves } from './demos/curves/catalog.ts'
 import type { DemoItem } from './types.ts'
 
-export function DemoMount({ item }: { item: DemoItem }) {
+export function DemoMount({ item, preview = false }: { item: DemoItem; preview?: boolean }) {
   if (item.source === 'animejs') {
     const found = animeSetups.find((d) => d.id === item.id)
     if (!found) return <div className="fail-card">未找到 anime 演示</div>
@@ -13,7 +13,7 @@ export function DemoMount({ item }: { item: DemoItem }) {
     return <Demo />
   }
   if (item.source === 'react-bits') {
-    return <ReactBitsMount name={item.name} />
+    return <ReactBitsMount name={item.name} preview={preview} />
   }
   if (item.source === 'threeui') {
     return <ThreeUIMount exportName={item.name} />

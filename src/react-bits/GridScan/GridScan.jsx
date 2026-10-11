@@ -2,6 +2,7 @@ import * as faceapi from 'face-api.js';
 import { BloomEffect, ChromaticAberrationEffect, EffectComposer, EffectPass, RenderPass } from 'postprocessing';
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
+import { acquireSharedCamera } from '../../cameraStream.ts';
 import './GridScan.css';
 
 const vert = `
@@ -272,7 +273,7 @@ void main(){
 export const GridScan = ({
   enableWebcam = false,
   showPreview = false,
-  modelsPath = 'https://cdn.jsdelivr.net/gh/justadudewhohacks/face-api.js@0.22.2/weights',
+  modelsPath = '/models/face-api',
   sensitivity = 0.55,
   lineThickness = 1,
   linesColor = '#2F293A',
@@ -665,6 +666,7 @@ export const GridScan = ({
   }, [enableGyro, uiFaceActive]);
 
   useEffect(() => {
+    if (!enableWebcam) return;
     let canceled = false;
     const load = async () => {
       try {
@@ -681,108 +683,119 @@ export const GridScan = ({
     return () => {
       canceled = true;
     };
-  }, [modelsPath]);
+  }, [enableWebcam, modelsPath]);
 
   useEffect(() => {
-    let stop = false;
-    let lastDetect = 0;
+    if (!enableWebcam || !modelsReady) return;
     const video = videoRef.current;
+    if (!video) return;
 
-    const start = async () => {
-      if (!enableWebcam || !modelsReady) return;
-      if (!video) return;
+    let cancelled = false;
+    let paused = document.hidden;
+    let lastDetect = 0;
+    let loopQueued = false;
+    const opts = new faceapi.TinyFaceDetectorOptions({ inputSize: 320, scoreThreshold: 0.5 });
 
-      try {
-        const stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } },
-          audio: false
-        });
-        video.srcObject = stream;
-        await video.play();
-      } catch {
-        return;
-      }
-
-      const opts = new faceapi.TinyFaceDetectorOptions({ inputSize: 320, scoreThreshold: 0.5 });
-
-      const detect = async ts => {
-        if (stop) return;
-
-        if (ts - lastDetect >= 33) {
-          lastDetect = ts;
-          try {
-            const res = await faceapi.detectSingleFace(video, opts).withFaceLandmarks(true);
-            if (res && res.detection) {
-              const det = res.detection;
-              const box = det.box;
-              const vw = video.videoWidth || 1;
-              const vh = video.videoHeight || 1;
-
-              const cx = box.x + box.width * 0.5;
-              const cy = box.y + box.height * 0.5;
-              const nx = (cx / vw) * 2 - 1;
-              const ny = (cy / vh) * 2 - 1;
-              medianPush(bufX.current, nx, 5);
-              medianPush(bufY.current, ny, 5);
-              const nxm = median(bufX.current);
-              const nym = median(bufY.current);
-
-              const look = new THREE.Vector2(Math.tanh(nxm), Math.tanh(nym));
-
-              const faceSize = Math.min(1, Math.hypot(box.width / vw, box.height / vh));
-              const depthScale = 1 + depthResponse * (faceSize - 0.25);
-              lookTarget.current.copy(look.multiplyScalar(depthScale));
-
-              const leftEye = res.landmarks.getLeftEye();
-              const rightEye = res.landmarks.getRightEye();
-              const lc = centroid(leftEye);
-              const rc = centroid(rightEye);
-              const tilt = Math.atan2(rc.y - lc.y, rc.x - lc.x);
-              medianPush(bufT.current, tilt, 5);
-              tiltTarget.current = median(bufT.current);
-
-              const nose = res.landmarks.getNose();
-              const tip = nose[nose.length - 1] || nose[Math.floor(nose.length / 2)];
-              const jaw = res.landmarks.getJawOutline();
-              const leftCheek = jaw[3] || jaw[2];
-              const rightCheek = jaw[13] || jaw[14];
-              const dL = dist2(tip, leftCheek);
-              const dR = dist2(tip, rightCheek);
-              const eyeDist = Math.hypot(rc.x - lc.x, rc.y - lc.y) + 1e-6;
-              let yawSignal = THREE.MathUtils.clamp((dR - dL) / (eyeDist * 1.6), -1, 1);
-              yawSignal = Math.tanh(yawSignal);
-              medianPush(bufYaw.current, yawSignal, 5);
-              yawTarget.current = median(bufYaw.current);
-
-              setUiFaceActive(true);
-            } else {
-              setUiFaceActive(false);
-            }
-          } catch {
-            setUiFaceActive(false);
-          }
-        }
-
-        if ('requestVideoFrameCallback' in HTMLVideoElement.prototype) {
-          video.requestVideoFrameCallback(() => detect(performance.now()));
-        } else {
-          requestAnimationFrame(detect);
-        }
+    const schedule = () => {
+      if (cancelled || paused || loopQueued) return;
+      loopQueued = true;
+      const step = ts => {
+        loopQueued = false;
+        detect(ts);
       };
-
-      requestAnimationFrame(detect);
+      if (video.readyState >= 2 && typeof video.requestVideoFrameCallback === 'function') {
+        video.requestVideoFrameCallback(() => step(performance.now()));
+      } else {
+        requestAnimationFrame(step);
+      }
     };
 
-    start();
+    const detect = async ts => {
+      if (cancelled || paused) return;
+
+      if (video.readyState >= 2 && ts - lastDetect >= 33) {
+        lastDetect = ts;
+        try {
+          const res = await faceapi.detectSingleFace(video, opts).withFaceLandmarks(true);
+          if (cancelled || paused) return;
+          if (res && res.detection) {
+            const det = res.detection;
+            const box = det.box;
+            const vw = video.videoWidth || 1;
+            const vh = video.videoHeight || 1;
+
+            const cx = box.x + box.width * 0.5;
+            const cy = box.y + box.height * 0.5;
+            const nx = (cx / vw) * 2 - 1;
+            const ny = (cy / vh) * 2 - 1;
+            medianPush(bufX.current, nx, 5);
+            medianPush(bufY.current, ny, 5);
+            const nxm = median(bufX.current);
+            const nym = median(bufY.current);
+
+            const look = new THREE.Vector2(Math.tanh(nxm), Math.tanh(nym));
+
+            const faceSize = Math.min(1, Math.hypot(box.width / vw, box.height / vh));
+            const depthScale = 1 + depthResponse * (faceSize - 0.25);
+            lookTarget.current.copy(look.multiplyScalar(depthScale));
+
+            const leftEye = res.landmarks.getLeftEye();
+            const rightEye = res.landmarks.getRightEye();
+            const lc = centroid(leftEye);
+            const rc = centroid(rightEye);
+            const tilt = Math.atan2(rc.y - lc.y, rc.x - lc.x);
+            medianPush(bufT.current, tilt, 5);
+            tiltTarget.current = median(bufT.current);
+
+            const nose = res.landmarks.getNose();
+            const tip = nose[nose.length - 1] || nose[Math.floor(nose.length / 2)];
+            const jaw = res.landmarks.getJawOutline();
+            const leftCheek = jaw[3] || jaw[2];
+            const rightCheek = jaw[13] || jaw[14];
+            const dL = dist2(tip, leftCheek);
+            const dR = dist2(tip, rightCheek);
+            const eyeDist = Math.hypot(rc.x - lc.x, rc.y - lc.y) + 1e-6;
+            let yawSignal = THREE.MathUtils.clamp((dR - dL) / (eyeDist * 1.6), -1, 1);
+            yawSignal = Math.tanh(yawSignal);
+            medianPush(bufYaw.current, yawSignal, 5);
+            yawTarget.current = median(bufYaw.current);
+
+            setUiFaceActive(true);
+          } else {
+            setUiFaceActive(false);
+          }
+        } catch {
+          if (!cancelled) setUiFaceActive(false);
+        }
+      }
+
+      schedule();
+    };
+
+    const release = acquireSharedCamera({
+      video,
+      onLive: () => {
+        if (!cancelled) schedule();
+      },
+      onError: () => {
+        cancelled = true;
+        if (video.srcObject) video.srcObject = null;
+        setUiFaceActive(false);
+      }
+    });
+
+    const onVis = () => {
+      paused = document.hidden;
+      if (!paused) schedule();
+    };
+    document.addEventListener('visibilitychange', onVis);
 
     return () => {
-      stop = true;
-      if (video) {
-        const stream = video.srcObject;
-        if (stream) stream.getTracks().forEach(t => t.stop());
-        video.pause();
-        video.srcObject = null;
-      }
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVis);
+      release();
+      video.pause();
+      if (video.srcObject) video.srcObject = null;
     };
   }, [enableWebcam, modelsReady, depthResponse]);
 

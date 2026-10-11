@@ -62,7 +62,7 @@ export function App() {
               <button key={item.id} type="button" className="card" onClick={() => setActive(item)}>
                 <LazyMount webgl={item.webgl} className="stage">
                   <ErrorBoundary label={item.id}>
-                    <DemoMount item={item} />
+                    <DemoMount item={item} preview />
                   </ErrorBoundary>
                 </LazyMount>
                 <div className="card-meta">
