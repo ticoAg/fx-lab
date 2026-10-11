@@ -1,6 +1,10 @@
 {
   "themes": [
     "basics",
-    "cthulhu-mythos"
+    "cthulhu-mythos",
+    "pastoral",
+    "line-basics",
+    "druid",
+    "forest"
   ]
 }

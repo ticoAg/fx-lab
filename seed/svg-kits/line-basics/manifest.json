@@ -1,0 +1,241 @@
+{
+  "id": "line-basics",
+  "title": {
+    "zh": "简笔线条",
+    "en": "Line Basics"
+  },
+  "description": {
+    "zh": "16 个简笔画风格的线条图标：透明底上用随页面变色的圆头描边勾勒，只在眼睛、脸颊等细节点缀少量柔珊瑚与柔蓝色，亲切、友好、适合教育场景。每个图标自带 line- 前缀的轻量 CSS 动画（闪烁 / 脉冲 / 旋转 / 漂浮 / 笔迹描绘 / 轻微抖动），并尊重减少动态效果设置。80×80 画布，单文件自包含，可直接内联。",
+    "en": "16 stick-figure line icons: round-cap strokes that follow the page color (currentColor), with just a touch of soft coral and soft blue for eyes, cheeks and details. Soft, friendly and classroom-ready. Each icon ships a light line- prefixed CSS animation (flicker / pulse / spin / float / pen trace / wiggle) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
+  },
+  "cover": "sun",
+  "sheet": "elements.svg",
+  "categories": {
+    "nature": {
+      "zh": "自然与天气",
+      "en": "Nature & weather"
+    },
+    "home": {
+      "zh": "家与日常",
+      "en": "Home & everyday"
+    },
+    "travel": {
+      "zh": "出行",
+      "en": "Getting around"
+    },
+    "animals": {
+      "zh": "小动物",
+      "en": "Animals"
+    }
+  },
+  "icons": [
+    {
+      "id": "sun",
+      "title": {
+        "zh": "太阳",
+        "en": "Sun"
+      },
+      "description": {
+        "zh": "带红润脸颊的微笑线条太阳，八道光芒缓缓旋转。用于天气、早晨、温暖与好心情。",
+        "en": "Smiling stick-figure sun with rosy cheeks; its eight rays turn slowly. For weather, mornings, warmth and good moods."
+      },
+      "animation": "spin",
+      "category": "nature"
+    },
+    {
+      "id": "cloud",
+      "title": {
+        "zh": "云朵",
+        "en": "Cloud"
+      },
+      "description": {
+        "zh": "蓬松的线条云朵，轻轻上下飘动。用于天气、天空、存储与白日梦。",
+        "en": "Puffy outlined cloud drifting gently up and down. For weather, sky, storage and daydreaming."
+      },
+      "animation": "float",
+      "category": "nature"
+    },
+    {
+      "id": "rain",
+      "title": {
+        "zh": "下雨",
+        "en": "Rain"
+      },
+      "description": {
+        "zh": "小小的线条云朵，三滴柔蓝色雨滴自上而下逐笔画出。用于下雨、天气预报与浇水。",
+        "en": "Small line cloud with three soft-blue raindrops drawing themselves downward. For rain, weather forecasts and watering."
+      },
+      "animation": "sway",
+      "category": "nature"
+    },
+    {
+      "id": "moon",
+      "title": {
+        "zh": "月亮",
+        "en": "Moon"
+      },
+      "description": {
+        "zh": "线条弯月，旁边两颗小星星一闪一闪。用于夜晚、睡眠、深色模式与睡前故事。",
+        "en": "Line crescent moon with two little twinkling stars beside it. For night, sleep, dark mode and bedtime stories."
+      },
+      "animation": "pop",
+      "category": "nature"
+    },
+    {
+      "id": "star",
+      "title": {
+        "zh": "星星",
+        "en": "Star"
+      },
+      "description": {
+        "zh": "圆角五角线条星星，带一点柔珊瑚色闪光，轻轻脉动。用于收藏、评分、奖励与成就。",
+        "en": "Rounded five-point line star with a soft coral glint, gently pulsing. For favorites, ratings, rewards and achievements."
+      },
+      "animation": "pulse",
+      "category": "nature"
+    },
+    {
+      "id": "tree",
+      "title": {
+        "zh": "大树",
+        "en": "Tree"
+      },
+      "description": {
+        "zh": "简单的大树：圆圆的树冠、分叉树干和地面线，微微摇摆。用于自然、公园、成长与家谱。",
+        "en": "Simple tree with a round leafy crown, a forked trunk and a ground line, swaying a little. For nature, parks, growth and family trees."
+      },
+      "animation": "pulse",
+      "category": "nature"
+    },
+    {
+      "id": "flower",
+      "title": {
+        "zh": "小花",
+        "en": "Flower"
+      },
+      "description": {
+        "zh": "一枝线条小花：五片圆花瓣绕珊瑚色花心缓缓旋转，茎上一片叶子。用于春天、花园、礼物与善意。",
+        "en": "Stick flower with five round petals that slowly turn around a coral center, on a stem with one leaf. For spring, gardens, gifts and kindness."
+      },
+      "animation": "spin",
+      "category": "nature"
+    },
+    {
+      "id": "house",
+      "title": {
+        "zh": "房子",
+        "en": "House"
+      },
+      "description": {
+        "zh": "带烟囱、门和十字窗的小线条房子，一笔一笔画出来。用于家、地址、房产与首页。",
+        "en": "Little line house with a chimney, door and cross-paned window, drawn stroke by stroke. For home, addresses, real estate and the main page."
+      },
+      "animation": "sway",
+      "category": "home"
+    },
+    {
+      "id": "heart",
+      "title": {
+        "zh": "爱心",
+        "en": "Heart"
+      },
+      "description": {
+        "zh": "圆润的线条爱心，内衬淡珊瑚色，轻轻跳动。用于爱、点赞、收藏与健康。",
+        "en": "Rounded line heart with a soft coral wash, beating gently. For love, likes, favorites and health."
+      },
+      "animation": "pulse",
+      "category": "home"
+    },
+    {
+      "id": "cup",
+      "title": {
+        "zh": "杯子",
+        "en": "Cup"
+      },
+      "description": {
+        "zh": "放在碟子上的线条杯子，三缕热气向上逐笔飘起。用于咖啡、茶、休息与惬意的早晨。",
+        "en": "Line mug on a saucer with three wisps of steam drawing upward. For coffee, tea, breaks and cozy mornings."
+      },
+      "animation": "sway",
+      "category": "home"
+    },
+    {
+      "id": "bicycle",
+      "title": {
+        "zh": "自行车",
+        "en": "Bicycle"
+      },
+      "description": {
+        "zh": "线条自行车：带辐条的车轮不停转动，简单车架、车座与车把。用于骑行、通勤、运动与绿色出行。",
+        "en": "Stick bicycle with spoked wheels that keep turning, a simple frame, saddle and handlebar. For cycling, commuting, exercise and green travel."
+      },
+      "animation": "spin",
+      "category": "travel"
+    },
+    {
+      "id": "car",
+      "title": {
+        "zh": "小汽车",
+        "en": "Car"
+      },
+      "description": {
+        "zh": "可爱的线条小汽车：车厢、两个轮子和珊瑚色车灯，一路颠簸前行。用于驾驶、交通、停车与出行。",
+        "en": "Friendly line car with a cabin, two wheels and a coral headlight, bumping along. For driving, transport, parking and trips."
+      },
+      "animation": "pulse",
+      "category": "travel"
+    },
+    {
+      "id": "boat",
+      "title": {
+        "zh": "帆船",
+        "en": "Sailboat"
+      },
+      "description": {
+        "zh": "线条帆船，两片三角帆，在柔蓝色波浪上轻轻起伏。用于航行、度假、大海与旅程。",
+        "en": "Line sailboat with two triangular sails bobbing on soft-blue waves. For sailing, holidays, the sea and journeys."
+      },
+      "animation": "float",
+      "category": "travel"
+    },
+    {
+      "id": "bird",
+      "title": {
+        "zh": "小鸟",
+        "en": "Bird"
+      },
+      "description": {
+        "zh": "圆滚滚的线条小鸟：珊瑚色小嘴、收起的翅膀和细腿，轻轻跳动。用于鸟类、消息、自由与动态。",
+        "en": "Round little line bird with a coral beak, a tucked wing and stick legs, hopping lightly. For birds, messages, freedom and tweets."
+      },
+      "animation": "float",
+      "category": "animals"
+    },
+    {
+      "id": "fish",
+      "title": {
+        "zh": "小鱼",
+        "en": "Fish"
+      },
+      "description": {
+        "zh": "简单的线条小鱼：三角尾巴、鳃线和柔蓝色气泡，摆动身体。用于鱼类、海洋、水族馆与美食。",
+        "en": "Simple line fish with a triangle tail, gill curve and soft-blue bubbles, wiggling. For fish, the ocean, aquariums and food."
+      },
+      "animation": "pulse",
+      "category": "animals"
+    },
+    {
+      "id": "cat",
+      "title": {
+        "zh": "小猫",
+        "en": "Cat"
+      },
+      "description": {
+        "zh": "尖耳朵、胡须和珊瑚色鼻子的线条猫脸，眼睛时不时眨一下。用于宠物、可爱、居家与陪伴。",
+        "en": "Line cat face with pointy ears, whiskers and a coral nose; its eyes blink now and then. For pets, cuteness, home and companionship."
+      },
+      "animation": "pop",
+      "category": "animals"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # SVG Kits 存储与上传
 
-新主题从网站上传，不维护进 git。Git 只放应用代码，加上一份一次性种子（`seed/svg-kits/`：basics、cthulhu-mythos）。
+新主题从网站上传。Git 里的种子是 `seed/svg-kits/`：basics、cthulhu-mythos，以及 pastoral、line-basics、druid、forest（透明底，主描边 `currentColor`）。healing 没有这套图标，不在种子里。线上若已有同名主题，R2 会盖过种子，合并后需要把种子再写入 R2。
 
 ## 线上怎么读
 
@@ -24,7 +24,7 @@ Pages Function 在 `functions/api/svg-kits/[[path]].ts`：
 
 把种子写入可写存储（覆盖同 id）：
 
-- 管理页按钮「写入 basics + cthulhu-mythos 种子」→ `POST /api/svg-kits/seed`
+- 管理页按钮「写入全部种子主题」→ `POST /api/svg-kits/seed`
 - 或 `npm run seed:svg-kits`
 - 或 `SVG_KITS_ADMIN_TOKEN=... npm run seed:svg-kits -- --api https://fx-lab-5do.pages.dev`
 
@@ -47,7 +47,9 @@ bucket_name = "fx-lab-svg-kits"
 
 可选：给管理页加 Cloudflare Access，只让自己进 `/svg-kits/admin`。API 仍校验 Bearer token。
 
-## 种子目录（不要往这里加新主题）
+## 种子目录
+
+`npm run build:svg-kits` 去掉圆角底板，并把 pastoral / line-basics / druid / forest 的主描边改成 `currentColor`。目录不存在的 healing 会被跳过。之后不要再往种子里堆全新主题，走上传页。
 
 ```
 seed/svg-kits/index.json

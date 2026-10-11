@@ -1,0 +1,241 @@
+{
+  "id": "forest",
+  "title": {
+    "zh": "森林",
+    "en": "Forest"
+  },
+  "description": {
+    "zh": "16 个森林简笔画图标：透明底上，主描边跟随页面文字色，并用森林绿、苔藓绿、树皮棕、蘑菇红与萤火黄绿的平涂色块绘出蘑菇屋、猫头鹰、狐狸、萤火虫瓶等林间元素。每个图标自带 forest- 前缀的轻量 CSS 动画（摇摆 / 漂浮 / 呼吸 / 萤光明灭 / 眨眼 / 流水 / 爬行 / 闪烁 / 滴落），并尊重减少动态效果设置。80×80 画布，单文件自包含，可直接内联。",
+    "en": "16 forest stick-figure icons: flat fills and bold simple strokes in forest green, moss, bark brown, mushroom red and firefly yellow-green on a transparent ground, with strokes that follow the page color (currentColor) — mushroom house, owl, fox, firefly bottle and more. Each icon ships a light forest- prefixed CSS animation (sway / float / breathe / firefly glow / blink / flow / creep / sparkle / drip) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
+  },
+  "cover": "mushroom-house",
+  "sheet": "elements.svg",
+  "categories": {
+    "creatures": {
+      "zh": "林间动物",
+      "en": "Forest creatures"
+    },
+    "habitats": {
+      "zh": "栖所与地貌",
+      "en": "Habitats & places"
+    },
+    "flora": {
+      "zh": "林木植物",
+      "en": "Trees & flora"
+    },
+    "objects": {
+      "zh": "灯火与小物",
+      "en": "Lights & objects"
+    }
+  },
+  "icons": [
+    {
+      "id": "owl",
+      "title": {
+        "zh": "猫头鹰",
+        "en": "Owl"
+      },
+      "description": {
+        "zh": "圆滚滚的棕色猫头鹰立在枝头，竖着耳羽，奶油色大眼睛缓缓眨动。用于智慧、夜间模式与学习。",
+        "en": "Round brown owl with ear tufts perched on a branch, its big cream eyes blinking slowly. For wisdom, night mode and learning."
+      },
+      "animation": "pulse",
+      "category": "creatures"
+    },
+    {
+      "id": "fox",
+      "title": {
+        "zh": "狐狸",
+        "en": "Fox"
+      },
+      "description": {
+        "zh": "端坐的橙色小狐狸，尖耳朵奶油色嘴套，白尖大尾巴轻轻摇摆。用于好奇、机灵与玩耍。",
+        "en": "Sitting orange fox with pointed ears, a cream muzzle and a bushy white-tipped tail that wags. For curiosity, cleverness and play."
+      },
+      "animation": "sway",
+      "category": "creatures"
+    },
+    {
+      "id": "snail",
+      "title": {
+        "zh": "蜗牛",
+        "en": "Snail"
+      },
+      "description": {
+        "zh": "背着棕色螺旋壳的绿色蜗牛，竖着两根小触角，一点一点向前爬。用于慢速进度、耐心与加载中。",
+        "en": "Slow green snail with a brown spiral shell and two dotted antennae, creeping forward bit by bit. For slow progress, patience and loading."
+      },
+      "animation": "float",
+      "category": "creatures"
+    },
+    {
+      "id": "hedgehog",
+      "title": {
+        "zh": "刺猬",
+        "en": "Hedgehog"
+      },
+      "description": {
+        "zh": "棕色尖刺的小刺猬，浅棕小脸纽扣鼻，背刺随呼吸起伏。用于保护、防御与温馨。",
+        "en": "Spiky brown hedgehog with a tan face and button nose, its prickles rising and falling as it breathes. For protection, defense and coziness."
+      },
+      "animation": "pulse",
+      "category": "creatures"
+    },
+    {
+      "id": "mushroom-house",
+      "title": {
+        "zh": "蘑菇小屋",
+        "en": "Mushroom house"
+      },
+      "description": {
+        "zh": "红色斑点伞盖的蘑菇小屋，拱形木门，两扇圆窗暖光明灭。用于首页、温馨空间与森林套件封面。",
+        "en": "Red-capped mushroom cottage with cream spots, an arched door and two round windows glowing warm. For home, cozy spaces and the forest kit cover."
+      },
+      "animation": "pulse",
+      "category": "habitats"
+    },
+    {
+      "id": "tree-hollow",
+      "title": {
+        "zh": "树洞",
+        "en": "Tree hollow"
+      },
+      "description": {
+        "zh": "圆润绿冠下的粗壮树干，漆黑树洞里一双黄绿小眼睛眨呀眨。用于藏身处、收纳与秘密。",
+        "en": "Stout bark trunk under a rounded green crown, with a dark hollow where two firefly-yellow eyes blink. For hiding places, storage and secrets."
+      },
+      "animation": "pulse",
+      "category": "habitats"
+    },
+    {
+      "id": "stream-bridge",
+      "title": {
+        "zh": "溪上小桥",
+        "en": "Stream bridge"
+      },
+      "description": {
+        "zh": "弧形木板小桥配木棍栏杆，桥下蓝色溪水波纹不停流淌。用于路径、连接与跨越。",
+        "en": "Arched wooden footbridge with stick railings over a blue creek whose ripples keep flowing. For paths, connections and crossings."
+      },
+      "animation": "sway",
+      "category": "habitats"
+    },
+    {
+      "id": "birdhouse",
+      "title": {
+        "zh": "鸟屋",
+        "en": "Birdhouse"
+      },
+      "description": {
+        "zh": "立柱上的小木鸟屋，红色屋顶与圆形洞口，下方一只蓝色小鸟蹦蹦跳跳。用于巢穴、收件箱与欢迎。",
+        "en": "Little wooden birdhouse on a post with a red roof and round entry hole, and a blue bird hopping below. For nests, inbox and welcome."
+      },
+      "animation": "float",
+      "category": "habitats"
+    },
+    {
+      "id": "mossy-stone",
+      "title": {
+        "zh": "青苔石",
+        "en": "Mossy stone"
+      },
+      "description": {
+        "zh": "圆润灰石披着波浪青苔，顶上小芽轻摆，一滴露珠缓缓滑落。用于宁静、自然与稳定。",
+        "en": "Rounded grey stone wearing a wavy moss cap, a tiny sprout swaying on top and a dew drop sliding off. For calm, nature and stability."
+      },
+      "animation": "pulse",
+      "category": "habitats"
+    },
+    {
+      "id": "pine-tree",
+      "title": {
+        "zh": "松树",
+        "en": "Pine tree"
+      },
+      "description": {
+        "zh": "三层绿色三角叠成的松树，短短树干，在微风里轻轻摇摆。用于森林、户外、季节与成长。",
+        "en": "Three stacked green triangles on a short bark trunk, swaying gently in the breeze. For forests, outdoors, seasons and growth."
+      },
+      "animation": "sway",
+      "category": "flora"
+    },
+    {
+      "id": "fern",
+      "title": {
+        "zh": "蕨",
+        "en": "Fern"
+      },
+      "description": {
+        "zh": "弯弯的蕨叶，成对小叶逐渐变短，顶端卷成小卷芽，轻柔摆动。用于自然、成长与新的开始。",
+        "en": "Curved fern frond with paired leaflets tapering to a curled fiddlehead tip, waving softly. For nature, growth and new beginnings."
+      },
+      "animation": "sway",
+      "category": "flora"
+    },
+    {
+      "id": "acorn",
+      "title": {
+        "zh": "橡果",
+        "en": "Acorn"
+      },
+      "description": {
+        "zh": "圆鼓鼓的金棕橡果，网格纹果帽配弯弯果柄，在影子上方轻轻浮动。用于种子、储蓄与小小起点。",
+        "en": "Plump golden-brown acorn with a cross-hatched cap and curly stem, bobbing gently above its shadow. For seeds, saving and small beginnings."
+      },
+      "animation": "float",
+      "category": "flora"
+    },
+    {
+      "id": "mushroom-ring",
+      "title": {
+        "zh": "蘑菇圈",
+        "en": "Mushroom ring"
+      },
+      "description": {
+        "zh": "苔地上一圈红橙相间的小蘑菇，围成仙女环，上方黄绿星光闪烁。用于魔法、聚会与惊喜。",
+        "en": "Fairy ring of small red and orange toadstools on a mossy patch, with yellow-green sparkles twinkling above. For magic, gatherings and surprises."
+      },
+      "animation": "pulse",
+      "category": "flora"
+    },
+    {
+      "id": "antler-branch",
+      "title": {
+        "zh": "鹿角枝",
+        "en": "Antler branch"
+      },
+      "description": {
+        "zh": "像一对鹿角般分叉的光秃树枝，枝梢冒出嫩绿新芽，随风摇曳。用于荒野、鹿径与分支路径。",
+        "en": "Bare bark branch forking like a pair of antlers, with fresh green buds at the tips, swaying in the wind. For wilderness, deer trails and branching paths."
+      },
+      "animation": "sway",
+      "category": "flora"
+    },
+    {
+      "id": "firefly-bottle",
+      "title": {
+        "zh": "萤火虫瓶",
+        "en": "Firefly bottle"
+      },
+      "description": {
+        "zh": "软木塞玻璃瓶装着夜色，四只黄绿萤火虫轮流明灭。用于灵感、愿望、收藏与夜灯。",
+        "en": "Corked glass jar of night air holding four yellow-green fireflies that glow on and off in turn. For ideas, wishes, collections and night light."
+      },
+      "animation": "pulse",
+      "category": "objects"
+    },
+    {
+      "id": "lantern",
+      "title": {
+        "zh": "森林提灯",
+        "en": "Forest lantern"
+      },
+      "description": {
+        "zh": "挂在钩上的木框提灯，里面暖色火苗摇曳闪烁，灯身微微晃动。用于照明、指引与傍晚小径。",
+        "en": "Hanging bark-framed lantern on a hook with a warm flame flickering inside, swinging slightly. For light, guidance and evening paths."
+      },
+      "animation": "pulse",
+      "category": "objects"
+    }
+  ]
+}

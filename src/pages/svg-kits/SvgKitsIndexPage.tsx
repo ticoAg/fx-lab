@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
 import { iconUrl } from '../../content/svg-kits/index.ts'
 import { useSvgKits } from '../../content/svg-kits/useSvgKits.ts'
@@ -49,13 +50,13 @@ export function SvgKitsIndexPage() {
           {kits.map((kit) => (
             <Link key={kit.id} to={`/svg-kits/${kit.id}`} className="kit-theme-card">
               <div className="kit-theme-cover">
-                <img className="kit-theme-cover-main" src={iconUrl(kit.id, kit.cover)} alt="" width={96} height={96} />
+                <KitSvg className="kit-theme-cover-main" src={iconUrl(kit.id, kit.cover)} alt="" />
                 <div className="kit-theme-strip">
                   {kit.icons
                     .filter((i) => i.id !== kit.cover)
                     .slice(0, 6)
                     .map((i) => (
-                      <img key={i.id} src={iconUrl(kit.id, i.id)} alt="" width={36} height={36} loading="lazy" />
+                      <KitSvg key={i.id} src={iconUrl(kit.id, i.id)} alt="" />
                     ))}
                 </div>
               </div>
