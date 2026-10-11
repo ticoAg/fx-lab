@@ -2,7 +2,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { IconCard } from '../../components/svg-kits/IconCard.tsx'
 import { IconDetail } from '../../components/svg-kits/IconDetail.tsx'
+import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
+import { StageToggle } from '../../components/svg-kits/StageToggle.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
+import { isKitStage, readStoredKitStage, writeStoredKitStage, type KitStage } from '../../components/svg-kits/stageBg.ts'
 import { sheetUrl, type SvgKitIcon } from '../../content/svg-kits/index.ts'
 import { useSvgKit } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
@@ -15,6 +18,26 @@ export function SvgKitThemePage() {
   const [params, setParams] = useSearchParams()
   const [q, setQ] = useState('')
   const [cat, setCat] = useState<string>('all')
+  const urlBg = params.get('bg')
+  const bg: KitStage = isKitStage(urlBg) ? urlBg : (readStoredKitStage() ?? 'dark')
+
+  useEffect(() => {
+    writeStoredKitStage(bg)
+    if (params.get('bg') === bg) return
+    const next = new URLSearchParams(params)
+    next.set('bg', bg)
+    setParams(next, { replace: true })
+  }, [bg, params, setParams])
+
+  const setBg = useCallback(
+    (nextBg: KitStage) => {
+      writeStoredKitStage(nextBg)
+      const next = new URLSearchParams(params)
+      next.set('bg', nextBg)
+      setParams(next, { replace: true })
+    },
+    [params, setParams],
+  )
 
   useEffect(() => {
     if (kit) document.title = `${t(kit.title, lang)} · SVG Kits · fx-lab`
@@ -40,9 +63,10 @@ export function SvgKitThemePage() {
       const next = new URLSearchParams(params)
       if (icon) next.set('icon', icon.id)
       else next.delete('icon')
+      next.set('bg', bg)
       setParams(next, { replace: true })
     },
-    [params, setParams],
+    [bg, params, setParams],
   )
 
   const step = useCallback(
@@ -60,7 +84,7 @@ export function SvgKitThemePage() {
 
   if (kit === undefined) {
     return (
-      <div className="app kit-page">
+      <div className="app kit-page" data-stage={bg}>
         <SvgKitsHeader crumb={themeId} />
         <main className="kit-main">
           <p className="kit-empty">{zh ? '加载中…' : 'Loading…'}</p>
@@ -71,7 +95,7 @@ export function SvgKitThemePage() {
 
   if (!kit) {
     return (
-      <div className="app kit-page">
+      <div className="app kit-page" data-stage={bg}>
         <SvgKitsHeader crumb={themeId} />
         <main className="kit-main">
           <section className="kit-hero">
@@ -89,7 +113,7 @@ export function SvgKitThemePage() {
   const categories = Object.entries(kit.categories ?? {})
 
   return (
-    <div className="app kit-page">
+    <div className="app kit-page" data-stage={bg}>
       <SvgKitsHeader crumb={t(kit.title, lang)} />
       <main className="kit-main">
         <section className="kit-hero">
@@ -122,6 +146,7 @@ export function SvgKitThemePage() {
               ))}
             </div>
           )}
+          <StageToggle bg={bg} onChange={setBg} />
           <span className="counter">
             {items.length} / {kit.icons.length}
           </span>
@@ -129,7 +154,7 @@ export function SvgKitThemePage() {
 
         <div className="kit-icon-grid">
           {items.map((icon) => (
-            <IconCard key={icon.id} themeId={kit.id} icon={icon} onOpen={() => open(icon)} />
+            <IconCard key={icon.id} themeId={kit.id} icon={icon} bg={bg} onOpen={() => open(icon)} />
           ))}
         </div>
         {items.length === 0 && <p className="kit-empty">{zh ? '没有匹配的图标' : 'No matching icons'}</p>}
@@ -142,11 +167,27 @@ export function SvgKitThemePage() {
                 {zh ? '下载总览 SVG' : 'Download sheet'}
               </a>
             </div>
-            <img src={sheet} alt={zh ? `${kit.title.zh}总览` : `${kit.title.en} overview`} loading="lazy" />
+            <div className={`kit-sheet-stage bg-${bg}`}>
+              <KitSvg
+                src={sheet}
+                layout="intrinsic"
+                alt={zh ? `${kit.title.zh}总览` : `${kit.title.en} overview`}
+              />
+            </div>
           </section>
         )}
       </main>
-      {active && <IconDetail theme={kit} icon={active} onClose={close} onPrev={prev} onNext={next} />}
+      {active && (
+        <IconDetail
+          theme={kit}
+          icon={active}
+          bg={bg}
+          onBgChange={setBg}
+          onClose={close}
+          onPrev={prev}
+          onNext={next}
+        />
+      )}
     </div>
   )
 }

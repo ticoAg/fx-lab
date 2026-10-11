@@ -10,7 +10,7 @@ Vite + React 动效馆。四个库里能跑的官方组件挂成画廊，点进�
 - react-bits：官方 JS-CSS 组件，约 166 个
 - ThreeUI：Community 包，100 个导出
 - math-curve-loaders：官方 21 条曲线
-- SVG Kits：按主题整理的动画 SVG 图标套件，入口 [/svg-kits](https://fx-lab-5do.pages.dev/svg-kits)（种子：基础图标 12 个、克苏鲁神话 31 个）。新主题从网站上传，不写进 git。
+- SVG Kits：按主题整理的动画 SVG 图标套件，入口 [/svg-kits](https://fx-lab-5do.pages.dev/svg-kits)。种子含 basics、cthulhu-mythos，以及去掉圆角底板、主描边改为 currentColor 的 pastoral、line-basics、druid、forest。healing 没有生成，不在种子里。新主题仍从网站上传。
 
 默认中文，可切英文。卡片进视口才挂载。失败卡是官方组件没跑起来，不是自制替代。
 
@@ -49,8 +49,8 @@ npm run seed:svg-kits
 线上：https://fx-lab-5do.pages.dev/svg-kits
 
 - `/svg-kits` 主题列表
-- `/svg-kits/<themeId>` 主题页（搜索、分类、总览图）
-- `?icon=<iconId>` 打开某个图标详情（动画预览可暂停、切背景、复制 SVG、下载、复制 `<img>`）
+- `/svg-kits/<themeId>` 主题页（搜索、分类、总览图，网格背景可切深色 / 浅色 / 透明，记在 `?bg=` 和 localStorage）
+- `?icon=<iconId>` 打开某个图标详情（动画预览可暂停、背景跟随页面、复制 SVG、下载、复制 `<img>`）
 - `/svg-kits/admin` 上传：创建主题、一次选多个 SVG、填每个图标的 zh/en 标题和描述，写入对象存储
 
-画廊读 `/api/svg-kits`，不读 git 里的图标文件。`seed/svg-kits/` 只是 basics + cthulhu-mythos 的一次种子，给空存储和本地开发用。以后加主题走上传页，不要再往仓库里堆 SVG。
+画廊读 `/api/svg-kits`。线上 R2 里已有的主题会盖过同名种子，所以合并后要把种子再写入 R2，透明图标才会出现在线上。`npm run build:svg-kits` 会去掉种子里的圆角底板并把主描边改成 currentColor。以后全新主题仍走上传页。

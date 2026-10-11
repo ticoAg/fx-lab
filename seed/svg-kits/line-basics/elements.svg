@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 820" width="800" height="820" role="img" aria-label="Line Basics Icon Kit / 简笔线条图标">
+  <title>Line Basics — Icon Kit / 简笔线条图标</title>
+  <defs>
+    <filter id="line-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="0.6" stdDeviation="0.4" flood-color="#2C2C2C" flood-opacity=".18"/></filter>
+    <style>
+      .line-pop{animation:line-pop 3.2s linear infinite}
+      .line-pulse{animation:line-pulse 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .line-spin{animation:line-spin 12s linear infinite;transform-box:fill-box;transform-origin:center}
+      .line-float{animation:line-float 2.8s ease-in-out infinite}
+      .line-pulse{animation:line-pulse 3s steps(1) infinite}
+      @keyframes line-pop{0%,18%,22%,25%,53%,57%,100%{opacity:1}20%,24%,55%{opacity:.35}}
+      @keyframes line-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.85;transform:scale(1.06)}}
+      @keyframes line-spin{to{transform:rotate(360deg)}}
+      @keyframes line-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+      @keyframes line-sway{0%{stroke-dashoffset:100}60%,100%{stroke-dashoffset:0}}
+      @keyframes line-pulse{0%,86%,100%{transform:translate(0,0)}88%{transform:translate(-1.5px,.5px)}90%{transform:translate(1.5px,-.5px)}92%{transform:translate(-.5px,0)}}
+      .line-t{stroke-dasharray:100;animation:line-sway 2.6s ease-in-out infinite alternate}
+      .line-d1{animation-delay:.3s}.line-d2{animation-delay:.6s}.line-d3{animation-delay:.9s}
+      @media (prefers-reduced-motion:reduce){.line-pop,.line-pulse,.line-spin,.line-float,.line-sway,.line-t{animation:none!important;stroke-dasharray:none}}
+    </style>
+  </defs>
+  
+  <text x="400" y="44" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="currentColor">LINE BASICS — Icon Kit</text>
+  <text x="400" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#E07A5F">简笔线条 · 16 icons · line- prefixed CSS animations</text>
+  <!-- 1 sun -->
+  <g transform="translate(60,90)"><g filter="url(#line-soft)"><g class="line-spin"><path d="M58 40 L66 40 M52.7 52.7 L58.4 58.4 M40 58 L40 66 M27.3 52.7 L21.6 58.4 M22 40 L14 40 M27.3 27.3 L21.6 21.6 M40 22 L40 14 M52.7 27.3 L58.4 21.6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><circle cx="40" cy="40" r="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g fill="currentColor"><circle cx="36" cy="38" r="1.6"/><circle cx="44" cy="38" r="1.6"/></g><path d="M36 43.5 Q40 47 44 43.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><g fill="#E07A5F" opacity=".7"><circle cx="32.5" cy="43" r="1.8"/><circle cx="47.5" cy="43" r="1.8"/></g></g></g>
+  <!-- 2 cloud -->
+  <g transform="translate(260,90)"><g filter="url(#line-soft)"><g class="line-float line-d1"><path d="M22 54 H58 A11 11 0 0 0 56 34 A14 14 0 0 0 30 32 A12 12 0 0 0 22 54Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 44 Q36 41 39 44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></g></g></g>
+  <!-- 3 rain -->
+  <g transform="translate(460,90)"><g filter="url(#line-soft)"><g class="line-sway line-d2"><path d="M22 54 H58 A11 11 0 0 0 56 34 A14 14 0 0 0 30 32 A12 12 0 0 0 22 54Z" transform="translate(0 -12)" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g fill="none" stroke="#81B29A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" class="line-t" d="M29 50 L26 60"/><path pathLength="100" class="line-t" d="M40 50 L37 64"/><path pathLength="100" class="line-t" d="M51 50 L48 60"/></g></g></g></g>
+  <!-- 4 moon -->
+  <g transform="translate(660,90)"><g filter="url(#line-soft)"><path d="M44 16 A24 24 0 1 0 64 50 A19 19 0 0 1 44 16Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g class="line-pop line-d3" fill="none" stroke="#E07A5F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M58 18 V26 M54 22 H62"/><path d="M64 33 V37 M62 35 H66"/></g></g></g>
+  <!-- 5 star -->
+  <g transform="translate(60,270)"><g filter="url(#line-soft)"><g class="line-pulse"><polygon points="40,18 46.2,33.5 62.8,34.6 50,45.2 54.1,61.4 40,52.5 25.9,61.4 30,45.2 17.2,34.6 33.8,33.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 38 L36 35" fill="none" stroke="#E07A5F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></g>
+  <!-- 6 tree -->
+  <g transform="translate(260,270)"><g filter="url(#line-soft)"><g class="line-pulse line-d1"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="30" r="16"/><path d="M40 68 V40 M40 54 L32 46 M40 50 L48 43 M24 68 H56"/></g><g fill="#81B29A"><circle cx="34" cy="26" r="2"/><circle cx="46" cy="32" r="2"/></g></g></g></g>
+  <!-- 7 flower -->
+  <g transform="translate(460,270)"><g filter="url(#line-soft)"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M40 70 V40"/><path d="M40 60 Q30 58 27 48 Q36 49 40 56"/></g><g class="line-spin line-d2" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="19" r="6"/><circle cx="48.6" cy="25.2" r="6"/><circle cx="45.3" cy="35.3" r="6"/><circle cx="34.7" cy="35.3" r="6"/><circle cx="31.4" cy="25.2" r="6"/></g><circle cx="40" cy="28" r="4" fill="#E07A5F"/></g></g>
+  <!-- 8 house -->
+  <g transform="translate(660,270)"><g filter="url(#line-soft)"><g class="line-sway line-d3"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" class="line-t" d="M16 38 L40 17 L64 38"/><path pathLength="100" class="line-t" d="M22 33 V64 H58 V33"/><path pathLength="100" class="line-t" d="M50 24 V18 H56 V29"/><path pathLength="100" class="line-t" d="M29 64 V49 H39 V64"/><path pathLength="100" class="line-t" d="M45 44 H54 V53 H45Z M49.5 44 V53 M45 48.5 H54"/></g></g></g></g>
+  <!-- 9 heart -->
+  <g transform="translate(60,450)"><g filter="url(#line-soft)"><g class="line-pulse"><path d="M40 62 C20 48 14 38 18 30 C22 22 34 20 40 30 C46 20 58 22 62 30 C66 38 60 48 40 62Z" fill="#E07A5F" fill-opacity=".22" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 32 Q26 28 30 28" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></g></g></g>
+  <!-- 10 cup -->
+  <g transform="translate(260,450)"><g filter="url(#line-soft)"><g class="line-sway line-d1"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 36 H50 V52 A10 10 0 0 1 40 62 H32 A10 10 0 0 1 22 52Z"/><path d="M50 40 H54 A6 6 0 0 1 54 52 H50"/><path d="M16 67 H58"/></g><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".7"><path pathLength="100" class="line-t" d="M29 30 C26 26 32 22 29 16"/><path pathLength="100" class="line-t" d="M36 30 C33 26 39 22 36 16"/><path pathLength="100" class="line-t" d="M43 30 C40 26 46 22 43 16"/></g></g></g></g>
+  <!-- 11 bicycle -->
+  <g transform="translate(460,450)"><g filter="url(#line-soft)"><g class="line-spin line-d2" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="21" cy="52" r="12"/><path d="M21 52 L33 52 M21 52 L27 62.4 M21 52 L15 62.4 M21 52 L9 52 M21 52 L15 41.6 M21 52 L27 41.6" stroke-width="1.4" opacity=".55"/></g><g class="line-spin line-d2" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="59" cy="52" r="12"/><path d="M59 52 L71 52 M59 52 L65 62.4 M59 52 L53 62.4 M59 52 L47 52 M59 52 L53 41.6 M59 52 L65 41.6" stroke-width="1.4" opacity=".55"/></g><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 52 H37 L50 35 H31 Z M31 35 L29 29 M25 29 H33 M47.5 28 L59 52 M47.5 28 H54"/></g><circle cx="37" cy="52" r="2.6" fill="#E07A5F"/></g></g>
+  <!-- 12 car -->
+  <g transform="translate(660,450)"><g filter="url(#line-soft)"><g class="line-pulse line-d3"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M19 56 H12 V46 Q12 42 16 42 L25 29 H50 L60 42 H64 Q68 42 68 46 V56 H61 M33 56 H47"/><path d="M28 42 L32 33 H38 V42 M43 33 H48 L54 42"/><path d="M16 42 H64" opacity=".6"/><circle cx="26" cy="56" r="6"/><circle cx="54" cy="56" r="6"/></g><circle cx="64" cy="48" r="2" fill="#E07A5F"/></g></g></g>
+  <!-- 13 boat -->
+  <g transform="translate(60,630)"><g filter="url(#line-soft)"><g class="line-float"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 50 H66 L58 61 H22 Z"/><path d="M40 50 V14"/><path d="M42 18 L59 44 H42 Z"/><path d="M38 22 L24 44 H38 Z"/></g><path d="M10 68 Q15 64 20 68 T30 68 T40 68 T50 68 T60 68 T70 68" fill="none" stroke="#81B29A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g></g></g>
+  <!-- 14 bird -->
+  <g transform="translate(260,630)"><g filter="url(#line-soft)"><g class="line-float line-d1"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="38" cy="43" r="16"/><path d="M26 47 Q33 56 42 49 Q33 43 26 47Z"/><path d="M34 59 V68 M42 59 V68 M31 68 H37 M39 68 H45"/><path d="M23 37 L14 32 M22.5 42 L13 42"/></g><circle cx="44" cy="38" r="2" fill="currentColor"/><path d="M53.5 40 L62 43.5 L53.5 47 Z" fill="#E07A5F" stroke="#E07A5F" stroke-width="1.5" stroke-linejoin="round"/></g></g></g>
+  <!-- 15 fish -->
+  <g transform="translate(460,630)"><g filter="url(#line-soft)"><g class="line-pulse line-d2"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 42 Q34 22 56 42 Q34 62 14 42Z"/><path d="M56 42 L68 32 V52 Z"/><path d="M31 34 Q35 42 31 50"/></g><circle cx="23" cy="39.5" r="2" fill="currentColor"/><g fill="none" stroke="#81B29A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="22" r="3"/><circle cx="25" cy="14" r="2"/></g></g></g></g>
+  <!-- 16 cat -->
+  <g transform="translate(660,630)"><g filter="url(#line-soft)"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 34 L22 16 L36 27 Q40 26 44 27 L58 16 L56 34 Q62 45 56 54 Q49 63 40 63 Q31 63 24 54 Q18 45 24 34Z"/></g><g class="line-pop line-d3" fill="currentColor"><circle cx="33" cy="42" r="2.4"/><circle cx="47" cy="42" r="2.4"/></g><path d="M37.5 48 H42.5 L40 51 Z" fill="#E07A5F" stroke="#E07A5F" stroke-width="1.2" stroke-linejoin="round"/><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M40 51 Q38 55 35 53 M40 51 Q42 55 45 53"/><path d="M30 50 L17 48 M30 53 L17 56 M50 50 L63 48 M50 53 L63 56" opacity=".7"/></g></g></g>
+  <g font-family="system-ui,sans-serif" font-size="13" fill="currentColor">
+    <text x="100" y="194" text-anchor="middle">Sun</text><text x="100" y="212" text-anchor="middle" fill="#8A7F72">太阳</text>
+    <text x="300" y="194" text-anchor="middle">Cloud</text><text x="300" y="212" text-anchor="middle" fill="#8A7F72">云朵</text>
+    <text x="500" y="194" text-anchor="middle">Rain</text><text x="500" y="212" text-anchor="middle" fill="#8A7F72">下雨</text>
+    <text x="700" y="194" text-anchor="middle">Moon</text><text x="700" y="212" text-anchor="middle" fill="#8A7F72">月亮</text>
+    <text x="100" y="374" text-anchor="middle">Star</text><text x="100" y="392" text-anchor="middle" fill="#8A7F72">星星</text>
+    <text x="300" y="374" text-anchor="middle">Tree</text><text x="300" y="392" text-anchor="middle" fill="#8A7F72">大树</text>
+    <text x="500" y="374" text-anchor="middle">Flower</text><text x="500" y="392" text-anchor="middle" fill="#8A7F72">小花</text>
+    <text x="700" y="374" text-anchor="middle">House</text><text x="700" y="392" text-anchor="middle" fill="#8A7F72">房子</text>
+    <text x="100" y="554" text-anchor="middle">Heart</text><text x="100" y="572" text-anchor="middle" fill="#8A7F72">爱心</text>
+    <text x="300" y="554" text-anchor="middle">Cup</text><text x="300" y="572" text-anchor="middle" fill="#8A7F72">杯子</text>
+    <text x="500" y="554" text-anchor="middle">Bicycle</text><text x="500" y="572" text-anchor="middle" fill="#8A7F72">自行车</text>
+    <text x="700" y="554" text-anchor="middle">Car</text><text x="700" y="572" text-anchor="middle" fill="#8A7F72">小汽车</text>
+    <text x="100" y="734" text-anchor="middle">Sailboat</text><text x="100" y="752" text-anchor="middle" fill="#8A7F72">帆船</text>
+    <text x="300" y="734" text-anchor="middle">Bird</text><text x="300" y="752" text-anchor="middle" fill="#8A7F72">小鸟</text>
+    <text x="500" y="734" text-anchor="middle">Fish</text><text x="500" y="752" text-anchor="middle" fill="#8A7F72">小鱼</text>
+    <text x="700" y="734" text-anchor="middle">Cat</text><text x="700" y="752" text-anchor="middle" fill="#8A7F72">小猫</text>
+  </g>
+</svg>

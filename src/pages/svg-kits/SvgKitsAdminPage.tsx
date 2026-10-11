@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
 import {
   deleteSvgKit,
@@ -216,7 +217,7 @@ export function SvgKitsAdminPage() {
               {zh ? '记住口令' : 'Remember token'}
             </button>
             <button type="button" className="kit-btn" disabled={busy} onClick={seed}>
-              {zh ? '写入 basics + cthulhu-mythos 种子' : 'Seed basics + cthulhu-mythos'}
+              {zh ? '写入全部种子主题' : 'Write all seed themes'}
             </button>
           </div>
           <p className="kit-admin-note">
@@ -232,7 +233,7 @@ export function SvgKitsAdminPage() {
           <ul className="kit-admin-list">
             {(data?.themes ?? []).map((theme) => (
               <li key={theme.id}>
-                <img src={iconUrl(theme.id, theme.cover)} alt="" width={28} height={28} />
+                <KitSvg src={iconUrl(theme.id, theme.cover)} alt="" />
                 <strong>{theme.id}</strong>
                 <span>
                   {theme.icons.length} {zh ? '个图标' : 'icons'}

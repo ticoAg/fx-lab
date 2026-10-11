@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "check:svg-kits": "tsx scripts/check-svg-kits.ts",
+    "build:svg-kits": "tsx scripts/build-svg-kits.ts",
     "seed:svg-kits": "tsx scripts/seed-svg-kits.ts"
   },
   "dependencies": {
