@@ -66,19 +66,30 @@ function memoryStore(info: StoreInfo, themes: SvgKitTheme[] = []) {
   return { store, calls, manifests }
 }
 
-function putRequest(kit: SvgKitTheme, files: Record<string, string> = {}, method = 'PUT') {
+function putRequest(
+  kit: SvgKitTheme,
+  files: Record<string, string> = {},
+  method = 'PUT',
+  sheet?: string,
+) {
   return new Request(`https://example.test/api/svg-kits/${kit.id}`, {
     method,
     headers: {
       'content-type': 'application/json',
       authorization: `Bearer ${TOKEN}`,
     },
-    body: JSON.stringify({ theme: kit, files }),
+    body: JSON.stringify(sheet === undefined ? { theme: kit, files } : { theme: kit, files, sheet }),
   })
 }
 
 function range(prefix: string, count: number) {
   return Array.from({ length: count }, (_, index) => `${prefix}-${index + 1}`)
+}
+
+function paddedSvg(bytes: number) {
+  const open = '<svg xmlns="http://www.w3.org/2000/svg">'
+  const close = '</svg>'
+  return open + ' '.repeat(bytes - open.length - close.length) + close
 }
 
 async function putTheme(
@@ -87,8 +98,9 @@ async function putTheme(
   kit: SvgKitTheme,
   files: Record<string, string> = {},
   method = 'PUT',
+  sheet?: string,
 ) {
-  const response = await handleSvgKitsRequest(putRequest(kit, files, method), store, seed, {
+  const response = await handleSvgKitsRequest(putRequest(kit, files, method, sheet), store, seed, {
     adminToken: TOKEN,
     setupHint: SETUP,
   })
@@ -191,4 +203,30 @@ test('an unknown kind is rejected', async () => {
   const { response, body } = await putTheme(writable.store, seed.store, kit, { a: svg('a') })
   assert.equal(response.status, 400)
   assert.deepEqual(body.errors, ['kind must be one of icon, illustration'])
+})
+
+// Icons also stay within their theme kind's budget (see the budget test above), so only the sheet
+// is checked at the 10MB cap here.
+test('sheet uploads accept 10MB; files over 10MB and non-SVG files are rejected', async () => {
+  const writable = memoryStore({ backend: 'r2', writable: true })
+  const seed = memoryStore({ backend: 'seed', writable: false })
+  const kit = theme('merged', ['mark'])
+  const atLimit = paddedSvg(10 * 1024 * 1024)
+
+  const accepted = await putTheme(writable.store, seed.store, kit, { mark: svg('mark') }, 'PUT', atLimit)
+  assert.equal(accepted.response.status, 200)
+  assert.equal(accepted.body.ok, true)
+  assert.equal(writable.calls.putTheme, 1)
+
+  const over = paddedSvg(10 * 1024 * 1024 + 1)
+  const rejected = await putTheme(writable.store, seed.store, kit, { mark: over }, 'PUT', over)
+  assert.equal(rejected.response.status, 400)
+  assert.equal(rejected.body.error, 'invalid files')
+  assert.deepEqual(rejected.body.errors, ['icon "mark": file too large', 'sheet: file too large'])
+  assert.equal(writable.calls.putTheme, 1)
+
+  const notSvg = await putTheme(writable.store, seed.store, kit, { mark: 'not an svg' }, 'PUT', 'overview')
+  assert.equal(notSvg.response.status, 400)
+  assert.deepEqual(notSvg.body.errors, ['icon "mark": not an SVG file', 'sheet: not an SVG file'])
+  assert.equal(writable.calls.putTheme, 1)
 })

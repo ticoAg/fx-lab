@@ -39,7 +39,7 @@ manifest 的 `kind` 字段区分两类主题，列表页可按类别筛选：
 | `icon`（不写时的默认值） | 轻量图标 | 界面里的小图标 | 24 KB，200 个元素 |
 | `illustration` | 精美插画 | 细节多的插画、装饰图 | 160 KB，2500 个元素 |
 
-元素数按开始标签计数。上限定义在 `functions/_lib/model.ts` 的 `SVG_KIT_BUDGETS`，前端从那里引用。上传时只检查本次请求带的文件，超限返回 400；已存进 R2 的文件不回头检查。`npm run check:svg-kits` 对种子做同样的检查。`sheet`（总览图）不受这个上限约束，只受 512 KB 的通用上限。
+元素数按开始标签计数。上限定义在 `functions/_lib/model.ts` 的 `SVG_KIT_BUDGETS`，前端从那里引用。上传时只检查本次请求带的文件，超限返回 400；已存进 R2 的文件不回头检查。`npm run check:svg-kits` 对种子做同样的检查。`sheet`（总览图）不受这个上限约束，只受 10 MB 的通用上限（`functions/_lib/http.ts` 的 `MAX_SVG_BYTES`，图标文件也受它约束）。
 
 ## 生产要做的一次性 Cloudflare 配置
 
