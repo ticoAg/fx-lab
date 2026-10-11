@@ -116,9 +116,13 @@ cf r2 objects put models/3d/lens.glb --bucket-name fx-lab-svg-kits \
 上传新主题或替换文件后，访客最多 1 天后看到新内容。要立即生效，按 URL 清缓存（包括 `index.json` 和该主题的 `manifest.json`，每次最多 30 个 URL）：
 
 ```bash
-cf cache purge --zone <zone id> --force \
-  --body '{"files":["https://fx-lab-cdn.ticoag.fun/index.json"]}'
+cf cache purge --zone <zone id> --force --body '{"files":[
+  "https://fx-lab-cdn.ticoag.fun/index.json",
+  {"url":"https://fx-lab-cdn.ticoag.fun/index.json","headers":{"Origin":"https://fx-lab-5do.pages.dev"}}
+]}'
 ```
+
+R2 开了 CORS，响应带 `Vary: Origin`，CDN 按请求有没有 `Origin` 头分开缓存。浏览器请求带 `Origin`，所以每个地址都要清两份：不带头的一份，和带站点 `Origin` 的一份。只清前者，用 curl 看是新的，浏览器里仍是旧的。
 
 也可以在控制台 ticoag.fun → Caching → Purge Cache 操作。
 
