@@ -9,7 +9,6 @@
     "en": "16 flat line-drawn countryside icons: strokes that follow the page color (currentColor), with olive green, wheat gold and terracotta accents — straw hat, watering can, windmill, wheat and more. Each icon ships a gentle pastoral- prefixed CSS animation (float / sway / spin / pulse / pop) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
   },
   "cover": "windmill",
-  "sheet": "elements.svg",
   "categories": {
     "garden": {
       "zh": "花园菜圃",

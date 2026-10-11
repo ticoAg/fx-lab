@@ -9,7 +9,6 @@
     "en": "16 forest stick-figure icons: flat fills and bold simple strokes in forest green, moss, bark brown, mushroom red and firefly yellow-green on a transparent ground, with strokes that follow the page color (currentColor) — mushroom house, owl, fox, firefly bottle and more. Each icon ships a light forest- prefixed CSS animation (sway / float / breathe / firefly glow / blink / flow / creep / sparkle / drip) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
   },
   "cover": "mushroom-house",
-  "sheet": "elements.svg",
   "categories": {
     "creatures": {
       "zh": "林间动物",

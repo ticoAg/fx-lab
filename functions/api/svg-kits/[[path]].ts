@@ -50,13 +50,7 @@ class R2KitStore implements KitStore {
     return { body: new Uint8Array(await obj.arrayBuffer()), contentType: SVG_TYPE }
   }
 
-  async getSheet(themeId: string): Promise<AssetBody | null> {
-    const obj = await this.bucket.get(`themes/${themeId}/sheet.svg`)
-    if (!obj) return null
-    return { body: new Uint8Array(await obj.arrayBuffer()), contentType: SVG_TYPE }
-  }
-
-  async putTheme(theme: SvgKitTheme, files?: Map<string, Uint8Array>, sheet?: Uint8Array | null) {
+  async putTheme(theme: SvgKitTheme, files?: Map<string, Uint8Array>) {
     await this.bucket.put(`themes/${theme.id}/manifest.json`, JSON.stringify(theme, null, 2), {
       httpMetadata: { contentType: JSON_TYPE },
     })
@@ -66,11 +60,6 @@ class R2KitStore implements KitStore {
           httpMetadata: { contentType: SVG_TYPE },
         })
       }
-    }
-    if (sheet) {
-      await this.bucket.put(`themes/${theme.id}/sheet.svg`, sheet, {
-        httpMetadata: { contentType: SVG_TYPE },
-      })
     }
     const ids = await this.readIndex()
     if (!ids.includes(theme.id)) {
@@ -133,14 +122,6 @@ class AssetsSeedStore implements KitStore {
 
   async getIcon(themeId: string, iconId: string): Promise<AssetBody | null> {
     const res = await this.fetch(`${themeId}/icons/${iconId}.svg`)
-    if (!res.ok) return null
-    return { body: new Uint8Array(await res.arrayBuffer()), contentType: SVG_TYPE }
-  }
-
-  async getSheet(themeId: string): Promise<AssetBody | null> {
-    const theme = await this.get(themeId)
-    if (!theme?.sheet) return null
-    const res = await this.fetch(`${themeId}/${theme.sheet}`)
     if (!res.ok) return null
     return { body: new Uint8Array(await res.arrayBuffer()), contentType: SVG_TYPE }
   }

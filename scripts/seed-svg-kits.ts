@@ -28,18 +28,13 @@ async function seedViaApi(base: string) {
       const asset = await seed.getIcon(theme.id, icon.id)
       if (asset) files[icon.id] = new TextDecoder().decode(asset.body)
     }
-    let sheet: string | undefined
-    if (theme.sheet) {
-      const asset = await seed.getSheet(theme.id)
-      if (asset) sheet = new TextDecoder().decode(asset.body)
-    }
     const res = await fetch(`${base.replace(/\/$/, '')}/api/svg-kits/${theme.id}`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
         authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify({ theme, files, sheet }),
+      body: JSON.stringify({ theme, files }),
     })
     const body = (await res.json()) as { error?: string; hint?: string }
     if (!res.ok) throw new Error(`${theme.id}: ${body.error || res.status}${body.hint ? ` — ${body.hint}` : ''}`)

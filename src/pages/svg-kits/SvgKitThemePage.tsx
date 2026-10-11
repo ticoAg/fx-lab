@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useState, type CSSProperties } from 'r
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { IconCard } from '../../components/svg-kits/IconCard.tsx'
 import { IconDetail } from '../../components/svg-kits/IconDetail.tsx'
-import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
 import { StageToggle } from '../../components/svg-kits/StageToggle.tsx'
 import { StrokePicker } from '../../components/svg-kits/StrokePicker.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
@@ -19,7 +18,7 @@ import {
   writeStoredKitStroke,
   type KitStage,
 } from '../../components/svg-kits/stageBg.ts'
-import { sheetUrl, SVG_KIT_KIND_LABELS, type SvgKitIcon } from '../../content/svg-kits/index.ts'
+import { SVG_KIT_KIND_LABELS, type SvgKitIcon } from '../../content/svg-kits/index.ts'
 import { useSvgKit } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
 
@@ -144,7 +143,6 @@ export function SvgKitThemePage() {
     )
   }
 
-  const sheet = sheetUrl(kit)
   const categories = Object.entries(kit.categories ?? {})
 
   return (
@@ -205,24 +203,6 @@ export function SvgKitThemePage() {
           ))}
         </div>
         {items.length === 0 && <p className="kit-empty">{zh ? '没有匹配的图标' : 'No matching icons'}</p>}
-
-        {sheet && (
-          <section className="kit-sheet">
-            <div className="kit-sheet-head">
-              <h3>{zh ? '总览图' : 'Overview sheet'}</h3>
-              <a className="kit-btn ghost" href={sheet} download={`${kit.id}-${kit.sheet}`}>
-                {zh ? '下载总览 SVG' : 'Download sheet'}
-              </a>
-            </div>
-            <div className={`kit-sheet-stage bg-${bg}`}>
-              <KitSvg
-                src={sheet}
-                layout="intrinsic"
-                alt={zh ? `${kit.title.zh}总览` : `${kit.title.en} overview`}
-              />
-            </div>
-          </section>
-        )}
       </main>
       {active && (
         <IconDetail

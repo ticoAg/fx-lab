@@ -9,7 +9,6 @@
     "en": "31 Cthulhu Mythos icons covering Great Old Ones, alien races, eerie places and ritual artifacts. Every design is an original flat geometric / symbolic interpretation of public-domain-era mythos concepts: no game or film character likenesses and no gore (PG). A deep-sea teal, dark purple and gold palette runs through the set, and each icon carries its own ck- prefixed CSS animation (pop / float / spin / pulse / sway) so they can be inlined side by side without clashing."
   },
   "cover": "cthulhu",
-  "sheet": "elements.svg",
   "categories": {
     "entities": {
       "zh": "神祇与存在",

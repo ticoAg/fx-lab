@@ -76,8 +76,7 @@
 
 .kit-checker,
 .kit-preview.bg-checker,
-.kit-icon-stage.bg-checker,
-.kit-sheet-stage.bg-checker {
+.kit-icon-stage.bg-checker {
   background-color: #ffffff;
   background-image:
     linear-gradient(45deg, #e2e8f0 25%, transparent 25%),
@@ -980,44 +979,8 @@
 }
 
 /* ==========================================================================
-   Sheet & Detail Modals
+   Detail modal
    ========================================================================== */
-
-.kit-sheet {
-  margin-top: 36px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  overflow: hidden;
-  background: var(--surface);
-  box-shadow: var(--card-shadow);
-}
-
-.kit-sheet-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-}
-
-.kit-sheet-head h3 {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.kit-sheet-stage {
-  background: var(--stage);
-  color: var(--svg-kit-stroke);
-}
-
-.kit-sheet-stage .kit-svg,
-.kit-sheet img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 .kit-detail {
   width: min(980px, 100%);

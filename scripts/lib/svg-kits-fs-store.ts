@@ -52,31 +52,13 @@ export class FsKitStore implements KitStore {
     return { body: new Uint8Array(readFileSync(path)), contentType: SVG_TYPE }
   }
 
-  async getSheet(themeId: string): Promise<AssetBody | null> {
-    const theme = await this.get(themeId)
-    const candidates = ['sheet.svg']
-    if (theme?.sheet) candidates.push(theme.sheet)
-    for (const name of candidates) {
-      const path = join(this.themeDir(themeId), name)
-      if (existsSync(path)) return { body: new Uint8Array(readFileSync(path)), contentType: SVG_TYPE }
-    }
-    return null
-  }
-
-  async putTheme(theme: SvgKitTheme, files?: Map<string, Uint8Array>, sheet?: Uint8Array | null) {
+  async putTheme(theme: SvgKitTheme, files?: Map<string, Uint8Array>) {
     const dir = this.themeDir(theme.id)
     mkdirSync(join(dir, 'icons'), { recursive: true })
     writeFileSync(join(dir, 'manifest.json'), JSON.stringify(theme, null, 2) + '\n')
     if (files) {
       for (const [id, bytes] of files) {
         writeFileSync(join(dir, 'icons', `${id}.svg`), bytes)
-      }
-    }
-    if (sheet) writeFileSync(join(dir, 'sheet.svg'), sheet)
-    if (sheet === null) {
-      for (const name of ['sheet.svg', theme.sheet ?? '']) {
-        const path = join(dir, name)
-        if (name && existsSync(path)) rmSync(path)
       }
     }
     const ids = this.readIndex()
@@ -129,14 +111,6 @@ export class SeedDirStore implements KitStore {
     return { body: new Uint8Array(readFileSync(path)), contentType: SVG_TYPE }
   }
 
-  async getSheet(themeId: string): Promise<AssetBody | null> {
-    const theme = await this.get(themeId)
-    if (!theme?.sheet) return null
-    const path = join(this.themeDir(themeId), theme.sheet)
-    if (!existsSync(path)) return null
-    return { body: new Uint8Array(readFileSync(path)), contentType: SVG_TYPE }
-  }
-
   async putTheme() {
     throw new Error('seed store is read-only')
   }
@@ -155,10 +129,6 @@ export function seedLocalStore(seedRoot: string, dataRoot: string) {
       const dest = join(dataRoot, 'themes', id)
       mkdirSync(dest, { recursive: true })
       cpSync(join(seedRoot, id), dest, { recursive: true })
-      const theme = JSON.parse(readFileSync(join(dest, 'manifest.json'), 'utf8')) as SvgKitTheme
-      if (theme.sheet && existsSync(join(dest, theme.sheet)) && theme.sheet !== 'sheet.svg') {
-        cpSync(join(dest, theme.sheet), join(dest, 'sheet.svg'))
-      }
     }
     writeFileSync(join(dataRoot, 'index.json'), JSON.stringify({ themes: index.themes }, null, 2) + '\n')
   }

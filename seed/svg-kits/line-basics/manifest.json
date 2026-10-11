@@ -9,7 +9,6 @@
     "en": "16 stick-figure line icons: round-cap strokes that follow the page color (currentColor), with just a touch of soft coral and soft blue for eyes, cheeks and details. Soft, friendly and classroom-ready. Each icon ships a light line- prefixed CSS animation (flicker / pulse / spin / float / pen trace / wiggle) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
   },
   "cover": "sun",
-  "sheet": "elements.svg",
   "categories": {
     "nature": {
       "zh": "自然与天气",

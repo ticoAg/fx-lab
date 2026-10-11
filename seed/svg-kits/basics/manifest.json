@@ -9,7 +9,6 @@
     "en": "12 everyday UI icons in a flat geometric style with saturated colors. Each one ships a lightweight built-in CSS animation (pop / float / spin / pulse). 80×80 viewBox, self-contained single files ready to inline into pages, buttons or empty-state illustrations."
   },
   "cover": "star",
-  "sheet": "elements.svg",
   "categories": {
     "feedback": {
       "zh": "反馈与状态",

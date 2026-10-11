@@ -128,19 +128,14 @@ export async function loadSvgKit(id: string) {
   return loadSeedTheme(id)
 }
 
-export async function saveSvgKit(
-  theme: SvgKitTheme,
-  files: Record<string, string>,
-  sheet: string | undefined,
-  token: string,
-) {
+export async function saveSvgKit(theme: SvgKitTheme, files: Record<string, string>, token: string) {
   const res = await fetch(`${SVG_KITS_API}/${theme.id}`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
       authorization: `Bearer ${token}`,
     },
-    body: JSON.stringify({ theme, files, sheet }),
+    body: JSON.stringify({ theme, files }),
   })
   const data = (await res.json()) as { error?: string; errors?: string[]; hint?: string; theme?: SvgKitTheme }
   if (!res.ok) {

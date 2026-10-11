@@ -40,7 +40,6 @@ export type SvgKitTheme = {
   description: LocaleText
   kind?: SvgKitKind
   cover: string
-  sheet?: string
   categories?: Record<string, LocaleText>
   icons: SvgKitIcon[]
 }
@@ -86,9 +85,6 @@ export function validateTheme(input: unknown): { theme?: SvgKitTheme; errors: st
     errors.push(`kind must be one of ${SVG_KIT_KINDS.join(', ')}`)
   }
   if (typeof raw.cover !== 'string' || !raw.cover) errors.push('cover is required')
-  if (raw.sheet != null && (typeof raw.sheet !== 'string' || !raw.sheet.endsWith('.svg'))) {
-    errors.push('sheet must be an .svg filename')
-  }
 
   const categories: Record<string, LocaleText> = {}
   if (raw.categories != null) {
@@ -149,7 +145,6 @@ export function validateTheme(input: unknown): { theme?: SvgKitTheme; errors: st
       description: raw.description as LocaleText,
       ...(raw.kind === 'illustration' ? { kind: 'illustration' as const } : {}),
       cover: raw.cover as string,
-      ...(typeof raw.sheet === 'string' ? { sheet: raw.sheet } : {}),
       ...(Object.keys(categories).length ? { categories } : {}),
       icons,
     },

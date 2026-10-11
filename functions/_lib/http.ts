@@ -7,8 +7,7 @@ export type KitStore = {
   list(): Promise<SvgKitTheme[]>
   get(id: string): Promise<SvgKitTheme | null>
   getIcon(themeId: string, iconId: string): Promise<AssetBody | null>
-  getSheet(themeId: string): Promise<AssetBody | null>
-  putTheme(theme: SvgKitTheme, files?: Map<string, Uint8Array>, sheet?: Uint8Array | null): Promise<void>
+  putTheme(theme: SvgKitTheme, files?: Map<string, Uint8Array>): Promise<void>
   deleteTheme(id: string): Promise<boolean>
 }
 
@@ -39,7 +38,6 @@ export function overlayStore(primary: KitStore | null, seed: KitStore): KitStore
       list: () => seed.list(),
       get: (id) => seed.get(id),
       getIcon: (themeId, iconId) => seed.getIcon(themeId, iconId),
-      getSheet: (themeId) => seed.getSheet(themeId),
       putTheme: async () => {
         throw new Error('store is read-only')
       },
@@ -65,11 +63,7 @@ export function overlayStore(primary: KitStore | null, seed: KitStore): KitStore
       const store = await pick(themeId)
       return (await store.getIcon(themeId, iconId)) ?? seed.getIcon(themeId, iconId)
     },
-    async getSheet(themeId) {
-      const store = await pick(themeId)
-      return (await store.getSheet(themeId)) ?? seed.getSheet(themeId)
-    },
-    putTheme: (theme, files, sheet) => primary.putTheme(theme, files, sheet),
+    putTheme: (theme, files) => primary.putTheme(theme, files),
     deleteTheme: (id) => primary.deleteTheme(id),
   }
 }
@@ -82,8 +76,7 @@ export async function copyKits(from: KitStore, to: KitStore) {
       const asset = await from.getIcon(theme.id, icon.id)
       if (asset) files.set(icon.id, asset.body)
     }
-    const sheet = theme.sheet ? await from.getSheet(theme.id) : null
-    await to.putTheme(theme, files, sheet?.body ?? null)
+    await to.putTheme(theme, files)
     copied.push(theme.id)
   }
   return copied
@@ -105,18 +98,14 @@ function pathParts(url: URL) {
 async function readWritePayload(request: Request) {
   const contentType = request.headers.get('content-type') || ''
   const files = new Map<string, Uint8Array>()
-  let sheet: Uint8Array | null | undefined
   let themeRaw: unknown
 
   if (contentType.includes('multipart/form-data')) {
     const form = await request.formData()
     const manifest = form.get('manifest')
     themeRaw = typeof manifest === 'string' ? JSON.parse(manifest) : manifest
-    const sheetField = form.get('sheet')
-    if (sheetField instanceof File) {
-      sheet = new Uint8Array(await sheetField.arrayBuffer())
-    }
     for (const [key, value] of form.entries()) {
+      // `sheet` is a retired overview upload. Ignore it so it is not stored as an icon.
       if (key === 'manifest' || key === 'sheet' || key === 'meta') continue
       if (value instanceof File) {
         const id = key.replace(/\.svg$/i, '')
@@ -127,7 +116,6 @@ async function readWritePayload(request: Request) {
     const body = (await request.json()) as {
       theme?: unknown
       files?: Record<string, string>
-      sheet?: string | null
     }
     themeRaw = body.theme ?? body
     if (body.files) {
@@ -135,11 +123,9 @@ async function readWritePayload(request: Request) {
         files.set(id, new TextEncoder().encode(text))
       }
     }
-    if (typeof body.sheet === 'string') sheet = new TextEncoder().encode(body.sheet)
-    else if (body.sheet === null) sheet = null
   }
 
-  return { themeRaw, files, sheet }
+  return { themeRaw, files }
 }
 
 // Checks only the files in this request. Files already stored are not re-checked against the budget.
@@ -229,10 +215,6 @@ export async function handleSvgKitsRequest(
       }
       const errors: string[] = []
       ensureSvgs(payload.files, checked.theme.kind, errors)
-      if (payload.sheet) {
-        if (payload.sheet.byteLength > MAX_SVG_BYTES) errors.push('sheet: file too large')
-        if (!isSvgMarkup(new TextDecoder().decode(payload.sheet.slice(0, 400)))) errors.push('sheet: not an SVG file')
-      }
       const existing = await store.get(themeId)
       const existingIds = new Set(existing?.icons.map((icon) => icon.id) ?? [])
       // Skip icons already carried by this request or the writable theme. Anything
@@ -251,7 +233,7 @@ export async function handleSvgKitsRequest(
         if (!seedIds.has(icon.id)) errors.push(`icon "${icon.id}": missing SVG file`)
       }
       if (errors.length) return jsonResponse({ error: 'invalid files', errors }, 400)
-      await store.putTheme(checked.theme, payload.files, payload.sheet)
+      await store.putTheme(checked.theme, payload.files)
       return jsonResponse({ ok: true, theme: await store.get(themeId), store: store.info })
     }
 
@@ -266,12 +248,6 @@ export async function handleSvgKitsRequest(
       const iconId = rest[2].replace(/\.svg$/i, '')
       const asset = await live.getIcon(themeId, iconId)
       if (!asset) return jsonResponse({ error: 'icon not found' }, 404)
-      return svgResponse(asset)
-    }
-
-    if (rest.length === 2 && rest[1] === 'sheet' && method === 'GET') {
-      const asset = await live.getSheet(themeId)
-      if (!asset) return jsonResponse({ error: 'sheet not found' }, 404)
       return svgResponse(asset)
     }
 

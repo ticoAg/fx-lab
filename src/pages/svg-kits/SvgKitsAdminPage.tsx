@@ -33,7 +33,6 @@ const emptyTheme = (): Omit<SvgKitTheme, 'icons' | 'categories'> & { categories:
   description: { zh: '', en: '' },
   kind: 'icon' as SvgKitKind,
   cover: '',
-  sheet: 'elements.svg',
   categories: [],
 })
 
@@ -44,7 +43,6 @@ function themeToDraft(theme: SvgKitTheme) {
     description: { ...theme.description },
     kind: theme.kind ?? 'icon',
     cover: theme.cover,
-    sheet: theme.sheet ?? '',
     categories: Object.entries(theme.categories ?? {}).map(([key, label]) => ({
       key,
       zh: label.zh,
@@ -62,7 +60,6 @@ export function SvgKitsAdminPage() {
   const [busy, setBusy] = useState(false)
   const [draft, setDraft] = useState(emptyTheme)
   const [icons, setIcons] = useState<IconDraft[]>([])
-  const [sheetFile, setSheetFile] = useState<File | null>(null)
   const [editing, setEditing] = useState(false)
 
   useEffect(() => {
@@ -74,7 +71,6 @@ export function SvgKitsAdminPage() {
   const loadTheme = (theme: SvgKitTheme) => {
     setDraft(themeToDraft(theme))
     setIcons(theme.icons.map((icon) => ({ ...icon, hasFile: true })))
-    setSheetFile(null)
     setEditing(true)
     setStatus(null)
   }
@@ -82,7 +78,6 @@ export function SvgKitsAdminPage() {
   const reset = () => {
     setDraft(emptyTheme())
     setIcons([])
-    setSheetFile(null)
     setEditing(false)
     setStatus(null)
   }
@@ -124,7 +119,6 @@ export function SvgKitsAdminPage() {
         description: draft.description,
         ...(draft.kind === 'illustration' ? { kind: 'illustration' as const } : {}),
         cover: draft.cover || icons[0]?.id || '',
-        ...(draft.sheet ? { sheet: draft.sheet } : {}),
         ...(Object.keys(categories).length ? { categories } : {}),
         icons: icons.map((icon) => ({
           id: icon.id,
@@ -138,8 +132,7 @@ export function SvgKitsAdminPage() {
       for (const icon of icons) {
         if (icon.file) files[icon.id] = await icon.file.text()
       }
-      const sheet = sheetFile ? await sheetFile.text() : undefined
-      await saveSvgKit(theme, files, sheet, token)
+      await saveSvgKit(theme, files, token)
       setStatus(zh ? '已保存。画廊会立刻读到新主题。' : 'Saved. The gallery will pick this up immediately.')
       setEditing(true)
       reload()
@@ -362,18 +355,6 @@ export function SvgKitsAdminPage() {
               }}
             />
             {zh ? '选择或拖入一个或多个 .svg' : 'Choose or drop one or more .svg files'}
-          </label>
-          <label className="kit-field">
-            <span>{zh ? '总览图（可选）' : 'Overview sheet (optional)'}</span>
-            <input
-              type="file"
-              accept=".svg,image/svg+xml"
-              onChange={(e) => {
-                const file = e.target.files?.[0] ?? null
-                setSheetFile(file)
-                if (file) setDraft({ ...draft, sheet: file.name.toLowerCase().endsWith('.svg') ? file.name : 'elements.svg' })
-              }}
-            />
           </label>
 
           <div className="kit-admin-table-wrap">

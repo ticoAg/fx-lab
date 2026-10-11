@@ -63,21 +63,11 @@ for (const id of index.themes ?? []) {
       }
     }
   }
-  if (theme.sheet) {
-    const sheetPath = join(themeDir, theme.sheet)
-    if (!existsSync(sheetPath)) err(`${tw}: missing sheet ${theme.sheet}`)
-    else {
-      const sheet = readFileSync(sheetPath, 'utf8')
-      if (!sheet.includes('<svg')) err(`${tw}: sheet is not SVG`)
-      for (const problem of plateProblems(sheet)) err(`${tw}: sheet opaque plate (${problem})`)
-      for (const color of inkLeft(sheet, id)) err(`${tw}: sheet ink ${color} should be currentColor`)
-    }
-  }
   for (const f of readdirSync(iconsDir)) {
     if (!f.endsWith('.svg')) err(`${tw}: unexpected non-SVG file icons/${f}`)
     else if (!theme.icons.some((i) => i.id === f.slice(0, -4))) err(`${tw}: orphan file icons/${f}`)
   }
-  const allowedTop = new Set(['icons', 'manifest.json', ...(theme.sheet ? [theme.sheet] : [])])
+  const allowedTop = new Set(['icons', 'manifest.json'])
   for (const f of readdirSync(themeDir)) {
     if (!allowedTop.has(f)) err(`${tw}: orphan file ${f}`)
   }

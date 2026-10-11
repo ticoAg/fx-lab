@@ -9,7 +9,6 @@
     "en": "16 flat geometric simple-line druid / nature icons: staff, leaf crown, vine rope, moonlight amulet, beast whistle and more, drawn with strokes that follow the page color (currentColor), keeping leaf green, moonlight silver-cream and soft gold. Each icon ships a druid- prefixed CSS animation (pulse / float / spin / sway / pop) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
   },
   "cover": "ritual-circle",
-  "sheet": "elements.svg",
   "categories": {
     "gear": {
       "zh": "德鲁伊器具",

@@ -1,13 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { ensureNestedSvgViewports } from './ensureNestedSvgViewports.ts'
 import { useSvgSource } from './useSvgSource.ts'
 
 const SHADOW_STYLE = `<style>
-:host { display: block; color: inherit; }
-:host([data-layout="fill"]) { width: 100%; height: 100%; }
-:host([data-layout="intrinsic"]) { width: 100%; height: auto; }
-:host([data-layout="fill"]) > svg { width: 100%; height: 100%; display: block; overflow: visible; }
-:host([data-layout="intrinsic"]) > svg { width: 100%; height: auto; display: block; overflow: visible; }
+:host { display: block; width: 100%; height: 100%; color: inherit; }
+:host > svg { width: 100%; height: 100%; display: block; overflow: visible; }
 </style>`
 
 /**
@@ -20,12 +16,10 @@ export function KitSvg({
   src,
   alt,
   className,
-  layout = 'fill',
 }: {
   src: string
   alt: string
   className?: string
-  layout?: 'fill' | 'intrinsic'
 }) {
   const hostRef = useRef<HTMLSpanElement>(null)
   const [near, setNear] = useState(() => typeof IntersectionObserver === 'undefined')
@@ -35,7 +29,7 @@ export function KitSvg({
     const host = hostRef.current
     if (!host || !text) return
     const root = host.shadowRoot ?? host.attachShadow({ mode: 'open' })
-    root.innerHTML = `${SHADOW_STYLE}${ensureNestedSvgViewports(text)}`
+    root.innerHTML = `${SHADOW_STYLE}${text}`
   }, [text])
 
   useEffect(() => {
@@ -59,7 +53,6 @@ export function KitSvg({
     <span
       ref={hostRef}
       className={classes}
-      data-layout={layout}
       role={alt ? 'img' : undefined}
       aria-label={alt || undefined}
       aria-hidden={alt ? undefined : true}
