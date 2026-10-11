@@ -1,0 +1,237 @@
+{
+  "id": "druid",
+  "title": {
+    "zh": "德鲁伊",
+    "en": "Druid"
+  },
+  "description": {
+    "zh": "16 个自然德鲁伊主题的扁平几何简笔画图标：透明底上用随页面变色的主描边，并保留叶绿、月光银白与柔金，勾勒法杖、叶片冠、藤蔓绳、月光护符、唤兽哨等元素。每个图标自带 druid- 前缀的 CSS 动画（脉冲 / 漂浮 / 旋转 / 摇摆 / 弹跳），并尊重减少动态效果设置。80×80 画布，单文件自包含，可直接内联。",
+    "en": "16 flat geometric simple-line druid / nature icons: staff, leaf crown, vine rope, moonlight amulet, beast whistle and more, drawn with strokes that follow the page color (currentColor), keeping leaf green, moonlight silver-cream and soft gold. Each icon ships a druid- prefixed CSS animation (pulse / float / spin / sway / pop) and honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
+  },
+  "cover": "ritual-circle",
+  "sheet": "elements.svg",
+  "categories": {
+    "gear": {
+      "zh": "德鲁伊器具",
+      "en": "Druid gear"
+    },
+    "moon": {
+      "zh": "月光与夜",
+      "en": "Moon & night"
+    },
+    "beast": {
+      "zh": "野兽与山林",
+      "en": "Beasts & wilds"
+    }
+  },
+  "icons": [
+    {
+      "id": "staff",
+      "title": {
+        "zh": "法杖",
+        "en": "Druid staff"
+      },
+      "description": {
+        "zh": "弯曲树皮法杖，卷曲杖头托着柔和脉动的金色种子宝石，杖身抽出两片嫩叶。用于法术、技能与力量。",
+        "en": "Gnarled bark staff with a curled head cradling a softly pulsing golden seed-gem, two leaves budding on the shaft. For magic, skills and power."
+      },
+      "animation": "pulse",
+      "category": "gear"
+    },
+    {
+      "id": "leaf-crown",
+      "title": {
+        "zh": "叶片冠",
+        "en": "Leaf crown"
+      },
+      "description": {
+        "zh": "苔绿编织头环，一圈竖立的叶片，正前方一颗小金橡果，轻轻漂浮。用于等级、称号与成就。",
+        "en": "A woven moss circlet ringed with upright leaves and a small gold acorn at the front, gently floating. For ranks, titles and achievements."
+      },
+      "animation": "float",
+      "category": "gear"
+    },
+    {
+      "id": "vine-rope",
+      "title": {
+        "zh": "藤蔓绳",
+        "en": "Vine rope"
+      },
+      "description": {
+        "zh": "两股藤蔓扭成一条绳索，沿途长出叶片，随风摇摆。用于链接、束缚、攀爬与连接。",
+        "en": "Two twisted vine strands braided into a rope with leaves sprouting along it, swaying in a breeze. For links, binding, climbing and connections."
+      },
+      "animation": "sway",
+      "category": "gear"
+    },
+    {
+      "id": "bark-shield",
+      "title": {
+        "zh": "树皮盾",
+        "en": "Bark shield"
+      },
+      "description": {
+        "zh": "层叠树皮制成的盾牌，带木纹线条与鲜活叶片纹章，格挡般弹跳。用于防御、保护与护甲。",
+        "en": "Heater shield of layered bark with grain lines and a living leaf emblem, popping like a block. For defense, protection and armor."
+      },
+      "animation": "pop",
+      "category": "gear"
+    },
+    {
+      "id": "seed-pouch",
+      "title": {
+        "zh": "种子袋",
+        "en": "Seed pouch"
+      },
+      "description": {
+        "zh": "束口皮制种子袋，袋口系绳，旁边洒落几粒种子，一株嫩芽从袋口探出摇摆。用于背包、资源与成长。",
+        "en": "Drawstring leather pouch tied with cord, a few seeds spilled beside it and a sprout swaying from the opening. For inventory, resources and growth."
+      },
+      "animation": "sway",
+      "category": "gear"
+    },
+    {
+      "id": "ritual-circle",
+      "title": {
+        "zh": "仪式圆环",
+        "en": "Ritual circle"
+      },
+      "description": {
+        "zh": "立石仪式圆环：缓缓旋转的符文环围绕月金色三角与四块标记石。用于仪式、活动、传送与加载。",
+        "en": "Standing-stone ritual circle: a slowly turning rune ring around a moon-gold triangle and four marker stones. For rituals, events, portals and loading."
+      },
+      "animation": "spin",
+      "category": "gear"
+    },
+    {
+      "id": "moonlight-amulet",
+      "title": {
+        "zh": "月光护符",
+        "en": "Moonlight amulet"
+      },
+      "description": {
+        "zh": "系绳的银白圆形护符，金色边框内嵌一弯新月，柔和脉动发光。用于增益、祝福与夜之力量。",
+        "en": "Silver-cream disc amulet on a cord, a crescent moon set inside a gold rim, glowing with a gentle pulse. For buffs, blessings and night powers."
+      },
+      "animation": "pulse",
+      "category": "moon"
+    },
+    {
+      "id": "crescent",
+      "title": {
+        "zh": "新月",
+        "en": "Crescent moon"
+      },
+      "description": {
+        "zh": "银色描边的奶油色新月，在三颗小金星之间漂浮。用于夜间模式、睡眠、休息与月相事件。",
+        "en": "Cream crescent moon with a silver outline drifting among three small gold stars. For night mode, sleep, rest and lunar events."
+      },
+      "animation": "float",
+      "category": "moon"
+    },
+    {
+      "id": "owl",
+      "title": {
+        "zh": "夜枭",
+        "en": "Night owl"
+      },
+      "description": {
+        "zh": "栖在枝头的圆滚猫头鹰，耳羽竖起，金色喙，银月大眼睛眨动弹开。用于智慧、守望、提示与观察。",
+        "en": "Round owl perched on a branch with ear tufts, a gold beak and big moon-silver eyes that pop open. For wisdom, watch, hints and observation."
+      },
+      "animation": "pop",
+      "category": "moon"
+    },
+    {
+      "id": "dew",
+      "title": {
+        "zh": "月露",
+        "en": "Moon dew"
+      },
+      "description": {
+        "zh": "一颗带月光高光的淡色露珠，漂浮在叶片之上。用于水、治疗、法力与清新。",
+        "en": "A single pale dew drop with a moonlit highlight, floating above a leaf. For water, healing, mana and freshness."
+      },
+      "animation": "float",
+      "category": "moon"
+    },
+    {
+      "id": "stone-cairn",
+      "title": {
+        "zh": "石堆",
+        "en": "Stone cairn"
+      },
+      "description": {
+        "zh": "四块圆石堆叠的石堆，顶部有一簇苔藓，像在保持平衡般轻轻摇摆。用于路标、标记、平衡与存档点。",
+        "en": "Stacked cairn of four rounded stones with a moss tuft on top, gently swaying as if balanced. For waypoints, markers, balance and checkpoints."
+      },
+      "animation": "sway",
+      "category": "moon"
+    },
+    {
+      "id": "beast-whistle",
+      "title": {
+        "zh": "唤兽哨",
+        "en": "Beast whistle"
+      },
+      "description": {
+        "zh": "系绳的雕刻骨哨，带指孔，发出脉动的声波弧线。用于召唤、宠物、呼唤与通知。",
+        "en": "Carved bone whistle on a cord with finger holes, sending out pulsing sound arcs. For summons, pets, calls and notifications."
+      },
+      "animation": "pulse",
+      "category": "beast"
+    },
+    {
+      "id": "wolf-paw",
+      "title": {
+        "zh": "狼爪印",
+        "en": "Wolf paw"
+      },
+      "description": {
+        "zh": "树皮棕色狼爪印：主掌垫、四个椭圆趾垫与小爪尖，像新鲜足迹般弹出。用于追踪、伙伴与兽形。",
+        "en": "Bark-brown wolf paw print with a main pad, four oval toes and small claw tips, popping like a fresh track. For tracking, companions and beast forms."
+      },
+      "animation": "pop",
+      "category": "beast"
+    },
+    {
+      "id": "antlers",
+      "title": {
+        "zh": "鹿角",
+        "en": "Stag antlers"
+      },
+      "description": {
+        "zh": "从小小头部升起的对称分叉鹿角，角尖抽出新叶，轻轻漂浮。用于自然之灵、威严与野性形态。",
+        "en": "Symmetrical branching stag antlers rising from a small head shape, tips budding with leaves, gently floating. For nature spirits, majesty and wild forms."
+      },
+      "animation": "float",
+      "category": "beast"
+    },
+    {
+      "id": "mushroom",
+      "title": {
+        "zh": "林菇",
+        "en": "Forest mushroom"
+      },
+      "description": {
+        "zh": "陶土红伞盖配奶油色斑点，粗壮菌柄，根部一簇小草，冒头弹出。用于采集、药剂、消耗品与生长。",
+        "en": "Terracotta-capped toadstool with cream spots on a stout stem, a tuft of grass at its base, popping up. For foraging, potions, consumables and growth."
+      },
+      "animation": "pop",
+      "category": "beast"
+    },
+    {
+      "id": "oak-leaf",
+      "title": {
+        "zh": "橡叶",
+        "en": "Oak leaf"
+      },
+      "description": {
+        "zh": "叶绿色的分裂橡树叶，苔绿主脉与叶脉，叶柄旁一颗小橡果，随风摇摆。用于自然、季节、环保与成长属性。",
+        "en": "Lobed oak leaf in leaf green with a moss midrib and veins, a tiny acorn at its stem, swaying. For nature, seasons, eco and growth stats."
+      },
+      "animation": "sway",
+      "category": "beast"
+    }
+  ]
+}

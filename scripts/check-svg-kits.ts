@@ -7,6 +7,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { validateTheme, type SvgKitTheme } from '../functions/_lib/model.ts'
+import { inkLeft, plateProblems } from './lib/svg-kit-tiles.ts'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const seedDir = join(root, 'seed', 'svg-kits')
@@ -51,14 +52,23 @@ for (const id of index.themes ?? []) {
     const path = join(iconsDir, `${icon.id}.svg`)
     if (!existsSync(path)) err(`${tw} icon "${icon.id}": file not found`)
     else {
-      const head = readFileSync(path, 'utf8').slice(0, 400)
-      if (!head.includes('<svg')) err(`${tw} icon "${icon.id}": not an SVG file`)
+      const svg = readFileSync(path, 'utf8')
+      if (!svg.includes('<svg')) err(`${tw} icon "${icon.id}": not an SVG file`)
+      for (const problem of plateProblems(svg)) err(`${tw} icon "${icon.id}": opaque plate (${problem})`)
+      for (const color of inkLeft(svg, id)) {
+        err(`${tw} icon "${icon.id}": ink ${color} should be currentColor`)
+      }
     }
   }
   if (theme.sheet) {
     const sheetPath = join(themeDir, theme.sheet)
     if (!existsSync(sheetPath)) err(`${tw}: missing sheet ${theme.sheet}`)
-    else if (!readFileSync(sheetPath, 'utf8').includes('<svg')) err(`${tw}: sheet is not SVG`)
+    else {
+      const sheet = readFileSync(sheetPath, 'utf8')
+      if (!sheet.includes('<svg')) err(`${tw}: sheet is not SVG`)
+      for (const problem of plateProblems(sheet)) err(`${tw}: sheet opaque plate (${problem})`)
+      for (const color of inkLeft(sheet, id)) err(`${tw}: sheet ink ${color} should be currentColor`)
+    }
   }
   for (const f of readdirSync(iconsDir)) {
     if (!f.endsWith('.svg')) err(`${tw}: unexpected non-SVG file icons/${f}`)

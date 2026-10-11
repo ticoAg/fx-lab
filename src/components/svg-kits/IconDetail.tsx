@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { iconUrl, type SvgKitIcon, type SvgKitTheme } from '../../content/svg-kits/index.ts'
 import { t, useLang } from '../../i18n.ts'
+import { StageToggle } from './StageToggle.tsx'
+import { StrokePicker } from './StrokePicker.tsx'
+import type { KitStage } from './stageBg.ts'
 import { useSvgSource } from './useSvgSource.ts'
-
-type Bg = 'dark' | 'light' | 'checker'
 
 const ANIM_LABEL = {
   pop: { zh: '弹跳 pop', en: 'pop' },
@@ -17,12 +18,20 @@ const ANIM_LABEL = {
 export function IconDetail({
   theme,
   icon,
+  bg,
+  onBgChange,
+  stroke,
+  onStrokeChange,
   onClose,
   onPrev,
   onNext,
 }: {
   theme: SvgKitTheme
   icon: SvgKitIcon
+  bg: KitStage
+  onBgChange: (bg: KitStage) => void
+  stroke: string
+  onStrokeChange: (stroke: string) => void
   onClose: () => void
   onPrev: () => void
   onNext: () => void
@@ -31,7 +40,6 @@ export function IconDetail({
   const zh = lang === 'zh'
   const url = iconUrl(theme.id, icon.id)
   const { text, error } = useSvgSource(url)
-  const [bg, setBg] = useState<Bg>('dark')
   const [playing, setPlaying] = useState(true)
   const [copied, setCopied] = useState<'svg' | 'img' | null>(null)
 
@@ -106,13 +114,8 @@ export function IconDetail({
             </dl>
 
             <div className="kit-toolbar">
-              <div className="kit-seg" role="group" aria-label={zh ? '背景' : 'Background'}>
-                {(['dark', 'light', 'checker'] as const).map((b) => (
-                  <button key={b} type="button" className={bg === b ? 'active' : ''} onClick={() => setBg(b)}>
-                    {b === 'dark' ? (zh ? '深色' : 'Dark') : b === 'light' ? (zh ? '浅色' : 'Light') : zh ? '透明' : 'Alpha'}
-                  </button>
-                ))}
-              </div>
+              <StageToggle bg={bg} onChange={onBgChange} />
+              <StrokePicker bg={bg} value={stroke} onChange={onStrokeChange} />
               <button type="button" className="kit-btn ghost" onClick={() => setPlaying((p) => !p)}>
                 {playing ? (zh ? '暂停动画' : 'Pause') : zh ? '播放动画' : 'Play'}
               </button>

@@ -225,11 +225,21 @@ export async function handleSvgKitsRequest(
         if (!isSvgMarkup(new TextDecoder().decode(payload.sheet.slice(0, 400)))) errors.push('sheet: not an SVG file')
       }
       const existing = await store.get(themeId)
-      for (const icon of checked.theme.icons) {
-        const hasFile = payload.files.has(icon.id)
-        const hadFile = existing ? existing.icons.some((i) => i.id === icon.id) : false
-        const inSeed = (await seed.getIcon(themeId, icon.id)) != null
-        if (!hasFile && !hadFile && !inSeed) errors.push(`icon "${icon.id}": missing SVG file`)
+      const existingIds = new Set(existing?.icons.map((icon) => icon.id) ?? [])
+      // Skip icons already carried by this request or the writable theme. Anything
+      // left is checked against one seed manifest read. seed.getIcon per icon is an
+      // assets.fetch, and a Worker invocation fails around 50 of those ("Too many
+      // subrequests") before putTheme runs — so a 90-icon kit never partially writes.
+      const unresolved = checked.theme.icons.filter(
+        (icon) => !payload.files.has(icon.id) && !existingIds.has(icon.id),
+      )
+      let seedIds = new Set<string>()
+      if (unresolved.length) {
+        const seedTheme = await seed.get(themeId)
+        seedIds = new Set(seedTheme?.icons.map((icon) => icon.id) ?? [])
+      }
+      for (const icon of unresolved) {
+        if (!seedIds.has(icon.id)) errors.push(`icon "${icon.id}": missing SVG file`)
       }
       if (errors.length) return jsonResponse({ error: 'invalid files', errors }, 400)
       await store.putTheme(checked.theme, payload.files, payload.sheet)
