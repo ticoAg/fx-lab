@@ -11,6 +11,8 @@ Pages Function 在 `functions/api/svg-kits/[[path]].ts`：
 1. 若绑定了 R2（`SVG_KITS`），读写桶里的 JSON manifest + SVG。
 2. 若没有绑定，GET 回退到构建进 dist 的种子文件（`/seed-svg-kits/`），画廊仍能看 basics / cthulhu-mythos。写入返回 503，提示绑定 R2。
 
+线上浏览页不调用这个 API：图标、manifest 和 `index.json` 直接从 R2 的 CDN 域名 `https://fx-lab-cdn.ticoag.fun` 读（缓存 1 天），种子主题从 `/seed-svg-kits/` 读，CDN 失败才回退到 API。管理页始终用 API。详见 [deploy.md](deploy.md#cdn-与缓存)。
+
 本地 `npm run dev` 用 Vite 插件实现同一套 API，可写目录是 `.data/svg-kits/`（gitignore）。第一次启动会把种子拷进去。
 
 ## 上传

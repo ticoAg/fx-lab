@@ -7,7 +7,6 @@
   --purple-border: rgba(132, 0, 255, 0.8);
   --border-color: #2F293A;
   --background-dark: #120F17;
-  color-scheme: light dark;
 }
 
 .card-grid {
@@ -214,4 +213,5 @@
 .bento-section {
   position: relative;
   user-select: none;
+  color-scheme: light dark;
 }

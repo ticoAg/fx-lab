@@ -1,0 +1,27 @@
+# Cloudflare Pages response headers. Pages already serves these files from its edge cache;
+# these rules let browsers keep them too. HTML is left out on purpose: it keeps the Pages default
+# (max-age=0, must-revalidate) so a new deploy shows up at once. See docs/deploy.md.
+
+# Vite build output. File names carry a content hash, so a changed file gets a new URL.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static files with fixed names: one day.
+/ph/*
+  Cache-Control: public, max-age=86400
+/seed-svg-kits/*
+  Cache-Control: public, max-age=86400
+/sketchbook/*
+  Cache-Control: public, max-age=86400
+/models/*
+  Cache-Control: public, max-age=86400
+/landing-pages/meng-to-sketchbook/*
+  Cache-Control: public, max-age=86400
+/landing-pages/inner-green-assets/*
+  Cache-Control: public, max-age=86400
+/landing-pages/secret-pathways-assets/*
+  Cache-Control: public, max-age=86400
+/favicon.svg
+  Cache-Control: public, max-age=86400
+/icons.svg
+  Cache-Control: public, max-age=86400

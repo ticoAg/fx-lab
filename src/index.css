@@ -75,25 +75,30 @@ a { color: var(--accent2); text-decoration: none; }
   color: var(--text2); padding: 8px 10px; border-radius: 8px; cursor: pointer;
 }
 .sidebar button.active, .sidebar button:hover { background: var(--accent-glow); color: var(--accent2); }
-.content { flex: 1; padding: 20px 22px 48px; min-width: 0; }
+.gallery-content { flex: 1; padding: 20px 22px 48px; min-width: 0; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
 }
-.card {
+.demo-card {
   border: 1px solid var(--border); background: var(--surface);
   border-radius: var(--radius); overflow: hidden; cursor: pointer;
   text-align: left; padding: 0; color: inherit;
 }
-.card:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.stage, .stage-lg {
+.demo-card:hover, .demo-card:has(.card-open:focus-visible) { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.card-open {
+  padding: 0; border: 0; background: none; color: inherit;
+  font: inherit; text-align: left; cursor: pointer;
+}
+.card-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.demo-stage, .demo-stage-lg {
   width: 100%; overflow: hidden; background: #090a10;
   position: relative;
 }
-.stage { height: 220px; }
-.stage-lg { height: 480px; }
-.stage > *, .stage-lg > * { width: 100%; height: 100%; }
+.demo-stage { height: 220px; }
+.demo-stage-lg { height: 480px; }
+.demo-stage > *, .demo-stage-lg > * { width: 100%; height: 100%; }
 .card-meta { padding: 10px 12px 12px; }
 .card-meta h3 { margin: 0 0 4px; font-size: 14px; }
 .card-meta p { margin: 0; color: var(--text3); font-size: 12px; }
@@ -131,6 +136,7 @@ pre { margin: 0; padding: 14px; overflow: auto; background: #0a0b11; }
 code { font-family: var(--mono); font-size: 12px; line-height: 1.55; color: #d6d8e4; white-space: pre; }
 
 .anime-stage, .curve-stage { width: 100%; height: 100%; display: grid; place-items: center; color: #c7cbff; }
+.demo-center { display: grid; place-items: center; font-size: 32px; color: #c7cbff; }
 .demo-tile {
   min-width: 140px; min-height: 72px; display: grid; place-items: center;
   border-radius: 12px; background: linear-gradient(135deg, #312e81, #1e1b4b);

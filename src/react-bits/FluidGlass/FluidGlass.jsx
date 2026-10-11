@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import * as THREE from 'three';
 import { useRef, useState, useEffect, memo } from 'react';
+import { modelUrl } from '../../cdn.ts';
 import { Canvas, createPortal, useFrame, useThree } from '@react-three/fiber';
 import {
   useFBO,
@@ -113,11 +114,11 @@ const ModeWrapper = memo(function ModeWrapper({
 });
 
 function Lens({ modeProps, ...p }) {
-  return <ModeWrapper glb="/assets/3d/lens.glb" geometryKey="Cylinder" followPointer modeProps={modeProps} {...p} />;
+  return <ModeWrapper glb={modelUrl('lens.glb')} geometryKey="Cylinder" followPointer modeProps={modeProps} {...p} />;
 }
 
 function Cube({ modeProps, ...p }) {
-  return <ModeWrapper glb="/assets/3d/cube.glb" geometryKey="Cube" followPointer modeProps={modeProps} {...p} />;
+  return <ModeWrapper glb={modelUrl('cube.glb')} geometryKey="Cube" followPointer modeProps={modeProps} {...p} />;
 }
 
 function Bar({ modeProps = {}, ...p }) {
@@ -133,7 +134,7 @@ function Bar({ modeProps = {}, ...p }) {
 
   return (
     <ModeWrapper
-      glb="/assets/3d/bar.glb"
+      glb={modelUrl('bar.glb')}
       geometryKey="Cube"
       lockToBottom
       followPointer={false}
@@ -226,13 +227,14 @@ function Images() {
     group.current.children[4].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2;
   });
 
+  // Upstream uses its own demo photos (/assets/demo/cs*.webp, ~2 MB); fx-lab uses the shared placeholders.
   return (
     <group ref={group}>
-      <Image position={[-2, 0, 0]} scale={[3, height / 1.1, 1]} url="/assets/demo/cs1.webp" />
-      <Image position={[2, 0, 3]} scale={3} url="/assets/demo/cs2.webp" />
-      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/assets/demo/cs3.webp" />
-      <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/assets/demo/cs1.webp" />
-      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/assets/demo/cs2.webp" />
+      <Image position={[-2, 0, 0]} scale={[3, height / 1.1, 1]} url="/ph/1.svg" />
+      <Image position={[2, 0, 3]} scale={3} url="/ph/2.svg" />
+      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/ph/3.svg" />
+      <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/ph/1.svg" />
+      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/ph/2.svg" />
     </group>
   );
 }

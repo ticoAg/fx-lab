@@ -53,6 +53,8 @@ flowchart LR
 | 项目名 / 产物目录声明 | wrangler.toml | `name = "fx-lab"`，`pages_build_output_dir = "./dist"` |
 | Node 版本 | .nvmrc | `20` |
 | SPA 回退 | public/_redirects | `/* /index.html 200` |
+| 静态资源缓存头 | public/_headers | 见下文"CDN 与缓存" |
+| 资源 CDN 地址 | src/cdn.ts | `https://fx-lab-cdn.ticoag.fun` |
 | 本地 dev 端口、`assetsInclude` | vite.config.ts | 本地与构建配置，不是 Pages 设置 |
 
 构建命令只在控制台。wrangler.toml 里不写构建命令。
@@ -68,6 +70,62 @@ pages_build_output_dir = "./dist"
 package.json 的 `build` 脚本是 `npm run check:svg-kits && tsc -b && vite build`，控制台里填的 `npm run build` 就是它。SVG Kits 校验（scripts/check-svg-kits.ts，经 tsx 运行）只检查 `seed/svg-kits` 种子，不过则 Pages 构建失败。
 
 `functions/` 是 Cloudflare Pages Functions：`/api/svg-kits` 给画廊和上传用。没有 R2 绑定时 GET 仍能读种子，上传不可用。绑定方法见 [svg-kits.md](svg-kits.md)。不要在 wrangler.toml 加 `[build]`。
+
+## CDN 与缓存
+
+站点本身是静态的。两类资源各走一条免费路径，浏览时不调用 Pages Functions。
+
+### Pages 静态资源
+
+Pages 默认把上传的静态文件放在边缘 Tiered Cache 里，请求免费不限量。`public/_headers` 再给浏览器加缓存：
+
+| 路径 | Cache-Control | 原因 |
+| --- | --- | --- |
+| `/assets/*` | `public, max-age=31536000, immutable` | Vite 产物，文件名带内容哈希 |
+| `/ph/*`、`/seed-svg-kits/*`、`/sketchbook/*`、`/models/*`、landing-pages 的素材目录、`/favicon.svg`、`/icons.svg` | `public, max-age=86400` | 文件名固定，缓存一天 |
+| HTML | 不改（Pages 默认 `max-age=0, must-revalidate`） | 新部署立刻生效 |
+
+不要在 zone 上给 Pages 站点加"缓存一切"的规则：Pages 官方不建议，部署后会读到旧页面。
+
+### R2 走 CDN：`https://fx-lab-cdn.ticoag.fun`
+
+R2 桶 `fx-lab-svg-kits` 绑了自定义域名 `fx-lab-cdn.ticoag.fun`（zone `ticoag.fun`），整个桶通过它公开只读。桶里只有 SVG Kits 主题（`index.json`、`themes/<id>/...`）和 3D 模型（`models/3d/*.glb`），没有机密；管理口令是 Pages 环境变量。
+
+| 配置 | 值 | 怎么查 |
+| --- | --- | --- |
+| 自定义域名 | `fx-lab-cdn.ticoag.fun`，最低 TLS 1.2 | `cf r2 buckets domains custom list --bucket-name fx-lab-svg-kits` |
+| CORS | 来源 `*`，方法 GET、HEAD | `cf r2 buckets cors get fx-lab-svg-kits` |
+| 缓存规则 | zone `ticoag.fun` 的 `http_request_cache_settings`，`http.host eq "fx-lab-cdn.ticoag.fun"`：边缘 1 天，浏览器 1 天 | `cf rulesets list --zone <zone id>` |
+
+前端地址只在 `src/cdn.ts` 定义：
+
+- 3D 模型：FluidGlass（lens、cube、bar）、ModelViewer（sunglasses）用 `modelUrl()`，开发和线上都从 CDN 读。文件来自 react-bits 仓库 `public/assets/3d/`。
+- SVG Kits：线上浏览页读 `CDN/index.json`、`CDN/themes/<id>/manifest.json` 和图标，再合并构建产物里的种子；CDN 失败时退回 `/api/svg-kits`。管理页 `/svg-kits/admin` 始终读 API，看到的是最新数据。本地 dev 不走 CDN。
+
+为什么不把子域名绑到 Pages：Pages Functions 跑在缓存前面，即使缓存命中也计入 Workers 每天 10 万次的额度。绑到 R2 的请求不经过 Functions，CDN 命中也不算 R2 读取。
+
+上传或替换模型：
+
+```bash
+cf r2 objects put models/3d/lens.glb --bucket-name fx-lab-svg-kits \
+  --content-type model/gltf-binary --body @path/to/lens.glb
+```
+
+上传新主题或替换文件后，访客最多 1 天后看到新内容。要立即生效，在 Cloudflare 控制台 ticoag.fun → Caching → Purge Cache 按 URL 清除对应地址（包括 `index.json` 和该主题的 `manifest.json`）。
+
+## 免费额度
+
+本项目只用免费计划，不绑付款方式。
+
+| 资源 | 免费额度 | 本项目用量 |
+| --- | --- | --- |
+| Pages 构建 | 500 次/月，同时 1 个 | 每次 push（含预览分支）一次 |
+| Pages 静态请求 | 不限 | 页面、JS、图片、种子 SVG |
+| Pages Functions | 计入 Workers：10 万次/天，每次 10 ms CPU | 只有 `/api/svg-kits/*`：管理页读写，以及 CDN 不可用时的回退 |
+| R2 | 10 GB 存储，Class A 100 万/月，Class B 1000 万/月，出口流量免费 | 只有 CDN 未命中时才读 R2 |
+| Cache Rules | 每个 zone 10 条 | 用 1 条 |
+
+Pages CI 会按 `functions/` 目录自动生成 `_routes.json`，只有 `/api/svg-kits/*` 会调用 Functions。不要加 `/*` 这类会匹配全部路径的 Function。项目设置为 fail open：Functions 当天额度用完后跳过 Functions，只返回静态资源，此时只有管理页不可用。
 
 ## 发布流程
 

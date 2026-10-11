@@ -166,6 +166,73 @@ export function ThreeUIMount({ exportName }: { exportName: string }) {
 meta = json.loads(Path("/workspace/fx-lab/scripts/rb-meta.json").read_text())
 # extra image-ish defaults
 IMAGES = ["/ph/1.svg", "/ph/2.svg", "/ph/3.svg", "/ph/4.svg"]
+# Props the generic guesses get wrong: required props the prop scan misses, and `items` that must be objects, not strings.
+PROP_FIXES = {
+    "Ballpit": {"colors": ["#6366f1", "#818cf8", "#e8e9f0"]},
+    "Counter": {"value": 2026, "fontSize": 64},
+    "VariableProximity": {
+        "label": "近距变体字",
+        "fromFontVariationSettings": "'wght' 400, 'opsz' 9",
+        "toFontVariationSettings": "'wght' 1000, 'opsz' 40",
+        "radius": 100,
+    },
+    "Threads": {"color": [0.388, 0.4, 0.945]},
+    "MaskedHeading": {"src": IMAGES[0]},
+    "ScrollExpand": {"src": IMAGES[1]},
+    "FlyingPosters": {"items": IMAGES},
+    "ImageTrail": {"items": IMAGES},
+    "AccordionGallery": {"items": [{"image": IMAGES[i], "label": f"手风琴画廊 {i + 1}"} for i in range(4)]},
+    "CircularGallery": {"items": [{"image": IMAGES[i], "text": f"环形画廊 {i + 1}"} for i in range(4)]},
+    "DepthCarousel": {"items": [{"image": IMAGES[i], "alt": f"景深轮播 {i + 1}"} for i in range(4)]},
+    "DriftWall": {"items": [{"image": IMAGES[i], "title": f"漂移墙 {i + 1}", "href": f"#drift-{i + 1}"} for i in range(4)]},
+    "MorphSlider": {"items": [{"image": IMAGES[i], "caption": f"变形滑块 {i + 1}"} for i in range(4)]},
+    "InfiniteMenu": {
+        "items": [
+            {"image": IMAGES[i], "link": f"#item-{i + 1}", "title": f"项目 {i + 1}", "description": "react-bits"}
+            for i in range(4)
+        ]
+    },
+    "Masonry": {
+        "items": [
+            {"id": str(i + 1), "img": IMAGES[i % 4], "url": "#", "height": h}
+            for i, h in enumerate([400, 300, 500, 350, 450, 320])
+        ]
+    },
+    "FlowingMenu": {
+        "items": [
+            {"link": "#motion", "text": "运动", "image": IMAGES[0]},
+            {"link": "#lab", "text": "实验室", "image": IMAGES[1]},
+            {"link": "#components", "text": "组件", "image": IMAGES[2]},
+        ]
+    },
+    "GlassIcons": {
+        "items": [
+            {"icon": "A", "color": "blue", "label": "一"},
+            {"icon": "B", "color": "purple", "label": "二"},
+            {"icon": "C", "color": "indigo", "label": "三"},
+        ]
+    },
+    "BubbleMenu": {
+        "items": [
+            {"label": "首页", "href": "#home", "ariaLabel": "首页", "rotation": -8, "hoverStyles": {"bgColor": "#6366f1", "textColor": "#ffffff"}},
+            {"label": "组件", "href": "#components", "ariaLabel": "组件", "rotation": 8, "hoverStyles": {"bgColor": "#818cf8", "textColor": "#ffffff"}},
+            {"label": "关于", "href": "#about", "ariaLabel": "关于", "rotation": -8, "hoverStyles": {"bgColor": "#4f46e5", "textColor": "#ffffff"}},
+        ]
+    },
+    "CardNav": {
+        "items": [
+            {"label": label, "bgColor": "#1c1f2b", "textColor": "#e8e9f0", "links": [{"label": f"{label}列表", "href": f"#{slug}", "ariaLabel": label}]}
+            for label, slug in [("组件", "components"), ("曲线", "curves"), ("关于", "about")]
+        ]
+    },
+    "StaggeredMenu": {
+        "items": [
+            {"label": "首页", "ariaLabel": "首页", "link": "#home"},
+            {"label": "组件", "ariaLabel": "组件", "link": "#components"},
+            {"label": "关于", "ariaLabel": "关于", "link": "#about"},
+        ]
+    },
+}
 for item in meta:
     name = item["name"]
     props = set(item.get("props") or [])
@@ -184,12 +251,14 @@ for item in meta:
             ]
         if name == "AnimatedList":
             item["defaults"]["items"] = ["交错一项", "交错二项", "交错三项", "交错四项"]
-        if name == "LogoLoop":
-            item["defaults"]["logos"] = [
-                {"src": IMAGES[0], "alt": "A"},
-                {"src": IMAGES[1], "alt": "B"},
-                {"src": IMAGES[2], "alt": "C"},
-            ]
+    if name == "LogoLoop":
+        item["defaults"]["logos"] = [
+            {"src": IMAGES[0], "alt": "A"},
+            {"src": IMAGES[1], "alt": "B"},
+            {"src": IMAGES[2], "alt": "C"},
+        ]
+    if name in PROP_FIXES:
+        item["defaults"].update(PROP_FIXES[name])
     if name == "RotatingText":
         item["defaults"]["texts"] = ["运动", "实验室", "前端"]
     if name == "TrueFocus":
@@ -214,8 +283,8 @@ for item in meta:
         ]
     if name == "PillNav":
         item["defaults"]["items"] = [
-            {"label": "首页", "href": "#"},
-            {"label": "组件", "href": "#"},
+            {"label": "首页", "href": "#home"},
+            {"label": "组件", "href": "#components"},
         ]
     if name == "GooeyNav":
         item["defaults"]["items"] = [

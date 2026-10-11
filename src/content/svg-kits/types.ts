@@ -1,3 +1,4 @@
+import { ASSET_CDN } from '../../cdn.ts'
 import type { Lang, LocaleText } from '../../i18n.ts'
 
 export type { Lang, LocaleText }
@@ -41,19 +42,27 @@ export type SvgKitsStoreInfo = {
 export const SVG_KITS_API = '/api/svg-kits'
 export const SVG_KITS_SEED = '/seed-svg-kits'
 
-let assetMode: 'api' | 'seed' = 'api'
+// Where a theme's files are read from: cdn (R2 via CDN, same key layout as R2KitStore in functions/api/svg-kits), seed (static build output), api (Pages Function).
+export type SvgKitSource = 'cdn' | 'seed' | 'api'
 
-export function setSvgKitAssetMode(mode: 'api' | 'seed') {
-  assetMode = mode
+// Themes from R2 and from the seed can sit side by side, so the source is tracked per theme.
+const themeSources = new Map<string, SvgKitSource>()
+
+export function setSvgKitSource(themeId: string, source: SvgKitSource) {
+  themeSources.set(themeId, source)
 }
 
 export function iconUrl(themeId: string, iconId: string) {
-  if (assetMode === 'seed') return `${SVG_KITS_SEED}/${themeId}/icons/${iconId}.svg`
+  const source = themeSources.get(themeId) ?? 'api'
+  if (source === 'cdn') return `${ASSET_CDN}/themes/${themeId}/icons/${iconId}.svg`
+  if (source === 'seed') return `${SVG_KITS_SEED}/${themeId}/icons/${iconId}.svg`
   return `${SVG_KITS_API}/${themeId}/icons/${iconId}.svg`
 }
 
 export function sheetUrl(theme: SvgKitTheme) {
   if (!theme.sheet) return null
-  if (assetMode === 'seed') return `${SVG_KITS_SEED}/${theme.id}/${theme.sheet}`
+  const source = themeSources.get(theme.id) ?? 'api'
+  if (source === 'cdn') return `${ASSET_CDN}/themes/${theme.id}/sheet.svg`
+  if (source === 'seed') return `${SVG_KITS_SEED}/${theme.id}/${theme.sheet}`
   return `${SVG_KITS_API}/${theme.id}/sheet`
 }

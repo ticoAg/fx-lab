@@ -56,21 +56,27 @@ export function App() {
             </button>
           ))}
         </aside>
-        <main className="content">
+        <main className="gallery-content">
           <div className="grid">
             {items.map((item) => (
-              <button key={item.id} type="button" className="card" onClick={() => setActive(item)}>
-                <LazyMount webgl={item.webgl} className="stage">
+              // A div, not a button: many demos render their own buttons and links, which cannot nest inside a button.
+              // The title button gives keyboard users the same way into the detail view; its click bubbles to the card.
+              <div key={item.id} className="demo-card" onClick={() => setActive(item)}>
+                <LazyMount webgl={item.webgl} className="demo-stage">
                   <ErrorBoundary label={item.id}>
                     <DemoMount item={item} preview />
                   </ErrorBoundary>
                 </LazyMount>
                 <div className="card-meta">
-                  <h3>{lang === 'zh' ? item.zh : item.en}</h3>
+                  <h3>
+                    <button type="button" className="card-open">
+                      {lang === 'zh' ? item.zh : item.en}
+                    </button>
+                  </h3>
                   <p>{item.name}</p>
                   <span className="source-tag">{item.source}</span>
                 </div>
-              </button>
+              </div>
             ))}
           </div>
         </main>
@@ -89,7 +95,7 @@ export function App() {
                 {lang === 'zh' ? '返回画廊' : 'Back'}
               </button>
             </div>
-            <div className="stage-lg">
+            <div className="demo-stage-lg">
               <ErrorBoundary label={active.id}>
                 <DemoMount item={active} />
               </ErrorBoundary>

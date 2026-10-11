@@ -492,6 +492,8 @@ const Hyperspeed = ({ effectOptions = DEFAULT_EFFECT_OPTIONS }) => {
       }
 
       init() {
+        // init runs after the async loadAssets; the effect may have disposed the app (and lost its context) by then.
+        if (this.disposed) return;
         this.initPasses();
         const options = this.options;
         this.road.init();

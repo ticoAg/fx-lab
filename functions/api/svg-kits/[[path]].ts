@@ -1,25 +1,6 @@
 import { handleSvgKitsRequest, type AssetBody, type KitStore } from '../../_lib/http.ts'
 import type { StoreInfo, SvgKitTheme } from '../../_lib/model.ts'
-
-type R2ObjectBody = {
-  arrayBuffer(): Promise<ArrayBuffer>
-  text(): Promise<string>
-}
-
-type R2Bucket = {
-  get(key: string): Promise<R2ObjectBody | null>
-  put(
-    key: string,
-    value: ArrayBuffer | string | Uint8Array,
-    options?: { httpMetadata?: { contentType?: string } },
-  ): Promise<unknown>
-  delete(key: string): Promise<unknown>
-  list(opts: { prefix: string; cursor?: string }): Promise<{
-    objects: { key: string }[]
-    truncated?: boolean
-    cursor?: string
-  }>
-}
+import type { R2Bucket } from '../../_lib/r2.ts'
 
 type Fetcher = { fetch: (input: Request | string) => Promise<Response> }
 

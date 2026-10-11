@@ -1,5 +1,6 @@
-import { useEffect, useState, type ComponentType, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ComponentType, type ReactNode } from 'react'
 import { RB_META } from './catalog.ts'
+import { modelUrl } from '../../cdn.ts'
 
 const modules = import.meta.glob('../../react-bits/**/*.jsx')
 
@@ -14,6 +15,7 @@ export function ReactBitsMount({ name, preview = false }: { name: string; previe
   const meta = RB_META[name]
   const [Comp, setComp] = useState<ComponentType<Record<string, unknown>> | null>(null)
   const [err, setErr] = useState<string | null>(null)
+  const boxRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     let alive = true
@@ -43,5 +45,14 @@ export function ReactBitsMount({ name, preview = false }: { name: string; previe
   if (!Comp) return <div className="lazy-placeholder">加载 react-bits…</div>
   const props: Record<string, unknown> = { ...(meta?.defaults ?? {}) }
   if (name === 'ReflectiveCard') props.preview = preview
+  if (name === 'ModelViewer') props.url = modelUrl('sunglasses.glb')
+  // VariableProximity measures the pointer against containerRef and does nothing without it.
+  if (name === 'VariableProximity') {
+    return (
+      <div ref={boxRef} className="demo-center">
+        <Comp {...props} containerRef={boxRef} />
+      </div>
+    )
+  }
   return <Comp {...props}>{childFor(meta?.childrenKind ?? null)}</Comp>
 }

@@ -48,7 +48,7 @@ function themeToDraft(theme: SvgKitTheme) {
 export function SvgKitsAdminPage() {
   const { lang } = useLang()
   const zh = lang === 'zh'
-  const { data, loading, error, reload } = useSvgKits()
+  const { data, loading, error, reload } = useSvgKits({ fresh: true })
   const [token, setToken] = useState(readAdminToken)
   const [status, setStatus] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)

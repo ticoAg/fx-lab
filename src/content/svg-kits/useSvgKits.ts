@@ -2,14 +2,15 @@ import { useEffect, useState } from 'react'
 import { loadSvgKit, loadSvgKits, type SvgKitsListResponse } from './client.ts'
 import type { SvgKitTheme } from './types.ts'
 
-export function useSvgKits() {
+// fresh: read from the API instead of the day-long CDN cache (admin page).
+export function useSvgKits({ fresh = false }: { fresh?: boolean } = {}) {
   const [data, setData] = useState<SvgKitsListResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
 
   const reload = () => {
     setLoading(true)
-    loadSvgKits().then(
+    loadSvgKits({ fresh }).then(
       (next) => {
         setData(next)
         setError(null)
