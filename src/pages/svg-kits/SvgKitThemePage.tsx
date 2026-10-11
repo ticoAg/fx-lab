@@ -1,11 +1,23 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState, type CSSProperties } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { IconCard } from '../../components/svg-kits/IconCard.tsx'
 import { IconDetail } from '../../components/svg-kits/IconDetail.tsx'
 import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
 import { StageToggle } from '../../components/svg-kits/StageToggle.tsx'
+import { StrokePicker } from '../../components/svg-kits/StrokePicker.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
-import { isKitStage, readStoredKitStage, writeStoredKitStage, type KitStage } from '../../components/svg-kits/stageBg.ts'
+import {
+  isKitStage,
+  isStageDefaultStroke,
+  normalizeStroke,
+  readStoredKitStage,
+  readStoredKitStroke,
+  resolveKitStroke,
+  stageDefaultStroke,
+  writeStoredKitStage,
+  writeStoredKitStroke,
+  type KitStage,
+} from '../../components/svg-kits/stageBg.ts'
 import { sheetUrl, type SvgKitIcon } from '../../content/svg-kits/index.ts'
 import { useSvgKit } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
@@ -20,23 +32,44 @@ export function SvgKitThemePage() {
   const [cat, setCat] = useState<string>('all')
   const urlBg = params.get('bg')
   const bg: KitStage = isKitStage(urlBg) ? urlBg : (readStoredKitStage() ?? 'dark')
+  const stroke = resolveKitStroke(bg, params.get('stroke'), readStoredKitStroke())
+  const pageStyle = { '--svg-kit-stroke': stroke } as CSSProperties
 
   useEffect(() => {
     writeStoredKitStage(bg)
-    if (params.get('bg') === bg) return
+    writeStoredKitStroke(stroke)
+    const strokeParam = stroke.slice(1)
+    if (params.get('bg') === bg && params.get('stroke') === strokeParam) return
     const next = new URLSearchParams(params)
     next.set('bg', bg)
+    next.set('stroke', strokeParam)
     setParams(next, { replace: true })
-  }, [bg, params, setParams])
+  }, [bg, stroke, params, setParams])
 
   const setBg = useCallback(
     (nextBg: KitStage) => {
+      const nextStroke = isStageDefaultStroke(stroke) ? stageDefaultStroke(nextBg) : stroke
       writeStoredKitStage(nextBg)
+      writeStoredKitStroke(nextStroke)
       const next = new URLSearchParams(params)
       next.set('bg', nextBg)
+      next.set('stroke', nextStroke.slice(1))
       setParams(next, { replace: true })
     },
-    [params, setParams],
+    [params, setParams, stroke],
+  )
+
+  const setStroke = useCallback(
+    (nextStroke: string) => {
+      const color = normalizeStroke(nextStroke)
+      if (!color) return
+      writeStoredKitStroke(color)
+      const next = new URLSearchParams(params)
+      next.set('bg', bg)
+      next.set('stroke', color.slice(1))
+      setParams(next, { replace: true })
+    },
+    [bg, params, setParams],
   )
 
   useEffect(() => {
@@ -64,9 +97,10 @@ export function SvgKitThemePage() {
       if (icon) next.set('icon', icon.id)
       else next.delete('icon')
       next.set('bg', bg)
+      next.set('stroke', stroke.slice(1))
       setParams(next, { replace: true })
     },
-    [bg, params, setParams],
+    [bg, params, setParams, stroke],
   )
 
   const step = useCallback(
@@ -84,7 +118,7 @@ export function SvgKitThemePage() {
 
   if (kit === undefined) {
     return (
-      <div className="app kit-page" data-stage={bg}>
+      <div className="app kit-page" data-stage={bg} style={pageStyle}>
         <SvgKitsHeader crumb={themeId} />
         <main className="kit-main">
           <p className="kit-empty">{zh ? '加载中…' : 'Loading…'}</p>
@@ -95,7 +129,7 @@ export function SvgKitThemePage() {
 
   if (!kit) {
     return (
-      <div className="app kit-page" data-stage={bg}>
+      <div className="app kit-page" data-stage={bg} style={pageStyle}>
         <SvgKitsHeader crumb={themeId} />
         <main className="kit-main">
           <section className="kit-hero">
@@ -113,7 +147,7 @@ export function SvgKitThemePage() {
   const categories = Object.entries(kit.categories ?? {})
 
   return (
-    <div className="app kit-page" data-stage={bg}>
+    <div className="app kit-page" data-stage={bg} style={pageStyle}>
       <SvgKitsHeader crumb={t(kit.title, lang)} />
       <main className="kit-main">
         <section className="kit-hero">
@@ -147,6 +181,7 @@ export function SvgKitThemePage() {
             </div>
           )}
           <StageToggle bg={bg} onChange={setBg} />
+          <StrokePicker bg={bg} value={stroke} onChange={setStroke} />
           <span className="counter">
             {items.length} / {kit.icons.length}
           </span>
@@ -183,6 +218,8 @@ export function SvgKitThemePage() {
           icon={active}
           bg={bg}
           onBgChange={setBg}
+          stroke={stroke}
+          onStrokeChange={setStroke}
           onClose={close}
           onPrev={prev}
           onNext={next}

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { iconUrl, type SvgKitIcon, type SvgKitTheme } from '../../content/svg-kits/index.ts'
 import { t, useLang } from '../../i18n.ts'
 import { StageToggle } from './StageToggle.tsx'
+import { StrokePicker } from './StrokePicker.tsx'
 import type { KitStage } from './stageBg.ts'
 import { useSvgSource } from './useSvgSource.ts'
 
@@ -19,6 +20,8 @@ export function IconDetail({
   icon,
   bg,
   onBgChange,
+  stroke,
+  onStrokeChange,
   onClose,
   onPrev,
   onNext,
@@ -27,6 +30,8 @@ export function IconDetail({
   icon: SvgKitIcon
   bg: KitStage
   onBgChange: (bg: KitStage) => void
+  stroke: string
+  onStrokeChange: (stroke: string) => void
   onClose: () => void
   onPrev: () => void
   onNext: () => void
@@ -110,6 +115,7 @@ export function IconDetail({
 
             <div className="kit-toolbar">
               <StageToggle bg={bg} onChange={onBgChange} />
+              <StrokePicker bg={bg} value={stroke} onChange={onStrokeChange} />
               <button type="button" className="kit-btn ghost" onClick={() => setPlaying((p) => !p)}>
                 {playing ? (zh ? '暂停动画' : 'Pause') : zh ? '播放动画' : 'Play'}
               </button>

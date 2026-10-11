@@ -49,7 +49,7 @@ npm run seed:svg-kits
 线上：https://fx-lab-5do.pages.dev/svg-kits
 
 - `/svg-kits` 主题列表
-- `/svg-kits/<themeId>` 主题页（搜索、分类、总览图，网格背景可切深色 / 浅色 / 透明，记在 `?bg=` 和 localStorage）
+- `/svg-kits/<themeId>` 主题页（搜索、分类、总览图。网格背景可切深色 / 浅色 / 透明，线条色用取色器，分别记在 `?bg=`、`?stroke=` 和 localStorage。`currentColor` 读 `--svg-kit-stroke`，深色网格默认浅色线条）
 - `?icon=<iconId>` 打开某个图标详情（动画预览可暂停、背景跟随页面、复制 SVG、下载、复制 `<img>`）
 - `/svg-kits/admin` 上传：创建主题、一次选多个 SVG、填每个图标的 zh/en 标题和描述，写入对象存储
 
