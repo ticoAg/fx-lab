@@ -6,14 +6,23 @@ import { defaultKitStage, writeStoredKitStage, type KitStage } from '../../compo
 import { iconUrl, SVG_KIT_KIND_LABELS, SVG_KIT_KINDS, type SvgKitKind } from '../../content/svg-kits/index.ts'
 import { useSvgKits } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
+import { useTheme } from '../../ThemeProvider.tsx'
 
 export function SvgKitsIndexPage() {
   const { lang } = useLang()
   const zh = lang === 'zh'
+  const { theme } = useTheme()
   const { data, error, loading } = useSvgKits()
   const [kind, setKind] = useState<SvgKitKind | 'all'>('all')
   const [search, setSearch] = useState('')
-  const [bg, setBg] = useState<KitStage>(defaultKitStage())
+  const [bg, setBg] = useState<KitStage>(() => defaultKitStage(theme))
+
+  useEffect(() => {
+    // If user hasn't explicitly set a custom stage, coordinate with global theme
+    if (!localStorage.getItem('fx-lab.svg-kits-bg')) {
+      setBg(theme === 'dark' ? 'dark' : 'light')
+    }
+  }, [theme])
 
   const handleBgChange = (nextBg: KitStage) => {
     setBg(nextBg)
@@ -34,7 +43,6 @@ export function SvgKitsIndexPage() {
     )
   })
 
-  const totalIcons = filteredKits.reduce((n, k) => n + k.icons.length, 0)
   const grandTotal = allKits.reduce((n, k) => n + k.icons.length, 0)
 
   useEffect(() => {

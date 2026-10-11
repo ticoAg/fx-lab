@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-black-cat-art" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="urban-legend-black-cat-title urban-legend-black-cat-desc" stroke-linecap="round" stroke-linejoin="round">
+<title id="urban-legend-black-cat-title">Black cat / 黑猫</title>
+<desc id="urban-legend-black-cat-desc">A black cat sits in three-quarter view on a brick parapet, looking back with amber slit eyes; shoulders, haunches and paws are clearly formed, and the tail curls over the ledge under a cold moon. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-black-cat-art,#urban-legend-black-cat-art *{animation-play-state:inherit}
+.urban-legend-black-cat-pulse{animation:urban-legend-black-cat-pulse 4.8s ease-in-out infinite}
+.urban-legend-black-cat-float{animation:urban-legend-black-cat-float 6s ease-in-out infinite}
+.urban-legend-black-cat-sway{animation:urban-legend-black-cat-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-black-cat-pop{animation:urban-legend-black-cat-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-black-cat-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-black-cat-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-black-cat-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-black-cat-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-black-cat-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-black-cat-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-black-cat-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-black-cat-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-black-cat-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<circle cx="23" cy="20" r="12" fill="url(#urban-legend-black-cat-cloth)" stroke="#73888b" stroke-width="0.45"/>
+<path d="M19 9Q29 16 27 26Q25 30 21 32A12 12 0 0 0 19 9Z" fill="#8a9d9b" stroke="none" stroke-width="0.65" opacity="0.42"/>
+<path d="M17 17q4-3 5 1t-5 2M25 25q2-3 4-1t-2 3" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.22"/>
+<path d="M8 58L57 54L72 59L25 65Z" fill="url(#urban-legend-black-cat-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M9 62L25 67L71 62V71L25 75L9 69Z" fill="url(#urban-legend-black-cat-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M7 58L57 53L73 58V62L25 67L7 62Z" fill="url(#urban-legend-black-cat-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M26 70l44-5M11 65l12 4M26 74l44-4" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M33 69.265v4M27 65.265v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M46 67.9v4M40 63.900000000000006v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M59 66.535v4M53 62.535v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M69 65.485v4M63 61.485v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<ellipse cx="41" cy="58" rx="15" ry="2.5" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.38"/>
+<path d="M37 36C26 39 27 49 24 55Q24 60 36 60L52 59Q58 57 55 52L50 41L49 34Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.7"/>
+<path d="M33 41C25 46 28 55 34 56L39 57L39 60H30Q22 59 26 52Q26 44 33 41Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M43 38Q40 44 42 52L42 58Q45 61 48 58L47 49L48 42Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M49 38Q47 46 49 50L50 56Q49 58 54 58Q56 56 54 54L52 42Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M33 58C18 56 15 63 22 70C30 78 41 71 38 67C36 64 34 65 35 68C32 73 20 67 23 63C25 61 30 63 35 60Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M20 63Q18 66 24 70Q31 74 36 69" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M34 33Q27 30 31 24L31 14L38 21Q44 18 50 20L57 15L55 28Q55 34 49 37Q40 40 34 33Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.75"/>
+<path d="M32.5 17L34 24L37 22Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<path d="M54.5 18L49.5 22L54 24Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34 27Q37 23 42 26L42 30L38 32Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M46 24Q49 23 53 27L49 31L46 30Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M34.4 27.5q3.1 -2.635 6.2 0q-3.1 2.17 -6.2 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="37.5" cy="27.5" rx="0.6200000000000001" ry="1.333" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="36.6475" cy="27.1125" r="0.35650000000000004" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M46.16 27q2.84 -2.4139999999999997 5.68 0q-2.84 1.9879999999999998 -5.68 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="49" cy="27" rx="0.568" ry="1.2211999999999998" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="48.219" cy="26.645" r="0.3266" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M42 31l3-.3-1.5 1.8Z" fill="#b89482" stroke="#21353f" stroke-width="0.35"/>
+<path d="M43.5 32.5v1q-1 1-3 .4M43.5 33.5q1.5 1 3 0" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M37 32Q39 31 42 33L40 35Z" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.42"/>
+<path d="M38 32l-10-2M38 33.5l-11 .6M49 32l11-3M49 33.5l12-.5" fill="none" stroke="#c1ceca" stroke-width="0.35"/>
+<path d="M37 20l3 2M43 20l1 2M50 22l-2 1M34 36l3 3-1 2M35 42l1 3M34 49l-2 2" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M32 19l1 3M33 25q2-2 5-2M31 45q-3 5-1 8M43 43l.5 9M50 47l1 6" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M44 57v1.4M46 57v1.4M51 56.5l.2 1.1M53 56.4l.2 1" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<g class="urban-legend-black-cat-sway">
+<path d="M43 38Q46 40 48 38L47 41L45 40L44 42Z" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.65"/>
+</g>
+<path d="M29 57q3 2 6 1M56 58l12-1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg>

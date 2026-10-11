@@ -10,8 +10,10 @@ export const KIT_STAGE_LABEL: Record<KitStage, { zh: string; en: string; icon: s
   checker: { zh: '透明', en: 'Alpha', icon: '🏁' },
 }
 
-export function defaultKitStage(): KitStage {
-  return readStoredKitStage() ?? 'light'
+export function defaultKitStage(theme?: 'light' | 'dark'): KitStage {
+  const stored = readStoredKitStage()
+  if (stored) return stored
+  return theme === 'dark' ? 'dark' : 'light'
 }
 
 export function isKitStage(value: string | null): value is KitStage {

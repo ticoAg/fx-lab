@@ -1,0 +1,442 @@
+{
+  "id": "urban-legend",
+  "title": {
+    "zh": "都市传说·都市怪谈",
+    "en": "Urban Legend — Ghost Stories"
+  },
+  "description": {
+    "zh": "24 张原创都市怪谈插画：幽灵、夜间建筑、旧电器与不祥征兆。以石油蓝、板岩灰、骨白、铜绿和琥珀暖光描绘材质与空间，少量灰红色点出悬念。透明背景，无底板；材质和阴影采用固定色，currentColor 仅控制少量轮廓和细节。每张使用独立命名的轻微 CSS 动画，支持宿主暂停和减少动态效果。保留 80×80 画布与原有题材，无品牌角色和血腥画面。",
+    "en": "24 original nocturnal folklore illustrations: apparitions, haunted architecture, obsolete electronics and uneasy omens. Petrol blue, slate, bone, patinated metal and warm amber describe material and space, with selective muted crimson accents. Transparent backgrounds without tiles. Material and shadow colors are fixed; currentColor controls restrained contour accents. Individually namespaced, subtle CSS animations inherit host pause state and honor reduced motion. Original 80×80 viewBoxes and subjects are preserved; no branded characters or gore."
+  },
+  "kind": "illustration",
+  "cover": "flickering-lantern",
+  "sheet": "elements.svg",
+  "categories": {
+    "apparitions": {
+      "zh": "幽影显形",
+      "en": "Apparitions"
+    },
+    "places": {
+      "zh": "怪谈地点",
+      "en": "Haunted places"
+    },
+    "objects": {
+      "zh": "诅咒之物",
+      "en": "Cursed objects"
+    },
+    "omens": {
+      "zh": "不祥之兆",
+      "en": "Omens"
+    }
+  },
+  "icons": [
+    {
+      "id": "flickering-lantern",
+      "title": {
+        "zh": "摇曳的提灯",
+        "en": "Flickering lantern"
+      },
+      "description": {
+        "zh": "铜绿风灯悬在提环下，弧形护丝围住琥珀玻璃与双层火焰；油箱铆钉、玻璃反光和三只飞蛾清晰可见。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A patinated hurricane lantern with bowed guards, amber glass, a double flame, a riveted fuel tank and three pale moths. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "apparitions",
+      "tags": [
+        "urban-legend",
+        "apparitions"
+      ]
+    },
+    {
+      "id": "ghost-silhouette",
+      "title": {
+        "zh": "幽灵剪影",
+        "en": "Ghost silhouette"
+      },
+      "description": {
+        "zh": "褴褛的兜帽幽灵向外伸出衣袖，空洞面孔里藏着冷光双眼；骨白织物的折叠与冷蓝阴影勾出飘散的衣摆。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A hooded apparition with cold eyes in a hollow face, reaching sleeves and layered bone-white cloth unfolding into a ragged hem. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "float",
+      "category": "apparitions",
+      "tags": [
+        "urban-legend",
+        "apparitions"
+      ]
+    },
+    {
+      "id": "fog-veil",
+      "title": {
+        "zh": "雾中人影",
+        "en": "Figure in the fog"
+      },
+      "description": {
+        "zh": "旧路灯下的戴帽人影穿着长外套，琥珀眼睛藏在帽檐下；两层轻雾掩住脚步，灯杆铜绿与暖色灯窗形成对照。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A hatted stranger in a long coat under a patinated street lamp; amber eyes hide under the brim and low banks of mist obscure the feet. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "sway",
+      "category": "apparitions",
+      "tags": [
+        "urban-legend",
+        "apparitions"
+      ]
+    },
+    {
+      "id": "weeping-woman",
+      "title": {
+        "zh": "哭泣的女人",
+        "en": "Weeping woman"
+      },
+      "description": {
+        "zh": "长发女人在水边双手掩面，象牙色长裙垂下有重量的衣褶；两滴冷泪、轻浅水纹与破碎倒影保留低声的悲伤。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A long-haired woman covers her face at the water’s edge; weighted ivory folds, two cold tears, quiet ripples and a broken reflection suggest grief. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "sway",
+      "category": "apparitions",
+      "tags": [
+        "urban-legend",
+        "apparitions"
+      ]
+    },
+    {
+      "id": "elevator-shadow",
+      "title": {
+        "zh": "电梯里的影子",
+        "en": "Shadow in the elevator"
+      },
+      "description": {
+        "zh": "带机械楼层指针的旧电梯留着窄缝，高瘦人影和扣住门边的苍白手指藏在里面；磨旧金属映着地面的暖光。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "An old elevator with a mechanical floor dial, worn metal doors and a narrow opening concealing a tall figure and pale fingers; amber light spills onto the threshold. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pop",
+      "category": "apparitions",
+      "tags": [
+        "urban-legend",
+        "apparitions"
+      ]
+    },
+    {
+      "id": "abandoned-hospital",
+      "title": {
+        "zh": "废弃医院",
+        "en": "Abandoned hospital"
+      },
+      "description": {
+        "zh": "斜角透视的旧医院立在暗红月亮下，破窗、封门木板、攀墙藤蔓和铁栅见证荒废，唯一暖窗内站着小小的人影。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "An abandoned hospital in three-quarter perspective, with broken windows, boarded doors, ivy and iron railings; one amber window holds a figure beneath a muted red moon. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "places",
+      "tags": [
+        "urban-legend",
+        "places"
+      ]
+    },
+    {
+      "id": "midnight-subway",
+      "title": {
+        "zh": "午夜地铁",
+        "en": "Midnight subway"
+      },
+      "description": {
+        "zh": "末班地铁从楔形砖石隧道驶出，弧面车头、双灯、空白终点牌和挡风玻璃后的小小乘客沿着铁轨靠近。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A last train emerges from a masonry tunnel on converging rails: a curved metal nose, twin lamps, blank destination board and a lone passenger behind reflective glass. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "float",
+      "category": "places",
+      "tags": [
+        "urban-legend",
+        "places"
+      ]
+    },
+    {
+      "id": "empty-classroom",
+      "title": {
+        "zh": "空教室",
+        "en": "Empty classroom"
+      },
+      "description": {
+        "zh": "空教室保留斜置的木课桌、被推开的椅子、午夜时钟和散落的纸张，深色黑板上留着短短的粉笔笔迹与一只手印。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "An empty classroom with an angled wooden desk, a displaced chair, a midnight clock and loose papers; chalk strokes and a handprint remain on the dark board. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pop",
+      "category": "places",
+      "tags": [
+        "urban-legend",
+        "places"
+      ]
+    },
+    {
+      "id": "rooftop-antenna",
+      "title": {
+        "zh": "天台天线",
+        "en": "Rooftop antenna"
+      },
+      "description": {
+        "zh": "冷月下，电视天线的横杆、拉线与下垂电缆跨过旧水箱和斜向砖墙；长发身影静立在天台边缘。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A rooftop aerial, guy wires and a drooping cable cross a raised water tank and an angled brick parapet beneath a cold moon; a long-haired figure stands at the edge. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "sway",
+      "category": "places",
+      "tags": [
+        "urban-legend",
+        "places"
+      ]
+    },
+    {
+      "id": "hallway-door",
+      "title": {
+        "zh": "走廊尽头的门",
+        "en": "Door at the end of the hall"
+      },
+      "description": {
+        "zh": "剖开的旧走廊以一致的一点透视通向半掩的红门，墙裙、侧门和地砖逐渐收拢；门缝的眼睛与地上的长影形成焦点。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A cutaway corridor uses one-point perspective, converging tiled flooring, wall panels and side doors to lead toward an ajar red door, a watching eye and a long floor shadow. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "places",
+      "tags": [
+        "urban-legend",
+        "places"
+      ]
+    },
+    {
+      "id": "open-manhole",
+      "title": {
+        "zh": "敞开的井盖",
+        "en": "Open manhole"
+      },
+      "description": {
+        "zh": "厚重铸铁井圈里梯级没入暗处，两对眼睛与苍白指节靠近边缘；通气槽井盖斜放一旁，两缕轻汽升起。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A thick cast-iron manhole rim surrounds rungs disappearing into darkness, two pairs of eyes and pale gripping fingers; a slotted cover lies aside under two wisps of steam. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "places",
+      "tags": [
+        "urban-legend",
+        "places"
+      ]
+    },
+    {
+      "id": "cursed-doll",
+      "title": {
+        "zh": "诅咒人偶",
+        "en": "Cursed doll"
+      },
+      "description": {
+        "zh": "瓷脸人偶穿旧灰红裙与骨白蕾丝，关节、皮鞋、纽扣眼、裂纹和缝线笑容各自可辨；两枚细针留在衣料上。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A porcelain doll in a faded crimson dress and bone lace, with articulated limbs, leather shoes, a button eye, a crack and a stitched smile; two fine pins pierce the cloth. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "sway",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "vhs-tape",
+      "title": {
+        "zh": "诅咒录像带",
+        "en": "Cursed video tape"
+      },
+      "description": {
+        "zh": "斜放的录像带显出塑料侧壁、双磁带轮和磨旧纸签，红笔划过手写痕迹；一条有正反面的棕黑磁带在下方打结。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "An angled video cassette reveals molded sidewalls, twin reels and a worn paper label crossed out in red; a brown-black tape ribbon twists below. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pop",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "broken-mirror",
+      "title": {
+        "zh": "破碎的镜子",
+        "en": "Broken mirror"
+      },
+      "description": {
+        "zh": "椭圆旧镜以铜绿金属与暗金边框包住分裂的冷色玻璃，卷纹顶饰和底部碎片保留旧物细节，一只灰红眼睛藏在陌生倒影中。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "An oval mirror with patinated metal, an aged brass rim and curled ornaments surrounds fractured cool glass; a muted red eye hides in an unfamiliar reflection above fallen shards. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "red-string",
+      "title": {
+        "zh": "红线线索板",
+        "en": "Red string board"
+      },
+      "description": {
+        "zh": "三张拍立得与一份剪报由真实弯曲的灰红线连接，照片里分别是人影、暖窗房屋和凝视的眼睛；图钉压住纸边，小铜铃垂在线尾。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "Three instant photos and a clipping are linked by muted red thread: a stranger, a house with one amber window and a watching eye; pins hold the paper and a small brass bell hangs below. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "sway",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "cassette-player",
+      "title": {
+        "zh": "随身磁带机",
+        "en": "Portable cassette player"
+      },
+      "description": {
+        "zh": "带侧壁透视的旧磁带机保留琴键按钮、双磁带轮、扬声器开槽和音量滚轮，耳机线绕向两只小耳塞，轻微低语飘在旁边。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A portable cassette player in three-quarter view has piano keys, visible twin reels, speaker slots and a volume wheel; a cable curls toward two earbuds beside a small drifting whisper. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "float",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "payphone",
+      "title": {
+        "zh": "响铃的公用电话",
+        "en": "Ringing payphone"
+      },
+      "description": {
+        "zh": "斜向安装的公用电话具有琥珀顶罩、绿屏、十二键拨号盘、投币与退币口，脱钩听筒挂在卷曲金属线上轻摆。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "An angled public payphone with an amber hood, a green display, twelve keys, coin slot and return; its receiver hangs from a coiled armored cable. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "dead-phone",
+      "title": {
+        "zh": "断线还在响的电话",
+        "en": "Unplugged ringing phone"
+      },
+      "description": {
+        "zh": "厚重转盘电话的弧面外壳、黄铜指盘和胶木听筒带着细微高光，底座旁断开的电话线露出线芯，铃声仍未停下。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A heavy rotary phone with a curved case, brass dial and Bakelite receiver catches narrow highlights; the cut cable exposes frayed wires while the phone keeps ringing. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pop",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "static-tv",
+      "title": {
+        "zh": "雪花电视",
+        "en": "Static television"
+      },
+      "description": {
+        "zh": "木壳显像管电视斜立在外八脚上，兔耳天线、旋钮与扬声器槽围住弧面绿玻璃；模拟扫描纹和一道微明光带掩着长发人影。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A wood-cased CRT on splayed legs, with rabbit-ear aerials, tuning knobs and speaker slots; curved green glass and analog scan interference partly conceal a long-haired figure. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "whispering-radio",
+      "title": {
+        "zh": "低语的收音机",
+        "en": "Whispering radio"
+      },
+      "description": {
+        "zh": "拱顶木制收音机有雕刻格栅、双旋钮、暖色调谐表盘和窄边高光；三缕带面孔的淡色低语从上方升起。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "An arched wooden radio has carved grille openings, twin knobs, an amber tuning dial and narrow edge highlights; three pale, faced whispers drift above. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "objects",
+      "tags": [
+        "urban-legend",
+        "objects"
+      ]
+    },
+    {
+      "id": "black-cat",
+      "title": {
+        "zh": "黑猫",
+        "en": "Black cat"
+      },
+      "description": {
+        "zh": "黑猫侧身坐在有透视的砖墙上，琥珀竖瞳回望，肩胛、后腿和前爪分明；长尾绕过墙沿，冷月映出少量毛尖。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A black cat sits in three-quarter view on a brick parapet, looking back with amber slit eyes; shoulders, haunches and paws are clearly formed, and the tail curls over the ledge under a cold moon. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "sway",
+      "category": "omens",
+      "tags": [
+        "urban-legend",
+        "omens"
+      ]
+    },
+    {
+      "id": "crow-on-wire",
+      "title": {
+        "zh": "电线上的乌鸦",
+        "en": "Crows on the wire"
+      },
+      "description": {
+        "zh": "三只乌鸦抓着下垂电线，第四只舒展不对称的翅膀飞来；木杆、陶瓷绝缘子和抱箍变压器构成完整的城市设施。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "Three crows grip sagging wires while a fourth approaches on spread wings; a wooden pole, ceramic insulators and a strapped transformer form a complete piece of city infrastructure. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "sway",
+      "category": "omens",
+      "tags": [
+        "urban-legend",
+        "omens"
+      ]
+    },
+    {
+      "id": "blood-moon",
+      "title": {
+        "zh": "血月",
+        "en": "Blood moon"
+      },
+      "description": {
+        "zh": "灰红月球具有不规则月海、带明暗边的环形山和偏侧暗影；低云穿过枯树枝，蝙蝠从月缘掠过。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "A muted crimson moon has irregular maria, rim-lit craters and a shaded limb; low clouds pass between bare branches while bats skim the edge. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pulse",
+      "category": "omens",
+      "tags": [
+        "urban-legend",
+        "omens"
+      ]
+    },
+    {
+      "id": "cracked-sidewalk",
+      "title": {
+        "zh": "裂开的人行道",
+        "en": "Cracked sidewalk"
+      },
+      "description": {
+        "zh": "透视石板被不规则深缝撕开，断面保留厚度与暗红微光；一只苍白的手从缝里探出，杂草和边角碎石标出真实接触处。 透明底；材质与阴影为固定色，currentColor 仅控制少量轮廓细节。",
+        "en": "Perspective paving slabs split along an irregular crevice with visible thickness and a dim crimson seam; a pale hand emerges among small weeds and chipped stone edges. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents."
+      },
+      "animation": "pop",
+      "category": "omens",
+      "tags": [
+        "urban-legend",
+        "omens"
+      ]
+    }
+  ]
+}

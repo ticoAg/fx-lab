@@ -1,0 +1,1496 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="716" viewBox="0 0 960 716" role="img" aria-labelledby="urban-legend-overview-title" font-family="system-ui, sans-serif"><title id="urban-legend-overview-title">都市传说·都市怪谈 · 24 件素材</title><text x="24" y="36" fill="currentColor" font-size="23">都市传说·都市怪谈</text><text x="24" y="57" fill="currentColor" font-size="11" opacity=".6">Urban Legend — Ghost Stories · 24 SVG illustrations</text><g transform="translate(24 86)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-flickering-lantern-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-flickering-lantern-title urban-legend-flickering-lantern-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-flickering-lantern-title">Flickering lantern / 摇曳的提灯</title>
+<desc id="urban-legend-flickering-lantern-desc">A patinated hurricane lantern with bowed guards, amber glass, a double flame, a riveted fuel tank and three pale moths. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-flickering-lantern-art,#urban-legend-flickering-lantern-art *{animation-play-state:inherit}
+.urban-legend-flickering-lantern-pulse{animation:urban-legend-flickering-lantern-pulse 4.8s ease-in-out infinite}
+.urban-legend-flickering-lantern-float{animation:urban-legend-flickering-lantern-float 6s ease-in-out infinite}
+.urban-legend-flickering-lantern-sway{animation:urban-legend-flickering-lantern-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-flickering-lantern-pop{animation:urban-legend-flickering-lantern-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-flickering-lantern-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-flickering-lantern-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-flickering-lantern-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-flickering-lantern-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-flickering-lantern-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-flickering-lantern-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-flickering-lantern-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-flickering-lantern-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient></defs>
+<ellipse cx="40" cy="71" rx="18" ry="1.5" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="70.85" rx="12.06" ry="0.81" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M26 34V23C26 9 53 9 53 23V34" fill="none" stroke="#21353f" stroke-width="1.5"/>
+<path d="M27 25V22C27 11 49 11 51 21" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<circle cx="40" cy="9.5" r="2.4" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.6"/>
+<circle cx="40" cy="9.5" r="1" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<path d="M30 31C25 38 24 48 29 55L33 59H48L52 54C56 45 52 34 50 31Z" fill="url(#urban-legend-flickering-lantern-glass)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M32 33C27 40 27 48 31 53C36 57 45 57 49 52C52 46 50 36 47 33Z" fill="url(#urban-legend-flickering-lantern-amber)" stroke="none" stroke-width="0.65" opacity="0.65"/>
+<path d="M30 35Q26 43 30 49L32 50Q29 42 33 34Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.5"/>
+<path d="M46 35Q50 41 49 45M47 48l-1 3" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<g class="urban-legend-flickering-lantern-pulse">
+<path d="M38 52C29 47 42 38 40 32C47 40 42 43 44 46C49 51 41 56 38 52Z" fill="#e1b574" stroke="#a47750" stroke-width="0.4"/>
+<path d="M39 51C35 47 41 45 41 40C44 47 43 51 40 52Z" fill="#f7e9ba" stroke="none" stroke-width="0.65"/>
+</g>
+<path d="M35 52H45L43 57H37Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<rect x="38.5" y="50.6" width="3" height="2.2" rx="0.5" fill="#172b35" stroke="#21353f" stroke-width="0.4"/>
+<path d="M29 31C24 38 23 51 30 58M51 31C56 41 56 51 50 58" fill="none" stroke="#21353f" stroke-width="1.5"/>
+<path d="M28.6 34C24.8 41 24.5 49 28.7 54" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M30 33Q33 44 30 56M50 33Q47 44 50 56" fill="none" stroke="#73888b" stroke-width="0.9"/>
+<path d="M27 43Q40 46 54 42" fill="none" stroke="#21353f" stroke-width="1"/>
+<path d="M28 42.7Q40 45.5 51 43.3" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M30 58Q40 55 50 58L53 65Q51 70 39 70Q28 70 27 65Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<ellipse cx="40" cy="58" rx="10" ry="2" fill="#73888b" stroke="#21353f" stroke-width="0.5"/>
+<path d="M27 65Q40 69 53 65L50 69Q40 72 30 69Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<path d="M30 60Q40 58 49 60M30 66Q38 68 45 67.5" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M31 63Q38 64 44 63" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+<circle cx="31" cy="63" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M30.67 63.21l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="48" cy="63" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M47.67 63.21l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<rect x="52" y="58.5" width="3" height="2.8" rx="0.5" fill="url(#urban-legend-flickering-lantern-amber)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M26 29Q40 25 54 29L53 32Q40 35 26 32Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M30 27L32 21Q40 18 48 21L51 27Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<rect x="36" y="17" width="8" height="4" rx="1" fill="#73888b" stroke="#21353f" stroke-width="0.65"/>
+<path d="M34 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M37 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M40 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M43 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M46 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M29 29Q40 27 51 29M35 21Q40 20 45 21" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<g transform="translate(16 34) scale(1)">
+<g class="urban-legend-flickering-lantern-sway">
+<path d="M0 0C-8-6-7 5-1 2L0 4 1 2C7 4 7-6 0 0Z" fill="#e7deca" stroke="#73888b" stroke-width="0.45"/>
+<path d="M0-1v4M-1-1l-1-2M1-1l1-2" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M-5-1l3 2M3 1l2-2" fill="none" stroke="#985a58" stroke-width="0.3"/>
+</g></g>
+<g transform="translate(63 24) scale(0.8)">
+<g class="urban-legend-flickering-lantern-sway">
+<path d="M0 0C-8-6-7 5-1 2L0 4 1 2C7 4 7-6 0 0Z" fill="#e7deca" stroke="#73888b" stroke-width="0.45"/>
+<path d="M0-1v4M-1-1l-1-2M1-1l1-2" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M-5-1l3 2M3 1l2-2" fill="none" stroke="#985a58" stroke-width="0.3"/>
+</g></g>
+<g transform="translate(61 53) scale(0.66)">
+<g class="urban-legend-flickering-lantern-sway">
+<path d="M0 0C-8-6-7 5-1 2L0 4 1 2C7 4 7-6 0 0Z" fill="#e7deca" stroke="#73888b" stroke-width="0.45"/>
+<path d="M0-1v4M-1-1l-1-2M1-1l1-2" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M-5-1l3 2M3 1l2-2" fill="none" stroke="#985a58" stroke-width="0.3"/>
+</g></g>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">摇曳的提灯</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">flickering-lantern</text></g>
+<g transform="translate(176 86)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-ghost-silhouette-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-ghost-silhouette-title urban-legend-ghost-silhouette-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-ghost-silhouette-title">Ghost silhouette / 幽灵剪影</title>
+<desc id="urban-legend-ghost-silhouette-desc">A hooded apparition with cold eyes in a hollow face, reaching sleeves and layered bone-white cloth unfolding into a ragged hem. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-ghost-silhouette-art,#urban-legend-ghost-silhouette-art *{animation-play-state:inherit}
+.urban-legend-ghost-silhouette-pulse{animation:urban-legend-ghost-silhouette-pulse 4.8s ease-in-out infinite}
+.urban-legend-ghost-silhouette-float{animation:urban-legend-ghost-silhouette-float 6s ease-in-out infinite}
+.urban-legend-ghost-silhouette-sway{animation:urban-legend-ghost-silhouette-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-ghost-silhouette-pop{animation:urban-legend-ghost-silhouette-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-ghost-silhouette-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-ghost-silhouette-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-ghost-silhouette-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-ghost-silhouette-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-ghost-silhouette-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-ghost-silhouette-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-ghost-silhouette-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="39" cy="71" rx="22" ry="1.4" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="39" cy="70.85" rx="14.74" ry="0.756" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<g class="urban-legend-ghost-silhouette-float">
+<path d="M31 16C37 8 48 9 52 18L54 31Q62 35 65 47L59 44L63 57L55 54Q58 65 66 67Q57 72 49 64L47 71L38 66L31 70L30 62Q22 68 15 64Q23 59 24 51L17 54L23 40Q26 33 27 25Z" fill="url(#urban-legend-ghost-silhouette-cloth)" stroke="#21353f" stroke-width="0.75"/>
+<path d="M45 15C51 22 51 30 46 34L44 42L50 56L52 63L46 61L41 65L34 62L29 66Q37 50 33 35C27 28 29 21 33 17Z" fill="url(#urban-legend-ghost-silhouette-shade)" stroke="none" stroke-width="0.65"/>
+<path d="M34 18C39 12 48 16 49 25C48 29 45 33 40 34C34 32 30 23 34 18Z" fill="#172b35" stroke="#73888b" stroke-width="0.45"/>
+<path d="M32 20Q32 10 43 12Q54 13 52 30L49 29C51 18 42 12 35 18Z" fill="#e7deca" stroke="none" stroke-width="0.65"/>
+<path d="M34 19Q30 26 39 34M46 17Q51 24 46 30" fill="none" stroke="#73888b" stroke-width="0.65"/>
+<g class="urban-legend-ghost-silhouette-pulse">
+<path d="M35.5 24q2-1.2 4 .5l-3 .5Z" fill="#c1ceca" stroke="none" stroke-width="0.65"/>
+<path d="M43 25q2-1.5 3-.5l-1 1.6Z" fill="#c1ceca" stroke="none" stroke-width="0.65"/>
+</g>
+<path d="M30 33Q23 36 21 45L26 43L23 52Q31 47 34 38Z" fill="#e7deca" stroke="#73888b" stroke-width="0.45"/>
+<path d="M51 33Q57 37 59 44L55 42L60 55Q52 50 48 39Z" fill="#b3c2bf" stroke="#73888b" stroke-width="0.45"/>
+<path d="M30 41Q30 55 25 60L30 58L31 65Q35 58 36 44Z" fill="#d7dfce" stroke="none" stroke-width="0.65"/>
+<path d="M39 36Q39 51 35 61L39 59L40 65Q44 62 44 53Z" fill="#a5b9b8" stroke="none" stroke-width="0.65"/>
+<path d="M47 43Q52 62 61 65Q53 67 47 59Z" fill="#91a7aa" stroke="none" stroke-width="0.65"/>
+<path d="M30 35Q26 41 25 44Q30 42 33 37L31 43Q26 47 23 48Q27 40 30 35Z" fill="#8aa3a8" stroke="none" stroke-width="0.65" opacity="0.5"/>
+<path d="M49 35Q53 39 55 46L53 45Q51 39 48 38Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.65"/>
+<path d="M34 41Q35 50 32 58M46 48Q47 55 50 59" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M27 39l-3 7M31 49q-1 7-4 10M39 39q2 9-1 17M49 45q4 13 8 15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M30 31l-3 4M54 40l2 4M34 64l-2 4" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</g>
+<g transform="translate(15 30) scale(0.75)">
+<g class="urban-legend-ghost-silhouette-float">
+<path d="M0 6C-7 3-2-3 1-6C0-1 5 1 3 4L6 5Q3 8 0 6Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.45" opacity="0.7"/>
+<path d="M0 3Q-2 1 0-2" fill="none" stroke="#e7deca" stroke-width="0.5"/>
+</g></g>
+<g transform="translate(64 20) scale(0.65)">
+<g class="urban-legend-ghost-silhouette-float">
+<path d="M0 6C-7 3-2-3 1-6C0-1 5 1 3 4L6 5Q3 8 0 6Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.45" opacity="0.7"/>
+<path d="M0 3Q-2 1 0-2" fill="none" stroke="#e7deca" stroke-width="0.5"/>
+</g></g>
+<g transform="translate(65 59) scale(0.4)">
+<g class="urban-legend-ghost-silhouette-float">
+<path d="M0 6C-7 3-2-3 1-6C0-1 5 1 3 4L6 5Q3 8 0 6Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.45" opacity="0.7"/>
+<path d="M0 3Q-2 1 0-2" fill="none" stroke="#e7deca" stroke-width="0.5"/>
+</g></g>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">幽灵剪影</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">ghost-silhouette</text></g>
+<g transform="translate(328 86)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-fog-veil-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-fog-veil-title urban-legend-fog-veil-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-fog-veil-title">Figure in the fog / 雾中人影</title>
+<desc id="urban-legend-fog-veil-desc">A hatted stranger in a long coat under a patinated street lamp; amber eyes hide under the brim and low banks of mist obscure the feet. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-fog-veil-art,#urban-legend-fog-veil-art *{animation-play-state:inherit}
+.urban-legend-fog-veil-pulse{animation:urban-legend-fog-veil-pulse 4.8s ease-in-out infinite}
+.urban-legend-fog-veil-float{animation:urban-legend-fog-veil-float 6s ease-in-out infinite}
+.urban-legend-fog-veil-sway{animation:urban-legend-fog-veil-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-fog-veil-pop{animation:urban-legend-fog-veil-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-fog-veil-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-fog-veil-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-fog-veil-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-fog-veil-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-fog-veil-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-fog-veil-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-fog-veil-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-fog-veil-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-fog-veil-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="70" rx="30" ry="2" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="69.85" rx="20.1" ry="1.08" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M12 69L14 29H17L18 69Z" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M13 29V13Q14 9 18 9H27V11H19Q16 11 16 14V29Z" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M21 13H32L30 22H24Z" fill="url(#urban-legend-fog-veil-glass)" stroke="#21353f" stroke-width="0.65"/>
+<g class="urban-legend-fog-veil-pulse">
+<path d="M23 14H30L28.7 21H25Z" fill="url(#urban-legend-fog-veil-amber)" stroke="none" stroke-width="0.65"/>
+<path d="M24 22L13 52Q28 56 37 52L29 22Z" fill="#e1b574" stroke="none" stroke-width="0.65" opacity="0.09"/>
+</g>
+<path d="M20 12L24 9H29L33 12Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<rect x="24" y="22" width="6" height="1.8" rx="0.7" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M15 14v39M22 12h9" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M11 69h10" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+<g class="urban-legend-fog-veil-sway">
+<path d="M42 37Q43 32 48 31L56 32Q62 36 63 49L66 63L58 61L57 70H42L42 60L36 62L39 46Z" fill="url(#urban-legend-fog-veil-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M45 34L48 32L51 42L47 49L43 41Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M55 34L51 42L54 48L58 38Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M48 48L50 69H43L45 51Z" fill="#223b47" stroke="none" stroke-width="0.65"/>
+<path d="M57 46l3 14M41 45l-2 10M51 44v16" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<circle cx="52" cy="48" r="0.5" fill="#a2957a" stroke="none" stroke-width="0.5"/>
+<circle cx="52" cy="53" r="0.5" fill="#a2957a" stroke="none" stroke-width="0.5"/>
+<path d="M47 24Q44 29 48 33L54 33Q58 27 54 23Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M48.1 28q0.9 -0.765 1.8 0q-0.9 0.63 -1.8 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="49" cy="28" rx="0.18000000000000002" ry="0.387" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="48.7525" cy="27.8875" r="0.10350000000000001" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M53.2 28q0.8 -0.68 1.6 0q-0.8 0.5599999999999999 -1.6 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="54" cy="28" rx="0.16000000000000003" ry="0.34400000000000003" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="53.78" cy="27.9" r="0.09200000000000001" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M43 23L44 17Q48 14 55 17L57 23Z" fill="url(#urban-legend-fog-veil-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M37 24Q47 19 62 23Q60 27 49 26Q40 27 37 24Z" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M44 21L55 21L57 23L43 23Z" fill="#985a58" stroke="none" stroke-width="0.65"/>
+<path d="M42 24Q47 22.5 57 24" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+</g>
+<g class="urban-legend-fog-veil-float">
+<path d="M7 58C16 49 23 61 33 57C43 53 48 55 52 57C61 53 69 54 72 58C63 57 62 63 51 61C42 60 36 63 28 61C17 64 13 60 7 62Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.83"/>
+<path d="M9 67C21 59 31 67 40 63C49 61 56 67 69 62C72 64 68 69 61 69C46 68 46 72 33 69C23 72 15 68 9 70Z" fill="#9eb3b6" stroke="none" stroke-width="0.65" opacity="0.9"/>
+<path d="M11 58Q17 55 23 58M35 59Q43 57 48 59M53 66q7 2 12-1" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+</g>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">雾中人影</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">fog-veil</text></g>
+<g transform="translate(480 86)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-weeping-woman-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-weeping-woman-title urban-legend-weeping-woman-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-weeping-woman-title">Weeping woman / 哭泣的女人</title>
+<desc id="urban-legend-weeping-woman-desc">A long-haired woman covers her face at the water’s edge; weighted ivory folds, two cold tears, quiet ripples and a broken reflection suggest grief. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-weeping-woman-art,#urban-legend-weeping-woman-art *{animation-play-state:inherit}
+.urban-legend-weeping-woman-pulse{animation:urban-legend-weeping-woman-pulse 4.8s ease-in-out infinite}
+.urban-legend-weeping-woman-float{animation:urban-legend-weeping-woman-float 6s ease-in-out infinite}
+.urban-legend-weeping-woman-sway{animation:urban-legend-weeping-woman-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-weeping-woman-pop{animation:urban-legend-weeping-woman-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-weeping-woman-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-weeping-woman-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-weeping-woman-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-weeping-woman-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-weeping-woman-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-weeping-woman-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-weeping-woman-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="69" rx="25" ry="3" fill="#73888b" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<path d="M12 67Q22 63 30 66M49 67q13-4 20 0M23 72Q39 76 55 72" fill="none" stroke="#73888b" stroke-width="0.5"/>
+<path d="M27 70Q40 73 54 70M16 69h8M60 70h5" fill="none" stroke="#c1ceca" stroke-width="0.6"/>
+<g class="urban-legend-weeping-woman-sway">
+<path d="M33 29Q28 32 27 41L24 55L19 66Q26 69 34 66Q43 71 53 67L61 66Q55 60 52 51L49 35L44 29Z" fill="url(#urban-legend-weeping-woman-cloth)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M33 35C34 48 29 62 27 66L32 65L35 66C41 56 39 44 40 38Z" fill="#f0e5ce" stroke="none" stroke-width="0.65"/>
+<path d="M41 37Q44 47 41 58L40 67L46 68L47 58L45 43Z" fill="#849da1" stroke="none" stroke-width="0.65"/>
+<path d="M48 43Q51 55 56 64L51 65Q46 54 46 48Z" fill="#b7c6be" stroke="none" stroke-width="0.65"/>
+<path d="M29 43Q26 49 24 58L26 62L31 46Z" fill="#adc0bd" stroke="none" stroke-width="0.65"/>
+<path d="M31 27C23 17 30 8 39 9C51 8 53 17 50 27L55 43Q51 46 47 40L44 31L34 35L29 43L27 39Z" fill="url(#urban-legend-weeping-woman-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M37 16Q31 26 35 31L43 32Q48 22 43 17Z" fill="url(#urban-legend-weeping-woman-cloth)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M38 12C32 17 40 27 33 36Q42 35 42 26C47 32 45 36 49 39C44 28 52 13 38 12Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M33 13Q26 21 31 29L29 35M40 12Q47 15 45 22M49 27l2 10" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M47 15C52 21 45 28 51 39Q47 34 48 27C50 20 48 18 47 15Z" fill="#6d878c" stroke="none" stroke-width="0.65" opacity="0.5"/>
+<path d="M31 20Q29 25 32 30L30 36M43 16Q45 21 42 26" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M34 13Q29 16 29.5 21" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M28 38L34 28L36 29L34 36L32 42Q30 43 28 40Z" fill="url(#urban-legend-weeping-woman-cloth)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M48 39L43 29L40 30L42 36L43 43Q47 44 48 39Z" fill="url(#urban-legend-weeping-woman-cloth)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M34 30L33 27L33.4 24.3Q34.4 23.7 34.8 25L35 27L35.2 23.5Q36.1 22.8 36.5 24L36.7 27L38 24Q39 24 38.5 26L37 30Z" fill="#e7deca" stroke="#21353f" stroke-width="0.4"/>
+<path d="M40 30L39 26Q39 24 40 24L41 27L41 23.5Q42 23 42.5 24.5L43 28L43.2 25Q44.1 24.5 44.4 26L44.3 29L42 32Z" fill="#e7deca" stroke="#21353f" stroke-width="0.4"/>
+<path d="M30 38l3-5M46 40l-3-6M36 46q0 10-3 15M50 59l2 4" fill="none" stroke="#73888b" stroke-width="0.5"/>
+<path d="M28 49l-3 12M38 40q2 9 0 15M44 62l-.4 4" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M34 56l-1.5 7M41 59l-.4 5M49 60l2 4" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M20 66q4 1 8 .1M47 68l6-1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</g>
+<g class="urban-legend-weeping-woman-float">
+<path d="M38 36q-1 2 0 3q1-1 0-3M41 41q-1 2 0 3q1-1 0-3" fill="#c1ceca" stroke="none" stroke-width="0.65"/>
+</g>
+<path d="M32 71l3 2 3-.5 2 2 4-1 3-2Z" fill="#365663" stroke="none" stroke-width="0.65" opacity="0.24"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">哭泣的女人</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">weeping-woman</text></g>
+<g transform="translate(632 86)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-elevator-shadow-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-elevator-shadow-title urban-legend-elevator-shadow-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-elevator-shadow-title">Shadow in the elevator / 电梯里的影子</title>
+<desc id="urban-legend-elevator-shadow-desc">An old elevator with a mechanical floor dial, worn metal doors and a narrow opening concealing a tall figure and pale fingers; amber light spills onto the threshold. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-elevator-shadow-art,#urban-legend-elevator-shadow-art *{animation-play-state:inherit}
+.urban-legend-elevator-shadow-pulse{animation:urban-legend-elevator-shadow-pulse 4.8s ease-in-out infinite}
+.urban-legend-elevator-shadow-float{animation:urban-legend-elevator-shadow-float 6s ease-in-out infinite}
+.urban-legend-elevator-shadow-sway{animation:urban-legend-elevator-shadow-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-elevator-shadow-pop{animation:urban-legend-elevator-shadow-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-elevator-shadow-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-elevator-shadow-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-elevator-shadow-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-elevator-shadow-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-elevator-shadow-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-elevator-shadow-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-elevator-shadow-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-elevator-shadow-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient></defs>
+<ellipse cx="40" cy="72" rx="27" ry="1.8" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="71.85" rx="18.09" ry="0.9720000000000001" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M15 67L23 64H61L70 72H9Z" fill="url(#urban-legend-elevator-shadow-stone)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M24 67l-5 5M35 66l-1 6M48 66l4 6M60 67l6 5M13 70h54" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M15 13L57 11L62 14V67H15Z" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M57 11L64 15V68L60 67V15Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<rect x="19" y="16" width="38" height="48" rx="0.6" fill="#172b35" stroke="#21353f" stroke-width="0.5"/>
+<rect x="17" y="13.5" width="42" height="9" rx="0.7" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M29 20a9 9 0 0 1 18 0Z" fill="url(#urban-legend-elevator-shadow-amber)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M31.94 16.50l0.61 0.35" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34.50 13.94l0.35 0.61" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M38.00 13.00l-0.00 0.70" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M41.50 13.94l-0.35 0.61" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44.06 16.50l-0.61 0.35" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M38 19L42 15" fill="none" stroke="#985a58" stroke-width="0.8"/>
+<circle cx="38" cy="19" r="0.65" fill="#21353f" stroke="none" stroke-width="0.5"/>
+<rect x="19.5" y="24" width="14" height="40" rx="0.2" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<rect x="47" y="24" width="9.5" height="40" rx="0.2" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M31 25H33V64H31Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M47 24H48.5V64H47Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M23 27v33M27 27v33M52 27v33" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M20.5 25v37M18 14.6l35-1M62 18v46" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M33 64L25 72H57L47 64Z" fill="#e1b574" stroke="none" stroke-width="0.65" opacity="0.38"/>
+<g class="urban-legend-elevator-shadow-pop">
+<path d="M39 32C35 33 35 39 38 41L34 45L34 61L37 58L38 64L39 69L41 69L42 58L44 64H46L44 44L42 40C46 37 43 31 39 32Z" fill="#10252f" stroke="#73888b" stroke-width="0.45"/>
+<path d="M37 46l2-3M42 45l1 9" fill="none" stroke="#365663" stroke-width="0.5"/>
+<circle cx="38.7" cy="36.4" r="0.45" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<circle cx="41.4" cy="36.4" r="0.45" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<path d="M47 43C43 40 42 43 44 43.7L47 44.6M47 46C44 44 42 45 44 46L47 47M47 49C44 47.5 43 48.5 44.5 49.5L47 50" fill="#e7deca" stroke="#21353f" stroke-width="0.4"/>
+</g>
+<rect x="66" y="34" width="5.5" height="14" rx="1" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<circle cx="68.75" cy="38" r="1.3" fill="#c1ceca" stroke="#21353f" stroke-width="0.35"/>
+<path d="M68 38.4l.75-1.3.75 1.3Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<circle cx="68.75" cy="44" r="1.3" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<path d="M68 43.6l.75 1.3.75-1.3Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<rect x="14" y="64" width="48" height="3" rx="0.5" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M20 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M24 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M28 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M32 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M36 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M40 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M48 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M52 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M56 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M16 23v38M58 24v37" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">电梯里的影子</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">elevator-shadow</text></g>
+<g transform="translate(784 86)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-abandoned-hospital-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-abandoned-hospital-title urban-legend-abandoned-hospital-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-abandoned-hospital-title">Abandoned hospital / 废弃医院</title>
+<desc id="urban-legend-abandoned-hospital-desc">An abandoned hospital in three-quarter perspective, with broken windows, boarded doors, ivy and iron railings; one amber window holds a figure beneath a muted red moon. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-abandoned-hospital-art,#urban-legend-abandoned-hospital-art *{animation-play-state:inherit}
+.urban-legend-abandoned-hospital-pulse{animation:urban-legend-abandoned-hospital-pulse 4.8s ease-in-out infinite}
+.urban-legend-abandoned-hospital-float{animation:urban-legend-abandoned-hospital-float 6s ease-in-out infinite}
+.urban-legend-abandoned-hospital-sway{animation:urban-legend-abandoned-hospital-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-abandoned-hospital-pop{animation:urban-legend-abandoned-hospital-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-abandoned-hospital-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-abandoned-hospital-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-abandoned-hospital-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-abandoned-hospital-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-abandoned-hospital-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-abandoned-hospital-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-abandoned-hospital-wood" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#a48564"/><stop offset="0.5" stop-color="#7e614c"/><stop offset="1" stop-color="#413d39"/></linearGradient><linearGradient id="urban-legend-abandoned-hospital-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-abandoned-hospital-red" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#ce9984"/><stop offset="0.46" stop-color="#a56561"/><stop offset="1" stop-color="#583e47"/></linearGradient><linearGradient id="urban-legend-abandoned-hospital-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-abandoned-hospital-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="72" rx="31" ry="1.5" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="71.85" rx="20.77" ry="0.81" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<circle cx="64" cy="16" r="8" fill="url(#urban-legend-abandoned-hospital-red)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M65 8A8 8 0 0 1 66 23A7 7 0 0 0 65 8Z" fill="#573b45" stroke="none" stroke-width="0.65" opacity="0.48"/>
+<circle cx="62" cy="14" r="1.5" fill="#a56d64" stroke="none" stroke-width="0.5"/>
+<circle cx="65" cy="19" r="2" fill="#9b615c" stroke="none" stroke-width="0.5"/>
+<path d="M12 30L51 24L65 30V67L52 72L12 66Z" fill="url(#urban-legend-abandoned-hospital-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M51 26L65 31V67L51 71Z" fill="url(#urban-legend-abandoned-hospital-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M10 27L51 21L68 28L65 31L51 26L10 32Z" fill="url(#urban-legend-abandoned-hospital-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M10 27L51 21L68 28L26 33Z" fill="#9baba4" stroke="#21353f" stroke-width="0.65"/>
+<path d="M24 24V13H28V9H33V13H37V18H33V22H28V18H24Z" fill="url(#urban-legend-abandoned-hospital-red)" stroke="#21353f" stroke-width="0.7"/>
+<path d="M27 22v3M35 20v4" fill="none" stroke="#21353f" stroke-width="0.8"/>
+<path d="M25 14h4v-4M11 28l39-6" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M17 34.0l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M17 41.5l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M20 34.4v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M28 32.4l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M28 39.9l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M28.6 32.9l2.3-.3-1 2 2 1-2 1Z" fill="#879f9e" stroke="none" stroke-width="0.65"/>
+<path d="M31 32.8v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M39 30.8l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M39 38.3l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M42 31.2v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M17 44.0l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M17 51.5l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M17.6 44.5l2.3-.3-1 2 2 1-2 1Z" fill="#879f9e" stroke="none" stroke-width="0.65"/>
+<path d="M20 44.4v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M28 42.4l6-1v7l-6 1Z" fill="url(#urban-legend-abandoned-hospital-amber)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M28 49.9l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<g class="urban-legend-abandoned-hospital-pulse">
+<path d="M28.8 43.0l4.5-.7v5.5l-4.5.7Z" fill="#e1b574" stroke="none" stroke-width="0.65" opacity="0.45"/>
+</g>
+<circle cx="31" cy="44.4" r="0.85" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<path d="M30 45.4h2l.7 3-3 .5Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M31 42.8v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M39 40.8l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M39 48.3l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M39.6 41.3l2.3-.3-1 2 2 1-2 1Z" fill="#879f9e" stroke="none" stroke-width="0.65"/>
+<path d="M42 41.199999999999996v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M17 54.0l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M17 61.5l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M20 54.4v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M28 52.4l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M28 59.9l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M28.6 52.9l2.3-.3-1 2 2 1-2 1Z" fill="#879f9e" stroke="none" stroke-width="0.65"/>
+<path d="M31 52.8v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M39 50.8l6-1v7l-6 1Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<path d="M39 58.3l6-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M42 51.199999999999996v6" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M56 35l5 1.8v6l-5-1.8Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M58.5 36v5.5" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M56 45l5 1.8v6l-5-1.8Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M58.5 46v5.5" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M56 55l5 1.8v6l-5-1.8Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M58.5 56v5.5" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M26 69V60L39 58V71Z" fill="#172b35" stroke="#21353f" stroke-width="0.65"/>
+<path d="M25 60l14 8v2L25 62ZM26 68l13-8v2l-13 8Z" fill="url(#urban-legend-abandoned-hospital-wood)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M16 42l3 1-1 4M46 31l-2 4 2 3-2 5M13 58l5-1M43 53l5-1" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M15 66Q10 54 14 45Q11 39 15 36M13 49l5-5M13 58l6-3" fill="none" stroke="#365663" stroke-width="0.9"/>
+<path d="M12 42q-4-3-3-5q5 0 3 5Z" fill="#365663" stroke="#73888b" stroke-width="0.3" transform="rotate(-25 12 42)"/>
+<path d="M16 46q-4-3-3-5q5 0 3 5Z" fill="#365663" stroke="#73888b" stroke-width="0.3" transform="rotate(35 16 46)"/>
+<path d="M12 51q-4-3-3-5q5 0 3 5Z" fill="#365663" stroke="#73888b" stroke-width="0.3" transform="rotate(-20 12 51)"/>
+<path d="M17 56q-4-3-3-5q5 0 3 5Z" fill="#365663" stroke="#73888b" stroke-width="0.3" transform="rotate(50 17 56)"/>
+<path d="M14 61q-4-3-3-5q5 0 3 5Z" fill="#365663" stroke="#73888b" stroke-width="0.3" transform="rotate(15 14 61)"/>
+<path d="M9 70L67 71" fill="none" stroke="#21353f" stroke-width="1"/>
+<path d="M9 65L67 66" fill="none" stroke="#365663" stroke-width="1"/>
+<path d="M10 72V62" fill="none" stroke="#365663" stroke-width="1"/>
+<path d="M9 64l1-3 1 3Z" fill="#73888b" stroke="#21353f" stroke-width="0.3"/>
+<path d="M19 72V62" fill="none" stroke="#365663" stroke-width="1"/>
+<path d="M18 64l1-3 1 3Z" fill="#73888b" stroke="#21353f" stroke-width="0.3"/>
+<path d="M46 72V62" fill="none" stroke="#365663" stroke-width="1"/>
+<path d="M45 64l1-3 1 3Z" fill="#73888b" stroke="#21353f" stroke-width="0.3"/>
+<path d="M57 72V62" fill="none" stroke="#365663" stroke-width="1"/>
+<path d="M56 64l1-3 1 3Z" fill="#73888b" stroke="#21353f" stroke-width="0.3"/>
+<path d="M66 72V62" fill="none" stroke="#365663" stroke-width="1"/>
+<path d="M65 64l1-3 1 3Z" fill="#73888b" stroke="#21353f" stroke-width="0.3"/>
+<path d="M13 34l32-5M52 28v39" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">废弃医院</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">abandoned-hospital</text></g>
+<g transform="translate(24 240)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-midnight-subway-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-midnight-subway-title urban-legend-midnight-subway-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-midnight-subway-title">Midnight subway / 午夜地铁</title>
+<desc id="urban-legend-midnight-subway-desc">A last train emerges from a masonry tunnel on converging rails: a curved metal nose, twin lamps, blank destination board and a lone passenger behind reflective glass. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-midnight-subway-art,#urban-legend-midnight-subway-art *{animation-play-state:inherit}
+.urban-legend-midnight-subway-pulse{animation:urban-legend-midnight-subway-pulse 4.8s ease-in-out infinite}
+.urban-legend-midnight-subway-float{animation:urban-legend-midnight-subway-float 6s ease-in-out infinite}
+.urban-legend-midnight-subway-sway{animation:urban-legend-midnight-subway-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-midnight-subway-pop{animation:urban-legend-midnight-subway-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-midnight-subway-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-midnight-subway-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-midnight-subway-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-midnight-subway-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-midnight-subway-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-midnight-subway-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-midnight-subway-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-midnight-subway-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-midnight-subway-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-midnight-subway-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<path d="M7 64L10 34C12 17 24 9 40 9C57 9 68 18 70 34L73 65L65 68L12 68Z" fill="url(#urban-legend-midnight-subway-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M16 64L18 35C20 23 28 18 40 18C53 18 60 25 62 36L66 65Z" fill="#172b35" stroke="#21353f" stroke-width="0.65"/>
+<path d="M8 61L10 34C12 17 24 9 40 9C57 9 68 18 70 34L72 61L68 61L65 35C62 18 51 13 40 13C24 13 17 24 15 36L12 62Z" fill="#788d90" stroke="#21353f" stroke-width="0.6"/>
+<path d="M13 24l5 3" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M21 15l4 5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M32 10l2 5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M44 10v4" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M56 14l-3 5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M65 23l-5 3" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M69 34l-5 1" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M10 39l5 .5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M8.5 51l5 .5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M67 47l4 .5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M11 33C14 17 27 11 40 11" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M25 57L10 73H15L31 57ZM48 57L64 73H70L54 57Z" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M24 65l35 1M19 70l46 1" fill="none" stroke="#21353f" stroke-width="1.5"/>
+<path d="M27 59L14 72M52 58L66 72" fill="none" stroke="#e7deca" stroke-width="0.55"/>
+<g class="urban-legend-midnight-subway-float">
+<path d="M26 25Q37 21 50 25L58 30L61 56L57 62L29 65L20 58L22 31Z" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M50 25L58 30L61 56L57 62L51 61L53 37Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<path d="M23 33Q36 27 50 30L51 43L22 44Z" fill="url(#urban-legend-midnight-subway-glass)" stroke="#21353f" stroke-width="0.8"/>
+<path d="M24 34L34 31.5L29 41.5L23 42Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.24"/>
+<path d="M41 30.7L46 30.5L40 42.5H36Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.15"/>
+<path d="M36 31l-.5 12" fill="none" stroke="#73888b" stroke-width="0.85"/>
+<path d="M42 42l.3-3.7q.5-1.6 2-1.6q1.7 0 2.4 1.5L48 42Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<ellipse cx="44.4" cy="35.7" rx="1.4" ry="1.9" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="44" cy="35.6" r="0.24" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<circle cx="45" cy="35.6" r="0.24" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<path d="M25 42l6-5M39 41l6-4" fill="none" stroke="#21353f" stroke-width="0.6"/>
+<path d="M27 26L47 25.9L49 29L26 30Z" fill="url(#urban-legend-midnight-subway-amber)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M31 27.5h13" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M22 45L52 44L54 56L23 59L20 55Z" fill="#9ba9a1" stroke="#21353f" stroke-width="0.65"/>
+<path d="M22 53L53 51L54 55L22 58Z" fill="#985a58" stroke="none" stroke-width="0.65"/>
+<rect x="32" y="46" width="10" height="9" rx="1" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M34 48h6" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M34 50h6" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M34 52h6" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<circle cx="26.5" cy="49" r="3" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.55"/>
+<circle cx="26.5" cy="49" r="2.1" fill="url(#urban-legend-midnight-subway-amber)" stroke="#21353f" stroke-width="0.35"/>
+<g class="urban-legend-midnight-subway-pulse">
+<circle cx="26.3" cy="48.8" r="1.45" fill="#f1d99d" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M25.5 47.8l.5-.3" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<circle cx="47.7" cy="47.7" r="3" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.55"/>
+<circle cx="47.7" cy="47.7" r="2.1" fill="url(#urban-legend-midnight-subway-amber)" stroke="#21353f" stroke-width="0.35"/>
+<g class="urban-legend-midnight-subway-pulse">
+<circle cx="47.5" cy="47.5" r="1.45" fill="#f1d99d" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M46.7 46.5l.5-.3" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M23 58L53 55L55 59L28 63L23 61Z" fill="url(#urban-legend-midnight-subway-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M34 61l7-.7v3l-7 .7Z" fill="#21353f" stroke="#21353f" stroke-width="0.65"/>
+<path d="M27 59l22-2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M54 32l2 1 1 9-2-1Z" fill="url(#urban-legend-midnight-subway-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M55 45l3 9" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M23 32Q35 28 49 29M23 45l27-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M25 56l5-.3M44 54.4l5-.5" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</g>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">午夜地铁</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">midnight-subway</text></g>
+<g transform="translate(176 240)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-empty-classroom-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-empty-classroom-title urban-legend-empty-classroom-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-empty-classroom-title">Empty classroom / 空教室</title>
+<desc id="urban-legend-empty-classroom-desc">An empty classroom with an angled wooden desk, a displaced chair, a midnight clock and loose papers; chalk strokes and a handprint remain on the dark board. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-empty-classroom-art,#urban-legend-empty-classroom-art *{animation-play-state:inherit}
+.urban-legend-empty-classroom-pulse{animation:urban-legend-empty-classroom-pulse 4.8s ease-in-out infinite}
+.urban-legend-empty-classroom-float{animation:urban-legend-empty-classroom-float 6s ease-in-out infinite}
+.urban-legend-empty-classroom-sway{animation:urban-legend-empty-classroom-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-empty-classroom-pop{animation:urban-legend-empty-classroom-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-empty-classroom-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-empty-classroom-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-empty-classroom-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-empty-classroom-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-empty-classroom-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-empty-classroom-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-empty-classroom-wood" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#a48564"/><stop offset="0.5" stop-color="#7e614c"/><stop offset="1" stop-color="#413d39"/></linearGradient></defs>
+<path d="M12 52L46 43L72 61L38 73L9 65Z" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.17"/>
+<path d="M13 60l42-9M21 67l42-11M32 47l28 18" fill="none" stroke="#73888b" stroke-width="0.35" opacity="0.65"/>
+<path d="M10 15L53 18V43L10 40Z" fill="url(#urban-legend-empty-classroom-wood)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M12 17L51 20V40L12 37.5Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M11 40L54 42L55 44L10 42Z" fill="url(#urban-legend-empty-classroom-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M11 15.7l41 3M14 41l30 1.3" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M16 23l4 .2 1-1 2 1.3 3 .2M16 27l3 .2 2-1 1 1.2 7 .5M16 31l2-.5 3 .8 2-1 2 1.2" fill="none" stroke="#c1ceca" stroke-width="0.5"/>
+<path d="M31 24l9 .6M30 28l4 .2M15 35l6 .5" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<g class="urban-legend-empty-classroom-pop">
+<path d="M39 35L37 32Q37 31 38 31.7L40 33L39 28Q39.7 27.5 40 29L41 32L41 27Q42 26.6 42 28L42.5 32L44 28Q44.8 28 44.3 29.5L43.5 33L46 31Q46.8 31.3 45.5 32.5L43.8 35L43 37L40.5 36.8Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.65"/>
+</g>
+<rect x="19" y="40.5" width="4" height="1" rx="0.25" fill="#e7deca" stroke="none" stroke-width="0.65" transform="rotate(3 19 40.5)"/>
+<circle cx="64" cy="18" r="8.2" fill="url(#urban-legend-empty-classroom-metal)" stroke="#21353f" stroke-width="0.7"/>
+<circle cx="64" cy="18" r="6.8" fill="#e7deca" stroke="#21353f" stroke-width="0.5"/>
+<path d="M64.00 12.40l-0.00 0.65" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M66.80 13.15l-0.32 0.56" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M68.85 15.20l-0.56 0.33" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M69.60 18.00l-0.65 0.00" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M68.85 20.80l-0.56 -0.32" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M66.80 22.85l-0.32 -0.56" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M64.00 23.60l-0.00 -0.65" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M61.20 22.85l0.32 -0.56" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M59.15 20.80l0.56 -0.33" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M58.40 18.00l0.65 -0.00" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M59.15 15.20l0.56 0.33" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M61.20 13.15l0.33 0.56" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M64 18v-4.7M64 18l-.7-3" fill="none" stroke="#21353f" stroke-width="0.8"/>
+<circle cx="64" cy="18" r="0.65" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<path d="M16 49L38 45L50 52L28 57Z" fill="url(#urban-legend-empty-classroom-wood)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M16 49L28 55L50 50V54L28 60L16 53Z" fill="url(#urban-legend-empty-classroom-wood)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M18 53L20 54V69L18 68ZM44 55L46 54V66L44 67Z" fill="url(#urban-legend-empty-classroom-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M21 62l21-4" fill="none" stroke="#21353f" stroke-width="0.9"/>
+<path d="M18 49L37 45.7L47 50.5L28 55Z" fill="#ac926c" stroke="#21353f" stroke-width="0.4"/>
+<path d="M23 49l11-2M24 51l10-2M30 52l8-1.7" fill="none" stroke="#705848" stroke-width="0.35"/>
+<path d="M48 42L61 44L63 51L50 49Z" fill="url(#urban-legend-empty-classroom-wood)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M49 50L62 52L67 57L54 57Z" fill="url(#urban-legend-empty-classroom-wood)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M48 42L51 63M61 44L65 65M53 57v10M66 57l3 7" fill="none" stroke="#21353f" stroke-width="1.15"/>
+<path d="M49 43l11 2M55 58v7" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M31 65L39 63L44 66L36 69Z" fill="#e7deca" stroke="#73888b" stroke-width="0.4"/>
+<path d="M34 65.5l4-.9M35 67l4-1" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M59 69l6-2 3 1.5-5 3Z" fill="#e7deca" stroke="#73888b" stroke-width="0.4"/>
+<path d="M16 52l11 6M11 19v17" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">空教室</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">empty-classroom</text></g>
+<g transform="translate(328 240)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-rooftop-antenna-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-rooftop-antenna-title urban-legend-rooftop-antenna-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-rooftop-antenna-title">Rooftop antenna / 天台天线</title>
+<desc id="urban-legend-rooftop-antenna-desc">A rooftop aerial, guy wires and a drooping cable cross a raised water tank and an angled brick parapet beneath a cold moon; a long-haired figure stands at the edge. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-rooftop-antenna-art,#urban-legend-rooftop-antenna-art *{animation-play-state:inherit}
+.urban-legend-rooftop-antenna-pulse{animation:urban-legend-rooftop-antenna-pulse 4.8s ease-in-out infinite}
+.urban-legend-rooftop-antenna-float{animation:urban-legend-rooftop-antenna-float 6s ease-in-out infinite}
+.urban-legend-rooftop-antenna-sway{animation:urban-legend-rooftop-antenna-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-rooftop-antenna-pop{animation:urban-legend-rooftop-antenna-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-rooftop-antenna-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-rooftop-antenna-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-rooftop-antenna-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-rooftop-antenna-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-rooftop-antenna-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-rooftop-antenna-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-rooftop-antenna-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-rooftop-antenna-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-rooftop-antenna-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<circle cx="57" cy="20" r="12" fill="url(#urban-legend-rooftop-antenna-cloth)" stroke="#73888b" stroke-width="0.45"/>
+<path d="M58 8A12 12 0 0 1 62 31Q70 20 58 8Z" fill="#8ba2a4" stroke="none" stroke-width="0.65" opacity="0.55"/>
+<path d="M49 17q3-4 6-1t-1 4q-5 2-5-3M60 24q4-3 6 1t-4 3q-3-1-2-4" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.23"/>
+<path d="M10 61L58 53L72 60L23 69Z" fill="url(#urban-legend-rooftop-antenna-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M10 61L23 66L72 58V66L24 74L10 69Z" fill="url(#urban-legend-rooftop-antenna-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M10 60L57 52L73 58L24 66L10 63Z" fill="url(#urban-legend-rooftop-antenna-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M25 69l46-8M13 67l10 3M24 73l47-8" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M31 67.04v3M25 71.04v2.5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M44 64.96v3M38 68.96v2.5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M57 62.88v3M51 66.88v2.5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M68 61.12v3M62 65.12v2.5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M17 42v16M27 40v16M17 48l10 7M27 47l-10 9" fill="none" stroke="#21353f" stroke-width="1"/>
+<path d="M14 36L23 32L29 36V48Q21 52 14 48Z" fill="url(#urban-legend-rooftop-antenna-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M13 36L21 27L30 35Q23 39 13 36Z" fill="url(#urban-legend-rooftop-antenna-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M21 27L22 36L13 36Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M15 40q7 2 13-1M15 45q7 2 13-1" fill="none" stroke="#21353f" stroke-width="0.65"/>
+<path d="M16 38v8M17 34l3-4" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M36 11v46" fill="none" stroke="#21353f" stroke-width="1.35"/>
+<path d="M35.7 12v40" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M23 17l27-3M20 25l34-4M24 33l26-3" fill="none" stroke="#365663" stroke-width="1"/>
+<path d="M26 14.7v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M33 14v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M43 13v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M48 12.5v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M24 22.5v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M31 21.5v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M43 20.5v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M50 19.5v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M28 30.5v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M44 28.5v4" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M35 26L20 60M36 29L52 57" fill="none" stroke="#73888b" stroke-width="0.5"/>
+<path d="M50 21Q40 25 40 39Q41 50 58 58" fill="none" stroke="#21353f" stroke-width="0.8"/>
+<g class="urban-legend-rooftop-antenna-sway">
+<path d="M58 41C52 41 52 35 54 32Q60 28 62 34L62 44L65 57L60 61L54 59L56 47Z" fill="url(#urban-legend-rooftop-antenna-shade)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M56 45L56 57L59 58L60 46Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M55 35q-1 4 1 8M60 33l.6 9" fill="none" stroke="#73888b" stroke-width="0.35"/>
+</g>
+<path d="M10 21q3-5 5-2l2-1 3 3-4-.5-2 2-2-2Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<path d="M61 9l2-2 2 1 4-1-2 4-2-1-2 1Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M24 66l46-7M37 36v15" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">天台天线</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">rooftop-antenna</text></g>
+<g transform="translate(480 240)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-hallway-door-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-hallway-door-title urban-legend-hallway-door-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-hallway-door-title">Door at the end of the hall / 走廊尽头的门</title>
+<desc id="urban-legend-hallway-door-desc">A cutaway corridor uses one-point perspective, converging tiled flooring, wall panels and side doors to lead toward an ajar red door, a watching eye and a long floor shadow. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-hallway-door-art,#urban-legend-hallway-door-art *{animation-play-state:inherit}
+.urban-legend-hallway-door-pulse{animation:urban-legend-hallway-door-pulse 4.8s ease-in-out infinite}
+.urban-legend-hallway-door-float{animation:urban-legend-hallway-door-float 6s ease-in-out infinite}
+.urban-legend-hallway-door-sway{animation:urban-legend-hallway-door-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-hallway-door-pop{animation:urban-legend-hallway-door-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-hallway-door-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-hallway-door-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-hallway-door-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-hallway-door-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-hallway-door-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-hallway-door-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-hallway-door-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-hallway-door-red" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#ce9984"/><stop offset="0.46" stop-color="#a56561"/><stop offset="1" stop-color="#583e47"/></linearGradient><linearGradient id="urban-legend-hallway-door-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-hallway-door-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<path d="M9 17L34 27V51L9 65Z" fill="url(#urban-legend-hallway-door-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M48 27L69 13L72 60L48 51Z" fill="url(#urban-legend-hallway-door-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M9 17L28 11L69 13L48 27H34Z" fill="#7d9292" stroke="#21353f" stroke-width="0.6"/>
+<path d="M34 27H48V51H34Z" fill="#758b8b" stroke="#21353f" stroke-width="0.65"/>
+<path d="M9 65L34 51H48L72 60L58 72L25 74Z" fill="url(#urban-legend-hallway-door-stone)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M9 50L34 43V51L9 65Z" fill="#647c83" stroke="#21353f" stroke-width="0.4"/>
+<path d="M48 44L71 49L72 60L48 51Z" fill="#293f4a" stroke="#21353f" stroke-width="0.4"/>
+<path d="M10 52l23-8M49 45l21 6" fill="none" stroke="#c1ceca" stroke-width="0.35"/>
+<path d="M19 17l18 10M35 13l5 14M55 14l-11 13" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M27 18L52 18L49 20H29Z" fill="url(#urban-legend-hallway-door-metal)" stroke="#21353f" stroke-width="0.4"/>
+<g class="urban-legend-hallway-door-pulse">
+<path d="M30 18.5H49L48 19.5H31Z" fill="#e1b574" stroke="none" stroke-width="0.65"/>
+</g>
+<path d="M36 23h9l-1 1h-7Z" fill="#e1b574" stroke="#21353f" stroke-width="0.3"/>
+<path d="M14 28L23 32V54L14 59Z" fill="url(#urban-legend-hallway-door-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M16 30L21 32V52L16 55Z" fill="#365663" stroke="#73888b" stroke-width="0.4"/>
+<path d="M28 35L32 36V49L28 51Z" fill="url(#urban-legend-hallway-door-shade)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M57 30L65 25L66 53L57 49Z" fill="url(#urban-legend-hallway-door-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M58 31L63 28L64 50L58 47Z" fill="#365663" stroke="#73888b" stroke-width="0.4"/>
+<path d="M49 35L53 33V47L49 46Z" fill="url(#urban-legend-hallway-door-metal)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="20" cy="44" r="0.6" fill="#e1b574" stroke="none" stroke-width="0.5"/>
+<circle cx="60" cy="41" r="0.5" fill="#e1b574" stroke="none" stroke-width="0.5"/>
+<circle cx="30.5" cy="43" r="0.35" fill="#e1b574" stroke="none" stroke-width="0.5"/>
+<path d="M36 30H46V51H36Z" fill="#172b35" stroke="#21353f" stroke-width="0.8"/>
+<path d="M36.8 31L42 33V51L36.8 50Z" fill="url(#urban-legend-hallway-door-red)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M37.5 32L41 33.5V49" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<circle cx="40.5" cy="43" r="0.5" fill="url(#urban-legend-hallway-door-amber)" stroke="none" stroke-width="0.5"/>
+<g class="urban-legend-hallway-door-pulse">
+<path d="M43.32 38q0.88 -0.748 1.76 0q-0.88 0.616 -1.76 0Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="44.2" cy="38" rx="0.17600000000000002" ry="0.3784" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="43.958000000000006" cy="37.89" r="0.1012" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M42 51L47 51L54 68L37 72L39 65Z" fill="#985a58" stroke="none" stroke-width="0.65" opacity="0.43"/>
+<path d="M44 51L48 54L49 57L48 64L44 68L43 63L42 60L44 54Z" fill="#172b35" stroke="none" stroke-width="0.65" opacity="0.76"/>
+<path d="M34 51L25 74M38 51L37 73M44 51L53 72M48 51L67 64M25 56l34 .5M17 61l47 2M12 66l47 4" fill="none" stroke="#21353f" stroke-width="0.32" opacity="0.6"/>
+<path d="M10 18L33 28M35 29v22M49 28l19-13" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M9 65l24-14M50 52l19 9" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">走廊尽头的门</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">hallway-door</text></g>
+<g transform="translate(632 240)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-open-manhole-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-open-manhole-title urban-legend-open-manhole-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-open-manhole-title">Open manhole / 敞开的井盖</title>
+<desc id="urban-legend-open-manhole-desc">A thick cast-iron manhole rim surrounds rungs disappearing into darkness, two pairs of eyes and pale gripping fingers; a slotted cover lies aside under two wisps of steam. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-open-manhole-art,#urban-legend-open-manhole-art *{animation-play-state:inherit}
+.urban-legend-open-manhole-pulse{animation:urban-legend-open-manhole-pulse 4.8s ease-in-out infinite}
+.urban-legend-open-manhole-float{animation:urban-legend-open-manhole-float 6s ease-in-out infinite}
+.urban-legend-open-manhole-sway{animation:urban-legend-open-manhole-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-open-manhole-pop{animation:urban-legend-open-manhole-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-open-manhole-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-open-manhole-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-open-manhole-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-open-manhole-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-open-manhole-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-open-manhole-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-open-manhole-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<path d="M9 52L13 44L28 41L48 43L68 52L72 64L56 71L33 70L13 66Z" fill="#92a19b" stroke="none" stroke-width="0.65" opacity="0.38"/>
+<path d="M10 61l9-1 3 2M23 68l4-3 7 1M64 48l-7 2M69 64l-5-1" fill="none" stroke="#73888b" stroke-width="0.5"/>
+<ellipse cx="32" cy="53" rx="23" ry="12" fill="url(#urban-legend-open-manhole-metal)" stroke="#21353f" stroke-width="0.7"/>
+<ellipse cx="32" cy="50.5" rx="23" ry="11" fill="url(#urban-legend-open-manhole-metal)" stroke="#21353f" stroke-width="0.7"/>
+<ellipse cx="32" cy="50.5" rx="19.5" ry="8.8" fill="#172b35" stroke="#73888b" stroke-width="0.45"/>
+<path d="M14 50Q31 37 50 50Q44 44 30 45Q20 46 14 50Z" fill="#41616b" stroke="none" stroke-width="0.65"/>
+<path d="M20 45Q20 49 25 50L22 57M27 43Q25 48 30 49L28 58" fill="none" stroke="#73888b" stroke-width="1.1"/>
+<path d="M21 49l5-1M23 53l5-.5M23 56l4 .3" fill="none" stroke="#73888b" stroke-width="1"/>
+<g class="urban-legend-open-manhole-pulse">
+<path d="M37.9 51q1.1 -0.935 2.2 0q-1.1 0.77 -2.2 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="39" cy="51" rx="0.22000000000000003" ry="0.47300000000000003" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="38.6975" cy="50.8625" r="0.12650000000000003" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M42.1 51q0.9 -0.765 1.8 0q-0.9 0.63 -1.8 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="43" cy="51" rx="0.18000000000000002" ry="0.387" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="42.7525" cy="50.8875" r="0.10350000000000001" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M31.4 56q0.6 -0.51 1.2 0q-0.6 0.42 -1.2 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="32" cy="56" rx="0.12" ry="0.258" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="31.835" cy="55.925" r="0.069" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M33.4 56q0.6 -0.51 1.2 0q-0.6 0.42 -1.2 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="34" cy="56" rx="0.12" ry="0.258" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="33.835" cy="55.925" r="0.069" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M48 54Q50 50 51.5 51Q53 51.5 51 55L49 59Q48 60 47.5 58ZM45 56Q46 52 47.2 52Q49 52 47.8 55.5L46.5 59Q45.7 60.1 44.8 58.5ZM42 57Q43 54 44.2 54Q45.6 54 44.5 57L43.7 59Q42 60 42 57Z" fill="#e7deca" stroke="#21353f" stroke-width="0.45"/>
+<path d="M49 55l1 .5M46 56l1 .5M43 57l1 .5" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M12 49C17 41 41 38 51 48M15 57Q23 61 33 61" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<g transform="rotate(-18 58 60)">
+<ellipse cx="58" cy="61.5" rx="14" ry="8" fill="url(#urban-legend-open-manhole-shade)" stroke="#21353f" stroke-width="0.6"/>
+<ellipse cx="58" cy="59.5" rx="14" ry="8" fill="url(#urban-legend-open-manhole-metal)" stroke="#21353f" stroke-width="0.7"/>
+<ellipse cx="58" cy="59.5" rx="11.7" ry="6.4" fill="#748e8e" stroke="#21353f" stroke-width="0.5"/>
+<rect x="49" y="57.5" width="1.8" height="4" rx="0.6" fill="#172b35" stroke="#21353f" stroke-width="0.3"/>
+<path d="M49 58.0v3" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<rect x="53" y="56.0" width="1.8" height="7" rx="0.6" fill="#172b35" stroke="#21353f" stroke-width="0.3"/>
+<path d="M53 56.5v6" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<rect x="57" y="56.0" width="1.8" height="7" rx="0.6" fill="#172b35" stroke="#21353f" stroke-width="0.3"/>
+<path d="M57 56.5v6" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<rect x="61" y="56.0" width="1.8" height="7" rx="0.6" fill="#172b35" stroke="#21353f" stroke-width="0.3"/>
+<path d="M61 56.5v6" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<rect x="65" y="57.5" width="1.8" height="4" rx="0.6" fill="#172b35" stroke="#21353f" stroke-width="0.3"/>
+<path d="M65 58.0v3" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<path d="M55 53h6v1.6h-6ZM55 65h6v1.5h-6Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M46 58Q51 51 62 53" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+</g>
+<g class="urban-legend-open-manhole-float">
+<path d="M24 42C17 36 28 30 22 24Q33 29 26 35Q23 38 27 43Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.7"/>
+<path d="M34 41C28 36 38 32 34 25Q44 31 37 36L38 42Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.6"/>
+<path d="M24 39Q21 36 25 32M35 39q-2-2 1-5" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+</g>
+<path d="M13 53q1 3 4 4M45 66l4 1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">敞开的井盖</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">open-manhole</text></g>
+<g transform="translate(784 240)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-cursed-doll-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-cursed-doll-title urban-legend-cursed-doll-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-cursed-doll-title">Cursed doll / 诅咒人偶</title>
+<desc id="urban-legend-cursed-doll-desc">A porcelain doll in a faded crimson dress and bone lace, with articulated limbs, leather shoes, a button eye, a crack and a stitched smile; two fine pins pierce the cloth. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-cursed-doll-art,#urban-legend-cursed-doll-art *{animation-play-state:inherit}
+.urban-legend-cursed-doll-pulse{animation:urban-legend-cursed-doll-pulse 4.8s ease-in-out infinite}
+.urban-legend-cursed-doll-float{animation:urban-legend-cursed-doll-float 6s ease-in-out infinite}
+.urban-legend-cursed-doll-sway{animation:urban-legend-cursed-doll-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-cursed-doll-pop{animation:urban-legend-cursed-doll-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-cursed-doll-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-cursed-doll-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-cursed-doll-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-cursed-doll-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-cursed-doll-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-cursed-doll-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-cursed-doll-red" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#ce9984"/><stop offset="0.46" stop-color="#a56561"/><stop offset="1" stop-color="#583e47"/></linearGradient><linearGradient id="urban-legend-cursed-doll-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="71" rx="21" ry="1.5" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="70.85" rx="14.07" ry="0.81" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<g class="urban-legend-cursed-doll-sway">
+<path d="M29 21C25 12 34 8 41 10C52 8 57 17 54 29L55 37L50 42L29 39L25 33Z" fill="url(#urban-legend-cursed-doll-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M31 26L29 40L25 38L26 27ZM49 25L53 26L54 38L49 41Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M31 59L36 59L35 68L30 69ZM44 59L49 59L51 67L46 69Z" fill="url(#urban-legend-cursed-doll-cloth)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M29 66Q33 65 36 67L35 71H27Q26 68 29 66ZM46 67Q49 65 52 67L55 70L53 72H46Z" fill="url(#urban-legend-cursed-doll-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M28 69q3-1 5-.5M48 69l3-.3" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M32 34L46 33L51 43L55 59Q41 67 24 59L29 45Z" fill="url(#urban-legend-cursed-doll-red)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M29 47Q37 51 49 47L53 59Q41 64 27 59Z" fill="#b78379" stroke="#21353f" stroke-width="0.45"/>
+<path d="M33 46L31 60L36 61L37 49ZM44 48L45 61L50 59L47 46Z" fill="#815962" stroke="none" stroke-width="0.65"/>
+<path d="M35 49L34 60L39 61L40 50Z" fill="#cda38e" stroke="none" stroke-width="0.65"/>
+<path d="M25 57Q40 64 54 57L56 61Q53 63 51 61Q48 65 45 63Q42 66 39 63Q35 65 33 62Q29 64 27 61Q24 61 25 57Z" fill="#e7deca" stroke="#21353f" stroke-width="0.45"/>
+<path d="M29 60l1 .2M35 62l1 .1M43 63l1-.2M49 61l1-.3" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M31 35L38 40L41 36L46 39L49 34L43 31H35Z" fill="url(#urban-legend-cursed-doll-cloth)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M28 37L23 48L25 51L31 42Z" fill="url(#urban-legend-cursed-doll-cloth)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M48 36L55 45L53 48L46 41Z" fill="url(#urban-legend-cursed-doll-cloth)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M24 49L22 55Q23 59 25 56L27 51ZM53 46L55 52Q58 55 57 51L56 45Z" fill="#e7deca" stroke="#21353f" stroke-width="0.5"/>
+<circle cx="27" cy="44" r="1" fill="#73888b" stroke="#21353f" stroke-width="0.35"/>
+<circle cx="51" cy="42" r="1" fill="#73888b" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="40" cy="23" rx="10.5" ry="11.7" fill="url(#urban-legend-cursed-doll-cloth)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M30 21Q28 12 39 11Q51 10 51 23L47 20L43 22L40 19L36 22L33 19Z" fill="url(#urban-legend-cursed-doll-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M33 13q-3 3-1 6M39 12q-1 3 1 6M45 14l2 4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<circle cx="35.5" cy="25" r="2.6" fill="#365663" stroke="#21353f" stroke-width="0.5"/>
+<path d="M34.3 23.7l2.4 2.6M36.7 23.7l-2.4 2.6" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M42.3 25.5q2.2 -1.87 4.4 0q-2.2 1.54 -4.4 0Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="44.5" cy="25.5" rx="0.44000000000000006" ry="0.9460000000000001" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="43.895" cy="25.225" r="0.25300000000000006" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M43 18l-1 3 2 1-1 1.3" fill="none" stroke="#21353f" stroke-width="0.38"/>
+<path d="M36 31Q40 33 44 30.5M37 30.5l.3 1.5M39 31l.1 1.7M41 31l.4 1.4M43 30.5l.5 1.2" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<ellipse cx="32.7" cy="28.8" rx="1.3" ry="0.65" fill="#985a58" stroke="none" stroke-width="0.5" opacity="0.4"/>
+<ellipse cx="47.1" cy="29" rx="1.3" ry="0.65" fill="#985a58" stroke="none" stroke-width="0.5" opacity="0.4"/>
+<path d="M31 13L26 10L27 17L32 16L36 16L39 12L33 12Z" fill="url(#urban-legend-cursed-doll-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="32.5" cy="14.4" r="1.3" fill="#985a58" stroke="#21353f" stroke-width="0.4"/>
+<path d="M29 12l2 2M35 13l-1 1" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+<path d="M42 46l10-5M36 53l-8-7" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="52" cy="41" r="1.05" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<circle cx="28" cy="46" r="1" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<path d="M29 28l-.5 5M47 49l2 5" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</g>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">诅咒人偶</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">cursed-doll</text></g>
+<g transform="translate(24 394)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-vhs-tape-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-vhs-tape-title urban-legend-vhs-tape-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-vhs-tape-title">Cursed video tape / 诅咒录像带</title>
+<desc id="urban-legend-vhs-tape-desc">An angled video cassette reveals molded sidewalls, twin reels and a worn paper label crossed out in red; a brown-black tape ribbon twists below. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-vhs-tape-art,#urban-legend-vhs-tape-art *{animation-play-state:inherit}
+.urban-legend-vhs-tape-pulse{animation:urban-legend-vhs-tape-pulse 4.8s ease-in-out infinite}
+.urban-legend-vhs-tape-float{animation:urban-legend-vhs-tape-float 6s ease-in-out infinite}
+.urban-legend-vhs-tape-sway{animation:urban-legend-vhs-tape-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-vhs-tape-pop{animation:urban-legend-vhs-tape-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-vhs-tape-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-vhs-tape-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-vhs-tape-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-vhs-tape-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-vhs-tape-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-vhs-tape-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-vhs-tape-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-vhs-tape-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-vhs-tape-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="65" rx="29" ry="2" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="64.85" rx="19.43" ry="1.08" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<g class="urban-legend-vhs-tape-pop">
+<path d="M11 25L63 20L70 25V55L18 61L11 56Z" fill="url(#urban-legend-vhs-tape-shade)" stroke="#21353f" stroke-width="0.8"/>
+<path d="M11 25L18 29L70 25L63 20Z" fill="#73888b" stroke="#21353f" stroke-width="0.5"/>
+<path d="M18 29L70 25V55L18 61Z" fill="url(#urban-legend-vhs-tape-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M11 26L18 30V60L11 56Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<path d="M22 31L64 27.5V37L22 41Z" fill="url(#urban-legend-vhs-tape-cloth)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M24 32L63 29v5.8l-39 3Z" fill="#e7deca" stroke="none" stroke-width="0.65"/>
+<path d="M27 34l3-1.2 2 1 2-1.5 2 1 3-.6M27 36l7-.8M46 32.8l13-1" fill="none" stroke="#365663" stroke-width="0.5"/>
+<path d="M45 33.4l15 1M48 35l13-2.2" fill="none" stroke="#985a58" stroke-width="0.85"/>
+<path d="M24 43L62 39.5L63 52L24 56Z" fill="url(#urban-legend-vhs-tape-glass)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M26 44L59 41L61 43L29 47Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.12"/>
+<ellipse cx="33" cy="48.5" rx="5.9" ry="6" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<ellipse cx="33" cy="48.5" rx="3.7" ry="3.9" fill="url(#urban-legend-vhs-tape-metal)" stroke="#21353f" stroke-width="0.4"/>
+<circle cx="33" cy="48.5" r="1.2" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<path d="M34.60 48.50l1.30 0.00" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M33.80 49.89l0.65 1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M32.20 49.89l-0.65 1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M31.40 48.50l-1.30 0.00" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M32.20 47.11l-0.65 -1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M33.80 47.11l0.65 -1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<ellipse cx="53" cy="46.5" rx="5.9" ry="6" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<ellipse cx="53" cy="46.5" rx="3.7" ry="3.9" fill="url(#urban-legend-vhs-tape-metal)" stroke="#21353f" stroke-width="0.4"/>
+<circle cx="53" cy="46.5" r="1.2" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<path d="M54.60 46.50l1.30 0.00" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M53.80 47.89l0.65 1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M52.20 47.89l-0.65 1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M51.40 46.50l-1.30 0.00" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M52.20 45.11l-0.65 -1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M53.80 45.11l0.65 -1.13" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M34 43l18-1.5M33 54l20-1.4" fill="none" stroke="#21353f" stroke-width="0.65"/>
+<path d="M13 33l3 1.5" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M66 30l2-.2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M13 37l3 1.5" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M66 34l2-.2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M13 41l3 1.5" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M66 38l2-.2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M13 45l3 1.5" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M66 42l2-.2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M13 49l3 1.5" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M66 46l2-.2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M13 53l3 1.5" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M66 50l2-.2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<circle cx="20" cy="30.5" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M19.67 30.71l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="67.5" cy="27.7" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M67.17 27.91l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="20" cy="58" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M19.67 58.21l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="67.5" cy="53.5" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M67.17 53.71l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<path d="M31 56.8L51 55L51 58L31 60Z" fill="url(#urban-legend-vhs-tape-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M39 56.5l4-.4v2.8l-4 .4Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M19 29.8L65 25.9M12 26l4 2M25 44l9-.8" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M20 41v11M56 54l7-.7" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</g>
+<path d="M38 59C26 63 25 70 40 70C59 71 53 58 47 63C36 72 63 77 68 63L66 62C63 75 41 70 48 65C53 61 53 70 40 68C30 68 30 65 39 61Z" fill="#6a5650" stroke="#21353f" stroke-width="0.35"/>
+<path d="M30 64Q26 71 40 69M45 66q-1 5 10 6" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">诅咒录像带</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">vhs-tape</text></g>
+<g transform="translate(176 394)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-broken-mirror-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-broken-mirror-title urban-legend-broken-mirror-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-broken-mirror-title">Broken mirror / 破碎的镜子</title>
+<desc id="urban-legend-broken-mirror-desc">An oval mirror with patinated metal, an aged brass rim and curled ornaments surrounds fractured cool glass; a muted red eye hides in an unfamiliar reflection above fallen shards. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-broken-mirror-art,#urban-legend-broken-mirror-art *{animation-play-state:inherit}
+.urban-legend-broken-mirror-pulse{animation:urban-legend-broken-mirror-pulse 4.8s ease-in-out infinite}
+.urban-legend-broken-mirror-float{animation:urban-legend-broken-mirror-float 6s ease-in-out infinite}
+.urban-legend-broken-mirror-sway{animation:urban-legend-broken-mirror-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-broken-mirror-pop{animation:urban-legend-broken-mirror-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-broken-mirror-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-broken-mirror-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-broken-mirror-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-broken-mirror-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-broken-mirror-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-broken-mirror-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-broken-mirror-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-broken-mirror-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><clipPath id="urban-legend-broken-mirror-glass-clip"><ellipse cx="40" cy="41" rx="16.7" ry="24.8"/></clipPath></defs>
+<ellipse cx="40" cy="72" rx="16" ry="1.3" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="71.85" rx="10.72" ry="0.7020000000000001" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M25 19L40 7L56 18" fill="none" stroke="#365663" stroke-width="0.7"/>
+<circle cx="40" cy="7" r="1.1" fill="url(#urban-legend-broken-mirror-amber)" stroke="#21353f" stroke-width="0.4"/>
+<ellipse cx="40" cy="41" rx="21" ry="29" fill="url(#urban-legend-broken-mirror-metal)" stroke="#21353f" stroke-width="0.8"/>
+<ellipse cx="40" cy="41" rx="18.5" ry="26.5" fill="url(#urban-legend-broken-mirror-amber)" stroke="#21353f" stroke-width="0.5"/>
+<ellipse cx="40" cy="41" rx="17" ry="25" fill="url(#urban-legend-broken-mirror-glass)" stroke="#21353f" stroke-width="0.65"/>
+<g clip-path="url(#urban-legend-broken-mirror-glass-clip)">
+<path d="M22 27L41 17L36 40L22 52Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.36"/>
+<path d="M38 17L46 18L29 63L23 53Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.17"/>
+<path d="M46 36C39 30 37 43 39 47L34 67L54 70L50 49C52 44 52 38 46 36Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M45 36Q42 39 43 45L46 46L47 39Z" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.6"/>
+<g class="urban-legend-broken-mirror-pulse">
+<path d="M46.24 42.1q2.36 -2.006 4.72 0q-2.36 1.652 -4.72 0Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="48.6" cy="42.1" rx="0.472" ry="1.0148" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="47.951" cy="41.805" r="0.2714" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M40 37L42 20L55 26L53 41Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.17"/>
+<path d="M40 37L36 51L39 66L53 60Z" fill="#a6c1bf" stroke="none" stroke-width="0.65" opacity="0.3"/>
+<path d="M40 37L52 49L49 61L45 53Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M40 37L35 23L37 17M40 37L25 29M40 37L23 46M40 37L35 49L29 60M40 37L39 52L41 66M40 37L52 49L49 62M40 37L56 40M40 37L48 31L50 22" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<path d="M39.3 37L34.7 23M39.6 37.7L34.6 49L28.6 60M40.5 37.2L53 49L50 62" fill="none" stroke="#21353f" stroke-width="0.32"/>
+</g>
+<path d="M30 17Q25 13 31 11Q34 9 37 12Q39 8 41 10Q44 7 46 12Q53 9 53 14Q52 18 47 17L44 19H35Z" fill="url(#urban-legend-broken-mirror-metal)" stroke="#21353f" stroke-width="0.55"/>
+<path d="M30 15Q28 11 33 13L36 15M44 15Q49 11 50 14Q50 16 47 15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M37 13l3-2 3 2-3 3Z" fill="url(#urban-legend-broken-mirror-amber)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M27 63Q28 69 35 68Q39 74 43 68Q51 69 53 63L48 66L42 66L39 70L35 66Z" fill="url(#urban-legend-broken-mirror-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M23 34Q17 34 20 39L22 38M57 36Q63 37 59 41L57 39" fill="none" stroke="#e1b574" stroke-width="0.8"/>
+<path d="M27 25Q30 17 37 16M23 45Q24 57 31 62M50 63Q58 53 58 44" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M20 42q1 10 4 15M59 29l1 6" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+<path d="M20 69l4-4 2 6Z" fill="url(#urban-legend-broken-mirror-glass)" stroke="#73888b" stroke-width="0.45"/>
+<path d="M54 71l5-5 2 5Z" fill="url(#urban-legend-broken-mirror-glass)" stroke="#73888b" stroke-width="0.45"/>
+<path d="M32 73l3-3 3 2Z" fill="url(#urban-legend-broken-mirror-glass)" stroke="#73888b" stroke-width="0.45"/>
+<path d="M22 69l2-2M56 70l2-2" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">破碎的镜子</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">broken-mirror</text></g>
+<g transform="translate(328 394)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-red-string-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-red-string-title urban-legend-red-string-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-red-string-title">Red string board / 红线线索板</title>
+<desc id="urban-legend-red-string-desc">Three instant photos and a clipping are linked by muted red thread: a stranger, a house with one amber window and a watching eye; pins hold the paper and a small brass bell hangs below. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-red-string-art,#urban-legend-red-string-art *{animation-play-state:inherit}
+.urban-legend-red-string-pulse{animation:urban-legend-red-string-pulse 4.8s ease-in-out infinite}
+.urban-legend-red-string-float{animation:urban-legend-red-string-float 6s ease-in-out infinite}
+.urban-legend-red-string-sway{animation:urban-legend-red-string-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-red-string-pop{animation:urban-legend-red-string-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-red-string-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-red-string-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-red-string-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-red-string-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-red-string-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-red-string-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-red-string-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-red-string-red" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#ce9984"/><stop offset="0.46" stop-color="#a56561"/><stop offset="1" stop-color="#583e47"/></linearGradient><linearGradient id="urban-legend-red-string-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient></defs>
+<g transform="rotate(-9 22 26)">
+<path d="M11 14L33 14L33 40L11 40Z" fill="#21353f" stroke="none" stroke-width="0.65" opacity="0.15" transform="translate(1 1)"/>
+<rect x="11" y="14" width="22" height="26" rx="0.3" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.6"/>
+<rect x="13" y="16" width="18" height="17" rx="0.2" fill="url(#urban-legend-red-string-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M14 30L20 27L30 28V32H14Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M20 22Q21 19 23 22L23 24L26 31H18L20 25Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M16 37h8M25 36h4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M12 15v23" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+</g>
+<g transform="rotate(7 57 24)">
+<rect x="44" y="11" width="23" height="27" rx="0.3" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.6"/>
+<rect x="46" y="13" width="19" height="18" rx="0.1" fill="url(#urban-legend-red-string-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M47 24L54 16L64 22L62 24V30H49V23Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M55 23h3v5h-3Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<path d="M49 34h11M49 36h5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+</g>
+<g transform="rotate(5 27 56)">
+<rect x="13" y="44" width="27" height="25" rx="0.3" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.6"/>
+<rect x="15" y="46" width="23" height="16" rx="0.1" fill="url(#urban-legend-red-string-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M17 54Q26 45 36 54Q28 64 17 54Z" fill="#c1ceca" stroke="#21353f" stroke-width="0.6"/>
+<circle cx="27" cy="54" r="4" fill="#985a58" stroke="#21353f" stroke-width="0.5"/>
+<circle cx="27" cy="54" r="2" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="25.8" cy="52.9" r="0.7" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M18 65h14M18 67h8" fill="none" stroke="#73888b" stroke-width="0.4"/>
+</g>
+<g transform="rotate(-6 56 51)">
+<path d="M44 42H68V62L64 61L60 63L55 61L51 63L44 61Z" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.5"/>
+<rect x="47" y="45" width="18" height="2.7" rx="0" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M47 50h7M57 50h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 52h7M57 52h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 54h7M57 54h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 56h7M57 56h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 58h7M57 58h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+</g>
+<path d="M20 14Q33 21 57 12L26 44L57 44L20 14M57 12L57 44" fill="none" stroke="#172b35" stroke-width="1.25" opacity="0.22" transform="translate(.4 .8)"/>
+<path d="M20 14Q33 21 57 12L26 44L57 44L20 14M57 12L57 44" fill="none" stroke="#985a58" stroke-width="0.85"/>
+<path d="M22 16Q38 20 53 14M30 41l24-26" fill="none" stroke="#e7deca" stroke-width="0.2" opacity="0.5"/>
+<ellipse cx="20.5" cy="15" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="20" cy="14" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="19.55" cy="13.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<ellipse cx="57.5" cy="13" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="57" cy="12" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="56.55" cy="11.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<ellipse cx="26.5" cy="45" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="26" cy="44" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="25.55" cy="43.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<ellipse cx="57.5" cy="45" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="57" cy="44" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="56.55" cy="43.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<g class="urban-legend-red-string-sway">
+<path d="M57 45C52 52 60 57 57 64" fill="none" stroke="#985a58" stroke-width="0.7"/>
+<circle cx="57" cy="64.5" r="1.2" fill="none" stroke="#e1b574" stroke-width="0.7"/>
+<path d="M55 65Q58 63 61 66L61 69L63 71Q58 75 53 70L54 68Z" fill="url(#urban-legend-red-string-amber)" stroke="#21353f" stroke-width="0.55"/>
+<ellipse cx="58" cy="70.5" rx="4.4" ry="1.6" fill="#21353f" stroke="none" stroke-width="0.5"/>
+<circle cx="58" cy="71.5" r="1.1" fill="#e1b574" stroke="#21353f" stroke-width="0.3"/>
+<path d="M55.5 66q1-1 3-.5" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+</g>
+<path d="M11 41l8 1M45 39l9 1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">红线线索板</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">red-string</text></g>
+<g transform="translate(480 394)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-cassette-player-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-cassette-player-title urban-legend-cassette-player-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-cassette-player-title">Portable cassette player / 随身磁带机</title>
+<desc id="urban-legend-cassette-player-desc">A portable cassette player in three-quarter view has piano keys, visible twin reels, speaker slots and a volume wheel; a cable curls toward two earbuds beside a small drifting whisper. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-cassette-player-art,#urban-legend-cassette-player-art *{animation-play-state:inherit}
+.urban-legend-cassette-player-pulse{animation:urban-legend-cassette-player-pulse 4.8s ease-in-out infinite}
+.urban-legend-cassette-player-float{animation:urban-legend-cassette-player-float 6s ease-in-out infinite}
+.urban-legend-cassette-player-sway{animation:urban-legend-cassette-player-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-cassette-player-pop{animation:urban-legend-cassette-player-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-cassette-player-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-cassette-player-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-cassette-player-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-cassette-player-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-cassette-player-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-cassette-player-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-cassette-player-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-cassette-player-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-cassette-player-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="36" cy="71" rx="24" ry="1.7" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="36" cy="70.85" rx="16.080000000000002" ry="0.918" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M52 24C54 14 62 7 67 15C70 21 60 25 61 29M57 17C67 14 73 25 69 32" fill="none" stroke="#21353f" stroke-width="0.9"/>
+<path d="M60 28q4-1 4 3v3q-4 1-4-2Z" fill="url(#urban-legend-cassette-player-metal)" stroke="#21353f" stroke-width="0.5" transform="rotate(-18 62 31)"/>
+<path d="M67 31q4-1 4 3v3q-4 1-4-2Z" fill="url(#urban-legend-cassette-player-metal)" stroke="#21353f" stroke-width="0.5" transform="rotate(20 69 34)"/>
+<path d="M61 30l2 1M68 33l2 1" fill="none" stroke="#172b35" stroke-width="0.8"/>
+<g class="urban-legend-cassette-player-float">
+<path d="M16 25L47 21L56 25V65L47 70L16 66Z" fill="url(#urban-legend-cassette-player-metal)" stroke="#21353f" stroke-width="0.75"/>
+<path d="M47 22L56 25V65L47 70Z" fill="url(#urban-legend-cassette-player-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M16 25L47 21L56 25L24 29Z" fill="#c1ceca" stroke="#21353f" stroke-width="0.5"/>
+<rect x="18" y="28" width="28" height="35" rx="2" fill="#899b94" stroke="#21353f" stroke-width="0.5"/>
+<path d="M20 24V21l4-.5V24Z" fill="url(#urban-legend-cassette-player-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M26 24V21l4-.5V24Z" fill="#985a58" stroke="#21353f" stroke-width="0.4"/>
+<path d="M32 24V21l4-.5V24Z" fill="url(#urban-legend-cassette-player-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M38 24V21l4-.5V24Z" fill="url(#urban-legend-cassette-player-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M51 23v-3l2-.4v4Z" fill="#365663" stroke="#21353f" stroke-width="0.4"/>
+<path d="M21 30L44 27.5V46L21 49Z" fill="#172b35" stroke="#73888b" stroke-width="0.6"/>
+<path d="M23 32L42 30V44L23 46Z" fill="url(#urban-legend-cassette-player-glass)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M25 34L40 32.5V42L25 44Z" fill="url(#urban-legend-cassette-player-cloth)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M27 35L38 34v2l-11 1Z" fill="#c1ceca" stroke="none" stroke-width="0.65"/>
+<path d="M28 35.5l8-.8" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<circle cx="29" cy="40" r="2.2" fill="#365663" stroke="#21353f" stroke-width="0.4"/>
+<circle cx="29" cy="40" r="0.8" fill="#c1ceca" stroke="none" stroke-width="0.5"/>
+<path d="M27.5 40h3M29 38.5v3" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<circle cx="36" cy="39.3" r="2.2" fill="#365663" stroke="#21353f" stroke-width="0.4"/>
+<circle cx="36" cy="39.3" r="0.8" fill="#c1ceca" stroke="none" stroke-width="0.5"/>
+<path d="M34.5 39.3h3M36 37.8v3" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M24 32l7-.8-6 13.5-1 .1Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.16"/>
+<path d="M23 52l16-1.5v1l-16 1.5Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M24 53l14-1.3" fill="none" stroke="#c1ceca" stroke-width="0.2"/>
+<path d="M23 54.5l16-1.5v1l-16 1.5Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M24 55.5l14-1.3" fill="none" stroke="#c1ceca" stroke-width="0.2"/>
+<path d="M23 57l16-1.5v1l-16 1.5Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M24 58l14-1.3" fill="none" stroke="#c1ceca" stroke-width="0.2"/>
+<path d="M23 59.5l16-1.5v1l-16 1.5Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M24 60.5l14-1.3" fill="none" stroke="#c1ceca" stroke-width="0.2"/>
+<circle cx="41.6" cy="49.5" r="1" fill="#985a58" stroke="#21353f" stroke-width="0.3"/>
+<path d="M49 33l4-1v10l-4 1Z" fill="#21353f" stroke="#73888b" stroke-width="0.4"/>
+<path d="M50 34l2-.6" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M50 36l2-.6" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M50 38l2-.6" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M50 40l2-.6" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M49 50l5-1v7l-5 1Z" fill="url(#urban-legend-cassette-player-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M51 51l.4 4" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<circle cx="19" cy="27" r="0.55" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M18.6975 27.1925l0.6050000000000001 -0.385" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="44" cy="25" r="0.55" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M43.6975 25.1925l0.6050000000000001 -0.385" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="19" cy="64" r="0.55" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M18.6975 64.1925l0.6050000000000001 -0.385" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="44" cy="66" r="0.55" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M43.6975 66.1925l0.6050000000000001 -0.385" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<path d="M17 29v34M19 26l27-3M48 28v38" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M20 50v11M54 28v13" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</g>
+<g class="urban-legend-cassette-player-sway">
+<path d="M65 51C60 48 68 43 64 39Q72 43 68 46Q65 48 69 51Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.3" opacity="0.7"/>
+<path d="M64 58q7-3 6-7" fill="none" stroke="#73888b" stroke-width="0.5"/>
+</g>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">随身磁带机</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">cassette-player</text></g>
+<g transform="translate(632 394)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-payphone-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-payphone-title urban-legend-payphone-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-payphone-title">Ringing payphone / 响铃的公用电话</title>
+<desc id="urban-legend-payphone-desc">An angled public payphone with an amber hood, a green display, twelve keys, coin slot and return; its receiver hangs from a coiled armored cable. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-payphone-art,#urban-legend-payphone-art *{animation-play-state:inherit}
+.urban-legend-payphone-pulse{animation:urban-legend-payphone-pulse 4.8s ease-in-out infinite}
+.urban-legend-payphone-float{animation:urban-legend-payphone-float 6s ease-in-out infinite}
+.urban-legend-payphone-sway{animation:urban-legend-payphone-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-payphone-pop{animation:urban-legend-payphone-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-payphone-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-payphone-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-payphone-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-payphone-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-payphone-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-payphone-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-payphone-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-payphone-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="39" cy="72" rx="23" ry="1.5" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="39" cy="71.85" rx="15.41" ry="0.81" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M23 18L58 14L63 19V67L29 73L23 69Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M58 15L63 19V67L58 70Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<path d="M21 17L27 10L58 9L64 14V22L21 26Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M23 17L60 13.5V20L23 24Z" fill="url(#urban-legend-payphone-amber)" stroke="#21353f" stroke-width="0.5"/>
+<g class="urban-legend-payphone-pulse">
+<path d="M25 18l32-3v4l-32 3Z" fill="#e1b574" stroke="none" stroke-width="0.65" opacity="0.6"/>
+</g>
+<path d="M37 18q0-2 2-2l1 1 4-.5 1-1 2 1q-1 3-5 3-4 0-5-1Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M29 29L54 26Q57 26 57 29V62Q57 64 54 65L29 68Q27 68 27 65V32Q27 30 29 29Z" fill="url(#urban-legend-payphone-shade)" stroke="#21353f" stroke-width="0.7"/>
+<path d="M33 31L49 29V36L33 38Z" fill="#6c9b8e" stroke="#21353f" stroke-width="0.55"/>
+<path d="M35 33l10-1M35 35l7-.8" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<rect x="51" y="30" width="3" height="7" rx="0.7" fill="#172b35" stroke="#21353f" stroke-width="0.4"/>
+<path d="M52.5 32v3" fill="none" stroke="#e1b574" stroke-width="0.45"/>
+<path d="M33.0 41.0l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34.0 42.6l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M38.1 40.45l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M39.1 42.050000000000004l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M43.2 39.9l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44.2 41.5l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M33.0 45.7l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34.0 47.300000000000004l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M38.1 45.150000000000006l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M39.1 46.75000000000001l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M43.2 44.6l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44.2 46.2l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M33.0 50.4l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34.0 52.0l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M38.1 49.85l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M39.1 51.45l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M43.2 49.3l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44.2 50.9l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M33.0 55.1l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34.0 56.7l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M38.1 54.550000000000004l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M39.1 56.150000000000006l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M43.2 54.0l3.4-.4v3l-3.4 .4Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44.2 55.6l1.3-.15" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M49 41l5-.6v17l-5 .6Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M50 44l3-.4M50 47l3-.4M50 50l3-.4M50 53l3-.4" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M45 61l9-1v3l-9 1Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M27 66L58 62V66L27 70Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M29 35l2-.3v9l-2 .3Z" fill="#e7deca" stroke="#21353f" stroke-width="0.4"/>
+<path d="M28 39L22 42C17 45 28 49 19 53C13 56 18 61 18 64" fill="none" stroke="#21353f" stroke-width="1.6"/>
+<path d="M22 40.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M20 42.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M20 44.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M21 46.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M21 48.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M18 50.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M15 53.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M15 55.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<path d="M16 57.5l2 1.3" fill="none" stroke="#c1ceca" stroke-width="0.45"/>
+<g class="urban-legend-payphone-sway">
+<path d="M14 49Q16 47 18 50L17 53L17 61L20 64Q20 67 17 68L14 66L12 52Z" fill="url(#urban-legend-payphone-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M13 49Q16 47 19 50L18 53L13 54Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M14 63L19 62L21 65Q21 68 16 69L14 67Z" fill="url(#urban-legend-payphone-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M14 50l3-.5M15 55l.6 6M16 65l3-.5" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+</g>
+<path d="M24 28v37M29 31l22-3M59 23v36" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M32 58l8-1M29 69l25-3" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">响铃的公用电话</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">payphone</text></g>
+<g transform="translate(784 394)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-dead-phone-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-dead-phone-title urban-legend-dead-phone-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-dead-phone-title">Unplugged ringing phone / 断线还在响的电话</title>
+<desc id="urban-legend-dead-phone-desc">A heavy rotary phone with a curved case, brass dial and Bakelite receiver catches narrow highlights; the cut cable exposes frayed wires while the phone keeps ringing. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-dead-phone-art,#urban-legend-dead-phone-art *{animation-play-state:inherit}
+.urban-legend-dead-phone-pulse{animation:urban-legend-dead-phone-pulse 4.8s ease-in-out infinite}
+.urban-legend-dead-phone-float{animation:urban-legend-dead-phone-float 6s ease-in-out infinite}
+.urban-legend-dead-phone-sway{animation:urban-legend-dead-phone-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-dead-phone-pop{animation:urban-legend-dead-phone-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-dead-phone-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-dead-phone-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-dead-phone-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-dead-phone-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-dead-phone-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-dead-phone-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-dead-phone-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-dead-phone-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-dead-phone-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="65" rx="27" ry="2" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="64.85" rx="18.09" ry="1.08" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M17 51C15 53 15 61 23 64Q43 70 63 62L67 58L64 51Z" fill="url(#urban-legend-dead-phone-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M25 33Q39 28 54 31L64 45L68 57Q47 69 15 58L16 50Z" fill="url(#urban-legend-dead-phone-metal)" stroke="#21353f" stroke-width="0.8"/>
+<path d="M25 36Q32 32 38 33L29 51Q23 54 18 54Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M51 33L62 46L66 57L56 60L54 45Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M17 56Q42 64 66 55L66 58Q45 67 16 59Z" fill="#172b35" stroke="#21353f" stroke-width="0.45"/>
+<ellipse cx="41" cy="46" rx="12.6" ry="11.5" fill="url(#urban-legend-dead-phone-amber)" stroke="#21353f" stroke-width="0.7"/>
+<ellipse cx="41" cy="46" rx="10.5" ry="9.5" fill="url(#urban-legend-dead-phone-metal)" stroke="#21353f" stroke-width="0.5"/>
+<ellipse cx="41" cy="46" rx="5.5" ry="5" fill="url(#urban-legend-dead-phone-cloth)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M38 45h5M38 47h6" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<ellipse cx="41.85713339879476" cy="38.739990163811605" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="42.05713339879476" cy="39.0399901638116" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="45.703326778078576" cy="40.02019007669036" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="45.90332677807858" cy="40.32019007669036" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="48.370111179653165" cy="42.799890628439734" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="48.57011117965317" cy="43.09989062843973" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="49.1887621849875" cy="46.38205248057349" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="49.388762184987506" cy="46.68205248057349" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="47.95399438848269" cy="49.868410628902396" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="48.153994388482694" cy="50.16841062890239" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="44.975438886019965" cy="52.38472386211759" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="45.17543888601997" cy="52.684723862117586" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="41.0" cy="53.3" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="41.2" cy="53.599999999999994" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="37.024561113980035" cy="52.38472386211759" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="37.22456111398004" cy="52.684723862117586" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="34.04600561151731" cy="49.868410628902396" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="34.24600561151731" cy="50.16841062890239" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<ellipse cx="32.8112378150125" cy="46.38205248057349" rx="1.8" ry="1.65" fill="#172b35" stroke="#e7deca" stroke-width="0.25"/>
+<ellipse cx="33.0112378150125" cy="46.68205248057349" rx="1.05" ry="0.8" fill="#536f77" stroke="none" stroke-width="0.5"/>
+<path d="M49 48l4 2-2 3-2-1Z" fill="#e1b574" stroke="#21353f" stroke-width="0.4"/>
+<path d="M23 35V29L27 28V34ZM52 32V26H56V34Z" fill="url(#urban-legend-dead-phone-metal)" stroke="#21353f" stroke-width="0.65"/>
+<g class="urban-legend-dead-phone-pop">
+<path d="M18 24Q37 17 59 23L64 27L62 31L56 32L52 28Q37 24 26 29L23 34L16 32L14 29Z" fill="url(#urban-legend-dead-phone-shade)" stroke="#21353f" stroke-width="0.75"/>
+<path d="M19 24Q36 19 57 23L59 25Q37 21 20 27Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<ellipse cx="19" cy="31" rx="5.1" ry="2.3" fill="url(#urban-legend-dead-phone-metal)" stroke="#21353f" stroke-width="0.5"/>
+<ellipse cx="59" cy="29.8" rx="4.4" ry="2.1" fill="url(#urban-legend-dead-phone-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M16 31h5M56.5 29.8h4.5" fill="none" stroke="#21353f" stroke-width="0.8"/>
+<path d="M21 24Q36 20 53 23M15.5 28l1-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+</g>
+<path d="M16 21q-2 3-1 6M12 19q-3 4-2 8M62 20q3 2 3 5M66 17q5 4 5 9" fill="none" stroke="#73888b" stroke-width="0.7"/>
+<path d="M18 58C7 61 8 70 22 69L27 67" fill="none" stroke="#21353f" stroke-width="1.7"/>
+<path d="M16 59C8 62 11 68 19 68" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M26 66l4-1M27 67l3 1M26.5 67l3 3" fill="none" stroke="#985a58" stroke-width="0.6"/>
+<path d="M32 65l3-2-1 3 2 .2-3 3 1-3Z" fill="#e1b574" stroke="none" stroke-width="0.65"/>
+<path d="M19 50l7-12M25 60q14 4 27 1" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M54 38l5 8M20 54l6 1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">断线还在响的电话</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">dead-phone</text></g>
+<g transform="translate(24 548)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-static-tv-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-static-tv-title urban-legend-static-tv-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-static-tv-title">Static television / 雪花电视</title>
+<desc id="urban-legend-static-tv-desc">A wood-cased CRT on splayed legs, with rabbit-ear aerials, tuning knobs and speaker slots; curved green glass and analog scan interference partly conceal a long-haired figure. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-static-tv-art,#urban-legend-static-tv-art *{animation-play-state:inherit}
+.urban-legend-static-tv-pulse{animation:urban-legend-static-tv-pulse 4.8s ease-in-out infinite}
+.urban-legend-static-tv-float{animation:urban-legend-static-tv-float 6s ease-in-out infinite}
+.urban-legend-static-tv-sway{animation:urban-legend-static-tv-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-static-tv-pop{animation:urban-legend-static-tv-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-static-tv-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-static-tv-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-static-tv-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-static-tv-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-static-tv-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-static-tv-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-static-tv-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-static-tv-wood" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#a48564"/><stop offset="0.5" stop-color="#7e614c"/><stop offset="1" stop-color="#413d39"/></linearGradient><clipPath id="urban-legend-static-tv-screen-clip"><path d="M21 32Q33 29 47 32Q50 44 47 57Q35 60 22 58Q18 45 21 32Z"/></clipPath></defs>
+<ellipse cx="41" cy="72" rx="27" ry="1.6" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="41" cy="71.85" rx="18.09" ry="0.8640000000000001" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M38 24L25 10M40 24L58 8" fill="none" stroke="#21353f" stroke-width="1"/>
+<path d="M27 12l9 10M43 20L56 9.5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<circle cx="25" cy="10" r="1.1" fill="url(#urban-legend-static-tv-metal)" stroke="#21353f" stroke-width="0.4"/>
+<circle cx="58" cy="8" r="1.1" fill="url(#urban-legend-static-tv-metal)" stroke="#21353f" stroke-width="0.4"/>
+<ellipse cx="40" cy="24" rx="5" ry="2.8" fill="url(#urban-legend-static-tv-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M19 62L17 72H20L26 62ZM55 62L62 71L64 70L61 61Z" fill="url(#urban-legend-static-tv-wood)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M12 28Q12 24 17 24L61 21L69 26V61L62 67L16 68Q12 68 12 63Z" fill="url(#urban-legend-static-tv-wood)" stroke="#21353f" stroke-width="0.85"/>
+<path d="M61 22L69 26V61L62 67Z" fill="#594c44" stroke="#21353f" stroke-width="0.5"/>
+<path d="M14 27L61 24V64L14 66Z" fill="url(#urban-legend-static-tv-wood)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M18 30Q33 26 50 29Q53 43 50 60Q36 64 19 62Q14 49 18 30Z" fill="url(#urban-legend-static-tv-metal)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M21 32Q33 29 47 32Q50 44 47 57Q35 60 22 58Q18 45 21 32Z" fill="url(#urban-legend-static-tv-glass)" stroke="#21353f" stroke-width="0.7"/>
+<g clip-path="url(#urban-legend-static-tv-screen-clip)">
+<path d="M30 43Q27 32 36 35Q42 36 40 44L43 58H25Z" fill="#172b35" stroke="none" stroke-width="0.65" opacity="0.67"/>
+<path d="M33 38Q29 43 35 46Q39 42 37 38Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.28"/>
+<path d="M32 47L29 56H39L37 46Z" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.32"/>
+<path d="M21 34h8l1-.5 3 .5h7M44 34h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<path d="M21 37h10l1-.5 3 .5h5M44 37h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<path d="M21 40h7l1-.5 3 .5h8M44 40h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<path d="M21 43h10l1-.5 3 .5h5M44 43h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<path d="M21 46h8l1-.5 3 .5h7M44 46h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<path d="M21 49h6l1-.5 3 .5h9M44 49h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<path d="M21 52h9l1-.5 3 .5h6M44 52h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<path d="M21 55h7l1-.5 3 .5h8M44 55h4" fill="none" stroke="#c1ceca" stroke-width="0.4" opacity="0.45"/>
+<g class="urban-legend-static-tv-pulse">
+<path d="M20 44H49V46H20Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.14"/>
+<path d="M23 39h4M40 42h5M27 53h8M38 56h5" fill="none" stroke="#c1ceca" stroke-width="0.7" opacity="0.55"/>
+</g>
+<path d="M22 34Q31 30 36 33L24 51Q21 43 22 34Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.12"/>
+</g>
+<path d="M23 33Q33 30.8 44 32.4M20 48q.2 5 2 8" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M54 32l5-.5v1.2l-5 .5Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M54 35l5-.5v1.2l-5 .5Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M54 38l5-.5v1.2l-5 .5Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M54 41l5-.5v1.2l-5 .5Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<circle cx="56.5" cy="49" r="2.5" fill="url(#urban-legend-static-tv-metal)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M56.0 50l1-2" fill="none" stroke="#e7deca" stroke-width="0.65"/>
+<circle cx="56.5" cy="57" r="1.7" fill="url(#urban-legend-static-tv-metal)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M56.0 58l1-2" fill="none" stroke="#e7deca" stroke-width="0.65"/>
+<circle cx="58" cy="62" r="0.6" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<path d="M64 29v12q2 3 1 7v11M66 31v8M15 29v16M15 52v10" fill="none" stroke="#b29a78" stroke-width="0.3"/>
+<path d="M17 25L58 22.5M13 31v31" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M52 28v33M63 27v34" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">雪花电视</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">static-tv</text></g>
+<g transform="translate(176 548)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-whispering-radio-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-whispering-radio-title urban-legend-whispering-radio-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-whispering-radio-title">Whispering radio / 低语的收音机</title>
+<desc id="urban-legend-whispering-radio-desc">An arched wooden radio has carved grille openings, twin knobs, an amber tuning dial and narrow edge highlights; three pale, faced whispers drift above. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-whispering-radio-art,#urban-legend-whispering-radio-art *{animation-play-state:inherit}
+.urban-legend-whispering-radio-pulse{animation:urban-legend-whispering-radio-pulse 4.8s ease-in-out infinite}
+.urban-legend-whispering-radio-float{animation:urban-legend-whispering-radio-float 6s ease-in-out infinite}
+.urban-legend-whispering-radio-sway{animation:urban-legend-whispering-radio-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-whispering-radio-pop{animation:urban-legend-whispering-radio-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-whispering-radio-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-whispering-radio-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-whispering-radio-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-whispering-radio-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-whispering-radio-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-whispering-radio-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-whispering-radio-wood" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#a48564"/><stop offset="0.5" stop-color="#7e614c"/><stop offset="1" stop-color="#413d39"/></linearGradient><linearGradient id="urban-legend-whispering-radio-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient></defs>
+<ellipse cx="40" cy="72" rx="24" ry="1.6" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="71.85" rx="16.080000000000002" ry="0.8640000000000001" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M20 67V42C20 15 57 16 61 40V67Z" fill="url(#urban-legend-whispering-radio-wood)" stroke="#21353f" stroke-width="0.85"/>
+<path d="M56 29C64 36 63 53 63 66L59 69V40Z" fill="#50443d" stroke="#21353f" stroke-width="0.5"/>
+<path d="M23 65V42C23 19 57 19 57 42V65Z" fill="#a38360" stroke="#21353f" stroke-width="0.55"/>
+<path d="M27 49V41C27 22 53 22 53 41V49Z" fill="#172b35" stroke="#21353f" stroke-width="0.6"/>
+<path d="M29 48V42C29 25 51 25 51 42V48Z" fill="#36505b" stroke="none" stroke-width="0.65"/>
+<path d="M29 48V39Q29 33 34 32V48ZM37 48V30Q40 28 43 30V48ZM46 48V32Q51 34 51 39V48Z" fill="url(#urban-legend-whispering-radio-wood)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M32 36v9M40 33v12M48 37v8" fill="none" stroke="#e7deca" stroke-width="0.45" opacity="0.55"/>
+<path d="M32 60Q33 50 41 50Q49 50 50 60Z" fill="url(#urban-legend-whispering-radio-amber)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M35 58Q36 53 41 53Q46 53 47 58Z" fill="#172b35" stroke="#21353f" stroke-width="0.4"/>
+<path d="M34.20 59.00l0.70 -0.00" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M35.11 55.60l0.61 0.35" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M37.60 53.11l0.35 0.61" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M41.00 52.20l0.00 0.70" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M44.40 53.11l-0.35 0.61" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M46.89 55.60l-0.61 0.35" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M47.80 59.00l-0.70 0.00" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M41 59l3-5" fill="none" stroke="#985a58" stroke-width="0.65"/>
+<circle cx="41" cy="59" r="0.65" fill="#e1b574" stroke="none" stroke-width="0.5"/>
+<circle cx="27" cy="59" r="3.5" fill="url(#urban-legend-whispering-radio-metal)" stroke="#21353f" stroke-width="0.6"/>
+<circle cx="27" cy="59" r="2.4" fill="url(#urban-legend-whispering-radio-wood)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M27 57v1.3" fill="none" stroke="#e7deca" stroke-width="0.55"/>
+<circle cx="55" cy="59" r="3.5" fill="url(#urban-legend-whispering-radio-metal)" stroke="#21353f" stroke-width="0.6"/>
+<circle cx="55" cy="59" r="2.4" fill="url(#urban-legend-whispering-radio-wood)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M55 57v1.3" fill="none" stroke="#e7deca" stroke-width="0.55"/>
+<path d="M19 66H62V69H19Z" fill="url(#urban-legend-whispering-radio-wood)" stroke="#21353f" stroke-width="0.65"/>
+<rect x="22" y="69" width="6" height="2.4" rx="0.5" fill="#365663" stroke="#21353f" stroke-width="0.45"/>
+<rect x="53" y="69" width="6" height="2.4" rx="0.5" fill="#365663" stroke="#21353f" stroke-width="0.45"/>
+<path d="M24 47V41C24 29 31 25 36 24M55 41V53M24 52v9M28 63h25" fill="none" stroke="#c1a47b" stroke-width="0.4"/>
+<path d="M21 43C21 29 31 21 40 22M22 67h34" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M24 50h30M60 45v17" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+<g transform="translate(30 18) scale(0.75 0.75)">
+<g class="urban-legend-whispering-radio-float">
+<path d="M0 9C-8 6-4-1-1-6C1-8 6-5 5-2C5 2 1 3 4 8L7 10Q3 12 0 9Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.5" opacity="0.85"/>
+<ellipse cx="1" cy="-2" rx="0.6" ry="1" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<ellipse cx="3" cy="-1.5" rx="0.5" ry="0.85" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<ellipse cx="1.5" cy="2" rx="1" ry="1.8" fill="#365663" stroke="none" stroke-width="0.5"/>
+<path d="M-1 0Q-4 5 0 7" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+</g></g>
+<g transform="translate(42 11) scale(-0.85 0.85)">
+<g class="urban-legend-whispering-radio-float">
+<path d="M0 9C-8 6-4-1-1-6C1-8 6-5 5-2C5 2 1 3 4 8L7 10Q3 12 0 9Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.5" opacity="0.85"/>
+<ellipse cx="1" cy="-2" rx="0.6" ry="1" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<ellipse cx="3" cy="-1.5" rx="0.5" ry="0.85" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<ellipse cx="1.5" cy="2" rx="1" ry="1.8" fill="#365663" stroke="none" stroke-width="0.5"/>
+<path d="M-1 0Q-4 5 0 7" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+</g></g>
+<g transform="translate(53 19) scale(0.65 0.65)">
+<g class="urban-legend-whispering-radio-float">
+<path d="M0 9C-8 6-4-1-1-6C1-8 6-5 5-2C5 2 1 3 4 8L7 10Q3 12 0 9Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.5" opacity="0.85"/>
+<ellipse cx="1" cy="-2" rx="0.6" ry="1" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<ellipse cx="3" cy="-1.5" rx="0.5" ry="0.85" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<ellipse cx="1.5" cy="2" rx="1" ry="1.8" fill="#365663" stroke="none" stroke-width="0.5"/>
+<path d="M-1 0Q-4 5 0 7" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+</g></g>
+<path d="M15 36q-3 5 0 10M12 33q-5 8-1 15M67 36q4 6 1 12" fill="none" stroke="#73888b" stroke-width="0.55"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">低语的收音机</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">whispering-radio</text></g>
+<g transform="translate(328 548)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-black-cat-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-black-cat-title urban-legend-black-cat-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-black-cat-title">Black cat / 黑猫</title>
+<desc id="urban-legend-black-cat-desc">A black cat sits in three-quarter view on a brick parapet, looking back with amber slit eyes; shoulders, haunches and paws are clearly formed, and the tail curls over the ledge under a cold moon. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-black-cat-art,#urban-legend-black-cat-art *{animation-play-state:inherit}
+.urban-legend-black-cat-pulse{animation:urban-legend-black-cat-pulse 4.8s ease-in-out infinite}
+.urban-legend-black-cat-float{animation:urban-legend-black-cat-float 6s ease-in-out infinite}
+.urban-legend-black-cat-sway{animation:urban-legend-black-cat-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-black-cat-pop{animation:urban-legend-black-cat-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-black-cat-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-black-cat-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-black-cat-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-black-cat-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-black-cat-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-black-cat-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-black-cat-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-black-cat-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-black-cat-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<circle cx="23" cy="20" r="12" fill="url(#urban-legend-black-cat-cloth)" stroke="#73888b" stroke-width="0.45"/>
+<path d="M19 9Q29 16 27 26Q25 30 21 32A12 12 0 0 0 19 9Z" fill="#8a9d9b" stroke="none" stroke-width="0.65" opacity="0.42"/>
+<path d="M17 17q4-3 5 1t-5 2M25 25q2-3 4-1t-2 3" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.22"/>
+<path d="M8 58L57 54L72 59L25 65Z" fill="url(#urban-legend-black-cat-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M9 62L25 67L71 62V71L25 75L9 69Z" fill="url(#urban-legend-black-cat-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M7 58L57 53L73 58V62L25 67L7 62Z" fill="url(#urban-legend-black-cat-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M26 70l44-5M11 65l12 4M26 74l44-4" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M33 69.265v4M27 65.265v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M46 67.9v4M40 63.900000000000006v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M59 66.535v4M53 62.535v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M69 65.485v4M63 61.485v4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<ellipse cx="41" cy="58" rx="15" ry="2.5" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.38"/>
+<path d="M37 36C26 39 27 49 24 55Q24 60 36 60L52 59Q58 57 55 52L50 41L49 34Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.7"/>
+<path d="M33 41C25 46 28 55 34 56L39 57L39 60H30Q22 59 26 52Q26 44 33 41Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M43 38Q40 44 42 52L42 58Q45 61 48 58L47 49L48 42Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M49 38Q47 46 49 50L50 56Q49 58 54 58Q56 56 54 54L52 42Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M33 58C18 56 15 63 22 70C30 78 41 71 38 67C36 64 34 65 35 68C32 73 20 67 23 63C25 61 30 63 35 60Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M20 63Q18 66 24 70Q31 74 36 69" fill="none" stroke="#73888b" stroke-width="0.6"/>
+<path d="M34 33Q27 30 31 24L31 14L38 21Q44 18 50 20L57 15L55 28Q55 34 49 37Q40 40 34 33Z" fill="url(#urban-legend-black-cat-shade)" stroke="#21353f" stroke-width="0.75"/>
+<path d="M32.5 17L34 24L37 22Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<path d="M54.5 18L49.5 22L54 24Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34 27Q37 23 42 26L42 30L38 32Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M46 24Q49 23 53 27L49 31L46 30Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M34.4 27.5q3.1 -2.635 6.2 0q-3.1 2.17 -6.2 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="37.5" cy="27.5" rx="0.6200000000000001" ry="1.333" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="36.6475" cy="27.1125" r="0.35650000000000004" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M46.16 27q2.84 -2.4139999999999997 5.68 0q-2.84 1.9879999999999998 -5.68 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="49" cy="27" rx="0.568" ry="1.2211999999999998" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="48.219" cy="26.645" r="0.3266" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M42 31l3-.3-1.5 1.8Z" fill="#b89482" stroke="#21353f" stroke-width="0.35"/>
+<path d="M43.5 32.5v1q-1 1-3 .4M43.5 33.5q1.5 1 3 0" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M37 32Q39 31 42 33L40 35Z" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.42"/>
+<path d="M38 32l-10-2M38 33.5l-11 .6M49 32l11-3M49 33.5l12-.5" fill="none" stroke="#c1ceca" stroke-width="0.35"/>
+<path d="M37 20l3 2M43 20l1 2M50 22l-2 1M34 36l3 3-1 2M35 42l1 3M34 49l-2 2" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M32 19l1 3M33 25q2-2 5-2M31 45q-3 5-1 8M43 43l.5 9M50 47l1 6" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M44 57v1.4M46 57v1.4M51 56.5l.2 1.1M53 56.4l.2 1" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<g class="urban-legend-black-cat-sway">
+<path d="M43 38Q46 40 48 38L47 41L45 40L44 42Z" fill="#73888b" stroke="none" stroke-width="0.65" opacity="0.65"/>
+</g>
+<path d="M29 57q3 2 6 1M56 58l12-1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">黑猫</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">black-cat</text></g>
+<g transform="translate(480 548)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-crow-on-wire-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-crow-on-wire-title urban-legend-crow-on-wire-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-crow-on-wire-title">Crows on the wire / 电线上的乌鸦</title>
+<desc id="urban-legend-crow-on-wire-desc">Three crows grip sagging wires while a fourth approaches on spread wings; a wooden pole, ceramic insulators and a strapped transformer form a complete piece of city infrastructure. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-crow-on-wire-art,#urban-legend-crow-on-wire-art *{animation-play-state:inherit}
+.urban-legend-crow-on-wire-pulse{animation:urban-legend-crow-on-wire-pulse 4.8s ease-in-out infinite}
+.urban-legend-crow-on-wire-float{animation:urban-legend-crow-on-wire-float 6s ease-in-out infinite}
+.urban-legend-crow-on-wire-sway{animation:urban-legend-crow-on-wire-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-crow-on-wire-pop{animation:urban-legend-crow-on-wire-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-crow-on-wire-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-crow-on-wire-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-crow-on-wire-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-crow-on-wire-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-crow-on-wire-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-crow-on-wire-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-crow-on-wire-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-crow-on-wire-wood" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#a48564"/><stop offset="0.5" stop-color="#7e614c"/><stop offset="1" stop-color="#413d39"/></linearGradient><linearGradient id="urban-legend-crow-on-wire-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<path d="M8 30Q26 44 58 27M8 35Q30 50 61 31" fill="none" stroke="#21353f" stroke-width="1"/>
+<path d="M8 30Q26 44 58 27M8 35Q30 50 61 31" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M10 32Q28 43 50 32" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<path d="M61 11L65 12V72H60Z" fill="url(#urban-legend-crow-on-wire-wood)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M61.5 17v18M63 58v12M62 40l2 7" fill="none" stroke="#bfaa85" stroke-width="0.4"/>
+<path d="M44 21L71 19V23L44 25Z" fill="url(#urban-legend-crow-on-wire-metal)" stroke="#21353f" stroke-width="0.65"/>
+<rect x="47" y="16" width="2.5" height="5.7" rx="0.7" fill="url(#urban-legend-crow-on-wire-cloth)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M46.6 18h3.4M46.6 20h3.4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<rect x="56" y="16" width="2.5" height="5.7" rx="0.7" fill="url(#urban-legend-crow-on-wire-cloth)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M55.6 18h3.4M55.6 20h3.4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<rect x="67" y="16" width="2.5" height="5.7" rx="0.7" fill="url(#urban-legend-crow-on-wire-cloth)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M66.6 18h3.4M66.6 20h3.4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M57 42Q55 35 56 23M68 23Q73 32 66 40" fill="none" stroke="#21353f" stroke-width="0.75"/>
+<path d="M54 41Q60 38 68 41V54Q62 58 54 54Z" fill="url(#urban-legend-crow-on-wire-metal)" stroke="#21353f" stroke-width="0.6"/>
+<ellipse cx="61" cy="41" rx="7" ry="2" fill="#73888b" stroke="#21353f" stroke-width="0.4"/>
+<path d="M55 46h12M55 52h12" fill="none" stroke="#21353f" stroke-width="0.7"/>
+<path d="M56 43v8" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<g transform="translate(15 31) scale(1 1)">
+<g class="urban-legend-crow-on-wire-sway">
+<path d="M-8 3L-10 5L-7 5L-9 7L-4 6Q2 8 5 3L5 1Q11 0 7-5Q4-8 1-4L0-1Q-5-2-8 3Z" fill="url(#urban-legend-crow-on-wire-shade)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M-6 2Q-4-3 1-1Q5 1 1 4L-5 5Z" fill="#365663" stroke="#73888b" stroke-width="0.35"/>
+<path d="M7-4L11-1L7-1Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<circle cx="6" cy="-3" r="0.47" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<circle cx="5.9" cy="-3.15" r="0.13" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M-2 5v3l-2 1M-2 8l2 1M2 5v3l-1 1M2 8l2 .5" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M-5 2l-2 2M-2 1l-3 3M0 2l-2 2" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M3-4q1-2 3-1M-5 0q2-2 4-1" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+<path d="M-8 4l3 1Q0 6 3 2M7-2l2 .5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+</g></g>
+<g transform="translate(32 34) scale(0.9 0.9)">
+<g class="urban-legend-crow-on-wire-sway">
+<path d="M-8 3L-10 5L-7 5L-9 7L-4 6Q2 8 5 3L5 1Q11 0 7-5Q4-8 1-4L0-1Q-5-2-8 3Z" fill="url(#urban-legend-crow-on-wire-shade)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M-6 2Q-4-3 1-1Q5 1 1 4L-5 5Z" fill="#365663" stroke="#73888b" stroke-width="0.35"/>
+<path d="M7-4L11-1L7-1Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<circle cx="6" cy="-3" r="0.47" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<circle cx="5.9" cy="-3.15" r="0.13" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M-2 5v3l-2 1M-2 8l2 1M2 5v3l-1 1M2 8l2 .5" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M-5 2l-2 2M-2 1l-3 3M0 2l-2 2" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M3-4q1-2 3-1M-5 0q2-2 4-1" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+<path d="M-8 4l3 1Q0 6 3 2M7-2l2 .5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+</g></g>
+<g transform="translate(49 29) scale(-1 1)">
+<g class="urban-legend-crow-on-wire-sway">
+<path d="M-8 3L-10 5L-7 5L-9 7L-4 6Q2 8 5 3L5 1Q11 0 7-5Q4-8 1-4L0-1Q-5-2-8 3Z" fill="url(#urban-legend-crow-on-wire-shade)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M-6 2Q-4-3 1-1Q5 1 1 4L-5 5Z" fill="#365663" stroke="#73888b" stroke-width="0.35"/>
+<path d="M7-4L11-1L7-1Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<circle cx="6" cy="-3" r="0.47" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<circle cx="5.9" cy="-3.15" r="0.13" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M-2 5v3l-2 1M-2 8l2 1M2 5v3l-1 1M2 8l2 .5" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M-5 2l-2 2M-2 1l-3 3M0 2l-2 2" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M3-4q1-2 3-1M-5 0q2-2 4-1" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+<path d="M-8 4l3 1Q0 6 3 2M7-2l2 .5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+</g></g>
+<g class="urban-legend-crow-on-wire-float">
+<path d="M29 57C21 51 19 48 11 48L14 51L9 51L14 54L11 55L19 60L24 61L26 66L30 64L34 64L34 60L41 56L46 50L41 51L43 47Q34 47 31 54Q29 52 27 54Z" fill="url(#urban-legend-crow-on-wire-shade)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M28 58Q19 52 13 50L18 56L25 60Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M32 57Q35 51 40 50L36 56L32 60Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M15 53l9 5M18 57l7 2M34 56l5-3M29 61l-1 3" fill="none" stroke="#73888b" stroke-width="0.5"/>
+<path d="M12 48.5Q21 49 27 56M33 54Q37 48 41 48M12 55l7 4M34 60l6-5" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M29 53l2-1 2 2-3 1Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<circle cx="29.7" cy="54" r="0.35" fill="#985a58" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M60 59v12M45 22l23-1.8" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">电线上的乌鸦</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">crow-on-wire</text></g>
+<g transform="translate(632 548)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-blood-moon-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-blood-moon-title urban-legend-blood-moon-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-blood-moon-title">Blood moon / 血月</title>
+<desc id="urban-legend-blood-moon-desc">A muted crimson moon has irregular maria, rim-lit craters and a shaded limb; low clouds pass between bare branches while bats skim the edge. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-blood-moon-art,#urban-legend-blood-moon-art *{animation-play-state:inherit}
+.urban-legend-blood-moon-pulse{animation:urban-legend-blood-moon-pulse 4.8s ease-in-out infinite}
+.urban-legend-blood-moon-float{animation:urban-legend-blood-moon-float 6s ease-in-out infinite}
+.urban-legend-blood-moon-sway{animation:urban-legend-blood-moon-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-blood-moon-pop{animation:urban-legend-blood-moon-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-blood-moon-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-blood-moon-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-blood-moon-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-blood-moon-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-blood-moon-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-blood-moon-red" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#ce9984"/><stop offset="0.46" stop-color="#a56561"/><stop offset="1" stop-color="#583e47"/></linearGradient><linearGradient id="urban-legend-blood-moon-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<circle cx="40" cy="35" r="24" fill="url(#urban-legend-blood-moon-red)" stroke="#21353f" stroke-width="0.7"/>
+<path d="M43 11C64 13 69 40 54 54Q58 44 51 35Q45 28 43 11Z" fill="#574550" stroke="none" stroke-width="0.65" opacity="0.72"/>
+<path d="M20 24Q26 14 38 14Q28 20 25 29Q21 31 20 24Z" fill="#dbab8c" stroke="none" stroke-width="0.65" opacity="0.28"/>
+<ellipse cx="28" cy="25" rx="4.5" ry="3" fill="#8f5858" stroke="none" stroke-width="0.5" opacity="0.72"/>
+<path d="M23.5 25a4.5 3 0 0 1 9.0 0a4.05 1.9500000000000002 0 0 0 -9.0 0Z" fill="#6b4b51" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M24.4 26.35q3.6 2.7 7.2 0" fill="none" stroke="#c4917c" stroke-width="0.45" opacity="0.7"/>
+<ellipse cx="39" cy="19" rx="2.5" ry="1.7" fill="#8f5858" stroke="none" stroke-width="0.5" opacity="0.72"/>
+<path d="M36.5 19a2.5 1.7 0 0 1 5.0 0a2.25 1.105 0 0 0 -5.0 0Z" fill="#6b4b51" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M37.0 19.765q2.0 1.53 4.0 0" fill="none" stroke="#c4917c" stroke-width="0.45" opacity="0.7"/>
+<ellipse cx="24" cy="38" rx="2.6" ry="3" fill="#8f5858" stroke="none" stroke-width="0.5" opacity="0.72"/>
+<path d="M21.4 38a2.6 3 0 0 1 5.2 0a2.3400000000000003 1.9500000000000002 0 0 0 -5.2 0Z" fill="#6b4b51" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M21.92 39.35q2.08 2.7 4.16 0" fill="none" stroke="#c4917c" stroke-width="0.45" opacity="0.7"/>
+<ellipse cx="36" cy="40" rx="5" ry="4" fill="#8f5858" stroke="none" stroke-width="0.5" opacity="0.72"/>
+<path d="M31 40a5 4 0 0 1 10 0a4.5 2.6 0 0 0 -10 0Z" fill="#6b4b51" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M32.0 41.8q4.0 3.6 8.0 0" fill="none" stroke="#c4917c" stroke-width="0.45" opacity="0.7"/>
+<ellipse cx="44" cy="29" rx="2.8" ry="2" fill="#8f5858" stroke="none" stroke-width="0.5" opacity="0.72"/>
+<path d="M41.2 29a2.8 2 0 0 1 5.6 0a2.52 1.3 0 0 0 -5.6 0Z" fill="#6b4b51" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M41.76 29.9q2.2399999999999998 1.8 4.4799999999999995 0" fill="none" stroke="#c4917c" stroke-width="0.45" opacity="0.7"/>
+<ellipse cx="41" cy="51" rx="3.1" ry="2" fill="#8f5858" stroke="none" stroke-width="0.5" opacity="0.72"/>
+<path d="M37.9 51a3.1 2 0 0 1 6.2 0a2.79 1.3 0 0 0 -6.2 0Z" fill="#6b4b51" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M38.519999999999996 51.9q2.4800000000000004 1.8 4.960000000000001 0" fill="none" stroke="#c4917c" stroke-width="0.45" opacity="0.7"/>
+<ellipse cx="52" cy="44" rx="2.2" ry="3" fill="#8f5858" stroke="none" stroke-width="0.5" opacity="0.72"/>
+<path d="M49.8 44a2.2 3 0 0 1 4.4 0a1.9800000000000002 1.9500000000000002 0 0 0 -4.4 0Z" fill="#6b4b51" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M50.24 45.35q1.7600000000000002 2.7 3.5200000000000005 0" fill="none" stroke="#c4917c" stroke-width="0.45" opacity="0.7"/>
+<path d="M30 32q3-2 6 0l-2 3-3-.5ZM43 37l3-2 3 2-1 3-4-1Z" fill="#aa7167" stroke="none" stroke-width="0.65" opacity="0.6"/>
+<path d="M19 26Q24 15 35 12.7" fill="none" stroke="#e7deca" stroke-width="0.45" opacity="0.7"/>
+<g class="urban-legend-blood-moon-pulse">
+<path d="M13 19l-2-2M24 10l-1-2M58 13l2-2M66 34h3" fill="none" stroke="#e1b574" stroke-width="0.6" opacity="0.65"/>
+</g>
+<g class="urban-legend-blood-moon-float">
+<path d="M45 25Q51 19 57 22Q60 18 65 22Q72 23 71 27Q64 30 58 28Q51 30 45 27L52 27Q58 25 62 26Q63 23 59 24Q54 23 51 26Z" fill="#c1ceca" stroke="#73888b" stroke-width="0.4" opacity="0.87"/>
+<path d="M10 48Q15 43 22 46Q28 42 34 47L39 48Q34 52 29 50L22 51L17 49L10 50Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.7"/>
+<path d="M14 47q4-2 8 1M49 25q5-4 9-1" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+</g>
+<path d="M10 73Q16 58 15 47L11 36L15 40L17 48L22 40L23 31L25 36L24 42L28 40L33 33L31 40L23 46L20 56L29 50L35 49L29 53L21 60L17 73Z" fill="url(#urban-legend-blood-moon-shade)" stroke="#21353f" stroke-width="0.55"/>
+<path d="M15 69Q18 58 18 48M20 47l3-5M24 54l6-2" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M63 73L62 62L57 54L49 49L53 49L60 53L59 44L61 47L63 54L67 49L70 43L69 50L65 57L67 73Z" fill="url(#urban-legend-blood-moon-shade)" stroke="#21353f" stroke-width="0.55"/>
+<path d="M64 69l-.5-12M61 53l-5-3" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M9 25l3-3 2 2 2-2 4 4-5-.5-2 2-1-2Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<path d="M56 8l3-2 2 2 3-1-2 4-2-1-2 1Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M9 73h12M59 73h11" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">血月</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">blood-moon</text></g>
+<g transform="translate(784 548)"><svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-cracked-sidewalk-art" viewBox="0 0 80 80" fill="none" role="img" aria-labelledby="urban-legend-cracked-sidewalk-title urban-legend-cracked-sidewalk-desc" stroke-linecap="round" stroke-linejoin="round" x="24" y="0" width="104" height="104" style=";width:104px;height:104px">
+<title id="urban-legend-cracked-sidewalk-title">Cracked sidewalk / 裂开的人行道</title>
+<desc id="urban-legend-cracked-sidewalk-desc">Perspective paving slabs split along an irregular crevice with visible thickness and a dim crimson seam; a pale hand emerges among small weeds and chipped stone edges. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-cracked-sidewalk-art,#urban-legend-cracked-sidewalk-art *{animation-play-state:inherit}
+.urban-legend-cracked-sidewalk-pulse{animation:urban-legend-cracked-sidewalk-pulse 4.8s ease-in-out infinite}
+.urban-legend-cracked-sidewalk-float{animation:urban-legend-cracked-sidewalk-float 6s ease-in-out infinite}
+.urban-legend-cracked-sidewalk-sway{animation:urban-legend-cracked-sidewalk-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-cracked-sidewalk-pop{animation:urban-legend-cracked-sidewalk-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-cracked-sidewalk-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-cracked-sidewalk-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-cracked-sidewalk-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-cracked-sidewalk-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-cracked-sidewalk-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-cracked-sidewalk-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-cracked-sidewalk-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-cracked-sidewalk-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="70" rx="30" ry="2" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="69.85" rx="20.1" ry="1.08" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M18 25L56 22L71 61L66 69L11 71L7 64Z" fill="url(#urban-legend-cracked-sidewalk-shade)" stroke="#21353f" stroke-width="0.7"/>
+<path d="M18 25L37 23L34 34L38 39L32 46L37 52L34 58L44 70L11 69L8 63Z" fill="url(#urban-legend-cracked-sidewalk-stone)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M41 23L56 22L70 61L66 67L50 69L42 55L43 49L38 43L44 37L39 32Z" fill="url(#urban-legend-cracked-sidewalk-stone)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M37 23L41 23L39 32L44 37L38 43L43 49L42 55L50 69L44 70L34 58L37 52L32 46L38 39L34 34Z" fill="#172b35" stroke="#21353f" stroke-width="0.5"/>
+<path d="M38 30L38 35L41 38L35 44L40 50L39 56L46 68L43 61L36 56L39 51L34 47L40 39L37 35Z" fill="#985a58" stroke="none" stroke-width="0.65"/>
+<path d="M14 39l22-1M10 51l23-1M11 64l27-1M42 35l18-1M43 48l21-1M46 60l22-1M27 25L23 37M22 40L17 50M17 53L14 62M48 24l4 10M54 37l4 10M58 49l7 12" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M19 26l16-1M42 24l12-1M15 40l17-1M11 52l20-1M46 49l16-1M51 62l14-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M37 53L37 47L34 43Q33 40 35 39L38 43L38 36Q39 34 40 36L41 42L42 33Q43.5 32 44 34L44 42L47 36Q49 35 49 37L47 44L51 41Q53 41 52 43L48 49L45 51L45 57Z" fill="url(#urban-legend-cracked-sidewalk-cloth)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M39 44L41 47L43 47L45 45L45 51L43 55L39 52Z" fill="#a8bab3" stroke="none" stroke-width="0.65"/>
+<path d="M39 42l2 2M43 40l1 4M46 43l1 2M38 49l3 1M41 51l2 .5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M39 36l.6 3M43 34v4M47 37l-1 3" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<g class="urban-legend-cracked-sidewalk-pop">
+<path d="M33 44l-3 2 2 2 3-2ZM48 59l3 1-1 2-3-1Z" fill="url(#urban-legend-cracked-sidewalk-stone)" stroke="#21353f" stroke-width="0.45"/>
+</g>
+<path d="M29 29l-3 3 1 2-4 2M49 28l2 1-1 2M24 55l-3 3 2 2-3 3M56 53l-3 3 2 1" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M19 40q-2-3-2-6M19 40q0-3 2-5M19 40q2-2 4-3M60 48q-1-5 1-7M60 48q3-3 5-3" fill="none" stroke="#365663" stroke-width="0.6"/>
+<path d="M18 37q-4-2-4-4q4 0 4 4M62 44q2-4 4-3q-1 3-4 3Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M9 64l1 4 9 .6M56 65l9-1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg><text x="76" y="123" text-anchor="middle" fill="currentColor" font-size="12">裂开的人行道</text><text x="76" y="139" text-anchor="middle" fill="currentColor" font-size="9" opacity=".6">cracked-sidewalk</text></g></svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-fog-veil-art" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="urban-legend-fog-veil-title urban-legend-fog-veil-desc" stroke-linecap="round" stroke-linejoin="round">
+<title id="urban-legend-fog-veil-title">Figure in the fog / 雾中人影</title>
+<desc id="urban-legend-fog-veil-desc">A hatted stranger in a long coat under a patinated street lamp; amber eyes hide under the brim and low banks of mist obscure the feet. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-fog-veil-art,#urban-legend-fog-veil-art *{animation-play-state:inherit}
+.urban-legend-fog-veil-pulse{animation:urban-legend-fog-veil-pulse 4.8s ease-in-out infinite}
+.urban-legend-fog-veil-float{animation:urban-legend-fog-veil-float 6s ease-in-out infinite}
+.urban-legend-fog-veil-sway{animation:urban-legend-fog-veil-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-fog-veil-pop{animation:urban-legend-fog-veil-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-fog-veil-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-fog-veil-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-fog-veil-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-fog-veil-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-fog-veil-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-fog-veil-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-fog-veil-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-fog-veil-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-fog-veil-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<ellipse cx="40" cy="70" rx="30" ry="2" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="69.85" rx="20.1" ry="1.08" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M12 69L14 29H17L18 69Z" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M13 29V13Q14 9 18 9H27V11H19Q16 11 16 14V29Z" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M21 13H32L30 22H24Z" fill="url(#urban-legend-fog-veil-glass)" stroke="#21353f" stroke-width="0.65"/>
+<g class="urban-legend-fog-veil-pulse">
+<path d="M23 14H30L28.7 21H25Z" fill="url(#urban-legend-fog-veil-amber)" stroke="none" stroke-width="0.65"/>
+<path d="M24 22L13 52Q28 56 37 52L29 22Z" fill="#e1b574" stroke="none" stroke-width="0.65" opacity="0.09"/>
+</g>
+<path d="M20 12L24 9H29L33 12Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<rect x="24" y="22" width="6" height="1.8" rx="0.7" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M15 14v39M22 12h9" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M11 69h10" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+<g class="urban-legend-fog-veil-sway">
+<path d="M42 37Q43 32 48 31L56 32Q62 36 63 49L66 63L58 61L57 70H42L42 60L36 62L39 46Z" fill="url(#urban-legend-fog-veil-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M45 34L48 32L51 42L47 49L43 41Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M55 34L51 42L54 48L58 38Z" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M48 48L50 69H43L45 51Z" fill="#223b47" stroke="none" stroke-width="0.65"/>
+<path d="M57 46l3 14M41 45l-2 10M51 44v16" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<circle cx="52" cy="48" r="0.5" fill="#a2957a" stroke="none" stroke-width="0.5"/>
+<circle cx="52" cy="53" r="0.5" fill="#a2957a" stroke="none" stroke-width="0.5"/>
+<path d="M47 24Q44 29 48 33L54 33Q58 27 54 23Z" fill="#172b35" stroke="#73888b" stroke-width="0.4"/>
+<path d="M48.1 28q0.9 -0.765 1.8 0q-0.9 0.63 -1.8 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="49" cy="28" rx="0.18000000000000002" ry="0.387" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="48.7525" cy="27.8875" r="0.10350000000000001" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M53.2 28q0.8 -0.68 1.6 0q-0.8 0.5599999999999999 -1.6 0Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="54" cy="28" rx="0.16000000000000003" ry="0.34400000000000003" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="53.78" cy="27.9" r="0.09200000000000001" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M43 23L44 17Q48 14 55 17L57 23Z" fill="url(#urban-legend-fog-veil-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M37 24Q47 19 62 23Q60 27 49 26Q40 27 37 24Z" fill="url(#urban-legend-fog-veil-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M44 21L55 21L57 23L43 23Z" fill="#985a58" stroke="none" stroke-width="0.65"/>
+<path d="M42 24Q47 22.5 57 24" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+</g>
+<g class="urban-legend-fog-veil-float">
+<path d="M7 58C16 49 23 61 33 57C43 53 48 55 52 57C61 53 69 54 72 58C63 57 62 63 51 61C42 60 36 63 28 61C17 64 13 60 7 62Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.83"/>
+<path d="M9 67C21 59 31 67 40 63C49 61 56 67 69 62C72 64 68 69 61 69C46 68 46 72 33 69C23 72 15 68 9 70Z" fill="#9eb3b6" stroke="none" stroke-width="0.65" opacity="0.9"/>
+<path d="M11 58Q17 55 23 58M35 59Q43 57 48 59M53 66q7 2 12-1" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+</g>
+</svg>

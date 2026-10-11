@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-hallway-door-art" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="urban-legend-hallway-door-title urban-legend-hallway-door-desc" stroke-linecap="round" stroke-linejoin="round">
+<title id="urban-legend-hallway-door-title">Door at the end of the hall / 走廊尽头的门</title>
+<desc id="urban-legend-hallway-door-desc">A cutaway corridor uses one-point perspective, converging tiled flooring, wall panels and side doors to lead toward an ajar red door, a watching eye and a long floor shadow. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-hallway-door-art,#urban-legend-hallway-door-art *{animation-play-state:inherit}
+.urban-legend-hallway-door-pulse{animation:urban-legend-hallway-door-pulse 4.8s ease-in-out infinite}
+.urban-legend-hallway-door-float{animation:urban-legend-hallway-door-float 6s ease-in-out infinite}
+.urban-legend-hallway-door-sway{animation:urban-legend-hallway-door-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-hallway-door-pop{animation:urban-legend-hallway-door-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-hallway-door-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-hallway-door-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-hallway-door-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-hallway-door-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-hallway-door-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-hallway-door-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-hallway-door-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-hallway-door-red" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#ce9984"/><stop offset="0.46" stop-color="#a56561"/><stop offset="1" stop-color="#583e47"/></linearGradient><linearGradient id="urban-legend-hallway-door-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-hallway-door-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<path d="M9 17L34 27V51L9 65Z" fill="url(#urban-legend-hallway-door-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M48 27L69 13L72 60L48 51Z" fill="url(#urban-legend-hallway-door-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M9 17L28 11L69 13L48 27H34Z" fill="#7d9292" stroke="#21353f" stroke-width="0.6"/>
+<path d="M34 27H48V51H34Z" fill="#758b8b" stroke="#21353f" stroke-width="0.65"/>
+<path d="M9 65L34 51H48L72 60L58 72L25 74Z" fill="url(#urban-legend-hallway-door-stone)" stroke="#21353f" stroke-width="0.6"/>
+<path d="M9 50L34 43V51L9 65Z" fill="#647c83" stroke="#21353f" stroke-width="0.4"/>
+<path d="M48 44L71 49L72 60L48 51Z" fill="#293f4a" stroke="#21353f" stroke-width="0.4"/>
+<path d="M10 52l23-8M49 45l21 6" fill="none" stroke="#c1ceca" stroke-width="0.35"/>
+<path d="M19 17l18 10M35 13l5 14M55 14l-11 13" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M27 18L52 18L49 20H29Z" fill="url(#urban-legend-hallway-door-metal)" stroke="#21353f" stroke-width="0.4"/>
+<g class="urban-legend-hallway-door-pulse">
+<path d="M30 18.5H49L48 19.5H31Z" fill="#e1b574" stroke="none" stroke-width="0.65"/>
+</g>
+<path d="M36 23h9l-1 1h-7Z" fill="#e1b574" stroke="#21353f" stroke-width="0.3"/>
+<path d="M14 28L23 32V54L14 59Z" fill="url(#urban-legend-hallway-door-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M16 30L21 32V52L16 55Z" fill="#365663" stroke="#73888b" stroke-width="0.4"/>
+<path d="M28 35L32 36V49L28 51Z" fill="url(#urban-legend-hallway-door-shade)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M57 30L65 25L66 53L57 49Z" fill="url(#urban-legend-hallway-door-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M58 31L63 28L64 50L58 47Z" fill="#365663" stroke="#73888b" stroke-width="0.4"/>
+<path d="M49 35L53 33V47L49 46Z" fill="url(#urban-legend-hallway-door-metal)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="20" cy="44" r="0.6" fill="#e1b574" stroke="none" stroke-width="0.5"/>
+<circle cx="60" cy="41" r="0.5" fill="#e1b574" stroke="none" stroke-width="0.5"/>
+<circle cx="30.5" cy="43" r="0.35" fill="#e1b574" stroke="none" stroke-width="0.5"/>
+<path d="M36 30H46V51H36Z" fill="#172b35" stroke="#21353f" stroke-width="0.8"/>
+<path d="M36.8 31L42 33V51L36.8 50Z" fill="url(#urban-legend-hallway-door-red)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M37.5 32L41 33.5V49" fill="none" stroke="#e7deca" stroke-width="0.25"/>
+<circle cx="40.5" cy="43" r="0.5" fill="url(#urban-legend-hallway-door-amber)" stroke="none" stroke-width="0.5"/>
+<g class="urban-legend-hallway-door-pulse">
+<path d="M43.32 38q0.88 -0.748 1.76 0q-0.88 0.616 -1.76 0Z" fill="#985a58" stroke="#21353f" stroke-width="0.35"/>
+<ellipse cx="44.2" cy="38" rx="0.17600000000000002" ry="0.3784" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="43.958000000000006" cy="37.89" r="0.1012" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M42 51L47 51L54 68L37 72L39 65Z" fill="#985a58" stroke="none" stroke-width="0.65" opacity="0.43"/>
+<path d="M44 51L48 54L49 57L48 64L44 68L43 63L42 60L44 54Z" fill="#172b35" stroke="none" stroke-width="0.65" opacity="0.76"/>
+<path d="M34 51L25 74M38 51L37 73M44 51L53 72M48 51L67 64M25 56l34 .5M17 61l47 2M12 66l47 4" fill="none" stroke="#21353f" stroke-width="0.32" opacity="0.6"/>
+<path d="M10 18L33 28M35 29v22M49 28l19-13" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M9 65l24-14M50 52l19 9" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-red-string-art" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="urban-legend-red-string-title urban-legend-red-string-desc" stroke-linecap="round" stroke-linejoin="round">
+<title id="urban-legend-red-string-title">Red string board / 红线线索板</title>
+<desc id="urban-legend-red-string-desc">Three instant photos and a clipping are linked by muted red thread: a stranger, a house with one amber window and a watching eye; pins hold the paper and a small brass bell hangs below. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-red-string-art,#urban-legend-red-string-art *{animation-play-state:inherit}
+.urban-legend-red-string-pulse{animation:urban-legend-red-string-pulse 4.8s ease-in-out infinite}
+.urban-legend-red-string-float{animation:urban-legend-red-string-float 6s ease-in-out infinite}
+.urban-legend-red-string-sway{animation:urban-legend-red-string-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-red-string-pop{animation:urban-legend-red-string-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-red-string-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-red-string-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-red-string-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-red-string-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-red-string-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-red-string-cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f0e6ce"/><stop offset="0.45" stop-color="#c6cfc2"/><stop offset="1" stop-color="#708990"/></linearGradient><linearGradient id="urban-legend-red-string-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-red-string-red" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#ce9984"/><stop offset="0.46" stop-color="#a56561"/><stop offset="1" stop-color="#583e47"/></linearGradient><linearGradient id="urban-legend-red-string-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient></defs>
+<g transform="rotate(-9 22 26)">
+<path d="M11 14L33 14L33 40L11 40Z" fill="#21353f" stroke="none" stroke-width="0.65" opacity="0.15" transform="translate(1 1)"/>
+<rect x="11" y="14" width="22" height="26" rx="0.3" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.6"/>
+<rect x="13" y="16" width="18" height="17" rx="0.2" fill="url(#urban-legend-red-string-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M14 30L20 27L30 28V32H14Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M20 22Q21 19 23 22L23 24L26 31H18L20 25Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M16 37h8M25 36h4" fill="none" stroke="#73888b" stroke-width="0.4"/>
+<path d="M12 15v23" fill="none" stroke="#e7deca" stroke-width="0.3"/>
+</g>
+<g transform="rotate(7 57 24)">
+<rect x="44" y="11" width="23" height="27" rx="0.3" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.6"/>
+<rect x="46" y="13" width="19" height="18" rx="0.1" fill="url(#urban-legend-red-string-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M47 24L54 16L64 22L62 24V30H49V23Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<path d="M55 23h3v5h-3Z" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<path d="M49 34h11M49 36h5" fill="none" stroke="#73888b" stroke-width="0.4"/>
+</g>
+<g transform="rotate(5 27 56)">
+<rect x="13" y="44" width="27" height="25" rx="0.3" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.6"/>
+<rect x="15" y="46" width="23" height="16" rx="0.1" fill="url(#urban-legend-red-string-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M17 54Q26 45 36 54Q28 64 17 54Z" fill="#c1ceca" stroke="#21353f" stroke-width="0.6"/>
+<circle cx="27" cy="54" r="4" fill="#985a58" stroke="#21353f" stroke-width="0.5"/>
+<circle cx="27" cy="54" r="2" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="25.8" cy="52.9" r="0.7" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<path d="M18 65h14M18 67h8" fill="none" stroke="#73888b" stroke-width="0.4"/>
+</g>
+<g transform="rotate(-6 56 51)">
+<path d="M44 42H68V62L64 61L60 63L55 61L51 63L44 61Z" fill="url(#urban-legend-red-string-cloth)" stroke="#21353f" stroke-width="0.5"/>
+<rect x="47" y="45" width="18" height="2.7" rx="0" fill="#365663" stroke="none" stroke-width="0.65"/>
+<path d="M47 50h7M57 50h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 52h7M57 52h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 54h7M57 54h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 56h7M57 56h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+<path d="M47 58h7M57 58h7" fill="none" stroke="#73888b" stroke-width="0.32"/>
+</g>
+<path d="M20 14Q33 21 57 12L26 44L57 44L20 14M57 12L57 44" fill="none" stroke="#172b35" stroke-width="1.25" opacity="0.22" transform="translate(.4 .8)"/>
+<path d="M20 14Q33 21 57 12L26 44L57 44L20 14M57 12L57 44" fill="none" stroke="#985a58" stroke-width="0.85"/>
+<path d="M22 16Q38 20 53 14M30 41l24-26" fill="none" stroke="#e7deca" stroke-width="0.2" opacity="0.5"/>
+<ellipse cx="20.5" cy="15" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="20" cy="14" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="19.55" cy="13.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<ellipse cx="57.5" cy="13" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="57" cy="12" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="56.55" cy="11.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<ellipse cx="26.5" cy="45" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="26" cy="44" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="25.55" cy="43.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<ellipse cx="57.5" cy="45" rx="2" ry="1.4" fill="#172b35" stroke="none" stroke-width="0.5" opacity="0.28"/>
+<circle cx="57" cy="44" r="1.65" fill="url(#urban-legend-red-string-red)" stroke="#21353f" stroke-width="0.45"/>
+<circle cx="56.55" cy="43.45" r="0.4" fill="#e7deca" stroke="none" stroke-width="0.5"/>
+<g class="urban-legend-red-string-sway">
+<path d="M57 45C52 52 60 57 57 64" fill="none" stroke="#985a58" stroke-width="0.7"/>
+<circle cx="57" cy="64.5" r="1.2" fill="none" stroke="#e1b574" stroke-width="0.7"/>
+<path d="M55 65Q58 63 61 66L61 69L63 71Q58 75 53 70L54 68Z" fill="url(#urban-legend-red-string-amber)" stroke="#21353f" stroke-width="0.55"/>
+<ellipse cx="58" cy="70.5" rx="4.4" ry="1.6" fill="#21353f" stroke="none" stroke-width="0.5"/>
+<circle cx="58" cy="71.5" r="1.1" fill="#e1b574" stroke="#21353f" stroke-width="0.3"/>
+<path d="M55.5 66q1-1 3-.5" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+</g>
+<path d="M11 41l8 1M45 39l9 1" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg>

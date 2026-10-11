@@ -10,7 +10,6 @@ import {
   isKitStage,
   isStageDefaultStroke,
   normalizeStroke,
-  readStoredKitStage,
   readStoredKitStroke,
   resolveKitStroke,
   stageDefaultStroke,
@@ -21,17 +20,19 @@ import {
 import { SVG_KIT_KIND_LABELS, type SvgKitIcon } from '../../content/svg-kits/index.ts'
 import { useSvgKit } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
+import { useTheme } from '../../ThemeProvider.tsx'
 
 export function SvgKitThemePage() {
   const { themeId } = useParams()
   const { theme: kit, error } = useSvgKit(themeId)
   const { lang } = useLang()
+  const { theme } = useTheme()
   const zh = lang === 'zh'
   const [params, setParams] = useSearchParams()
   const [q, setQ] = useState('')
   const [cat, setCat] = useState<string>('all')
   const urlBg = params.get('bg')
-  const bg: KitStage = isKitStage(urlBg) ? urlBg : defaultKitStage()
+  const bg: KitStage = isKitStage(urlBg) ? urlBg : defaultKitStage(theme)
   const stroke = resolveKitStroke(bg, params.get('stroke'), readStoredKitStroke())
   const pageStyle = { '--svg-kit-stroke': stroke } as CSSProperties
 

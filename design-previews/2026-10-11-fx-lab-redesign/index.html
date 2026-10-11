@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>设计方向预览 — fx-lab 主页 + SVG Kits 层级重设计</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== Shell: neutral, no-opinion ===== */
+*{box-sizing:border-box;margin:0}
+body{font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;background:#f4f4f2;color:#1a1a1a;line-height:1.5}
+.bar{padding:18px 32px;border-bottom:1px solid #ddd;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.bar strong{font-size:15px;font-weight:700}.bar span{font-size:12px;color:#888}
+.bar-note{display:block;font-size:11px;color:#999;margin-top:2px}
+.dials{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:16px;padding:16px 32px;border-bottom:1px solid #ddd;background:#fafaf8}
+.dial{display:grid;gap:4px;font-size:13px}.dial b{font-weight:650;font-size:12px}.dial output{font-variant-numeric:tabular-nums;color:#555}
+.dial input[type=range]{width:100%;accent-color:#444}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:32px}
+.card{background:#fff;border:2px solid #e2e2e0;border-radius:14px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:#bbb;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.card.selected{border-color:#1a1a1a;box-shadow:0 0 0 2px #1a1a1a}
+.rec-badge{display:inline-block;background:#1a1a1a;color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:middle}
+.mock{height:340px;overflow:hidden;position:relative;display:grid;place-items:center;background:#f0f0ee}
+.mock>.stage{width:960px;height:600px;transform:scale(.52);transform-origin:center center;border-radius:8px;overflow:hidden}
+.meta{padding:14px 20px 10px;display:grid;gap:6px;min-width:0;width:100%}
+.meta h3{font-size:15px;font-weight:700;display:flex;align-items:center;gap:6px}
+.meta p{font-size:12px;color:#666;max-width:64ch;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.55}
+.qmdp-pick-button{display:block;width:calc(100% - 40px);margin:0 20px 16px;padding:12px;border:2px solid #1a1a1a;border-radius:10px;background:#fff;color:#1a1a1a;font-size:14px;font-weight:700;cursor:pointer;transition:all .15s ease;text-align:center}
+.qmdp-pick-button:hover{background:#1a1a1a;color:#fff}
+
+/* Details section */
+.details-section{padding:32px;border-top:1px solid #ddd}
+.details-section h2{font-size:18px;font-weight:700;margin-bottom:20px}
+.dir-details{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.dir-detail{background:#fafaf8;border:1px solid #eee;border-radius:10px;padding:16px 18px}
+.dir-detail h4{font-size:14px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.dir-detail dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:12px}
+.dir-detail dt{color:#888;font-weight:600}.dir-detail dd{color:#444}
+
+/* Confirm Modal */
+.confirm{position:fixed;inset:0;display:none;place-items:center;background:rgba(0,0,0,.32);z-index:20}
+.confirm.open{display:grid}
+.dialog{width:min(520px,calc(100vw - 32px));background:#fff;border-radius:14px;padding:24px}
+.dialog h2{font-size:16px;font-weight:700;margin-bottom:8px}
+.dialog p{font-size:13px;color:#555;margin-bottom:14px}
+.dialog textarea{width:100%;min-height:80px;resize:vertical;border:1px solid #ddd;border-radius:8px;padding:10px;font:inherit;font-size:13px}
+.dialog-btns{display:flex;gap:10px;margin-top:14px;justify-content:flex-end}
+.dialog-btns button{padding:8px 18px;border-radius:8px;font-weight:600;font-size:13px;cursor:pointer;border:1px solid #ddd;background:#fff;transition:all .15s}
+.dialog-btns .confirm-btn{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
+.dialog-btns .confirm-btn:hover{background:#333}
+.pickbar{position:fixed;bottom:0;left:0;right:0;padding:14px;background:#1a1a1a;color:#fff;text-align:center;font-size:13px;font-weight:600;transform:translateY(100%);transition:transform 200ms cubic-bezier(.23,1,.32,1);z-index:10}
+.pickbar.show{transform:translateY(0)}
+
+@media (max-width:760px){
+  .bar{padding:14px 16px}
+  .dials{grid-template-columns:1fr;padding:14px 16px}
+  .grid{grid-template-columns:1fr;padding:16px}
+  .dir-details{grid-template-columns:1fr}
+}
+
+/* =========================================================================
+   Direction A: "编辑器暖白" — Warm Swiss, default light
+   Fonts: Outfit + JetBrains Mono
+   Colors: warm white #faf9f7, warm gray system, sage green accent
+   Layout: editorial grid, left-aligned hero, divided sections
+   ========================================================================= */
+.sa-a{background:#faf9f7;color:#1c1c1e;font-family:'Outfit',-apple-system,"PingFang SC",sans-serif;width:100%;height:100%;overflow:hidden}
+.sa-a *{box-sizing:border-box;margin:0}
+.sa-a .hdr{display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:54px;border-bottom:1px solid #e8e5e0;background:rgba(250,249,247,.92);backdrop-filter:blur(10px)}
+.sa-a .hdr-l{display:flex;align-items:center;gap:10px}
+.sa-a .logo-mark{width:18px;height:18px;border-radius:50%;background:#537d5d}
+.sa-a .logo-text{font-size:14px;font-weight:700;letter-spacing:-.02em}
+.sa-a .hdr-nav{display:flex;gap:4px}
+.sa-a .hdr-nav a{font-size:11px;font-weight:600;padding:5px 10px;border-radius:6px;color:#666;text-decoration:none;transition:all .12s}
+.sa-a .hdr-nav a.act{background:#537d5d;color:#fff}
+.sa-a .hdr-r{display:flex;align-items:center;gap:8px}
+.sa-a .hdr-r .mode-sw{display:flex;border:1px solid #e0ddd7;border-radius:6px;overflow:hidden}
+.sa-a .hdr-r .mode-sw span{font-size:10px;padding:3px 8px;background:#fff;color:#999;font-weight:600}
+.sa-a .hdr-r .mode-sw span.on{background:#1c1c1e;color:#fff}
+.sa-a .hero-a{padding:40px 28px 24px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
+.sa-a .hero-a .tag{font-size:10px;font-weight:700;color:#537d5d;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.sa-a .hero-a h1{font-size:26px;font-weight:800;letter-spacing:-.03em;line-height:1.15;color:#1c1c1e}
+.sa-a .hero-a p{font-size:12px;color:#888;margin-top:6px;max-width:480px;line-height:1.6}
+.sa-a .hero-a .stats{display:flex;gap:6px;align-self:flex-end}
+.sa-a .hero-a .stats span{font-size:11px;padding:3px 9px;border:1px solid #e0ddd7;border-radius:6px;color:#777;font-weight:500}
+.sa-a .hero-a .stats span strong{color:#1c1c1e;font-weight:700}
+.sa-a .sections{display:flex;flex-direction:column}
+.sa-a .sec{border-top:1px solid #e8e5e0;padding:18px 28px}
+.sa-a .sec-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.sa-a .sec-head h2{font-size:13px;font-weight:700;color:#1c1c1e;display:flex;align-items:center;gap:8px}
+.sa-a .sec-head h2 .cnt{font-size:10px;color:#999;font-weight:500}
+.sa-a .sec-head a{font-size:11px;color:#537d5d;text-decoration:none;font-weight:600}
+.sa-a .card-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.sa-a .card-a{border:1px solid #e8e5e0;border-radius:10px;overflow:hidden;background:#fff}
+.sa-a .card-a .thumb{height:72px;background:#f0ede7;display:grid;place-items:center}
+.sa-a .card-a .thumb .dot{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#537d5d,#8bba90)}
+.sa-a .card-a .info{padding:7px 8px}
+.sa-a .card-a .info strong{font-size:11px;font-weight:600;display:block;color:#1c1c1e}
+.sa-a .card-a .info small{font-size:9px;color:#999;font-family:'JetBrains Mono',monospace}
+
+/* =========================================================================
+   Direction B: "浮墨深空" — Dark editorial, vertical rhythm
+   Fonts: DM Sans + JetBrains Mono
+   Colors: deep blue-black #0d0f14, steel-blue accents
+   Layout: full-width sections, strong horizontal rules, tab nav
+   ========================================================================= */
+.sa-b{background:#0d0f14;color:#e4e5eb;font-family:'DM Sans',-apple-system,"PingFang SC",sans-serif;width:100%;height:100%;overflow:hidden}
+.sa-b *{box-sizing:border-box;margin:0}
+.sa-b .hdr{display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:52px;border-bottom:1px solid #1f2230;background:rgba(13,15,20,.88);backdrop-filter:blur(12px)}
+.sa-b .hdr-l{display:flex;align-items:center;gap:10px}
+.sa-b .logo-mark{font-size:13px;font-weight:800;color:#7b8cde;letter-spacing:-.02em}
+.sa-b .hdr-nav{display:flex;gap:2px}
+.sa-b .hdr-nav a{font-size:11px;font-weight:500;padding:5px 10px;border-radius:6px;color:#6b7094;text-decoration:none}
+.sa-b .hdr-nav a.act{color:#e4e5eb;background:#1a1d2b}
+.sa-b .hdr-r{display:flex;align-items:center;gap:8px}
+.sa-b .hdr-r .pill{font-size:10px;padding:3px 8px;border-radius:5px;border:1px solid #1f2230;color:#6b7094;font-weight:600}
+.sa-b .hero-b{padding:36px 28px 20px}
+.sa-b .hero-b h1{font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1.2;color:#fff}
+.sa-b .hero-b h1 em{font-style:normal;color:#7b8cde}
+.sa-b .hero-b p{font-size:12px;color:#6b7094;margin-top:8px;max-width:560px;line-height:1.65}
+.sa-b .tabs{display:flex;gap:0;padding:0 28px;border-bottom:1px solid #1f2230}
+.sa-b .tabs a{font-size:12px;font-weight:600;padding:10px 14px;color:#6b7094;text-decoration:none;border-bottom:2px solid transparent;transition:all .12s}
+.sa-b .tabs a.act{color:#7b8cde;border-bottom-color:#7b8cde}
+.sa-b .tabs a .n{font-size:10px;color:#4a4e68;margin-left:4px}
+.sa-b .sec-b{padding:16px 28px}
+.sa-b .sec-b h3{font-size:11px;font-weight:700;color:#4a4e68;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.sa-b .grid-b{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.sa-b .card-b{border:1px solid #1f2230;border-radius:10px;overflow:hidden;background:#12141c;transition:border-color .15s}
+.sa-b .card-b .thumb{height:68px;background:#0a0b10;display:grid;place-items:center}
+.sa-b .card-b .thumb .shape{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,#3d4273,#7b8cde)}
+.sa-b .card-b .info{padding:7px 8px}
+.sa-b .card-b .info strong{font-size:11px;font-weight:600;display:block;color:#e4e5eb}
+.sa-b .card-b .info small{font-size:9px;color:#4a4e68;font-family:'JetBrains Mono',monospace}
+
+/* =========================================================================
+   Direction C: "工作台" — Instrument panel, functional density
+   Fonts: Plus Jakarta Sans + JetBrains Mono
+   Colors: cool gray #f5f5f7 light, slate accents, orange signal
+   Layout: sidebar persistent, dense grid, utility-first
+   ========================================================================= */
+.sa-c{background:#f5f5f7;color:#1d1d1f;font-family:'Plus Jakarta Sans',-apple-system,"PingFang SC",sans-serif;width:100%;height:100%;overflow:hidden;display:grid;grid-template-columns:200px 1fr;grid-template-rows:48px 1fr}
+.sa-c *{box-sizing:border-box;margin:0}
+.sa-c .hdr{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:48px;border-bottom:1px solid #e5e5ea;background:#fff}
+.sa-c .hdr-l{display:flex;align-items:center;gap:10px}
+.sa-c .logo{font-size:13px;font-weight:800;letter-spacing:-.02em;color:#1d1d1f}
+.sa-c .hdr-r{display:flex;align-items:center;gap:6px}
+.sa-c .hdr-r .search-box{font-size:11px;padding:5px 10px;border:1px solid #e5e5ea;border-radius:7px;color:#999;background:#f5f5f7;width:160px}
+.sa-c .hdr-r .mode{font-size:10px;padding:3px 7px;border:1px solid #e5e5ea;border-radius:5px;color:#666;font-weight:600}
+.sa-c .side{border-right:1px solid #e5e5ea;padding:14px 10px;background:#fff;display:flex;flex-direction:column;gap:2px}
+.sa-c .side h4{font-size:9px;font-weight:700;color:#999;letter-spacing:.1em;text-transform:uppercase;padding:6px 8px 4px}
+.sa-c .side a{font-size:12px;font-weight:500;padding:6px 10px;border-radius:6px;color:#666;text-decoration:none;display:flex;justify-content:space-between;align-items:center}
+.sa-c .side a.act{background:#1d1d1f;color:#fff}
+.sa-c .side a .cnt{font-size:10px;color:#999;font-weight:600}
+.sa-c .side a.act .cnt{color:rgba(255,255,255,.5)}
+.sa-c .main-c{padding:16px;overflow:hidden}
+.sa-c .filter-bar{display:flex;gap:6px;margin-bottom:12px;align-items:center}
+.sa-c .filter-bar .chip{font-size:10px;padding:3px 8px;border-radius:5px;border:1px solid #e5e5ea;color:#666;font-weight:600;background:#fff}
+.sa-c .filter-bar .chip.act{background:#1d1d1f;color:#fff;border-color:#1d1d1f}
+.sa-c .filter-bar .sep{width:1px;height:14px;background:#e5e5ea}
+.sa-c .filter-bar .count{font-size:10px;color:#999;margin-left:auto}
+.sa-c .grid-c{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.sa-c .card-c{border:1px solid #e5e5ea;border-radius:8px;overflow:hidden;background:#fff}
+.sa-c .card-c .thumb{height:60px;background:#f0f0f2;display:grid;place-items:center}
+.sa-c .card-c .thumb .ico{width:22px;height:22px;border-radius:4px;background:#e86830}
+.sa-c .card-c .info{padding:6px 7px}
+.sa-c .card-c .info strong{font-size:10px;font-weight:600;display:block;color:#1d1d1f}
+.sa-c .card-c .info small{font-size:8px;color:#999;font-family:'JetBrains Mono',monospace}
+
+/* =========================================================================
+   Direction D: "银河展馆" — Immersive gradient, showcase feel
+   Fonts: Space Grotesk + JetBrains Mono
+   Colors: deep charcoal #111116, warm gold accent
+   Layout: full-bleed hero, 2-column asymmetric, category tabs
+   ========================================================================= */
+.sa-d{background:#111116;color:#eae8e3;font-family:'Space Grotesk',-apple-system,"PingFang SC",sans-serif;width:100%;height:100%;overflow:hidden}
+.sa-d *{box-sizing:border-box;margin:0}
+.sa-d .hdr{display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:50px;border-bottom:1px solid rgba(255,255,255,.06)}
+.sa-d .hdr-l{display:flex;align-items:center;gap:12px}
+.sa-d .logo{font-size:14px;font-weight:700;letter-spacing:-.02em;color:#eae8e3}
+.sa-d .hdr-nav{display:flex;gap:0}
+.sa-d .hdr-nav a{font-size:11px;font-weight:500;padding:5px 10px;color:#6e6c66;text-decoration:none}
+.sa-d .hdr-nav a.act{color:#d4a853}
+.sa-d .hdr-r{display:flex;gap:6px;align-items:center}
+.sa-d .hdr-r .sw{font-size:10px;padding:3px 7px;border:1px solid rgba(255,255,255,.1);border-radius:5px;color:#6e6c66;font-weight:600}
+.sa-d .hero-d{position:relative;padding:44px 28px 28px;background:linear-gradient(135deg,#1a1710 0%,#111116 40%,#0f1018 100%)}
+.sa-d .hero-d::after{content:'';position:absolute;right:0;top:0;width:300px;height:100%;background:radial-gradient(circle at 80% 30%,rgba(212,168,83,.08),transparent 60%);pointer-events:none}
+.sa-d .hero-d .tag{font-size:10px;font-weight:700;color:#d4a853;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.sa-d .hero-d h1{font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1.15;color:#fff}
+.sa-d .hero-d p{font-size:12px;color:#6e6c66;margin-top:8px;max-width:500px;line-height:1.6}
+.sa-d .hero-d .stats{display:flex;gap:16px;margin-top:14px}
+.sa-d .hero-d .stats div{font-size:10px;color:#6e6c66}
+.sa-d .hero-d .stats div strong{display:block;font-size:20px;font-weight:700;color:#eae8e3;font-variant-numeric:tabular-nums}
+.sa-d .tabs{display:flex;gap:0;padding:0 28px;border-bottom:1px solid rgba(255,255,255,.06)}
+.sa-d .tabs a{font-size:11px;font-weight:600;padding:10px 12px;color:#6e6c66;text-decoration:none;border-bottom:2px solid transparent}
+.sa-d .tabs a.act{color:#d4a853;border-bottom-color:#d4a853}
+.sa-d .content-d{padding:16px 28px;display:grid;grid-template-columns:2fr 1fr;gap:14px}
+.sa-d .grid-d{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sa-d .card-d{border:1px solid rgba(255,255,255,.06);border-radius:10px;overflow:hidden;background:#18181e}
+.sa-d .card-d .thumb{height:62px;background:#0f0f14;display:grid;place-items:center}
+.sa-d .card-d .thumb .orb{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#d4a853,#8b6914)}
+.sa-d .card-d .info{padding:6px 8px}
+.sa-d .card-d .info strong{font-size:10px;font-weight:600;display:block;color:#eae8e3}
+.sa-d .card-d .info small{font-size:8px;color:#4a4840;font-family:'JetBrains Mono',monospace}
+.sa-d .aside-d{display:flex;flex-direction:column;gap:10px}
+.sa-d .aside-card{border:1px solid rgba(255,255,255,.06);border-radius:10px;background:#18181e;padding:14px}
+.sa-d .aside-card h4{font-size:12px;font-weight:700;margin-bottom:6px;color:#eae8e3;display:flex;align-items:center;gap:6px}
+.sa-d .aside-card h4 .dot{width:6px;height:6px;border-radius:50%;background:#d4a853}
+.sa-d .aside-card p{font-size:10px;color:#6e6c66;line-height:1.5}
+</style>
+</head>
+<body>
+  <div class="bar">
+    <div>
+      <strong>fx-lab 主页 + SVG Kits 层级重设计 · 方向样机</strong>
+      <span class="bar-note">方向样机，用于选择视觉与交互气质，不是最终页面；选择后才进入正式实现</span>
+    </div>
+    <span>键盘 1-4 选择 · 确认后回传</span>
+  </div>
+
+  <div class="dials" data-qmdp-dials aria-label="设计拨盘">
+    <label class="dial"><b>视觉冒险度 <output id="varianceOut" data-qmdp-output="variance">5</output>/10</b><input id="variance" data-qmdp-dial="variance" type="range" min="1" max="10" value="5"></label>
+    <label class="dial"><b>动效强度 <output id="motionOut" data-qmdp-output="motion">5</output>/10</b><input id="motion" data-qmdp-dial="motion" type="range" min="1" max="10" value="5"></label>
+    <label class="dial"><b>信息密度 <output id="densityOut" data-qmdp-output="density">6</output>/10</b><input id="density" data-qmdp-dial="density" type="range" min="1" max="10" value="6"></label>
+  </div>
+
+  <div class="grid">
+    <!-- ===== Direction A: 编辑器暖白 ===== -->
+    <div class="card" data-dir="A" data-name="编辑器暖白" onclick="openConfirm(0,'编辑器暖白')">
+      <div class="mock">
+        <div class="stage sa-a">
+          <div class="hdr">
+            <div class="hdr-l">
+              <div class="logo-mark"></div>
+              <span class="logo-text">运动实验室</span>
+              <span style="font-size:10px;color:#bbb;border:1px solid #e0ddd7;padding:1px 6px;border-radius:4px">fx-lab</span>
+            </div>
+            <div class="hdr-nav">
+              <a href="#" class="act">动效画廊</a>
+              <a href="#">SVG 套件</a>
+              <a href="#">返回词典</a>
+            </div>
+            <div class="hdr-r">
+              <div class="mode-sw"><span class="on">☀</span><span>☾</span></div>
+            </div>
+          </div>
+          <div class="hero-a">
+            <div>
+              <div class="tag">动效资源中心</div>
+              <h1>301 个可交互的<br>动效组件演示</h1>
+              <p>anime.js · react-bits · ThreeUI · math-curve-loaders，四个来源的官方组件挂成可试玩画廊。浅色默认，全局切换暗色。</p>
+            </div>
+            <div class="stats">
+              <span><strong>14</strong> anime.js</span>
+              <span><strong>166</strong> react-bits</span>
+              <span><strong>100</strong> ThreeUI</span>
+              <span><strong>21</strong> curves</span>
+            </div>
+          </div>
+          <div class="sections">
+            <div class="sec">
+              <div class="sec-head">
+                <h2>anime.js <span class="cnt">14 个演示</span></h2>
+                <a href="#">查看全部 →</a>
+              </div>
+              <div class="card-row">
+                <div class="card-a"><div class="thumb"><div class="dot"></div></div><div class="info"><strong>交错网格</strong><small>Stagger grid</small></div></div>
+                <div class="card-a"><div class="thumb"><div class="dot" style="border-radius:4px"></div></div><div class="info"><strong>时间线</strong><small>Timeline</small></div></div>
+                <div class="card-a"><div class="thumb"><div class="dot" style="background:linear-gradient(135deg,#537d5d,#bcd4bf)"></div></div><div class="info"><strong>SVG 描边</strong><small>SVG draw</small></div></div>
+                <div class="card-a"><div class="thumb"><div class="dot" style="width:30px;height:18px;border-radius:3px"></div></div><div class="info"><strong>弹簧</strong><small>Spring</small></div></div>
+              </div>
+            </div>
+            <div class="sec">
+              <div class="sec-head">
+                <h2>react-bits <span class="cnt">166 个组件</span></h2>
+                <a href="#">查看全部 →</a>
+              </div>
+              <div class="card-row">
+                <div class="card-a"><div class="thumb"><div class="dot" style="background:#c7a88a"></div></div><div class="info"><strong>极光</strong><small>Aurora</small></div></div>
+                <div class="card-a"><div class="thumb"><div class="dot" style="background:#7db897"></div></div><div class="info"><strong>粒子文字</strong><small>ParticleText</small></div></div>
+                <div class="card-a"><div class="thumb"><div class="dot" style="background:#94a3b8"></div></div><div class="info"><strong>磁力线</strong><small>MagnetLines</small></div></div>
+                <div class="card-a"><div class="thumb"><div class="dot" style="background:#b8a394"></div></div><div class="info"><strong>液态铬</strong><small>LiquidChrome</small></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <h3>A · 编辑器暖白</h3>
+        <p>暖白底色 + 鼠尾草绿强调 + 编辑式网格布局。按来源分 section，每个 section 是一条带标题的横向卡片行。全局亮/暗模式切换统一驱动。</p>
+      </div>
+      <button type="button" class="qmdp-pick-button" data-qmdp-native-handler="true" onclick="event.stopPropagation();openConfirm(0,'编辑器暖白')">选择 A · 编辑器暖白</button>
+    </div>
+
+    <!-- ===== Direction B: 浮墨深空 (Recommended) ===== -->
+    <div class="card" data-dir="B" data-name="浮墨深空" data-rec onclick="openConfirm(1,'浮墨深空')">
+      <div class="mock">
+        <div class="stage sa-b">
+          <div class="hdr">
+            <div class="hdr-l">
+              <span class="logo-mark">fx-lab</span>
+              <div class="hdr-nav">
+                <a href="#" class="act">动效画廊</a>
+                <a href="#">SVG 套件</a>
+                <a href="#">返回词典</a>
+              </div>
+            </div>
+            <div class="hdr-r">
+              <span class="pill">☀ / ☾</span>
+              <span class="pill">中 / EN</span>
+            </div>
+          </div>
+          <div class="hero-b">
+            <h1>运动实验室 <em>·</em><br>四库合一的交互动效画廊</h1>
+            <p>anime.js、react-bits、ThreeUI、math-curve-loaders 四个来源 301 个组件，每个都可以在页面内试玩。默认浅色，也可全局切换深色模式。</p>
+          </div>
+          <div class="tabs">
+            <a href="#" class="act">全部 <span class="n">301</span></a>
+            <a href="#">anime.js <span class="n">14</span></a>
+            <a href="#">react-bits <span class="n">166</span></a>
+            <a href="#">ThreeUI <span class="n">100</span></a>
+            <a href="#">curves <span class="n">21</span></a>
+          </div>
+          <div class="sec-b">
+            <h3>anime.js · 14 个演示</h3>
+            <div class="grid-b">
+              <div class="card-b"><div class="thumb"><div class="shape"></div></div><div class="info"><strong>交错网格</strong><small>Stagger grid</small></div></div>
+              <div class="card-b"><div class="thumb"><div class="shape" style="border-radius:50%"></div></div><div class="info"><strong>时间线</strong><small>Timeline</small></div></div>
+              <div class="card-b"><div class="thumb"><div class="shape" style="background:linear-gradient(135deg,#4a518a,#7b8cde)"></div></div><div class="info"><strong>SVG 描边</strong><small>SVG draw</small></div></div>
+              <div class="card-b"><div class="thumb"><div class="shape" style="width:32px;height:16px;border-radius:3px"></div></div><div class="info"><strong>弹簧</strong><small>Spring</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <h3>B · 浮墨深空 <span class="rec-badge">推荐</span></h3>
+        <p>深蓝黑底 + 钢蓝色强调 + 顶部 Tab 导航切换来源。保持当前暗色调性但统一为设计系统。Header 共享，Tab 替代侧栏。默认浅色模式时反转为亮白。</p>
+      </div>
+      <button type="button" class="qmdp-pick-button" data-qmdp-native-handler="true" onclick="event.stopPropagation();openConfirm(1,'浮墨深空')">选择 B · 浮墨深空 ⭐推荐</button>
+    </div>
+
+    <!-- ===== Direction C: 工作台 ===== -->
+    <div class="card" data-dir="C" data-name="工作台" onclick="openConfirm(2,'工作台')">
+      <div class="mock">
+        <div class="stage sa-c">
+          <div class="hdr">
+            <div class="hdr-l">
+              <span class="logo">fx-lab 运动实验室</span>
+            </div>
+            <div class="hdr-r">
+              <div class="search-box">搜索组件 / 曲线 / SDK...</div>
+              <span class="mode">☀ / ☾</span>
+              <span class="mode">中 / EN</span>
+            </div>
+          </div>
+          <div class="side">
+            <h4>来源</h4>
+            <a href="#" class="act">全部 <span class="cnt">301</span></a>
+            <a href="#">anime.js <span class="cnt">14</span></a>
+            <a href="#">react-bits <span class="cnt">166</span></a>
+            <a href="#">ThreeUI <span class="cnt">100</span></a>
+            <a href="#">curves <span class="cnt">21</span></a>
+            <h4 style="margin-top:12px">更多</h4>
+            <a href="#">SVG 套件 <span class="cnt">7</span></a>
+            <a href="#">返回词典</a>
+          </div>
+          <div class="main-c">
+            <div class="filter-bar">
+              <span class="chip act">全部</span>
+              <span class="chip">背景</span>
+              <span class="chip">文字</span>
+              <span class="chip">光标</span>
+              <span class="chip">3D</span>
+              <span class="sep"></span>
+              <span class="count">301 个组件</span>
+            </div>
+            <div class="grid-c">
+              <div class="card-c"><div class="thumb"><div class="ico"></div></div><div class="info"><strong>交错网格</strong><small>anime.js</small></div></div>
+              <div class="card-c"><div class="thumb"><div class="ico" style="background:#3b82f6"></div></div><div class="info"><strong>极光</strong><small>react-bits</small></div></div>
+              <div class="card-c"><div class="thumb"><div class="ico" style="background:#8b5cf6"></div></div><div class="info"><strong>粒子文字</strong><small>react-bits</small></div></div>
+              <div class="card-c"><div class="thumb"><div class="ico" style="background:#06b6d4;border-radius:50%"></div></div><div class="info"><strong>磁力线</strong><small>react-bits</small></div></div>
+              <div class="card-c"><div class="thumb"><div class="ico" style="background:#f59e0b;border-radius:50%"></div></div><div class="info"><strong>液态铬</strong><small>react-bits</small></div></div>
+              <div class="card-c"><div class="thumb"><div class="ico" style="background:#10b981"></div></div><div class="info"><strong>时间线</strong><small>anime.js</small></div></div>
+              <div class="card-c"><div class="thumb"><div class="ico" style="background:#ef4444;border-radius:50%"></div></div><div class="info"><strong>SVG 描边</strong><small>anime.js</small></div></div>
+              <div class="card-c"><div class="thumb"><div class="ico" style="background:#6366f1"></div></div><div class="info"><strong>弹簧</strong><small>anime.js</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <h3>C · 工作台</h3>
+        <p>持久侧栏 + 密集网格 + 功能优先的工具面板感。像 Figma/Storybook 的组件浏览器，信息密度最高。侧栏同时收纳来源筛选和跨页导航（SVG 套件、返回词典）。</p>
+      </div>
+      <button type="button" class="qmdp-pick-button" data-qmdp-native-handler="true" onclick="event.stopPropagation();openConfirm(2,'工作台')">选择 C · 工作台</button>
+    </div>
+
+    <!-- ===== Direction D: 银河展馆 ===== -->
+    <div class="card" data-dir="D" data-name="银河展馆" onclick="openConfirm(3,'银河展馆')">
+      <div class="mock">
+        <div class="stage sa-d">
+          <div class="hdr">
+            <div class="hdr-l">
+              <span class="logo">fx-lab</span>
+              <div class="hdr-nav">
+                <a href="#" class="act">画廊</a>
+                <a href="#">SVG 套件</a>
+                <a href="#">词典</a>
+              </div>
+            </div>
+            <div class="hdr-r">
+              <span class="sw">☀ / ☾</span>
+              <span class="sw">中 / EN</span>
+            </div>
+          </div>
+          <div class="hero-d">
+            <div class="tag">fx-lab · 运动实验室</div>
+            <h1>四库合一的<br>交互动效画廊</h1>
+            <p>anime.js · react-bits · ThreeUI · math-curve-loaders，301 个组件全部可在页面内试玩。</p>
+            <div class="stats">
+              <div><strong>301</strong>组件总数</div>
+              <div><strong>4</strong>来源库</div>
+              <div><strong>131</strong>SVG 图标</div>
+            </div>
+          </div>
+          <div class="tabs">
+            <a href="#" class="act">全部 301</a>
+            <a href="#">anime.js</a>
+            <a href="#">react-bits</a>
+            <a href="#">ThreeUI</a>
+            <a href="#">curves</a>
+          </div>
+          <div class="content-d">
+            <div class="grid-d">
+              <div class="card-d"><div class="thumb"><div class="orb"></div></div><div class="info"><strong>交错网格</strong><small>anime.js</small></div></div>
+              <div class="card-d"><div class="thumb"><div class="orb" style="background:radial-gradient(circle at 35% 35%,#b8a394,#6e4e30)"></div></div><div class="info"><strong>极光</strong><small>react-bits</small></div></div>
+              <div class="card-d"><div class="thumb"><div class="orb" style="background:radial-gradient(circle at 35% 35%,#94a3b8,#475569)"></div></div><div class="info"><strong>粒子文字</strong><small>react-bits</small></div></div>
+              <div class="card-d"><div class="thumb"><div class="orb" style="background:radial-gradient(circle at 35% 35%,#7db897,#2d5a3f)"></div></div><div class="info"><strong>磁力线</strong><small>react-bits</small></div></div>
+              <div class="card-d"><div class="thumb"><div class="orb" style="background:radial-gradient(circle at 35% 35%,#c7a88a,#8b6e4e)"></div></div><div class="info"><strong>液态铬</strong><small>react-bits</small></div></div>
+              <div class="card-d"><div class="thumb"><div class="orb" style="background:radial-gradient(circle at 35% 35%,#de8a5a,#8b3a14)"></div></div><div class="info"><strong>时间线</strong><small>anime.js</small></div></div>
+            </div>
+            <div class="aside-d">
+              <div class="aside-card">
+                <h4><span class="dot"></span> SVG 图标套件</h4>
+                <p>7 个主题 · 131 个动画 SVG 图标。按主题整理，自包含 CSS 动画。</p>
+              </div>
+              <div class="aside-card">
+                <h4><span class="dot"></span> 最近更新</h4>
+                <p>田园牧歌主题新增 16 个图标，克苏鲁神话新增 31 个异界元素。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <h3>D · 银河展馆</h3>
+        <p>深炭底 + 暖金强调 + 沉浸式展馆感。全幅渐变 Hero 配大数字统计，右侧 Aside 放 SVG Kits 入口和动态信息。展览气质强，适合品牌化。</p>
+      </div>
+      <button type="button" class="qmdp-pick-button" data-qmdp-native-handler="true" onclick="event.stopPropagation();openConfirm(3,'银河展馆')">选择 D · 银河展馆</button>
+    </div>
+  </div>
+
+  <!-- Direction details -->
+  <div class="details-section">
+    <h2>方向详情对比</h2>
+    <div class="dir-details">
+      <div class="dir-detail">
+        <h4>A · 编辑器暖白</h4>
+        <dl>
+          <dt>字体</dt><dd>Outfit（西文展示）+ 系统中文栈</dd>
+          <dt>色彩</dt><dd>暖白 #faf9f7，鼠尾草绿 #537d5d 强调</dd>
+          <dt>布局</dt><dd>左对齐 hero + 按来源分 section 横向卡片行</dd>
+          <dt>亮暗</dt><dd>默认浅色，全局切换。SVG Kits stage 只影响预览区</dd>
+          <dt>导航</dt><dd>顶部 Tab 导航（画廊 / SVG 套件 / 返回词典）</dd>
+          <dt>记忆点</dt><dd>印刷品般的 section 分割线，报刊编辑室质感</dd>
+        </dl>
+      </div>
+      <div class="dir-detail">
+        <h4>B · 浮墨深空 ⭐推荐</h4>
+        <dl>
+          <dt>字体</dt><dd>DM Sans（西文展示）+ 系统中文栈</dd>
+          <dt>色彩</dt><dd>深蓝黑 #0d0f14，钢蓝 #7b8cde 强调</dd>
+          <dt>布局</dt><dd>全幅 hero + Tab 切换来源，无侧栏，纵向节奏</dd>
+          <dt>亮暗</dt><dd>默认浅色（反转为亮白 #f8f9fc），全局切换</dd>
+          <dt>导航</dt><dd>顶部 Logo + Tab 导航，共享 header 跨页面</dd>
+          <dt>记忆点</dt><dd>Tab bar 下的来源切换，接近 VS Code / Linear 的分区感</dd>
+          <dt>推荐理由</dt><dd>最接近现有代码结构（将侧栏换成 Tab），改动量适中；暗色调与动效展示的沉浸感天然匹配；SVG Kits 共享同一套 token 只需覆盖 stage 区域</dd>
+        </dl>
+      </div>
+      <div class="dir-detail">
+        <h4>C · 工作台</h4>
+        <dl>
+          <dt>字体</dt><dd>Plus Jakarta Sans（西文展示）+ 系统中文栈</dd>
+          <dt>色彩</dt><dd>冷灰 #f5f5f7，橙信号色 #e86830 强调</dd>
+          <dt>布局</dt><dd>左侧持久侧栏 + 右侧密集 grid，Storybook 式</dd>
+          <dt>亮暗</dt><dd>默认浅色，全局切换</dd>
+          <dt>导航</dt><dd>侧栏内收纳来源、SVG 套件、返回词典</dd>
+          <dt>记忆点</dt><dd>开发者工具箱感，信息密度最高</dd>
+        </dl>
+      </div>
+      <div class="dir-detail">
+        <h4>D · 银河展馆</h4>
+        <dl>
+          <dt>字体</dt><dd>Space Grotesk（西文展示）+ 系统中文栈</dd>
+          <dt>色彩</dt><dd>深炭 #111116，暖金 #d4a853 强调</dd>
+          <dt>布局</dt><dd>全幅渐变 hero + 非对称双栏（grid + aside）</dd>
+          <dt>亮暗</dt><dd>默认浅色（反转为浅金调），全局切换</dd>
+          <dt>导航</dt><dd>顶部导航 + Tab 筛选，aside 区放 SVG Kits 入口</dd>
+          <dt>记忆点</dt><dd>展览馆品牌感，大数字统计面板</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirm dialog -->
+  <div class="confirm" id="confirm" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div class="dialog">
+      <h2 id="confirmTitle">确认设计方向</h2>
+      <p id="confirmMeta"></p>
+      <textarea id="adjustments" placeholder="可选：写下想调整的地方，比如「更稳一点」「要 A 的配色 + B 的布局」「暗色默认改浅色默认」"></textarea>
+      <div class="dialog-btns">
+        <button type="button" id="cancelPick">取消</button>
+        <button type="button" id="confirmPick" class="confirm-btn">确认并回传</button>
+      </div>
+    </div>
+  </div>
+  <div class="pickbar" id="pickbar"></div>
+
+<script>
+  let pending = null;
+  function dials(){
+    return {
+      variance: Number(document.getElementById('variance').value),
+      motion: Number(document.getElementById('motion').value),
+      density: Number(document.getElementById('density').value)
+    };
+  }
+  ['variance','motion','density'].forEach(id => {
+    const input = document.getElementById(id), out = document.getElementById(id + 'Out');
+    input.addEventListener('input', () => { out.value = input.value; out.textContent = input.value; });
+  });
+  function selectionText(payload){
+    const values = payload.dials || dials();
+    const advice = payload.adjustments ? '；建议：' + payload.adjustments : '';
+    return payload.label + '；拨盘：视觉冒险度 ' + values.variance +
+      ' / 动效强度 ' + values.motion + ' / 信息密度 ' + values.density + advice;
+  }
+  async function sendSelection(payload){
+    const msg = selectionText(payload);
+    if (location.protocol === 'file:') {
+      if (navigator.clipboard) await navigator.clipboard.writeText(msg).catch(()=>{});
+      return {ok:false, fallback:true};
+    }
+    try {
+      const res = await fetch('/api/select', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify(payload)
+      });
+      return await res.json();
+    } catch {
+      if (navigator.clipboard) await navigator.clipboard.writeText(msg).catch(()=>{});
+      return {ok:false, fallback:true};
+    }
+  }
+  function openConfirm(i, name){
+    document.querySelectorAll('.card').forEach((c,idx)=>c.classList.toggle('selected', idx===i));
+    const id = 'ABCD'[i];
+    pending = {id, name, label:'选 ' + id + '：' + name};
+    const values = dials();
+    document.getElementById('confirmMeta').textContent =
+      pending.label + ' · 视觉冒险度 ' + values.variance + ' / 动效强度 ' + values.motion + ' / 信息密度 ' + values.density;
+    document.getElementById('confirm').classList.add('open');
+    document.getElementById('adjustments').value = '';
+    document.getElementById('adjustments').focus();
+  }
+  async function confirmSelection(){
+    if(!pending) return;
+    const msg = pending.label;
+    const bar = document.getElementById('pickbar');
+    const payload = {...pending, dials: dials(), adjustments: document.getElementById('adjustments').value.trim()};
+    const result = await sendSelection(payload);
+    bar.textContent = result.ok
+      ? '已选择 ' + msg + ' — 已回传'
+      : '已选择 ' + msg + ' — 当前为静态模式，请回到对话发送选择';
+    bar.classList.add('show');
+    document.getElementById('confirm').classList.remove('open');
+    if (!result.ok && navigator.clipboard) navigator.clipboard.writeText(selectionText(payload)).catch(()=>{});
+  }
+  document.addEventListener('keydown', e=>{
+    if (document.getElementById('confirm').classList.contains('open')) {
+      if (e.key === 'Escape') document.getElementById('confirm').classList.remove('open');
+      return;
+    }
+    const names = ['编辑器暖白','浮墨深空','工作台','银河展馆'];
+    const i = ['1','2','3','4'].indexOf(e.key);
+    if(i>-1) openConfirm(i, names[i]);
+  });
+  document.getElementById('cancelPick').onclick = () => document.getElementById('confirm').classList.remove('open');
+  document.getElementById('confirmPick').onclick = confirmSelection;
+</script>
+</body>
+</html>

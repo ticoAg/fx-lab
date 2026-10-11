@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-elevator-shadow-art" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="urban-legend-elevator-shadow-title urban-legend-elevator-shadow-desc" stroke-linecap="round" stroke-linejoin="round">
+<title id="urban-legend-elevator-shadow-title">Shadow in the elevator / 电梯里的影子</title>
+<desc id="urban-legend-elevator-shadow-desc">An old elevator with a mechanical floor dial, worn metal doors and a narrow opening concealing a tall figure and pale fingers; amber light spills onto the threshold. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-elevator-shadow-art,#urban-legend-elevator-shadow-art *{animation-play-state:inherit}
+.urban-legend-elevator-shadow-pulse{animation:urban-legend-elevator-shadow-pulse 4.8s ease-in-out infinite}
+.urban-legend-elevator-shadow-float{animation:urban-legend-elevator-shadow-float 6s ease-in-out infinite}
+.urban-legend-elevator-shadow-sway{animation:urban-legend-elevator-shadow-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-elevator-shadow-pop{animation:urban-legend-elevator-shadow-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-elevator-shadow-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-elevator-shadow-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-elevator-shadow-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-elevator-shadow-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-elevator-shadow-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-elevator-shadow-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-elevator-shadow-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-elevator-shadow-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient></defs>
+<ellipse cx="40" cy="72" rx="27" ry="1.8" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="71.85" rx="18.09" ry="0.9720000000000001" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M15 67L23 64H61L70 72H9Z" fill="url(#urban-legend-elevator-shadow-stone)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M24 67l-5 5M35 66l-1 6M48 66l4 6M60 67l6 5M13 70h54" fill="none" stroke="#73888b" stroke-width="0.35"/>
+<path d="M15 13L57 11L62 14V67H15Z" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M57 11L64 15V68L60 67V15Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<rect x="19" y="16" width="38" height="48" rx="0.6" fill="#172b35" stroke="#21353f" stroke-width="0.5"/>
+<rect x="17" y="13.5" width="42" height="9" rx="0.7" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M29 20a9 9 0 0 1 18 0Z" fill="url(#urban-legend-elevator-shadow-amber)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M31.94 16.50l0.61 0.35" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M34.50 13.94l0.35 0.61" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M38.00 13.00l-0.00 0.70" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M41.50 13.94l-0.35 0.61" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44.06 16.50l-0.61 0.35" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M38 19L42 15" fill="none" stroke="#985a58" stroke-width="0.8"/>
+<circle cx="38" cy="19" r="0.65" fill="#21353f" stroke="none" stroke-width="0.5"/>
+<rect x="19.5" y="24" width="14" height="40" rx="0.2" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<rect x="47" y="24" width="9.5" height="40" rx="0.2" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M31 25H33V64H31Z" fill="#73888b" stroke="none" stroke-width="0.65"/>
+<path d="M47 24H48.5V64H47Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.45"/>
+<path d="M23 27v33M27 27v33M52 27v33" fill="none" stroke="#73888b" stroke-width="0.3"/>
+<path d="M20.5 25v37M18 14.6l35-1M62 18v46" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M33 64L25 72H57L47 64Z" fill="#e1b574" stroke="none" stroke-width="0.65" opacity="0.38"/>
+<g class="urban-legend-elevator-shadow-pop">
+<path d="M39 32C35 33 35 39 38 41L34 45L34 61L37 58L38 64L39 69L41 69L42 58L44 64H46L44 44L42 40C46 37 43 31 39 32Z" fill="#10252f" stroke="#73888b" stroke-width="0.45"/>
+<path d="M37 46l2-3M42 45l1 9" fill="none" stroke="#365663" stroke-width="0.5"/>
+<circle cx="38.7" cy="36.4" r="0.45" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<circle cx="41.4" cy="36.4" r="0.45" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<path d="M47 43C43 40 42 43 44 43.7L47 44.6M47 46C44 44 42 45 44 46L47 47M47 49C44 47.5 43 48.5 44.5 49.5L47 50" fill="#e7deca" stroke="#21353f" stroke-width="0.4"/>
+</g>
+<rect x="66" y="34" width="5.5" height="14" rx="1" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<circle cx="68.75" cy="38" r="1.3" fill="#c1ceca" stroke="#21353f" stroke-width="0.35"/>
+<path d="M68 38.4l.75-1.3.75 1.3Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<circle cx="68.75" cy="44" r="1.3" fill="#e1b574" stroke="#21353f" stroke-width="0.35"/>
+<path d="M68 43.6l.75 1.3.75-1.3Z" fill="#21353f" stroke="none" stroke-width="0.65"/>
+<rect x="14" y="64" width="48" height="3" rx="0.5" fill="url(#urban-legend-elevator-shadow-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M20 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M24 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M28 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M32 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M36 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M40 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M44 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M48 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M52 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M56 64.5v2" fill="none" stroke="#21353f" stroke-width="0.35"/>
+<path d="M16 23v38M58 24v37" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-midnight-subway-art" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="urban-legend-midnight-subway-title urban-legend-midnight-subway-desc" stroke-linecap="round" stroke-linejoin="round">
+<title id="urban-legend-midnight-subway-title">Midnight subway / 午夜地铁</title>
+<desc id="urban-legend-midnight-subway-desc">A last train emerges from a masonry tunnel on converging rails: a curved metal nose, twin lamps, blank destination board and a lone passenger behind reflective glass. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-midnight-subway-art,#urban-legend-midnight-subway-art *{animation-play-state:inherit}
+.urban-legend-midnight-subway-pulse{animation:urban-legend-midnight-subway-pulse 4.8s ease-in-out infinite}
+.urban-legend-midnight-subway-float{animation:urban-legend-midnight-subway-float 6s ease-in-out infinite}
+.urban-legend-midnight-subway-sway{animation:urban-legend-midnight-subway-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-midnight-subway-pop{animation:urban-legend-midnight-subway-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-midnight-subway-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-midnight-subway-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-midnight-subway-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-midnight-subway-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-midnight-subway-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-midnight-subway-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-midnight-subway-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-midnight-subway-stone" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#b7b8aa"/><stop offset="0.5" stop-color="#8d9a96"/><stop offset="1" stop-color="#526b75"/></linearGradient><linearGradient id="urban-legend-midnight-subway-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient><linearGradient id="urban-legend-midnight-subway-shade" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#536e7b"/><stop offset="0.42" stop-color="#304b59"/><stop offset="1" stop-color="#192f3b"/></linearGradient></defs>
+<path d="M7 64L10 34C12 17 24 9 40 9C57 9 68 18 70 34L73 65L65 68L12 68Z" fill="url(#urban-legend-midnight-subway-stone)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M16 64L18 35C20 23 28 18 40 18C53 18 60 25 62 36L66 65Z" fill="#172b35" stroke="#21353f" stroke-width="0.65"/>
+<path d="M8 61L10 34C12 17 24 9 40 9C57 9 68 18 70 34L72 61L68 61L65 35C62 18 51 13 40 13C24 13 17 24 15 36L12 62Z" fill="#788d90" stroke="#21353f" stroke-width="0.6"/>
+<path d="M13 24l5 3" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M21 15l4 5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M32 10l2 5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M44 10v4" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M56 14l-3 5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M65 23l-5 3" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M69 34l-5 1" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M10 39l5 .5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M8.5 51l5 .5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M67 47l4 .5" fill="none" stroke="#21353f" stroke-width="0.45"/>
+<path d="M11 33C14 17 27 11 40 11" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M25 57L10 73H15L31 57ZM48 57L64 73H70L54 57Z" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M24 65l35 1M19 70l46 1" fill="none" stroke="#21353f" stroke-width="1.5"/>
+<path d="M27 59L14 72M52 58L66 72" fill="none" stroke="#e7deca" stroke-width="0.55"/>
+<g class="urban-legend-midnight-subway-float">
+<path d="M26 25Q37 21 50 25L58 30L61 56L57 62L29 65L20 58L22 31Z" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M50 25L58 30L61 56L57 62L51 61L53 37Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<path d="M23 33Q36 27 50 30L51 43L22 44Z" fill="url(#urban-legend-midnight-subway-glass)" stroke="#21353f" stroke-width="0.8"/>
+<path d="M24 34L34 31.5L29 41.5L23 42Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.24"/>
+<path d="M41 30.7L46 30.5L40 42.5H36Z" fill="#c1ceca" stroke="none" stroke-width="0.65" opacity="0.15"/>
+<path d="M36 31l-.5 12" fill="none" stroke="#73888b" stroke-width="0.85"/>
+<path d="M42 42l.3-3.7q.5-1.6 2-1.6q1.7 0 2.4 1.5L48 42Z" fill="#172b35" stroke="none" stroke-width="0.65"/>
+<ellipse cx="44.4" cy="35.7" rx="1.4" ry="1.9" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<circle cx="44" cy="35.6" r="0.24" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<circle cx="45" cy="35.6" r="0.24" fill="#985a58" stroke="none" stroke-width="0.5"/>
+<path d="M25 42l6-5M39 41l6-4" fill="none" stroke="#21353f" stroke-width="0.6"/>
+<path d="M27 26L47 25.9L49 29L26 30Z" fill="url(#urban-legend-midnight-subway-amber)" stroke="#21353f" stroke-width="0.5"/>
+<path d="M31 27.5h13" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M22 45L52 44L54 56L23 59L20 55Z" fill="#9ba9a1" stroke="#21353f" stroke-width="0.65"/>
+<path d="M22 53L53 51L54 55L22 58Z" fill="#985a58" stroke="none" stroke-width="0.65"/>
+<rect x="32" y="46" width="10" height="9" rx="1" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.45"/>
+<path d="M34 48h6" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M34 50h6" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<path d="M34 52h6" fill="none" stroke="#21353f" stroke-width="0.5"/>
+<circle cx="26.5" cy="49" r="3" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.55"/>
+<circle cx="26.5" cy="49" r="2.1" fill="url(#urban-legend-midnight-subway-amber)" stroke="#21353f" stroke-width="0.35"/>
+<g class="urban-legend-midnight-subway-pulse">
+<circle cx="26.3" cy="48.8" r="1.45" fill="#f1d99d" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M25.5 47.8l.5-.3" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<circle cx="47.7" cy="47.7" r="3" fill="url(#urban-legend-midnight-subway-metal)" stroke="#21353f" stroke-width="0.55"/>
+<circle cx="47.7" cy="47.7" r="2.1" fill="url(#urban-legend-midnight-subway-amber)" stroke="#21353f" stroke-width="0.35"/>
+<g class="urban-legend-midnight-subway-pulse">
+<circle cx="47.5" cy="47.5" r="1.45" fill="#f1d99d" stroke="none" stroke-width="0.5"/>
+</g>
+<path d="M46.7 46.5l.5-.3" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M23 58L53 55L55 59L28 63L23 61Z" fill="url(#urban-legend-midnight-subway-shade)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M34 61l7-.7v3l-7 .7Z" fill="#21353f" stroke="#21353f" stroke-width="0.65"/>
+<path d="M27 59l22-2" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M54 32l2 1 1 9-2-1Z" fill="url(#urban-legend-midnight-subway-glass)" stroke="#21353f" stroke-width="0.35"/>
+<path d="M55 45l3 9" fill="none" stroke="#73888b" stroke-width="0.45"/>
+<path d="M23 32Q35 28 49 29M23 45l27-1" fill="none" stroke="#e7deca" stroke-width="0.45"/>
+<path d="M25 56l5-.3M44 54.4l5-.5" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+</g>
+</svg>

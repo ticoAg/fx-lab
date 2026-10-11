@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="urban-legend-flickering-lantern-art" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="urban-legend-flickering-lantern-title urban-legend-flickering-lantern-desc" stroke-linecap="round" stroke-linejoin="round">
+<title id="urban-legend-flickering-lantern-title">Flickering lantern / 摇曳的提灯</title>
+<desc id="urban-legend-flickering-lantern-desc">A patinated hurricane lantern with bowed guards, amber glass, a double flame, a riveted fuel tank and three pale moths. Transparent background; material and shadow colors are fixed, with currentColor reserved for restrained contour accents.</desc>
+<style>#urban-legend-flickering-lantern-art,#urban-legend-flickering-lantern-art *{animation-play-state:inherit}
+.urban-legend-flickering-lantern-pulse{animation:urban-legend-flickering-lantern-pulse 4.8s ease-in-out infinite}
+.urban-legend-flickering-lantern-float{animation:urban-legend-flickering-lantern-float 6s ease-in-out infinite}
+.urban-legend-flickering-lantern-sway{animation:urban-legend-flickering-lantern-sway 7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 85%}
+.urban-legend-flickering-lantern-pop{animation:urban-legend-flickering-lantern-pop 5.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%}
+@keyframes urban-legend-flickering-lantern-pulse{0%,100%{opacity:1}48%{opacity:.72}58%{opacity:.93}}
+@keyframes urban-legend-flickering-lantern-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-.65px)}}
+@keyframes urban-legend-flickering-lantern-sway{0%,100%{transform:rotate(-.65deg)}50%{transform:rotate(.65deg)}}
+@keyframes urban-legend-flickering-lantern-pop{0%,80%,100%{transform:translateY(0)}85%,93%{transform:translateY(-.35px)}89%{transform:translateY(.15px)}}
+@media(prefers-reduced-motion:reduce){#urban-legend-flickering-lantern-art *{animation:none!important}}</style>
+<defs><linearGradient id="urban-legend-flickering-lantern-metal" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#acb8ae"/><stop offset="0.24" stop-color="#788d8b"/><stop offset="0.55" stop-color="#4a6972"/><stop offset="1" stop-color="#28434f"/></linearGradient><linearGradient id="urban-legend-flickering-lantern-glass" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8aa9a9"/><stop offset="0.46" stop-color="#365b69"/><stop offset="1" stop-color="#1b323f"/></linearGradient><linearGradient id="urban-legend-flickering-lantern-amber" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f3dca2"/><stop offset="0.5" stop-color="#d4a767"/><stop offset="1" stop-color="#876349"/></linearGradient></defs>
+<ellipse cx="40" cy="71" rx="18" ry="1.5" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.13"/>
+<ellipse cx="40" cy="70.85" rx="12.06" ry="0.81" fill="#21353f" stroke="none" stroke-width="0.5" opacity="0.16"/>
+<path d="M26 34V23C26 9 53 9 53 23V34" fill="none" stroke="#21353f" stroke-width="1.5"/>
+<path d="M27 25V22C27 11 49 11 51 21" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<circle cx="40" cy="9.5" r="2.4" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.6"/>
+<circle cx="40" cy="9.5" r="1" fill="#172b35" stroke="none" stroke-width="0.5"/>
+<path d="M30 31C25 38 24 48 29 55L33 59H48L52 54C56 45 52 34 50 31Z" fill="url(#urban-legend-flickering-lantern-glass)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M32 33C27 40 27 48 31 53C36 57 45 57 49 52C52 46 50 36 47 33Z" fill="url(#urban-legend-flickering-lantern-amber)" stroke="none" stroke-width="0.65" opacity="0.65"/>
+<path d="M30 35Q26 43 30 49L32 50Q29 42 33 34Z" fill="#e7deca" stroke="none" stroke-width="0.65" opacity="0.5"/>
+<path d="M46 35Q50 41 49 45M47 48l-1 3" fill="none" stroke="#e7deca" stroke-width="0.6"/>
+<g class="urban-legend-flickering-lantern-pulse">
+<path d="M38 52C29 47 42 38 40 32C47 40 42 43 44 46C49 51 41 56 38 52Z" fill="#e1b574" stroke="#a47750" stroke-width="0.4"/>
+<path d="M39 51C35 47 41 45 41 40C44 47 43 51 40 52Z" fill="#f7e9ba" stroke="none" stroke-width="0.65"/>
+</g>
+<path d="M35 52H45L43 57H37Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<rect x="38.5" y="50.6" width="3" height="2.2" rx="0.5" fill="#172b35" stroke="#21353f" stroke-width="0.4"/>
+<path d="M29 31C24 38 23 51 30 58M51 31C56 41 56 51 50 58" fill="none" stroke="#21353f" stroke-width="1.5"/>
+<path d="M28.6 34C24.8 41 24.5 49 28.7 54" fill="none" stroke="#e7deca" stroke-width="0.4"/>
+<path d="M30 33Q33 44 30 56M50 33Q47 44 50 56" fill="none" stroke="#73888b" stroke-width="0.9"/>
+<path d="M27 43Q40 46 54 42" fill="none" stroke="#21353f" stroke-width="1"/>
+<path d="M28 42.7Q40 45.5 51 43.3" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M30 58Q40 55 50 58L53 65Q51 70 39 70Q28 70 27 65Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<ellipse cx="40" cy="58" rx="10" ry="2" fill="#73888b" stroke="#21353f" stroke-width="0.5"/>
+<path d="M27 65Q40 69 53 65L50 69Q40 72 30 69Z" fill="#365663" stroke="#21353f" stroke-width="0.65"/>
+<path d="M30 60Q40 58 49 60M30 66Q38 68 45 67.5" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<path d="M31 63Q38 64 44 63" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.48"/>
+<circle cx="31" cy="63" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M30.67 63.21l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<circle cx="48" cy="63" r="0.6" fill="#9baaa1" stroke="#21353f" stroke-width="0.25"/>
+<path d="M47.67 63.21l0.66 -0.42" fill="none" stroke="#21353f" stroke-width="0.23"/>
+<rect x="52" y="58.5" width="3" height="2.8" rx="0.5" fill="url(#urban-legend-flickering-lantern-amber)" stroke="#21353f" stroke-width="0.4"/>
+<path d="M26 29Q40 25 54 29L53 32Q40 35 26 32Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<path d="M30 27L32 21Q40 18 48 21L51 27Z" fill="url(#urban-legend-flickering-lantern-metal)" stroke="#21353f" stroke-width="0.65"/>
+<rect x="36" y="17" width="8" height="4" rx="1" fill="#73888b" stroke="#21353f" stroke-width="0.65"/>
+<path d="M34 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M37 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M40 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M43 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M46 23v2.5" fill="none" stroke="#172b35" stroke-width="0.7"/>
+<path d="M29 29Q40 27 51 29M35 21Q40 20 45 21" fill="none" stroke="#e7deca" stroke-width="0.35"/>
+<g transform="translate(16 34) scale(1)">
+<g class="urban-legend-flickering-lantern-sway">
+<path d="M0 0C-8-6-7 5-1 2L0 4 1 2C7 4 7-6 0 0Z" fill="#e7deca" stroke="#73888b" stroke-width="0.45"/>
+<path d="M0-1v4M-1-1l-1-2M1-1l1-2" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M-5-1l3 2M3 1l2-2" fill="none" stroke="#985a58" stroke-width="0.3"/>
+</g></g>
+<g transform="translate(63 24) scale(0.8)">
+<g class="urban-legend-flickering-lantern-sway">
+<path d="M0 0C-8-6-7 5-1 2L0 4 1 2C7 4 7-6 0 0Z" fill="#e7deca" stroke="#73888b" stroke-width="0.45"/>
+<path d="M0-1v4M-1-1l-1-2M1-1l1-2" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M-5-1l3 2M3 1l2-2" fill="none" stroke="#985a58" stroke-width="0.3"/>
+</g></g>
+<g transform="translate(61 53) scale(0.66)">
+<g class="urban-legend-flickering-lantern-sway">
+<path d="M0 0C-8-6-7 5-1 2L0 4 1 2C7 4 7-6 0 0Z" fill="#e7deca" stroke="#73888b" stroke-width="0.45"/>
+<path d="M0-1v4M-1-1l-1-2M1-1l1-2" fill="none" stroke="#21353f" stroke-width="0.4"/>
+<path d="M-5-1l3 2M3 1l2-2" fill="none" stroke="#985a58" stroke-width="0.3"/>
+</g></g>
+</svg>
