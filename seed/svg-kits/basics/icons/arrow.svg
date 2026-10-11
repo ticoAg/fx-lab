@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><style>.pop{transform-origin:center;animation:pop 1.6s ease-in-out .4s infinite}@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}</style><g class="pop"><rect x="8" y="32" width="40" height="16" rx="4" fill="#F4A261"/><polygon points="44,20 72,40 44,60" fill="#F4A261"/></g></svg>

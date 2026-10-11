@@ -1,15 +1,18 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { CodeBlock } from './components/CodeBlock.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary.tsx'
 import { LazyMount } from './components/LazyMount.tsx'
 import { DemoMount } from './DemoMount.tsx'
 import { ALL_DEMOS, SOURCES, filterDemos } from './catalog.ts'
 import type { DemoItem, SourceId } from './types.ts'
+import { useLang } from './i18n.ts'
+import { LangToggle } from './LangProvider.tsx'
 
 export function App() {
   const [source, setSource] = useState<SourceId>('all')
   const [q, setQ] = useState('')
-  const [lang, setLang] = useState<'zh' | 'en'>('zh')
+  const { lang } = useLang()
   const [active, setActive] = useState<DemoItem | null>(null)
 
   const items = useMemo(() => filterDemos(source, q), [source, q])
@@ -24,6 +27,9 @@ export function App() {
         <a className="dict-link" href="http://127.0.0.1:8080/">
           返回词典
         </a>
+        <Link className="nav-link svg-kits-link" to="/svg-kits">
+          {lang === 'zh' ? 'SVG 图标套件' : 'SVG Kits'}
+        </Link>
         <div className="search">
           <input
             value={q}
@@ -34,14 +40,7 @@ export function App() {
         <div className="counter">
           {items.length} / {ALL_DEMOS.length}
         </div>
-        <div className="lang-toggle">
-          <button type="button" className={lang === 'zh' ? 'active' : ''} onClick={() => setLang('zh')}>
-            中
-          </button>
-          <button type="button" className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>
-            EN
-          </button>
-        </div>
+        <LangToggle />
       </header>
       <div className="layout">
         <aside className="sidebar">

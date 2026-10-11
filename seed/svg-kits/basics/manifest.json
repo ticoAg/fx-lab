@@ -1,0 +1,185 @@
+{
+  "id": "basics",
+  "title": {
+    "zh": "基础图标",
+    "en": "Basics"
+  },
+  "description": {
+    "zh": "12 个通用界面图标：扁平几何造型、饱和配色，每个都内置一段轻量 CSS 动画（弹跳 / 漂浮 / 旋转 / 脉冲）。80×80 画布，单文件自包含，可直接内联到网页、按钮或空状态插画中。",
+    "en": "12 everyday UI icons in a flat geometric style with saturated colors. Each one ships a lightweight built-in CSS animation (pop / float / spin / pulse). 80×80 viewBox, self-contained single files ready to inline into pages, buttons or empty-state illustrations."
+  },
+  "cover": "star",
+  "sheet": "elements.svg",
+  "categories": {
+    "feedback": {
+      "zh": "反馈与状态",
+      "en": "Feedback & status"
+    },
+    "media": {
+      "zh": "媒体与沟通",
+      "en": "Media & communication"
+    },
+    "system": {
+      "zh": "系统与导航",
+      "en": "System & navigation"
+    }
+  },
+  "icons": [
+    {
+      "id": "star",
+      "category": "feedback",
+      "animation": "pop",
+      "title": {
+        "zh": "星星",
+        "en": "Star"
+      },
+      "description": {
+        "zh": "琥珀黄五角星，节奏性轻微放大。适合收藏、评分、精选标记。",
+        "en": "Amber five-pointed star with a gentle rhythmic scale-up. Great for favorites, ratings and featured badges."
+      }
+    },
+    {
+      "id": "heart",
+      "category": "feedback",
+      "animation": "pop",
+      "title": {
+        "zh": "爱心",
+        "en": "Heart"
+      },
+      "description": {
+        "zh": "橙红色爱心，像心跳一样微微鼓动。用于点赞、喜欢、关注。",
+        "en": "Orange-red heart that throbs softly like a heartbeat. Use for likes, loves and follows."
+      }
+    },
+    {
+      "id": "bolt",
+      "category": "system",
+      "animation": "pop",
+      "title": {
+        "zh": "闪电",
+        "en": "Bolt"
+      },
+      "description": {
+        "zh": "紫色折线闪电，弹跳强调。适合快速操作、充电、性能与“加速”提示。",
+        "en": "Purple zig-zag lightning bolt with a punchy pop. Fits quick actions, charging, performance and “boost” hints."
+      }
+    },
+    {
+      "id": "gear",
+      "category": "system",
+      "animation": "spin",
+      "title": {
+        "zh": "齿轮",
+        "en": "Gear"
+      },
+      "description": {
+        "zh": "蓝色八齿齿轮，匀速慢转。用于设置、偏好、处理中状态。",
+        "en": "Blue eight-tooth gear rotating slowly and steadily. For settings, preferences and processing states."
+      }
+    },
+    {
+      "id": "cloud",
+      "category": "system",
+      "animation": "float",
+      "title": {
+        "zh": "云朵",
+        "en": "Cloud"
+      },
+      "description": {
+        "zh": "浅蓝三段式云朵，上下轻轻漂浮。适合云同步、上传、天气。",
+        "en": "Light-blue three-lobed cloud bobbing up and down. Suits cloud sync, uploads and weather."
+      }
+    },
+    {
+      "id": "pin",
+      "category": "system",
+      "animation": "pulse",
+      "title": {
+        "zh": "定位针",
+        "en": "Map pin"
+      },
+      "description": {
+        "zh": "红色地图定位针，带呼吸式脉冲。标记地点、当前位置或门店。",
+        "en": "Red map pin with a breathing pulse. Marks places, current location or store finders."
+      }
+    },
+    {
+      "id": "chat",
+      "category": "media",
+      "animation": "pop",
+      "title": {
+        "zh": "对话气泡",
+        "en": "Chat bubble"
+      },
+      "description": {
+        "zh": "薄荷绿圆角对话气泡，弹跳提示新消息。用于评论、私信、客服入口。",
+        "en": "Mint rounded speech bubble that pops to signal new messages. For comments, DMs and support entry points."
+      }
+    },
+    {
+      "id": "camera",
+      "category": "media",
+      "animation": "float",
+      "title": {
+        "zh": "相机",
+        "en": "Camera"
+      },
+      "description": {
+        "zh": "海蓝色相机，镜头居中，缓慢漂浮。适合拍照、上传图片、相册。",
+        "en": "Ocean-blue camera with a centered lens, gently floating. For photos, image upload and galleries."
+      }
+    },
+    {
+      "id": "music",
+      "category": "media",
+      "animation": "pop",
+      "title": {
+        "zh": "音符",
+        "en": "Music note"
+      },
+      "description": {
+        "zh": "洋红双音符，随节拍轻弹。用于音乐、音频播放、声音设置。",
+        "en": "Magenta beamed double note bouncing to the beat. For music, audio playback and sound settings."
+      }
+    },
+    {
+      "id": "check",
+      "category": "feedback",
+      "animation": "pulse",
+      "title": {
+        "zh": "完成对勾",
+        "en": "Check"
+      },
+      "description": {
+        "zh": "绿色圆形底白色对勾，柔和脉冲。表示成功、完成、已验证。",
+        "en": "White check mark on a green circle with a soft pulse. Signals success, done or verified."
+      }
+    },
+    {
+      "id": "arrow",
+      "category": "system",
+      "animation": "pop",
+      "title": {
+        "zh": "箭头",
+        "en": "Arrow"
+      },
+      "description": {
+        "zh": "橙色粗箭头指向右侧，弹跳引导。用于下一步、前往、行动号召按钮。",
+        "en": "Chunky orange arrow pointing right with a nudging pop. For next steps, “go” and call-to-action buttons."
+      }
+    },
+    {
+      "id": "spark",
+      "category": "feedback",
+      "animation": "spin",
+      "title": {
+        "zh": "闪光",
+        "en": "Spark"
+      },
+      "description": {
+        "zh": "明黄四角星芒，持续旋转。适合新功能、AI 魔法、高亮提示。",
+        "en": "Bright yellow four-point sparkle spinning continuously. Great for new features, AI magic and highlights."
+      }
+    }
+  ]
+}

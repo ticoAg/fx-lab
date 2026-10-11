@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><style>.spin{transform-origin:40px 40px;animation:spin 8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style><path class="spin" d="M40 4 L46 28 L70 34 L46 40 L40 64 L34 40 L10 34 L34 28 Z" fill="#FFD60A"/></svg>

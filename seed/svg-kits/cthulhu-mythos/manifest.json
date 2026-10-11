@@ -1,0 +1,436 @@
+{
+  "id": "cthulhu-mythos",
+  "title": {
+    "zh": "克苏鲁神话",
+    "en": "Cthulhu Mythos"
+  },
+  "description": {
+    "zh": "31 个克苏鲁神话主题图标：旧日支配者、异族、诡异地点与仪式道具。全部为原创的扁平几何 / 符号化诠释，取材于公有领域时代的神话概念，不含任何游戏或影视角色形象，也没有血腥元素（PG 级）。深海青、暗紫、金色的配色贯穿整套，每个图标自带 ck- 前缀的 CSS 动画（弹跳 / 漂浮 / 旋转 / 脉冲 / 摇摆），互相内联也不会冲突。",
+    "en": "31 Cthulhu Mythos icons covering Great Old Ones, alien races, eerie places and ritual artifacts. Every design is an original flat geometric / symbolic interpretation of public-domain-era mythos concepts: no game or film character likenesses and no gore (PG). A deep-sea teal, dark purple and gold palette runs through the set, and each icon carries its own ck- prefixed CSS animation (pop / float / spin / pulse / sway) so they can be inlined side by side without clashing."
+  },
+  "cover": "cthulhu",
+  "sheet": "elements.svg",
+  "categories": {
+    "entities": {
+      "zh": "神祇与存在",
+      "en": "Gods & entities"
+    },
+    "races": {
+      "zh": "异族",
+      "en": "Races"
+    },
+    "places": {
+      "zh": "地点",
+      "en": "Places"
+    },
+    "items": {
+      "zh": "道具",
+      "en": "Items"
+    }
+  },
+  "icons": [
+    {
+      "id": "cthulhu",
+      "category": "entities",
+      "animation": "float",
+      "title": {
+        "zh": "克苏鲁",
+        "en": "Cthulhu"
+      },
+      "description": {
+        "zh": "青绿色圆头、金色双眼、两侧蝠翼与四条垂落触须，在深海中缓缓浮沉。整套主题的封面图标。",
+        "en": "Teal round head with golden eyes, bat-like wings and four dangling tentacles, slowly drifting as if underwater. The cover icon of the set."
+      }
+    },
+    {
+      "id": "yog-sothoth",
+      "category": "entities",
+      "animation": "pulse",
+      "title": {
+        "zh": "犹格·索托斯",
+        "en": "Yog-Sothoth"
+      },
+      "description": {
+        "zh": "紫色核心球体周围环绕六颗粉色眼球，整体呼吸般脉动，象征“门之钥”与万物同在的无数视线。",
+        "en": "A purple core orb ringed by six pink eyeballs, pulsing like breath: the countless gazes of the Key and the Gate."
+      }
+    },
+    {
+      "id": "nyarlathotep",
+      "category": "entities",
+      "animation": "float",
+      "title": {
+        "zh": "奈亚拉托提普",
+        "en": "Nyarlathotep"
+      },
+      "description": {
+        "zh": "黑色斗篷三角身形、紫色兜帽下一片虚无面孔，胸前一枚金色菱形，静静漂浮。“伏行之混沌”的剪影。",
+        "en": "A black cloaked silhouette under a purple hood with a faceless void and a golden diamond at the chest, floating silently. The Crawling Chaos in outline."
+      }
+    },
+    {
+      "id": "azathoth",
+      "category": "entities",
+      "animation": "spin",
+      "title": {
+        "zh": "阿撒托斯",
+        "en": "Azathoth"
+      },
+      "description": {
+        "zh": "三道交错的粉色轨道环绕一颗珊瑚色混沌星核与金色中心，持续旋转，如同宇宙中心盲目痴愚的漩涡。",
+        "en": "Three crossing pink orbits around a coral chaos star with a golden core, spinning endlessly like the blind idiot vortex at the center of the cosmos."
+      }
+    },
+    {
+      "id": "shub-niggurath",
+      "category": "entities",
+      "animation": "pop",
+      "title": {
+        "zh": "莎布·尼古拉丝",
+        "en": "Shub-Niggurath"
+      },
+      "description": {
+        "zh": "墨黑色团簇云体点缀荧绿斑点，下方伸出蹄状触足，周期性鼓胀。“孕育千子的黑山羊”的抽象化形象。",
+        "en": "An ink-black cluster of cloud-like masses speckled with slime-green dots and hoof-like legs below, swelling rhythmically. An abstract Black Goat of the Woods with a Thousand Young."
+      }
+    },
+    {
+      "id": "dagon",
+      "category": "entities",
+      "animation": "float",
+      "title": {
+        "zh": "大衮",
+        "en": "Dagon"
+      },
+      "description": {
+        "zh": "青绿色巨鱼侧影，头顶金色冠冕、鳃纹清晰，随水流上下浮动。深潜者崇拜的海神。",
+        "en": "A teal giant fish in profile with a golden crown and clear gill lines, bobbing with the current. The sea god worshipped by the Deep Ones."
+      }
+    },
+    {
+      "id": "hydra",
+      "category": "entities",
+      "animation": "pop",
+      "title": {
+        "zh": "海德拉",
+        "en": "Hydra"
+      },
+      "description": {
+        "zh": "三条深青长颈从浪花中探出，各顶着一颗金眼蛇首，节奏性弹跳。大衮的伴侣、海中之母。",
+        "en": "Three long dark-teal necks rising from the waves, each with a gold-eyed serpent head, popping in rhythm. Mother Hydra, consort of Dagon."
+      }
+    },
+    {
+      "id": "hastur",
+      "category": "entities",
+      "animation": "spin",
+      "title": {
+        "zh": "哈斯塔（抽象符号）",
+        "en": "Hastur (abstract sign)"
+      },
+      "description": {
+        "zh": "金色圆盘上三道墨色弯钩围绕中心旋转，以抽象符号代表“不可言说者”与黄衣之王。",
+        "en": "Three ink hooks curling around a center on a golden disc, rotating. An abstract sign standing in for the Unspeakable One and the King in Yellow."
+      }
+    },
+    {
+      "id": "nihil-void",
+      "category": "entities",
+      "animation": "spin",
+      "title": {
+        "zh": "虚空",
+        "en": "Nihil / Void"
+      },
+      "description": {
+        "zh": "半透明紫色光晕、粉色虚线环与漆黑核心，四周散落微弱星点，缓慢旋转。象征吞噬一切的宇宙虚无。",
+        "en": "A translucent purple halo, a dashed pink ring and a pitch-black core with faint stars scattered around, slowly turning. The all-devouring cosmic void."
+      }
+    },
+    {
+      "id": "deep-one",
+      "category": "races",
+      "animation": "float",
+      "title": {
+        "zh": "深潜者",
+        "en": "Deep One"
+      },
+      "description": {
+        "zh": "青绿色鱼人脸、鼓起的金色大眼、两侧鳍耳与腮纹，轻轻漂浮。印斯茅斯血脉的终点。",
+        "en": "A teal fish-folk face with bulging golden eyes, fin ears and gill marks, gently floating. Where the Innsmouth bloodline ends up."
+      }
+    },
+    {
+      "id": "ghoul",
+      "category": "races",
+      "animation": "pop",
+      "title": {
+        "zh": "食尸鬼",
+        "en": "Ghoul"
+      },
+      "description": {
+        "zh": "灰色尖耳犬面、荧绿眼睛与锯齿骨白牙，弹跳出场。游荡于墓地与地下隧道的种族。",
+        "en": "A grey canine face with pointed ears, glowing green eyes and jagged bone-white teeth, popping into view. A race that haunts graveyards and underground tunnels."
+      }
+    },
+    {
+      "id": "mi-go",
+      "category": "races",
+      "animation": "float",
+      "title": {
+        "zh": "米·戈",
+        "en": "Mi-Go"
+      },
+      "description": {
+        "zh": "粉色半透明膜翼、珊瑚色分节躯干与触角头部，悬停漂浮。来自犹格斯星的真菌甲壳生物。",
+        "en": "Translucent pink membrane wings, a segmented coral body and an antennaed head, hovering in place. The fungoid crustaceans from Yuggoth."
+      }
+    },
+    {
+      "id": "shoggoth",
+      "category": "races",
+      "animation": "pulse",
+      "title": {
+        "zh": "修格斯",
+        "en": "Shoggoth"
+      },
+      "description": {
+        "zh": "荧绿色流动原生质团块上睁着六只大小不一的眼睛，呼吸般鼓胀收缩。古老者的造物与反叛者。",
+        "en": "A slime-green mass of flowing protoplasm with six mismatched eyes, swelling and shrinking like breath. Servitor and rebel of the Elder Things."
+      }
+    },
+    {
+      "id": "nightgaunt",
+      "category": "races",
+      "animation": "float",
+      "title": {
+        "zh": "夜魇",
+        "en": "Nightgaunt"
+      },
+      "description": {
+        "zh": "墨黑蝠翼、头生弯角、无面的深蓝细长身躯与卷曲尾巴，在夜空中悄然滑翔。",
+        "en": "Ink-black bat wings, curved horns, a faceless slender navy body and a curling tail, gliding silently through the night sky."
+      }
+    },
+    {
+      "id": "rlyeh-ruins",
+      "category": "places",
+      "animation": "pop",
+      "title": {
+        "zh": "拉莱耶遗迹",
+        "en": "R'lyeh Ruins"
+      },
+      "description": {
+        "zh": "三块倾斜的青色巨石破浪而出，覆着荧绿苔痕，角度违背常理的非欧几何建筑。",
+        "en": "Three tilted teal monoliths breaking the waves, streaked with green slime: non-Euclidean architecture at impossible angles."
+      }
+    },
+    {
+      "id": "innsmouth-docks",
+      "category": "places",
+      "animation": "float",
+      "title": {
+        "zh": "印斯茅斯码头",
+        "en": "Innsmouth Docks"
+      },
+      "description": {
+        "zh": "木栈桥、灰色小屋与挂着金色提灯的灯柱，下方是深青色海浪，随潮水起伏。",
+        "en": "A wooden pier, a grey shack and a lamppost with a golden lantern above dark-teal waves, rising and falling with the tide."
+      }
+    },
+    {
+      "id": "arkham-mansion",
+      "category": "places",
+      "animation": "pop",
+      "title": {
+        "zh": "阿卡姆宅邸",
+        "en": "Arkham Mansion"
+      },
+      "description": {
+        "zh": "月光下的深蓝老宅，紫色尖顶、烟囱、亮着金光的窗户与拱形黑门。新英格兰怪谈的标准场景。",
+        "en": "A navy old house under the moon with a purple gable, chimney, gold-lit windows and an arched black door. The classic New England weird-tale setting."
+      }
+    },
+    {
+      "id": "kadath",
+      "category": "places",
+      "animation": "pulse",
+      "title": {
+        "zh": "卡达斯山",
+        "en": "Kadath Mountain"
+      },
+      "description": {
+        "zh": "星空下的深青巨峰，骨白雪顶之上矗立着紫色高塔与一扇金窗，柔和脉动。梦境中未知的卡达斯。",
+        "en": "A dark-teal peak under the stars with a bone-white snowcap crowned by a purple tower and one golden window, softly pulsing. Unknown Kadath of the Dreamlands."
+      }
+    },
+    {
+      "id": "sunken-city",
+      "category": "places",
+      "animation": "float",
+      "title": {
+        "zh": "沉没之城",
+        "en": "Sunken City"
+      },
+      "description": {
+        "zh": "深蓝圆角方框内的青色穹顶与尖塔建筑群，水泡缓缓上升，整体随水波漂浮。可作为 App 图标或徽章。",
+        "en": "Teal domes and spires inside a deep-blue rounded tile with bubbles drifting upward, floating with the water. Works as an app icon or badge."
+      }
+    },
+    {
+      "id": "necronomicon",
+      "category": "items",
+      "animation": "pop",
+      "title": {
+        "zh": "死灵之书",
+        "en": "Necronomicon"
+      },
+      "description": {
+        "zh": "棕色皮革封面、骨白书页边缘，封面中央是金色圆环与凝视之眼，四角金钉。禁忌知识的象征。",
+        "en": "A brown leather tome with bone-white page edges, a golden ring and staring eye on the cover and gold studs at the corners. The emblem of forbidden knowledge."
+      }
+    },
+    {
+      "id": "ritual-dagger",
+      "category": "items",
+      "animation": "sway",
+      "title": {
+        "zh": "仪式匕首",
+        "en": "Ritual Dagger"
+      },
+      "description": {
+        "zh": "金色柄首与护手、珊瑚色宝石、波浪形灰色刃身，以顶部为支点左右摇摆。",
+        "en": "A gold pommel and crossguard, a coral gem and a wavy grey blade, swinging like a pendulum from the top."
+      }
+    },
+    {
+      "id": "elder-sign",
+      "category": "items",
+      "animation": "pulse",
+      "title": {
+        "zh": "旧神印记",
+        "en": "Elder Sign"
+      },
+      "description": {
+        "zh": "青色描边五角星中央一只金色眼睛与珊瑚色火焰，柔和脉动。抵御旧日支配者的守护符号。",
+        "en": "A teal outlined pentagram with a golden eye and a coral flame at its center, softly pulsing. The warding sign against the Great Old Ones."
+      }
+    },
+    {
+      "id": "elder-sign-pendant",
+      "category": "items",
+      "animation": "sway",
+      "title": {
+        "zh": "旧神印记吊坠",
+        "en": "Elder Sign Pendant"
+      },
+      "description": {
+        "zh": "金色虚线链条挂着银灰圆形吊坠，上刻青色五角星与珊瑚色宝石，左右轻摆。",
+        "en": "A silver-grey round pendant on a dotted gold chain, engraved with a teal star and a coral gem, gently swaying."
+      }
+    },
+    {
+      "id": "cult-amulet",
+      "category": "items",
+      "animation": "spin",
+      "title": {
+        "zh": "教团护符",
+        "en": "Cult Amulet"
+      },
+      "description": {
+        "zh": "紫色六边形护符，金色内框与向外展开的螺旋纹，持续旋转。秘密教团的身份信物。",
+        "en": "A purple hexagonal amulet with a golden inner frame and an outward spiral, spinning continuously. The token of a secret cult."
+      }
+    },
+    {
+      "id": "tentacle-whip",
+      "category": "items",
+      "animation": "sway",
+      "title": {
+        "zh": "触手鞭",
+        "en": "Tentacle Whip"
+      },
+      "description": {
+        "zh": "棕色握柄与金色尾珠，鞭身是一条带骨白吸盘的青色卷曲触手，摇摆挥动。",
+        "en": "A brown grip with a gold end-cap and a curling teal tentacle lash dotted with bone-white suckers, swaying as it swings."
+      }
+    },
+    {
+      "id": "lantern-of-stars",
+      "category": "items",
+      "animation": "pulse",
+      "title": {
+        "zh": "星之提灯",
+        "en": "Lantern of Stars"
+      },
+      "description": {
+        "zh": "深蓝提灯框里封着紫色夜空与金色星辰，灯光明灭脉动。照亮梦境之路的道具。",
+        "en": "A navy lantern frame holding a purple night sky and golden stars, its light flickering in a pulse. A lamp for the paths of the Dreamlands."
+      }
+    },
+    {
+      "id": "scroll",
+      "category": "items",
+      "animation": "float",
+      "title": {
+        "zh": "卷轴",
+        "en": "Scroll"
+      },
+      "description": {
+        "zh": "骨白羊皮纸配棕色卷轴杆，纸上写着深青色的未知符文，轻轻漂浮。",
+        "en": "Bone-white parchment between brown rollers, inscribed with dark-teal unknown glyphs, gently floating."
+      }
+    },
+    {
+      "id": "mask",
+      "category": "items",
+      "animation": "pop",
+      "title": {
+        "zh": "仪式面具",
+        "en": "Ritual Mask"
+      },
+      "description": {
+        "zh": "骨白面具、墨黑斜眼孔、额心珊瑚色宝石，下颌垂着三道青色触须纹，弹跳出现。",
+        "en": "A bone-white mask with slanted ink eye holes, a coral gem on the brow and three teal tentacle marks below the chin, popping into view."
+      }
+    },
+    {
+      "id": "potion-vial",
+      "category": "items",
+      "animation": "float",
+      "title": {
+        "zh": "药剂瓶",
+        "en": "Potion Vial"
+      },
+      "description": {
+        "zh": "棕色软木塞的锥形烧瓶，盛着冒泡的荧绿药液，缓缓漂浮。炼金或复活药剂。",
+        "en": "A cork-stoppered conical flask of bubbling slime-green liquid, slowly floating. An alchemical draught or reanimation serum."
+      }
+    },
+    {
+      "id": "compass-of-stars",
+      "category": "items",
+      "animation": "spin",
+      "title": {
+        "zh": "星辰罗盘",
+        "en": "Compass of Stars"
+      },
+      "description": {
+        "zh": "金色外环、深蓝表盘与四点星位，珊瑚与青色交叉指针持续旋转，指向星辰正确的方位。",
+        "en": "A gold rim, a deep-blue dial with four star points and crossed coral and teal needles that keep spinning, pointing to when the stars are right."
+      }
+    },
+    {
+      "id": "key-of-gates",
+      "category": "items",
+      "animation": "float",
+      "title": {
+        "zh": "门之钥",
+        "en": "Key of Gates"
+      },
+      "description": {
+        "zh": "金色圆环钥匙头中嵌着紫色眼睛，长柄末端是阶梯形钥齿，悬空漂浮。开启异界之门的钥匙。",
+        "en": "A golden ring-headed key with a purple eye inset and stepped teeth at the end of a long shaft, hovering in the air. The key that opens the gates between worlds."
+      }
+    }
+  ]
+}

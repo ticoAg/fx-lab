@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><style>.pop{transform-origin:center;animation:pop 1.6s ease-in-out .2s infinite}@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}</style><path class="pop" d="M40 68 C40 68 8 48 8 28 C8 14 20 8 30 8 C36 8 40 12 40 12 C40 12 44 8 50 8 C60 8 72 14 72 28 C72 48 40 68 40 68Z" fill="#FB5607"/></svg>

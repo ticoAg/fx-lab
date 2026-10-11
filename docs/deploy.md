@@ -65,7 +65,9 @@ compatibility_date = "2026-08-23"
 pages_build_output_dir = "./dist"
 ```
 
-package.json 的 `build` 脚本是 `tsc -b && vite build`，控制台里填的 `npm run build` 就是它。
+package.json 的 `build` 脚本是 `npm run check:svg-kits && tsc -b && vite build`，控制台里填的 `npm run build` 就是它。SVG Kits 校验（scripts/check-svg-kits.ts，经 tsx 运行）只检查 `seed/svg-kits` 种子，不过则 Pages 构建失败。
+
+`functions/` 是 Cloudflare Pages Functions：`/api/svg-kits` 给画廊和上传用。没有 R2 绑定时 GET 仍能读种子，上传不可用。绑定方法见 [svg-kits.md](svg-kits.md)。不要在 wrangler.toml 加 `[build]`。
 
 ## 发布流程
 
