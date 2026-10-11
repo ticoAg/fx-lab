@@ -68,10 +68,13 @@ export function iconUrl(themeId: string, iconId: string) {
   return `${SVG_KITS_API}/${themeId}/icons/${iconId}.svg`
 }
 
+/** Bump when replacing sheet.svg so CDN does not keep a stale nested-tile layout. */
+const SHEET_CDN_REV = '20261011-viewport'
+
 export function sheetUrl(theme: SvgKitTheme) {
   if (!theme.sheet) return null
   const source = themeSources.get(theme.id) ?? 'api'
-  if (source === 'cdn') return `${ASSET_CDN}/themes/${theme.id}/sheet.svg`
+  if (source === 'cdn') return `${ASSET_CDN}/themes/${theme.id}/sheet.svg?v=${SHEET_CDN_REV}`
   if (source === 'seed') return `${SVG_KITS_SEED}/${theme.id}/${theme.sheet}`
   return `${SVG_KITS_API}/${theme.id}/sheet`
 }
