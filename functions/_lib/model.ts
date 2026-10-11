@@ -13,10 +13,32 @@ export type SvgKitIcon = {
   tags?: string[]
 }
 
+// icon: small UI icons, light files. illustration: detailed artwork, larger files allowed.
+// Missing means icon.
+export type SvgKitKind = 'icon' | 'illustration'
+
+export const SVG_KIT_KINDS: SvgKitKind[] = ['icon', 'illustration']
+
+// Per-file limits for each kind: bytes and element count (opening tags).
+export const SVG_KIT_BUDGETS: Record<SvgKitKind, { bytes: number; elements: number }> = {
+  icon: { bytes: 24 * 1024, elements: 200 },
+  illustration: { bytes: 160 * 1024, elements: 2500 },
+}
+
+// Returns a problem message when an SVG file goes over its theme kind's budget.
+export function budgetProblem(kind: SvgKitKind | undefined, svg: string) {
+  const budget = SVG_KIT_BUDGETS[kind ?? 'icon']
+  const bytes = new TextEncoder().encode(svg).byteLength
+  const elements = svg.match(/<[a-zA-Z]/g)?.length ?? 0
+  if (bytes <= budget.bytes && elements <= budget.elements) return null
+  return `${Math.ceil(bytes / 1024)} KB, ${elements} elements; ${kind ?? 'icon'} limit is ${budget.bytes / 1024} KB, ${budget.elements} elements`
+}
+
 export type SvgKitTheme = {
   id: string
   title: LocaleText
   description: LocaleText
+  kind?: SvgKitKind
   cover: string
   sheet?: string
   categories?: Record<string, LocaleText>
@@ -60,6 +82,9 @@ export function validateTheme(input: unknown): { theme?: SvgKitTheme; errors: st
   if (typeof raw.id !== 'string' || !KIT_ID_RE.test(raw.id)) errors.push('theme id must be kebab-case')
   checkText('title', raw.title, errors)
   checkText('description', raw.description, errors)
+  if (raw.kind != null && !SVG_KIT_KINDS.includes(raw.kind as SvgKitKind)) {
+    errors.push(`kind must be one of ${SVG_KIT_KINDS.join(', ')}`)
+  }
   if (typeof raw.cover !== 'string' || !raw.cover) errors.push('cover is required')
   if (raw.sheet != null && (typeof raw.sheet !== 'string' || !raw.sheet.endsWith('.svg'))) {
     errors.push('sheet must be an .svg filename')
@@ -122,6 +147,7 @@ export function validateTheme(input: unknown): { theme?: SvgKitTheme; errors: st
       id: raw.id as string,
       title: raw.title as LocaleText,
       description: raw.description as LocaleText,
+      ...(raw.kind === 'illustration' ? { kind: 'illustration' as const } : {}),
       cover: raw.cover as string,
       ...(typeof raw.sheet === 'string' ? { sheet: raw.sheet } : {}),
       ...(Object.keys(categories).length ? { categories } : {}),

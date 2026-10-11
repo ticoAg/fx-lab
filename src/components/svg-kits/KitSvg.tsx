@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useSvgSource } from './useSvgSource.ts'
 
 const SHADOW_STYLE = `<style>
@@ -12,6 +12,8 @@ const SHADOW_STYLE = `<style>
 /**
  * Inline an SVG in a shadow root so currentColor follows the stage
  * and each icon's CSS animation stays scoped.
+ * The file is fetched only when the element comes near the viewport,
+ * so long pages do not download and parse every icon up front.
  */
 export function KitSvg({
   src,
@@ -25,7 +27,8 @@ export function KitSvg({
   layout?: 'fill' | 'intrinsic'
 }) {
   const hostRef = useRef<HTMLSpanElement>(null)
-  const { text, error } = useSvgSource(src)
+  const [near, setNear] = useState(() => typeof IntersectionObserver === 'undefined')
+  const { text, error } = useSvgSource(near ? src : null)
 
   useEffect(() => {
     const host = hostRef.current
@@ -33,6 +36,18 @@ export function KitSvg({
     const root = host.shadowRoot ?? host.attachShadow({ mode: 'open' })
     root.innerHTML = `${SHADOW_STYLE}${text}`
   }, [text])
+
+  useEffect(() => {
+    if (near || !hostRef.current) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) setNear(true)
+      },
+      { rootMargin: '300px' },
+    )
+    observer.observe(hostRef.current)
+    return () => observer.disconnect()
+  }, [near])
 
   if (error) {
     return <img src={src} alt={alt} className={className} />

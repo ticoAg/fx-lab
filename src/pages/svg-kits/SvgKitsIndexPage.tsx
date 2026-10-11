@@ -1,8 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
-import { iconUrl } from '../../content/svg-kits/index.ts'
+import { iconUrl, SVG_KIT_KIND_LABELS, SVG_KIT_KINDS, type SvgKitKind } from '../../content/svg-kits/index.ts'
 import { useSvgKits } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
 
@@ -10,7 +10,9 @@ export function SvgKitsIndexPage() {
   const { lang } = useLang()
   const zh = lang === 'zh'
   const { data, error, loading } = useSvgKits()
-  const kits = data?.themes ?? []
+  const [kind, setKind] = useState<SvgKitKind | 'all'>('all')
+  const allKits = data?.themes ?? []
+  const kits = kind === 'all' ? allKits : allKits.filter((k) => (k.kind ?? 'icon') === kind)
   const total = kits.reduce((n, k) => n + k.icons.length, 0)
 
   useEffect(() => {
@@ -38,9 +40,21 @@ export function SvgKitsIndexPage() {
             </p>
           )}
         </section>
+        {!loading && allKits.length > 0 && (
+          <div className="kit-seg kit-kind-filter">
+            <button type="button" className={kind === 'all' ? 'active' : ''} onClick={() => setKind('all')}>
+              {zh ? '全部' : 'All'}
+            </button>
+            {SVG_KIT_KINDS.map((key) => (
+              <button key={key} type="button" className={kind === key ? 'active' : ''} onClick={() => setKind(key)}>
+                {t(SVG_KIT_KIND_LABELS[key], lang)}
+              </button>
+            ))}
+          </div>
+        )}
         {loading && <p className="kit-empty">{zh ? '加载中…' : 'Loading…'}</p>}
         {error && <p className="kit-empty">{error}</p>}
-        {!loading && !error && kits.length === 0 && (
+        {!loading && !error && allKits.length === 0 && (
           <p className="kit-empty">
             {zh ? '还没有主题。' : 'No themes yet.'}{' '}
             <Link to="/svg-kits/admin">{zh ? '去上传' : 'Go upload'}</Link>
@@ -66,6 +80,7 @@ export function SvgKitsIndexPage() {
                   <span className="kit-count">
                     {kit.icons.length} {zh ? '个图标' : 'icons'}
                   </span>
+                  <span className="kit-kind">{t(SVG_KIT_KIND_LABELS[kit.kind ?? 'icon'], lang)}</span>
                 </h3>
                 <p>{t(kit.description, lang)}</p>
                 <span className="source-tag">/svg-kits/{kit.id}</span>

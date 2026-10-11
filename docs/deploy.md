@@ -95,7 +95,9 @@ R2 桶 `fx-lab-svg-kits` 绑了自定义域名 `fx-lab-cdn.ticoag.fun`（zone `t
 | --- | --- | --- |
 | 自定义域名 | `fx-lab-cdn.ticoag.fun`，最低 TLS 1.2 | `cf r2 buckets domains custom list --bucket-name fx-lab-svg-kits` |
 | CORS | 来源 `*`，方法 GET、HEAD | `cf r2 buckets cors get fx-lab-svg-kits` |
-| 缓存规则 | zone `ticoag.fun` 的 `http_request_cache_settings`，`http.host eq "fx-lab-cdn.ticoag.fun"`：边缘 1 天，浏览器 1 天 | `cf rulesets list --zone <zone id>` |
+| 缓存规则 | zone `ticoag.fun` 的 `http_request_cache_settings`，`http.host eq "fx-lab-cdn.ticoag.fun"`：边缘 1 天（4xx 只缓存 60 秒，新上传的文件不会被旧的 404 挡一天），浏览器 1 天 | `cf rulesets list --zone <zone id>` |
+| SSL/TLS | zone 级 Full (strict)，最低 TLS 1.2 | `cf zones settings get ssl --zone <zone id>` |
+| Smart Tiered Cache | zone 级开启，未命中时先问上层数据中心，少回源 R2 | 控制台 Caching → Tiered Cache |
 
 前端地址只在 `src/cdn.ts` 定义：
 
@@ -111,7 +113,21 @@ cf r2 objects put models/3d/lens.glb --bucket-name fx-lab-svg-kits \
   --content-type model/gltf-binary --body @path/to/lens.glb
 ```
 
-上传新主题或替换文件后，访客最多 1 天后看到新内容。要立即生效，在 Cloudflare 控制台 ticoag.fun → Caching → Purge Cache 按 URL 清除对应地址（包括 `index.json` 和该主题的 `manifest.json`）。
+上传新主题或替换文件后，访客最多 1 天后看到新内容。要立即生效，按 URL 清缓存（包括 `index.json` 和该主题的 `manifest.json`，每次最多 30 个 URL）：
+
+```bash
+cf cache purge --zone <zone id> --force \
+  --body '{"files":["https://fx-lab-cdn.ticoag.fun/index.json"]}'
+```
+
+也可以在控制台 ticoag.fun → Caching → Purge Cache 操作。
+
+### 不存在的文件
+
+`public/_redirects` 的 SPA 回退会把任何不存在的路径答成 `index.html`、状态 200，`/assets/*` 下还会带上一年的 immutable 头。Pages 的 `_redirects` 不支持 404 改写，所以代码里这样处理：
+
+- 发版后，旧标签页按旧哈希加载懒加载的 chunk 会失败。`src/main.tsx` 监听 `vite:preloadError`，自动刷新一次拿新的 `index.html`。
+- SVG Kits 读种子文件时，把 `text/html` 响应当作不存在（`client.ts` 的 `isFound`、`useSvgSource.ts`）。
 
 ## 免费额度
 

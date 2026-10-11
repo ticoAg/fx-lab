@@ -20,7 +20,7 @@ Pages Function 在 `functions/api/svg-kits/[[path]].ts`：
 打开 `/svg-kits/admin`：
 
 1. 填管理口令（本地默认 `dev`，可用 `SVG_KITS_ADMIN_TOKEN` 覆盖）。
-2. 建主题：kebab-case id，zh/en 标题和描述，可选分类。
+2. 建主题：kebab-case id，zh/en 标题和描述，选类别（见下），可选分类。
 3. 一次选择多个 `.svg`，为每个图标填 zh/en 标题和描述。
 4. 保存。资源进 R2（生产）或 `.data/svg-kits`（本地）。
 
@@ -29,6 +29,17 @@ Pages Function 在 `functions/api/svg-kits/[[path]].ts`：
 - 管理页按钮「写入全部种子主题」→ `POST /api/svg-kits/seed`
 - 或 `npm run seed:svg-kits`
 - 或 `SVG_KITS_ADMIN_TOKEN=... npm run seed:svg-kits -- --api https://fx-lab-5do.pages.dev`
+
+## 主题类别
+
+manifest 的 `kind` 字段区分两类主题，列表页可按类别筛选：
+
+| `kind` | 显示名 | 用途 | 单个图标文件上限 |
+| --- | --- | --- | --- |
+| `icon`（不写时的默认值） | 轻量图标 | 界面里的小图标 | 24 KB，200 个元素 |
+| `illustration` | 精美插画 | 细节多的插画、装饰图 | 160 KB，2500 个元素 |
+
+元素数按开始标签计数。上限定义在 `functions/_lib/model.ts` 的 `SVG_KIT_BUDGETS`，前端从那里引用。上传时只检查本次请求带的文件，超限返回 400；已存进 R2 的文件不回头检查。`npm run check:svg-kits` 对种子做同样的检查。`sheet`（总览图）不受这个上限约束，只受 512 KB 的通用上限。
 
 ## 生产要做的一次性 Cloudflare 配置
 

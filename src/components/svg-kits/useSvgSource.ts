@@ -6,7 +6,8 @@ export function loadSvgSource(url: string) {
   let p = cache.get(url)
   if (!p) {
     p = fetch(url).then((r) => {
-      if (!r.ok) throw new Error(`${r.status} ${url}`)
+      // A missing static file comes back as the SPA's index.html with status 200.
+      if (!r.ok || r.headers.get('content-type')?.includes('text/html')) throw new Error(`${r.status} ${url}`)
       return r.text()
     })
     p.catch(() => cache.delete(url))

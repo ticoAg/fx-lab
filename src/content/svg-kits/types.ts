@@ -1,7 +1,10 @@
 import { ASSET_CDN } from '../../cdn.ts'
+import type { SvgKitKind } from '../../../functions/_lib/model.ts'
 import type { Lang, LocaleText } from '../../i18n.ts'
 
 export type { Lang, LocaleText }
+// Theme kinds and their per-file budgets are defined once, next to the server-side validation.
+export { SVG_KIT_BUDGETS, SVG_KIT_KINDS, type SvgKitKind } from '../../../functions/_lib/model.ts'
 
 export type SvgAnimation = 'pop' | 'float' | 'spin' | 'pulse' | 'sway' | 'none'
 
@@ -24,10 +27,16 @@ export type SvgKitIcon = {
   tags?: string[]
 }
 
+export const SVG_KIT_KIND_LABELS: Record<SvgKitKind, LocaleText> = {
+  icon: { zh: '轻量图标', en: 'Icons' },
+  illustration: { zh: '精美插画', en: 'Illustrations' },
+}
+
 export type SvgKitTheme = {
   id: string
   title: LocaleText
   description: LocaleText
+  kind?: SvgKitKind
   cover: string
   sheet?: string
   categories?: Record<string, LocaleText>

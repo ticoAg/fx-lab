@@ -1,4 +1,4 @@
-import { isSvgMarkup, validateTheme, type StoreInfo, type SvgKitTheme } from './model.ts'
+import { budgetProblem, isSvgMarkup, validateTheme, type StoreInfo, type SvgKitKind, type SvgKitTheme } from './model.ts'
 
 export type AssetBody = { body: Uint8Array; contentType: string }
 
@@ -142,11 +142,20 @@ async function readWritePayload(request: Request) {
   return { themeRaw, files, sheet }
 }
 
-function ensureSvgs(files: Map<string, Uint8Array>, errors: string[]) {
+// Checks only the files in this request. Files already stored are not re-checked against the budget.
+function ensureSvgs(files: Map<string, Uint8Array>, kind: SvgKitKind | undefined, errors: string[]) {
   for (const [id, bytes] of files) {
-    if (bytes.byteLength > MAX_SVG_BYTES) errors.push(`icon "${id}": file too large`)
-    const text = new TextDecoder().decode(bytes.slice(0, 400))
-    if (!isSvgMarkup(text)) errors.push(`icon "${id}": not an SVG file`)
+    if (bytes.byteLength > MAX_SVG_BYTES) {
+      errors.push(`icon "${id}": file too large`)
+      continue
+    }
+    const text = new TextDecoder().decode(bytes)
+    if (!isSvgMarkup(text.slice(0, 400))) {
+      errors.push(`icon "${id}": not an SVG file`)
+      continue
+    }
+    const problem = budgetProblem(kind, text)
+    if (problem) errors.push(`icon "${id}": over budget (${problem})`)
   }
 }
 
@@ -219,7 +228,7 @@ export async function handleSvgKitsRequest(
         return jsonResponse({ error: `theme id must match URL (${themeId})` }, 400)
       }
       const errors: string[] = []
-      ensureSvgs(payload.files, errors)
+      ensureSvgs(payload.files, checked.theme.kind, errors)
       if (payload.sheet) {
         if (payload.sheet.byteLength > MAX_SVG_BYTES) errors.push('sheet: file too large')
         if (!isSvgMarkup(new TextDecoder().decode(payload.sheet.slice(0, 400)))) errors.push('sheet: not an SVG file')

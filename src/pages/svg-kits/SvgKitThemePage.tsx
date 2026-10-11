@@ -18,7 +18,7 @@ import {
   writeStoredKitStroke,
   type KitStage,
 } from '../../components/svg-kits/stageBg.ts'
-import { sheetUrl, type SvgKitIcon } from '../../content/svg-kits/index.ts'
+import { sheetUrl, SVG_KIT_KIND_LABELS, type SvgKitIcon } from '../../content/svg-kits/index.ts'
 import { useSvgKit } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
 
@@ -156,6 +156,7 @@ export function SvgKitThemePage() {
             <span className="kit-count">
               {kit.icons.length} {zh ? '个图标' : 'icons'}
             </span>
+            <span className="kit-kind">{t(SVG_KIT_KIND_LABELS[kit.kind ?? 'icon'], lang)}</span>
           </h2>
           <p>{t(kit.description, lang)}</p>
         </section>

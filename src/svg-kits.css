@@ -20,6 +20,11 @@
   font-size: 12px; font-weight: 600; color: var(--accent2); background: var(--accent-glow);
   padding: 2px 8px; border-radius: 999px;
 }
+.kit-kind {
+  font-size: 12px; font-weight: 600; color: var(--text2); border: 1px solid var(--border);
+  padding: 1px 8px; border-radius: 999px; white-space: nowrap;
+}
+.kit-kind-filter { margin-top: 20px; }
 
 .kit-theme-grid { margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 18px; }
 .kit-theme-card {
@@ -168,7 +173,7 @@
 .kit-admin-card h4 { margin: 18px 0 10px; font-size: 13px; color: var(--text2); }
 .kit-admin-note { margin: 8px 0 0; color: var(--text3); font-size: 13px; line-height: 1.6; }
 .kit-field { display: flex; flex-direction: column; gap: 6px; font-size: 12px; color: var(--text3); }
-.kit-field input, .kit-field textarea, .kit-admin-row input, .kit-admin-table input, .kit-admin-table textarea, .kit-admin-table select {
+.kit-field input, .kit-field textarea, .kit-field select, .kit-admin-row input, .kit-admin-table input, .kit-admin-table textarea, .kit-admin-table select {
   border: 1px solid var(--border); background: var(--bg2); color: var(--text); border-radius: 8px; padding: 7px 9px; font: inherit;
 }
 .kit-field textarea, .kit-admin-table textarea { min-height: 64px; resize: vertical; }

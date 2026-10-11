@@ -10,6 +10,20 @@ import { SvgKitsIndexPage } from './pages/svg-kits/SvgKitsIndexPage.tsx'
 import { SvgKitThemePage } from './pages/svg-kits/SvgKitThemePage.tsx'
 import { SvgKitsAdminPage } from './pages/svg-kits/SvgKitsAdminPage.tsx'
 
+// After a deploy, an open tab still points at the old hashed chunks, which no longer exist.
+// Reload once to pick up the new index.html. The stored time stops a reload loop.
+window.addEventListener('vite:preloadError', (event) => {
+  try {
+    const last = Number(sessionStorage.getItem('fx-lab:chunk-reload') ?? 0)
+    if (Date.now() - last < 10_000) return
+    sessionStorage.setItem('fx-lab:chunk-reload', String(Date.now()))
+  } catch {
+    return
+  }
+  event.preventDefault()
+  window.location.reload()
+})
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <LangProvider>

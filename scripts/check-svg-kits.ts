@@ -1,12 +1,13 @@
 /**
  * Validates seed SVG kits (bootstrap data only).
  * Future kits are uploaded via /svg-kits/admin and live in R2 / .data, not git.
- * Fails on: missing files, orphan files, duplicate ids, missing zh/en, bad cover/category.
+ * Fails on: missing files, orphan files, duplicate ids, missing zh/en, bad cover/category,
+ * icon files over the theme kind's budget (SVG_KIT_BUDGETS).
  */
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { validateTheme, type SvgKitTheme } from '../functions/_lib/model.ts'
+import { budgetProblem, validateTheme, type SvgKitTheme } from '../functions/_lib/model.ts'
 import { inkLeft, plateProblems } from './lib/svg-kit-tiles.ts'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -54,6 +55,8 @@ for (const id of index.themes ?? []) {
     else {
       const svg = readFileSync(path, 'utf8')
       if (!svg.includes('<svg')) err(`${tw} icon "${icon.id}": not an SVG file`)
+      const overBudget = budgetProblem(theme.kind, svg)
+      if (overBudget) err(`${tw} icon "${icon.id}": over budget (${overBudget})`)
       for (const problem of plateProblems(svg)) err(`${tw} icon "${icon.id}": opaque plate (${problem})`)
       for (const color of inkLeft(svg, id)) {
         err(`${tw} icon "${icon.id}": ink ${color} should be currentColor`)

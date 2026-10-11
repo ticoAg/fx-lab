@@ -10,13 +10,17 @@ import {
   saveSvgKit,
   seedSvgKits,
   SVG_ANIMATIONS,
+  SVG_KIT_BUDGETS,
+  SVG_KIT_KINDS,
+  SVG_KIT_KIND_LABELS,
   writeAdminToken,
   type SvgAnimation,
   type SvgKitIcon,
+  type SvgKitKind,
   type SvgKitTheme,
 } from '../../content/svg-kits/index.ts'
 import { useSvgKits } from '../../content/svg-kits/useSvgKits.ts'
-import { useLang } from '../../i18n.ts'
+import { t, useLang } from '../../i18n.ts'
 
 type IconDraft = SvgKitIcon & { file?: File; hasFile: boolean }
 
@@ -26,6 +30,7 @@ const emptyTheme = (): Omit<SvgKitTheme, 'icons' | 'categories'> & { categories:
   id: '',
   title: { zh: '', en: '' },
   description: { zh: '', en: '' },
+  kind: 'icon' as SvgKitKind,
   cover: '',
   sheet: 'elements.svg',
   categories: [],
@@ -36,6 +41,7 @@ function themeToDraft(theme: SvgKitTheme) {
     id: theme.id,
     title: { ...theme.title },
     description: { ...theme.description },
+    kind: theme.kind ?? 'icon',
     cover: theme.cover,
     sheet: theme.sheet ?? '',
     categories: Object.entries(theme.categories ?? {}).map(([key, label]) => ({
@@ -115,6 +121,7 @@ export function SvgKitsAdminPage() {
         id: draft.id.trim(),
         title: draft.title,
         description: draft.description,
+        ...(draft.kind === 'illustration' ? { kind: 'illustration' as const } : {}),
         cover: draft.cover || icons[0]?.id || '',
         ...(draft.sheet ? { sheet: draft.sheet } : {}),
         ...(Object.keys(categories).length ? { categories } : {}),
@@ -275,6 +282,22 @@ export function SvgKitsAdminPage() {
             <label className="kit-field">
               <span>{zh ? '标题（英）' : 'Title (en)'}</span>
               <input value={draft.title.en} onChange={(e) => setDraft({ ...draft, title: { ...draft.title, en: e.target.value } })} />
+            </label>
+            <label className="kit-field kit-span-2">
+              <span>
+                {zh ? '类别' : 'Kind'}
+                {' · '}
+                {zh
+                  ? `单个文件上限 ${SVG_KIT_BUDGETS[draft.kind ?? 'icon'].bytes / 1024} KB、${SVG_KIT_BUDGETS[draft.kind ?? 'icon'].elements} 个元素`
+                  : `Per file: up to ${SVG_KIT_BUDGETS[draft.kind ?? 'icon'].bytes / 1024} KB, ${SVG_KIT_BUDGETS[draft.kind ?? 'icon'].elements} elements`}
+              </span>
+              <select value={draft.kind ?? 'icon'} onChange={(e) => setDraft({ ...draft, kind: e.target.value as SvgKitKind })}>
+                {SVG_KIT_KINDS.map((kind) => (
+                  <option key={kind} value={kind}>
+                    {t(SVG_KIT_KIND_LABELS[kind], lang)}
+                  </option>
+                ))}
+              </select>
             </label>
             <label className="kit-field kit-span-2">
               <span>{zh ? '描述（中）' : 'Description (zh)'}</span>

@@ -166,3 +166,29 @@ test('POST uses the same seed check and does not call getIcon', async () => {
   assert.deepEqual(seed.calls.getIcon, [])
   assert.deepEqual(seed.calls.get, ['eastern-myth'])
 })
+
+test('icon themes reject files over the icon budget; illustration themes accept them', async () => {
+  const writable = memoryStore({ backend: 'r2', writable: true })
+  const seed = memoryStore({ backend: 'seed', writable: false })
+  const heavy = `<svg xmlns="http://www.w3.org/2000/svg">${'<path d="M0 0"/>'.repeat(300)}</svg>`
+
+  const rejected = await putTheme(writable.store, seed.store, theme('heavy', ['big']), { big: heavy })
+  assert.equal(rejected.response.status, 400)
+  assert.match(rejected.body.errors?.[0] ?? '', /^icon "big": over budget \(.*icon limit is 24 KB, 200 elements\)$/)
+  assert.equal(writable.calls.putTheme, 0)
+
+  const kit = { ...theme('heavy', ['big']), kind: 'illustration' as const }
+  const saved = await putTheme(writable.store, seed.store, kit, { big: heavy })
+  assert.equal(saved.response.status, 200)
+  assert.equal(saved.body.theme?.kind, 'illustration')
+})
+
+test('an unknown kind is rejected', async () => {
+  const writable = memoryStore({ backend: 'r2', writable: true })
+  const seed = memoryStore({ backend: 'seed', writable: false })
+  const kit = { ...theme('odd', ['a']), kind: 'poster' } as unknown as SvgKitTheme
+
+  const { response, body } = await putTheme(writable.store, seed.store, kit, { a: svg('a') })
+  assert.equal(response.status, 400)
+  assert.deepEqual(body.errors, ['kind must be one of icon, illustration'])
+})

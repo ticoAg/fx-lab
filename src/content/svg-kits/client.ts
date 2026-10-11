@@ -25,14 +25,20 @@ export function writeAdminToken(token: string) {
   }
 }
 
+// Static hosting answers a missing file with index.html and status 200 (SPA fallback in
+// public/_redirects), so a missing seed file is detected by its content type, not its status.
+function isFound(res: Response) {
+  return res.ok && !res.headers.get('content-type')?.includes('text/html')
+}
+
 async function readThemes(indexUrl: string, manifestUrl: (id: string) => string) {
   const res = await fetch(indexUrl)
-  if (!res.ok) throw new Error(`${indexUrl}: ${res.status}`)
+  if (!isFound(res)) throw new Error(`${indexUrl}: ${res.status}`)
   const data = (await res.json()) as { themes?: string[] }
   const items = await Promise.all(
     (data.themes ?? []).map(async (id) => {
       const item = await fetch(manifestUrl(id))
-      return item.ok ? ((await item.json()) as SvgKitTheme) : null
+      return isFound(item) ? ((await item.json()) as SvgKitTheme) : null
     }),
   )
   return items.filter((theme): theme is SvgKitTheme => theme !== null)
@@ -90,7 +96,7 @@ export async function loadSvgKits({ fresh = false }: { fresh?: boolean } = {}): 
 
 async function loadSeedTheme(id: string) {
   const res = await fetch(seedManifestUrl(id))
-  if (!res.ok) return null
+  if (!isFound(res)) return null
   setSvgKitSource(id, 'seed')
   return (await res.json()) as SvgKitTheme
 }
