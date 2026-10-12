@@ -148,6 +148,14 @@
   padding: 24px 0 20px;
 }
 
+.kit-hero-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
 .kit-hero-badge {
   display: inline-flex;
   align-items: center;
@@ -159,7 +167,7 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--accent2);
-  margin-bottom: 12px;
+  flex-shrink: 0;
 }
 
 .kit-hero-dot {
@@ -203,7 +211,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 18px;
   align-items: center;
 }
 
@@ -272,6 +279,11 @@
 .kit-sort-note {
   color: var(--text2);
   font-size: 12px;
+}
+
+.kit-sort-filter {
+  margin-inline-start: auto;
+  flex-shrink: 0;
 }
 
 .kit-kind-filter {

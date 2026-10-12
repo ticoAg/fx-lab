@@ -69,10 +69,25 @@ export function SvgKitsIndexPage() {
       <SvgKitsHeader bg={bg} onBgChange={handleBgChange} />
       <main className="kit-main">
         <section className="kit-hero">
-          <div className="kit-hero-badge">
-            <span className="kit-hero-dot" aria-hidden="true" />
-            <span>{zh ? '矢量动效资源库' : 'Vector Motion Kits'}</span>
-            <span className="kit-hero-subtag">v2.0</span>
+          <div className="kit-hero-top">
+            <div className="kit-hero-badge">
+              <span className="kit-hero-dot" aria-hidden="true" />
+              <span>{zh ? '矢量动效资源库' : 'Vector Motion Kits'}</span>
+              <span className="kit-hero-subtag">v2.0</span>
+            </div>
+            {!loading && allKits.length > 0 && (
+              <div className="kit-stats-bar">
+                <span className="kit-stat-pill">
+                  <strong>{allKits.length}</strong> {zh ? '个主题' : 'Themes'}
+                </span>
+                <span className="kit-stat-pill">
+                  <strong>{grandTotal}</strong> {zh ? '个图标' : 'Icons'}
+                </span>
+                <span className="kit-stat-pill highlight">
+                  <strong>100%</strong> {zh ? '自包含 CSS 动画' : 'Pure CSS'}
+                </span>
+              </div>
+            )}
           </div>
 
           <h2 className="kit-hero-title">
@@ -84,20 +99,6 @@ export function SvgKitsIndexPage() {
               ? '单文件自包含、原生内置 CSS 动画（弹跳 / 漂浮 / 旋转 / 脉冲 / 摇摆），主描边自适应 currentColor，支持减少动态效果设置。可直接内联到页面、按钮或空状态插画。'
               : 'Standalone, self-contained animated SVG kits with pure CSS animations (pop, float, spin, pulse, sway). Adaptive currentColor strokes and prefers-reduced-motion ready.'}
           </p>
-
-          {!loading && allKits.length > 0 && (
-            <div className="kit-stats-bar">
-              <span className="kit-stat-pill">
-                <strong>{allKits.length}</strong> {zh ? '个主题' : 'Themes'}
-              </span>
-              <span className="kit-stat-pill">
-                <strong>{grandTotal}</strong> {zh ? '个图标' : 'Icons'}
-              </span>
-              <span className="kit-stat-pill highlight">
-                <strong>100%</strong> {zh ? '自包含 CSS 动画' : 'Pure CSS'}
-              </span>
-            </div>
-          )}
         </section>
 
         {!loading && allKits.length > 0 && (
@@ -131,15 +132,6 @@ export function SvgKitsIndexPage() {
               })}
             </div>
 
-            <div className="kit-seg kit-kind-filter" role="group" aria-label={zh ? '主题排序' : 'Sort themes'}>
-              <button type="button" className={sort === 'popular' ? 'active' : ''} aria-pressed={sort === 'popular'} onClick={() => setSort('popular')}>
-                {zh ? '浏览热度' : 'Most viewed'}
-              </button>
-              <button type="button" className={sort === 'default' ? 'active' : ''} aria-pressed={sort === 'default'} onClick={() => setSort('default')}>
-                {zh ? '默认顺序' : 'Default order'}
-              </button>
-            </div>
-
             <div className="kit-search-wrap">
               <svg className="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="11" cy="11" r="8" />
@@ -162,6 +154,15 @@ export function SvgKitsIndexPage() {
                   ×
                 </button>
               )}
+            </div>
+
+            <div className="kit-seg kit-kind-filter kit-sort-filter" role="group" aria-label={zh ? '主题排序' : 'Sort themes'}>
+              <button type="button" className={sort === 'popular' ? 'active' : ''} aria-pressed={sort === 'popular'} onClick={() => setSort('popular')}>
+                {zh ? '浏览热度' : 'Most viewed'}
+              </button>
+              <button type="button" className={sort === 'default' ? 'active' : ''} aria-pressed={sort === 'default'} onClick={() => setSort('default')}>
+                {zh ? '默认顺序' : 'Default order'}
+              </button>
             </div>
           </div>
         )}
