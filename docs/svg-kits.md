@@ -28,7 +28,7 @@ Pages Function 在 `functions/api/svg-kits/[[path]].ts`：
 
 - 管理页按钮「写入全部种子主题」→ `POST /api/svg-kits/seed`
 - 或 `npm run seed:svg-kits`
-- 或 `SVG_KITS_ADMIN_TOKEN=... npm run seed:svg-kits -- --api https://fx-lab-5do.pages.dev`
+- 或 `SVG_KITS_ADMIN_TOKEN=... npm run seed:svg-kits -- --api https://fx-lab.ticoag.fun`
 
 ## 主题类别
 

@@ -2,7 +2,7 @@
 
 Vite + React 动效馆。四个库里能跑的官方组件挂成画廊，点进去是真实 import 和用法。
 
-线上：https://fx-lab-5do.pages.dev/
+线上：https://fx-lab.ticoag.fun/
 仓库：https://github.com/ticoAg/fx-lab
 
 ## 来源
@@ -10,7 +10,7 @@ Vite + React 动效馆。四个库里能跑的官方组件挂成画廊，点进�
 - react-bits：官方 JS-CSS 组件，约 166 个
 - ThreeUI：Community 包，100 个导出
 - math-curve-loaders：官方 21 条曲线
-- SVG Kits：按主题整理的动画 SVG 图标套件，入口 [/svg-kits](https://fx-lab-5do.pages.dev/svg-kits)。种子含 basics、cthulhu-mythos，以及去掉圆角底板、主描边改为 currentColor 的 pastoral、line-basics、druid、forest。healing 没有生成，不在种子里。新主题仍从网站上传。
+- SVG Kits：按主题整理的动画 SVG 图标套件，入口 [/svg-kits](https://fx-lab.ticoag.fun/svg-kits)。种子含 basics、cthulhu-mythos，以及去掉圆角底板、主描边改为 currentColor 的 pastoral、line-basics、druid、forest。healing 没有生成，不在种子里。新主题仍从网站上传。
 
 默认中文，可切英文。卡片进视口才挂载。失败卡是官方组件没跑起来，不是自制替代。
 
@@ -26,7 +26,7 @@ Vite + React 动效馆。四个库里能跑的官方组件挂成画廊，点进�
 
 Cloudflare Pages 项目 fx-lab。构建输出 dist，Node 20。
 GitHub main 已绑定 Git 源，push 到 main 自动部署。
-生产域名 fx-lab-5do.pages.dev。
+生产域名 fx-lab.ticoag.fun。Pages 默认域名 fx-lab-5do.pages.dev 仍可用。
 构建命令只在 Pages 控制台配置，wrangler.toml 不放 `[build]`。
 架构、配置位置与坑：[docs/deploy.md](docs/deploy.md)
 SVG Kits 存储与上传：[docs/svg-kits.md](docs/svg-kits.md)
@@ -46,7 +46,7 @@ npm run seed:svg-kits
 
 ## SVG Kits
 
-线上：https://fx-lab-5do.pages.dev/svg-kits
+线上：https://fx-lab.ticoag.fun/svg-kits
 
 - `/svg-kits` 主题列表
 - `/svg-kits/<themeId>` 主题页（搜索、分类。网格背景可切深色 / 浅色 / 透明，线条色用取色器，分别记在 `?bg=`、`?stroke=` 和 localStorage。`currentColor` 读 `--svg-kit-stroke`，深色网格默认浅色线条）

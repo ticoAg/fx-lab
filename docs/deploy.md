@@ -4,7 +4,8 @@ fx-lab 是纯静态 SPA。没有应用服务器，没有数据库。
 本机 Mac 只做控制面：写代码、推 GitHub、改 Pages 控制台配置。
 GitHub `main` 是生产分支，Cloudflare Pages 拉源码、跑构建、把 dist 发到边缘。
 
-线上：https://fx-lab-5do.pages.dev/
+线上：https://fx-lab.ticoag.fun/
+Pages 默认域名 https://fx-lab-5do.pages.dev/ 仍指向同一项目。
 仓库：https://github.com/ticoAg/fx-lab
 Pages 项目：fx-lab
 本机路径：/Users/ticoag/Documents/myws/fx-lab
@@ -18,7 +19,7 @@ flowchart LR
   pages["Cloudflare Pages<br/>项目 fx-lab"]
   dist["dist<br/>静态产物"]
   cdn["Cloudflare CDN"]
-  site["fx-lab-5do.pages.dev"]
+  site["fx-lab.ticoag.fun"]
 
   mac -- "git push main" --> gh
   gh -- "Git 绑定" --> pages
@@ -36,7 +37,7 @@ flowchart LR
 | 源码 | GitHub ticoAg/fx-lab | 公开仓库，生产分支 main |
 | CI | Cloudflare Pages 构建 | 克隆 main，Node 20，`npm run build` |
 | 托管 | Cloudflare Pages 项目 fx-lab | 存放并发布 dist |
-| 边缘 | Cloudflare CDN | 分发 fx-lab-5do.pages.dev |
+| 边缘 | Cloudflare CDN | 分发 fx-lab.ticoag.fun，以及 fx-lab-5do.pages.dev |
 
 首次上线走的是 Wrangler Direct Upload，现在控制台已绑定 Git。Wrangler CLI 不能绑定 Git 源。
 
@@ -54,6 +55,7 @@ flowchart LR
 | Node 版本 | .nvmrc | `20` |
 | SPA 回退 | public/_redirects | `/* /index.html 200` |
 | 静态资源缓存头 | public/_headers | 见下文"CDN 与缓存" |
+| 站点自定义域名 | Pages 项目 fx-lab → Custom domains | `fx-lab.ticoag.fun`，CNAME 到 `fx-lab-5do.pages.dev`，已代理 |
 | 资源 CDN 地址 | src/cdn.ts | `https://fx-lab-cdn.ticoag.fun` |
 | 本地 dev 端口、`assetsInclude` | vite.config.ts | 本地与构建配置，不是 Pages 设置 |
 
@@ -104,7 +106,7 @@ R2 桶 `fx-lab-svg-kits` 绑了自定义域名 `fx-lab-cdn.ticoag.fun`（zone `t
 - 3D 模型：FluidGlass（lens、cube、bar）、ModelViewer（sunglasses）用 `modelUrl()`，开发和线上都从 CDN 读。文件来自 react-bits 仓库 `public/assets/3d/`。
 - SVG Kits：线上浏览页读 `CDN/index.json`、`CDN/themes/<id>/manifest.json` 和图标，再合并构建产物里的种子；CDN 失败时退回 `/api/svg-kits`。管理页 `/svg-kits/admin` 始终读 API，看到的是最新数据。本地 dev 不走 CDN。
 
-为什么不把子域名绑到 Pages：Pages Functions 跑在缓存前面，即使缓存命中也计入 Workers 每天 10 万次的额度。绑到 R2 的请求不经过 Functions，CDN 命中也不算 R2 读取。
+站点域名 `fx-lab.ticoag.fun` 绑的是 Pages。资源 CDN 不绑到 Pages：Pages Functions 跑在缓存前面，即使缓存命中也计入 Workers 每天 10 万次的额度。绑到 R2 的请求不经过 Functions，CDN 命中也不算 R2 读取。
 
 上传或替换模型：
 
@@ -118,11 +120,12 @@ cf r2 objects put models/3d/lens.glb --bucket-name fx-lab-svg-kits \
 ```bash
 cf cache purge --zone <zone id> --force --body '{"files":[
   "https://fx-lab-cdn.ticoag.fun/index.json",
+  {"url":"https://fx-lab-cdn.ticoag.fun/index.json","headers":{"Origin":"https://fx-lab.ticoag.fun"}},
   {"url":"https://fx-lab-cdn.ticoag.fun/index.json","headers":{"Origin":"https://fx-lab-5do.pages.dev"}}
 ]}'
 ```
 
-R2 开了 CORS，响应带 `Vary: Origin`，CDN 按请求有没有 `Origin` 头分开缓存。浏览器请求带 `Origin`，所以每个地址都要清两份：不带头的一份，和带站点 `Origin` 的一份。只清前者，用 curl 看是新的，浏览器里仍是旧的。
+R2 开了 CORS，响应带 `Vary: Origin`，CDN 按请求有没有 `Origin` 头分开缓存。浏览器请求带 `Origin`，所以每个地址都要清：不带头的一份，以及 `https://fx-lab.ticoag.fun` 和 `https://fx-lab-5do.pages.dev` 各一份。只清不带头的那份，用 curl 看是新的，浏览器里仍是旧的。
 
 也可以在控制台 ticoag.fun → Caching → Purge Cache 操作。
 
@@ -153,7 +156,7 @@ Pages CI 会按 `functions/` 目录自动生成 `_routes.json`，只有 `/api/sv
 2. Pages 克隆仓库 main。
 3. 按 .nvmrc 用 Node 20。
 4. 跑 `npm run build`，产出 dist。
-5. 上传 dist，发到 CDN，fx-lab-5do.pages.dev 生效。
+5. 上传 dist，发到 CDN。fx-lab.ticoag.fun 和 fx-lab-5do.pages.dev 同时生效。
 
 dist/ 和 node_modules/ 都在 .gitignore 里，由 Pages 构建生成。
 本文撰写时最后一次成功的 Git 部署是提交 `8204db3`，即删掉不支持的 `[build]` 键那次。
