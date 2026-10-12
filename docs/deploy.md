@@ -1,6 +1,6 @@
 # 部署架构
 
-fx-lab 是纯静态 SPA。没有应用服务器，没有数据库。
+fx-lab 的前端是静态 SPA，没有独立应用服务器。SVG Kits 的上传和浏览统计由 Pages Functions 提供；启用浏览热度后，累计次数存入 D1。
 本机 Mac 只做控制面：写代码、推 GitHub、改 Pages 控制台配置。
 GitHub `main` 是生产分支，Cloudflare Pages 拉源码、跑构建、把 dist 发到边缘。
 
@@ -75,7 +75,7 @@ package.json 的 `build` 脚本是 `npm run check:svg-kits && tsc -b && vite bui
 
 ## CDN 与缓存
 
-站点本身是静态的。两类资源各走一条免费路径，浏览时不调用 Pages Functions。
+站点本身是静态的。两类资源各走一条免费路径。浏览热度单独调用 Pages Functions：进入列表读取次数，成功打开主题详情页记录一次浏览；主题与 SVG 资源仍走下面的 CDN 路径。
 
 ### Pages 静态资源
 
@@ -144,11 +144,11 @@ R2 开了 CORS，响应带 `Vary: Origin`，CDN 按请求有没有 `Origin` 头�
 | --- | --- | --- |
 | Pages 构建 | 500 次/月，同时 1 个 | 每次 push（含预览分支）一次 |
 | Pages 静态请求 | 不限 | 页面、JS、图片、种子 SVG |
-| Pages Functions | 计入 Workers：10 万次/天，每次 10 ms CPU | 只有 `/api/svg-kits/*`：管理页读写，以及 CDN 不可用时的回退 |
+| Pages Functions | 计入 Workers：10 万次/天，每次 10 ms CPU | 只有 `/api/svg-kits/*`：管理页读写、浏览热度读写，以及 CDN 不可用时的回退 |
 | R2 | 10 GB 存储，Class A 100 万/月，Class B 1000 万/月，出口流量免费 | 只有 CDN 未命中时才读 R2 |
 | Cache Rules | 每个 zone 10 条 | 用 1 条 |
 
-Pages CI 会按 `functions/` 目录自动生成 `_routes.json`，只有 `/api/svg-kits/*` 会调用 Functions。不要加 `/*` 这类会匹配全部路径的 Function。项目设置为 fail open：Functions 当天额度用完后跳过 Functions，只返回静态资源，此时只有管理页不可用。
+Pages CI 会按 `functions/` 目录自动生成 `_routes.json`，只有 `/api/svg-kits/*` 会调用 Functions。不要加 `/*` 这类会匹配全部路径的 Function。项目设置为 fail open：Functions 当天额度用完后跳过 Functions，只返回静态资源，此时管理页与热度统计不可用，画廊资源仍可浏览。D1 的一次性配置见 [浏览热度排序](svg-kits.md#浏览热度排序)。
 
 ## 发布流程
 

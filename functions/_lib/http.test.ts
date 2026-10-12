@@ -213,3 +213,58 @@ test('icon files over 10MB and non-SVG files are rejected', async () => {
   assert.deepEqual(notSvg.body.errors, ['icon "mark": not an SVG file'])
   assert.equal(writable.calls.putTheme, 0)
 })
+
+test('public views count existing themes, including seeds, without changing manifests', async () => {
+  const writable = memoryStore({ backend: 'r2', writable: true }, [theme('live', ['a'])])
+  const seed = memoryStore({ backend: 'seed', writable: false }, [theme('seeded', ['b'])])
+  const counts: Record<string, number> = {}
+  const opts = {
+    setupHint: SETUP,
+    views: {
+      async readViews() { return { ...counts } },
+      async recordView(id: string) { counts[id] = (counts[id] ?? 0) + 1 },
+    },
+  }
+  const visit = (id: string, origin = 'https://example.test', contentType = 'application/json') =>
+    handleSvgKitsRequest(new Request(`https://example.test/api/svg-kits/${id}/views`, {
+      method: 'POST',
+      headers: { origin, 'content-type': contentType },
+    }), writable.store, seed.store, opts)
+
+  assert.equal((await visit('live')).status, 204)
+  assert.equal((await visit('live')).status, 204)
+  assert.equal((await visit('seeded')).status, 204)
+  assert.equal((await visit('missing')).status, 404)
+  assert.equal((await visit('live', 'https://other.test')).status, 403)
+  assert.equal((await visit('live', 'https://example.test', 'text/plain')).status, 415)
+  assert.equal((await visit('bad_id')).status, 400)
+
+  const response = await handleSvgKitsRequest(
+    new Request('https://example.test/api/svg-kits/stats/views'), writable.store, seed.store, opts,
+  )
+  assert.equal(response.status, 200)
+  assert.equal(response.headers.get('cache-control'), 'no-store')
+  assert.deepEqual(await response.json(), { live: 2, seeded: 1 })
+  assert.equal(writable.calls.putTheme, 0)
+})
+
+test('unconfigured or failing view storage leaves theme browsing available', async () => {
+  const seed = memoryStore({ backend: 'seed', writable: false }, [theme('seeded', ['a'])])
+  const request = new Request('https://example.test/api/svg-kits/stats/views')
+  const opts = { setupHint: SETUP }
+  const unavailable = await handleSvgKitsRequest(request, seed.store, seed.store, opts)
+  assert.equal(unavailable.status, 503)
+
+  const failing = await handleSvgKitsRequest(request, seed.store, seed.store, {
+    ...opts,
+    views: {
+      async readViews() { throw new Error('database unavailable') },
+      async recordView() { throw new Error('database unavailable') },
+    },
+  })
+  assert.equal(failing.status, 500)
+  const themeResponse = await handleSvgKitsRequest(
+    new Request('https://example.test/api/svg-kits/seeded'), seed.store, seed.store, opts,
+  )
+  assert.equal(themeResponse.status, 200)
+})

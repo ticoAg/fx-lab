@@ -1,12 +1,14 @@
 import { handleSvgKitsRequest, type AssetBody, type KitStore } from '../../_lib/http.ts'
 import type { StoreInfo, SvgKitTheme } from '../../_lib/model.ts'
 import type { R2Bucket } from '../../_lib/r2.ts'
+import { d1ViewsStore, type SvgKitViewsDatabase } from '../../_lib/views.ts'
 
 type Fetcher = { fetch: (input: Request | string) => Promise<Response> }
 
 export type Env = {
   SVG_KITS?: R2Bucket
   SVG_KITS_ADMIN_TOKEN?: string
+  SVG_KITS_VIEWS?: SvgKitViewsDatabase
   ASSETS: Fetcher
 }
 
@@ -146,5 +148,6 @@ export const onRequest = async (context: { request: Request; env: Env }) => {
   return handleSvgKitsRequest(context.request, store, seed, {
     adminToken: context.env.SVG_KITS_ADMIN_TOKEN,
     setupHint: SETUP_HINT,
+    views: context.env.SVG_KITS_VIEWS ? d1ViewsStore(context.env.SVG_KITS_VIEWS) : undefined,
   })
 }

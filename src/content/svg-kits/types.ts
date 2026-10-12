@@ -5,6 +5,7 @@ import type { Lang, LocaleText } from '../../i18n.ts'
 export type { Lang, LocaleText }
 // Theme kinds and their per-file budgets are defined once, next to the server-side validation.
 export { SVG_KIT_BUDGETS, SVG_KIT_KINDS, type SvgKitKind } from '../../../functions/_lib/model.ts'
+export { validateSvgKitViews, type SvgKitViews } from '../../../functions/_lib/model.ts'
 
 export type SvgAnimation = 'pop' | 'float' | 'spin' | 'pulse' | 'sway' | 'none'
 

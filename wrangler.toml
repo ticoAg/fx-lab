@@ -6,3 +6,9 @@ pages_build_output_dir = "./dist"
 [[r2_buckets]]
 binding = "SVG_KITS"
 bucket_name = "fx-lab-svg-kits"
+
+# SVG Kits popularity counters; schema lives in migrations/.
+[[d1_databases]]
+binding = "SVG_KITS_VIEWS"
+database_name = "fx-lab-svg-kit-views"
+database_id = "efc406f9-ff8d-4295-8fea-6646e265a32b"

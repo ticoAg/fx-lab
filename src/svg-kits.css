@@ -230,9 +230,6 @@
   background: var(--accent-glow);
 }
 
-.kit-stat-pill.subtle {
-  opacity: 0.8;
-}
 
 .kit-hero-nav {
   margin-bottom: 12px;
@@ -270,6 +267,11 @@
   gap: 14px;
   margin: 24px 0 18px;
   flex-wrap: wrap;
+}
+
+.kit-sort-note {
+  color: var(--text2);
+  font-size: 12px;
 }
 
 .kit-kind-filter {

@@ -51,6 +51,27 @@ export type StoreInfo = {
 
 export const KIT_ID_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
+export function validateSvgKitViews(input: unknown) {
+  if (!input || typeof input !== 'object' || Array.isArray(input)) {
+    throw new Error('invalid theme views')
+  }
+  const views: Record<string, number> = Object.create(null)
+  for (const [id, count] of Object.entries(input)) {
+    if (!KIT_ID_RE.test(id) || typeof count !== 'number' || !Number.isSafeInteger(count) || count < 0) {
+      throw new Error('invalid theme views')
+    }
+    views[id] = count
+  }
+  return views
+}
+
+export type SvgKitViews = ReturnType<typeof validateSvgKitViews>
+
+export type SvgKitViewsStore = {
+  readViews(): Promise<SvgKitViews>
+  recordView(themeId: string): Promise<void>
+}
+
 export function fileStemToId(name: string) {
   return name
     .replace(/\.svg$/i, '')

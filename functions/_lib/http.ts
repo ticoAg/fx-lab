@@ -1,4 +1,4 @@
-import { budgetProblem, isSvgMarkup, validateTheme, type StoreInfo, type SvgKitKind, type SvgKitTheme } from './model.ts'
+import { budgetProblem, isSvgMarkup, KIT_ID_RE, validateTheme, type StoreInfo, type SvgKitKind, type SvgKitTheme, type SvgKitViewsStore } from './model.ts'
 
 export type AssetBody = { body: Uint8Array; contentType: string }
 
@@ -149,7 +149,7 @@ export async function handleSvgKitsRequest(
   request: Request,
   store: KitStore,
   seed: KitStore,
-  opts: { adminToken?: string; setupHint: string },
+  opts: { adminToken?: string; setupHint: string; views?: SvgKitViewsStore },
 ): Promise<Response> {
   const url = new URL(request.url)
   const rest = pathParts(url)
@@ -181,6 +181,11 @@ export async function handleSvgKitsRequest(
   }
 
   try {
+    if (rest.length === 2 && rest[0] === 'stats' && rest[1] === 'views' && method === 'GET') {
+      if (!opts.views) return jsonResponse({ error: 'view storage is not configured' }, 503)
+      return jsonResponse(await opts.views.readViews())
+    }
+
     if (rest.length === 0 && method === 'GET') {
       const themes = await overlayStore(store.info.writable ? store : null, seed).list()
       return jsonResponse({ store: store.info, themes })
@@ -197,6 +202,21 @@ export async function handleSvgKitsRequest(
 
     const themeId = rest[0]
     const live = overlayStore(store.info.writable ? store : null, seed)
+
+    if (rest.length === 2 && rest[1] === 'views' && method === 'POST') {
+      const origin = request.headers.get('origin')
+      if ((origin && origin !== url.origin) || request.headers.get('sec-fetch-site') === 'cross-site') {
+        return jsonResponse({ error: 'cross-origin view recording is not allowed' }, 403)
+      }
+      if (request.headers.get('content-type')?.split(';')[0].trim() !== 'application/json') {
+        return jsonResponse({ error: 'application/json is required' }, 415)
+      }
+      if (!KIT_ID_RE.test(themeId)) return jsonResponse({ error: 'invalid theme id' }, 400)
+      if (!opts.views) return jsonResponse({ error: 'view storage is not configured' }, 503)
+      if (!(await live.get(themeId))) return jsonResponse({ error: 'theme not found' }, 404)
+      await opts.views.recordView(themeId)
+      return new Response(null, { status: 204, headers: { 'cache-control': 'no-store' } })
+    }
 
     if (rest.length === 1 && method === 'GET') {
       const theme = await live.get(themeId)

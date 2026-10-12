@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { loadSvgKit, loadSvgKits, type SvgKitsListResponse } from './client.ts'
+import { loadSvgKit, loadSvgKits, recordSvgKitView, type SvgKitsListResponse } from './client.ts'
 import type { SvgKitTheme } from './types.ts'
 
 // fresh: read from the API instead of the day-long CDN cache (admin page).
@@ -46,6 +46,7 @@ export function useSvgKit(id: string | undefined) {
         if (alive) {
           setTheme(next)
           setError(null)
+          if (next) void recordSvgKitView(id).catch(() => { /* Statistics must not interrupt browsing. */ })
         }
       },
       (err: unknown) => {

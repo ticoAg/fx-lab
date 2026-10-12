@@ -11,9 +11,34 @@ Pages Function 在 `functions/api/svg-kits/[[path]].ts`：
 1. 若绑定了 R2（`SVG_KITS`），读写桶里的 JSON manifest + SVG。
 2. 若没有绑定，GET 回退到构建进 dist 的种子文件（`/seed-svg-kits/`），画廊仍能看 basics / cthulhu-mythos。写入返回 503，提示绑定 R2。
 
-线上浏览页不调用这个 API：图标、manifest 和 `index.json` 直接从 R2 的 CDN 域名 `https://fx-lab-cdn.ticoag.fun` 读（缓存 1 天），种子主题从 `/seed-svg-kits/` 读，CDN 失败才回退到 API。管理页始终用 API。详见 [deploy.md](deploy.md#cdn-与缓存)。
+线上主题资源优先从 CDN 读取：图标、manifest 和 `index.json` 直接从 R2 的 CDN 域名 `https://fx-lab-cdn.ticoag.fun` 读（缓存 1 天），种子主题从 `/seed-svg-kits/` 读，CDN 失败才回退到 API。浏览热度使用下述独立 API，管理页始终用 API。详见 [deploy.md](deploy.md#cdn-与缓存)。
 
 本地 `npm run dev` 用 Vite 插件实现同一套 API，可写目录是 `.data/svg-kits/`（gitignore）。第一次启动会把种子拷进去。
+
+## 浏览热度排序
+
+主题列表默认按主题详情页的累计浏览次数降序排列，也可切换为「默认顺序」。同次数的主题保留原有顺序；搜索和类别筛选后仍按所选顺序排列。主题卡片不显示浏览次数。
+
+成功加载一次主题详情页后，前端发送 `POST /api/svg-kits/:themeId/views` 计 1 次。刷新、重新进入主题会再次计数；搜索、切换背景、打开图标弹窗不增加计数。管理页加载主题不计数。这里统计的是浏览次数，未按访客去重，也不防脚本刷量；只用于素材浏览排序。历史访问不会补计。
+
+列表通过 `GET /api/svg-kits/stats/views` 读取计数，不走主题资源的一天 CDN 缓存。统计失败时列表保留默认顺序并提示热度暂不可用；计数失败不影响详情页。主题与 SVG 的读取路径不变。
+
+生产计数存入 D1，只保存主题 ID 和累计次数，不保存 IP、Cookie 或其他访客信息。SQL 使用原子累加，避免并发访问覆盖计数；上传、覆盖种子不会重置次数。删除主题不清除计数，重新使用同一 ID 时继承累计次数。本地计数存入 `.data/svg-kits/views.json`，与线上隔离。
+
+### 启用线上统计
+
+生产环境使用数据库 `fx-lab-svg-kit-views`，绑定名为 `SVG_KITS_VIEWS`，配置保存在 `wrangler.toml`。新环境按以下步骤配置；未绑定 D1 时画廊仍可浏览，热度统计返回 503。
+
+2026-10-12 已应用 `0001_svg_kit_views.sql` 并直接发布到生产，部署 ID 为 `1145e422-00dd-44f5-be79-7b035b76a0c0`。已通过 HTTP 验证 Pages 默认域名与自定义域名读取同一份计数，主题浏览计数可写入，跨站计数请求返回 403。未完成浏览器交互验证。后续 Git 自动部署使用仓库中的实现和 D1 配置。
+
+1. 创建 D1 数据库 `fx-lab-svg-kit-views`：`npx wrangler d1 create fx-lab-svg-kit-views`。
+2. 在 `wrangler.toml` 的 `[[d1_databases]]` 中填入新环境的实际 `database_id`；绑定名必须为 `SVG_KITS_VIEWS`。
+3. 应用建表迁移：`npx wrangler d1 migrations apply fx-lab-svg-kit-views --remote`。表结构在 `migrations/0001_svg_kit_views.sql`，只创建浏览计数表。
+4. 重新发布 Pages，使绑定与前端代码一起生效。
+
+实现依据：[Pages D1 绑定](https://developers.cloudflare.com/pages/functions/bindings/#d1-databases)、[D1 参数化查询](https://developers.cloudflare.com/d1/worker-api/prepared-statements/)。统计请求会消耗 Pages Functions 和 D1 额度，资源 CDN 仍按原方式缓存。
+
+验证：`npx tsx --test functions/_lib/*.test.ts`（D1 SQL 的并发测试需要本机有 `sqlite3` 命令）；`npm run build`。
 
 ## 上传
 

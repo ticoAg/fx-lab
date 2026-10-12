@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { KitSvg } from '../../components/svg-kits/KitSvg.tsx'
 import { SvgKitsHeader } from '../../components/svg-kits/SvgKitsHeader.tsx'
 import { defaultKitStage, writeStoredKitStage, type KitStage } from '../../components/svg-kits/stageBg.ts'
-import { iconUrl, SVG_KIT_KIND_LABELS, SVG_KIT_KINDS, type SvgKitKind } from '../../content/svg-kits/index.ts'
+import { iconUrl, loadSvgKitViews, SVG_KIT_KIND_LABELS, SVG_KIT_KINDS, type SvgKitKind, type SvgKitViews } from '../../content/svg-kits/index.ts'
 import { useSvgKits } from '../../content/svg-kits/useSvgKits.ts'
 import { t, useLang } from '../../i18n.ts'
 import { useTheme } from '../../ThemeProvider.tsx'
@@ -15,7 +15,19 @@ export function SvgKitsIndexPage() {
   const { data, error, loading } = useSvgKits()
   const [kind, setKind] = useState<SvgKitKind | 'all'>('all')
   const [search, setSearch] = useState('')
+  const [sort, setSort] = useState<'popular' | 'default'>('popular')
+  const [views, setViews] = useState<SvgKitViews | null>(null)
+  const [viewsUnavailable, setViewsUnavailable] = useState(false)
   const [bg, setBg] = useState<KitStage>(() => defaultKitStage(theme))
+
+  useEffect(() => {
+    let alive = true
+    loadSvgKitViews().then(
+      (next) => { if (alive) setViews(next) },
+      () => { if (alive) setViewsUnavailable(true) },
+    )
+    return () => { alive = false }
+  }, [])
 
   useEffect(() => {
     // If user hasn't explicitly set a custom stage, coordinate with global theme
@@ -42,6 +54,9 @@ export function SvgKitsIndexPage() {
       k.description.en.toLowerCase().includes(q)
     )
   })
+  if (sort === 'popular' && views) {
+    filteredKits.sort((a, b) => (views[b.id] ?? 0) - (views[a.id] ?? 0))
+  }
 
   const grandTotal = allKits.reduce((n, k) => n + k.icons.length, 0)
 
@@ -81,11 +96,6 @@ export function SvgKitsIndexPage() {
               <span className="kit-stat-pill highlight">
                 <strong>100%</strong> {zh ? '自包含 CSS 动画' : 'Pure CSS'}
               </span>
-              {data && (
-                <span className="kit-stat-pill subtle">
-                  {zh ? '存储' : 'Store'}: {data.store.backend.toUpperCase()}
-                </span>
-              )}
             </div>
           )}
         </section>
@@ -121,6 +131,15 @@ export function SvgKitsIndexPage() {
               })}
             </div>
 
+            <div className="kit-seg kit-kind-filter" role="group" aria-label={zh ? '主题排序' : 'Sort themes'}>
+              <button type="button" className={sort === 'popular' ? 'active' : ''} aria-pressed={sort === 'popular'} onClick={() => setSort('popular')}>
+                {zh ? '浏览热度' : 'Most viewed'}
+              </button>
+              <button type="button" className={sort === 'default' ? 'active' : ''} aria-pressed={sort === 'default'} onClick={() => setSort('default')}>
+                {zh ? '默认顺序' : 'Default order'}
+              </button>
+            </div>
+
             <div className="kit-search-wrap">
               <svg className="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="11" cy="11" r="8" />
@@ -145,6 +164,12 @@ export function SvgKitsIndexPage() {
               )}
             </div>
           </div>
+        )}
+
+        {viewsUnavailable && sort === 'popular' && !loading && allKits.length > 0 && (
+          <p className="kit-sort-note" role="status">
+            {zh ? '热度暂不可用，当前按默认顺序显示。' : 'Popularity is unavailable. Showing the default order.'}
+          </p>
         )}
 
         {loading && (

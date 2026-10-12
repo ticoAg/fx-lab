@@ -73,6 +73,7 @@ function apiMiddleware(projectRoot: string): Connect.NextHandleFunction {
       const request = await toFetchRequest(req)
       const response = await handleSvgKitsRequest(request, local, seed, {
         adminToken,
+        views: local,
         setupHint: 'Local store is .data/svg-kits. Production needs an R2 bucket bound as SVG_KITS plus SVG_KITS_ADMIN_TOKEN.',
       })
       await send(res, response)

@@ -1,5 +1,5 @@
 import { ASSET_CDN } from '../../cdn.ts'
-import { setSvgKitSource, SVG_KITS_API, SVG_KITS_SEED, type SvgKitsStoreInfo, type SvgKitTheme } from './types.ts'
+import { setSvgKitSource, SVG_KITS_API, SVG_KITS_SEED, validateSvgKitViews, type SvgKitsStoreInfo, type SvgKitTheme } from './types.ts'
 
 export type SvgKitsListResponse = {
   store: SvgKitsStoreInfo
@@ -126,6 +126,21 @@ export async function loadSvgKit(id: string) {
     /* fall through */
   }
   return loadSeedTheme(id)
+}
+
+export async function loadSvgKitViews() {
+  const res = await fetch(`${SVG_KITS_API}/stats/views`, { cache: 'no-store' })
+  if (!res.ok) throw new Error('Theme popularity unavailable')
+  return validateSvgKitViews(await res.json())
+}
+
+export async function recordSvgKitView(id: string) {
+  await fetch(`${SVG_KITS_API}/${encodeURIComponent(id)}/views`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: '{}',
+    keepalive: true,
+  })
 }
 
 export async function saveSvgKit(theme: SvgKitTheme, files: Record<string, string>, token: string) {

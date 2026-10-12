@@ -1,7 +1,7 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { AssetBody, KitStore } from '../../functions/_lib/http.ts'
-import type { StoreInfo, SvgKitTheme } from '../../functions/_lib/model.ts'
+import { validateSvgKitViews, type StoreInfo, type SvgKitTheme } from '../../functions/_lib/model.ts'
 
 const SVG_TYPE = 'image/svg+xml; charset=utf-8'
 
@@ -44,6 +44,18 @@ export class FsKitStore implements KitStore {
 
   async get(id: string) {
     return readJson<SvgKitTheme>(join(this.themeDir(id), 'manifest.json'))
+  }
+
+  async readViews() {
+    return validateSvgKitViews(readJson<unknown>(join(this.root, 'views.json')) ?? {})
+  }
+
+  async recordView(themeId: string) {
+    // Keep the local read/increment/write synchronous so requests cannot lose increments.
+    const path = join(this.root, 'views.json')
+    const views = validateSvgKitViews(readJson<unknown>(path) ?? {})
+    views[themeId] = (views[themeId] ?? 0) + 1
+    writeFileSync(path, JSON.stringify(views) + '\n')
   }
 
   async getIcon(themeId: string, iconId: string): Promise<AssetBody | null> {
