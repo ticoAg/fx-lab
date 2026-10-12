@@ -1,6 +1,6 @@
 # SVG Kits 素材自动化流水线（Grok bot 组织方案）
 
-给主 bot（编排者）看的完整说明。目标：持续增加主题，持续提高现有主题的质量和数量。Google Sheet 当任务数据库，bot 之间只通过 Sheet 交接，不直接对话。
+给主 bot（编排者）看的完整说明。目标：持续增加主题，持续提高现有主题的质量和数量。Google Sheet 当任务数据库，保存全部状态；Orchestrator 用消息给其他 bot 派活，其他 bot 做完一件事就向 Orchestrator 汇报。bot 没有定时器，流水线靠"汇报 → 派下一件"持续运转，见第 3 节。
 
 素材的具体做法以仓库里的 skill 为准：`.agents/skills/svg-kit-assets/SKILL.md`（以下简称 skill）。本文只规定分工、交接和规则，不重复画法。
 
@@ -13,7 +13,7 @@
  Scout-New ×2  ─┐              Producer-01..10              Publisher
  Scout-Audit ×1 ─┼─写入→ [tasks: proposed]                       
                  │      编排者审核 → ready
-                 │                 ↓ 认领
+                 │                 ↓ 编排者派给某个 Producer
                  │          claimed → in_progress → in_review ──→ 复验 → PUT 发布 → published
                  │                     ↑                │
                  │                     └─ changes_requested ┘
@@ -27,7 +27,7 @@
 | Orchestrator（主 bot） | 1 | 审批选题、调度、回收、汇报 | Sheet 读写 |
 | Scout-New | 2 | 找值得做的新主题，写出制作规格 | Sheet 写 `tasks`（只能新增 proposed 行） |
 | Scout-Audit | 1 | 审计现有主题，提出补充和重绘任务 | Sheet 写 `tasks`，读线上 API |
-| Producer | 10 | 按 skill 制作、自测，打包上传 | 仓库只读 clone、Drive 上传、Sheet 改自己认领的行 |
+| Producer | 10 | 按 skill 制作、自测，打包上传 | 仓库只读 clone、Drive 上传、Sheet 改派给自己的行 |
 | Publisher | 1 | 独立复验、发布到线上、线上核对 | **唯一持有 `SVG_KITS_ADMIN_TOKEN`** |
 
 为什么发布只给 1 个 bot：
@@ -42,7 +42,7 @@
 
 ## 2. Google Sheet 结构
 
-一个 Spreadsheet，三个工作表。所有时间用 UTC ISO 格式（`2026-10-12T08:30:00Z`）。
+一个 Spreadsheet，四个工作表。所有时间用 UTC ISO 格式（`2026-10-12T08:30:00Z`）。
 
 ### 2.1 `tasks`（主表，每行一个任务）
 
@@ -58,18 +58,19 @@
 | `score` | Scout | 0–100，评分规则见第 4 节 |
 | `priority` | Orchestrator | P0 / P1 / P2 |
 | `status` | 各角色按状态机改 | 见 2.4 |
-| `owner` | 认领者 | bot 名，如 `Producer-03` |
-| `claimed_at` / `heartbeat_at` | 认领者 | 认领时间、最近一次心跳 |
+| `owner` | Orchestrator | 派给谁，bot 名，如 `Producer-03` |
+| `claimed_at` | Orchestrator | 派活时间 |
+| `heartbeat_at` | owner | 最近一次阶段进展的时间，见第 3 节 |
 | `base_hash` | Producer | 开工时线上 manifest 的 sha256（新主题填 `none`），发布前用来检测别人是否改过 |
 | `package_url` | Producer | 产物包链接（Drive 文件夹） |
 | `review_notes` | Publisher | 退回原因，逐条列出 |
 | `review_round` | Publisher | 退回次数，上限 2 |
 | `live_url` | Publisher | `https://fx-lab.ticoag.fun/svg-kits/<theme_id>` |
 | `result` | Publisher | 实测数字：件数（新增多少）、最大字节 / 元素数、最小边距、线上件数 |
-| `depends_on` | Scout / Orchestrator | 前置任务 id，前置未 `published` 不可认领 |
+| `depends_on` | Scout / Orchestrator | 前置任务 id，前置未 `published` 不可派发 |
 | `updated_at` | 每次写入者 | |
 
-### 2.2 `themes`（主题总览，Orchestrator 每 6 小时刷新）
+### 2.2 `themes`（主题总览，Orchestrator 每发布 5 个任务或每天至少刷新一次）
 
 | 列 | 来源 |
 | --- | --- |
@@ -85,10 +86,14 @@
 
 `time, bot, task_id, event, detail`。每次状态变化、失败、上报都追加一行。排查问题只看这张表。
 
-### 2.4 状态机
+### 2.4 `notes`（经验记录，只追加）
+
+`time, role, note`。常见退回原因、踩过的坑、调研中发现已经做烂的方向。bot 换班时，新 bot 先读本角色的 notes（见第 3 节"上下文换班"）。
+
+### 2.5 状态机
 
 ```
-proposed ──Orchestrator──→ ready ──Producer 认领──→ claimed → in_progress → in_review
+proposed ──Orchestrator──→ ready ──Orchestrator 派发──→ claimed → in_progress → in_review
    │                                                                     │
    └→ rejected                                  changes_requested ←──────┤ (Publisher 退回)
                                                       │                  │
@@ -101,17 +106,39 @@ proposed ──Orchestrator──→ ready ──Producer 认领──→ claime
 
 ---
 
-## 3. 共同规则（所有 bot 都遵守）
+## 3. 运行方式与共同规则
 
-1. **一个主题同一时间只能有一个进行中的任务**（`claimed` / `in_progress` / `in_review` / `changes_requested`）。认领前检查 `themes.active_task`。
-2. **认领防撞**：Sheet 没有事务。认领时写 `owner`、`claimed_at`、`status=claimed`，等 10 秒后重新读这一行：`owner` 仍是自己才开工，否则放弃换下一个。
-3. **心跳**：进行中每 30 分钟更新一次 `heartbeat_at`。超过 2 小时没心跳，Orchestrator 把任务退回 `ready` 并清空 `owner`。
-4. **种子主题不碰**：`seed/svg-kits/index.json` 里的 pastoral、line-basics 等主题需要 git push，多 bot 并发会冲突。只处理 R2 主题（线上 `index.json` 里有、且不是只存在于种子的）。basics、cthulhu-mythos 线上已在 R2，按 R2 主题处理。
-5. **不写仓库**：Producer 用自己的仓库 clone，只读代码和脚本，不提交、不推送。
-6. **临时文件按任务隔离**：工作目录用 `/tmp/fx-lab-<theme_id>-<task_id>-work/`；skill 第 7 步的 payload 文件改成 `/tmp/fx-lab-payload-<task_id>.json`，避免同机多个 bot 互相覆盖。
-7. **版权**：不画受版权保护的具体角色、logo、商标、可识别的作品场景。做风格和题材（"日系热血漫风格的道具"可以，"某作品主角"不行）。拿不准的选题标 `blocked` 交人类。
-8. **只报实测**：结果栏只写命令真实输出的数字。某一步失败就写失败在哪，不写"已完成"。
-9. **每次状态变化都写 `log`**。
+### 3.1 运行方式：消息驱动，没有定时器
+
+bot 不能给自己设定时任务，但可以给其他 bot 发消息安排工作，会话上下文会一直保留。所以流水线靠"做完就汇报，收到汇报就派下一件"转起来：
+
+```
+Orchestrator ──派活──→ Producer-03：做 T-20261012-007
+Producer-03  ──汇报──→ Orchestrator：DONE T-20261012-007 in_review
+Orchestrator ──派活──→ Publisher：审 T-20261012-007
+             ──派活──→ Producer-03：做 T-20261012-012
+```
+
+1. **只由 Orchestrator 派活**。其他 bot 不自己从 Sheet 挑任务，只做派给自己的那一件。Orchestrator 派活时先在 Sheet 写好 `owner`、`claimed_at`、`status=claimed`，再发消息。只有一个人派活，就不会出现两个 bot 抢同一个任务。
+2. **每个工作单元结束必须汇报**。成功、失败、卡住都要发，格式固定：
+   `[DONE|FAIL|BLOCKED] <bot> <task_id> <新状态> <一句话>`
+   bot 做完不汇报，流水线就在它这里断了。汇报之后就停下，等下一条派活消息。
+3. **Orchestrator 把每条汇报当作一次唤醒**：先核对 Sheet，再做第 7.2 节的检查，最后给所有空闲 bot 派活。
+4. **不能让所有 bot 同时空闲**。只要有一个 bot 在干活，它的汇报就会再次唤醒 Orchestrator。所以 Orchestrator 始终让至少 1 个 Scout 在工作：队列已满时，派 Scout 去做审计、补全或细化已有 brief，而不是停下。
+5. **长任务分阶段记进度**。Producer 一个任务常常超过 1 小时。每完成一个阶段（manifest 定稿、出图完成、校验通过、打包上传）就更新 `heartbeat_at` 并写 `log`，但只在整个任务结束时才给 Orchestrator 发汇报。
+6. **失联处理**。Orchestrator 每次被唤醒都检查进行中任务：`heartbeat_at` 超过 2 小时没变，先给这个 bot 发一条询问；下次被唤醒时仍没有回音，就把任务退回 `ready`、清空 `owner`，改派给别人，并新建一个 bot 替换失联的那个。
+7. **全线停止只能由人类重启**。如果 Orchestrator 自己出错，没有任何东西能唤醒它。你每天应该收到一次汇报（第 7.3 节），某天没收到，就是断了：给 Orchestrator 发一条"读 Sheet，恢复流水线"。所有状态都在 Sheet 里，它能从 Sheet 恢复。
+8. **上下文换班**。会话上下文一直累积，会越来越长、越来越慢，最终被截断。Producer 每完成 10 个任务、Scout 每做完 20 轮、Publisher 每发布 20 个任务，就把值得留下的经验写进 `notes` 表，然后向 Orchestrator 汇报 `ROTATE`。Orchestrator 新建一个同角色的 bot 接替：新 bot 的初始消息 = 本节和第 3.2 节的共同规则 + 本角色章节全文 + skill 路径 + "先读 notes 表里本角色的记录"。Orchestrator 自己的上下文过长时，在每日汇报里告诉人类，由人类开一个新的 Orchestrator，让它从 Sheet 和 notes 接手。
+
+### 3.2 共同规则（所有 bot 都遵守）
+
+1. **一个主题同一时间只能有一个进行中的任务**（`claimed` / `in_progress` / `in_review` / `changes_requested`）。Orchestrator 派活前检查 `themes.active_task`。
+2. **种子主题不碰**：`seed/svg-kits/index.json` 里的 pastoral、line-basics 等主题需要 git push，多 bot 并发会冲突。只处理 R2 主题（线上 `index.json` 里有、且不是只存在于种子的）。basics、cthulhu-mythos 线上已在 R2，按 R2 主题处理。
+3. **不写仓库**：Producer 用自己的仓库 clone，只读代码和脚本，不提交、不推送。
+4. **临时文件按任务隔离**：工作目录用 `/tmp/fx-lab-<theme_id>-<task_id>-work/`；skill 第 7 步的 payload 文件改成 `/tmp/fx-lab-payload-<task_id>.json`，避免同机多个 bot 互相覆盖。
+5. **版权**：不画受版权保护的具体角色、logo、商标、可识别的作品场景。做风格和题材（"日系热血漫风格的道具"可以，"某作品主角"不行）。拿不准的选题标 `blocked` 交人类。
+6. **只报实测**：结果栏只写命令真实输出的数字。某一步失败就写失败在哪，不写"已完成"。
+7. **每次状态变化都写 `log`**。
 
 ---
 
@@ -136,11 +163,11 @@ proposed ──Orchestrator──→ ready ──Producer 认领──→ claime
 | 与现有主题差异 | 20 | 和 `themes` 表里已有主题重叠越少分越高 |
 | 风险 | 15 | 无版权问题、无敏感内容得满分 |
 
-低于 60 分不写入。每轮最多写 5 条。`ready` + `proposed` 合计超过 30 条时，只调研不写入，等队列消化。
+每收到一次派活做一轮调研，做完汇报。低于 60 分不写入。每轮最多写 5 条。`ready` + `proposed` 合计超过 30 条时，Orchestrator 会改派细化任务（补全已有 brief 的图标清单、核对重名），不要硬凑新选题。
 
 ### 4.2 Scout-Audit ×1（审计现有主题）
 
-每轮挑 3–5 个主题，按浏览量从高到低轮转：
+每收到一次派活，挑 3–5 个主题，按浏览量从高到低轮转（上次审到哪里记在 `notes` 表），做完汇报：
 
 1. 拉 manifest 和全部 SVG 到 `/tmp`，用 skill 的 `sheet.mjs` 出 130px 总览和 48px 小尺寸图，用 `validate-static.mts` 跑静态校验。
 2. 给 `quality` 打分：A 无需处理；B 数量少或分类不均 → 提 `enrich`；C 画质低（无明暗、线宽乱、小尺寸认不出）→ 提 `redraw`；D 校验失败或显示异常 → 提 `fix`。
@@ -164,9 +191,9 @@ proposed ──Orchestrator──→ ready ──Producer 认领──→ claime
 
 ## 5. Producer ×10（制作）
 
-循环：
+每次只做 Orchestrator 派给自己的一个任务：
 
-1. 从 `tasks` 取 `status=ready`、`depends_on` 已完成、主题无进行中任务的行，按 `priority` → `score` → `created_at` 排序，取第一个，按第 3 节规则认领。
+1. 读派活消息里的 `task_id`，在 Sheet 确认这一行 `owner` 是自己。不是就汇报 `FAIL` 并停下。
 2. 改 `status=in_progress`。拉线上 manifest，算 sha256 写进 `base_hash`（新主题写 `none`）。
 3. 按 skill 第 2–6 步执行：原稿下载、先写 manifest、用 `svgkit.py` 生成、看图迭代、静态校验 + 浏览器校验全部通过。`enrich` / `redraw` 必须遵守 skill 第 3 步"已有图标 id、顺序、分类、动画不能改"。
 4. **不发布**（skill 第 7 步由 Publisher 做）。打包上传到 Drive：`fx-lab-pipeline/<task_id>/`，包含：
@@ -174,16 +201,16 @@ proposed ──Orchestrator──→ ready ──Producer 认领──→ claime
    - `all.png`、`film.png`、`small.png`，重绘任务另加新旧对比图
    - `validate-static.txt`、`validate-browser.json`（原始输出）
    - `base_hash.txt`
-5. 填 `package_url`，改 `status=in_review`，写 `log`，进入下一轮。
-6. 被退回（`changes_requested`）时优先处理自己的退回任务，再认领新任务。
+5. 填 `package_url`，改 `status=in_review`，写 `log`，向 Orchestrator 汇报 `DONE`，然后停下等下一条派活。
+6. 被退回（`changes_requested`）的任务，Orchestrator 会派回给原 Producer，因为它的上下文里有这个主题的全部制作过程。
 
-卡住超过 1 小时（同一个校验反复失败）就改 `blocked`，在 `log` 写清卡在哪，不要放宽阈值。
+每个阶段结束更新 `heartbeat_at`（第 3.1 节第 5 条）。卡住超过 1 小时（同一个校验反复失败）就改 `blocked`，在 `log` 写清卡在哪，汇报 `BLOCKED`，不要放宽阈值。
 
 ---
 
 ## 6. Publisher ×1（复验、发布、线上核对）
 
-按 `in_review` 的 `updated_at` 先后处理，一次只处理一个。
+Orchestrator 按 `in_review` 的 `updated_at` 先后派过来，一次只处理一个，处理完汇报（通过发布汇报 `DONE ... published`，退回汇报 `DONE ... changes_requested`）。
 
 1. **复验，不信任包里的报告**：下载 `theme/`，自己重跑 `validate-static.mts`（重绘任务加 `--original`）和 `validate-browser.mjs`。
 2. **看图**：280px 逐批看，对照 `brief` 检查件数、分类、画面描述、是否有前后层错误、悬空、深色背景下轮廓消失（skill 第 5 步的清单）。检查版权风险、和其他主题是否重复。
@@ -200,19 +227,28 @@ proposed ──Orchestrator──→ ready ──Producer 认领──→ claime
 
 ### 7.1 启动
 
-1. 建 Sheet 和三个工作表，表头按第 2 节。
-2. 按第 1 节创建 14 个 bot，每个 bot 的系统提示 = 第 3 节共同规则 + 本角色那一节全文 + skill 路径。
-3. 先用 `themes` 刷新逻辑填好主题总览。
-4. **试运行**：先只开 Scout-New-A、Scout-Audit、2 个 Producer、Publisher，跑通 3 个任务（1 个 new_theme、1 个 enrich、1 个 redraw）都到 `published`，再开满。
+1. 建 Sheet 和四个工作表（`tasks`、`themes`、`log`、`notes`），表头按第 2 节。
+2. 按第 1 节创建 14 个 bot，每个 bot 的初始消息 = 第 3 节全文 + 本角色那一节全文 + skill 路径 + "做完一件事就按格式向 Orchestrator 汇报，然后停下等派活"。
+3. 先刷新 `themes` 表。
+4. 给两个 Scout 各派一轮调研，流水线从它们的汇报开始转动。
+5. **试运行**：先只开 Scout-New-A、Scout-Audit、2 个 Producer、Publisher，跑通 3 个任务（1 个 new_theme、1 个 enrich、1 个 redraw）都到 `published`，再开满。
 
-### 7.2 每 15 分钟一轮
+### 7.2 每次收到汇报时做的事
 
-1. 审 `proposed`：重名或与已有主题重叠 → `rejected` 并写原因；分数 ≥75 设 P0/P1，60–75 设 P2；改 `ready`。保持 `ready` 里新主题和提质任务大致各半，不要只做新主题。
-2. 回收超时：`heartbeat_at` 超过 2 小时 → 退回 `ready`，清 `owner`，写 `log`。
-3. 维护 `themes.active_task`，发现同一主题有两个进行中任务时，把较晚认领的退回 `ready`。
-4. 失败率监控：同一个 Producer 连续 2 个 `failed`，暂停它并检查它的提示词。
+1. 按汇报更新 Sheet 和 `log`，核对汇报内容和 Sheet 一致。
+2. 审 `proposed`：重名或与已有主题重叠 → `rejected` 并写原因；分数 ≥75 设 P0/P1，60–75 设 P2；改 `ready`。保持 `ready` 里新主题和提质任务大致各半，不要只做新主题。
+3. 失联检查：按第 3.1 节第 6 条处理 `heartbeat_at` 超过 2 小时的任务。
+4. 维护 `themes.active_task`，发现同一主题有两个进行中任务时，把较晚派出的退回 `ready`。
+5. 派活，按这个顺序给空闲 bot 派：
+   - Publisher：最早进入 `in_review` 的任务；
+   - Producer：先派回自己的 `changes_requested` 任务，再从 `ready` 中按 `priority` → `score` → `created_at` 取 `depends_on` 已完成、主题无进行中任务的一条；
+   - Scout：始终保持至少 1 个在工作（第 3.1 节第 4 条）。
+6. 收到 `ROTATE`：按第 3.1 节第 8 条换班。
+7. 失败率监控：同一个 Producer 连续 2 个 `failed`，暂停给它派活，检查它的初始消息和 `notes`。
 
 ### 7.3 每天一次汇报给人类
+
+没有定时器，以"距上次汇报超过 24 小时后收到的第一条汇报"为触发点。
 
 当天发布数（新主题 / 补充 / 重绘）、新增图标总数、审核通过率、`blocked` 列表及原因、队列长度、浏览量前 10 的主题变化。
 
@@ -237,6 +273,7 @@ proposed ──Orchestrator──→ ready ──Producer 认领──→ claime
 
 ## 9. 已知限制
 
-- Sheet 认领靠"写入后复读"防撞，极低概率仍会两个 bot 同时认领；第 3 节规则 1 和 Orchestrator 的重复检查会兜底，最多浪费一次制作。任务量大到经常撞车时，改为 Orchestrator 直接分配（写 `owner`），Producer 只做分配给自己的任务。
+- 流水线靠汇报驱动。Orchestrator 自己出错或所有 bot 同时停下，就不会再有人唤醒它，只能由人类重启（第 3.1 节第 7 条）。
+- 所有派活都经过 Orchestrator，它的上下文增长最快，需要人类定期帮它换班。
 - 发布串行，Publisher 是吞吐上限。审核积压超过 10 条时，加一个只做第 6 节 1–3 步的 Reviewer，发布仍只由 Publisher 执行。
 - `index.json` 的并发写问题靠单一发布者规避，代码本身没有修。
