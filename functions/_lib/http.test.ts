@@ -1,6 +1,10 @@
 import assert from 'node:assert/strict'
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { test } from 'node:test'
-import { handleSvgKitsRequest, type AssetBody, type KitStore } from './http.ts'
+import { FsKitStore } from '../../scripts/lib/svg-kits-fs-store.ts'
+import { handleSvgKitsRequest, planUnlist, updateIndex, type AssetBody, type KitStore, type UnlistResult } from './http.ts'
 import type { StoreInfo, SvgKitIcon, SvgKitTheme } from './model.ts'
 
 const TOKEN = 'test-token'
@@ -32,7 +36,8 @@ function svg(id: string) {
 function memoryStore(info: StoreInfo, themes: SvgKitTheme[] = []) {
   const manifests = new Map(themes.map((item) => [item.id, structuredClone(item)]))
   const files = new Map<string, Uint8Array>()
-  const calls = { get: [] as string[], getIcon: [] as string[], putTheme: 0 }
+  const index = themes.map((item) => item.id)
+  const calls = { get: [] as string[], getIcon: [] as string[], putTheme: 0, unlist: 0, indexWrites: 0 }
 
   const store: KitStore = {
     info,
@@ -58,9 +63,18 @@ function memoryStore(info: StoreInfo, themes: SvgKitTheme[] = []) {
     async deleteTheme(id) {
       return manifests.delete(id)
     },
+    async unlistThemes(slugs) {
+      calls.unlist += 1
+      const plan = planUnlist(index, slugs)
+      if (plan.changed) {
+        calls.indexWrites += 1
+        index.splice(0, index.length, ...plan.themes)
+      }
+      return { removed: plan.removed, absent: plan.absent, themes: [...index] }
+    },
   }
 
-  return { store, calls, manifests }
+  return { store, calls, manifests, index }
 }
 
 function putRequest(kit: SvgKitTheme, files: Record<string, string> = {}, method = 'PUT') {
@@ -246,6 +260,155 @@ test('public views count existing themes, including seeds, without changing mani
   assert.equal(response.headers.get('cache-control'), 'no-store')
   assert.deepEqual(await response.json(), { live: 2, seeded: 1 })
   assert.equal(writable.calls.putTheme, 0)
+})
+
+function unlistRequest(body: unknown, token: string | null = TOKEN) {
+  const headers: Record<string, string> = { 'content-type': 'application/json' }
+  if (token) headers.authorization = `Bearer ${token}`
+  return new Request('https://example.test/api/svg-kits/unlist', {
+    method: 'POST',
+    headers,
+    body: JSON.stringify(body),
+  })
+}
+
+test('unlist drops index ids once, keeps manifests, and ignores ids already absent', async () => {
+  const writable = memoryStore({ backend: 'r2', writable: true }, [
+    theme('egyptian', ['ra']),
+    theme('jackalope-prairie-cryptid', ['hare']),
+    theme('celtic-slavic', ['knot']),
+  ])
+  const seed = memoryStore({ backend: 'seed', writable: false })
+  const opts = { adminToken: TOKEN, setupHint: SETUP }
+  const body = {
+    slugs: ['jackalope-prairie-cryptid', 'already-gone', 'jackalope-prairie-cryptid'],
+    protect: ['egyptian', 'celtic-slavic'],
+  }
+
+  const first = await handleSvgKitsRequest(unlistRequest(body), writable.store, seed.store, opts)
+  assert.equal(first.status, 200)
+  const listed = (await first.json()) as UnlistResult & { ok: boolean }
+  assert.equal(listed.ok, true)
+  assert.deepEqual(listed.removed, ['jackalope-prairie-cryptid'])
+  assert.deepEqual(listed.absent, ['already-gone'])
+  assert.deepEqual(listed.themes, ['egyptian', 'celtic-slavic'])
+  assert.equal(writable.manifests.has('jackalope-prairie-cryptid'), true)
+  assert.equal(writable.calls.indexWrites, 1)
+
+  const again = await handleSvgKitsRequest(unlistRequest(body), writable.store, seed.store, opts)
+  assert.equal(again.status, 200)
+  const repeat = (await again.json()) as UnlistResult
+  assert.deepEqual(repeat.removed, [])
+  assert.deepEqual(repeat.absent, ['jackalope-prairie-cryptid', 'already-gone'])
+  assert.deepEqual(repeat.themes, ['egyptian', 'celtic-slavic'])
+  assert.equal(writable.calls.indexWrites, 1)
+  assert.equal(writable.calls.unlist, 2)
+})
+
+test('unlist refuses protected slugs without reading the index', async () => {
+  const writable = memoryStore({ backend: 'r2', writable: true }, [theme('egyptian', ['ra'])])
+  const seed = memoryStore({ backend: 'seed', writable: false })
+  const opts = { adminToken: TOKEN, setupHint: SETUP }
+
+  const response = await handleSvgKitsRequest(
+    unlistRequest({ slugs: ['egyptian', 'jackalope-prairie-cryptid'], protect: ['egyptian'] }),
+    writable.store,
+    seed.store,
+    opts,
+  )
+  assert.equal(response.status, 400)
+  assert.deepEqual(await response.json(), {
+    error: 'refusing to unlist protected slugs',
+    slugs: ['egyptian'],
+  })
+  assert.equal(writable.calls.unlist, 0)
+  assert.deepEqual(writable.index, ['egyptian'])
+})
+
+test('unlist requires auth, json, and a protect list', async () => {
+  const writable = memoryStore({ backend: 'r2', writable: true }, [theme('egyptian', ['ra'])])
+  const seed = memoryStore({ backend: 'seed', writable: false })
+  const opts = { adminToken: TOKEN, setupHint: SETUP }
+
+  const denied = await handleSvgKitsRequest(unlistRequest({ slugs: ['egyptian'], protect: [] }, null), writable.store, seed.store, opts)
+  assert.equal(denied.status, 401)
+
+  const wrong = await handleSvgKitsRequest(unlistRequest({ slugs: ['egyptian'], protect: [] }, 'nope'), writable.store, seed.store, opts)
+  assert.equal(wrong.status, 401)
+
+  const text = await handleSvgKitsRequest(
+    new Request('https://example.test/api/svg-kits/unlist', {
+      method: 'POST',
+      headers: { authorization: `Bearer ${TOKEN}`, 'content-type': 'text/plain' },
+      body: '{}',
+    }),
+    writable.store,
+    seed.store,
+    opts,
+  )
+  assert.equal(text.status, 415)
+
+  const missing = await handleSvgKitsRequest(unlistRequest({ slugs: ['jackalope-prairie-cryptid'] }), writable.store, seed.store, opts)
+  assert.equal(missing.status, 400)
+  assert.equal(writable.calls.unlist, 0)
+})
+
+test('index update retries after a lost etag and keeps the concurrent id', async () => {
+  let themes = ['egyptian', 'jackalope-prairie-cryptid']
+  let etag = '1'
+  const writes: string[][] = []
+  let races = 0
+  const next = await updateIndex(
+    async () => ({ themes: [...themes], etag }),
+    async (proposed, seen) => {
+      writes.push(proposed)
+      if (races === 0 && seen === '1') {
+        races += 1
+        themes = [...themes, 'world-dragons']
+        etag = '2'
+        return false
+      }
+      assert.equal(seen, etag)
+      themes = proposed
+      etag = '3'
+      return true
+    },
+    (ids) => {
+      const plan = planUnlist(ids, ['jackalope-prairie-cryptid'])
+      return plan.changed ? plan.themes : null
+    },
+  )
+  assert.deepEqual(next, ['egyptian', 'world-dragons'])
+  assert.deepEqual(themes, ['egyptian', 'world-dragons'])
+  assert.equal(writes.length, 2)
+})
+
+test('local unlist removes index ids and leaves the theme directory in place', async () => {
+  const root = mkdtempSync(join(tmpdir(), 'fx-lab-unlist-'))
+  try {
+    const store = new FsKitStore(root, { backend: 'local', writable: true })
+    const kept = theme('egyptian', ['ra'])
+    const absorbed = theme('jackalope-prairie-cryptid', ['hare'])
+    await store.putTheme(kept)
+    await store.putTheme(absorbed)
+    const manifest = join(store.themeDir(absorbed.id), 'manifest.json')
+
+    const first = await store.unlistThemes([absorbed.id, 'already-gone'])
+    assert.deepEqual(first.removed, [absorbed.id])
+    assert.deepEqual(first.absent, ['already-gone'])
+    assert.deepEqual(first.themes, ['egyptian'])
+    assert.equal(existsSync(manifest), true)
+    assert.equal(JSON.parse(readFileSync(join(root, 'index.json'), 'utf8')).themes.includes(absorbed.id), false)
+
+    const again = await store.unlistThemes([absorbed.id])
+    assert.deepEqual(again.removed, [])
+    assert.deepEqual(again.absent, [absorbed.id])
+    assert.equal(existsSync(manifest), true)
+    const fetched = await store.get(absorbed.id)
+    assert.equal(fetched?.id, absorbed.id)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
 })
 
 test('unconfigured or failing view storage leaves theme browsing available', async () => {

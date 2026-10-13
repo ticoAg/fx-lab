@@ -2,6 +2,12 @@ import { budgetProblem, isSvgMarkup, KIT_ID_RE, validateTheme, type StoreInfo, t
 
 export type AssetBody = { body: Uint8Array; contentType: string }
 
+export type UnlistResult = {
+  removed: string[]
+  absent: string[]
+  themes: string[]
+}
+
 export type KitStore = {
   info: StoreInfo
   list(): Promise<SvgKitTheme[]>
@@ -9,6 +15,35 @@ export type KitStore = {
   getIcon(themeId: string, iconId: string): Promise<AssetBody | null>
   putTheme(theme: SvgKitTheme, files?: Map<string, Uint8Array>): Promise<void>
   deleteTheme(id: string): Promise<boolean>
+  unlistThemes(slugs: string[]): Promise<UnlistResult>
+}
+
+// One pass over the theme index. Order of the ids that stay is unchanged.
+export function planUnlist(themes: readonly string[], slugs: readonly string[]) {
+  const drop = new Set(slugs)
+  const present = new Set(themes)
+  const removed = themes.filter((id) => drop.has(id))
+  const absent = slugs.filter((id) => !present.has(id))
+  const next = removed.length === 0 ? [...themes] : themes.filter((id) => !drop.has(id))
+  return { removed, absent, themes: next, changed: removed.length > 0 }
+}
+
+export type IndexSnapshot = { themes: string[]; etag?: string }
+
+// Read the index, apply mutate, and write once. A false write means the etag
+// lost a race; the next attempt reads again so the other update is kept.
+export async function updateIndex(
+  read: () => Promise<IndexSnapshot>,
+  write: (themes: string[], etag: string | undefined) => Promise<boolean>,
+  mutate: (themes: string[]) => string[] | null,
+) {
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const current = await read()
+    const next = mutate(current.themes)
+    if (!next) return current.themes
+    if (await write(next, current.etag)) return next
+  }
+  throw new Error('index.json changed while updating; retry the request')
 }
 
 const SVG_TYPE = 'image/svg+xml; charset=utf-8'
@@ -42,6 +77,9 @@ export function overlayStore(primary: KitStore | null, seed: KitStore): KitStore
         throw new Error('store is read-only')
       },
       deleteTheme: async () => false,
+      unlistThemes: async () => {
+        throw new Error('store is read-only')
+      },
     }
   }
 
@@ -65,6 +103,7 @@ export function overlayStore(primary: KitStore | null, seed: KitStore): KitStore
     },
     putTheme: (theme, files) => primary.putTheme(theme, files),
     deleteTheme: (id) => primary.deleteTheme(id),
+    unlistThemes: (slugs) => primary.unlistThemes(slugs),
   }
 }
 
@@ -126,6 +165,53 @@ async function readWritePayload(request: Request) {
   }
 
   return { themeRaw, files }
+}
+
+function uniqueIds(values: unknown[], where: string, errors: string[]) {
+  if (!Array.isArray(values)) {
+    errors.push(`${where} must be an array`)
+    return []
+  }
+  const ids: string[] = []
+  const seen = new Set<string>()
+  for (const value of values) {
+    if (typeof value !== 'string' || !KIT_ID_RE.test(value)) {
+      errors.push(`${where} entry "${String(value)}" must be kebab-case`)
+      continue
+    }
+    if (seen.has(value)) continue
+    seen.add(value)
+    ids.push(value)
+  }
+  return ids
+}
+
+async function readUnlistBody(request: Request) {
+  if (request.headers.get('content-type')?.split(';')[0].trim() !== 'application/json') {
+    return { error: 'application/json is required', status: 415 as const }
+  }
+  let body: unknown
+  try {
+    body = await request.json()
+  } catch {
+    return { error: 'invalid JSON', status: 400 as const }
+  }
+  if (!body || typeof body !== 'object' || Array.isArray(body)) {
+    return { error: 'body must be an object', status: 400 as const }
+  }
+  const record = body as { slugs?: unknown; protect?: unknown }
+  if (!('protect' in record)) return { error: 'protect must be an array', status: 400 as const }
+  const errors: string[] = []
+  const slugs = uniqueIds(Array.isArray(record.slugs) ? record.slugs : [], 'slugs', errors)
+  if (!Array.isArray(record.slugs)) errors.push('slugs must be an array')
+  const protect = uniqueIds(Array.isArray(record.protect) ? record.protect : [], 'protect', errors)
+  if (!Array.isArray(record.protect)) errors.push('protect must be an array')
+  if (Array.isArray(record.slugs) && slugs.length === 0 && errors.length === 0) {
+    errors.push('slugs must not be empty')
+  }
+  if (slugs.length > 200) errors.push('slugs exceeds 200')
+  if (errors.length) return { error: errors.join('; '), status: 400 as const }
+  return { slugs, protect }
 }
 
 // Checks only the files in this request. Files already stored are not re-checked against the budget.
@@ -196,6 +282,19 @@ export async function handleSvgKitsRequest(
       if (denied) return denied
       const copied = await copyKits(seed, store)
       return jsonResponse({ ok: true, copied, store: store.info })
+    }
+
+    if (rest.length === 1 && rest[0] === 'unlist' && method === 'POST') {
+      const denied = writeGuard()
+      if (denied) return denied
+      const parsed = await readUnlistBody(request)
+      if ('error' in parsed) return jsonResponse({ error: parsed.error }, parsed.status)
+      const blocked = parsed.slugs.filter((id) => parsed.protect.includes(id))
+      if (blocked.length) {
+        return jsonResponse({ error: 'refusing to unlist protected slugs', slugs: blocked }, 400)
+      }
+      const result = await store.unlistThemes(parsed.slugs)
+      return jsonResponse({ ok: true, ...result, store: store.info })
     }
 
     if (rest.length === 0) return jsonResponse({ error: 'method not allowed' }, 405)

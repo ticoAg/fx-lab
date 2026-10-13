@@ -12,11 +12,10 @@
 // index.json 只去掉这一组被并入的 id，并保证合并后的 slug 在列表里。
 // 不调用 DELETE，不删除 themes/<旧 slug>/。旧目录留着，给还在引用 CDN 旧路径的地方兜底。
 //
-// index.json 没有单独的管理接口（PUT 只会把新 id 追加进去，DELETE 会连目录一起删）。
-// 所以改列表必须走 Wrangler，直接覆盖桶里的 index.json 这一个对象：
-//   npx wrangler r2 object get fx-lab-svg-kits/index.json --file <临时文件> --remote
-//   npx wrangler r2 object put fx-lab-svg-kits/index.json --file <临时文件> --content-type application/json --remote
-// Publisher 机器需要已经 wrangler login，或配置 CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID。
+// 从 index.json 摘掉被并入的 id 不要再用 Wrangler，也不要 DELETE。
+// 部署了 POST /api/svg-kits/unlist 之后，用 scripts/unlist-svg-kit-merges.mjs。
+// 下面的 --apply 仍会在每组 PUT 之后尝试用 Wrangler 改 index；没有 Cloudflare 凭据时这一步会失败。
+// 主题已经 PUT 过的话，不要为了摘 index 再跑 --apply。
 //
 // 清 CDN 缓存不在默认步骤里。index.json 和 manifest 会缓存一天，见 docs/deploy.md。
 // 主人点头之后再加 --purge（还要 CF_ZONE_ID 和 CF_API_TOKEN）。

@@ -1,6 +1,6 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import type { AssetBody, KitStore } from '../../functions/_lib/http.ts'
+import { planUnlist, type AssetBody, type KitStore, type UnlistResult } from '../../functions/_lib/http.ts'
 import { validateSvgKitViews, type StoreInfo, type SvgKitTheme } from '../../functions/_lib/model.ts'
 
 const SVG_TYPE = 'image/svg+xml; charset=utf-8'
@@ -84,8 +84,15 @@ export class FsKitStore implements KitStore {
     const dir = this.themeDir(id)
     if (!existsSync(dir)) return false
     rmSync(dir, { recursive: true, force: true })
-    this.writeIndex(this.readIndex().filter((x) => x !== id))
+    const ids = this.readIndex()
+    if (ids.includes(id)) this.writeIndex(ids.filter((x) => x !== id))
     return true
+  }
+
+  async unlistThemes(slugs: string[]) {
+    const plan = planUnlist(this.readIndex(), slugs)
+    if (plan.changed) this.writeIndex(plan.themes)
+    return { removed: plan.removed, absent: plan.absent, themes: plan.themes }
   }
 }
 
@@ -129,6 +136,10 @@ export class SeedDirStore implements KitStore {
 
   async deleteTheme() {
     return false
+  }
+
+  async unlistThemes(): Promise<UnlistResult> {
+    throw new Error('seed store is read-only')
   }
 }
 
