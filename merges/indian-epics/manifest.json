@@ -1,0 +1,393 @@
+{
+  "id": "indian-epics",
+  "title": {
+    "zh": "印度史诗",
+    "en": "Indian Epics"
+  },
+  "description": {
+    "zh": "摩诃婆罗多、象神断牙与人狮那罗辛哈收在一套里，共 18 件。",
+    "en": "The Mahabharata, Ganesha's broken tusk, and Narasimha, 18 icons in one kit."
+  },
+  "cover": "ganesha-ganesha",
+  "categories": {
+    "mahabharata": {
+      "zh": "摩诃婆罗多",
+      "en": "Mahabharata"
+    },
+    "kurukshetra": {
+      "zh": "俱卢之野",
+      "en": "Kurukshetra"
+    },
+    "ganesha": {
+      "zh": "象神",
+      "en": "Ganesha"
+    },
+    "ganesha-relic": {
+      "zh": "象神器物",
+      "en": "Ganesha Relics"
+    },
+    "narasimha": {
+      "zh": "那罗辛哈",
+      "en": "Narasimha"
+    },
+    "narasimha-relic": {
+      "zh": "人狮器物",
+      "en": "Narasimha Relics"
+    }
+  },
+  "icons": [
+    {
+      "id": "maha-mb-arjuna",
+      "title": {
+        "zh": "阿周那",
+        "en": "Arjuna"
+      },
+      "description": {
+        "zh": "拉满甘狄拔神弓的少年弓手，头戴金冠",
+        "en": "A young archer in a gold crown drawing the great bow to full stretch."
+      },
+      "animation": "sway",
+      "category": "mahabharata",
+      "tags": [
+        "arjuna",
+        "阿周那",
+        "arjuna",
+        "mahabharata",
+        "摩诃婆罗多"
+      ]
+    },
+    {
+      "id": "maha-mb-krishna",
+      "title": {
+        "zh": "黑天",
+        "en": "Krishna"
+      },
+      "description": {
+        "zh": "蓝肤御者吹奏金笛，头插孔雀羽",
+        "en": "A blue-skinned charioteer playing a golden flute, peacock feather in his crown."
+      },
+      "animation": "pulse",
+      "category": "mahabharata",
+      "tags": [
+        "krishna",
+        "黑天",
+        "krishna",
+        "mahabharata",
+        "摩诃婆罗多"
+      ]
+    },
+    {
+      "id": "maha-mb-bhima",
+      "title": {
+        "zh": "怖军",
+        "en": "Bhima"
+      },
+      "description": {
+        "zh": "肩扛重锤的魁梧大力士",
+        "en": "A broad-shouldered strongman resting a heavy mace on his shoulder."
+      },
+      "animation": "sway",
+      "category": "mahabharata",
+      "tags": [
+        "bhima",
+        "怖军",
+        "bhima",
+        "mahabharata",
+        "摩诃婆罗多"
+      ]
+    },
+    {
+      "id": "maha-mb-gandiva",
+      "title": {
+        "zh": "甘狄拔神弓",
+        "en": "Gandiva Bow"
+      },
+      "description": {
+        "zh": "发光的金色反曲神弓",
+        "en": "A glowing golden recurve bow with a taut string."
+      },
+      "animation": "sway",
+      "category": "kurukshetra",
+      "tags": [
+        "gandiva",
+        "甘狄拔神弓",
+        "gandiva bow",
+        "mahabharata",
+        "摩诃婆罗多"
+      ]
+    },
+    {
+      "id": "maha-mb-gada",
+      "title": {
+        "zh": "铁锤",
+        "en": "Gada Mace"
+      },
+      "description": {
+        "zh": "镶金纹的战锤旋转挥舞",
+        "en": "A gold-banded war mace whirling around."
+      },
+      "animation": "spin",
+      "category": "kurukshetra",
+      "tags": [
+        "gada",
+        "铁锤",
+        "gada mace",
+        "mahabharata",
+        "摩诃婆罗多"
+      ]
+    },
+    {
+      "id": "maha-mb-gita-scroll",
+      "title": {
+        "zh": "薄伽梵歌卷轴",
+        "en": "Gita Scroll"
+      },
+      "description": {
+        "zh": "展开的空白卷轴，无文字",
+        "en": "An unrolled blank scroll with golden rods and no writing."
+      },
+      "animation": "pulse",
+      "category": "kurukshetra",
+      "tags": [
+        "gita-scroll",
+        "薄伽梵歌卷轴",
+        "gita scroll",
+        "mahabharata",
+        "摩诃婆罗多"
+      ]
+    },
+    {
+      "id": "ganesha-ganesha",
+      "title": {
+        "zh": "象头神",
+        "en": "Ganesha"
+      },
+      "description": {
+        "zh": "圆胖可爱的象头神盘腿而坐，长鼻轻摆。",
+        "en": "A chubby, cute elephant-headed deity sitting cross-legged with a swaying trunk."
+      },
+      "animation": "sway",
+      "category": "ganesha",
+      "tags": [
+        "ganesha",
+        "indian-myth",
+        "folk",
+        "ganesha-core"
+      ]
+    },
+    {
+      "id": "ganesha-broken-tusk",
+      "title": {
+        "zh": "断牙笔",
+        "en": "Broken Tusk"
+      },
+      "description": {
+        "zh": "折断的象牙化作书写之笔，笔尖闪光。",
+        "en": "The broken tusk turned into a writing pen with sparkles."
+      },
+      "animation": "pulse",
+      "category": "ganesha",
+      "tags": [
+        "ganesha",
+        "indian-myth",
+        "folk",
+        "ganesha-core",
+        "broken"
+      ]
+    },
+    {
+      "id": "ganesha-modak",
+      "title": {
+        "zh": "莫达克甜团",
+        "en": "Modak"
+      },
+      "description": {
+        "zh": "红盘上的奶白甜团子，冒着热气。",
+        "en": "A cream sweet dumpling on a red plate with rising steam."
+      },
+      "animation": "float",
+      "category": "ganesha",
+      "tags": [
+        "ganesha",
+        "indian-myth",
+        "folk",
+        "ganesha-core",
+        "modak"
+      ]
+    },
+    {
+      "id": "ganesha-axe",
+      "title": {
+        "zh": "神斧",
+        "en": "Axe"
+      },
+      "description": {
+        "zh": "清除障碍的小斧头，斧刃发亮。",
+        "en": "A small axe with a shining blade for clearing obstacles."
+      },
+      "animation": "sway",
+      "category": "ganesha",
+      "tags": [
+        "ganesha",
+        "indian-myth",
+        "folk",
+        "ganesha-core",
+        "axe"
+      ]
+    },
+    {
+      "id": "ganesha-scroll",
+      "title": {
+        "zh": "史诗卷轴",
+        "en": "Epic Scroll"
+      },
+      "description": {
+        "zh": "展开的长卷，抽象虚线代表诗行，无文字。",
+        "en": "A long unrolling scroll with abstract dashed lines, no writing."
+      },
+      "animation": "none",
+      "category": "ganesha-relic",
+      "tags": [
+        "ganesha",
+        "indian-myth",
+        "folk",
+        "epic-family",
+        "scroll"
+      ]
+    },
+    {
+      "id": "ganesha-trident",
+      "title": {
+        "zh": "三叉戟",
+        "en": "Trident"
+      },
+      "description": {
+        "zh": "闪着光芒的三叉戟，挂着小鼓。",
+        "en": "A gleaming trident with a small drum tied on."
+      },
+      "animation": "pulse",
+      "category": "ganesha-relic",
+      "tags": [
+        "ganesha",
+        "indian-myth",
+        "folk",
+        "epic-family",
+        "trident"
+      ]
+    },
+    {
+      "id": "nara-narasimha-roar",
+      "title": {
+        "zh": "人狮怒吼",
+        "en": "Narasimha Roar"
+      },
+      "description": {
+        "zh": "半人半狮的Q版那罗辛哈张口怒吼，橙色鬃毛与金光随之脉冲。",
+        "en": "A chibi half-man half-lion Narasimha roaring, his orange mane and gold rays pulsing."
+      },
+      "animation": "pulse",
+      "category": "narasimha",
+      "tags": [
+        "narasimha",
+        "indian-myth",
+        "twilight",
+        "narasimha-roar"
+      ]
+    },
+    {
+      "id": "nara-pillar-crack",
+      "title": {
+        "zh": "石柱裂开",
+        "en": "Pillar Crack"
+      },
+      "description": {
+        "zh": "宫殿石柱中央裂纹蔓延，金光迸出。",
+        "en": "A palace stone pillar with a spreading crack and gold light bursting out."
+      },
+      "animation": "pop",
+      "category": "narasimha",
+      "tags": [
+        "narasimha",
+        "indian-myth",
+        "twilight",
+        "pillar-crack"
+      ]
+    },
+    {
+      "id": "nara-twilight-sun",
+      "title": {
+        "zh": "黄昏落日",
+        "en": "Twilight Sun"
+      },
+      "description": {
+        "zh": "非昼非夜的黄昏，橙色落日缓缓沉向绿色地平线。",
+        "en": "A twilight neither day nor night: an orange sun slowly sinking toward a green horizon."
+      },
+      "animation": "float",
+      "category": "narasimha",
+      "tags": [
+        "narasimha",
+        "indian-myth",
+        "twilight",
+        "twilight-sun"
+      ]
+    },
+    {
+      "id": "nara-demon-king-crown",
+      "title": {
+        "zh": "魔王金冠",
+        "en": "Demon King Crown"
+      },
+      "description": {
+        "zh": "阿修罗王希兰亚卡西普的弯角金冠放在绿垫上摇晃。",
+        "en": "Hiranyakashipu’s horned gold crown wobbling on a green cushion."
+      },
+      "animation": "sway",
+      "category": "narasimha",
+      "tags": [
+        "narasimha",
+        "indian-myth",
+        "twilight",
+        "demon-king-crown"
+      ]
+    },
+    {
+      "id": "nara-boon-scroll",
+      "title": {
+        "zh": "梵天恩赐卷",
+        "en": "Boon Scroll"
+      },
+      "description": {
+        "zh": "红轴奶油色恩赐卷轴展开，印着小莲花印记。",
+        "en": "A cream boon scroll on red rods with a small lotus seal, swaying open."
+      },
+      "animation": "sway",
+      "category": "narasimha-relic",
+      "tags": [
+        "narasimha",
+        "indian-myth",
+        "twilight",
+        "boon-scroll"
+      ]
+    },
+    {
+      "id": "nara-lap-throne",
+      "title": {
+        "zh": "膝上审判",
+        "en": "Lap Judgment"
+      },
+      "description": {
+        "zh": "金色宝座上的橙色软垫与圆形金印轻轻下压。",
+        "en": "An orange cushion and round seal on a golden throne pressing gently, the in-between lap of judgment."
+      },
+      "animation": "pulse",
+      "category": "narasimha-relic",
+      "tags": [
+        "narasimha",
+        "indian-myth",
+        "twilight",
+        "lap-throne"
+      ]
+    }
+  ]
+}

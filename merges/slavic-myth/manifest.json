@@ -1,0 +1,735 @@
+{
+  "id": "slavic-myth",
+  "title": {
+    "zh": "斯拉夫神话",
+    "en": "Slavic Myth"
+  },
+  "description": {
+    "zh": "芭芭雅嘎、科谢伊、林妖、家神、佩伦与瓦西丽莎收在一套里，共 36 件。凯尔特-斯拉夫总览主题单独保留，不并入。",
+    "en": "Baba Yaga, Koschei, the leshy, the domovoi, Perun, and Vasilisa, 36 icons in one kit. The celtic-slavic overview stays separate."
+  },
+  "cover": "baba-chicken-leg-hut",
+  "categories": {
+    "baba-yaga": {
+      "zh": "芭芭雅嘎",
+      "en": "Baba Yaga"
+    },
+    "koschei": {
+      "zh": "科谢伊",
+      "en": "Koschei"
+    },
+    "leshy": {
+      "zh": "林妖",
+      "en": "Leshy"
+    },
+    "domovoi": {
+      "zh": "家神",
+      "en": "Domovoi"
+    },
+    "perun": {
+      "zh": "佩伦与韦列斯",
+      "en": "Perun and Veles"
+    },
+    "vasilisa": {
+      "zh": "瓦西丽莎",
+      "en": "Vasilisa"
+    }
+  },
+  "icons": [
+    {
+      "id": "baba-chicken-leg-hut",
+      "title": {
+        "zh": "鸡腿木屋",
+        "en": "Chicken-Leg Hut"
+      },
+      "description": {
+        "zh": "红顶原木小屋站在两条金黄鸡腿上，窗口透出暖光。",
+        "en": "A red-roofed log hut standing on two golden chicken legs, its window glowing."
+      },
+      "animation": "pop",
+      "category": "baba-yaga",
+      "tags": [
+        "baba-yaga",
+        "slavic",
+        "folk-tale",
+        "hut"
+      ]
+    },
+    {
+      "id": "baba-hut-key",
+      "title": {
+        "zh": "小屋钥匙",
+        "en": "Hut Key"
+      },
+      "description": {
+        "zh": "挂着的金色大钥匙，系着红布条。",
+        "en": "A hanging golden key tied with a red ribbon."
+      },
+      "animation": "sway",
+      "category": "baba-yaga",
+      "tags": [
+        "baba-yaga",
+        "slavic",
+        "folk-tale",
+        "hut"
+      ]
+    },
+    {
+      "id": "baba-carved-window",
+      "title": {
+        "zh": "雕花窗",
+        "en": "Carved Window"
+      },
+      "description": {
+        "zh": "红色三角楣的木窗，窗格里透出烛光。",
+        "en": "A wooden window with a red gable and candlelight in the panes."
+      },
+      "animation": "pulse",
+      "category": "baba-yaga",
+      "tags": [
+        "baba-yaga",
+        "slavic",
+        "folk-tale",
+        "hut"
+      ]
+    },
+    {
+      "id": "baba-flying-mortar",
+      "title": {
+        "zh": "飞行石臼",
+        "en": "Flying Mortar"
+      },
+      "description": {
+        "zh": "赭石木臼带着长杵，掠过一缕绿色旋风。",
+        "en": "An ochre wooden mortar with its long pestle, riding a green swirl of wind."
+      },
+      "animation": "float",
+      "category": "baba-yaga",
+      "tags": [
+        "baba-yaga",
+        "slavic",
+        "folk-tale",
+        "flight"
+      ]
+    },
+    {
+      "id": "baba-pestle",
+      "title": {
+        "zh": "木杵",
+        "en": "Pestle"
+      },
+      "description": {
+        "zh": "奶白杵柄配深色木杵头，绑着红箍。",
+        "en": "A cream pestle shaft with a dark wooden head and red band."
+      },
+      "animation": "sway",
+      "category": "baba-yaga",
+      "tags": [
+        "baba-yaga",
+        "slavic",
+        "folk-tale",
+        "flight"
+      ]
+    },
+    {
+      "id": "baba-witch-cauldron",
+      "title": {
+        "zh": "魔法汤锅",
+        "en": "Witch Cauldron"
+      },
+      "description": {
+        "zh": "炉火上的黑铁锅，绿汤冒着气泡。",
+        "en": "A black iron pot over a fire, green brew bubbling."
+      },
+      "animation": "float",
+      "category": "baba-yaga",
+      "tags": [
+        "baba-yaga",
+        "slavic",
+        "folk-tale",
+        "hearth"
+      ]
+    },
+    {
+      "id": "koschei-koschei",
+      "title": {
+        "zh": "科谢伊",
+        "en": "Koschei"
+      },
+      "description": {
+        "zh": "干瘦的不死者科谢伊，戴金色骷髅纹冠、穿黑袍持杖，装饰风无血腥。",
+        "en": "A gaunt deathless figure in a gold skull-motif crown and dark robe, holding a staff; stylized, no gore."
+      },
+      "animation": "sway",
+      "category": "koschei",
+      "tags": [
+        "koschei",
+        "slavic-fairy-tale",
+        "palekh",
+        "villain"
+      ]
+    },
+    {
+      "id": "koschei-skull-crown",
+      "title": {
+        "zh": "骷髅王冠",
+        "en": "Skull Crown"
+      },
+      "description": {
+        "zh": "金色尖冠特写，中央小骷髅纹饰，镶红宝石。",
+        "en": "Close-up of a gold spiked crown with a small skull emblem and red jewels."
+      },
+      "animation": "pulse",
+      "category": "koschei",
+      "tags": [
+        "koschei",
+        "slavic-fairy-tale",
+        "palekh",
+        "villain"
+      ]
+    },
+    {
+      "id": "koschei-soul-needle",
+      "title": {
+        "zh": "藏魂针",
+        "en": "Soul Needle"
+      },
+      "description": {
+        "zh": "细针悬浮在金边黑匣上方，微微发光。",
+        "en": "A fine needle floating above a gold-trimmed black casket, softly glowing."
+      },
+      "animation": "float",
+      "category": "koschei",
+      "tags": [
+        "koschei",
+        "slavic-fairy-tale",
+        "palekh",
+        "villain"
+      ]
+    },
+    {
+      "id": "koschei-ivan-tsarevich",
+      "title": {
+        "zh": "伊万王子",
+        "en": "Ivan Tsarevich"
+      },
+      "description": {
+        "zh": "Q版勇士伊万，红衣蓝帽持剑。",
+        "en": "A chibi hero in a red tunic and blue cap holding a sword."
+      },
+      "animation": "float",
+      "category": "koschei",
+      "tags": [
+        "koschei",
+        "slavic-fairy-tale",
+        "palekh",
+        "heroes"
+      ]
+    },
+    {
+      "id": "koschei-marya-morevna",
+      "title": {
+        "zh": "玛莉娅勇士",
+        "en": "Marya Morevna"
+      },
+      "description": {
+        "zh": "女战士玛莉娅，蓝甲金盔，持红盾长矛。",
+        "en": "A warrior maiden in blue armor and gold helmet with a red shield and spear."
+      },
+      "animation": "sway",
+      "category": "koschei",
+      "tags": [
+        "koschei",
+        "slavic-fairy-tale",
+        "palekh",
+        "heroes"
+      ]
+    },
+    {
+      "id": "koschei-sword-kladenets",
+      "title": {
+        "zh": "宝剑",
+        "en": "Kladenets Sword"
+      },
+      "description": {
+        "zh": "红柄发光宝剑在金色光弧中旋转。",
+        "en": "A gleaming sword with a red grip turning inside a gold arc of light."
+      },
+      "animation": "spin",
+      "category": "koschei",
+      "tags": [
+        "koschei",
+        "slavic-fairy-tale",
+        "palekh",
+        "heroes"
+      ]
+    },
+    {
+      "id": "leshy-leshy-head",
+      "title": {
+        "zh": "列希头像",
+        "en": "Leshy Head"
+      },
+      "description": {
+        "zh": "苔须树皮脸的森林精灵正面",
+        "en": "Front view of a cute forest spirit with a bark face, mossy beard and little twig antlers."
+      },
+      "animation": "sway",
+      "category": "leshy",
+      "tags": [
+        "leshy",
+        "slavic",
+        "forest",
+        "leshy",
+        "leshy-head"
+      ]
+    },
+    {
+      "id": "leshy-vine-beard",
+      "title": {
+        "zh": "藤蔓胡须",
+        "en": "Vine Beard"
+      },
+      "description": {
+        "zh": "垂至胸前的藤蔓胡须",
+        "en": "A long beard of green vines with leaves hanging down to the chest."
+      },
+      "animation": "sway",
+      "category": "leshy",
+      "tags": [
+        "leshy",
+        "slavic",
+        "forest",
+        "leshy",
+        "vine-beard"
+      ]
+    },
+    {
+      "id": "leshy-tall-stretch",
+      "title": {
+        "zh": "高大身影",
+        "en": "Tall Stretch"
+      },
+      "description": {
+        "zh": "可伸缩的高大森林身影",
+        "en": "The leshy stretching up tall as a pine, little arms raised beside its trunk-like body."
+      },
+      "animation": "pop",
+      "category": "leshy",
+      "tags": [
+        "leshy",
+        "slavic",
+        "forest",
+        "leshy",
+        "tall-stretch"
+      ]
+    },
+    {
+      "id": "leshy-echo-whistle",
+      "title": {
+        "zh": "回声口哨",
+        "en": "Echo Whistle"
+      },
+      "description": {
+        "zh": "林中回荡的木质口哨",
+        "en": "A carved wooden whistle with red folk paint and curved sound waves ringing out."
+      },
+      "animation": "pop",
+      "category": "leshy",
+      "tags": [
+        "leshy",
+        "slavic",
+        "forest",
+        "lost-woods",
+        "echo-whistle"
+      ]
+    },
+    {
+      "id": "leshy-old-oak",
+      "title": {
+        "zh": "老橡树",
+        "en": "Old Oak"
+      },
+      "description": {
+        "zh": "粗壮古老的橡树",
+        "en": "A thick ancient oak with a gnarled trunk, wide leafy crown and golden acorns."
+      },
+      "animation": "sway",
+      "category": "leshy",
+      "tags": [
+        "leshy",
+        "slavic",
+        "forest",
+        "lost-woods",
+        "old-oak"
+      ]
+    },
+    {
+      "id": "leshy-hunter-hat",
+      "title": {
+        "zh": "猎人帽",
+        "en": "Hunter Hat"
+      },
+      "description": {
+        "zh": "森林猎人的宽檐帽",
+        "en": "A wide-brimmed felt forest hat with a red band and a feather."
+      },
+      "animation": "sway",
+      "category": "leshy",
+      "tags": [
+        "leshy",
+        "slavic",
+        "forest",
+        "village-charm",
+        "hunter-hat"
+      ]
+    },
+    {
+      "id": "domovoi-domovoi",
+      "title": {
+        "zh": "家神多莫沃伊",
+        "en": "Domovoi"
+      },
+      "description": {
+        "zh": "胡子浓密、戴红帽的圆滚滚小老头家灵，站在地上开心地蹦一下。",
+        "en": "A round little house-spirit grandpa with a bushy beard and red cap, giving a happy hop."
+      },
+      "animation": "pop",
+      "category": "domovoi",
+      "tags": [
+        "domovoi",
+        "spirit",
+        "beard",
+        "domovoi-house-spirit"
+      ]
+    },
+    {
+      "id": "domovoi-stove-pech",
+      "title": {
+        "zh": "俄式大火炉",
+        "en": "Russian Stove"
+      },
+      "description": {
+        "zh": "白灰泥砖砌大火炉，炉口里火光一明一暗地跳动。",
+        "en": "A big whitewashed brick stove whose open mouth glows with pulsing firelight."
+      },
+      "animation": "pulse",
+      "category": "domovoi",
+      "tags": [
+        "stove",
+        "fire",
+        "hearth",
+        "domovoi-house-spirit",
+        "spirit"
+      ]
+    },
+    {
+      "id": "domovoi-bread-salt",
+      "title": {
+        "zh": "面包与盐",
+        "en": "Bread and Salt"
+      },
+      "description": {
+        "zh": "绣花托布上放着圆面包和小盐罐，热气缓缓升起飘动。",
+        "en": "A round loaf and a little salt cellar on an embroidered cloth, with steam drifting up."
+      },
+      "animation": "float",
+      "category": "domovoi",
+      "tags": [
+        "bread",
+        "salt",
+        "welcome",
+        "domovoi-house-spirit",
+        "spirit"
+      ]
+    },
+    {
+      "id": "domovoi-bannik",
+      "title": {
+        "zh": "澡堂精",
+        "en": "Bannik"
+      },
+      "description": {
+        "zh": "木澡堂前白胡子小精怪探出头，身旁蒸汽团缓缓上浮。",
+        "en": "A white-bearded little spirit peeking from a log bathhouse, steam clouds rising beside him."
+      },
+      "animation": "float",
+      "category": "domovoi",
+      "tags": [
+        "bannik",
+        "bathhouse",
+        "steam",
+        "domovoi-house-spirit",
+        "hearth"
+      ]
+    },
+    {
+      "id": "domovoi-ovinnik",
+      "title": {
+        "zh": "谷仓精",
+        "en": "Ovinnik"
+      },
+      "description": {
+        "zh": "麦捆前蹲坐的黑猫模样谷仓精，金色大眼睛一明一暗地发光。",
+        "en": "A black cat-like barn spirit sitting by wheat sheaves, its big golden eyes pulsing with light."
+      },
+      "animation": "pulse",
+      "category": "domovoi",
+      "tags": [
+        "ovinnik",
+        "barn",
+        "cat",
+        "domovoi-house-spirit",
+        "hearth"
+      ]
+    },
+    {
+      "id": "domovoi-dvorovoy",
+      "title": {
+        "zh": "院子精",
+        "en": "Dvorovoy"
+      },
+      "description": {
+        "zh": "提着小灯笼的毛茸茸院子精在木栅栏前左右巡视。",
+        "en": "A fuzzy yard spirit with a little lantern, swaying as it patrols in front of a wooden fence."
+      },
+      "animation": "sway",
+      "category": "domovoi",
+      "tags": [
+        "dvorovoy",
+        "yard",
+        "lantern",
+        "domovoi-house-spirit",
+        "hearth"
+      ]
+    },
+    {
+      "id": "perun-perun",
+      "title": {
+        "zh": "雷神佩伦",
+        "en": "Perun"
+      },
+      "description": {
+        "zh": "金红胡子的圆脸雷神，头顶小雷云，一手高举雷斧，笑得很自信。",
+        "en": "A round-faced thunder god with a golden-red beard, a little storm cloud over his head and a thunder axe raised high, grinning confidently."
+      },
+      "animation": "pulse",
+      "category": "perun",
+      "tags": [
+        "perun",
+        "veles",
+        "slavic-myth",
+        "gods-beasts",
+        "perun"
+      ]
+    },
+    {
+      "id": "perun-veles",
+      "title": {
+        "zh": "蛇神韦莱斯",
+        "en": "Veles"
+      },
+      "description": {
+        "zh": "长着小牛角、绿鳞蛇身的韦莱斯，盘在地上探头吐信，表情狡黠而可爱。",
+        "en": "Veles as a green-scaled serpent with little bull horns, coiled on the ground and peeking up with a sly, cute smile and flicking tongue."
+      },
+      "animation": "sway",
+      "category": "perun",
+      "tags": [
+        "perun",
+        "veles",
+        "slavic-myth",
+        "gods-beasts",
+        "veles"
+      ]
+    },
+    {
+      "id": "perun-world-oak",
+      "title": {
+        "zh": "世界橡树",
+        "en": "World Oak"
+      },
+      "description": {
+        "zh": "粗壮的大橡树撑起圆圆的树冠，冠上挂着橡子，根扎进地下——连接三界。",
+        "en": "A sturdy great oak with a round canopy hung with acorns and roots dug deep, the tree joining the three worlds."
+      },
+      "animation": "sway",
+      "category": "perun",
+      "tags": [
+        "perun",
+        "veles",
+        "slavic-myth",
+        "storm-oak",
+        "world"
+      ]
+    },
+    {
+      "id": "perun-thunder-axe",
+      "title": {
+        "zh": "雷斧",
+        "en": "Thunder Axe"
+      },
+      "description": {
+        "zh": "佩伦的双刃雷斧，斧刃泛着金光，柄缠皮绳，绕中心旋转。",
+        "en": "Perun’s double-bladed thunder axe with gleaming gold-edged blades and a leather-wrapped haft, spinning about its center."
+      },
+      "animation": "spin",
+      "category": "perun",
+      "tags": [
+        "perun",
+        "veles",
+        "slavic-myth",
+        "storm-oak",
+        "thunder"
+      ]
+    },
+    {
+      "id": "perun-rain-drop",
+      "title": {
+        "zh": "甘霖",
+        "en": "Rain Drop"
+      },
+      "description": {
+        "zh": "一颗晶莹的大雨滴，旁边两颗小雨滴，战后滋润大地。",
+        "en": "One big glistening raindrop with two little ones beside it, rain soaking the land after the battle."
+      },
+      "animation": "pulse",
+      "category": "perun",
+      "tags": [
+        "perun",
+        "veles",
+        "slavic-myth",
+        "after-storm",
+        "rain"
+      ]
+    },
+    {
+      "id": "perun-roots",
+      "title": {
+        "zh": "橡树根",
+        "en": "Oak Roots"
+      },
+      "description": {
+        "zh": "树干底部向地下蔓延的粗根，在土层中盘结，通往韦莱斯的冥界。",
+        "en": "Thick roots spreading from a trunk base down through layered soil toward Veles’ underworld."
+      },
+      "animation": "sway",
+      "category": "perun",
+      "tags": [
+        "perun",
+        "veles",
+        "slavic-myth",
+        "storm-oak",
+        "roots"
+      ]
+    },
+    {
+      "id": "vasilisa-vasilisa",
+      "title": {
+        "zh": "瓦西莉莎",
+        "en": "Vasilisa"
+      },
+      "description": {
+        "zh": "戴蓝头巾、穿红裙的少女，举着木杆上的骷髅灯笼穿过松林。",
+        "en": "A girl in a blue headscarf and red dress carrying a skull lantern on a pole through the pines."
+      },
+      "animation": "float",
+      "category": "vasilisa",
+      "tags": [
+        "vasilisa",
+        "girl",
+        "瓦西莉莎"
+      ]
+    },
+    {
+      "id": "vasilisa-doll",
+      "title": {
+        "zh": "小木偶娃娃",
+        "en": "Little doll"
+      },
+      "description": {
+        "zh": "从红口袋里探出头的木偶娃娃，眨着一只眼。",
+        "en": "A little wooden doll peeking out of a red pocket, winking."
+      },
+      "animation": "pulse",
+      "category": "vasilisa",
+      "tags": [
+        "doll",
+        "wink",
+        "娃娃"
+      ]
+    },
+    {
+      "id": "vasilisa-hut",
+      "title": {
+        "zh": "鸡腿小屋",
+        "en": "Hut on chicken legs"
+      },
+      "description": {
+        "zh": "绿顶木屋长着两条鸡腿，原地转身。",
+        "en": "A green-roofed wooden hut on two chicken legs, turning in place."
+      },
+      "animation": "spin",
+      "category": "vasilisa",
+      "tags": [
+        "hut",
+        "legs",
+        "小屋"
+      ]
+    },
+    {
+      "id": "vasilisa-broom",
+      "title": {
+        "zh": "扫帚",
+        "en": "Broom"
+      },
+      "description": {
+        "zh": "红绳扎的扫帚左右扫去飞行留下的尘痕。",
+        "en": "A broom tied with red cord sweeping away the flying trail."
+      },
+      "animation": "sway",
+      "category": "vasilisa",
+      "tags": [
+        "broom",
+        "sweep",
+        "扫帚"
+      ]
+    },
+    {
+      "id": "vasilisa-spindle",
+      "title": {
+        "zh": "纺锤",
+        "en": "Spindle"
+      },
+      "description": {
+        "zh": "缠着毛线的木纺锤飞快旋转。",
+        "en": "A wooden spindle wound with yarn, spinning fast."
+      },
+      "animation": "spin",
+      "category": "vasilisa",
+      "tags": [
+        "spindle",
+        "spin",
+        "纺锤"
+      ]
+    },
+    {
+      "id": "vasilisa-key",
+      "title": {
+        "zh": "铁钥匙",
+        "en": "Iron key"
+      },
+      "description": {
+        "zh": "挂在环上的大铁钥匙叮当摇晃。",
+        "en": "A big iron key hanging from a ring, jingling to and fro."
+      },
+      "animation": "sway",
+      "category": "vasilisa",
+      "tags": [
+        "key",
+        "iron",
+        "钥匙"
+      ]
+    }
+  ]
+}

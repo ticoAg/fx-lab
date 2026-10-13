@@ -1,0 +1,23 @@
+<svg id="egyptian-egy-sekhem-root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="egyptian-egy-sekhem-title egyptian-egy-sekhem-desc" class="egyptian-egy-sekhem-root" style="animation-play-state:inherit">
+<title id="egyptian-egy-sekhem-title">塞赫美特·烈日母狮 / Sekhmet — lioness of the sun</title>
+<desc id="egyptian-egy-sekhem-desc">塞赫美特是侧面母狮首，鬃边围着脸，头顶沙金日盘和一条小圣蛇，左侧留一丛纸莎草。 Sekhmet is a lioness head in profile, a ruff around the face, a sand-gold sun disk and small uraeus above, with a papyrus clump to the left.</desc>
+<style>.egyptian-egy-sekhem-root,.egyptian-egy-sekhem-root *{animation-play-state:inherit}.egyptian-egy-sekhem-motion{animation:egyptian-egy-sekhem-pulse 4.8s ease-in-out infinite;animation-play-state:inherit;transform-box:view-box;transform-origin:40px 42px}@keyframes egyptian-egy-sekhem-pulse{0%,100%{transform:scale(.992);opacity:.95}50%{transform:scale(1);opacity:1}}@media(prefers-reduced-motion:reduce){.egyptian-egy-sekhem-motion{animation:none!important;transform:none!important}}</style>
+<defs>
+<linearGradient id="egyptian-egy-sekhem-gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".48" stop-color="#C4922A"/><stop offset="1" stop-color="#C4922A"/></linearGradient><linearGradient id="egyptian-egy-sekhem-lapis" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1F4E79"/><stop offset=".45" stop-color="#1F4E79"/><stop offset="1" stop-color="#16324F"/></linearGradient><linearGradient id="egyptian-egy-sekhem-clay" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C4652F"/><stop offset=".5" stop-color="#C4652F"/><stop offset="1" stop-color="#C4652F"/></linearGradient><linearGradient id="egyptian-egy-sekhem-stone" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".55" stop-color="#E7D3A1"/><stop offset="1" stop-color="#C4922A"/></linearGradient><radialGradient id="egyptian-egy-sekhem-shade"><stop stop-color="#3A2C22" stop-opacity=".24"/><stop offset="1" stop-color="#3A2C22" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="egyptian-egy-sekhem-motion" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="40" cy="73.4" rx="16" ry="1.5" fill="url(#egyptian-egy-sekhem-shade)"/>
+<path d="M16.4 58.4c1.2-16.4 2.4-28.2 6.4-32.4 2.2 3.6 1.4 8.2-.2 12.4 2.4-6.4 4.6-10.2 8.2-11.6" fill="none" stroke="#C4922A" stroke-width="1.15"/>
+<path d="M18.6 30.2c2.6-3.6 3.2-1.2 2.2 2.4M24.6 24.6c2.2-3.2 3.4-.6 1.8 2.8" fill="none" stroke="#C4922A" stroke-width=".9"/>
+<circle cx="48.4" cy="16.4" r="7.2" fill="url(#egyptian-egy-sekhem-gold)" stroke="currentColor" stroke-width=".85"/>
+<circle cx="48.4" cy="16.4" r="2.6" fill="#E7D3A1"/>
+<path d="M53.6 14.8c1.4-2.8 4.4-2.4 4.2.2-.2 1.8-1.8 2.2-2.8 1.2" fill="url(#egyptian-egy-sekhem-clay)" stroke="currentColor" stroke-width=".55"/>
+<path d="M30.4 36.6c2.2-8.4 10.6-14.6 18.4-12.4 3.6 8.2 1.2 16.6-6.2 20.4-1.6 6.4-1.2 12.8 1.6 18.6h-8.4c-2.8-7.2-2.4-14.6-.6-20.2-6.2-1.2-10.6-4.6-11.2-8.2.8-2.4 3.6-1.2 6.4 1.8z" fill="url(#egyptian-egy-sekhem-clay)" stroke="currentColor" stroke-width="1"/>
+<path d="M34.2 28.4c-1.6 3.2-4.8 5.2-3.2 8.4M30.6 33.6c-2 2.4-5.2 3.2-4.2 6.4M36.8 24.6c-1.2 2.8-4.2 4.2-2.8 7.2" fill="none" stroke="#C4652F" stroke-width=".75"/>
+<ellipse cx="46.4" cy="32.6" rx="3.3" ry="2.3" fill="#E7D3A1"/>
+<circle cx="47.6" cy="32.8" r="1" fill="#3A2C22"/>
+<path d="M44.2 31.6c2.4-.6 4.4.2 5.2 1.4" fill="none" stroke="#3A2C22" stroke-width=".7"/>
+<path d="M52.4 38.6c4.6 1.2 8.4 1.4 10.6-.2" fill="none" stroke="currentColor" stroke-width=".8"/>
+<path d="M28.6 58.4c8.4 4.6 20.6 4.2 28.4-.4v4.4c-8.6 3.6-21.2 3.8-28.4-.2z" fill="url(#egyptian-egy-sekhem-gold)" stroke="currentColor" stroke-width=".7"/>
+</g>
+</svg>

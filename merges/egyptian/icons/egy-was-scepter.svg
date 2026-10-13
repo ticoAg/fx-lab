@@ -1,0 +1,27 @@
+<svg id="egyptian-egy-was-scepter-root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="egyptian-egy-was-scepter-title egyptian-egy-was-scepter-desc" class="egyptian-egy-was-scepter-root" style="animation-play-state:inherit">
+<title id="egyptian-egy-was-scepter-title">瓦斯权杖与安卡 / Was sceptre &amp; ankh</title>
+<desc id="egyptian-egy-was-scepter-desc">两根兽首、叉足的瓦斯杖夹着一枚大安卡，安卡下有一小段杰德，最上是缀了三颗星的天空横条，最下是地平线。 Two animal-headed, forked was sceptres frame a large ankh, a short djed beneath it, a sky bar with three stars above and a ground line below.</desc>
+<style>.egyptian-egy-was-scepter-root,.egyptian-egy-was-scepter-root *{animation-play-state:inherit}.egyptian-egy-was-scepter-motion{animation:egyptian-egy-was-scepter-pop 3.8s ease-in-out infinite;animation-play-state:inherit;transform-box:view-box;transform-origin:40px 42px}@keyframes egyptian-egy-was-scepter-pop{0%,100%{transform:scale(.988)}45%{transform:scale(1)}72%{transform:scale(.994)}}@media(prefers-reduced-motion:reduce){.egyptian-egy-was-scepter-motion{animation:none!important;transform:none!important}}</style>
+<defs>
+<linearGradient id="egyptian-egy-was-scepter-gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".48" stop-color="#C4922A"/><stop offset="1" stop-color="#C4922A"/></linearGradient><linearGradient id="egyptian-egy-was-scepter-lapis" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1F4E79"/><stop offset=".45" stop-color="#1F4E79"/><stop offset="1" stop-color="#16324F"/></linearGradient><linearGradient id="egyptian-egy-was-scepter-clay" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C4652F"/><stop offset=".5" stop-color="#C4652F"/><stop offset="1" stop-color="#C4652F"/></linearGradient><linearGradient id="egyptian-egy-was-scepter-stone" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".55" stop-color="#E7D3A1"/><stop offset="1" stop-color="#C4922A"/></linearGradient><radialGradient id="egyptian-egy-was-scepter-shade"><stop stop-color="#3A2C22" stop-opacity=".24"/><stop offset="1" stop-color="#3A2C22" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="egyptian-egy-was-scepter-motion" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="40" cy="73.4" rx="16" ry="1.5" fill="url(#egyptian-egy-was-scepter-shade)"/>
+<path d="M12.4 16.4h55.2v3.2H12.4z" fill="url(#egyptian-egy-was-scepter-lapis)" stroke="currentColor" stroke-width=".65"/>
+<circle cx="24.4" cy="15.2" r="1.15" fill="url(#egyptian-egy-was-scepter-gold)"/>
+<circle cx="40" cy="15.2" r="1.15" fill="#E7D3A1"/>
+<circle cx="55.6" cy="15.2" r="1.15" fill="url(#egyptian-egy-was-scepter-gold)"/>
+<path d="M18.6 22.4c1.2-2.4 4.2-2.6 5.2-.2" fill="url(#egyptian-egy-was-scepter-clay)" stroke="currentColor" stroke-width=".5"/>
+<path d="M20.6 24.6v36.4" fill="none" stroke="#C4922A" stroke-width="1.7"/>
+<path d="M17.6 61.6 20.6 66.4 23.6 61.6" fill="none" stroke="#C4922A" stroke-width="1.25"/>
+<path d="M56.2 22.4c-1.2-2.4-4.2-2.6-5.2-.2" fill="url(#egyptian-egy-was-scepter-clay)" stroke="currentColor" stroke-width=".5"/>
+<path d="M59.4 24.6v36.4" fill="none" stroke="#C4922A" stroke-width="1.7"/>
+<path d="M56.4 61.6 59.4 66.4 62.4 61.6" fill="none" stroke="#C4922A" stroke-width="1.25"/>
+<circle cx="40" cy="30.6" r="6.4" fill="url(#egyptian-egy-was-scepter-lapis)" stroke="currentColor" stroke-width=".75"/>
+<circle cx="40" cy="30.6" r="2.6" fill="#E7D3A1"/>
+<path d="M30.4 39.2h19.2v4.2H30.4z" fill="url(#egyptian-egy-was-scepter-gold)" stroke="currentColor" stroke-width=".65"/>
+<path d="M37.2 43.4h5.6v12.4h-5.6z" fill="url(#egyptian-egy-was-scepter-gold)" stroke="currentColor" stroke-width=".65"/>
+<path d="M36.4 48.6h7.2v1.5h-7.2zM36.8 51.4h6.4v1.4h-6.4z" fill="url(#egyptian-egy-was-scepter-lapis)"/>
+<path d="M16.4 69.4h47.2" fill="none" stroke="currentColor" stroke-width="1.15"/>
+</g>
+</svg>

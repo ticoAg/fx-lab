@@ -1,0 +1,26 @@
+<svg id="egyptian-egy-ptah-root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="egyptian-egy-ptah-title egyptian-egy-ptah-desc" class="egyptian-egy-ptah-root" style="animation-play-state:inherit">
+<title id="egyptian-egy-ptah-title">普塔·神龛中的造物主 / Ptah — creator in his shrine</title>
+<desc id="egyptian-egy-ptah-desc">普塔立在凹弧檐的神龛里，戴贴头的青金石小帽和直须，木乃伊形身体前合握一根复合权杖。 Ptah stands inside a cavetto shrine, wearing a close lapis cap and a straight beard, both hands together on one composite staff.</desc>
+<style>.egyptian-egy-ptah-root,.egyptian-egy-ptah-root *{animation-play-state:inherit}.egyptian-egy-ptah-motion{animation:egyptian-egy-ptah-float 5.6s ease-in-out infinite;animation-play-state:inherit;transform-box:view-box;transform-origin:40px 42px}@keyframes egyptian-egy-ptah-float{0%,100%{transform:translateY(.85px)}50%{transform:translateY(-.85px)}}@media(prefers-reduced-motion:reduce){.egyptian-egy-ptah-motion{animation:none!important;transform:none!important}}</style>
+<defs>
+<linearGradient id="egyptian-egy-ptah-gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".48" stop-color="#C4922A"/><stop offset="1" stop-color="#C4922A"/></linearGradient><linearGradient id="egyptian-egy-ptah-lapis" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1F4E79"/><stop offset=".45" stop-color="#1F4E79"/><stop offset="1" stop-color="#16324F"/></linearGradient><linearGradient id="egyptian-egy-ptah-clay" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C4652F"/><stop offset=".5" stop-color="#C4652F"/><stop offset="1" stop-color="#C4652F"/></linearGradient><linearGradient id="egyptian-egy-ptah-stone" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".55" stop-color="#E7D3A1"/><stop offset="1" stop-color="#C4922A"/></linearGradient><radialGradient id="egyptian-egy-ptah-shade"><stop stop-color="#3A2C22" stop-opacity=".24"/><stop offset="1" stop-color="#3A2C22" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="egyptian-egy-ptah-motion" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="40" cy="73.4" rx="16" ry="1.5" fill="url(#egyptian-egy-ptah-shade)"/>
+<path d="M14.6 20.4h50.8l-4.2 4.2H18.8z" fill="url(#egyptian-egy-ptah-gold)" stroke="currentColor" stroke-width=".8"/>
+<path d="M17.2 24.6h45.6v44.2H17.2z" fill="url(#egyptian-egy-ptah-stone)" stroke="currentColor" stroke-width="1"/>
+<path d="M21.4 28.4h37.2v36.6H21.4z" fill="#E7D3A1"/>
+<path d="M33.6 30.2h10.8c1.4 3.2 1.2 6.4-.4 8.2h-10c-1.6-1.8-1.8-5-.4-8.2z" fill="url(#egyptian-egy-ptah-lapis)" stroke="currentColor" stroke-width=".7"/>
+<path d="M37.2 37.6h5.2l-.4 6.4h-4.4z" fill="url(#egyptian-egy-ptah-lapis)" stroke="currentColor" stroke-width=".55"/>
+<ellipse cx="39.2" cy="40.4" rx="5.2" ry="5.6" fill="#E7D3A1" stroke="currentColor" stroke-width=".6"/>
+<path d="M36.4 40.2h2.2M41 40.2h2.2" fill="none" stroke="#3A2C22" stroke-width=".6"/>
+<path d="M30.4 48.4h16.4l-2.4 16.8H32.8z" fill="#E7D3A1" stroke="currentColor" stroke-width=".8"/>
+<path d="M31.6 52.4c4.6 2.4 10.2 2.4 14.6 0" fill="none" stroke="#C4922A" stroke-width=".75"/>
+<path d="M46.6 46.2v18.4" fill="none" stroke="#C4922A" stroke-width="1.35"/>
+<path d="M44.8 46.2c1.6-2.6 4.6-2.8 5.6-.4" fill="url(#egyptian-egy-ptah-lapis)" stroke="currentColor" stroke-width=".5"/>
+<path d="M44.2 52.6h4.8v1.6h-4.8zM44.4 55.2h4.4v1.4h-4.4z" fill="url(#egyptian-egy-ptah-gold)"/>
+<circle cx="46.6" cy="60.2" r="1.5" fill="url(#egyptian-egy-ptah-gold)" stroke="currentColor" stroke-width=".45"/>
+<path d="M24.6 66.8h28.4v2.2H24.6z" fill="url(#egyptian-egy-ptah-gold)" stroke="currentColor" stroke-width=".55"/>
+<path d="M20.4 30.2v4.2M56.2 30.2v4.2M20.4 58.4v4.2M56.2 58.4v4.2" fill="none" stroke="#16324F" stroke-width=".7"/>
+</g>
+</svg>

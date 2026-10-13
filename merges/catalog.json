@@ -1,0 +1,443 @@
+{
+  "groups": [
+    {
+      "group": 1,
+      "slug": "wolpertinger-bavarian-cryptid",
+      "new": false,
+      "base_hash": "90eb87b4eb13d1a3da72b8bce6b0635da5711253309766a864739f95cfe77122",
+      "count": 12,
+      "cap": 48,
+      "absorbed": [
+        "jackalope-prairie-cryptid"
+      ],
+      "per_source": {
+        "wolpertinger-bavarian-cryptid": 6,
+        "jackalope-prairie-cryptid": 6
+      },
+      "package": "merges/wolpertinger-bavarian-cryptid"
+    },
+    {
+      "group": 2,
+      "slug": "kitsune-nine-tailed-fox",
+      "new": false,
+      "base_hash": "ac5c9c4d99908f369bb117d4dfcf24269642da8ebc088a32d96fadfb50666cc3",
+      "count": 18,
+      "cap": 48,
+      "absorbed": [
+        "kitsune-sunshine-rain-wedding",
+        "kumiho-fox-bead"
+      ],
+      "per_source": {
+        "kitsune-nine-tailed-fox": 6,
+        "kitsune-sunshine-rain-wedding": 6,
+        "kumiho-fox-bead": 6
+      },
+      "package": "merges/kitsune-nine-tailed-fox"
+    },
+    {
+      "group": 3,
+      "slug": "egyptian",
+      "new": false,
+      "base_hash": "fbb7118a0fbf49901c01e45a3a851b7713fc3928e6baebb70785612e9088dea4",
+      "count": 24,
+      "cap": 60,
+      "absorbed": [
+        "anubis-weighing-heart",
+        "ra-solar-barque",
+        "bastet-cat-goddess"
+      ],
+      "per_source": {
+        "egyptian": 6,
+        "anubis-weighing-heart": 6,
+        "ra-solar-barque": 6,
+        "bastet-cat-goddess": 6
+      },
+      "package": "merges/egyptian"
+    },
+    {
+      "group": 4,
+      "slug": "norse",
+      "new": false,
+      "base_hash": "15dd30c900a2b758d06e41504d6d107e2c7efa9f4b6485d49bcf80d2ac522f34",
+      "count": 30,
+      "cap": 60,
+      "absorbed": [
+        "thor-mjolnir-bride-disguise",
+        "loki-salmon-net",
+        "ratatoskr-yggdrasil-gossip",
+        "sigurd-fafnir-ring"
+      ],
+      "per_source": {
+        "norse": 6,
+        "thor-mjolnir-bride-disguise": 6,
+        "loki-salmon-net": 6,
+        "ratatoskr-yggdrasil-gossip": 6,
+        "sigurd-fafnir-ring": 6
+      },
+      "package": "merges/norse"
+    },
+    {
+      "group": 5,
+      "slug": "mesopotamia-myth",
+      "new": false,
+      "base_hash": "e234dc0b3f446a9dd6b1215944c9bad3d2b9aec6da0b9bcfedf31d109e54dff1",
+      "count": 12,
+      "cap": 48,
+      "absorbed": [
+        "gilgamesh-cedar-forest"
+      ],
+      "per_source": {
+        "mesopotamia-myth": 6,
+        "gilgamesh-cedar-forest": 6
+      },
+      "package": "merges/mesopotamia-myth"
+    },
+    {
+      "group": 6,
+      "slug": "qilin-auspicious-beast",
+      "new": false,
+      "base_hash": "4a9f852bc07fb1f59d17c4ba97897f624478acaa5d459ca374a0fe7faf9648c9",
+      "count": 42,
+      "cap": 60,
+      "absorbed": [
+        "pixiu-wealth-beast",
+        "xiezhi-justice-beast",
+        "baize-spirit-compendium",
+        "kunpeng-north-sea-giant",
+        "phoenix-rebirth",
+        "liuhai-golden-toad"
+      ],
+      "per_source": {
+        "qilin-auspicious-beast": 6,
+        "pixiu-wealth-beast": 6,
+        "xiezhi-justice-beast": 6,
+        "baize-spirit-compendium": 6,
+        "kunpeng-north-sea-giant": 6,
+        "phoenix-rebirth": 6,
+        "liuhai-golden-toad": 6
+      },
+      "package": "merges/qilin-auspicious-beast"
+    },
+    {
+      "group": 7,
+      "slug": "world-dragons",
+      "new": true,
+      "base_hash": "none",
+      "count": 55,
+      "cap": 60,
+      "absorbed": [
+        "lindworm-nordic-serpent-king",
+        "tarasque-tarascon-dragon",
+        "wawel-dragon-krakow-shoemaker",
+        "basilisk-cockatrice-gaze",
+        "zmey-gorynych-dragon",
+        "aitvaras-lithuanian-fire-sprite",
+        "bakunawa-moon-eating-serpent",
+        "naga-mekong-serpent",
+        "grootslang-diamond-cave-serpent",
+        "quetzalcoatl-feathered-serpent",
+        "taniwha-maori-guardian"
+      ],
+      "per_source": {
+        "lindworm-nordic-serpent-king": 5,
+        "tarasque-tarascon-dragon": 5,
+        "wawel-dragon-krakow-shoemaker": 5,
+        "basilisk-cockatrice-gaze": 5,
+        "zmey-gorynych-dragon": 5,
+        "aitvaras-lithuanian-fire-sprite": 5,
+        "bakunawa-moon-eating-serpent": 5,
+        "naga-mekong-serpent": 5,
+        "grootslang-diamond-cave-serpent": 5,
+        "quetzalcoatl-feathered-serpent": 5,
+        "taniwha-maori-guardian": 5
+      },
+      "package": "merges/world-dragons"
+    },
+    {
+      "group": 8,
+      "slug": "water-spirits",
+      "new": true,
+      "base_hash": "none",
+      "count": 60,
+      "cap": 60,
+      "absorbed": [
+        "mami-wata-water-spirit",
+        "vodyanoy-slavic-water-grandpa",
+        "rusalka-river-maiden",
+        "kelpie-loch-water-horse",
+        "selkie-seal-folk",
+        "lorelei-rhine-siren",
+        "melusine-serpent-fairy",
+        "kappa-cucumber-river",
+        "encantado-amazon-pink-dolphin",
+        "ahuizotl-lake-hound"
+      ],
+      "per_source": {
+        "mami-wata-water-spirit": 6,
+        "vodyanoy-slavic-water-grandpa": 6,
+        "rusalka-river-maiden": 6,
+        "kelpie-loch-water-horse": 6,
+        "selkie-seal-folk": 6,
+        "lorelei-rhine-siren": 6,
+        "melusine-serpent-fairy": 6,
+        "kappa-cucumber-river": 6,
+        "encantado-amazon-pink-dolphin": 6,
+        "ahuizotl-lake-hound": 6
+      },
+      "package": "merges/water-spirits"
+    },
+    {
+      "group": 9,
+      "slug": "mythic-beasts",
+      "new": true,
+      "base_hash": "none",
+      "count": 54,
+      "cap": 60,
+      "absorbed": [
+        "griffin-scythian-gold-guard",
+        "pegasus-bellerophon-chimera",
+        "sphinx-riddle-guardian",
+        "peryton-atlantis-stag-bird",
+        "unicorn-tapestry-hunt",
+        "caladrius-healing-bird",
+        "manticore-persian-beast",
+        "sleipnir-odin-eight-legged-steed",
+        "lamassu-gate-guardian"
+      ],
+      "per_source": {
+        "griffin-scythian-gold-guard": 6,
+        "pegasus-bellerophon-chimera": 6,
+        "sphinx-riddle-guardian": 6,
+        "peryton-atlantis-stag-bird": 6,
+        "unicorn-tapestry-hunt": 6,
+        "caladrius-healing-bird": 6,
+        "manticore-persian-beast": 6,
+        "sleipnir-odin-eight-legged-steed": 6,
+        "lamassu-gate-guardian": 6
+      },
+      "package": "merges/mythic-beasts"
+    },
+    {
+      "group": 10,
+      "slug": "cryptids",
+      "new": true,
+      "base_hash": "none",
+      "count": 55,
+      "cap": 60,
+      "absorbed": [
+        "nessie-loch-ness-monster",
+        "sasquatch-bigfoot-trail",
+        "mothman-point-pleasant",
+        "jersey-devil-pine-barrens",
+        "hodag-wisconsin-lumberjack-beast",
+        "chupacabra-desert-cryptid",
+        "tsuchinoko-cryptid-hunt",
+        "yeti-himalaya-snowfolk",
+        "mokele-mbembe-river-beast",
+        "drop-bear-outback",
+        "bunyip-billabong-spirit"
+      ],
+      "per_source": {
+        "nessie-loch-ness-monster": 5,
+        "sasquatch-bigfoot-trail": 5,
+        "mothman-point-pleasant": 5,
+        "jersey-devil-pine-barrens": 5,
+        "hodag-wisconsin-lumberjack-beast": 5,
+        "chupacabra-desert-cryptid": 5,
+        "tsuchinoko-cryptid-hunt": 5,
+        "yeti-himalaya-snowfolk": 5,
+        "mokele-mbembe-river-beast": 5,
+        "drop-bear-outback": 5,
+        "bunyip-billabong-spirit": 5
+      },
+      "package": "merges/cryptids"
+    },
+    {
+      "group": 11,
+      "slug": "sacred-birds",
+      "new": true,
+      "base_hash": "none",
+      "count": 42,
+      "cap": 48,
+      "absorbed": [
+        "simurgh-persian-sage-bird",
+        "thunderbird-plains-storm",
+        "alkonost-sirin-paradise-birds",
+        "alicanto-chilean-gold-bird",
+        "firebird-tsarevich",
+        "garuda-amrita-quest",
+        "turul-csodaszarvas-wonder-stag"
+      ],
+      "per_source": {
+        "simurgh-persian-sage-bird": 6,
+        "thunderbird-plains-storm": 6,
+        "alkonost-sirin-paradise-birds": 6,
+        "alicanto-chilean-gold-bird": 6,
+        "firebird-tsarevich": 6,
+        "garuda-amrita-quest": 6,
+        "turul-csodaszarvas-wonder-stag": 6
+      },
+      "package": "merges/sacred-birds"
+    },
+    {
+      "group": 12,
+      "slug": "giant-heroes",
+      "new": true,
+      "base_hash": "none",
+      "count": 30,
+      "cap": 48,
+      "absorbed": [
+        "paul-bunyan-blue-ox",
+        "glooscap-wabanaki-giant",
+        "kalevipoeg-estonian-giant",
+        "rubezahl-mountain-spirit",
+        "amirani-georgian-chained-hero"
+      ],
+      "per_source": {
+        "paul-bunyan-blue-ox": 6,
+        "glooscap-wabanaki-giant": 6,
+        "kalevipoeg-estonian-giant": 6,
+        "rubezahl-mountain-spirit": 6,
+        "amirani-georgian-chained-hero": 6
+      },
+      "package": "merges/giant-heroes"
+    },
+    {
+      "group": 13,
+      "slug": "greek-olympus",
+      "new": false,
+      "base_hash": "1f96e5887b46542a1e6b68be113da285d11d9e4494019f221f45e4556e701631",
+      "count": 60,
+      "cap": 60,
+      "absorbed": [
+        "perseus-medusa",
+        "odysseus-homeward-voyage",
+        "icarus-daedalus-wings",
+        "pandora-box-hope",
+        "king-midas-golden-touch",
+        "psyche-eros-trials",
+        "pygmalion-galatea-statue",
+        "arachne-weaving-contest",
+        "minotaur-labyrinth",
+        "orpheus-underworld",
+        "trojan-horse-siege"
+      ],
+      "per_source": {
+        "greek-olympus": 5,
+        "perseus-medusa": 5,
+        "odysseus-homeward-voyage": 5,
+        "icarus-daedalus-wings": 5,
+        "pandora-box-hope": 5,
+        "king-midas-golden-touch": 5,
+        "psyche-eros-trials": 5,
+        "pygmalion-galatea-statue": 5,
+        "arachne-weaving-contest": 5,
+        "minotaur-labyrinth": 5,
+        "orpheus-underworld": 5,
+        "trojan-horse-siege": 5
+      },
+      "package": "merges/greek-olympus"
+    },
+    {
+      "group": 14,
+      "slug": "onmyoji-yokai",
+      "new": false,
+      "base_hash": "cab405860c7ed4b4f1116a68e3fa6d9340ae4650a261b1e3ff411fe903a63caa",
+      "count": 54,
+      "cap": 60,
+      "absorbed": [
+        "nue-yokai-night-thunder",
+        "bakeneko-nekomata-night",
+        "raiju-thunder-beast",
+        "tengu-mountain-crow",
+        "jorogumo-waterfall-weaver",
+        "amabie-plague-prophet",
+        "yukionna-snow-woman",
+        "zashiki-warashi-house-spirit"
+      ],
+      "per_source": {
+        "onmyoji-yokai": 6,
+        "nue-yokai-night-thunder": 6,
+        "bakeneko-nekomata-night": 6,
+        "raiju-thunder-beast": 6,
+        "tengu-mountain-crow": 6,
+        "jorogumo-waterfall-weaver": 6,
+        "amabie-plague-prophet": 6,
+        "yukionna-snow-woman": 6,
+        "zashiki-warashi-house-spirit": 6
+      },
+      "package": "merges/onmyoji-yokai"
+    },
+    {
+      "group": 15,
+      "slug": "celtic-fae",
+      "new": true,
+      "base_hash": "none",
+      "count": 42,
+      "cap": 60,
+      "absorbed": [
+        "banshee-keening-wail",
+        "puca-irish-shapeshifter",
+        "dullahan-headless-fairy-rider",
+        "leprechaun-rainbow-gold",
+        "will-o-wisp-marsh-lights",
+        "tam-lin-fairy-rescue",
+        "oisin-tir-na-nog"
+      ],
+      "per_source": {
+        "banshee-keening-wail": 6,
+        "puca-irish-shapeshifter": 6,
+        "dullahan-headless-fairy-rider": 6,
+        "leprechaun-rainbow-gold": 6,
+        "will-o-wisp-marsh-lights": 6,
+        "tam-lin-fairy-rescue": 6,
+        "oisin-tir-na-nog": 6
+      },
+      "package": "merges/celtic-fae"
+    },
+    {
+      "group": 16,
+      "slug": "slavic-myth",
+      "new": true,
+      "base_hash": "none",
+      "count": 36,
+      "cap": 60,
+      "absorbed": [
+        "baba-yaga-hut",
+        "koschei-deathless",
+        "leshy-slavic-forest-lord",
+        "domovoi-house-spirit",
+        "perun-veles-thunder-duel",
+        "vasilisa-skull-lantern"
+      ],
+      "per_source": {
+        "baba-yaga-hut": 6,
+        "koschei-deathless": 6,
+        "leshy-slavic-forest-lord": 6,
+        "domovoi-house-spirit": 6,
+        "perun-veles-thunder-duel": 6,
+        "vasilisa-skull-lantern": 6
+      },
+      "package": "merges/slavic-myth"
+    },
+    {
+      "group": 17,
+      "slug": "indian-epics",
+      "new": true,
+      "base_hash": "none",
+      "count": 18,
+      "cap": 60,
+      "absorbed": [
+        "mahabharata-kurukshetra",
+        "ganesha-broken-tusk",
+        "narasimha-twilight-pillar"
+      ],
+      "per_source": {
+        "mahabharata-kurukshetra": 6,
+        "ganesha-broken-tusk": 6,
+        "narasimha-twilight-pillar": 6
+      },
+      "package": "merges/indian-epics"
+    }
+  ]
+}

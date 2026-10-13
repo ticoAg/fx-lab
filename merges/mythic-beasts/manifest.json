@@ -1,0 +1,1126 @@
+{
+  "id": "mythic-beasts",
+  "title": {
+    "zh": "西方神兽",
+    "en": "Heraldic Beasts"
+  },
+  "description": {
+    "zh": "狮鹫、飞马、斯芬克斯、独角兽、八足马与拉玛苏等西方神兽收在一套里，共 54 件。",
+    "en": "Griffin, pegasus, sphinx, unicorn, Sleipnir, lamassu, and their kin, 54 icons in one kit."
+  },
+  "cover": "grif-griffin-full",
+  "categories": {
+    "hellenic": {
+      "zh": "希腊与斯基泰",
+      "en": "Hellenic"
+    },
+    "medieval": {
+      "zh": "中世纪纹章",
+      "en": "Medieval Heraldry"
+    },
+    "persia": {
+      "zh": "波斯",
+      "en": "Persia"
+    },
+    "steed": {
+      "zh": "八足马",
+      "en": "Eight-Legged Steed"
+    },
+    "assyria": {
+      "zh": "门神拉玛苏",
+      "en": "Lamassu"
+    }
+  },
+  "icons": [
+    {
+      "id": "grif-griffin-full",
+      "title": {
+        "zh": "狮鹫全身",
+        "en": "Griffin"
+      },
+      "description": {
+        "zh": "鹰首狮身、背生双翼的金色狮鹫侧身站立，身上饰卷曲动物纹。",
+        "en": "A golden griffin with eagle head, lion body and raised wings, standing in profile with curled animal-style markings."
+      },
+      "animation": "float",
+      "category": "hellenic",
+      "tags": [
+        "griffin",
+        "scythian",
+        "gold",
+        "griffin",
+        "griffin"
+      ]
+    },
+    {
+      "id": "grif-eagle-head",
+      "title": {
+        "zh": "鹰首",
+        "en": "Eagle Head"
+      },
+      "description": {
+        "zh": "狮鹫的钩喙鹰首，带竖耳与卷曲鬃饰。",
+        "en": "The griffin's hook-beaked eagle head with a pointed ear and curled crest."
+      },
+      "animation": "sway",
+      "category": "hellenic",
+      "tags": [
+        "griffin",
+        "scythian",
+        "gold",
+        "griffin",
+        "eagle"
+      ]
+    },
+    {
+      "id": "grif-lion-paw",
+      "title": {
+        "zh": "狮爪",
+        "en": "Lion Paw"
+      },
+      "description": {
+        "zh": "狮鹫厚实的金色狮爪，四个圆趾探出弯爪。",
+        "en": "A sturdy golden lion paw with four round toes and curved claws."
+      },
+      "animation": "pop",
+      "category": "hellenic",
+      "tags": [
+        "griffin",
+        "scythian",
+        "gold",
+        "griffin",
+        "lion"
+      ]
+    },
+    {
+      "id": "grif-claw-marks",
+      "title": {
+        "zh": "利爪划痕",
+        "en": "Claw Marks"
+      },
+      "description": {
+        "zh": "岩面上三道平行的利爪划痕，旁有碎石屑。",
+        "en": "Three parallel claw scratches on a rock face, with small stone chips."
+      },
+      "animation": "pop",
+      "category": "hellenic",
+      "tags": [
+        "griffin",
+        "scythian",
+        "gold",
+        "griffin",
+        "claw"
+      ]
+    },
+    {
+      "id": "grif-eagle-eye",
+      "title": {
+        "zh": "鹰眼",
+        "en": "Eagle Eye"
+      },
+      "description": {
+        "zh": "金色虹膜的锐利鹰眼，上方压着一道眉骨。",
+        "en": "A sharp eagle eye with a golden iris under a heavy brow ridge."
+      },
+      "animation": "pulse",
+      "category": "hellenic",
+      "tags": [
+        "griffin",
+        "scythian",
+        "gold",
+        "griffin",
+        "eagle"
+      ]
+    },
+    {
+      "id": "grif-composite-bow",
+      "title": {
+        "zh": "复合弓",
+        "en": "Composite Bow"
+      },
+      "description": {
+        "zh": "双曲反弯的斯基泰复合弓，弓臂缠金色缠绳。",
+        "en": "A double-curved Scythian composite bow with gold-wrapped limbs."
+      },
+      "animation": "sway",
+      "category": "hellenic",
+      "tags": [
+        "griffin",
+        "scythian",
+        "gold",
+        "nomad",
+        "composite"
+      ]
+    },
+    {
+      "id": "pega-pegasus",
+      "title": {
+        "zh": "珀伽索斯飞马",
+        "en": "Pegasus"
+      },
+      "description": {
+        "zh": "赭红剪影的飞马，奶白羽翼与黑色鬃尾，凌空翱翔",
+        "en": "Winged horse Pegasus soaring in ochre-red silhouette with a cream feathered wing and black mane and tail."
+      },
+      "animation": "float",
+      "category": "hellenic",
+      "tags": [
+        "pegasus",
+        "飞马",
+        "horse",
+        "马",
+        "pegasus",
+        "珀伽索斯",
+        "greek myth",
+        "希腊神话"
+      ]
+    },
+    {
+      "id": "pega-bellerophon",
+      "title": {
+        "zh": "柏勒洛丰",
+        "en": "Bellerophon"
+      },
+      "description": {
+        "zh": "头戴黑盔、手持长矛、抬腿上马的英雄柏勒洛丰",
+        "en": "The hero Bellerophon in a crested black helmet and meander-hemmed tunic, spear in hand, lifting a leg to mount."
+      },
+      "animation": "none",
+      "category": "hellenic",
+      "tags": [
+        "hero",
+        "英雄",
+        "warrior",
+        "战士",
+        "pegasus",
+        "珀伽索斯",
+        "greek myth",
+        "希腊神话"
+      ]
+    },
+    {
+      "id": "pega-golden-bridle",
+      "title": {
+        "zh": "金辔头",
+        "en": "Golden Bridle"
+      },
+      "description": {
+        "zh": "雅典娜所赐的金辔头，奶白衔环与红缰闪耀",
+        "en": "Athena's golden bridle with cream bit rings, red reins and sparkles of light."
+      },
+      "animation": "pulse",
+      "category": "hellenic",
+      "tags": [
+        "bridle",
+        "辔头",
+        "gold",
+        "金",
+        "pegasus",
+        "珀伽索斯",
+        "greek myth",
+        "希腊神话"
+      ]
+    },
+    {
+      "id": "pega-lead-tipped-spear",
+      "title": {
+        "zh": "铅头长矛",
+        "en": "Lead-tipped Spear"
+      },
+      "description": {
+        "zh": "斜指向上的长矛，灰色铅头、红箍与缠柄",
+        "en": "A diagonal spear with a heavy grey lead tip, red collar and bound grip, thrusting upward."
+      },
+      "animation": "none",
+      "category": "hellenic",
+      "tags": [
+        "spear",
+        "矛",
+        "weapon",
+        "武器",
+        "pegasus",
+        "珀伽索斯",
+        "greek myth",
+        "希腊神话"
+      ]
+    },
+    {
+      "id": "pega-bow-arrows",
+      "title": {
+        "zh": "弓箭",
+        "en": "Bow & Arrow"
+      },
+      "description": {
+        "zh": "拉满的红色反曲弓与搭好的箭",
+        "en": "A red recurve bow drawn with an arrow nocked, plus a spare teal arrow behind."
+      },
+      "animation": "none",
+      "category": "hellenic",
+      "tags": [
+        "bow",
+        "弓",
+        "arrow",
+        "箭",
+        "pegasus",
+        "珀伽索斯",
+        "greek myth",
+        "希腊神话"
+      ]
+    },
+    {
+      "id": "pega-round-shield",
+      "title": {
+        "zh": "圆盾",
+        "en": "Round Shield"
+      },
+      "description": {
+        "zh": "黑缘红面、饰有奶白橙色星纹的希腊圆盾",
+        "en": "A round hoplite shield: black rim, dashed cream band and a red face bearing a cream and orange star device."
+      },
+      "animation": "none",
+      "category": "hellenic",
+      "tags": [
+        "shield",
+        "盾",
+        "pegasus",
+        "珀伽索斯",
+        "greek myth",
+        "希腊神话"
+      ]
+    },
+    {
+      "id": "sphinx-sphinx",
+      "title": {
+        "zh": "狮身人面像",
+        "en": "Great Sphinx"
+      },
+      "description": {
+        "zh": "伏卧的狮身人面像，头戴条纹头巾，眼眸微微发亮。",
+        "en": "The reclining Sphinx in a striped nemes headdress, its eyes faintly glowing."
+      },
+      "animation": "pulse",
+      "category": "hellenic",
+      "tags": [
+        "sphinx",
+        "riddle",
+        "egypt",
+        "sphinx",
+        "sphinx"
+      ]
+    },
+    {
+      "id": "sphinx-winged-sphinx",
+      "title": {
+        "zh": "展翅斯芬克斯",
+        "en": "Winged Sphinx"
+      },
+      "description": {
+        "zh": "希腊式带翼斯芬克斯，坐姿昂首，双翼张开。",
+        "en": "A Greek winged sphinx sitting upright with its wings spread."
+      },
+      "animation": "float",
+      "category": "hellenic",
+      "tags": [
+        "sphinx",
+        "riddle",
+        "egypt",
+        "sphinx",
+        "winged"
+      ]
+    },
+    {
+      "id": "sphinx-golden-crown",
+      "title": {
+        "zh": "金头冠",
+        "en": "Golden Diadem"
+      },
+      "description": {
+        "zh": "镶绿松石的金色头冠，冠面有一道光泽流转。",
+        "en": "A golden diadem set with turquoise, a sheen gliding across its face."
+      },
+      "animation": "pulse",
+      "category": "hellenic",
+      "tags": [
+        "sphinx",
+        "riddle",
+        "egypt",
+        "sphinx",
+        "golden"
+      ]
+    },
+    {
+      "id": "sphinx-riddle-scroll",
+      "title": {
+        "zh": "谜语卷轴",
+        "en": "Riddle Scroll"
+      },
+      "description": {
+        "zh": "展开的莎草纸卷轴，纸面露出几行谜语字迹。",
+        "en": "An unrolled papyrus scroll revealing a few lines of riddle script."
+      },
+      "animation": "pop",
+      "category": "hellenic",
+      "tags": [
+        "sphinx",
+        "riddle",
+        "egypt",
+        "riddle",
+        "riddle"
+      ]
+    },
+    {
+      "id": "sphinx-golden-key",
+      "title": {
+        "zh": "解谜钥匙",
+        "en": "Riddle Key"
+      },
+      "description": {
+        "zh": "安卡十字形把手的金钥匙，绕中心旋转开锁。",
+        "en": "A golden key with an ankh-shaped bow, spinning to unlock."
+      },
+      "animation": "spin",
+      "category": "hellenic",
+      "tags": [
+        "sphinx",
+        "riddle",
+        "egypt",
+        "riddle",
+        "golden"
+      ]
+    },
+    {
+      "id": "sphinx-scarab",
+      "title": {
+        "zh": "圣甲虫",
+        "en": "Scarab"
+      },
+      "description": {
+        "zh": "推着红色日轮的圣甲虫。",
+        "en": "A scarab beetle pushing a red sun disc."
+      },
+      "animation": "sway",
+      "category": "hellenic",
+      "tags": [
+        "sphinx",
+        "riddle",
+        "egypt",
+        "egypt",
+        "scarab"
+      ]
+    },
+    {
+      "id": "pery-peryton-flying",
+      "title": {
+        "zh": "佩利冬飞翔",
+        "en": "Peryton in Flight"
+      },
+      "description": {
+        "zh": "鹿首鸟身的佩利冬展翅飞翔。",
+        "en": "A deer-headed, bird-bodied peryton in flight."
+      },
+      "animation": "float",
+      "category": "medieval",
+      "tags": [
+        "peryton",
+        "atlantis",
+        "sea-chart",
+        "stag-bird",
+        "flying"
+      ]
+    },
+    {
+      "id": "pery-peryton-shadow",
+      "title": {
+        "zh": "人影之影",
+        "en": "Human-Shaped Shadow"
+      },
+      "description": {
+        "zh": "阳光下飞翔的佩利冬在地上投出人形剪影。",
+        "en": "A peryton under the sun casting a human-shaped silhouette shadow."
+      },
+      "animation": "none",
+      "category": "medieval",
+      "tags": [
+        "peryton",
+        "atlantis",
+        "sea-chart",
+        "stag-bird",
+        "shadow"
+      ]
+    },
+    {
+      "id": "pery-antlers",
+      "title": {
+        "zh": "鹿角",
+        "en": "Glowing Antlers"
+      },
+      "description": {
+        "zh": "头骨上发光的分叉鹿角。",
+        "en": "Branching stag antlers glowing above a skull plate."
+      },
+      "animation": "pulse",
+      "category": "medieval",
+      "tags": [
+        "peryton",
+        "atlantis",
+        "sea-chart",
+        "stag-bird",
+        "antlers"
+      ]
+    },
+    {
+      "id": "pery-trident",
+      "title": {
+        "zh": "三叉戟",
+        "en": "Trident"
+      },
+      "description": {
+        "zh": "闪光的海神三叉戟。",
+        "en": "A glinting sea trident."
+      },
+      "animation": "none",
+      "category": "medieval",
+      "tags": [
+        "peryton",
+        "atlantis",
+        "sea-chart",
+        "sunken-city",
+        "trident"
+      ]
+    },
+    {
+      "id": "pery-sibyl-scroll",
+      "title": {
+        "zh": "女先知卷轴",
+        "en": "Sibyl Scroll"
+      },
+      "description": {
+        "zh": "展开的预言卷轴，只有抽象纹样，无文字。",
+        "en": "An unrolled prophecy scroll with abstract marks only, no text."
+      },
+      "animation": "none",
+      "category": "medieval",
+      "tags": [
+        "peryton",
+        "atlantis",
+        "sea-chart",
+        "sunken-city",
+        "scroll"
+      ]
+    },
+    {
+      "id": "pery-broken-shield",
+      "title": {
+        "zh": "破盾",
+        "en": "Broken Shield"
+      },
+      "description": {
+        "zh": "裂成两半的古代铜盾。",
+        "en": "An ancient bronze shield cracked in two."
+      },
+      "animation": "none",
+      "category": "medieval",
+      "tags": [
+        "peryton",
+        "atlantis",
+        "sea-chart",
+        "mediterranean",
+        "shield"
+      ]
+    },
+    {
+      "id": "uni-unicorn",
+      "title": {
+        "zh": "独角兽",
+        "en": "Unicorn"
+      },
+      "description": {
+        "zh": "白色独角兽立于花草地，金色螺旋独角与鬃毛。",
+        "en": "A white unicorn standing on a flowery meadow, with a gold spiral horn and mane."
+      },
+      "animation": "float",
+      "category": "medieval",
+      "tags": [
+        "unicorn",
+        "tapestry",
+        "medieval",
+        "unicorn",
+        "unicorn"
+      ]
+    },
+    {
+      "id": "uni-spiral-horn",
+      "title": {
+        "zh": "螺旋独角",
+        "en": "Spiral Horn"
+      },
+      "description": {
+        "zh": "金色螺旋独角在光晕中闪耀，旁有小星。",
+        "en": "A golden spiral horn shining in a soft glow with little stars."
+      },
+      "animation": "pulse",
+      "category": "medieval",
+      "tags": [
+        "unicorn",
+        "tapestry",
+        "medieval",
+        "unicorn",
+        "spiral"
+      ]
+    },
+    {
+      "id": "uni-horn-water",
+      "title": {
+        "zh": "独角净水",
+        "en": "Horn Purifies Water"
+      },
+      "description": {
+        "zh": "独角轻触靛蓝泉池，泛起白色涟漪。",
+        "en": "A unicorn horn touching an indigo pool, sending out white ripples."
+      },
+      "animation": "pulse",
+      "category": "medieval",
+      "tags": [
+        "unicorn",
+        "tapestry",
+        "medieval",
+        "unicorn",
+        "horn"
+      ]
+    },
+    {
+      "id": "uni-hound",
+      "title": {
+        "zh": "猎犬",
+        "en": "Hound"
+      },
+      "description": {
+        "zh": "白底棕斑猎犬戴红项圈，跃跃欲奔。",
+        "en": "A white hound with brown patches and a red collar, ready to run."
+      },
+      "animation": "pop",
+      "category": "medieval",
+      "tags": [
+        "unicorn",
+        "tapestry",
+        "medieval",
+        "hunt",
+        "hound"
+      ]
+    },
+    {
+      "id": "uni-horn-bugle",
+      "title": {
+        "zh": "狩猎号角",
+        "en": "Hunting Horn"
+      },
+      "description": {
+        "zh": "红绳金色弯号角吹响，音波飘出。",
+        "en": "A curved golden hunting horn on a red cord, sound waves drifting out."
+      },
+      "animation": "sway",
+      "category": "medieval",
+      "tags": [
+        "unicorn",
+        "tapestry",
+        "medieval",
+        "hunt",
+        "horn"
+      ]
+    },
+    {
+      "id": "uni-crown",
+      "title": {
+        "zh": "王冠",
+        "en": "Crown"
+      },
+      "description": {
+        "zh": "镶红、蓝、绿宝石与珍珠的金色王冠。",
+        "en": "A golden crown set with red, blue and green gems and pearls."
+      },
+      "animation": "float",
+      "category": "medieval",
+      "tags": [
+        "unicorn",
+        "tapestry",
+        "medieval",
+        "unicorn",
+        "crown"
+      ]
+    },
+    {
+      "id": "cala-caladrius-bird",
+      "title": {
+        "zh": "卡拉德里乌斯",
+        "en": "Caladrius"
+      },
+      "description": {
+        "zh": "纯白圣鸟侧身站立，金色喙与身后一圈淡金光环。",
+        "en": "The pure white Caladrius standing in profile with a gold beak and a soft gold halo behind it."
+      },
+      "animation": "pulse",
+      "category": "medieval",
+      "tags": [
+        "caladrius",
+        "bestiary",
+        "medieval",
+        "bird",
+        "caladrius-bird"
+      ]
+    },
+    {
+      "id": "cala-bird-gaze",
+      "title": {
+        "zh": "凝视疗愈",
+        "en": "Healing Gaze"
+      },
+      "description": {
+        "zh": "白鸟头部特写，金色目光化作三道柔和光线向前伸出。",
+        "en": "Close-up of the white bird head with its gaze shown as three soft gold rays reaching forward."
+      },
+      "animation": "pulse",
+      "category": "medieval",
+      "tags": [
+        "caladrius",
+        "bestiary",
+        "medieval",
+        "bird",
+        "bird-gaze"
+      ]
+    },
+    {
+      "id": "cala-bird-turn-away",
+      "title": {
+        "zh": "转首",
+        "en": "Turning Away"
+      },
+      "description": {
+        "zh": "白鸟身体朝右，头转向身后，表示不看病人。",
+        "en": "The white bird faces right but turns its head back over its shoulder, looking away."
+      },
+      "animation": "sway",
+      "category": "medieval",
+      "tags": [
+        "caladrius",
+        "bestiary",
+        "medieval",
+        "bird",
+        "bird-turn-away"
+      ]
+    },
+    {
+      "id": "cala-royal-bed",
+      "title": {
+        "zh": "帐幔床",
+        "en": "Canopy Bed"
+      },
+      "description": {
+        "zh": "中世纪病榻：木床、白被与蓝色帐幔，床头立着小白鸟。",
+        "en": "A medieval sickbed with a wooden frame, white quilt and blue canopy curtain, a little white bird on the headboard."
+      },
+      "animation": "sway",
+      "category": "medieval",
+      "tags": [
+        "caladrius",
+        "bestiary",
+        "medieval",
+        "court",
+        "royal-bed"
+      ]
+    },
+    {
+      "id": "cala-healing-sun",
+      "title": {
+        "zh": "日轮",
+        "en": "Healing Sun"
+      },
+      "description": {
+        "zh": "金色日轮与旋转光芒，一只小白鸟正向它飞去。",
+        "en": "A gold sun disc with turning rays, a small white bird flying toward it."
+      },
+      "animation": "spin",
+      "category": "medieval",
+      "tags": [
+        "caladrius",
+        "bestiary",
+        "medieval",
+        "court",
+        "healing-sun"
+      ]
+    },
+    {
+      "id": "cala-bestiary-book",
+      "title": {
+        "zh": "动物寓言集",
+        "en": "Bestiary Book"
+      },
+      "description": {
+        "zh": "打开的手抄本，左页一只白鸟小插图，右页是无字的蓝色线纹与金边。",
+        "en": "An open manuscript bestiary with a tiny white bird miniature on the left page and wordless blue line marks on the right."
+      },
+      "animation": "float",
+      "category": "medieval",
+      "tags": [
+        "caladrius",
+        "bestiary",
+        "medieval",
+        "apothecary",
+        "bestiary-book"
+      ]
+    },
+    {
+      "id": "manti-manticore-crouch-roar",
+      "title": {
+        "zh": "蝎尾狮（低伏咆哮）",
+        "en": "Manticore crouch roar"
+      },
+      "description": {
+        "zh": "低伏的蝎尾狮：狮身、人面狮鬃、蝙蝠翼与毒刺尾，张口咆哮，前方青色声纹。",
+        "en": "A crouched manticore with lion body, human-like face in a lion mane, bat wing and scorpion tail, roaring with teal sound arcs."
+      },
+      "animation": "none",
+      "category": "persia",
+      "tags": [
+        "manticore",
+        "roar",
+        "martichora"
+      ]
+    },
+    {
+      "id": "manti-venom-tail-charge",
+      "title": {
+        "zh": "毒刺尾（摆动蓄力）",
+        "en": "Venom tail charge"
+      },
+      "description": {
+        "zh": "分节红色蝎尾末端青色毒刺，尖端橙光蓄力，整尾左右摆动。",
+        "en": "A segmented crimson scorpion tail ending in a teal stinger with an orange charge glow, swinging side to side."
+      },
+      "animation": "sway",
+      "category": "persia",
+      "tags": [
+        "tail",
+        "venom",
+        "stinger"
+      ]
+    },
+    {
+      "id": "manti-tail-spike-volley",
+      "title": {
+        "zh": "尾刺齐射（刺针飞出）",
+        "en": "Tail spike volley"
+      },
+      "description": {
+        "zh": "尾根处扇形射出四枚青色尾刺，伴橙色火星，轻快跳出。",
+        "en": "Four teal tail spikes fanning out from the tail base with orange sparks, popping outward playfully."
+      },
+      "animation": "pop",
+      "category": "persia",
+      "tags": [
+        "spikes",
+        "volley",
+        "attack"
+      ]
+    },
+    {
+      "id": "manti-hunter-spear",
+      "title": {
+        "zh": "猎人长矛（刺出）",
+        "en": "Hunter spear"
+      },
+      "description": {
+        "zh": "金木矛杆、红色缠柄、青色流苏与银色矛头，斜向刺出并带速度线。",
+        "en": "A wooden hunter spear with red grip wraps, teal tassel and steel head, thrusting diagonally with speed lines."
+      },
+      "animation": "none",
+      "category": "persia",
+      "tags": [
+        "spear",
+        "hunter",
+        "weapon"
+      ]
+    },
+    {
+      "id": "manti-bow-arrow",
+      "title": {
+        "zh": "弓箭（拉弓放箭）",
+        "en": "Bow and arrow"
+      },
+      "description": {
+        "zh": "木弓、红色握把与搭好的青色箭头箭矢，箭羽橙色，带速度线。",
+        "en": "A wooden bow with red grip releasing a teal-tipped arrow with orange fletching and speed lines."
+      },
+      "animation": "none",
+      "category": "persia",
+      "tags": [
+        "bow",
+        "arrow",
+        "ranged"
+      ]
+    },
+    {
+      "id": "manti-persian-helmet",
+      "title": {
+        "zh": "波斯头盔（光泽闪动）",
+        "en": "Persian helmet"
+      },
+      "description": {
+        "zh": "尖顶钢盔、金色额带、鼻甲与深色锁子护颈，左上白色光点闪动。",
+        "en": "A spiked steel helmet with gold band, nasal guard and dark mail aventail, a white glint pulsing at upper left."
+      },
+      "animation": "pulse",
+      "category": "persia",
+      "tags": [
+        "helmet",
+        "armor",
+        "gleam"
+      ]
+    },
+    {
+      "id": "sleip-sleipnir-run",
+      "title": {
+        "zh": "八足奔马",
+        "en": "Eight-Legged Gallop"
+      },
+      "description": {
+        "zh": "侧视的灰银神驹斯雷普尼尔，八条腿交错奔跑，白鬃飘扬，背上一道金色符文。",
+        "en": "Sleipnir in side view, a silver-grey steed galloping on eight criss-crossing legs, white mane streaming and a golden rune on its back."
+      },
+      "animation": "sway",
+      "category": "steed",
+      "tags": [
+        "sleipnir",
+        "norse",
+        "odin",
+        "mythology",
+        "steed",
+        "sleipnir-run"
+      ]
+    },
+    {
+      "id": "sleip-sleipnir-head",
+      "title": {
+        "zh": "神驹头像",
+        "en": "Steed Head"
+      },
+      "description": {
+        "zh": "神驹的侧脸，银白鬃毛向后飞扬，额前挂一枚金色符文坠。",
+        "en": "The steed's head in profile, silver-white mane flying back and a golden rune pendant on the brow."
+      },
+      "animation": "sway",
+      "category": "steed",
+      "tags": [
+        "sleipnir",
+        "norse",
+        "odin",
+        "mythology",
+        "steed",
+        "sleipnir-head"
+      ]
+    },
+    {
+      "id": "sleip-rune-hoof",
+      "title": {
+        "zh": "符文马蹄铁",
+        "en": "Rune Horseshoe"
+      },
+      "description": {
+        "zh": "一枚银灰马蹄铁，刻着三枚发金光的符文，周围是淡淡的金色光晕。",
+        "en": "A silver-grey horseshoe carved with three glowing golden runes inside a soft golden halo."
+      },
+      "animation": "pulse",
+      "category": "steed",
+      "tags": [
+        "sleipnir",
+        "norse",
+        "odin",
+        "mythology",
+        "steed",
+        "rune-hoof"
+      ]
+    },
+    {
+      "id": "sleip-odin-spear",
+      "title": {
+        "zh": "冈格尼尔",
+        "en": "Gungnir"
+      },
+      "description": {
+        "zh": "奥丁的神枪冈格尼尔斜指向前，银色枪头刻金符文，柄上缠着金环。",
+        "en": "Odin's spear Gungnir angled forward, its silver head carved with gold runes and gold rings bound on the shaft."
+      },
+      "animation": "sway",
+      "category": "steed",
+      "tags": [
+        "sleipnir",
+        "norse",
+        "odin",
+        "mythology",
+        "odin",
+        "odin-spear"
+      ]
+    },
+    {
+      "id": "sleip-odin-hat",
+      "title": {
+        "zh": "流浪者宽帽",
+        "en": "Wanderer Hat"
+      },
+      "description": {
+        "zh": "奥丁云游时戴的灰蓝宽檐帽，帽带上插一根黑鸦羽。",
+        "en": "The wide-brimmed grey-blue hat Odin wears as a wanderer, a black raven feather tucked into the band."
+      },
+      "animation": "sway",
+      "category": "steed",
+      "tags": [
+        "sleipnir",
+        "norse",
+        "odin",
+        "mythology",
+        "odin",
+        "odin-hat"
+      ]
+    },
+    {
+      "id": "sleip-raven-huginn",
+      "title": {
+        "zh": "思想之鸦",
+        "en": "Huginn, Thought"
+      },
+      "description": {
+        "zh": "奥丁的思想之鸦胡金，金色圆眼，展开一侧翅膀，头顶一枚紫色思绪光点。",
+        "en": "Huginn, Odin's raven of thought, with round golden eyes, one wing raised and a violet spark of thought above its head."
+      },
+      "animation": "sway",
+      "category": "steed",
+      "tags": [
+        "sleipnir",
+        "norse",
+        "odin",
+        "mythology",
+        "odin",
+        "raven-huginn"
+      ]
+    },
+    {
+      "id": "lama-lamassu",
+      "title": {
+        "zh": "人首翼牛",
+        "en": "Lamassu"
+      },
+      "description": {
+        "zh": "头戴角冠、编须卷曲的人首翼牛，展开金色羽翼守在门前。",
+        "en": "A human-headed winged bull with a horned crown and curled beard, golden wings raised at the gate."
+      },
+      "animation": "float",
+      "category": "assyria",
+      "tags": [
+        "lamassu",
+        "mesopotamia",
+        "gate",
+        "guardian",
+        "lamassu"
+      ]
+    },
+    {
+      "id": "lama-wings",
+      "title": {
+        "zh": "层叠羽翼",
+        "en": "Layered Wings"
+      },
+      "description": {
+        "zh": "一对层层叠叠的金色羽翼，羽列整齐如浮雕。",
+        "en": "A pair of layered golden wings with neat relief-style feather rows."
+      },
+      "animation": "sway",
+      "category": "assyria",
+      "tags": [
+        "lamassu",
+        "mesopotamia",
+        "gate",
+        "guardian",
+        "wings"
+      ]
+    },
+    {
+      "id": "lama-beard-curl",
+      "title": {
+        "zh": "卷曲编须",
+        "en": "Curled Beard"
+      },
+      "description": {
+        "zh": "一排排螺旋卷的长编须，末端整齐方正。",
+        "en": "A long braided beard of rows of spiral curls with a squared-off end."
+      },
+      "animation": "sway",
+      "category": "assyria",
+      "tags": [
+        "lamassu",
+        "mesopotamia",
+        "gate",
+        "guardian",
+        "beard"
+      ]
+    },
+    {
+      "id": "lama-city-gate",
+      "title": {
+        "zh": "彩釉宫殿城门",
+        "en": "Glazed City Gate"
+      },
+      "description": {
+        "zh": "蓝釉砖拱门，两侧双塔，墙面饰金色兽纹和雉堞。",
+        "en": "A blue glazed-brick arched gate between twin towers, with gold beast friezes and crenellations."
+      },
+      "animation": "pulse",
+      "category": "assyria",
+      "tags": [
+        "lamassu",
+        "mesopotamia",
+        "gate",
+        "palace",
+        "city"
+      ]
+    },
+    {
+      "id": "lama-bronze-key",
+      "title": {
+        "zh": "青铜门钥",
+        "en": "Bronze Gate Key"
+      },
+      "description": {
+        "zh": "环首青铜大门钥，在钩上轻轻转动。",
+        "en": "A large ring-headed bronze gate key swinging gently on its hook."
+      },
+      "animation": "sway",
+      "category": "assyria",
+      "tags": [
+        "lamassu",
+        "mesopotamia",
+        "gate",
+        "palace",
+        "bronze"
+      ]
+    },
+    {
+      "id": "lama-lyre",
+      "title": {
+        "zh": "牛头竖琴",
+        "en": "Bull-Headed Lyre"
+      },
+      "description": {
+        "zh": "音箱前装着金色牛头的木竖琴，琴弦轻轻颤动。",
+        "en": "A wooden lyre with a golden bull head on its sound box, strings trembling."
+      },
+      "animation": "sway",
+      "category": "assyria",
+      "tags": [
+        "lamassu",
+        "mesopotamia",
+        "gate",
+        "lore",
+        "lyre"
+      ]
+    }
+  ]
+}

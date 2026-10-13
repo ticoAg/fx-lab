@@ -1,0 +1,272 @@
+{
+  "id": "wolpertinger-bavarian-cryptid",
+  "title": {
+    "zh": "鹿角兔",
+    "en": "Horned Hares"
+  },
+  "description": {
+    "zh": "巴伐利亚鹿角兔与北美草原鹿角兔收在一套里，共 12 件：奇兽本体，加上椒盐卷、啤酒杯和牛仔装具。",
+    "en": "Bavarian wolpertinger and prairie jackalope in one kit of 12 icons: the beasts, plus pretzels, beer steins, and frontier gear."
+  },
+  "cover": "wolp-wolpertinger",
+  "categories": {
+    "bavarian-beast": {
+      "zh": "巴伐利亚奇兽",
+      "en": "Bavarian Beasts"
+    },
+    "alpine-gear": {
+      "zh": "阿尔卑斯器物",
+      "en": "Alpine Gear"
+    },
+    "prairie-beast": {
+      "zh": "草原奇兽",
+      "en": "Prairie Beasts"
+    },
+    "frontier-gear": {
+      "zh": "西部装具",
+      "en": "Frontier Gear"
+    }
+  },
+  "icons": [
+    {
+      "id": "wolp-wolpertinger",
+      "title": {
+        "zh": "鹿角兔",
+        "en": "Wolpertinger"
+      },
+      "description": {
+        "zh": "长着小鹿角和白色翅膀的胖野兔，正欢快蹦跳。",
+        "en": "A chubby hare with little antlers and white wings, hopping happily."
+      },
+      "animation": "pop",
+      "category": "bavarian-beast",
+      "tags": [
+        "wolpertinger",
+        "bavarian",
+        "cryptid",
+        "cryptid-forms",
+        "wolpertinger"
+      ]
+    },
+    {
+      "id": "wolp-fanged-hare",
+      "title": {
+        "zh": "獠牙兔",
+        "en": "Fanged Hare"
+      },
+      "description": {
+        "zh": "露出两颗小白獠牙咧嘴笑的鹿角兔变种。",
+        "en": "A fanged wolpertinger variant grinning with two little white fangs."
+      },
+      "animation": "none",
+      "category": "bavarian-beast",
+      "tags": [
+        "wolpertinger",
+        "bavarian",
+        "cryptid",
+        "cryptid-forms",
+        "fanged"
+      ]
+    },
+    {
+      "id": "wolp-duck-wing-hare",
+      "title": {
+        "zh": "鸭翅兔",
+        "en": "Duck-Wing Hare"
+      },
+      "description": {
+        "zh": "长着绿色鸭翅、翅上带蓝斑的鹿角兔在扑扇。",
+        "en": "An antlered hare with green duck wings and blue speculum stripes, flapping."
+      },
+      "animation": "sway",
+      "category": "bavarian-beast",
+      "tags": [
+        "wolpertinger",
+        "bavarian",
+        "cryptid",
+        "cryptid-forms",
+        "duck"
+      ]
+    },
+    {
+      "id": "wolp-pretzel",
+      "title": {
+        "zh": "椒盐卷",
+        "en": "Pretzel"
+      },
+      "description": {
+        "zh": "撒着粗盐粒的巴伐利亚椒盐卷饼在旋转。",
+        "en": "A salted Bavarian pretzel spinning."
+      },
+      "animation": "spin",
+      "category": "alpine-gear",
+      "tags": [
+        "wolpertinger",
+        "bavarian",
+        "cryptid",
+        "bavarian-props",
+        "pretzel"
+      ]
+    },
+    {
+      "id": "wolp-beer-stein",
+      "title": {
+        "zh": "啤酒杯",
+        "en": "Beer Stein"
+      },
+      "description": {
+        "zh": "蓝色条纹的陶瓷啤酒杯，泡沫溢出杯口，无标志。",
+        "en": "A blue-striped ceramic stein with foam overflowing, no logos."
+      },
+      "animation": "float",
+      "category": "alpine-gear",
+      "tags": [
+        "wolpertinger",
+        "bavarian",
+        "cryptid",
+        "bavarian-props",
+        "beer"
+      ]
+    },
+    {
+      "id": "wolp-lederhosen",
+      "title": {
+        "zh": "皮短裤",
+        "en": "Lederhosen"
+      },
+      "description": {
+        "zh": "棕色皮短裤配背带和刺绣胸带。",
+        "en": "Brown lederhosen with suspenders and an embroidered chest strap."
+      },
+      "animation": "sway",
+      "category": "alpine-gear",
+      "tags": [
+        "wolpertinger",
+        "bavarian",
+        "cryptid",
+        "bavarian-props",
+        "lederhosen"
+      ]
+    },
+    {
+      "id": "jack-jackalope",
+      "title": {
+        "zh": "鹿角兔",
+        "en": "Jackalope"
+      },
+      "description": {
+        "zh": "坐着的圆滚滚野兔，头顶一对分叉小鹿角，粉腮微笑。",
+        "en": "A chubby seated jackrabbit with a pair of small forked antlers and rosy cheeks, smiling."
+      },
+      "animation": "float",
+      "category": "prairie-beast",
+      "tags": [
+        "jackalope",
+        "wild-west",
+        "prairie",
+        "cryptid",
+        "jackalope"
+      ]
+    },
+    {
+      "id": "jack-antler-crown",
+      "title": {
+        "zh": "鹿角冠",
+        "en": "Antler Crown"
+      },
+      "description": {
+        "zh": "一对分叉的小鹿角特写，尖端带金色闪光。",
+        "en": "Close-up of a pair of small forked antlers with golden sparkles at the tips."
+      },
+      "animation": "pulse",
+      "category": "prairie-beast",
+      "tags": [
+        "jackalope",
+        "wild-west",
+        "prairie",
+        "cryptid",
+        "antler"
+      ]
+    },
+    {
+      "id": "jack-song-notes",
+      "title": {
+        "zh": "夜歌音符",
+        "en": "Night Song Notes"
+      },
+      "description": {
+        "zh": "一串波浪般上升的音符，传说鹿角兔会模仿牛仔歌声。",
+        "en": "A wavy rising line of music notes — legend says jackalopes mimic cowboy songs."
+      },
+      "animation": "float",
+      "category": "prairie-beast",
+      "tags": [
+        "jackalope",
+        "wild-west",
+        "prairie",
+        "cryptid",
+        "song"
+      ]
+    },
+    {
+      "id": "jack-cowboy-hat",
+      "title": {
+        "zh": "牛仔帽",
+        "en": "Cowboy Hat"
+      },
+      "description": {
+        "zh": "宽檐翘边的皮色牛仔帽，帽带上插一根羽毛。",
+        "en": "A wide-brimmed leather cowboy hat with curled sides and a feather in the band."
+      },
+      "animation": "pop",
+      "category": "frontier-gear",
+      "tags": [
+        "jackalope",
+        "wild-west",
+        "prairie",
+        "camp",
+        "cowboy"
+      ]
+    },
+    {
+      "id": "jack-harmonica",
+      "title": {
+        "zh": "口琴",
+        "en": "Harmonica"
+      },
+      "description": {
+        "zh": "银色口琴，一排吹孔，旁边飘出一个音符。",
+        "en": "A silver harmonica with a row of holes and a music note drifting off."
+      },
+      "animation": "sway",
+      "category": "frontier-gear",
+      "tags": [
+        "jackalope",
+        "wild-west",
+        "prairie",
+        "camp",
+        "harmonica"
+      ]
+    },
+    {
+      "id": "jack-lasso",
+      "title": {
+        "zh": "套索",
+        "en": "Lasso"
+      },
+      "description": {
+        "zh": "甩起的麻绳套索，绳圈在空中张开。",
+        "en": "A hemp lasso being swung, its loop open in the air."
+      },
+      "animation": "sway",
+      "category": "frontier-gear",
+      "tags": [
+        "jackalope",
+        "wild-west",
+        "prairie",
+        "gear",
+        "lasso"
+      ]
+    }
+  ]
+}

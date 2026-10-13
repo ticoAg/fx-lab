@@ -1,0 +1,890 @@
+{
+  "id": "qilin-auspicious-beast",
+  "title": {
+    "zh": "中华瑞兽",
+    "en": "Auspicious Beasts"
+  },
+  "description": {
+    "zh": "麒麟、貔貅、獬豸、白泽、鲲鹏、凤凰与刘海金蟾收在一套里，共 42 件。",
+    "en": "Qilin, pixiu, xiezhi, baize, kunpeng, fenghuang, and Liu Hai's golden toad, 42 icons in one kit."
+  },
+  "cover": "qilin-qilin-front",
+  "categories": {
+    "qilin": {
+      "zh": "麒麟",
+      "en": "Qilin"
+    },
+    "pixiu": {
+      "zh": "貔貅",
+      "en": "Pixiu"
+    },
+    "xiezhi": {
+      "zh": "獬豸",
+      "en": "Xiezhi"
+    },
+    "baize": {
+      "zh": "白泽",
+      "en": "Baize"
+    },
+    "kunpeng": {
+      "zh": "鲲鹏",
+      "en": "Kunpeng"
+    },
+    "fenghuang": {
+      "zh": "凤凰",
+      "en": "Fenghuang"
+    },
+    "liuhai": {
+      "zh": "刘海金蟾",
+      "en": "Golden Toad"
+    }
+  },
+  "icons": [
+    {
+      "id": "qilin-qilin-front",
+      "title": {
+        "zh": "麒麟正面立像",
+        "en": "Qilin Standing"
+      },
+      "description": {
+        "zh": "金鳞红鬃、头顶青色独角的小麒麟正面站立，脚踏祥云。",
+        "en": "A little golden-scaled qilin with a red mane and a jade single horn, standing front-on on a cloud."
+      },
+      "animation": "float",
+      "category": "qilin",
+      "tags": [
+        "qilin",
+        "chinese",
+        "auspicious",
+        "qilin",
+        "qilin"
+      ]
+    },
+    {
+      "id": "qilin-scale-pattern",
+      "title": {
+        "zh": "龙鳞纹样",
+        "en": "Dragon Scale Pattern"
+      },
+      "description": {
+        "zh": "金色龙鳞层层叠叠的圆形纹样徽章。",
+        "en": "A round badge of overlapping golden dragon scales."
+      },
+      "animation": "pulse",
+      "category": "qilin",
+      "tags": [
+        "qilin",
+        "chinese",
+        "auspicious",
+        "qilin",
+        "scale"
+      ]
+    },
+    {
+      "id": "qilin-qilin-bringing-child",
+      "title": {
+        "zh": "麒麟送子",
+        "en": "Qilin Bringing a Child"
+      },
+      "description": {
+        "zh": "背上驮着红肚兜胖娃娃的麒麟，娃娃手举莲花。",
+        "en": "A qilin carrying a chubby child in a red bib on its back, the child holding up a lotus."
+      },
+      "animation": "float",
+      "category": "qilin",
+      "tags": [
+        "qilin",
+        "chinese",
+        "auspicious",
+        "qilin",
+        "qilin"
+      ]
+    },
+    {
+      "id": "qilin-jade-book",
+      "title": {
+        "zh": "玉书",
+        "en": "Jade Book"
+      },
+      "description": {
+        "zh": "麒麟献来的青玉书册，书脊系着红绳。",
+        "en": "A jade-green book presented by the qilin, its spine tied with red cord."
+      },
+      "animation": "float",
+      "category": "qilin",
+      "tags": [
+        "qilin",
+        "chinese",
+        "auspicious",
+        "treasure",
+        "jade"
+      ]
+    },
+    {
+      "id": "qilin-qilin-spits-book",
+      "title": {
+        "zh": "麒麟吐玉书",
+        "en": "Qilin Presents the Jade Book"
+      },
+      "description": {
+        "zh": "麒麟张口吐出一卷玉书，相传为孔子降生之兆。",
+        "en": "A qilin breathing out a jade scroll-book, the legendary omen of Confucius's birth."
+      },
+      "animation": "pop",
+      "category": "qilin",
+      "tags": [
+        "qilin",
+        "chinese",
+        "auspicious",
+        "qilin",
+        "qilin"
+      ]
+    },
+    {
+      "id": "qilin-ruyi",
+      "title": {
+        "zh": "如意",
+        "en": "Ruyi Scepter"
+      },
+      "description": {
+        "zh": "灵芝头、金色长柄的如意，柄上系红穗。",
+        "en": "A ruyi scepter with a lingzhi-shaped head and golden handle, a red tassel tied on."
+      },
+      "animation": "sway",
+      "category": "qilin",
+      "tags": [
+        "qilin",
+        "chinese",
+        "auspicious",
+        "treasure",
+        "ruyi"
+      ]
+    },
+    {
+      "id": "pixiu-pixiu-full",
+      "title": {
+        "zh": "貔貅全身",
+        "en": "Pixiu Full Body"
+      },
+      "description": {
+        "zh": "胖乎乎的金色貔貅站立全身，独角、小翼、红卷鬃。",
+        "en": "A chubby golden pixiu standing, with a single horn, small wings and red curly mane."
+      },
+      "animation": "none",
+      "category": "pixiu",
+      "tags": [
+        "pixiu",
+        "wealth",
+        "guochao",
+        "pixiu-forms",
+        "pixiu"
+      ]
+    },
+    {
+      "id": "pixiu-single-horn-portrait",
+      "title": {
+        "zh": "独角头像",
+        "en": "Single-Horn Portrait"
+      },
+      "description": {
+        "zh": "红卷鬃环绕的貔貅圆脸头像，头顶一支玉色独角。",
+        "en": "A round pixiu face framed by red curls with one jade horn."
+      },
+      "animation": "none",
+      "category": "pixiu",
+      "tags": [
+        "pixiu",
+        "wealth",
+        "guochao",
+        "pixiu-forms",
+        "single"
+      ]
+    },
+    {
+      "id": "pixiu-curly-mane",
+      "title": {
+        "zh": "卷鬃",
+        "en": "Curly Mane"
+      },
+      "description": {
+        "zh": "金色身躯上翻卷的红色鬃毛。",
+        "en": "Red curly mane swirls over a golden body."
+      },
+      "animation": "sway",
+      "category": "pixiu",
+      "tags": [
+        "pixiu",
+        "wealth",
+        "guochao",
+        "pixiu-forms",
+        "curly"
+      ]
+    },
+    {
+      "id": "pixiu-guard-roar",
+      "title": {
+        "zh": "守财咆哮",
+        "en": "Guard Roar"
+      },
+      "description": {
+        "zh": "守着铜钱张口咆哮的貔貅，旁有声波纹。",
+        "en": "A pixiu roaring over a coin with sound ripples."
+      },
+      "animation": "none",
+      "category": "pixiu",
+      "tags": [
+        "pixiu",
+        "wealth",
+        "guochao",
+        "pixiu-forms",
+        "guard"
+      ]
+    },
+    {
+      "id": "pixiu-copper-coin",
+      "title": {
+        "zh": "铜钱",
+        "en": "Copper Coin"
+      },
+      "description": {
+        "zh": "金色方孔铜钱，无文字。",
+        "en": "A golden square-hole coin, no text."
+      },
+      "animation": "spin",
+      "category": "pixiu",
+      "tags": [
+        "pixiu",
+        "wealth",
+        "guochao",
+        "wealth-props",
+        "copper"
+      ]
+    },
+    {
+      "id": "pixiu-coin-rain",
+      "title": {
+        "zh": "金币雨",
+        "en": "Coin Rain"
+      },
+      "description": {
+        "zh": "纷纷落下的金币。",
+        "en": "Gold coins raining down."
+      },
+      "animation": "float",
+      "category": "pixiu",
+      "tags": [
+        "pixiu",
+        "wealth",
+        "guochao",
+        "home-scene",
+        "coin"
+      ]
+    },
+    {
+      "id": "xiezhi-xiezhi-head",
+      "title": {
+        "zh": "獬豸首",
+        "en": "Xiezhi Head"
+      },
+      "description": {
+        "zh": "独角羊首的獬豸侧像，额生弯角，颔下短须，缓缓点头。",
+        "en": "Side view of the goat-like Xiezhi head with a curved single horn and short beard, nodding slowly."
+      },
+      "animation": "sway",
+      "category": "xiezhi",
+      "tags": [
+        "xiezhi",
+        "justice",
+        "chinese-myth",
+        "beast",
+        "xiezhi"
+      ]
+    },
+    {
+      "id": "xiezhi-single-horn",
+      "title": {
+        "zh": "独角",
+        "en": "Single Horn"
+      },
+      "description": {
+        "zh": "一支弯曲的金色独角，环纹分节，角身微微发光。",
+        "en": "A single curved golden horn with ringed segments, gently glowing."
+      },
+      "animation": "pulse",
+      "category": "xiezhi",
+      "tags": [
+        "xiezhi",
+        "justice",
+        "chinese-myth",
+        "beast",
+        "single"
+      ]
+    },
+    {
+      "id": "xiezhi-xiezhi-stand",
+      "title": {
+        "zh": "立姿獬豸",
+        "en": "Standing Xiezhi"
+      },
+      "description": {
+        "zh": "四足站立、昂首挺角的獬豸，身躯随呼吸起伏。",
+        "en": "The Xiezhi standing on four legs, head raised and horn high, its body breathing gently."
+      },
+      "animation": "pulse",
+      "category": "xiezhi",
+      "tags": [
+        "xiezhi",
+        "justice",
+        "chinese-myth",
+        "beast",
+        "xiezhi"
+      ]
+    },
+    {
+      "id": "xiezhi-xiezhi-crown",
+      "title": {
+        "zh": "獬豸冠",
+        "en": "Xiezhi Cap"
+      },
+      "description": {
+        "zh": "古代执法官所戴的獬豸冠，冠顶前翘如独角，左右轻摆。",
+        "en": "The ancient Xiezhi cap of law officials, its crest curving up like a horn, tilting side to side."
+      },
+      "animation": "sway",
+      "category": "xiezhi",
+      "tags": [
+        "xiezhi",
+        "justice",
+        "chinese-myth",
+        "tools",
+        "xiezhi"
+      ]
+    },
+    {
+      "id": "xiezhi-bamboo-slip",
+      "title": {
+        "zh": "竹简",
+        "en": "Bamboo Slips"
+      },
+      "description": {
+        "zh": "展开的一卷竹简，编绳串起七片无字竹片。",
+        "en": "An unrolled bundle of seven blank bamboo slips bound with cords."
+      },
+      "animation": "pop",
+      "category": "xiezhi",
+      "tags": [
+        "xiezhi",
+        "justice",
+        "chinese-myth",
+        "tools",
+        "bamboo"
+      ]
+    },
+    {
+      "id": "xiezhi-scroll-banner",
+      "title": {
+        "zh": "卷轴",
+        "en": "Hanging Scroll"
+      },
+      "description": {
+        "zh": "竖幅挂轴，素绢上只绘一道朱色獬豸角纹，不题字。",
+        "en": "A vertical hanging scroll of plain silk bearing only a vermilion horn motif, with no inscription."
+      },
+      "animation": "pop",
+      "category": "xiezhi",
+      "tags": [
+        "xiezhi",
+        "justice",
+        "chinese-myth",
+        "court",
+        "scroll"
+      ]
+    },
+    {
+      "id": "baize-baize-full",
+      "title": {
+        "zh": "白泽全身",
+        "en": "Baize"
+      },
+      "description": {
+        "zh": "通体雪白的白泽侧身站立，头生山羊角、额有一目，身饰青色卷云纹。",
+        "en": "The snow-white Baize standing in profile, with goat horns, a third eye on its brow and teal cloud scrolls on its body."
+      },
+      "animation": "float",
+      "category": "baize",
+      "tags": [
+        "baize",
+        "chinese-myth",
+        "spirit-atlas",
+        "baize",
+        "baize"
+      ]
+    },
+    {
+      "id": "baize-brow-eye",
+      "title": {
+        "zh": "额上独眼",
+        "en": "Brow Eye"
+      },
+      "description": {
+        "zh": "白泽额心那只洞察万物的竖目，四周绕着云纹。",
+        "en": "The all-seeing vertical eye on the Baize's brow, ringed with cloud scrolls."
+      },
+      "animation": "pulse",
+      "category": "baize",
+      "tags": [
+        "baize",
+        "chinese-myth",
+        "spirit-atlas",
+        "baize",
+        "brow"
+      ]
+    },
+    {
+      "id": "baize-goat-horns",
+      "title": {
+        "zh": "山羊角",
+        "en": "Goat Horns"
+      },
+      "description": {
+        "zh": "一对带环节纹的弯曲山羊角。",
+        "en": "A pair of curved goat horns with ridged rings."
+      },
+      "animation": "pop",
+      "category": "baize",
+      "tags": [
+        "baize",
+        "chinese-myth",
+        "spirit-atlas",
+        "baize",
+        "goat"
+      ]
+    },
+    {
+      "id": "baize-yellow-emperor-crown",
+      "title": {
+        "zh": "黄帝冠冕",
+        "en": "Yellow Emperor Crown"
+      },
+      "description": {
+        "zh": "黄帝巡狩时所戴的冕冠，前后垂着串珠旒。",
+        "en": "The mianguan crown of the Yellow Emperor on his tour, with bead strings hanging front and back."
+      },
+      "animation": "sway",
+      "category": "baize",
+      "tags": [
+        "baize",
+        "chinese-myth",
+        "spirit-atlas",
+        "emperor",
+        "yellow"
+      ]
+    },
+    {
+      "id": "baize-ancient-scroll",
+      "title": {
+        "zh": "古卷轴",
+        "en": "Ancient Scroll"
+      },
+      "description": {
+        "zh": "半展开的《白泽精怪图》卷轴，卷面画着几只小精怪。",
+        "en": "A half-opened scroll of the Baize spirit atlas, painted with a few small spirits."
+      },
+      "animation": "float",
+      "category": "baize",
+      "tags": [
+        "baize",
+        "chinese-myth",
+        "spirit-atlas",
+        "emperor",
+        "ancient"
+      ]
+    },
+    {
+      "id": "baize-bell",
+      "title": {
+        "zh": "铃铛",
+        "en": "Bell"
+      },
+      "description": {
+        "zh": "挂在檐下的青铜风铃，铃舌轻摆。",
+        "en": "A bronze wind bell hanging under the eaves, its clapper swinging gently."
+      },
+      "animation": "sway",
+      "category": "baize",
+      "tags": [
+        "baize",
+        "chinese-myth",
+        "spirit-atlas",
+        "artifact",
+        "bell"
+      ]
+    },
+    {
+      "id": "kunpeng-kun-fish",
+      "title": {
+        "zh": "鲲",
+        "en": "Kun Fish"
+      },
+      "description": {
+        "zh": "金线描鳞的巨鲲在北冥游弋。",
+        "en": "A giant Kun fish with gold-lined scales swimming in the northern sea."
+      },
+      "animation": "float",
+      "category": "kunpeng",
+      "tags": [
+        "kunpeng",
+        "zhuangzi",
+        "guofeng",
+        "transform",
+        "fish"
+      ]
+    },
+    {
+      "id": "kunpeng-kun-tail",
+      "title": {
+        "zh": "鲲尾",
+        "en": "Kun Tail"
+      },
+      "description": {
+        "zh": "跃出浪面摆动的巨大鱼尾。",
+        "en": "A huge fish tail swaying above the waves."
+      },
+      "animation": "sway",
+      "category": "kunpeng",
+      "tags": [
+        "kunpeng",
+        "zhuangzi",
+        "guofeng",
+        "transform",
+        "tail"
+      ]
+    },
+    {
+      "id": "kunpeng-transform-swirl",
+      "title": {
+        "zh": "化鹏漩涡",
+        "en": "Transformation Swirl"
+      },
+      "description": {
+        "zh": "蓝金三色旋转的变化光旋。",
+        "en": "A tri-color swirl of the fish turning into a bird."
+      },
+      "animation": "spin",
+      "category": "kunpeng",
+      "tags": [
+        "kunpeng",
+        "zhuangzi",
+        "guofeng",
+        "transform",
+        "swirl"
+      ]
+    },
+    {
+      "id": "kunpeng-north-sea",
+      "title": {
+        "zh": "北冥",
+        "en": "Northern Sea"
+      },
+      "description": {
+        "zh": "深蓝色的北方大海与浪纹。",
+        "en": "The deep blue northern sea with wave lines."
+      },
+      "animation": "float",
+      "category": "kunpeng",
+      "tags": [
+        "kunpeng",
+        "zhuangzi",
+        "guofeng",
+        "seas",
+        "sea"
+      ]
+    },
+    {
+      "id": "kunpeng-south-sea",
+      "title": {
+        "zh": "南冥",
+        "en": "Southern Sea"
+      },
+      "description": {
+        "zh": "暖阳照耀的南方海天。",
+        "en": "The southern sea glowing under a warm sun."
+      },
+      "animation": "pulse",
+      "category": "kunpeng",
+      "tags": [
+        "kunpeng",
+        "zhuangzi",
+        "guofeng",
+        "seas",
+        "sea"
+      ]
+    },
+    {
+      "id": "kunpeng-whirlwind",
+      "title": {
+        "zh": "扶摇羊角",
+        "en": "Rising Whirlwind"
+      },
+      "description": {
+        "zh": "层层上升的螺旋旋风。",
+        "en": "A spiraling whirlwind rising in rings."
+      },
+      "animation": "sway",
+      "category": "kunpeng",
+      "tags": [
+        "kunpeng",
+        "zhuangzi",
+        "guofeng",
+        "seas",
+        "whirlwind"
+      ]
+    },
+    {
+      "id": "feng-phoenix-egg",
+      "title": {
+        "zh": "凤凰蛋",
+        "en": "Phoenix egg"
+      },
+      "description": {
+        "zh": "余烬堆中沉睡的金红蛋壳，壳面有火纹，蛋身轻轻脉动发光。",
+        "en": "A gold-and-red egg sleeping in a bed of embers, flame marks on its shell, softly pulsing with glow."
+      },
+      "animation": "pulse",
+      "category": "fenghuang",
+      "tags": [
+        "egg",
+        "ember",
+        "重生",
+        "phoenix",
+        "rebirth"
+      ]
+    },
+    {
+      "id": "feng-ash-nest",
+      "title": {
+        "zh": "灰烬巢",
+        "en": "Ash nest"
+      },
+      "description": {
+        "zh": "焦黑枝条交叠成的重生巢，巢心余火明灭闪烁。",
+        "en": "A rebirth nest of crossed charred twigs with embers flickering in its hollow."
+      },
+      "animation": "pulse",
+      "category": "fenghuang",
+      "tags": [
+        "nest",
+        "ash",
+        "余火",
+        "phoenix",
+        "rebirth"
+      ]
+    },
+    {
+      "id": "feng-flame-feather",
+      "title": {
+        "zh": "焰羽",
+        "en": "Flame feather"
+      },
+      "description": {
+        "zh": "单片燃烧的华丽尾羽，金红渐层，羽尖化为火舌，轻轻飘浮。",
+        "en": "A single ornate burning tail feather in gold and red, its tip turning into flame, gently floating."
+      },
+      "animation": "float",
+      "category": "fenghuang",
+      "tags": [
+        "feather",
+        "flame",
+        "尾羽",
+        "phoenix",
+        "rebirth"
+      ]
+    },
+    {
+      "id": "feng-phoenix-crown",
+      "title": {
+        "zh": "凤冠",
+        "en": "Phoenix crown"
+      },
+      "description": {
+        "zh": "冠羽如焰的金色头饰，身后一圈光芒缓缓旋转。",
+        "en": "A golden headdress with flame-like crest plumes, a ring of rays slowly turning behind it."
+      },
+      "animation": "spin",
+      "category": "fenghuang",
+      "tags": [
+        "crown",
+        "crest",
+        "凤冠",
+        "phoenix",
+        "rebirth"
+      ]
+    },
+    {
+      "id": "feng-rebirth-scroll",
+      "title": {
+        "zh": "涅槃卷轴",
+        "en": "Rebirth scroll"
+      },
+      "description": {
+        "zh": "记载轮回的封印卷轴，卷面只有抽象纹样，中央圆形火纹封印缓缓转动。",
+        "en": "A sealed scroll of cycles bearing only abstract patterns, its round flame seal slowly turning."
+      },
+      "animation": "spin",
+      "category": "fenghuang",
+      "tags": [
+        "scroll",
+        "seal",
+        "封印",
+        "phoenix",
+        "rebirth"
+      ]
+    },
+    {
+      "id": "feng-nest-key",
+      "title": {
+        "zh": "巢钥",
+        "en": "Nest key"
+      },
+      "description": {
+        "zh": "开启灰巢密室的古钥，钥柄为火焰环形，缓缓转动。",
+        "en": "An ancient key to the ash-nest chamber with a flame-ring bow, slowly turning."
+      },
+      "animation": "spin",
+      "category": "fenghuang",
+      "tags": [
+        "key",
+        "relic",
+        "古钥",
+        "phoenix",
+        "rebirth"
+      ]
+    },
+    {
+      "id": "liuhai-liuhai-boy",
+      "title": {
+        "zh": "刘海童子",
+        "en": "Liu Hai Boy"
+      },
+      "description": {
+        "zh": "留着齐刘海、穿红肚兜的笑脸童子欢快跳起。",
+        "en": "A smiling fringe-haired boy in a red bib jumping for joy."
+      },
+      "animation": "pop",
+      "category": "liuhai",
+      "tags": [
+        "liu-hai",
+        "golden-toad",
+        "fortune",
+        "chinese-folk",
+        "liuhai-toad",
+        "bounce"
+      ]
+    },
+    {
+      "id": "liuhai-golden-toad",
+      "title": {
+        "zh": "三足金蟾",
+        "en": "Three-Legged Golden Toad"
+      },
+      "description": {
+        "zh": "口衔铜钱的三足金蟾向前一跳。",
+        "en": "A three-legged golden toad hopping with a coin in its mouth."
+      },
+      "animation": "pop",
+      "category": "liuhai",
+      "tags": [
+        "liu-hai",
+        "golden-toad",
+        "fortune",
+        "chinese-folk",
+        "liuhai-toad",
+        "hop"
+      ]
+    },
+    {
+      "id": "liuhai-coin-string",
+      "title": {
+        "zh": "铜钱串",
+        "en": "Coin String"
+      },
+      "description": {
+        "zh": "红绳穿起的一串方孔铜钱来回摆动。",
+        "en": "A red-cord string of square-hole coins swinging."
+      },
+      "animation": "sway",
+      "category": "liuhai",
+      "tags": [
+        "liu-hai",
+        "golden-toad",
+        "fortune",
+        "chinese-folk",
+        "coins-wealth",
+        "swing"
+      ]
+    },
+    {
+      "id": "liuhai-coin-shower",
+      "title": {
+        "zh": "撒钱",
+        "en": "Coin Shower"
+      },
+      "description": {
+        "zh": "铜钱从祥云中纷纷撒落。",
+        "en": "Coins raining down from a cloud."
+      },
+      "animation": "float",
+      "category": "liuhai",
+      "tags": [
+        "liu-hai",
+        "golden-toad",
+        "fortune",
+        "chinese-folk",
+        "coins-wealth",
+        "fall"
+      ]
+    },
+    {
+      "id": "liuhai-fishing-line",
+      "title": {
+        "zh": "钓钱绳",
+        "en": "Coin Fishing Line"
+      },
+      "description": {
+        "zh": "竹竿上的钱串绳吊起一只金蟾。",
+        "en": "A bamboo pole with a coin-string line lifting a golden toad."
+      },
+      "animation": "sway",
+      "category": "liuhai",
+      "tags": [
+        "liu-hai",
+        "golden-toad",
+        "fortune",
+        "chinese-folk",
+        "liuhai-toad",
+        "reel"
+      ]
+    },
+    {
+      "id": "liuhai-fan",
+      "title": {
+        "zh": "团扇",
+        "en": "Round Fan"
+      },
+      "description": {
+        "zh": "绘着铜钱纹的圆团扇来回扇动。",
+        "en": "A round silk fan painted with a coin motif waving."
+      },
+      "animation": "sway",
+      "category": "liuhai",
+      "tags": [
+        "liu-hai",
+        "golden-toad",
+        "fortune",
+        "chinese-folk",
+        "festival-luck",
+        "wave"
+      ]
+    }
+  ]
+}

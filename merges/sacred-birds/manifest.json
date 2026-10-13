@@ -1,0 +1,901 @@
+{
+  "id": "sacred-birds",
+  "title": {
+    "zh": "世界神鸟",
+    "en": "Sacred Birds"
+  },
+  "description": {
+    "zh": "西摩格、雷鸟、天堂鸟、阿里坎托、火鸟、迦楼罗与图鲁尔收在一套里，共 42 件。",
+    "en": "Simurgh, thunderbird, alkonost, alicanto, firebird, garuda, and turul, 42 icons in one kit."
+  },
+  "cover": "firebird-firebird",
+  "categories": {
+    "simurgh": {
+      "zh": "西摩格",
+      "en": "Simurgh"
+    },
+    "thunderbird": {
+      "zh": "雷鸟",
+      "en": "Thunderbird"
+    },
+    "alkonost": {
+      "zh": "天堂鸟",
+      "en": "Birds of Paradise"
+    },
+    "alicanto": {
+      "zh": "阿里坎托",
+      "en": "Alicanto"
+    },
+    "firebird": {
+      "zh": "火鸟",
+      "en": "Firebird"
+    },
+    "garuda": {
+      "zh": "迦楼罗",
+      "en": "Garuda"
+    },
+    "turul": {
+      "zh": "图鲁尔",
+      "en": "Turul"
+    }
+  },
+  "icons": [
+    {
+      "id": "simurgh-simurgh-wings",
+      "title": {
+        "zh": "西摩格展翼",
+        "en": "Simurgh Spreads Its Wings"
+      },
+      "description": {
+        "zh": "犬首孔雀尾的巨鸟西摩格展开双翼，翼羽层叠，尾羽缀着金色眼斑。",
+        "en": "The giant dog-headed, peacock-tailed Simurgh spreading its wings, layered pinions and gold eye-spot tail."
+      },
+      "animation": "sway",
+      "category": "simurgh",
+      "tags": [
+        "simurgh",
+        "persian",
+        "shahnameh",
+        "simurgh-body",
+        "simurgh"
+      ]
+    },
+    {
+      "id": "simurgh-feather-gift",
+      "title": {
+        "zh": "神羽",
+        "en": "Gift Feather"
+      },
+      "description": {
+        "zh": "西摩格赠予扎尔的神羽，羽身泛起金色光晕，燃之即可召唤神鸟。",
+        "en": "The feather Simurgh gave Zal, glowing with a golden halo; burned, it summons the bird."
+      },
+      "animation": "pulse",
+      "category": "simurgh",
+      "tags": [
+        "simurgh",
+        "persian",
+        "shahnameh",
+        "simurgh-body",
+        "feather"
+      ]
+    },
+    {
+      "id": "simurgh-tree-of-seeds",
+      "title": {
+        "zh": "万种子之树",
+        "en": "Tree of All Seeds"
+      },
+      "description": {
+        "zh": "西摩格栖息的万种子之树，圆冠缀满各色种子，枝头有小巢。",
+        "en": "The Tree of All Seeds where Simurgh nests, its round crown dotted with seeds and a nest on top."
+      },
+      "animation": "sway",
+      "category": "simurgh",
+      "tags": [
+        "simurgh",
+        "persian",
+        "shahnameh",
+        "simurgh-body",
+        "tree"
+      ]
+    },
+    {
+      "id": "simurgh-rostam-helm",
+      "title": {
+        "zh": "鲁斯塔姆头盔",
+        "en": "Rostam’s Helm"
+      },
+      "description": {
+        "zh": "英雄鲁斯塔姆的尖顶铁盔，金色护额与锁子护颈闪着光。",
+        "en": "Hero Rostam’s pointed helm with a gold brow band and mail neck guard, shining."
+      },
+      "animation": "pulse",
+      "category": "simurgh",
+      "tags": [
+        "simurgh",
+        "persian",
+        "shahnameh",
+        "shahnameh-heroes",
+        "rostam"
+      ]
+    },
+    {
+      "id": "simurgh-bow-arrow",
+      "title": {
+        "zh": "英雄弓箭",
+        "en": "Hero’s Bow"
+      },
+      "description": {
+        "zh": "拉满的反曲弓搭着双头箭，正是西摩格教鲁斯塔姆用的箭。",
+        "en": "A fully drawn recurve bow nocked with the two-headed arrow Simurgh taught Rostam to use."
+      },
+      "animation": "none",
+      "category": "simurgh",
+      "tags": [
+        "simurgh",
+        "persian",
+        "shahnameh",
+        "shahnameh-heroes",
+        "bow"
+      ]
+    },
+    {
+      "id": "simurgh-crown-shah",
+      "title": {
+        "zh": "王冠",
+        "en": "Shah’s Crown"
+      },
+      "description": {
+        "zh": "《列王纪》君王的金冠，城垛形冠尖镶着绿松石与红宝石，熠熠生辉。",
+        "en": "A Shahnameh king’s gold crown with crenellated points set with turquoise and ruby, glinting."
+      },
+      "animation": "pulse",
+      "category": "simurgh",
+      "tags": [
+        "simurgh",
+        "persian",
+        "shahnameh",
+        "shahnameh-heroes",
+        "crown"
+      ]
+    },
+    {
+      "id": "thunder-thunderbird",
+      "title": {
+        "zh": "雷鸟",
+        "en": "Thunderbird"
+      },
+      "description": {
+        "zh": "展翅盘旋的卡通雷鸟，翼尖闪着金色电光",
+        "en": "A cartoon thunderbird soaring with wide wings, gold sparks at its wingtips."
+      },
+      "animation": "float",
+      "category": "thunderbird",
+      "tags": [
+        "thunderbird",
+        "雷鸟",
+        "thunderbird",
+        "thunderbird",
+        "雷鸟",
+        "雷鸟形象"
+      ]
+    },
+    {
+      "id": "thunder-wing-beat",
+      "title": {
+        "zh": "巨翼拍击",
+        "en": "Mighty Wingbeat"
+      },
+      "description": {
+        "zh": "一只巨大翅膀向下扇动，带出三道风线",
+        "en": "One huge wing sweeping down, pushing out three gusts of wind."
+      },
+      "animation": "float",
+      "category": "thunderbird",
+      "tags": [
+        "wing-beat",
+        "巨翼拍击",
+        "mighty wingbeat",
+        "thunderbird",
+        "雷鸟",
+        "雷鸟形象"
+      ]
+    },
+    {
+      "id": "thunder-lightning-eye",
+      "title": {
+        "zh": "闪电眼",
+        "en": "Lightning Eye"
+      },
+      "description": {
+        "zh": "雷鸟金色眼睛，四周迸出小闪电",
+        "en": "A thunderbird's golden eye with tiny bolts crackling around it."
+      },
+      "animation": "pulse",
+      "category": "thunderbird",
+      "tags": [
+        "lightning-eye",
+        "闪电眼",
+        "lightning eye",
+        "thunderbird",
+        "雷鸟",
+        "雷鸟形象"
+      ]
+    },
+    {
+      "id": "thunder-thundercloud",
+      "title": {
+        "zh": "雷云",
+        "en": "Thundercloud"
+      },
+      "description": {
+        "zh": "翻涌的深蓝雷云，底部透出金光",
+        "en": "A billowing navy storm cloud glowing gold underneath."
+      },
+      "animation": "float",
+      "category": "thunderbird",
+      "tags": [
+        "thundercloud",
+        "雷云",
+        "thundercloud",
+        "thunderbird",
+        "雷鸟",
+        "风暴天象"
+      ]
+    },
+    {
+      "id": "thunder-downpour",
+      "title": {
+        "zh": "暴雨",
+        "en": "Downpour"
+      },
+      "description": {
+        "zh": "乌云下倾泻的斜雨线",
+        "en": "Slanting sheets of rain pouring from a dark cloud."
+      },
+      "animation": "float",
+      "category": "thunderbird",
+      "tags": [
+        "downpour",
+        "暴雨",
+        "downpour",
+        "thunderbird",
+        "雷鸟",
+        "风暴天象"
+      ]
+    },
+    {
+      "id": "thunder-lightning-chain",
+      "title": {
+        "zh": "闪电链",
+        "en": "Lightning Bolt"
+      },
+      "description": {
+        "zh": "一道分叉的锯齿金色闪电",
+        "en": "A forked zigzag gold lightning bolt."
+      },
+      "animation": "pulse",
+      "category": "thunderbird",
+      "tags": [
+        "lightning-chain",
+        "闪电链",
+        "lightning bolt",
+        "thunderbird",
+        "雷鸟",
+        "风暴天象"
+      ]
+    },
+    {
+      "id": "alkonost-alkonost",
+      "title": {
+        "zh": "阿尔科诺斯特",
+        "en": "Alkonost"
+      },
+      "description": {
+        "zh": "金冠红羽、面带笑容的人面欢乐神鸟，展开金色翅膀。",
+        "en": "The joyful bird-maiden Alkonost with a gold crown, red plumage, a smile and raised golden wings."
+      },
+      "animation": "float",
+      "category": "alkonost",
+      "tags": [
+        "alkonost",
+        "sirin",
+        "slavic",
+        "birds",
+        "alkonost"
+      ]
+    },
+    {
+      "id": "alkonost-sirin",
+      "title": {
+        "zh": "西林",
+        "en": "Sirin"
+      },
+      "description": {
+        "zh": "黑羽人面哀歌神鸟，低眉愁容，翅膀收拢。",
+        "en": "The mournful bird-maiden Sirin with dark plumage, a sorrowful face and folded wings."
+      },
+      "animation": "sway",
+      "category": "alkonost",
+      "tags": [
+        "alkonost",
+        "sirin",
+        "slavic",
+        "birds",
+        "sirin"
+      ]
+    },
+    {
+      "id": "alkonost-gamayun",
+      "title": {
+        "zh": "伽玛云",
+        "en": "Gamayun"
+      },
+      "description": {
+        "zh": "蓝绿羽毛的预言神鸟，胸前抱着一卷无字的花纹卷轴。",
+        "en": "The prophetic bird Gamayun in blue-green plumage, holding a blank ornamented scroll at its chest."
+      },
+      "animation": "pulse",
+      "category": "alkonost",
+      "tags": [
+        "alkonost",
+        "sirin",
+        "slavic",
+        "birds",
+        "gamayun"
+      ]
+    },
+    {
+      "id": "alkonost-bird-egg",
+      "title": {
+        "zh": "神鸟之卵",
+        "en": "Paradise Bird Egg"
+      },
+      "description": {
+        "zh": "海边的彩绘神卵，饰红金卷草纹。",
+        "en": "A painted paradise-bird egg by the sea, decorated with red and gold scrolls."
+      },
+      "animation": "sway",
+      "category": "alkonost",
+      "tags": [
+        "alkonost",
+        "sirin",
+        "slavic",
+        "paradise",
+        "bird"
+      ]
+    },
+    {
+      "id": "alkonost-calm-sea",
+      "title": {
+        "zh": "平静海浪",
+        "en": "Calm Sea"
+      },
+      "description": {
+        "zh": "神鸟孵卵时风平浪静的海面，三层柔和波纹。",
+        "en": "The windless sea of the brooding days: three soft layers of gentle waves."
+      },
+      "animation": "float",
+      "category": "alkonost",
+      "tags": [
+        "alkonost",
+        "sirin",
+        "slavic",
+        "paradise",
+        "calm"
+      ]
+    },
+    {
+      "id": "alkonost-gusli-harp",
+      "title": {
+        "zh": "古斯里琴",
+        "en": "Gusli"
+      },
+      "description": {
+        "zh": "俄罗斯翼形古斯里琴，琴身红漆金纹，琴弦斜排。",
+        "en": "A wing-shaped Russian gusli psaltery in red lacquer with gold trim and slanted strings."
+      },
+      "animation": "sway",
+      "category": "alkonost",
+      "tags": [
+        "alkonost",
+        "sirin",
+        "slavic",
+        "song",
+        "gusli"
+      ]
+    },
+    {
+      "id": "alicanto-alicanto",
+      "title": {
+        "zh": "阿利坎托金鸟",
+        "en": "Alicanto"
+      },
+      "description": {
+        "zh": "通体金光的阿利坎托神鸟，铜色冠羽与长尾。",
+        "en": "The gold-glowing Alicanto bird with a copper crest and long tail."
+      },
+      "animation": "float",
+      "category": "alicanto",
+      "tags": [
+        "alicanto",
+        "chile",
+        "atacama",
+        "mining",
+        "folklore",
+        "bird",
+        "alicanto"
+      ]
+    },
+    {
+      "id": "alicanto-gold-egg",
+      "title": {
+        "zh": "金蛋",
+        "en": "Gold Egg"
+      },
+      "description": {
+        "zh": "草巢里一枚闪亮的金色神鸟蛋。",
+        "en": "A shiny golden egg resting in a twig nest."
+      },
+      "animation": "sway",
+      "category": "alicanto",
+      "tags": [
+        "alicanto",
+        "chile",
+        "atacama",
+        "mining",
+        "folklore",
+        "bird",
+        "egg"
+      ]
+    },
+    {
+      "id": "alicanto-glowing-footprint",
+      "title": {
+        "zh": "发光足迹",
+        "en": "Glowing Footprints"
+      },
+      "description": {
+        "zh": "沙地上一串发金光的三趾鸟爪印。",
+        "en": "A trail of glowing three-toed bird prints across the sand."
+      },
+      "animation": "pulse",
+      "category": "alicanto",
+      "tags": [
+        "alicanto",
+        "chile",
+        "atacama",
+        "mining",
+        "folklore",
+        "bird",
+        "footprint"
+      ]
+    },
+    {
+      "id": "alicanto-miner-lamp",
+      "title": {
+        "zh": "矿工头灯",
+        "en": "Miner Lamp"
+      },
+      "description": {
+        "zh": "金色矿工头盔，前方头灯发出暖光。",
+        "en": "A gold miner helmet with its headlamp glowing."
+      },
+      "animation": "pulse",
+      "category": "alicanto",
+      "tags": [
+        "alicanto",
+        "chile",
+        "atacama",
+        "mining",
+        "folklore",
+        "mine",
+        "lamp"
+      ]
+    },
+    {
+      "id": "alicanto-mine-entrance",
+      "title": {
+        "zh": "矿洞入口",
+        "en": "Mine Entrance"
+      },
+      "description": {
+        "zh": "木梁撑起的矿口，轨道伸进黑暗，深处一对金光小眼。",
+        "en": "A timber-framed mine mouth with rails leading in and two gold glints inside."
+      },
+      "animation": "pulse",
+      "category": "alicanto",
+      "tags": [
+        "alicanto",
+        "chile",
+        "atacama",
+        "mining",
+        "folklore",
+        "mine",
+        "entrance"
+      ]
+    },
+    {
+      "id": "alicanto-mine-cart",
+      "title": {
+        "zh": "矿车",
+        "en": "Mine Cart"
+      },
+      "description": {
+        "zh": "铜色矿车装满金块和银石，停在轨道上。",
+        "en": "A copper mine cart heaped with gold and silver ore on rails."
+      },
+      "animation": "pop",
+      "category": "alicanto",
+      "tags": [
+        "alicanto",
+        "chile",
+        "atacama",
+        "mining",
+        "folklore",
+        "mine",
+        "cart"
+      ]
+    },
+    {
+      "id": "firebird-firebird",
+      "title": {
+        "zh": "火鸟",
+        "en": "Firebird"
+      },
+      "description": {
+        "zh": "拖着火焰长尾的金红神鸟，羽冠高扬。",
+        "en": "A gold-and-red magic bird trailing a fiery tail, crest raised."
+      },
+      "animation": "float",
+      "category": "firebird",
+      "tags": [
+        "firebird",
+        "slavic",
+        "folklore"
+      ]
+    },
+    {
+      "id": "firebird-fire-feather",
+      "title": {
+        "zh": "火羽",
+        "en": "Fire Feather"
+      },
+      "description": {
+        "zh": "一根发光的火鸟羽毛，带金色眼纹。",
+        "en": "A single glowing firebird feather with a gold eye mark."
+      },
+      "animation": "sway",
+      "category": "firebird",
+      "tags": [
+        "firebird",
+        "slavic",
+        "folklore"
+      ]
+    },
+    {
+      "id": "firebird-golden-apple",
+      "title": {
+        "zh": "金苹果",
+        "en": "Golden Apple"
+      },
+      "description": {
+        "zh": "带绿叶的金色苹果，闪着光泽。",
+        "en": "A golden apple with a green leaf and a soft shine."
+      },
+      "animation": "pulse",
+      "category": "firebird",
+      "tags": [
+        "firebird",
+        "slavic",
+        "folklore"
+      ]
+    },
+    {
+      "id": "firebird-tsarevich-ivan",
+      "title": {
+        "zh": "伊万王子",
+        "en": "Tsarevich Ivan"
+      },
+      "description": {
+        "zh": "戴红色皮边帽的少年王子，通用造型。",
+        "en": "A young prince in a fur-trimmed red cap, a generic figure."
+      },
+      "animation": "pop",
+      "category": "firebird",
+      "tags": [
+        "firebird",
+        "slavic",
+        "folklore"
+      ]
+    },
+    {
+      "id": "firebird-tsar-berendey",
+      "title": {
+        "zh": "老沙皇",
+        "en": "Old Tsar"
+      },
+      "description": {
+        "zh": "戴金冠、白长须的老国王。",
+        "en": "An old king with a gold crown and long white beard."
+      },
+      "animation": "sway",
+      "category": "firebird",
+      "tags": [
+        "firebird",
+        "slavic",
+        "folklore"
+      ]
+    },
+    {
+      "id": "firebird-elena-beautiful",
+      "title": {
+        "zh": "美人叶莲娜",
+        "en": "Elena the Beautiful"
+      },
+      "description": {
+        "zh": "戴头饰、垂着金色长辫的公主。",
+        "en": "A princess in a headdress with long golden braids."
+      },
+      "animation": "float",
+      "category": "firebird",
+      "tags": [
+        "firebird",
+        "slavic",
+        "folklore"
+      ]
+    },
+    {
+      "id": "garuda-garuda-hatch",
+      "title": {
+        "zh": "金翅鸟破壳",
+        "en": "Garuda Hatching"
+      },
+      "description": {
+        "zh": "金色巨卵沿锯齿裂开，头顶火焰冠羽的雏鸟探出脑袋。",
+        "en": "A giant golden egg splits along a zigzag crack as a chick with a flame crest pokes its head out."
+      },
+      "animation": "pop",
+      "category": "garuda",
+      "tags": [
+        "garuda",
+        "amrita",
+        "indian-epic",
+        "origins",
+        "egg",
+        "chick",
+        "birth"
+      ]
+    },
+    {
+      "id": "garuda-golden-egg-crack",
+      "title": {
+        "zh": "蛋壳碎片",
+        "en": "Golden Eggshell Shards"
+      },
+      "description": {
+        "zh": "散落在地的金色蛋壳碎片，内壁奶白，四周闪着微光。",
+        "en": "Golden eggshell shards scattered on the ground, cream inside, with small sparkles around them."
+      },
+      "animation": "pop",
+      "category": "garuda",
+      "tags": [
+        "garuda",
+        "amrita",
+        "indian-epic",
+        "origins",
+        "egg",
+        "shell",
+        "sparkle"
+      ]
+    },
+    {
+      "id": "garuda-garuda-wings",
+      "title": {
+        "zh": "烈焰金翼",
+        "en": "Blazing Golden Wings"
+      },
+      "description": {
+        "zh": "正面展翅的金翅鸟，双翼金色，翼尖燃成火焰般的橙红。",
+        "en": "Garuda facing forward with golden wings spread wide, the wingtips turning flame orange-red."
+      },
+      "animation": "float",
+      "category": "garuda",
+      "tags": [
+        "garuda",
+        "amrita",
+        "indian-epic",
+        "origins",
+        "wings",
+        "flame"
+      ]
+    },
+    {
+      "id": "garuda-fire-wall",
+      "title": {
+        "zh": "火焰之墙",
+        "en": "Wall of Fire"
+      },
+      "description": {
+        "zh": "一圈熊熊火焰环绕着中央发光的小金瓶。",
+        "en": "A ring of roaring flames surrounding a small glowing golden pot."
+      },
+      "animation": "pulse",
+      "category": "garuda",
+      "tags": [
+        "garuda",
+        "amrita",
+        "indian-epic",
+        "trials",
+        "fire",
+        "flame",
+        "guard"
+      ]
+    },
+    {
+      "id": "garuda-spinning-wheel",
+      "title": {
+        "zh": "旋转刀轮",
+        "en": "Spinning Blade Wheel"
+      },
+      "description": {
+        "zh": "金色外圈带一排弯刃的机关轮，靛蓝轮心与红色轮毂。",
+        "en": "A trap wheel with a golden rim of curved blades, an indigo center and a red hub."
+      },
+      "animation": "spin",
+      "category": "garuda",
+      "tags": [
+        "garuda",
+        "amrita",
+        "indian-epic",
+        "trials",
+        "wheel",
+        "blade",
+        "trap"
+      ]
+    },
+    {
+      "id": "garuda-twin-guard-snakes",
+      "title": {
+        "zh": "双目守卫蛇",
+        "en": "Twin Guardian Snakes"
+      },
+      "description": {
+        "zh": "左右对峙的两条守卫蛇，金色眼睛射出炯炯目光。",
+        "en": "Two guardian snakes facing each other, their golden eyes shooting out glaring rays."
+      },
+      "animation": "pulse",
+      "category": "garuda",
+      "tags": [
+        "garuda",
+        "amrita",
+        "indian-epic",
+        "trials",
+        "snake",
+        "guard",
+        "glare"
+      ]
+    },
+    {
+      "id": "turul-wonder-stag",
+      "title": {
+        "zh": "神鹿",
+        "en": "Wonder Stag"
+      },
+      "description": {
+        "zh": "白色神鹿昂首站立，金色鹿角缀满星光。",
+        "en": "A white wonder stag standing proud, its golden antlers dotted with stars."
+      },
+      "animation": "pulse",
+      "category": "turul",
+      "tags": [
+        "hungarian",
+        "origin-myth",
+        "steppe",
+        "stag",
+        "wonder"
+      ]
+    },
+    {
+      "id": "turul-turul-bird",
+      "title": {
+        "zh": "图鲁尔神鹰",
+        "en": "Turul Bird"
+      },
+      "description": {
+        "zh": "守护部族的金色神鹰展开双翅盘旋。",
+        "en": "The golden Turul eagle, guardian of the tribe, soaring with wings spread."
+      },
+      "animation": "float",
+      "category": "turul",
+      "tags": [
+        "hungarian",
+        "origin-myth",
+        "steppe",
+        "stag",
+        "turul"
+      ]
+    },
+    {
+      "id": "turul-hunor",
+      "title": {
+        "zh": "胡诺尔",
+        "en": "Hunor"
+      },
+      "description": {
+        "zh": "Q版兄长猎人胡诺尔身穿绿袍，拉弓搭箭瞄准。",
+        "en": "Chibi elder hunter Hunor in a green coat, drawing his bow and aiming an arrow."
+      },
+      "animation": "sway",
+      "category": "turul",
+      "tags": [
+        "hungarian",
+        "origin-myth",
+        "steppe",
+        "stag",
+        "hunor"
+      ]
+    },
+    {
+      "id": "turul-marsh-reed",
+      "title": {
+        "zh": "沼泽芦苇",
+        "en": "Marsh Reeds"
+      },
+      "description": {
+        "zh": "神鹿消失的水边，三株香蒲芦苇随风摇曳。",
+        "en": "Three cattail reeds by the water where the stag vanished, swaying in the wind."
+      },
+      "animation": "sway",
+      "category": "turul",
+      "tags": [
+        "hungarian",
+        "origin-myth",
+        "steppe",
+        "hunters",
+        "marsh"
+      ]
+    },
+    {
+      "id": "turul-composite-bow",
+      "title": {
+        "zh": "复合弓",
+        "en": "Composite Bow"
+      },
+      "description": {
+        "zh": "游牧反曲复合弓，金色握把，弓弦紧绷。",
+        "en": "A nomad recurve composite bow with a golden grip and taut string."
+      },
+      "animation": "sway",
+      "category": "turul",
+      "tags": [
+        "hungarian",
+        "origin-myth",
+        "steppe",
+        "hunters",
+        "composite"
+      ]
+    },
+    {
+      "id": "turul-sword-of-god",
+      "title": {
+        "zh": "神之剑",
+        "en": "Legendary Sword"
+      },
+      "description": {
+        "zh": "传说宝剑，银白剑身、金色护手镶红石，寒光闪烁。",
+        "en": "A legendary sword with a silver blade and gold crossguard set with a red stone, gleaming."
+      },
+      "animation": "pulse",
+      "category": "turul",
+      "tags": [
+        "hungarian",
+        "origin-myth",
+        "steppe",
+        "omen",
+        "sword"
+      ]
+    }
+  ]
+}
