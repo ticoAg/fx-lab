@@ -1,4 +1,4 @@
-import { handleSvgKitsRequest, type AssetBody, type KitStore } from '../../_lib/http.ts'
+import { handleSvgKitsRequest, planUnlist, updateIndex, type AssetBody, type KitStore, type UnlistResult } from '../../_lib/http.ts'
 import type { StoreInfo, SvgKitTheme } from '../../_lib/model.ts'
 import type { R2Bucket } from '../../_lib/r2.ts'
 import { d1ViewsStore, type SvgKitViewsDatabase } from '../../_lib/views.ts'
@@ -29,6 +29,27 @@ class R2KitStore implements KitStore {
     if (!obj) return []
     const data = JSON.parse(await obj.text()) as { themes?: string[] }
     return data.themes ?? []
+  }
+
+  // One read-modify-write of index.json. onlyIf retries so a concurrent PUT
+  // is re-read instead of overwritten. Theme directories are not touched.
+  private editIndex(mutate: (ids: string[]) => string[] | null) {
+    return updateIndex(
+      async () => {
+        const obj = await this.bucket.get('index.json')
+        if (!obj) return { themes: [] }
+        const data = JSON.parse(await obj.text()) as { themes?: string[] }
+        return { themes: data.themes ?? [], etag: obj.etag }
+      },
+      async (themes, etag) => {
+        const written = await this.bucket.put('index.json', JSON.stringify({ themes }, null, 2), {
+          httpMetadata: { contentType: JSON_TYPE },
+          ...(etag ? { onlyIf: { etagMatches: etag } } : {}),
+        })
+        return written !== null
+      },
+      mutate,
+    )
   }
 
   async list() {
@@ -63,13 +84,7 @@ class R2KitStore implements KitStore {
         })
       }
     }
-    const ids = await this.readIndex()
-    if (!ids.includes(theme.id)) {
-      ids.push(theme.id)
-      await this.bucket.put('index.json', JSON.stringify({ themes: ids }, null, 2), {
-        httpMetadata: { contentType: JSON_TYPE },
-      })
-    }
+    await this.editIndex((ids) => (ids.includes(theme.id) ? null : [...ids, theme.id]))
   }
 
   async deleteTheme(id: string) {
@@ -81,11 +96,17 @@ class R2KitStore implements KitStore {
       for (const obj of page.objects) await this.bucket.delete(obj.key)
       cursor = page.truncated ? page.cursor : undefined
     } while (cursor)
-    const ids = (await this.readIndex()).filter((x) => x !== id)
-    await this.bucket.put('index.json', JSON.stringify({ themes: ids }, null, 2), {
-      httpMetadata: { contentType: JSON_TYPE },
-    })
+    await this.editIndex((ids) => (ids.includes(id) ? ids.filter((x) => x !== id) : null))
     return true
+  }
+
+  async unlistThemes(slugs: string[]) {
+    let plan = planUnlist([], slugs)
+    const themes = await this.editIndex((ids) => {
+      plan = planUnlist(ids, slugs)
+      return plan.changed ? plan.themes : null
+    })
+    return { removed: plan.removed, absent: plan.absent, themes }
   }
 }
 
@@ -134,6 +155,10 @@ class AssetsSeedStore implements KitStore {
 
   async deleteTheme() {
     return false
+  }
+
+  async unlistThemes(): Promise<UnlistResult> {
+    throw new Error('seed store is read-only')
   }
 }
 
