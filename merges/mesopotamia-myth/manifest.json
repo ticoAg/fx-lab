@@ -1,0 +1,266 @@
+{
+  "id": "mesopotamia-myth",
+  "title": {
+    "zh": "美索不达米亚",
+    "en": "Mesopotamia"
+  },
+  "description": {
+    "zh": "美索不达米亚神话图鉴与吉尔伽美什雪松林收在一套里，共 12 件。",
+    "en": "Mesopotamian myth and the cedar forest of Gilgamesh, 12 icons in one kit."
+  },
+  "cover": "gilga-gil-king",
+  "categories": {
+    "pantheon": {
+      "zh": "两河神系",
+      "en": "River Pantheon"
+    },
+    "meso-relic": {
+      "zh": "两河法器",
+      "en": "River Relics"
+    },
+    "gilgamesh": {
+      "zh": "吉尔伽美什",
+      "en": "Gilgamesh"
+    },
+    "cedar-relic": {
+      "zh": "雪松林器物",
+      "en": "Cedar Forest Relics"
+    }
+  },
+  "icons": [
+    {
+      "id": "meso-clay-tablet",
+      "title": {
+        "zh": "泥板",
+        "en": "Clay tablet"
+      },
+      "description": {
+        "zh": "陶土色圆角泥板，表面压印整齐的几何楔形点阵与分隔线（非真实文字），轻轻呼吸。",
+        "en": "Rounded terracotta clay tablet pressed with neat geometric wedge-dot rows and dividers (not real script); gently breathes."
+      },
+      "animation": "pulse",
+      "category": "pantheon",
+      "tags": [
+        "tablet",
+        "clay",
+        "wedge",
+        "record"
+      ]
+    },
+    {
+      "id": "meso-cylinder-seal",
+      "title": {
+        "zh": "滚筒印章",
+        "en": "Cylinder seal"
+      },
+      "description": {
+        "zh": "青金石滚筒印章立于泥片之上，泥片上滚印出连续的几何菱格纹，印章轻轻浮起。",
+        "en": "A lapis cylinder seal hovering over a clay strip rolled with a continuous geometric lozenge pattern."
+      },
+      "animation": "float",
+      "category": "pantheon",
+      "tags": [
+        "seal",
+        "lapis",
+        "stamp",
+        "pattern"
+      ]
+    },
+    {
+      "id": "meso-star-of-ishtar",
+      "title": {
+        "zh": "八芒星",
+        "en": "Eight-pointed star"
+      },
+      "description": {
+        "zh": "金色八芒星盘嵌于青金石圆环中，缓缓旋转。",
+        "en": "A golden eight-pointed star disc set in a lapis ring, slowly spinning."
+      },
+      "animation": "spin",
+      "category": "pantheon",
+      "tags": [
+        "star",
+        "gold",
+        "venus",
+        "emblem"
+      ]
+    },
+    {
+      "id": "meso-lapis-lyre",
+      "title": {
+        "zh": "青金竖琴",
+        "en": "Lapis lyre"
+      },
+      "description": {
+        "zh": "木质竖琴琴身镶嵌青金石与贝母方格，琴弦轻摆（原创造型，非文物复刻）。",
+        "en": "A wooden lyre inlaid with lapis and shell checks, its strings swaying (original design, not a museum replica)."
+      },
+      "animation": "sway",
+      "category": "pantheon",
+      "tags": [
+        "lyre",
+        "music",
+        "lapis",
+        "inlay"
+      ]
+    },
+    {
+      "id": "meso-sacred-tree",
+      "title": {
+        "zh": "圣树",
+        "en": "Sacred tree"
+      },
+      "description": {
+        "zh": "对称的棕榈圣树，金色枝结与绿色扇叶，叶冠随风轻摆。",
+        "en": "A symmetric sacred palm tree with golden knots and green fronds; the crown sways in the breeze."
+      },
+      "animation": "sway",
+      "category": "meso-relic",
+      "tags": [
+        "tree",
+        "palm",
+        "life",
+        "sacred"
+      ]
+    },
+    {
+      "id": "meso-libation-vase",
+      "title": {
+        "zh": "祭酒瓶",
+        "en": "Libation vase"
+      },
+      "description": {
+        "zh": "陶土色长颈祭酒瓶饰有青金石锯齿纹带，瓶口倾泻出蓝色水流，瓶身轻摆。",
+        "en": "A long-necked terracotta libation vase with a lapis zigzag band, pouring a blue stream as it tilts."
+      },
+      "animation": "sway",
+      "category": "meso-relic",
+      "tags": [
+        "vase",
+        "water",
+        "offering",
+        "ritual"
+      ]
+    },
+    {
+      "id": "gilga-gil-king",
+      "title": {
+        "zh": "吉尔伽美什王",
+        "en": "King Gilgamesh"
+      },
+      "description": {
+        "zh": "头戴金角冠、黑卷须的乌鲁克之王半身像，头顶光晕呼吸。",
+        "en": "A bust of Uruk's king with a golden horned crown and curled black beard, a breathing halo above."
+      },
+      "animation": "pulse",
+      "category": "gilgamesh",
+      "tags": [
+        "gilgamesh",
+        "mesopotamia",
+        "epic",
+        "heroes",
+        "gil-king"
+      ]
+    },
+    {
+      "id": "gilga-enkidu",
+      "title": {
+        "zh": "恩奇都",
+        "en": "Enkidu"
+      },
+      "description": {
+        "zh": "长发蓬松、身披兽皮的野性兄弟。",
+        "en": "The wild brother with shaggy hair and an animal-hide tunic."
+      },
+      "animation": "sway",
+      "category": "gilgamesh",
+      "tags": [
+        "gilgamesh",
+        "mesopotamia",
+        "epic",
+        "heroes",
+        "enkidu"
+      ]
+    },
+    {
+      "id": "gilga-siduri",
+      "title": {
+        "zh": "酒馆女神西杜丽",
+        "en": "Siduri the Alewife"
+      },
+      "description": {
+        "zh": "紫袍女神举起金杯微笑。",
+        "en": "The alewife goddess in a purple robe raising a golden cup with a smile."
+      },
+      "animation": "sway",
+      "category": "gilgamesh",
+      "tags": [
+        "gilgamesh",
+        "mesopotamia",
+        "epic",
+        "heroes",
+        "siduri"
+      ]
+    },
+    {
+      "id": "gilga-lion",
+      "title": {
+        "zh": "狮子",
+        "en": "Lion"
+      },
+      "description": {
+        "zh": "鬃毛蓬松的金色雄狮。",
+        "en": "A golden lion with a fluffy mane."
+      },
+      "animation": "sway",
+      "category": "cedar-relic",
+      "tags": [
+        "gilgamesh",
+        "mesopotamia",
+        "epic",
+        "monsters",
+        "lion"
+      ]
+    },
+    {
+      "id": "gilga-axe",
+      "title": {
+        "zh": "青铜战斧",
+        "en": "Bronze Axe"
+      },
+      "description": {
+        "zh": "木柄青铜弯刃战斧。",
+        "en": "A bronze crescent-bladed axe on a wooden haft."
+      },
+      "animation": "sway",
+      "category": "cedar-relic",
+      "tags": [
+        "gilgamesh",
+        "mesopotamia",
+        "epic",
+        "journey",
+        "axe"
+      ]
+    },
+    {
+      "id": "gilga-jewel-garden",
+      "title": {
+        "zh": "宝石花园",
+        "en": "Jewel Garden"
+      },
+      "description": {
+        "zh": "绿冠上结满彩色宝石果实的神树。",
+        "en": "A sacred tree hung with colorful gemstone fruit."
+      },
+      "animation": "pulse",
+      "category": "cedar-relic",
+      "tags": [
+        "gilgamesh",
+        "mesopotamia",
+        "epic",
+        "journey",
+        "jewel-garden"
+      ]
+    }
+  ]
+}

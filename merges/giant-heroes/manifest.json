@@ -1,0 +1,642 @@
+{
+  "id": "giant-heroes",
+  "title": {
+    "zh": "巨人英雄",
+    "en": "Giant Heroes"
+  },
+  "description": {
+    "zh": "伐木巨人、文化英雄与被锁住的勇士收在一套里，共 30 件。",
+    "en": "Lumberjack giants, culture heroes, and a chained champion, 30 icons in one kit."
+  },
+  "cover": "bunyan-paul-bunyan",
+  "categories": {
+    "bunyan": {
+      "zh": "保罗·班扬",
+      "en": "Paul Bunyan"
+    },
+    "glooscap": {
+      "zh": "格卢斯卡普",
+      "en": "Glooscap"
+    },
+    "kalevipoeg": {
+      "zh": "卡列维波埃格",
+      "en": "Kalevipoeg"
+    },
+    "rubezahl": {
+      "zh": "吕贝扎尔",
+      "en": "Rübezahl"
+    },
+    "amirani": {
+      "zh": "阿米拉尼",
+      "en": "Amirani"
+    }
+  },
+  "icons": [
+    {
+      "id": "bunyan-paul-bunyan",
+      "title": {
+        "zh": "保罗·班扬",
+        "en": "Paul Bunyan"
+      },
+      "description": {
+        "zh": "黑胡子、红格子衫的巨人樵夫，咧嘴笑着，头顶蓝色毛线帽。",
+        "en": "A grinning giant lumberjack with a big black beard, red plaid shirt and blue knit cap."
+      },
+      "animation": "float",
+      "category": "bunyan",
+      "tags": [
+        "paul-bunyan",
+        "tall-tale",
+        "lumberjack",
+        "giant",
+        "lumberjack",
+        "beard"
+      ]
+    },
+    {
+      "id": "bunyan-babe-blue-ox",
+      "title": {
+        "zh": "蓝牛贝贝",
+        "en": "Babe the Blue Ox"
+      },
+      "description": {
+        "zh": "圆滚滚的蓝色巨牛，弯弯的白角，鼻孔喷着憨气。",
+        "en": "A chunky blue giant ox with curved pale horns, snorting cheerfully."
+      },
+      "animation": "pulse",
+      "category": "bunyan",
+      "tags": [
+        "paul-bunyan",
+        "tall-tale",
+        "lumberjack",
+        "ox",
+        "babe",
+        "blue"
+      ]
+    },
+    {
+      "id": "bunyan-giant-axe",
+      "title": {
+        "zh": "巨斧",
+        "en": "Giant Axe"
+      },
+      "description": {
+        "zh": "柄比松树还长的巨斧，斧刃闪着亮光。",
+        "en": "A huge double-bit axe with a handle longer than a pine, its blade glinting."
+      },
+      "animation": "sway",
+      "category": "bunyan",
+      "tags": [
+        "paul-bunyan",
+        "tall-tale",
+        "lumberjack",
+        "axe",
+        "chop",
+        "tool"
+      ]
+    },
+    {
+      "id": "bunyan-pancake-griddle",
+      "title": {
+        "zh": "煎饼大锅",
+        "en": "Pancake Griddle"
+      },
+      "description": {
+        "zh": "冰球场一样大的平底锅，摞着淋了黄油的煎饼。",
+        "en": "A rink-size griddle stacked with buttery pancakes."
+      },
+      "animation": "pulse",
+      "category": "bunyan",
+      "tags": [
+        "paul-bunyan",
+        "tall-tale",
+        "lumberjack",
+        "pancake",
+        "griddle",
+        "breakfast"
+      ]
+    },
+    {
+      "id": "bunyan-butter-skates",
+      "title": {
+        "zh": "黄油滑冰鞋",
+        "en": "Butter Skates"
+      },
+      "description": {
+        "zh": "鞋底绑着黄油块的一双靴子，在巨锅上滑行抹油。",
+        "en": "A pair of boots with butter slabs strapped on, gliding to grease the giant griddle."
+      },
+      "animation": "float",
+      "category": "bunyan",
+      "tags": [
+        "paul-bunyan",
+        "tall-tale",
+        "lumberjack",
+        "skates",
+        "butter",
+        "griddle"
+      ]
+    },
+    {
+      "id": "bunyan-antler-hat",
+      "title": {
+        "zh": "鹿角帽",
+        "en": "Antler Hat"
+      },
+      "description": {
+        "zh": "插着一对夸张鹿角的毛线帽，帽顶一颗黄色绒球。",
+        "en": "A knit cap sporting a pair of goofy oversized antlers and a yellow pom-pom."
+      },
+      "animation": "float",
+      "category": "bunyan",
+      "tags": [
+        "paul-bunyan",
+        "tall-tale",
+        "lumberjack",
+        "hat",
+        "antler",
+        "silly"
+      ]
+    },
+    {
+      "id": "gloos-glooscap",
+      "title": {
+        "zh": "格鲁斯卡普",
+        "en": "Glooscap"
+      },
+      "description": {
+        "zh": "身着桦皮色长衣、手持木杖的Q版和蔼巨人，站在两座小山丘之间。",
+        "en": "A kindly cute giant in a birch-cream tunic holding a wooden staff, standing between tiny hills."
+      },
+      "animation": "sway",
+      "category": "glooscap",
+      "tags": [
+        "glooscap",
+        "wabanaki",
+        "folk-legend",
+        "hero",
+        "glooscap"
+      ]
+    },
+    {
+      "id": "gloos-marten-brother",
+      "title": {
+        "zh": "貂兄弟",
+        "en": "Marten Brother"
+      },
+      "description": {
+        "zh": "毛茸茸长尾的棕色小貂，圆耳朵笑眯眯。",
+        "en": "A fluffy brown marten with a long tail and round ears, smiling."
+      },
+      "animation": "pop",
+      "category": "glooscap",
+      "tags": [
+        "glooscap",
+        "wabanaki",
+        "folk-legend",
+        "hero",
+        "marten"
+      ]
+    },
+    {
+      "id": "gloos-grandmother-woodchuck",
+      "title": {
+        "zh": "土拨鼠奶奶",
+        "en": "Grandmother Woodchuck"
+      },
+      "description": {
+        "zh": "披着紫色披肩、戴圆眼镜的慈祥土拨鼠奶奶。",
+        "en": "A gentle grandmother woodchuck with a violet shawl and round glasses."
+      },
+      "animation": "float",
+      "category": "glooscap",
+      "tags": [
+        "glooscap",
+        "wabanaki",
+        "folk-legend",
+        "hero",
+        "grandmother"
+      ]
+    },
+    {
+      "id": "gloos-frog-monster",
+      "title": {
+        "zh": "青蛙怪",
+        "en": "Frog Monster"
+      },
+      "description": {
+        "zh": "鼓着大眼、肚子圆滚的Q版大青蛙，一点也不吓人。",
+        "en": "A big round-bellied cartoon frog with bulging eyes, not scary at all."
+      },
+      "animation": "pulse",
+      "category": "glooscap",
+      "tags": [
+        "glooscap",
+        "wabanaki",
+        "folk-legend",
+        "water",
+        "frog"
+      ]
+    },
+    {
+      "id": "gloos-summer-maiden",
+      "title": {
+        "zh": "夏日少女",
+        "en": "Summer Maiden"
+      },
+      "description": {
+        "zh": "戴小花环的笑脸少女，身后环绕金色阳光。",
+        "en": "A smiling maiden with a little flower crown, ringed by golden sun rays."
+      },
+      "animation": "pulse",
+      "category": "glooscap",
+      "tags": [
+        "glooscap",
+        "wabanaki",
+        "folk-legend",
+        "seasons",
+        "summer"
+      ]
+    },
+    {
+      "id": "gloos-winter-giant",
+      "title": {
+        "zh": "冬之巨人",
+        "en": "Winter Giant"
+      },
+      "description": {
+        "zh": "雪白胡须、霜蓝眉毛的圆胖冬巨人，周围飘着雪花。",
+        "en": "A round snowy winter giant with a white beard and frost-blue brows among snowflakes."
+      },
+      "animation": "float",
+      "category": "glooscap",
+      "tags": [
+        "glooscap",
+        "wabanaki",
+        "folk-legend",
+        "seasons",
+        "winter"
+      ]
+    },
+    {
+      "id": "kalev-kalevipoeg",
+      "title": {
+        "zh": "卡列维波埃格",
+        "en": "Kalevipoeg"
+      },
+      "description": {
+        "zh": "爱沙尼亚史诗巨人英雄，蓝衫金发，胸膛起伏呼吸。",
+        "en": "The Estonian epic giant hero in a teal tunic with golden hair, chest rising as he breathes."
+      },
+      "animation": "pulse",
+      "category": "kalevipoeg",
+      "tags": [
+        "kalevipoeg",
+        "estonian",
+        "epic",
+        "kalevipoeg-hero",
+        "kalevipoeg"
+      ]
+    },
+    {
+      "id": "kalev-kalev-father",
+      "title": {
+        "zh": "父王卡列夫",
+        "en": "King Kalev"
+      },
+      "description": {
+        "zh": "父王卡列夫，白须紫袍，琥珀王冠闪光。",
+        "en": "Father King Kalev with a white beard and violet robe, his amber crown gleaming."
+      },
+      "animation": "pulse",
+      "category": "kalevipoeg",
+      "tags": [
+        "kalevipoeg",
+        "estonian",
+        "epic",
+        "kalevipoeg-hero",
+        "kalev"
+      ]
+    },
+    {
+      "id": "kalev-linda-mother",
+      "title": {
+        "zh": "母亲琳达",
+        "en": "Mother Linda"
+      },
+      "description": {
+        "zh": "母亲琳达低头落泪，泪水在脚下汇成小湖。",
+        "en": "Mother Linda with lowered eyes and falling tears that gather into a small lake."
+      },
+      "animation": "none",
+      "category": "kalevipoeg",
+      "tags": [
+        "kalevipoeg",
+        "estonian",
+        "epic",
+        "kalevipoeg-hero",
+        "linda"
+      ]
+    },
+    {
+      "id": "kalev-thrown-boulder",
+      "title": {
+        "zh": "投掷巨石",
+        "en": "Thrown Boulder"
+      },
+      "description": {
+        "zh": "巨人掷出的灰色巨石沿虚线弧飞过天空。",
+        "en": "A grey boulder thrown by the giant flying along a dotted arc."
+      },
+      "animation": "none",
+      "category": "kalevipoeg",
+      "tags": [
+        "kalevipoeg",
+        "estonian",
+        "epic",
+        "land-and-sea",
+        "thrown"
+      ]
+    },
+    {
+      "id": "kalev-erratic-rock",
+      "title": {
+        "zh": "漂砾巨岩",
+        "en": "Erratic Boulder"
+      },
+      "description": {
+        "zh": "海岸沙滩上的巨大漂砾，前方浪花轻拍。",
+        "en": "A huge erratic boulder on a sandy shore with small waves in front."
+      },
+      "animation": "none",
+      "category": "kalevipoeg",
+      "tags": [
+        "kalevipoeg",
+        "estonian",
+        "epic",
+        "land-and-sea",
+        "erratic"
+      ]
+    },
+    {
+      "id": "kalev-sword-of-finland",
+      "title": {
+        "zh": "芬兰铸剑",
+        "en": "Forged Sword"
+      },
+      "description": {
+        "zh": "芬兰铁匠铸成的长剑，剑身闪着冷光。",
+        "en": "A long sword forged by a Finnish smith, its blade gleaming with cold light."
+      },
+      "animation": "pulse",
+      "category": "kalevipoeg",
+      "tags": [
+        "kalevipoeg",
+        "estonian",
+        "epic",
+        "forge-and-sword",
+        "sword"
+      ]
+    },
+    {
+      "id": "rube-rubezahl",
+      "title": {
+        "zh": "山神正面",
+        "en": "Rubezahl Front"
+      },
+      "description": {
+        "zh": "吕贝察尔正面形象：绿色兜帽斗篷、白色长须、调皮的圆眼。",
+        "en": "Rubezahl seen from the front: green hooded cloak, long white beard and mischievous round eyes."
+      },
+      "animation": "pop",
+      "category": "rubezahl",
+      "tags": [
+        "rubezahl",
+        "mountain-spirit",
+        "folk",
+        "spirit",
+        "rubezahl"
+      ]
+    },
+    {
+      "id": "rube-rubezahl-cloak",
+      "title": {
+        "zh": "长须斗篷侧影",
+        "en": "Bearded Cloak Profile"
+      },
+      "description": {
+        "zh": "侧身行走的山神，斗篷与长须随风飘向身后。",
+        "en": "The spirit striding in profile, cloak and long beard blowing out behind him."
+      },
+      "animation": "sway",
+      "category": "rubezahl",
+      "tags": [
+        "rubezahl",
+        "mountain-spirit",
+        "folk",
+        "spirit",
+        "rubezahl"
+      ]
+    },
+    {
+      "id": "rube-count-radish",
+      "title": {
+        "zh": "数萝卜",
+        "en": "Counting Radishes"
+      },
+      "description": {
+        "zh": "山神蹲坐，专心用手指点数面前的三根萝卜。",
+        "en": "The spirit crouching and pointing as he counts three radishes laid in front of him."
+      },
+      "animation": "pop",
+      "category": "rubezahl",
+      "tags": [
+        "rubezahl",
+        "mountain-spirit",
+        "folk",
+        "spirit",
+        "count"
+      ]
+    },
+    {
+      "id": "rube-staff",
+      "title": {
+        "zh": "手杖",
+        "en": "Gnarled Staff"
+      },
+      "description": {
+        "zh": "顶端弯曲的多节木手杖，杖头嵌着一颗琥珀石。",
+        "en": "A knotty wooden staff with a curled top holding an amber stone."
+      },
+      "animation": "sway",
+      "category": "rubezahl",
+      "tags": [
+        "rubezahl",
+        "mountain-spirit",
+        "folk",
+        "prank",
+        "staff"
+      ]
+    },
+    {
+      "id": "rube-coin-purse",
+      "title": {
+        "zh": "金币袋",
+        "en": "Coin Purse"
+      },
+      "description": {
+        "zh": "束口的棕色皮袋，袋口溢出几枚无字金币。",
+        "en": "A drawstring brown leather pouch with plain gold coins spilling from its mouth."
+      },
+      "animation": "pop",
+      "category": "rubezahl",
+      "tags": [
+        "rubezahl",
+        "mountain-spirit",
+        "folk",
+        "prank",
+        "coin"
+      ]
+    },
+    {
+      "id": "rube-antler-crown",
+      "title": {
+        "zh": "鹿角头冠",
+        "en": "Antler Crown"
+      },
+      "description": {
+        "zh": "棕色鹿角围成的头冠，冠带上嵌着绿叶与琥珀石。",
+        "en": "A crown of brown antlers on a band decorated with green leaves and an amber stone."
+      },
+      "animation": "pulse",
+      "category": "rubezahl",
+      "tags": [
+        "rubezahl",
+        "mountain-spirit",
+        "folk",
+        "nature",
+        "antler"
+      ]
+    },
+    {
+      "id": "amirani-amirani",
+      "title": {
+        "zh": "阿米拉尼",
+        "en": "Amirani"
+      },
+      "description": {
+        "zh": "力大无穷的英雄挺立，手握长剑，腕上挂着断开的铁链。",
+        "en": "The mighty hero standing tall with a long sword, a broken chain hanging from his wrist."
+      },
+      "animation": "float",
+      "category": "amirani",
+      "tags": [
+        "amirani",
+        "georgian",
+        "caucasus",
+        "hero",
+        "amirani"
+      ]
+    },
+    {
+      "id": "amirani-chain",
+      "title": {
+        "zh": "铁链",
+        "en": "Iron Chain"
+      },
+      "description": {
+        "zh": "从山岩铁环上垂下的粗大铁链，一节节轻轻摇晃。",
+        "en": "A heavy iron chain hanging from a ring in the rock, its links gently swinging."
+      },
+      "animation": "sway",
+      "category": "amirani",
+      "tags": [
+        "amirani",
+        "georgian",
+        "caucasus",
+        "hero",
+        "chain"
+      ]
+    },
+    {
+      "id": "amirani-stake",
+      "title": {
+        "zh": "铁桩",
+        "en": "Iron Stake"
+      },
+      "description": {
+        "zh": "钉进高加索岩石的铁桩，套着铁环。",
+        "en": "An iron stake driven into Caucasus rock, a ring looped through it."
+      },
+      "animation": "pop",
+      "category": "amirani",
+      "tags": [
+        "amirani",
+        "georgian",
+        "caucasus",
+        "hero",
+        "stake"
+      ]
+    },
+    {
+      "id": "amirani-sword",
+      "title": {
+        "zh": "宝剑",
+        "en": "Hero Sword"
+      },
+      "description": {
+        "zh": "斩杀巨龙的长剑，剑刃寒光一闪。",
+        "en": "The long sword that slew the dragon, a cold gleam on its blade."
+      },
+      "animation": "pulse",
+      "category": "amirani",
+      "tags": [
+        "amirani",
+        "georgian",
+        "caucasus",
+        "forge",
+        "sword"
+      ]
+    },
+    {
+      "id": "amirani-shield",
+      "title": {
+        "zh": "铜圆盾",
+        "en": "Bronze Shield"
+      },
+      "description": {
+        "zh": "抵挡巨怪的铜圆盾，盾心发出光芒。",
+        "en": "The round bronze shield that held off the giants, its boss glowing."
+      },
+      "animation": "pulse",
+      "category": "amirani",
+      "tags": [
+        "amirani",
+        "georgian",
+        "caucasus",
+        "forge",
+        "shield"
+      ]
+    },
+    {
+      "id": "amirani-bell",
+      "title": {
+        "zh": "古钟",
+        "en": "Village Bell"
+      },
+      "description": {
+        "zh": "山村石拱下的青铜古钟，左右摆动报信。",
+        "en": "A bronze bell under a stone arch in a mountain village, swinging to sound the alarm."
+      },
+      "animation": "sway",
+      "category": "amirani",
+      "tags": [
+        "amirani",
+        "georgian",
+        "caucasus",
+        "forge",
+        "bell"
+      ]
+    }
+  ]
+}

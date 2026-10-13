@@ -1,0 +1,897 @@
+{
+  "id": "celtic-fae",
+  "title": {
+    "zh": "凯尔特精怪",
+    "en": "Celtic Fae"
+  },
+  "description": {
+    "zh": "报丧女妖、普卡、无头骑士、小矮妖、磷火、塔姆林与奥辛收在一套里，共 42 件。凯尔特-斯拉夫总览主题单独保留，不并入。",
+    "en": "Banshee, púca, dullahan, leprechaun, will-o'-the-wisp, Tam Lin, and Oisín, 42 icons in one kit. The celtic-slavic overview stays separate."
+  },
+  "cover": "dulla-dullahan-rider",
+  "categories": {
+    "banshee": {
+      "zh": "报丧女妖",
+      "en": "Banshee"
+    },
+    "puca": {
+      "zh": "普卡",
+      "en": "Púca"
+    },
+    "dullahan": {
+      "zh": "无头骑士",
+      "en": "Dullahan"
+    },
+    "leprechaun": {
+      "zh": "小矮妖",
+      "en": "Leprechaun"
+    },
+    "wisp": {
+      "zh": "磷火",
+      "en": "Will-o'-the-Wisp"
+    },
+    "tam-lin": {
+      "zh": "塔姆林",
+      "en": "Tam Lin"
+    },
+    "oisin": {
+      "zh": "奥辛",
+      "en": "Oisín"
+    }
+  },
+  "icons": [
+    {
+      "id": "banshee-banshee",
+      "title": {
+        "zh": "报丧女妖",
+        "en": "Banshee"
+      },
+      "description": {
+        "zh": "披灰斗篷、银白长发的女妖幽灵轻飘在夜色中，衣摆化作波浪雾尾。",
+        "en": "A grey-cloaked spirit woman with long silver hair drifting in the night, her hem trailing off in wavy mist."
+      },
+      "animation": "float",
+      "category": "banshee",
+      "tags": [
+        "banshee",
+        "celtic",
+        "irish",
+        "night",
+        "figure"
+      ]
+    },
+    {
+      "id": "banshee-flowing-hair",
+      "title": {
+        "zh": "飘动长发",
+        "en": "Flowing Hair"
+      },
+      "description": {
+        "zh": "一束随夜风飘扬的银白长发，发梢卷成弧线。",
+        "en": "A long lock of silver-white hair streaming in the night wind, its ends curling into arcs."
+      },
+      "animation": "sway",
+      "category": "banshee",
+      "tags": [
+        "banshee",
+        "celtic",
+        "irish",
+        "night",
+        "figure",
+        "flowing",
+        "hair"
+      ]
+    },
+    {
+      "id": "banshee-silver-comb",
+      "title": {
+        "zh": "银梳",
+        "en": "Silver Comb"
+      },
+      "description": {
+        "zh": "女妖遗落的弧背银梳，梳背嵌一颗玫瑰色宝石。",
+        "en": "The banshee's lost silver comb with an arched back set with a rose-colored gem."
+      },
+      "animation": "pop",
+      "category": "banshee",
+      "tags": [
+        "banshee",
+        "celtic",
+        "irish",
+        "night",
+        "figure",
+        "silver",
+        "comb"
+      ]
+    },
+    {
+      "id": "banshee-castle-tower",
+      "title": {
+        "zh": "古堡塔楼",
+        "en": "Castle Tower"
+      },
+      "description": {
+        "zh": "荒原上的圆形石塔楼，城垛齐整，窗内透出一点玫瑰色灯光。",
+        "en": "A round stone castle tower on the moor with crenellations and a rose-lit window."
+      },
+      "animation": "pulse",
+      "category": "banshee",
+      "tags": [
+        "banshee",
+        "celtic",
+        "irish",
+        "night",
+        "castle",
+        "tower"
+      ]
+    },
+    {
+      "id": "banshee-moor-stones",
+      "title": {
+        "zh": "荒原石堆",
+        "en": "Moor Stones"
+      },
+      "description": {
+        "zh": "荒原上的三块直立古石，石缝间长着矮草，上方飘过一缕薄雾。",
+        "en": "Three ancient standing stones on the moor with tufts of grass and a wisp of mist drifting above."
+      },
+      "animation": "float",
+      "category": "banshee",
+      "tags": [
+        "banshee",
+        "celtic",
+        "irish",
+        "night",
+        "castle",
+        "moor",
+        "stones"
+      ]
+    },
+    {
+      "id": "banshee-harp",
+      "title": {
+        "zh": "竖琴",
+        "en": "Celtic Harp"
+      },
+      "description": {
+        "zh": "弯颈爱尔兰竖琴，琴柱弧线优美，银弦静静排列。",
+        "en": "A curved-neck Irish harp with a graceful pillar and a row of silver strings."
+      },
+      "animation": "sway",
+      "category": "banshee",
+      "tags": [
+        "banshee",
+        "celtic",
+        "irish",
+        "night",
+        "harp"
+      ]
+    },
+    {
+      "id": "puca-puca-horse",
+      "title": {
+        "zh": "黑马普卡",
+        "en": "Púca Horse"
+      },
+      "description": {
+        "zh": "金眼黑马形态的普卡，鬃毛飘扬、扬蹄奔腾。",
+        "en": "The púca as a sleek black horse with golden eyes, mane flying mid-gallop."
+      },
+      "animation": "sway",
+      "category": "puca",
+      "tags": [
+        "puca",
+        "irish",
+        "samhain",
+        "forms",
+        "puca-horse"
+      ]
+    },
+    {
+      "id": "puca-puca-goat",
+      "title": {
+        "zh": "山羊普卡",
+        "en": "Púca Goat"
+      },
+      "description": {
+        "zh": "长着弯弯大角的黑山羊普卡，蹦跳着出现。",
+        "en": "The púca as a shaggy black goat with great curling horns, bouncing in."
+      },
+      "animation": "pop",
+      "category": "puca",
+      "tags": [
+        "puca",
+        "irish",
+        "samhain",
+        "forms",
+        "puca-goat"
+      ]
+    },
+    {
+      "id": "puca-puca-hare",
+      "title": {
+        "zh": "野兔普卡",
+        "en": "Púca Hare"
+      },
+      "description": {
+        "zh": "月光下的黑野兔普卡，竖起长耳朵蓄势一跃。",
+        "en": "The púca as a moonlit black hare, long ears up, ready to leap."
+      },
+      "animation": "pop",
+      "category": "puca",
+      "tags": [
+        "puca",
+        "irish",
+        "samhain",
+        "forms",
+        "puca-hare"
+      ]
+    },
+    {
+      "id": "puca-blackberry",
+      "title": {
+        "zh": "黑莓",
+        "en": "Blackberry"
+      },
+      "description": {
+        "zh": "萨温节后被普卡吐过、不能再摘的黑莓。",
+        "en": "Blackberries the púca spoils after Samhain, no longer fit to pick."
+      },
+      "animation": "pulse",
+      "category": "puca",
+      "tags": [
+        "puca",
+        "irish",
+        "samhain",
+        "samhain",
+        "blackberry"
+      ]
+    },
+    {
+      "id": "puca-carved-turnip",
+      "title": {
+        "zh": "萝卜灯",
+        "en": "Carved Turnip"
+      },
+      "description": {
+        "zh": "雕出笑脸的萨温节萝卜灯，里面烛光摇曳。",
+        "en": "A carved Samhain turnip lantern with a candle flickering inside."
+      },
+      "animation": "pulse",
+      "category": "puca",
+      "tags": [
+        "puca",
+        "irish",
+        "samhain",
+        "samhain",
+        "carved-turnip"
+      ]
+    },
+    {
+      "id": "puca-prophecy-scroll",
+      "title": {
+        "zh": "预言卷",
+        "en": "Prophecy Scroll"
+      },
+      "description": {
+        "zh": "半展开的羊皮预言卷，只有抽象的绳结纹符号。",
+        "en": "A half-unrolled parchment prophecy, marked only with abstract knot glyphs."
+      },
+      "animation": "none",
+      "category": "puca",
+      "tags": [
+        "puca",
+        "irish",
+        "samhain",
+        "craft",
+        "prophecy-scroll"
+      ]
+    },
+    {
+      "id": "dulla-dullahan-rider",
+      "title": {
+        "zh": "杜拉罕骑手",
+        "en": "Dullahan Rider"
+      },
+      "description": {
+        "zh": "骑黑马的Q版无头骑士，腋下抱着笑脸头盔，领口冒出绿色精灵光。",
+        "en": "A cute headless rider on a black horse, holding a smiling helmet-head, with a green fairy glow at the collar."
+      },
+      "animation": "pop",
+      "category": "dullahan",
+      "tags": [
+        "dullahan",
+        "irish",
+        "halloween",
+        "dullahan",
+        "rider"
+      ]
+    },
+    {
+      "id": "dulla-held-head",
+      "title": {
+        "zh": "腋下头颅",
+        "en": "Held Helmet-Head"
+      },
+      "description": {
+        "zh": "卡通笑脸头盔头颅，戴绿羽，脸颊泛红。",
+        "en": "A cartoon smiling helmet-head with a green plume and rosy cheeks."
+      },
+      "animation": "pulse",
+      "category": "dullahan",
+      "tags": [
+        "dullahan",
+        "irish",
+        "halloween",
+        "dullahan",
+        "head"
+      ]
+    },
+    {
+      "id": "dulla-spine-whip",
+      "title": {
+        "zh": "长鞭",
+        "en": "Bone-Bead Whip"
+      },
+      "description": {
+        "zh": "木柄卡通骨节鞭，鞭梢一点橙光。",
+        "en": "A cartoon bone-bead whip with a wooden handle and an orange glowing tip."
+      },
+      "animation": "sway",
+      "category": "dullahan",
+      "tags": [
+        "dullahan",
+        "irish",
+        "halloween",
+        "dullahan",
+        "whip"
+      ]
+    },
+    {
+      "id": "dulla-rider-helmet",
+      "title": {
+        "zh": "骑士盔",
+        "en": "Empty Rider Helmet"
+      },
+      "description": {
+        "zh": "绿羽空骑士盔，闪着一点寒光。",
+        "en": "An empty knight helmet with a green plume and a star glint."
+      },
+      "animation": "pop",
+      "category": "dullahan",
+      "tags": [
+        "dullahan",
+        "irish",
+        "halloween",
+        "dullahan",
+        "helmet"
+      ]
+    },
+    {
+      "id": "dulla-black-steed",
+      "title": {
+        "zh": "黑骏马",
+        "en": "Black Steed"
+      },
+      "description": {
+        "zh": "橙色火眼的Q版黑骏马。",
+        "en": "A chibi black steed with glowing orange eyes."
+      },
+      "animation": "pop",
+      "category": "dullahan",
+      "tags": [
+        "dullahan",
+        "irish",
+        "halloween",
+        "coach",
+        "steed"
+      ]
+    },
+    {
+      "id": "dulla-golden-coin",
+      "title": {
+        "zh": "金币",
+        "en": "Gold Coin"
+      },
+      "description": {
+        "zh": "刻着原创绳结纹的金币，传说能驱散杜拉罕。",
+        "en": "A gold coin with an original knot motif, said to ward off the Dullahan."
+      },
+      "animation": "pulse",
+      "category": "dullahan",
+      "tags": [
+        "dullahan",
+        "irish",
+        "halloween",
+        "coach",
+        "coin"
+      ]
+    },
+    {
+      "id": "lepre-leprechaun",
+      "title": {
+        "zh": "矮妖",
+        "en": "Leprechaun"
+      },
+      "description": {
+        "zh": "民俗卡通小矮妖，绿帽金扣、橙红胡须，俏皮眨眼。",
+        "en": "Folk cartoon leprechaun in a green hat with gold buckle, ginger whiskers and a cheeky wink."
+      },
+      "animation": "sway",
+      "category": "leprechaun",
+      "tags": [
+        "leprechaun",
+        "irish",
+        "folk",
+        "sprite",
+        "leprechaun"
+      ]
+    },
+    {
+      "id": "lepre-green-hat",
+      "title": {
+        "zh": "绿高帽",
+        "en": "Green Hat"
+      },
+      "description": {
+        "zh": "绿色高帽，黑带金扣，插一枚三叶草。",
+        "en": "Tall green hat with black band, gold buckle and a tucked shamrock."
+      },
+      "animation": "sway",
+      "category": "leprechaun",
+      "tags": [
+        "leprechaun",
+        "irish",
+        "folk",
+        "sprite",
+        "hat"
+      ]
+    },
+    {
+      "id": "lepre-clay-pipe",
+      "title": {
+        "zh": "陶烟斗",
+        "en": "Clay Pipe"
+      },
+      "description": {
+        "zh": "奶白陶烟斗冒出一缕轻烟。",
+        "en": "Cream clay pipe puffing a curl of smoke."
+      },
+      "animation": "float",
+      "category": "leprechaun",
+      "tags": [
+        "leprechaun",
+        "irish",
+        "folk",
+        "sprite",
+        "pipe"
+      ]
+    },
+    {
+      "id": "lepre-cauldron-gold",
+      "title": {
+        "zh": "金币坩埚",
+        "en": "Cauldron of Gold"
+      },
+      "description": {
+        "zh": "三足坩埚里冒出金币与星光。",
+        "en": "Three-legged cauldron bubbling up gold coins and a sparkle."
+      },
+      "animation": "float",
+      "category": "leprechaun",
+      "tags": [
+        "leprechaun",
+        "irish",
+        "folk",
+        "gold",
+        "gold"
+      ]
+    },
+    {
+      "id": "lepre-shamrock",
+      "title": {
+        "zh": "三叶草",
+        "en": "Shamrock"
+      },
+      "description": {
+        "zh": "三片心形叶的爱尔兰三叶草。",
+        "en": "Irish shamrock with three heart-shaped leaves."
+      },
+      "animation": "sway",
+      "category": "leprechaun",
+      "tags": [
+        "leprechaun",
+        "irish",
+        "folk",
+        "charm",
+        "shamrock"
+      ]
+    },
+    {
+      "id": "lepre-four-leaf-clover",
+      "title": {
+        "zh": "四叶草",
+        "en": "Four-leaf Clover"
+      },
+      "description": {
+        "zh": "带闪光的幸运四叶草。",
+        "en": "Lucky four-leaf clover with a glint."
+      },
+      "animation": "sway",
+      "category": "leprechaun",
+      "tags": [
+        "leprechaun",
+        "irish",
+        "folk",
+        "charm",
+        "clover"
+      ]
+    },
+    {
+      "id": "wisp-wisp-orb",
+      "title": {
+        "zh": "光球",
+        "en": "Wisp Orb"
+      },
+      "description": {
+        "zh": "一团冷青白色发光球，裹着柔和光晕，在薄雾上漂浮。",
+        "en": "A cyan-white glowing orb wrapped in a soft halo, floating above thin mist."
+      },
+      "animation": "float",
+      "category": "wisp",
+      "tags": [
+        "will-o-wisp",
+        "marsh",
+        "night",
+        "fairy-tale",
+        "light-spirits",
+        "orb"
+      ]
+    },
+    {
+      "id": "wisp-wisp-flame",
+      "title": {
+        "zh": "冷焰",
+        "en": "Cold Flame"
+      },
+      "description": {
+        "zh": "青白色的冷火苗，内芯发白，轻轻明灭。",
+        "en": "A cyan-white cold flame with a pale core, gently flickering."
+      },
+      "animation": "pulse",
+      "category": "wisp",
+      "tags": [
+        "will-o-wisp",
+        "marsh",
+        "night",
+        "fairy-tale",
+        "light-spirits",
+        "flame"
+      ]
+    },
+    {
+      "id": "wisp-wisp-trail",
+      "title": {
+        "zh": "光迹",
+        "en": "Light Trail"
+      },
+      "description": {
+        "zh": "一个小光灵身后拖着由大到小渐隐的光点。",
+        "en": "A small wisp trailing a line of fading light dots."
+      },
+      "animation": "float",
+      "category": "wisp",
+      "tags": [
+        "will-o-wisp",
+        "marsh",
+        "night",
+        "fairy-tale",
+        "light-spirits",
+        "trail"
+      ]
+    },
+    {
+      "id": "wisp-marsh-frog",
+      "title": {
+        "zh": "沼蛙",
+        "en": "Marsh Frog"
+      },
+      "description": {
+        "zh": "睡莲叶上的绿青蛙，鼓眼微笑，正要跳起。",
+        "en": "A green frog with bulging eyes on a lily pad, about to hop."
+      },
+      "animation": "pop",
+      "category": "wisp",
+      "tags": [
+        "will-o-wisp",
+        "marsh",
+        "night",
+        "fairy-tale",
+        "marsh-life",
+        "frog"
+      ]
+    },
+    {
+      "id": "wisp-firefly",
+      "title": {
+        "zh": "萤火虫",
+        "en": "Firefly"
+      },
+      "description": {
+        "zh": "深色小萤火虫，半透明翅膀，尾部金光闪烁。",
+        "en": "A dark little firefly with translucent wings and a glowing golden tail."
+      },
+      "animation": "pulse",
+      "category": "wisp",
+      "tags": [
+        "will-o-wisp",
+        "marsh",
+        "night",
+        "fairy-tale",
+        "marsh-life",
+        "firefly"
+      ]
+    },
+    {
+      "id": "wisp-heron",
+      "title": {
+        "zh": "苍鹭",
+        "en": "Heron"
+      },
+      "description": {
+        "zh": "单脚站在浅水中的灰白苍鹭，黄喙长颈。",
+        "en": "A pale grey heron standing on one leg in shallow water, long neck and yellow beak."
+      },
+      "animation": "none",
+      "category": "wisp",
+      "tags": [
+        "will-o-wisp",
+        "marsh",
+        "night",
+        "fairy-tale",
+        "marsh-life",
+        "heron"
+      ]
+    },
+    {
+      "id": "tamlin-fairy-queen",
+      "title": {
+        "zh": "精灵女王",
+        "en": "Fairy Queen"
+      },
+      "description": {
+        "zh": "头戴金冠、身着淡紫长裙、背生银翼的优雅精灵女王。",
+        "en": "An elegant fairy queen in a lilac gown with silver wings and a small gold crown."
+      },
+      "animation": "float",
+      "category": "tam-lin",
+      "tags": [
+        "tam-lin",
+        "fairy-tale",
+        "celtic",
+        "characters",
+        "fairy-queen"
+      ]
+    },
+    {
+      "id": "tamlin-white-horse-knight",
+      "title": {
+        "zh": "白马骑士",
+        "en": "Knight on the White Horse"
+      },
+      "description": {
+        "zh": "身披绿斗篷的骑士骑着白马，卡通绘本造型。",
+        "en": "A green-cloaked knight riding a white horse, storybook style."
+      },
+      "animation": "float",
+      "category": "tam-lin",
+      "tags": [
+        "tam-lin",
+        "fairy-tale",
+        "celtic",
+        "characters",
+        "white-horse-knight"
+      ]
+    },
+    {
+      "id": "tamlin-serpent-form",
+      "title": {
+        "zh": "变形蛇",
+        "en": "Serpent Form"
+      },
+      "description": {
+        "zh": "圆润温和的青绿神话之蛇，身上点缀星点。",
+        "en": "A gentle rounded sea-green mythic serpent dotted with tiny stars."
+      },
+      "animation": "sway",
+      "category": "tam-lin",
+      "tags": [
+        "tam-lin",
+        "fairy-tale",
+        "celtic",
+        "characters",
+        "serpent-form"
+      ]
+    },
+    {
+      "id": "tamlin-fairy-crown",
+      "title": {
+        "zh": "精灵王冠",
+        "en": "Fairy Crown"
+      },
+      "description": {
+        "zh": "银色尖顶王冠，镶玫瑰宝石与星光。",
+        "en": "A silver spired crown set with rose gems and starlight."
+      },
+      "animation": "pulse",
+      "category": "tam-lin",
+      "tags": [
+        "tam-lin",
+        "fairy-tale",
+        "celtic",
+        "items",
+        "fairy-crown"
+      ]
+    },
+    {
+      "id": "tamlin-silver-bell-bridle",
+      "title": {
+        "zh": "银铃马辔",
+        "en": "Silver-Bell Bridle"
+      },
+      "description": {
+        "zh": "挂着三只银铃的绿色马辔。",
+        "en": "A green bridle hung with three silver bells."
+      },
+      "animation": "sway",
+      "category": "tam-lin",
+      "tags": [
+        "tam-lin",
+        "fairy-tale",
+        "celtic",
+        "items",
+        "silver-bell-bridle"
+      ]
+    },
+    {
+      "id": "tamlin-knight-helmet",
+      "title": {
+        "zh": "骑士头盔",
+        "en": "Knight Helmet"
+      },
+      "description": {
+        "zh": "插玫瑰色羽饰的银色骑士头盔。",
+        "en": "A silver knight helmet with a rose-pink plume."
+      },
+      "animation": "float",
+      "category": "tam-lin",
+      "tags": [
+        "tam-lin",
+        "fairy-tale",
+        "celtic",
+        "items",
+        "knight-helmet"
+      ]
+    },
+    {
+      "id": "oisin-oisin",
+      "title": {
+        "zh": "莪相",
+        "en": "Oisin"
+      },
+      "description": {
+        "zh": "手持长矛、身披翠绿斗篷的年轻芬尼亚勇士莪相。",
+        "en": "Young Fenian warrior Oisin in an emerald cloak with his spear."
+      },
+      "animation": "sway",
+      "category": "oisin",
+      "tags": [
+        "oisin",
+        "tir-na-nog",
+        "irish-myth",
+        "heroes",
+        "oisin"
+      ]
+    },
+    {
+      "id": "oisin-niamh",
+      "title": {
+        "zh": "妮雅姆",
+        "en": "Niamh"
+      },
+      "description": {
+        "zh": "头戴金冠、金发飘垂的青春之国公主妮雅姆。",
+        "en": "Niamh, golden-haired princess of Tir na nOg, wearing a small crown."
+      },
+      "animation": "float",
+      "category": "oisin",
+      "tags": [
+        "oisin",
+        "tir-na-nog",
+        "irish-myth",
+        "heroes",
+        "niamh"
+      ]
+    },
+    {
+      "id": "oisin-golden-hair",
+      "title": {
+        "zh": "金发",
+        "en": "Golden Hair"
+      },
+      "description": {
+        "zh": "妮雅姆垂落的金色长发，饰一颗翠石。",
+        "en": "Niamh's long golden tresses with an emerald clasp."
+      },
+      "animation": "sway",
+      "category": "oisin",
+      "tags": [
+        "oisin",
+        "tir-na-nog",
+        "irish-myth",
+        "heroes",
+        "hair"
+      ]
+    },
+    {
+      "id": "oisin-spear",
+      "title": {
+        "zh": "长矛",
+        "en": "Spear"
+      },
+      "description": {
+        "zh": "带金色缠绳的芬尼亚长矛。",
+        "en": "A Fenian spear with gold bindings."
+      },
+      "animation": "sway",
+      "category": "oisin",
+      "tags": [
+        "oisin",
+        "tir-na-nog",
+        "irish-myth",
+        "arms",
+        "spear"
+      ]
+    },
+    {
+      "id": "oisin-shield",
+      "title": {
+        "zh": "圆盾",
+        "en": "Shield"
+      },
+      "description": {
+        "zh": "饰金钉的木制圆盾。",
+        "en": "A round wooden shield with gold studs."
+      },
+      "animation": "pulse",
+      "category": "oisin",
+      "tags": [
+        "oisin",
+        "tir-na-nog",
+        "irish-myth",
+        "arms",
+        "shield"
+      ]
+    },
+    {
+      "id": "oisin-hound",
+      "title": {
+        "zh": "猎犬",
+        "en": "Hound"
+      },
+      "description": {
+        "zh": "芬恩麾下的灰色猎犬。",
+        "en": "A grey wolfhound of the Fianna."
+      },
+      "animation": "float",
+      "category": "oisin",
+      "tags": [
+        "oisin",
+        "tir-na-nog",
+        "irish-myth",
+        "arms",
+        "hound"
+      ]
+    }
+  ]
+}

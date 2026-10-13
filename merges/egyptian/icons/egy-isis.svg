@@ -1,0 +1,27 @@
+<svg id="egyptian-egy-isis-root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="egyptian-egy-isis-title egyptian-egy-isis-desc" class="egyptian-egy-isis-root" style="animation-play-state:inherit">
+<title id="egyptian-egy-isis-title">伊西斯·王座与展翼 / Isis — throne and outspread wings</title>
+<desc id="egyptian-egy-isis-desc">伊西斯以王座形冠和向两侧展开的三层羽翼占满画幅，骨色侧脸、青金石紧身裙，裙上有一枚小号泰特结。 Isis fills the frame with a throne-shaped crown and three tiers of wings. A bone profile and lapis sheath dress carry a small tyet.</desc>
+<style>.egyptian-egy-isis-root,.egyptian-egy-isis-root *{animation-play-state:inherit}.egyptian-egy-isis-motion{animation:egyptian-egy-isis-pulse 4.8s ease-in-out infinite;animation-play-state:inherit;transform-box:view-box;transform-origin:40px 42px}@keyframes egyptian-egy-isis-pulse{0%,100%{transform:scale(.992);opacity:.95}50%{transform:scale(1);opacity:1}}@media(prefers-reduced-motion:reduce){.egyptian-egy-isis-motion{animation:none!important;transform:none!important}}</style>
+<defs>
+<linearGradient id="egyptian-egy-isis-gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".48" stop-color="#C4922A"/><stop offset="1" stop-color="#C4922A"/></linearGradient><linearGradient id="egyptian-egy-isis-lapis" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1F4E79"/><stop offset=".45" stop-color="#1F4E79"/><stop offset="1" stop-color="#16324F"/></linearGradient><linearGradient id="egyptian-egy-isis-clay" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C4652F"/><stop offset=".5" stop-color="#C4652F"/><stop offset="1" stop-color="#C4652F"/></linearGradient><linearGradient id="egyptian-egy-isis-stone" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".55" stop-color="#E7D3A1"/><stop offset="1" stop-color="#C4922A"/></linearGradient><radialGradient id="egyptian-egy-isis-shade"><stop stop-color="#3A2C22" stop-opacity=".24"/><stop offset="1" stop-color="#3A2C22" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="egyptian-egy-isis-motion" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="40" cy="73.4" rx="16" ry="1.5" fill="url(#egyptian-egy-isis-shade)"/>
+<path d="M33.4 8.2h13.2v3.6h-3.4v7.2h-6.4V11.8h-3.4z" fill="url(#egyptian-egy-isis-gold)" stroke="currentColor" stroke-width=".75"/>
+<path d="M36.6 12.4h6.8v3.2H36.6z" fill="#E7D3A1"/>
+<ellipse cx="40" cy="24.6" rx="5.6" ry="6.4" fill="#E7D3A1" stroke="currentColor" stroke-width=".7"/>
+<path d="M42.4 23.2c1.6.4 3.2 1.6 3.4 2.8" fill="none" stroke="#3A2C22" stroke-width=".75"/>
+<circle cx="43.2" cy="24.2" r="0.6" fill="#3A2C22"/>
+<path d="M34.2 30.4C20.4 26.2 10.6 31.2 8.8 38.2c9.2-1.6 16.6.2 25.4 4.2z" fill="url(#egyptian-egy-isis-lapis)" stroke="currentColor" stroke-width=".85"/>
+<path d="M34.4 34.6C18.8 35.6 11.2 42.4 12.6 49.6c10.2-3.6 15.4-5.4 21.8-6.6z" fill="#1F4E79" stroke="currentColor" stroke-width=".7"/>
+<path d="M34.6 38.8C22.4 42.2 16.4 48.6 18.2 54.2c8.4-3.2 12.6-5.2 16.4-5.8z" fill="#1F4E79" stroke="currentColor" stroke-width=".65"/>
+<path d="M45.8 30.4C59.6 26.2 69.4 31.2 71.2 38.2c-9.2-1.6-16.6.2-25.4 4.2z" fill="url(#egyptian-egy-isis-lapis)" stroke="currentColor" stroke-width=".85"/>
+<path d="M45.6 34.6C61.2 35.6 68.8 42.4 67.4 49.6c-10.2-3.6-15.4-5.4-21.8-6.6z" fill="#1F4E79" stroke="currentColor" stroke-width=".7"/>
+<path d="M45.4 38.8C57.6 42.2 63.6 48.6 61.8 54.2c-8.4-3.2-12.6-5.2-16.4-5.8z" fill="#1F4E79" stroke="currentColor" stroke-width=".65"/>
+<path d="M32.2 38.4h15.6l2.2 28.4H30z" fill="url(#egyptian-egy-isis-lapis)" stroke="currentColor" stroke-width=".9"/>
+<path d="M33.6 46.2c4.2 2.6 8.6 2.6 12.8 0" fill="none" stroke="#E7D3A1" stroke-width=".8"/>
+<path d="M37.6 52.4h4.8v3.2h-1.5v6.2h-1.8V55.6H37.6z" fill="url(#egyptian-egy-isis-clay)"/>
+<path d="M38.4 54.2h3.2" fill="none" stroke="#C4922A" stroke-width=".55"/>
+<path d="M30.4 68.8h19.2v2.4H30.4z" fill="url(#egyptian-egy-isis-stone)" stroke="currentColor" stroke-width=".6"/>
+</g>
+</svg>

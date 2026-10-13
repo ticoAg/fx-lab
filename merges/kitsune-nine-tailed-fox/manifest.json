@@ -1,0 +1,400 @@
+{
+  "id": "kitsune-nine-tailed-fox",
+  "title": {
+    "zh": "狐仙",
+    "en": "Fox Spirits"
+  },
+  "description": {
+    "zh": "日本九尾、日照雨嫁女与韩国九尾狐珠收在一套里，共 18 件，保留狐、珠、鸟居和法器。",
+    "en": "Japanese kitsune, the sun-shower fox wedding, and the Korean kumiho bead in one kit of 18 icons."
+  },
+  "cover": "kitsu-kitsune",
+  "categories": {
+    "kitsune": {
+      "zh": "九尾狐",
+      "en": "Kitsune"
+    },
+    "inari": {
+      "zh": "稻荷器物",
+      "en": "Inari Relics"
+    },
+    "fox-wedding": {
+      "zh": "狐狸嫁女",
+      "en": "Fox Wedding"
+    },
+    "wedding-rite": {
+      "zh": "婚仪器物",
+      "en": "Wedding Rites"
+    },
+    "kumiho": {
+      "zh": "九尾狐珠",
+      "en": "Kumiho"
+    },
+    "kumiho-relic": {
+      "zh": "狐珠法器",
+      "en": "Fox-Bead Relics"
+    }
+  },
+  "icons": [
+    {
+      "id": "kitsu-kitsune",
+      "title": {
+        "zh": "九尾狐",
+        "en": "Nine-Tailed Fox"
+      },
+      "description": {
+        "zh": "端坐的白狐，身后九条朱红尖梢的尾巴扇形展开，额饰红纹。",
+        "en": "A seated white fox with nine vermilion-tipped tails fanned behind it and red brow marks."
+      },
+      "animation": "sway",
+      "category": "kitsune",
+      "tags": [
+        "nine-tailed fox",
+        "九尾狐",
+        "kitsune",
+        "狐狸",
+        "japanese"
+      ]
+    },
+    {
+      "id": "kitsu-foxfire",
+      "title": {
+        "zh": "狐火",
+        "en": "Foxfire"
+      },
+      "description": {
+        "zh": "幽蓝色的狐火火焰，芯部泛白光。",
+        "en": "A pale blue foxfire flame with a glowing white core."
+      },
+      "animation": "pulse",
+      "category": "kitsune",
+      "tags": [
+        "foxfire",
+        "狐火",
+        "kitsune",
+        "狐狸",
+        "japanese"
+      ]
+    },
+    {
+      "id": "kitsu-jewel",
+      "title": {
+        "zh": "宝珠",
+        "en": "Wish Jewel"
+      },
+      "description": {
+        "zh": "金座上的水滴形宝珠，内含一缕白焰。",
+        "en": "A teardrop wish jewel on a gold stand with a wisp of white flame inside."
+      },
+      "animation": "float",
+      "category": "kitsune",
+      "tags": [
+        "wish jewel",
+        "宝珠",
+        "kitsune",
+        "狐狸",
+        "japanese"
+      ]
+    },
+    {
+      "id": "kitsu-senbon-torii",
+      "title": {
+        "zh": "千本鸟居",
+        "en": "Thousand Torii"
+      },
+      "description": {
+        "zh": "层层递进的朱红鸟居隧道，尽头一点暖光。",
+        "en": "A receding tunnel of vermilion torii with a warm glow at the end."
+      },
+      "animation": "pulse",
+      "category": "inari",
+      "tags": [
+        "thousand torii",
+        "千本鸟居",
+        "kitsune",
+        "狐狸",
+        "japanese"
+      ]
+    },
+    {
+      "id": "kitsu-shimenawa",
+      "title": {
+        "zh": "注连绳",
+        "en": "Shimenawa Rope"
+      },
+      "description": {
+        "zh": "扭结的稻草注连绳，垂着白色纸垂与草穗。",
+        "en": "A twisted straw shimenawa rope hung with white zigzag paper and straw tufts."
+      },
+      "animation": "sway",
+      "category": "inari",
+      "tags": [
+        "shimenawa rope",
+        "注连绳",
+        "kitsune",
+        "狐狸",
+        "japanese"
+      ]
+    },
+    {
+      "id": "kitsu-suzu",
+      "title": {
+        "zh": "铃铛",
+        "en": "Suzu Bell"
+      },
+      "description": {
+        "zh": "红绳系着的金色圆铃，垂两条红缎带。",
+        "en": "A round gold bell on a red rope with two red ribbons."
+      },
+      "animation": "sway",
+      "category": "inari",
+      "tags": [
+        "suzu bell",
+        "铃铛",
+        "kitsune",
+        "狐狸",
+        "japanese"
+      ]
+    },
+    {
+      "id": "wed-fox-bride",
+      "title": {
+        "zh": "狐新娘",
+        "en": "Fox Bride"
+      },
+      "description": {
+        "zh": "身穿白无垢、戴白色绵帽子的可爱狐狸新娘，羞涩闭眼。",
+        "en": "A cute fox bride in a white shiromuku and white hood, eyes shyly closed."
+      },
+      "animation": "sway",
+      "category": "fox-wedding",
+      "tags": [
+        "kitsune",
+        "fox-wedding",
+        "japanese-folk",
+        "couple",
+        "fox"
+      ]
+    },
+    {
+      "id": "wed-fox-groom",
+      "title": {
+        "zh": "狐新郎",
+        "en": "Fox Groom"
+      },
+      "description": {
+        "zh": "穿黑色羽织与袴的狐狸新郎，微笑闭眼。",
+        "en": "A fox groom in black haori and hakama, smiling with closed eyes."
+      },
+      "animation": "sway",
+      "category": "fox-wedding",
+      "tags": [
+        "kitsune",
+        "fox-wedding",
+        "japanese-folk",
+        "couple",
+        "fox"
+      ]
+    },
+    {
+      "id": "wed-hood-wataboshi",
+      "title": {
+        "zh": "绵帽子",
+        "en": "Wataboshi Hood"
+      },
+      "description": {
+        "zh": "新娘的白色绵帽子，内缘一圈朱红，垂红色流苏。",
+        "en": "The bride’s white wataboshi hood with a vermillion inner rim and red tassel."
+      },
+      "animation": "float",
+      "category": "fox-wedding",
+      "tags": [
+        "kitsune",
+        "fox-wedding",
+        "japanese-folk",
+        "couple",
+        "hood"
+      ]
+    },
+    {
+      "id": "wed-fox-mask",
+      "title": {
+        "zh": "狐面",
+        "en": "Fox Mask"
+      },
+      "description": {
+        "zh": "白底朱红纹样的狐狸面具，系红绳，无文字。",
+        "en": "A white fox mask with vermillion markings and a red cord, no lettering."
+      },
+      "animation": "pop",
+      "category": "fox-wedding",
+      "tags": [
+        "kitsune",
+        "fox-wedding",
+        "japanese-folk",
+        "couple",
+        "fox"
+      ]
+    },
+    {
+      "id": "wed-torii-gate",
+      "title": {
+        "zh": "鸟居",
+        "en": "Torii Gate"
+      },
+      "description": {
+        "zh": "朱红色素面鸟居，黑色笠木，无匾额文字。",
+        "en": "A plain vermillion torii gate with a black top beam and no plaque text."
+      },
+      "animation": "pulse",
+      "category": "wedding-rite",
+      "tags": [
+        "kitsune",
+        "fox-wedding",
+        "japanese-folk",
+        "shrine",
+        "torii"
+      ]
+    },
+    {
+      "id": "wed-kagura-bell",
+      "title": {
+        "zh": "神乐铃",
+        "en": "Kagura Bell"
+      },
+      "description": {
+        "zh": "层层金铃的神乐铃，挂着红绿彩带。",
+        "en": "A tiered golden kagura bell with red and green ribbons."
+      },
+      "animation": "sway",
+      "category": "wedding-rite",
+      "tags": [
+        "kitsune",
+        "fox-wedding",
+        "japanese-folk",
+        "shrine",
+        "kagura"
+      ]
+    },
+    {
+      "id": "kumiho-kumiho",
+      "title": {
+        "zh": "九尾狐",
+        "en": "Kumiho"
+      },
+      "description": {
+        "zh": "身着红裙的优雅狐狸少女，身后九条尾巴如扇展开。",
+        "en": "An elegant fox girl in a crimson skirt with nine tails fanned behind her."
+      },
+      "animation": "sway",
+      "category": "kumiho",
+      "tags": [
+        "kumiho",
+        "fox",
+        "korean-folk",
+        "fox",
+        "kumiho"
+      ]
+    },
+    {
+      "id": "kumiho-fox-bead",
+      "title": {
+        "zh": "狐珠",
+        "en": "Fox Bead"
+      },
+      "description": {
+        "zh": "掌心托起一颗发着金光的狐珠。",
+        "en": "A glowing golden fox bead resting above an open palm."
+      },
+      "animation": "pulse",
+      "category": "kumiho",
+      "tags": [
+        "kumiho",
+        "fox",
+        "korean-folk",
+        "fox",
+        "fox"
+      ]
+    },
+    {
+      "id": "kumiho-bead-swap",
+      "title": {
+        "zh": "传珠",
+        "en": "Bead Swap"
+      },
+      "description": {
+        "zh": "狐狸与书生之间飘过一颗狐珠，象征传气之吻。",
+        "en": "A fox bead floating between a fox and a scholar, the folk bead-passing kiss."
+      },
+      "animation": "float",
+      "category": "kumiho",
+      "tags": [
+        "kumiho",
+        "fox",
+        "korean-folk",
+        "fox",
+        "bead"
+      ]
+    },
+    {
+      "id": "kumiho-tail-fan",
+      "title": {
+        "zh": "九尾展扇",
+        "en": "Tail Fan"
+      },
+      "description": {
+        "zh": "九条琥珀色狐尾展成扇形，尾尖奶白。",
+        "en": "Nine amber tails spread like a fan with cream tips."
+      },
+      "animation": "sway",
+      "category": "kumiho",
+      "tags": [
+        "kumiho",
+        "fox",
+        "korean-folk",
+        "fox",
+        "tail"
+      ]
+    },
+    {
+      "id": "kumiho-seonbi-hat",
+      "title": {
+        "zh": "笠帽",
+        "en": "Seonbi Hat"
+      },
+      "description": {
+        "zh": "宽檐黑色马尾笠，系红色帽带。",
+        "en": "A wide-brimmed black horsehair gat with a crimson strap."
+      },
+      "animation": "sway",
+      "category": "kumiho-relic",
+      "tags": [
+        "kumiho",
+        "fox",
+        "korean-folk",
+        "vow",
+        "seonbi"
+      ]
+    },
+    {
+      "id": "kumiho-shaman-bell",
+      "title": {
+        "zh": "巫铃",
+        "en": "Shaman Bell"
+      },
+      "description": {
+        "zh": "木柄下挂一串金色巫铃，红绸飘带。",
+        "en": "A cluster of golden shaman bells on a wooden handle with red ribbons."
+      },
+      "animation": "sway",
+      "category": "kumiho-relic",
+      "tags": [
+        "kumiho",
+        "fox",
+        "korean-folk",
+        "shaman",
+        "shaman"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<svg id="egyptian-egy-horus-root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="egyptian-egy-horus-title egyptian-egy-horus-desc" class="egyptian-egy-horus-root" style="animation-play-state:inherit">
+<title id="egyptian-egy-horus-title">荷鲁斯·双冠神鹰 / Horus — falcon of the double crown</title>
+<desc id="egyptian-egy-horus-desc">立姿荷鲁斯侧身向右：白冠套在红冠里，钩喙突出，青金石身上三排收拢的翼羽，尾羽和两只爪子落在石灰岩台座上。 Standing Horus faces right: the white crown sits in the red crown, the beak hooks outward, three feather rows mark the folded lapis wing, and the tail and talons meet a limestone plinth.</desc>
+<style>.egyptian-egy-horus-root,.egyptian-egy-horus-root *{animation-play-state:inherit}.egyptian-egy-horus-motion{animation:egyptian-egy-horus-float 5.6s ease-in-out infinite;animation-play-state:inherit;transform-box:view-box;transform-origin:40px 42px}@keyframes egyptian-egy-horus-float{0%,100%{transform:translateY(.85px)}50%{transform:translateY(-.85px)}}@media(prefers-reduced-motion:reduce){.egyptian-egy-horus-motion{animation:none!important;transform:none!important}}</style>
+<defs>
+<linearGradient id="egyptian-egy-horus-gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".48" stop-color="#C4922A"/><stop offset="1" stop-color="#C4922A"/></linearGradient><linearGradient id="egyptian-egy-horus-lapis" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1F4E79"/><stop offset=".45" stop-color="#1F4E79"/><stop offset="1" stop-color="#16324F"/></linearGradient><linearGradient id="egyptian-egy-horus-clay" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C4652F"/><stop offset=".5" stop-color="#C4652F"/><stop offset="1" stop-color="#C4652F"/></linearGradient><linearGradient id="egyptian-egy-horus-stone" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".55" stop-color="#E7D3A1"/><stop offset="1" stop-color="#C4922A"/></linearGradient><radialGradient id="egyptian-egy-horus-shade"><stop stop-color="#3A2C22" stop-opacity=".24"/><stop offset="1" stop-color="#3A2C22" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="egyptian-egy-horus-motion" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="40" cy="73.4" rx="16" ry="1.5" fill="url(#egyptian-egy-horus-shade)"/>
+<path d="M34.4 7.4h6.2l1.4 12.6h-9z" fill="#E7D3A1" stroke="currentColor" stroke-width=".7"/>
+<path d="M28.6 17.2h20.2c.2 5.2-4 8.2-10.2 8.2s-10.2-3-10-8.2z" fill="url(#egyptian-egy-horus-clay)" stroke="currentColor" stroke-width=".75"/>
+<path d="M28.4 19.2c-4.6 1-5.2 5.6-.4 6.4" fill="none" stroke="currentColor" stroke-width=".8"/>
+<circle cx="42.8" cy="15.2" r="1.4" fill="url(#egyptian-egy-horus-gold)" stroke="currentColor" stroke-width=".5"/>
+<path d="M30.4 26.6c-1.6 3.2-.8 7.2 2.4 8.8-3.2 3.6-5.2 9.6-4.2 16.4L32 64.4l7.2-1.6 1.2-8.4c6.4-.8 11.6-5.2 13.2-11.2 3.2.6 7.2 1.6 8.4-.6-2.4-1.6-5.6-1.2-7.2-2.8.4-3.6-2.2-7.6-6.8-8.4-2.4-3.2-7.6-4.4-10.4-2.8z" fill="url(#egyptian-egy-horus-lapis)" stroke="currentColor" stroke-width="1"/>
+<path d="M46.8 33.6 58.4 35.2 50.6 39.6z" fill="url(#egyptian-egy-horus-gold)" stroke="currentColor" stroke-width=".75"/>
+<ellipse cx="40.6" cy="31.4" rx="2.5" ry="1.9" fill="#E7D3A1"/>
+<circle cx="41.4" cy="31.5" r="0.75" fill="#3A2C22"/>
+<path d="M33.2 40.4h12.6l-1.4 4.6H34.4z" fill="#1F4E79"/>
+<path d="M33.8 46.6h11.2l-1.2 4.2H34.8z" fill="#1F4E79"/>
+<path d="M34.4 52.4h9.8l-1 3.8H35.2z" fill="#1F4E79"/>
+<path d="M33.2 62.6h8.4l1.4 6.2h-11z" fill="url(#egyptian-egy-horus-gold)" stroke="currentColor" stroke-width=".7"/>
+<path d="M34.4 64.2v4.2M37.2 63.8v4.6M40 64.2v4" fill="none" stroke="#C4922A" stroke-width=".65"/>
+<path d="M30.6 66.4v3.2M28.8 69.6h6.4M41.6 66.2v3.4M40.2 69.6h6.6" fill="none" stroke="#C4922A" stroke-width="1.15"/>
+<path d="M22.6 71.2h34.8v2H22.6z" fill="url(#egyptian-egy-horus-stone)" stroke="currentColor" stroke-width=".7"/>
+</g>
+</svg>

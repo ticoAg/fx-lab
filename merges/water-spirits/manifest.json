@@ -1,0 +1,1246 @@
+{
+  "id": "water-spirits",
+  "title": {
+    "zh": "水妖精灵",
+    "en": "Water Spirits"
+  },
+  "description": {
+    "zh": "河、海、湖里的水妖、水马、海豹人与河童收在一套里，共 60 件。",
+    "en": "River, sea, and lake spirits, water-horses, selkies, and kappa, 60 icons in one kit."
+  },
+  "cover": "mami-mami-wata",
+  "categories": {
+    "africa": {
+      "zh": "西非水灵",
+      "en": "West African Waters"
+    },
+    "slavic": {
+      "zh": "斯拉夫水妖",
+      "en": "Slavic Waters"
+    },
+    "celtic": {
+      "zh": "凯尔特水域",
+      "en": "Celtic Waters"
+    },
+    "rhine": {
+      "zh": "莱茵与蛇仙",
+      "en": "Rhine and Melusine"
+    },
+    "japan": {
+      "zh": "日本河童",
+      "en": "Kappa"
+    },
+    "americas": {
+      "zh": "美洲水域",
+      "en": "American Waters"
+    }
+  },
+  "icons": [
+    {
+      "id": "mami-mami-wata",
+      "title": {
+        "zh": "玛米瓦塔",
+        "en": "Mami Wata"
+      },
+      "description": {
+        "zh": "身着蓝绿水纹长裙、头戴金冠、肩绕青蛇的水灵",
+        "en": "A tasteful folkloric water spirit in a teal wave-print gown with a gold crown, shell necklace and an aqua serpent draped over her shoulders."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "water spirit",
+        "水灵",
+        "mami wata",
+        "玛米瓦塔"
+      ]
+    },
+    {
+      "id": "mami-snake-coil",
+      "title": {
+        "zh": "蛇环绕",
+        "en": "Snake Coil"
+      },
+      "description": {
+        "zh": "盘绕昂首的青蛇，金色锯齿鳞纹",
+        "en": "A coiled aqua serpent with gold zigzag scales raising its head, tongue flicking."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "serpent",
+        "蛇",
+        "mami wata",
+        "玛米瓦塔"
+      ]
+    },
+    {
+      "id": "mami-mermaid-tail",
+      "title": {
+        "zh": "美人鱼尾",
+        "en": "Mermaid Tail"
+      },
+      "description": {
+        "zh": "带鳞纹与金珠束带的蓝绿鱼尾",
+        "en": "A curving teal mermaid tail with scale arcs, gold bead band and a wide aqua fin."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "mermaid",
+        "人鱼",
+        "mami wata",
+        "玛米瓦塔"
+      ]
+    },
+    {
+      "id": "mami-cowrie-coins",
+      "title": {
+        "zh": "宝贝币",
+        "en": "Cowrie Coins"
+      },
+      "description": {
+        "zh": "金盘上的三枚宝贝",
+        "en": "Three white cowrie shells resting on a gold dish."
+      },
+      "animation": "pulse",
+      "category": "africa",
+      "tags": [
+        "cowrie",
+        "宝贝",
+        "mami wata",
+        "玛米瓦塔"
+      ]
+    },
+    {
+      "id": "mami-pearl",
+      "title": {
+        "zh": "珍珠",
+        "en": "Pearl"
+      },
+      "description": {
+        "zh": "紫色扇贝中的白珍珠",
+        "en": "A glowing white pearl in a plum scallop shell on a teal lip."
+      },
+      "animation": "pulse",
+      "category": "africa",
+      "tags": [
+        "pearl",
+        "珍珠",
+        "mami wata",
+        "玛米瓦塔"
+      ]
+    },
+    {
+      "id": "mami-pocket-watch",
+      "title": {
+        "zh": "怀表",
+        "en": "Pocket Watch"
+      },
+      "description": {
+        "zh": "带链金怀表，表盘饰水波",
+        "en": "A gold pocket watch on a chain, its white dial marked with a small aqua wave."
+      },
+      "animation": "pulse",
+      "category": "africa",
+      "tags": [
+        "watch",
+        "怀表",
+        "mami wata",
+        "玛米瓦塔"
+      ]
+    },
+    {
+      "id": "vody-vodyanoy-face",
+      "title": {
+        "zh": "水爷头像",
+        "en": "Vodyanoy Face"
+      },
+      "description": {
+        "zh": "绿胡子的蛙脸水爷爷头像，圆圆的蛙眼半眯着，像在眨眼。",
+        "en": "The green-bearded, frog-faced old water grandpa, round frog eyes half-shut in a sleepy blink."
+      },
+      "animation": "none",
+      "category": "slavic",
+      "tags": [
+        "vodyanoy",
+        "slavic",
+        "folklore",
+        "river",
+        "vodyanoy-figure",
+        "vodyanoy-face"
+      ]
+    },
+    {
+      "id": "vody-vodyanoy-sit",
+      "title": {
+        "zh": "坐在浮木",
+        "en": "Sitting on a Log"
+      },
+      "description": {
+        "zh": "水爷爷坐在漂在水面的浮木上，赤脚垂进水里。",
+        "en": "The water grandpa sitting on a floating log, bare webbed feet dangling into the water."
+      },
+      "animation": "none",
+      "category": "slavic",
+      "tags": [
+        "vodyanoy",
+        "slavic",
+        "folklore",
+        "river",
+        "vodyanoy-figure",
+        "vodyanoy-sit"
+      ]
+    },
+    {
+      "id": "vody-frog-hands",
+      "title": {
+        "zh": "蹼手",
+        "en": "Webbed Hands"
+      },
+      "description": {
+        "zh": "一双带蹼的绿手从水里伸出来挥舞打招呼。",
+        "en": "A pair of green webbed hands rising from the water and waving hello."
+      },
+      "animation": "sway",
+      "category": "slavic",
+      "tags": [
+        "vodyanoy",
+        "slavic",
+        "folklore",
+        "river",
+        "vodyanoy-figure",
+        "frog-hands"
+      ]
+    },
+    {
+      "id": "vody-crystal-palace",
+      "title": {
+        "zh": "水晶宫",
+        "en": "Crystal Palace"
+      },
+      "description": {
+        "zh": "河底的水晶宫，几座尖塔在水下微微发光。",
+        "en": "The crystal palace on the riverbed, its pointed towers softly glowing underwater."
+      },
+      "animation": "pulse",
+      "category": "slavic",
+      "tags": [
+        "vodyanoy",
+        "slavic",
+        "folklore",
+        "river",
+        "underwater-palace",
+        "crystal-palace"
+      ]
+    },
+    {
+      "id": "vody-drowned-bell",
+      "title": {
+        "zh": "河底铜钟",
+        "en": "Sunken Bell"
+      },
+      "description": {
+        "zh": "沉在河底的一口铜钟，挂在长满水草的木梁下轻轻摆动。",
+        "en": "An old bronze bell sunk to the riverbed, swinging gently from a weed-covered wooden beam."
+      },
+      "animation": "sway",
+      "category": "slavic",
+      "tags": [
+        "vodyanoy",
+        "slavic",
+        "folklore",
+        "river",
+        "underwater-palace",
+        "drowned-bell"
+      ]
+    },
+    {
+      "id": "vody-fisher-net",
+      "title": {
+        "zh": "渔网",
+        "en": "Fishing Net"
+      },
+      "description": {
+        "zh": "挂在木杆上的渔网，网眼里挂着几颗浮子。",
+        "en": "A fishing net hanging from a wooden pole, with a few floats caught in the mesh."
+      },
+      "animation": "none",
+      "category": "slavic",
+      "tags": [
+        "vodyanoy",
+        "slavic",
+        "folklore",
+        "river",
+        "folk-objects",
+        "fisher-net"
+      ]
+    },
+    {
+      "id": "rusa-rusalka",
+      "title": {
+        "zh": "鲁萨尔卡",
+        "en": "Rusalka"
+      },
+      "description": {
+        "zh": "披着长发、头戴花环的温柔河中少女，身着白色长裙。",
+        "en": "Gentle river maiden with long green-tinged hair, a flower wreath and a white gown."
+      },
+      "animation": "float",
+      "category": "slavic",
+      "tags": [
+        "rusalka",
+        "maiden",
+        "folklore"
+      ]
+    },
+    {
+      "id": "rusa-comb",
+      "title": {
+        "zh": "湿发梳",
+        "en": "Hair Comb"
+      },
+      "description": {
+        "zh": "银色发梳嵌珍珠，旁有水滴。",
+        "en": "Silver comb set with a pearl, with water drops beside it."
+      },
+      "animation": "pulse",
+      "category": "slavic",
+      "tags": [
+        "comb",
+        "pearl",
+        "hair"
+      ]
+    },
+    {
+      "id": "rusa-long-hair",
+      "title": {
+        "zh": "湿漉长发",
+        "en": "Dripping Long Hair"
+      },
+      "description": {
+        "zh": "绿灰色的长发垂落，发梢滴下水珠。",
+        "en": "Long sea-green hair falling in locks, water dripping from the tips."
+      },
+      "animation": "sway",
+      "category": "slavic",
+      "tags": [
+        "hair",
+        "water",
+        "maiden"
+      ]
+    },
+    {
+      "id": "rusa-water-lily",
+      "title": {
+        "zh": "睡莲",
+        "en": "Water Lily"
+      },
+      "description": {
+        "zh": "浮在绿叶上的粉白睡莲，黄色花心。",
+        "en": "Pink and white water lily on a green pad with a yellow heart."
+      },
+      "animation": "pulse",
+      "category": "slavic",
+      "tags": [
+        "lily",
+        "flower",
+        "river"
+      ]
+    },
+    {
+      "id": "rusa-mill-wheel",
+      "title": {
+        "zh": "水车",
+        "en": "Mill Wheel"
+      },
+      "description": {
+        "zh": "河边木水车，带辐条与桨板，下方流水。",
+        "en": "Wooden riverside mill wheel with spokes and paddles above flowing water."
+      },
+      "animation": "spin",
+      "category": "slavic",
+      "tags": [
+        "mill",
+        "wheel",
+        "water"
+      ]
+    },
+    {
+      "id": "rusa-fish",
+      "title": {
+        "zh": "银鱼",
+        "en": "Silver Fish"
+      },
+      "description": {
+        "zh": "银色小鱼带鳞片光泽与蓝色背鳍。",
+        "en": "Silver fish with shimmering scales and a blue dorsal fin."
+      },
+      "animation": "float",
+      "category": "slavic",
+      "tags": [
+        "fish",
+        "silver",
+        "river"
+      ]
+    },
+    {
+      "id": "kelpie-kelpie-horse",
+      "title": {
+        "zh": "水马凯尔派",
+        "en": "Kelpie Water-Horse"
+      },
+      "description": {
+        "zh": "立在湖岸浅水中的黑色水马，水草鬃毛滴着水。",
+        "en": "A black water-horse standing in the shallows, its weedy mane dripping."
+      },
+      "animation": "float",
+      "category": "celtic",
+      "tags": [
+        "kelpie",
+        "scotland",
+        "loch",
+        "kelpie",
+        "kelpie"
+      ]
+    },
+    {
+      "id": "kelpie-kelpie-eyes",
+      "title": {
+        "zh": "幽绿马眼",
+        "en": "Green Kelpie Eyes"
+      },
+      "description": {
+        "zh": "湖雾里亮起的一对幽绿马眼。",
+        "en": "A pair of eerie green horse eyes glowing out of the loch mist."
+      },
+      "animation": "pulse",
+      "category": "celtic",
+      "tags": [
+        "kelpie",
+        "scotland",
+        "loch",
+        "kelpie",
+        "kelpie"
+      ]
+    },
+    {
+      "id": "kelpie-water-mane",
+      "title": {
+        "zh": "水草鬃毛",
+        "en": "Weedy Mane"
+      },
+      "description": {
+        "zh": "缠着绿色水草、波浪般飘动的鬃毛。",
+        "en": "A wavy mane tangled with green waterweed, flowing like a current."
+      },
+      "animation": "sway",
+      "category": "celtic",
+      "tags": [
+        "kelpie",
+        "scotland",
+        "loch",
+        "kelpie",
+        "water"
+      ]
+    },
+    {
+      "id": "kelpie-kelpie-human",
+      "title": {
+        "zh": "人形凯尔派",
+        "en": "Kelpie in Human Form"
+      },
+      "description": {
+        "zh": "湿漉漉鬃发、眼睛泛绿的俊美青年，发间缠着水草。",
+        "en": "A handsome youth with wet mane-like hair and green-glinting eyes, waterweed in his hair."
+      },
+      "animation": "pulse",
+      "category": "celtic",
+      "tags": [
+        "kelpie",
+        "scotland",
+        "loch",
+        "kelpie",
+        "kelpie"
+      ]
+    },
+    {
+      "id": "kelpie-loch-surface",
+      "title": {
+        "zh": "湖面",
+        "en": "Loch Surface"
+      },
+      "description": {
+        "zh": "远山下平静幽深的苏格兰湖，水面荡开涟漪。",
+        "en": "A still, deep Scottish loch below the hills, ripples spreading."
+      },
+      "animation": "pulse",
+      "category": "celtic",
+      "tags": [
+        "kelpie",
+        "scotland",
+        "loch",
+        "loch",
+        "loch"
+      ]
+    },
+    {
+      "id": "kelpie-storm-wave",
+      "title": {
+        "zh": "风暴浪",
+        "en": "Storm Wave"
+      },
+      "description": {
+        "zh": "水马召来、卷起白沫的巨浪。",
+        "en": "A huge foam-capped wave summoned by the kelpie."
+      },
+      "animation": "sway",
+      "category": "celtic",
+      "tags": [
+        "kelpie",
+        "scotland",
+        "loch",
+        "loch",
+        "storm"
+      ]
+    },
+    {
+      "id": "selkie-selkie-maiden",
+      "title": {
+        "zh": "海豹少女",
+        "en": "Selkie Maiden"
+      },
+      "description": {
+        "zh": "披着海豹皮、长发随风的少女",
+        "en": "A gentle maiden with long hair and a grey sealskin cloak over her shoulders."
+      },
+      "animation": "sway",
+      "category": "celtic",
+      "tags": [
+        "selkie-maiden",
+        "海豹少女",
+        "selkie",
+        "海豹人",
+        "海豹人"
+      ]
+    },
+    {
+      "id": "selkie-seal-skin",
+      "title": {
+        "zh": "海豹皮衣",
+        "en": "Sealskin"
+      },
+      "description": {
+        "zh": "叠起的斑点海豹皮",
+        "en": "A folded spotted grey sealskin drifting lightly."
+      },
+      "animation": "float",
+      "category": "celtic",
+      "tags": [
+        "seal-skin",
+        "海豹皮衣",
+        "selkie",
+        "海豹人",
+        "海豹人"
+      ]
+    },
+    {
+      "id": "selkie-seal-pup",
+      "title": {
+        "zh": "小海豹",
+        "en": "Seal Pup"
+      },
+      "description": {
+        "zh": "圆滚滚的白色小海豹",
+        "en": "A round fluffy white seal pup with big dark eyes."
+      },
+      "animation": "pop",
+      "category": "celtic",
+      "tags": [
+        "seal-pup",
+        "小海豹",
+        "selkie",
+        "海豹人",
+        "海豹人"
+      ]
+    },
+    {
+      "id": "selkie-fishing-cottage",
+      "title": {
+        "zh": "石砌渔屋",
+        "en": "Stone Cottage"
+      },
+      "description": {
+        "zh": "茅草顶石屋窗透暖光",
+        "en": "A thatched stone fisher's cottage with a warm glowing window."
+      },
+      "animation": "pulse",
+      "category": "celtic",
+      "tags": [
+        "fishing-cottage",
+        "石砌渔屋",
+        "selkie",
+        "海豹人",
+        "渔村"
+      ]
+    },
+    {
+      "id": "selkie-rowboat",
+      "title": {
+        "zh": "小木船",
+        "en": "Rowboat"
+      },
+      "description": {
+        "zh": "带桨的小木船",
+        "en": "A small wooden rowboat with oars rocking on the water."
+      },
+      "animation": "sway",
+      "category": "celtic",
+      "tags": [
+        "rowboat",
+        "小木船",
+        "selkie",
+        "海豹人",
+        "渔村"
+      ]
+    },
+    {
+      "id": "selkie-net-basket",
+      "title": {
+        "zh": "渔网篓",
+        "en": "Net Basket"
+      },
+      "description": {
+        "zh": "装着渔网与浮漂的柳条篓",
+        "en": "A wicker creel holding a fishing net and a cork float."
+      },
+      "animation": "float",
+      "category": "celtic",
+      "tags": [
+        "net-basket",
+        "渔网篓",
+        "selkie",
+        "海豹人",
+        "渔村"
+      ]
+    },
+    {
+      "id": "lore-lorelei",
+      "title": {
+        "zh": "罗蕾莱",
+        "en": "Lorelei"
+      },
+      "description": {
+        "zh": "金发少女坐在崖顶礁石上，手持金梳梳理长发。",
+        "en": "A blonde maiden on a cliff-top rock drawing a golden comb through her long hair."
+      },
+      "animation": "sway",
+      "category": "rhine",
+      "tags": [
+        "lorelei",
+        "rhine",
+        "comb",
+        "hair",
+        "maiden"
+      ]
+    },
+    {
+      "id": "lore-golden-comb",
+      "title": {
+        "zh": "金梳",
+        "en": "Golden Comb"
+      },
+      "description": {
+        "zh": "罗蕾莱镶珠的金色发梳闪闪发光。",
+        "en": "Lorelei's pearl-set golden comb, gleaming."
+      },
+      "animation": "pulse",
+      "category": "rhine",
+      "tags": [
+        "lorelei",
+        "rhine",
+        "comb",
+        "gold"
+      ]
+    },
+    {
+      "id": "lore-golden-hair",
+      "title": {
+        "zh": "金色长发",
+        "en": "Golden Hair"
+      },
+      "description": {
+        "zh": "被河风吹起的一缕缕金色长发。",
+        "en": "Long golden tresses blown by the river wind."
+      },
+      "animation": "sway",
+      "category": "rhine",
+      "tags": [
+        "lorelei",
+        "rhine",
+        "hair",
+        "gold"
+      ]
+    },
+    {
+      "id": "lore-lyre-harp",
+      "title": {
+        "zh": "竖琴",
+        "en": "Lyre Harp"
+      },
+      "description": {
+        "zh": "金色弯形竖琴，琴弦轻颤。",
+        "en": "A curved golden harp with vibrating strings."
+      },
+      "animation": "pulse",
+      "category": "rhine",
+      "tags": [
+        "lorelei",
+        "rhine",
+        "harp",
+        "music"
+      ]
+    },
+    {
+      "id": "lore-whirlpool",
+      "title": {
+        "zh": "漩涡",
+        "en": "Whirlpool"
+      },
+      "description": {
+        "zh": "吞没船只的幽暗河中旋涡。",
+        "en": "A dark river whirlpool that swallows boats."
+      },
+      "animation": "spin",
+      "category": "rhine",
+      "tags": [
+        "lorelei",
+        "rhine",
+        "whirlpool",
+        "danger"
+      ]
+    },
+    {
+      "id": "lore-reef-rocks",
+      "title": {
+        "zh": "暗礁",
+        "en": "Reef Rocks"
+      },
+      "description": {
+        "zh": "浪花拍打河中暗礁。",
+        "en": "Waves breaking over hidden river rocks."
+      },
+      "animation": "float",
+      "category": "rhine",
+      "tags": [
+        "lorelei",
+        "rhine",
+        "reef",
+        "rocks"
+      ]
+    },
+    {
+      "id": "melu-melusine-coil",
+      "title": {
+        "zh": "梅露辛现身",
+        "en": "Melusine Appears"
+      },
+      "description": {
+        "zh": "Q版梅露辛：红发仙女上身、绿鳞蛇尾盘成一圈，身旁一点金光。",
+        "en": "Chibi Melusine: a red-haired fairy upper body on a coiled green-scaled serpent tail, with a gold sparkle."
+      },
+      "animation": "float",
+      "category": "rhine",
+      "tags": [
+        "melusine",
+        "medieval",
+        "fairy-tale",
+        "illuminated",
+        "fairy",
+        "melusine"
+      ]
+    },
+    {
+      "id": "melu-serpent-tail",
+      "title": {
+        "zh": "鳞光蛇尾",
+        "en": "Twin Serpent Tails"
+      },
+      "description": {
+        "zh": "金色腰带下垂出两条绿鳞蛇尾，尾鳍轻摆。",
+        "en": "Two green-scaled serpent tails hanging from a gold band, swishing gently."
+      },
+      "animation": "sway",
+      "category": "rhine",
+      "tags": [
+        "melusine",
+        "medieval",
+        "fairy-tale",
+        "illuminated",
+        "fairy",
+        "serpent"
+      ]
+    },
+    {
+      "id": "melu-dragon-wings",
+      "title": {
+        "zh": "龙翼",
+        "en": "Dragon Wings"
+      },
+      "description": {
+        "zh": "小绿龙展开一对蝠翼，翅膀一张一合。",
+        "en": "A little green dragon spreading a pair of bat-like wings that open and close."
+      },
+      "animation": "pulse",
+      "category": "rhine",
+      "tags": [
+        "melusine",
+        "medieval",
+        "fairy-tale",
+        "illuminated",
+        "fairy",
+        "dragon"
+      ]
+    },
+    {
+      "id": "melu-fairy-crown",
+      "title": {
+        "zh": "仙女冠",
+        "en": "Fairy Crown"
+      },
+      "description": {
+        "zh": "金冠缀着玫瑰与白花，两侧绿叶，金光闪烁。",
+        "en": "A gold crown set with rose and cream flowers and green leaves, glinting."
+      },
+      "animation": "pulse",
+      "category": "rhine",
+      "tags": [
+        "melusine",
+        "medieval",
+        "fairy-tale",
+        "illuminated",
+        "fairy",
+        "fairy"
+      ]
+    },
+    {
+      "id": "melu-sword-oath",
+      "title": {
+        "zh": "骑士剑",
+        "en": "Oath Sword"
+      },
+      "description": {
+        "zh": "一把竖起的骑士长剑，金色护手镶红宝石。",
+        "en": "An upright knight sword with a gold crossguard set with a red gem."
+      },
+      "animation": "float",
+      "category": "rhine",
+      "tags": [
+        "melusine",
+        "medieval",
+        "fairy-tale",
+        "illuminated",
+        "knight-tale",
+        "sword"
+      ]
+    },
+    {
+      "id": "melu-heraldry-shield",
+      "title": {
+        "zh": "家族纹章",
+        "en": "Heraldic Shield"
+      },
+      "description": {
+        "zh": "奶油与蓝色分色盾牌，中间一条绿蛇，配金星。",
+        "en": "A cream-and-blue party shield charged with a green serpent and gold stars."
+      },
+      "animation": "sway",
+      "category": "rhine",
+      "tags": [
+        "melusine",
+        "medieval",
+        "fairy-tale",
+        "illuminated",
+        "knight-tale",
+        "heraldry"
+      ]
+    },
+    {
+      "id": "kappa-kappa",
+      "title": {
+        "zh": "河童",
+        "en": "Kappa"
+      },
+      "description": {
+        "zh": "绿色河童头顶水碟（原创萌系形象，非影视脸）。",
+        "en": "A green kappa with a water dish on its head; original cute design, not a film face."
+      },
+      "animation": "sway",
+      "category": "japan",
+      "tags": [
+        "kappa",
+        "yokai",
+        "summer",
+        "river",
+        "sway"
+      ]
+    },
+    {
+      "id": "kappa-cucumber",
+      "title": {
+        "zh": "黄瓜",
+        "en": "Cucumber"
+      },
+      "description": {
+        "zh": "河童最爱的新鲜带花黄瓜。",
+        "en": "A fresh cucumber with its flower, the kappa's favorite snack."
+      },
+      "animation": "sway",
+      "category": "japan",
+      "tags": [
+        "kappa",
+        "yokai",
+        "summer",
+        "river",
+        "sway"
+      ]
+    },
+    {
+      "id": "kappa-sara-dish",
+      "title": {
+        "zh": "头顶碟",
+        "en": "Sara Dish"
+      },
+      "description": {
+        "zh": "河童力量之源的水碟，水面荡漾。",
+        "en": "The water dish that holds the kappa's strength, rippling."
+      },
+      "animation": "pulse",
+      "category": "japan",
+      "tags": [
+        "kappa",
+        "yokai",
+        "summer",
+        "river",
+        "ripple"
+      ]
+    },
+    {
+      "id": "kappa-bow",
+      "title": {
+        "zh": "鞠躬",
+        "en": "Bow"
+      },
+      "description": {
+        "zh": "礼貌鞠躬时头顶洒出水滴。",
+        "en": "A polite bow that spills droplets from the dish."
+      },
+      "animation": "pop",
+      "category": "japan",
+      "tags": [
+        "kappa",
+        "yokai",
+        "summer",
+        "river",
+        "bow"
+      ]
+    },
+    {
+      "id": "kappa-lotus-leaf",
+      "title": {
+        "zh": "荷叶伞",
+        "en": "Lotus Leaf Umbrella"
+      },
+      "description": {
+        "zh": "河童撑起的荷叶伞。",
+        "en": "A lotus leaf held up like an umbrella."
+      },
+      "animation": "sway",
+      "category": "japan",
+      "tags": [
+        "kappa",
+        "yokai",
+        "summer",
+        "river",
+        "sway"
+      ]
+    },
+    {
+      "id": "kappa-sumo",
+      "title": {
+        "zh": "相扑",
+        "en": "Sumo"
+      },
+      "description": {
+        "zh": "河童与孩童友好推手相扑。",
+        "en": "A friendly pushing sumo match between a kappa and a child."
+      },
+      "animation": "pop",
+      "category": "japan",
+      "tags": [
+        "kappa",
+        "yokai",
+        "summer",
+        "river",
+        "push"
+      ]
+    },
+    {
+      "id": "encant-boto-pink",
+      "title": {
+        "zh": "粉色河豚",
+        "en": "Pink Boto"
+      },
+      "description": {
+        "zh": "微笑的亚马逊粉红河豚跃出夜色河面。",
+        "en": "A smiling pink Amazon river dolphin leaping above the night river."
+      },
+      "animation": "float",
+      "category": "americas",
+      "tags": [
+        "boto",
+        "amazon",
+        "encantado",
+        "folklore",
+        "night",
+        "boto",
+        "pink"
+      ]
+    },
+    {
+      "id": "encant-encantado-hat",
+      "title": {
+        "zh": "白色礼帽",
+        "en": "Encantado Hat"
+      },
+      "description": {
+        "zh": "粉色饰带的白色礼帽，传说用来遮住头顶气孔。",
+        "en": "A white hat with a pink band, said to hide the blowhole."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "boto",
+        "amazon",
+        "encantado",
+        "folklore",
+        "night",
+        "boto",
+        "hat"
+      ]
+    },
+    {
+      "id": "encant-white-suit",
+      "title": {
+        "zh": "白色西装",
+        "en": "White Suit"
+      },
+      "description": {
+        "zh": "挂在衣架上的优雅白西装，粉领结与胸花。",
+        "en": "An elegant white suit on a hanger with a pink bow tie and pocket flower."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "boto",
+        "amazon",
+        "encantado",
+        "folklore",
+        "night",
+        "boto",
+        "suit"
+      ]
+    },
+    {
+      "id": "encant-forro-accordion",
+      "title": {
+        "zh": "手风琴",
+        "en": "Forró Accordion"
+      },
+      "description": {
+        "zh": "红色风箱金色褶的舞会手风琴。",
+        "en": "A red and gold dance-party accordion."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "boto",
+        "amazon",
+        "encantado",
+        "folklore",
+        "night",
+        "festa",
+        "accordion"
+      ]
+    },
+    {
+      "id": "encant-dance-couple",
+      "title": {
+        "zh": "舞伴",
+        "en": "Dance Couple"
+      },
+      "description": {
+        "zh": "白衣绅士与粉裙舞伴手牵手旋转。",
+        "en": "A white-suited gentleman and a partner in a pink dress dancing hand in hand."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "boto",
+        "amazon",
+        "encantado",
+        "folklore",
+        "night",
+        "festa",
+        "couple"
+      ]
+    },
+    {
+      "id": "encant-rattle-maraca",
+      "title": {
+        "zh": "沙锤",
+        "en": "Maraca"
+      },
+      "description": {
+        "zh": "葫芦做的木柄沙锤，摇出节奏。",
+        "en": "A gourd maraca on a wooden handle shaking out a beat."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "boto",
+        "amazon",
+        "encantado",
+        "folklore",
+        "night",
+        "festa",
+        "maraca"
+      ]
+    },
+    {
+      "id": "ahui-ahuizotl",
+      "title": {
+        "zh": "阿惠佐特",
+        "en": "Ahuizotl"
+      },
+      "description": {
+        "zh": "Q 版阿惠佐特：湿漉漉的青色水犬，尖耳大眼，尾巴尽头长着一只小手。",
+        "en": "A chibi ahuizotl: a wet teal water-dog with pointed ears, big eyes and a tiny hand at the tip of its tail."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "ahuizotl",
+        "aztec",
+        "lake",
+        "beast"
+      ]
+    },
+    {
+      "id": "ahui-hand-tail",
+      "title": {
+        "zh": "尾端手掌",
+        "en": "Hand Tail"
+      },
+      "description": {
+        "zh": "卷曲的深蓝尾巴，末端张开一只沙色小手掌。",
+        "en": "A curling navy tail ending in an open sand-colored little palm."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "ahuizotl",
+        "aztec",
+        "lake",
+        "beast",
+        "hand",
+        "tail"
+      ]
+    },
+    {
+      "id": "ahui-wet-coat",
+      "title": {
+        "zh": "湿亮短毛",
+        "en": "Wet Coat"
+      },
+      "description": {
+        "zh": "一块湿亮的水犬短毛，几缕毛尖挂着水珠闪光。",
+        "en": "A patch of glossy wet water-dog fur, with water drops gleaming on the tufts."
+      },
+      "animation": "pulse",
+      "category": "americas",
+      "tags": [
+        "ahuizotl",
+        "aztec",
+        "lake",
+        "beast",
+        "wet",
+        "coat"
+      ]
+    },
+    {
+      "id": "ahui-jade-bead",
+      "title": {
+        "zh": "翡翠珠",
+        "en": "Jade Bead"
+      },
+      "description": {
+        "zh": "一颗系在红绳上的圆形翡翠珠，带白色高光。",
+        "en": "A round jade bead on a red cord, with a white gleam."
+      },
+      "animation": "pulse",
+      "category": "americas",
+      "tags": [
+        "ahuizotl",
+        "aztec",
+        "lake",
+        "codex",
+        "jade",
+        "bead"
+      ]
+    },
+    {
+      "id": "ahui-rain-god-mask",
+      "title": {
+        "zh": "雨神面具",
+        "en": "Rain God Mask"
+      },
+      "description": {
+        "zh": "特拉洛克风格雨神面具：圆环眼、獠牙上唇，青色面庞。",
+        "en": "A Tlaloc-style rain god mask: goggle-ring eyes, fanged upper lip, teal face."
+      },
+      "animation": "pulse",
+      "category": "americas",
+      "tags": [
+        "ahuizotl",
+        "aztec",
+        "lake",
+        "codex",
+        "rain",
+        "god",
+        "mask"
+      ]
+    },
+    {
+      "id": "ahui-fisher-hat",
+      "title": {
+        "zh": "渔夫草帽",
+        "en": "Fisher Hat"
+      },
+      "description": {
+        "zh": "宽檐编织草帽，帽箍系一条红带。",
+        "en": "A wide woven straw hat with a red band."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "ahuizotl",
+        "aztec",
+        "lake",
+        "life",
+        "fisher",
+        "hat"
+      ]
+    }
+  ]
+}

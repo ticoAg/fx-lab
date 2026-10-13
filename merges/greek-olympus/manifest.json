@@ -1,0 +1,1225 @@
+{
+  "id": "greek-olympus",
+  "title": {
+    "zh": "希腊神话",
+    "en": "Greek Myth"
+  },
+  "description": {
+    "zh": "奥林匹斯神器与珀尔修斯、潘多拉、伊卡洛斯、迈达斯、蛛女、普绪克、俄耳甫斯、迷宫、皮格马利翁、木马和归航收在一套里，共 60 件。",
+    "en": "Olympian attributes plus the hero cycles of Perseus, Pandora, Icarus, Midas, Arachne, Psyche, Orpheus, the labyrinth, Pygmalion, the horse, and the voyage home, 60 icons in one kit."
+  },
+  "cover": "oly-trident",
+  "categories": {
+    "olympus": {
+      "zh": "奥林匹斯",
+      "en": "Olympus"
+    },
+    "heroes": {
+      "zh": "英雄",
+      "en": "Heroes"
+    },
+    "fate": {
+      "zh": "命运与造物",
+      "en": "Fate and Making"
+    },
+    "labyrinth": {
+      "zh": "迷宫与冥界",
+      "en": "Labyrinth and Underworld"
+    },
+    "troy": {
+      "zh": "特洛伊",
+      "en": "Troy"
+    }
+  },
+  "icons": [
+    {
+      "id": "oly-trident",
+      "title": {
+        "zh": "波塞冬三叉戟",
+        "en": "Trident"
+      },
+      "description": {
+        "zh": "青铜三叉戟带浪花",
+        "en": "A bronze three-pronged trident rising from a curling wave, swinging."
+      },
+      "animation": "sway",
+      "category": "olympus",
+      "tags": [
+        "trident",
+        "波塞冬三叉戟",
+        "greek olympus",
+        "希腊众神",
+        "swing"
+      ]
+    },
+    {
+      "id": "oly-helm-hades",
+      "title": {
+        "zh": "隐身盔",
+        "en": "Helm of invisibility"
+      },
+      "description": {
+        "zh": "冥王黑盔半透明",
+        "en": "A dark crested helmet that fades in and out, half translucent."
+      },
+      "animation": "pulse",
+      "category": "olympus",
+      "tags": [
+        "helm of invisibility",
+        "隐身盔",
+        "greek olympus",
+        "希腊众神",
+        "fade"
+      ]
+    },
+    {
+      "id": "oly-caduceus",
+      "title": {
+        "zh": "双蛇杖",
+        "en": "Caduceus"
+      },
+      "description": {
+        "zh": "双蛇缠绕带翼杖",
+        "en": "A winged staff with two snakes twined around it, wiggling."
+      },
+      "animation": "sway",
+      "category": "olympus",
+      "tags": [
+        "caduceus",
+        "双蛇杖",
+        "greek olympus",
+        "希腊众神",
+        "wiggle"
+      ]
+    },
+    {
+      "id": "oly-aegis-shield",
+      "title": {
+        "zh": "神盾",
+        "en": "Aegis shield"
+      },
+      "description": {
+        "zh": "圆盾中央蛇发纹",
+        "en": "A round gold-rimmed shield with a snake-hair emblem in the center, glowing."
+      },
+      "animation": "pulse",
+      "category": "olympus",
+      "tags": [
+        "aegis shield",
+        "神盾",
+        "greek olympus",
+        "希腊众神",
+        "glow"
+      ]
+    },
+    {
+      "id": "oly-lyre-apollo",
+      "title": {
+        "zh": "阿波罗竖琴",
+        "en": "Golden lyre"
+      },
+      "description": {
+        "zh": "金色七弦琴",
+        "en": "A golden seven-string lyre with curved arms, its strings humming."
+      },
+      "animation": "pulse",
+      "category": "olympus",
+      "tags": [
+        "golden lyre",
+        "阿波罗竖琴",
+        "greek olympus",
+        "希腊众神",
+        "pulse"
+      ]
+    },
+    {
+      "id": "pers-perseus",
+      "title": {
+        "zh": "珀尔修斯",
+        "en": "Perseus"
+      },
+      "description": {
+        "zh": "戴羽冠金盔、披红斗篷的希腊少年英雄（绘本造型，非电影形象）。",
+        "en": "A young Greek hero in a crested gold helmet and red cloak (storybook style, no film likeness)."
+      },
+      "animation": "sway",
+      "category": "heroes",
+      "tags": [
+        "perseus",
+        "medusa",
+        "greek-myth",
+        "characters",
+        "perseus"
+      ]
+    },
+    {
+      "id": "pers-andromeda",
+      "title": {
+        "zh": "安德洛墨达",
+        "en": "Andromeda"
+      },
+      "description": {
+        "zh": "身着白袍、手腕系着细链站在海边岩石前的公主（无伤害描绘）。",
+        "en": "A princess in a white gown by a seaside rock with light chains (no harm shown)."
+      },
+      "animation": "sway",
+      "category": "heroes",
+      "tags": [
+        "perseus",
+        "medusa",
+        "greek-myth",
+        "characters",
+        "andromeda"
+      ]
+    },
+    {
+      "id": "pers-chrysaor",
+      "title": {
+        "zh": "克律萨俄耳",
+        "en": "Chrysaor"
+      },
+      "description": {
+        "zh": "象征克律萨俄耳的发光金剑。",
+        "en": "A glowing golden sword symbolising Chrysaor."
+      },
+      "animation": "pulse",
+      "category": "heroes",
+      "tags": [
+        "perseus",
+        "medusa",
+        "greek-myth",
+        "characters",
+        "chrysaor"
+      ]
+    },
+    {
+      "id": "pers-mirror-shield",
+      "title": {
+        "zh": "镜面盾牌",
+        "en": "Mirrored Shield"
+      },
+      "description": {
+        "zh": "雅典娜赠予的金边镜面青铜盾。",
+        "en": "Athena's gold-rimmed mirrored bronze shield."
+      },
+      "animation": "pulse",
+      "category": "heroes",
+      "tags": [
+        "perseus",
+        "medusa",
+        "greek-myth",
+        "artifacts",
+        "mirror-shield"
+      ]
+    },
+    {
+      "id": "pers-medusa-head",
+      "title": {
+        "zh": "美杜莎蛇发头",
+        "en": "Medusa's Head"
+      },
+      "description": {
+        "zh": "闭眼的绿肤蛇发女妖头像，绘本化无血腥。",
+        "en": "A closed-eyed green Gorgon head with serpent hair, storybook style with no gore."
+      },
+      "animation": "sway",
+      "category": "heroes",
+      "tags": [
+        "perseus",
+        "medusa",
+        "greek-myth",
+        "symbols",
+        "medusa-head"
+      ]
+    },
+    {
+      "id": "ody-trojan-horse",
+      "title": {
+        "zh": "特洛伊木马",
+        "en": "Trojan Horse"
+      },
+      "description": {
+        "zh": "带轮木台上的大木马，木纹板条拼接。",
+        "en": "A great wooden horse on a wheeled platform with plank grain."
+      },
+      "animation": "float",
+      "category": "heroes",
+      "tags": [
+        "odyssey",
+        "homer",
+        "greek-myth",
+        "voyage",
+        "trojan-horse"
+      ]
+    },
+    {
+      "id": "ody-odysseus-ship",
+      "title": {
+        "zh": "奥德修斯战船",
+        "en": "Odysseus' Ship"
+      },
+      "description": {
+        "zh": "黑帆金纹长船在海浪上摇晃。",
+        "en": "A black-sailed longship with gold trim rocking on waves."
+      },
+      "animation": "sway",
+      "category": "heroes",
+      "tags": [
+        "odyssey",
+        "homer",
+        "greek-myth",
+        "voyage",
+        "odysseus-ship"
+      ]
+    },
+    {
+      "id": "ody-oar-row",
+      "title": {
+        "zh": "划桨",
+        "en": "Rowing Oar"
+      },
+      "description": {
+        "zh": "一支木桨探入海浪往复划动。",
+        "en": "A wooden oar dipping into the waves, rowing back and forth."
+      },
+      "animation": "sway",
+      "category": "heroes",
+      "tags": [
+        "odyssey",
+        "homer",
+        "greek-myth",
+        "voyage",
+        "oar-row"
+      ]
+    },
+    {
+      "id": "ody-zeus-bolt",
+      "title": {
+        "zh": "宙斯雷霆",
+        "en": "Zeus' Thunderbolt"
+      },
+      "description": {
+        "zh": "乌云中劈下的金色闪电。",
+        "en": "A golden lightning bolt striking from a storm cloud."
+      },
+      "animation": "pulse",
+      "category": "heroes",
+      "tags": [
+        "odyssey",
+        "homer",
+        "greek-myth",
+        "voyage",
+        "zeus-bolt"
+      ]
+    },
+    {
+      "id": "ody-great-bow",
+      "title": {
+        "zh": "奥德修斯长弓",
+        "en": "Odysseus' Great Bow"
+      },
+      "description": {
+        "zh": "搭箭满弦的大木弓。",
+        "en": "A great wooden bow drawn with an arrow nocked."
+      },
+      "animation": "pulse",
+      "category": "heroes",
+      "tags": [
+        "odyssey",
+        "homer",
+        "greek-myth",
+        "home",
+        "great-bow"
+      ]
+    },
+    {
+      "id": "icarus-daedalus",
+      "title": {
+        "zh": "代达罗斯",
+        "en": "Daedalus"
+      },
+      "description": {
+        "zh": "灰须匠师父亲，背后展开一对白羽蜡翼。",
+        "en": "The grey-bearded master craftsman father with a pair of white wax-and-feather wings."
+      },
+      "animation": "sway",
+      "category": "heroes",
+      "tags": [
+        "icarus",
+        "greek-myth",
+        "flight",
+        "heroes",
+        "daedalus"
+      ]
+    },
+    {
+      "id": "icarus-icarus",
+      "title": {
+        "zh": "伊卡洛斯",
+        "en": "Icarus"
+      },
+      "description": {
+        "zh": "背着白羽蜡翼、向上飞翔的少年。",
+        "en": "A boy soaring upward on white feather wings sealed with wax."
+      },
+      "animation": "float",
+      "category": "heroes",
+      "tags": [
+        "icarus",
+        "greek-myth",
+        "flight",
+        "heroes",
+        "icarus"
+      ]
+    },
+    {
+      "id": "icarus-wax-wings",
+      "title": {
+        "zh": "蜡羽翼",
+        "en": "Wax Wings"
+      },
+      "description": {
+        "zh": "以黄蜡粘合羽毛的一对展开羽翼。",
+        "en": "A pair of spread wings of feathers bound with yellow wax."
+      },
+      "animation": "pulse",
+      "category": "heroes",
+      "tags": [
+        "icarus",
+        "greek-myth",
+        "flight",
+        "workshop",
+        "wings"
+      ]
+    },
+    {
+      "id": "icarus-sun",
+      "title": {
+        "zh": "烈日",
+        "en": "Blazing Sun"
+      },
+      "description": {
+        "zh": "橙色光芒环绕的黄色太阳。",
+        "en": "A yellow sun ringed with turning orange rays."
+      },
+      "animation": "spin",
+      "category": "heroes",
+      "tags": [
+        "icarus",
+        "greek-myth",
+        "flight",
+        "flight",
+        "sun"
+      ]
+    },
+    {
+      "id": "icarus-lyre",
+      "title": {
+        "zh": "里拉琴",
+        "en": "Lyre"
+      },
+      "description": {
+        "zh": "木质里拉琴，琴弦振动奏哀歌。",
+        "en": "A wooden lyre with vibrating strings playing a lament."
+      },
+      "animation": "pulse",
+      "category": "heroes",
+      "tags": [
+        "icarus",
+        "greek-myth",
+        "flight",
+        "heroes",
+        "lyre"
+      ]
+    },
+    {
+      "id": "pandora-pandora-pithos",
+      "title": {
+        "zh": "潘多拉魔盒（陶罐）",
+        "en": "Pandora's Pithos"
+      },
+      "description": {
+        "zh": "带金盖、饰金色波纹带的赤陶大陶罐，罐腹透出一点希望微光。",
+        "en": "A terracotta pithos with a gold lid and wave band, a little spark of hope glowing within."
+      },
+      "animation": "float",
+      "category": "fate",
+      "tags": [
+        "pandora",
+        "hope",
+        "greek-myth",
+        "box",
+        "pandora-pithos"
+      ]
+    },
+    {
+      "id": "pandora-lid-glow",
+      "title": {
+        "zh": "盒盖微启光芒",
+        "en": "Lid Ajar with Light"
+      },
+      "description": {
+        "zh": "陶罐盖子微微掀起，柔和金光从缝隙溢出。",
+        "en": "The pithos lid lifted slightly with soft golden light spilling out."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "pandora",
+        "hope",
+        "greek-myth",
+        "box",
+        "lid-glow"
+      ]
+    },
+    {
+      "id": "pandora-golden-key",
+      "title": {
+        "zh": "金钥匙",
+        "en": "Golden Key"
+      },
+      "description": {
+        "zh": "带圆环柄的古典金钥匙。",
+        "en": "An antique golden key with a round bow."
+      },
+      "animation": "sway",
+      "category": "fate",
+      "tags": [
+        "pandora",
+        "hope",
+        "greek-myth",
+        "box",
+        "golden-key"
+      ]
+    },
+    {
+      "id": "pandora-broken-shield",
+      "title": {
+        "zh": "战争破盾",
+        "en": "Broken Shield"
+      },
+      "description": {
+        "zh": "裂成两半的木质圆盾，中间有金钉。",
+        "en": "A wooden round shield split in two with a gold boss."
+      },
+      "animation": "sway",
+      "category": "fate",
+      "tags": [
+        "pandora",
+        "hope",
+        "greek-myth",
+        "ills",
+        "broken-shield"
+      ]
+    },
+    {
+      "id": "pandora-liar-mask",
+      "title": {
+        "zh": "谎言面具",
+        "en": "Mask of Lies"
+      },
+      "description": {
+        "zh": "带长柄的紫色假笑面具。",
+        "en": "A violet masquerade mask on a stick with a sly smile."
+      },
+      "animation": "sway",
+      "category": "fate",
+      "tags": [
+        "pandora",
+        "hope",
+        "greek-myth",
+        "ills",
+        "liar-mask"
+      ]
+    },
+    {
+      "id": "midas-midas",
+      "title": {
+        "zh": "迈达斯王",
+        "en": "King Midas"
+      },
+      "description": {
+        "zh": "头戴金冠、蓄黑须、穿陶红长袍的迈达斯王，王冠闪光。",
+        "en": "King Midas with a black beard, terracotta robe and a sparkling gold crown."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "midas",
+        "greek-myth",
+        "gold",
+        "figures",
+        "midas"
+      ]
+    },
+    {
+      "id": "midas-golden-hand",
+      "title": {
+        "zh": "点金之手",
+        "en": "Golden Hand"
+      },
+      "description": {
+        "zh": "张开的金色手掌，四周金光扩散。",
+        "en": "An open golden palm with rays of light spreading around it."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "midas",
+        "greek-myth",
+        "gold",
+        "transformed",
+        "hand"
+      ]
+    },
+    {
+      "id": "midas-golden-rose",
+      "title": {
+        "zh": "金玫瑰",
+        "en": "Golden Rose"
+      },
+      "description": {
+        "zh": "被点化成金的玫瑰，枝叶仍为橄榄绿。",
+        "en": "A rose turned to gold on an olive-green stem."
+      },
+      "animation": "sway",
+      "category": "fate",
+      "tags": [
+        "midas",
+        "greek-myth",
+        "gold",
+        "transformed",
+        "rose"
+      ]
+    },
+    {
+      "id": "midas-golden-daughter",
+      "title": {
+        "zh": "金像公主",
+        "en": "Golden Daughter"
+      },
+      "description": {
+        "zh": "被点化为金像、立于底座上的公主。",
+        "en": "The princess turned into a golden statue on a plinth."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "midas",
+        "greek-myth",
+        "gold",
+        "figures",
+        "daughter"
+      ]
+    },
+    {
+      "id": "midas-crown",
+      "title": {
+        "zh": "王冠",
+        "en": "Crown"
+      },
+      "description": {
+        "zh": "缀橄榄叶月桂的金冠，闪烁星光。",
+        "en": "A gold crown with an olive-leaf laurel and twinkling sparkles."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "midas",
+        "greek-myth",
+        "gold",
+        "court",
+        "crown"
+      ]
+    },
+    {
+      "id": "psyche-psyche",
+      "title": {
+        "zh": "普绪克",
+        "en": "Psyche"
+      },
+      "description": {
+        "zh": "手持油灯的凡间公主（原创绘本风格）。",
+        "en": "A mortal princess holding an oil lamp; original storybook style."
+      },
+      "animation": "float",
+      "category": "fate",
+      "tags": [
+        "psyche",
+        "eros",
+        "greek-myth",
+        "trials",
+        "float"
+      ]
+    },
+    {
+      "id": "psyche-eros",
+      "title": {
+        "zh": "丘比特",
+        "en": "Eros"
+      },
+      "description": {
+        "zh": "长翼小爱神持金弓（圆润可爱，非影视形象）。",
+        "en": "A little winged love god with a golden bow; round and cute, not a film likeness."
+      },
+      "animation": "float",
+      "category": "fate",
+      "tags": [
+        "psyche",
+        "eros",
+        "greek-myth",
+        "trials",
+        "flutter"
+      ]
+    },
+    {
+      "id": "psyche-oil-lamp",
+      "title": {
+        "zh": "油灯",
+        "en": "Oil Lamp"
+      },
+      "description": {
+        "zh": "滴落热油的古希腊陶灯。",
+        "en": "An ancient Greek clay lamp dripping hot oil."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "psyche",
+        "eros",
+        "greek-myth",
+        "trials",
+        "flicker"
+      ]
+    },
+    {
+      "id": "psyche-golden-fleece-ram",
+      "title": {
+        "zh": "金毛羊",
+        "en": "Golden Fleece Ram"
+      },
+      "description": {
+        "zh": "阳光下发亮的金羊。",
+        "en": "A ram whose golden fleece shines in the sun."
+      },
+      "animation": "pop",
+      "category": "fate",
+      "tags": [
+        "psyche",
+        "eros",
+        "greek-myth",
+        "trials",
+        "bounce"
+      ]
+    },
+    {
+      "id": "psyche-obol-coin",
+      "title": {
+        "zh": "渡河银币",
+        "en": "Obol Coin"
+      },
+      "description": {
+        "zh": "渡河用的古银币。",
+        "en": "An ancient silver coin for the ferry fare."
+      },
+      "animation": "spin",
+      "category": "fate",
+      "tags": [
+        "psyche",
+        "eros",
+        "greek-myth",
+        "trials",
+        "rotate"
+      ]
+    },
+    {
+      "id": "pyg-pygmalion",
+      "title": {
+        "zh": "皮格马利翁",
+        "en": "Pygmalion"
+      },
+      "description": {
+        "zh": "卷发短胡、身穿橄榄绿短袍的Q版雕刻家，举着凿子专心雕刻。",
+        "en": "A chibi sculptor with curly hair, short beard and olive tunic, raising his chisel as he carves."
+      },
+      "animation": "sway",
+      "category": "fate",
+      "tags": [
+        "pygmalion",
+        "galatea",
+        "greek-myth",
+        "sculpt"
+      ]
+    },
+    {
+      "id": "pyg-galatea-statue",
+      "title": {
+        "zh": "伽拉忒亚雕像",
+        "en": "Galatea Statue"
+      },
+      "description": {
+        "zh": "站在底座上的优雅大理石少女，脸颊泛起玫瑰红，周身微微发光。",
+        "en": "An elegant marble maiden on a plinth, her cheeks blushing rose as she softly glows."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "galatea-statue",
+        "pygmalion",
+        "galatea",
+        "greek-myth",
+        "sculpt"
+      ]
+    },
+    {
+      "id": "pyg-ivory-block",
+      "title": {
+        "zh": "象牙原石",
+        "en": "Ivory Block"
+      },
+      "description": {
+        "zh": "未雕刻的米白色象牙方块，表面闪着一点金色微光。",
+        "en": "An uncarved creamy ivory block with a small gold glint on its surface."
+      },
+      "animation": "pulse",
+      "category": "fate",
+      "tags": [
+        "ivory-block",
+        "pygmalion",
+        "galatea",
+        "greek-myth",
+        "sculpt"
+      ]
+    },
+    {
+      "id": "pyg-chisel",
+      "title": {
+        "zh": "凿子",
+        "en": "Chisel"
+      },
+      "description": {
+        "zh": "木柄铁凿斜斜敲进石面，迸出金色小火花。",
+        "en": "An iron chisel with a wooden handle tapping into stone, throwing gold sparks."
+      },
+      "animation": "sway",
+      "category": "fate",
+      "tags": [
+        "chisel",
+        "pygmalion",
+        "galatea",
+        "greek-myth",
+        "studio"
+      ]
+    },
+    {
+      "id": "pyg-hammer",
+      "title": {
+        "zh": "木槌",
+        "en": "Mallet"
+      },
+      "description": {
+        "zh": "圆头木槌，柄缠皮绳，上下敲打。",
+        "en": "A round wooden mallet with a leather-wrapped handle, tapping up and down."
+      },
+      "animation": "sway",
+      "category": "fate",
+      "tags": [
+        "hammer",
+        "pygmalion",
+        "galatea",
+        "greek-myth",
+        "studio"
+      ]
+    },
+    {
+      "id": "arachne-arachne",
+      "title": {
+        "zh": "阿拉克涅",
+        "en": "Arachne"
+      },
+      "description": {
+        "zh": "吕底亚少女身披白袍紫带，在立式织机前低头织布。",
+        "en": "A Lydian maiden in a white chiton with a purple band, weaving at an upright loom."
+      },
+      "animation": "sway",
+      "category": "labyrinth",
+      "tags": [
+        "arachne",
+        "weaver",
+        "织女"
+      ]
+    },
+    {
+      "id": "arachne-athena",
+      "title": {
+        "zh": "雅典娜",
+        "en": "Athena"
+      },
+      "description": {
+        "zh": "头戴蓝灰头盔、紫色盔缨的智慧女神，身披白袍。",
+        "en": "The goddess of wisdom in a blue-grey helmet with a purple crest and a white chiton."
+      },
+      "animation": "pulse",
+      "category": "labyrinth",
+      "tags": [
+        "athena",
+        "goddess",
+        "女神"
+      ]
+    },
+    {
+      "id": "arachne-old-woman",
+      "title": {
+        "zh": "老妇人",
+        "en": "Old woman"
+      },
+      "description": {
+        "zh": "披蓝灰头巾的灰袍老妇，拄着木杖——女神的伪装。",
+        "en": "A hooded old woman in a grey robe leaning on a staff, the goddess in disguise."
+      },
+      "animation": "sway",
+      "category": "labyrinth",
+      "tags": [
+        "old woman",
+        "disguise",
+        "伪装"
+      ]
+    },
+    {
+      "id": "arachne-spindle",
+      "title": {
+        "zh": "纺锤",
+        "en": "Spindle"
+      },
+      "description": {
+        "zh": "缠满白羊毛的木纺锤，下端紫色锤盘。",
+        "en": "A wooden spindle wound with white wool above a purple whorl."
+      },
+      "animation": "spin",
+      "category": "labyrinth",
+      "tags": [
+        "spindle",
+        "spin",
+        "纺锤"
+      ]
+    },
+    {
+      "id": "arachne-spear",
+      "title": {
+        "zh": "长矛",
+        "en": "Spear"
+      },
+      "description": {
+        "zh": "木杆金箍、蓝灰矛尖的女神长矛。",
+        "en": "The goddess's spear with a wooden shaft, gold band and blue-grey tip."
+      },
+      "animation": "sway",
+      "category": "labyrinth",
+      "tags": [
+        "spear",
+        "athena",
+        "长矛"
+      ]
+    },
+    {
+      "id": "mino-labyrinth-map",
+      "title": {
+        "zh": "迷宫圆图",
+        "en": "Labyrinth map"
+      },
+      "description": {
+        "zh": "象牙白圆盘上的同心迷宫通道，墨线回廊与赭红隔墙，中心红点为迷宫核心，缓慢旋转。",
+        "en": "A round ivory labyrinth with concentric ink corridors, ochre-red wall marks and a red center, slowly spinning."
+      },
+      "animation": "spin",
+      "category": "labyrinth",
+      "tags": [
+        "迷宫",
+        "地图",
+        "maze",
+        "米诺陶迷宫",
+        "minotaur labyrinth"
+      ]
+    },
+    {
+      "id": "mino-stone-door",
+      "title": {
+        "zh": "石门机关",
+        "en": "Stone door"
+      },
+      "description": {
+        "zh": "灰石门框配赭红回纹门楣，石门带金色门环，门扇绕门轴微微开合。",
+        "en": "A stone frame with a red meander lintel and a stone door with a gold ring that swings slightly on its hinge."
+      },
+      "animation": "sway",
+      "category": "labyrinth",
+      "tags": [
+        "石门",
+        "机关",
+        "door",
+        "米诺陶迷宫",
+        "minotaur labyrinth"
+      ]
+    },
+    {
+      "id": "mino-torch",
+      "title": {
+        "zh": "青铜火把",
+        "en": "Torch"
+      },
+      "description": {
+        "zh": "青铜火把架上燃烧的赭红火焰，中心金色焰芯，火焰呼吸跳动。",
+        "en": "A bronze torch with an ochre-red flame and gold core, the flame pulsing."
+      },
+      "animation": "pulse",
+      "category": "labyrinth",
+      "tags": [
+        "火把",
+        "照明",
+        "torch",
+        "米诺陶迷宫",
+        "minotaur labyrinth"
+      ]
+    },
+    {
+      "id": "mino-key-bronze",
+      "title": {
+        "zh": "青铜钥匙",
+        "en": "Bronze key"
+      },
+      "description": {
+        "zh": "环形握柄的青铜钥匙，金色饰珠与阶梯钥齿，绕中心匀速旋转。",
+        "en": "A bronze key with a ring bow, gold bead and stepped bit, spinning around its center."
+      },
+      "animation": "spin",
+      "category": "labyrinth",
+      "tags": [
+        "钥匙",
+        "青铜",
+        "key",
+        "米诺陶迷宫",
+        "minotaur labyrinth"
+      ]
+    },
+    {
+      "id": "mino-minotaur-mask",
+      "title": {
+        "zh": "牛头面具",
+        "en": "Minotaur mask"
+      },
+      "description": {
+        "zh": "风格化青铜牛头面具：象牙白牛角、金色回纹额饰、浅色口鼻与金鼻环，轻摆。",
+        "en": "A stylized bronze bull-head mask with ivory horns, gold meander brow, pale muzzle and gold nose ring, swaying."
+      },
+      "animation": "sway",
+      "category": "labyrinth",
+      "tags": [
+        "牛头怪",
+        "面具",
+        "minotaur",
+        "米诺陶迷宫",
+        "minotaur labyrinth"
+      ]
+    },
+    {
+      "id": "orph-orpheus",
+      "title": {
+        "zh": "俄耳甫斯",
+        "en": "Orpheus"
+      },
+      "description": {
+        "zh": "头戴月桂的诗人剪影，白袍红披风，手持小竖琴。",
+        "en": "A laurel-crowned poet silhouette in a white robe and red cloak, holding a small lyre."
+      },
+      "animation": "sway",
+      "category": "labyrinth",
+      "tags": [
+        "orpheus",
+        "俄耳甫斯",
+        "orpheus",
+        "underworld"
+      ]
+    },
+    {
+      "id": "orph-eurydice",
+      "title": {
+        "zh": "欧律狄刻",
+        "en": "Eurydice"
+      },
+      "description": {
+        "zh": "白袍新娘侧身背转，雾蓝面纱随风飘起。",
+        "en": "A bride in a white robe turning away, her river-mist veil drifting behind."
+      },
+      "animation": "float",
+      "category": "labyrinth",
+      "tags": [
+        "eurydice",
+        "欧律狄刻",
+        "orpheus",
+        "underworld"
+      ]
+    },
+    {
+      "id": "orph-styx-ferry",
+      "title": {
+        "zh": "冥河渡船",
+        "en": "Styx Ferry"
+      },
+      "description": {
+        "zh": "木船挂着一盏灯笼，浮在幽暗的冥河上。",
+        "en": "A wooden ferry with a hanging lantern floating on the dark river Styx."
+      },
+      "animation": "float",
+      "category": "labyrinth",
+      "tags": [
+        "styx ferry",
+        "冥河渡船",
+        "orpheus",
+        "underworld"
+      ]
+    },
+    {
+      "id": "orph-persephone",
+      "title": {
+        "zh": "珀耳塞福涅",
+        "en": "Persephone"
+      },
+      "description": {
+        "zh": "橄榄绿长袍的冥后戴金冠，手捧一颗石榴。",
+        "en": "The underworld queen in an olive robe and gold diadem, holding a pomegranate."
+      },
+      "animation": "pulse",
+      "category": "labyrinth",
+      "tags": [
+        "persephone",
+        "珀耳塞福涅",
+        "orpheus",
+        "underworld"
+      ]
+    },
+    {
+      "id": "orph-lyre-constellation",
+      "title": {
+        "zh": "竖琴星座",
+        "en": "Lyre Constellation"
+      },
+      "description": {
+        "zh": "夜空圆盘中由星点连成的竖琴星座。",
+        "en": "Stars joined by dotted lines into a lyre shape against a night disc."
+      },
+      "animation": "pulse",
+      "category": "labyrinth",
+      "tags": [
+        "lyre constellation",
+        "竖琴星座",
+        "orpheus",
+        "underworld"
+      ]
+    },
+    {
+      "id": "trojan-horse-hatch",
+      "title": {
+        "zh": "木马暗门",
+        "en": "Horse Hatch"
+      },
+      "description": {
+        "zh": "木马腹部暗门打开，戴羽冠头盔的小战士探出头，下方挂着绳梯，可爱冒险风。",
+        "en": "The wooden horse belly hatch opens and a tiny crested-helmet warrior peeks out above a rope ladder; cute adventure style."
+      },
+      "animation": "pop",
+      "category": "troy",
+      "tags": [
+        "troy",
+        "trojan-war",
+        "homer",
+        "greek-myth",
+        "siege",
+        "horse-hatch"
+      ]
+    },
+    {
+      "id": "trojan-troy-wall",
+      "title": {
+        "zh": "特洛伊城墙",
+        "en": "Walls of Troy"
+      },
+      "description": {
+        "zh": "带垛口的石砌城墙，中央木门微微震动，如同受到撞击。",
+        "en": "Crenellated stone walls of Troy with a wooden gate that shudders as if rammed."
+      },
+      "animation": "pulse",
+      "category": "troy",
+      "tags": [
+        "troy",
+        "trojan-war",
+        "homer",
+        "greek-myth",
+        "siege",
+        "troy-wall"
+      ]
+    },
+    {
+      "id": "trojan-city-gate",
+      "title": {
+        "zh": "斯卡亚城门",
+        "en": "Scaean Gate"
+      },
+      "description": {
+        "zh": "两座垛口塔楼之间的拱门，青铜双扇门钉着金色铆钉，轻轻开合。",
+        "en": "An arched gate between two crenellated towers, its bronze double doors with gold studs gently breathing."
+      },
+      "animation": "pulse",
+      "category": "troy",
+      "tags": [
+        "troy",
+        "trojan-war",
+        "homer",
+        "greek-myth",
+        "siege",
+        "city-gate"
+      ]
+    },
+    {
+      "id": "trojan-achilles-helm",
+      "title": {
+        "zh": "阿喀琉斯头盔",
+        "en": "Achilles Helm"
+      },
+      "description": {
+        "zh": "金铜色科林斯式头盔，顶部红色羽冠随风左右摆动。",
+        "en": "A bronze-gold Corinthian helmet whose red horsehair crest sways in the wind."
+      },
+      "animation": "sway",
+      "category": "troy",
+      "tags": [
+        "troy",
+        "trojan-war",
+        "homer",
+        "greek-myth",
+        "heroes",
+        "achilles-helm"
+      ]
+    },
+    {
+      "id": "trojan-hector-shield",
+      "title": {
+        "zh": "赫克托耳圆盾",
+        "en": "Hector Shield"
+      },
+      "description": {
+        "zh": "爱琴海蓝色圆盾，金色同心环与星形盾心，缓缓旋转反光。",
+        "en": "An Aegean-blue round shield with gold concentric rings and a star boss, slowly spinning and glinting."
+      },
+      "animation": "spin",
+      "category": "troy",
+      "tags": [
+        "troy",
+        "trojan-war",
+        "homer",
+        "greek-myth",
+        "heroes",
+        "hector-shield"
+      ]
+    }
+  ]
+}

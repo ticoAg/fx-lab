@@ -1,0 +1,464 @@
+{
+  "id": "egyptian",
+  "title": {
+    "zh": "埃及神话",
+    "en": "Egyptian Myth"
+  },
+  "description": {
+    "zh": "埃及神系与日舟、称心、猫神三则故事收在一套里，共 24 件。",
+    "en": "The Egyptian pantheon plus the solar barque, the weighing of the heart, and Bastet, 24 icons in one kit."
+  },
+  "cover": "ra-ra",
+  "categories": {
+    "pantheon": {
+      "zh": "埃及神系",
+      "en": "Pantheon"
+    },
+    "anubis": {
+      "zh": "阿努比斯称心",
+      "en": "Weighing of the Heart"
+    },
+    "ra": {
+      "zh": "拉的日舟",
+      "en": "Solar Barque"
+    },
+    "bastet": {
+      "zh": "巴斯特",
+      "en": "Bastet"
+    }
+  },
+  "icons": [
+    {
+      "id": "egy-horus",
+      "title": {
+        "zh": "荷鲁斯·双冠神鹰",
+        "en": "Horus — falcon of the double crown"
+      },
+      "description": {
+        "zh": "立姿荷鲁斯侧身向右：白冠套在红冠里，钩喙突出，青金石身上三排收拢的翼羽，尾羽和两只爪子落在石灰岩台座上。",
+        "en": "Standing Horus faces right: the white crown sits in the red crown, the beak hooks outward, three feather rows mark the folded lapis wing, and the tail and talons meet a limestone plinth."
+      },
+      "animation": "float",
+      "category": "pantheon"
+    },
+    {
+      "id": "egy-isis",
+      "title": {
+        "zh": "伊西斯·王座与展翼",
+        "en": "Isis — throne and outspread wings"
+      },
+      "description": {
+        "zh": "伊西斯以王座形冠和向两侧展开的三层羽翼占满画幅，骨色侧脸、青金石紧身裙，裙上有一枚小号泰特结。",
+        "en": "Isis fills the frame with a throne-shaped crown and three tiers of wings. A bone profile and lapis sheath dress carry a small tyet."
+      },
+      "animation": "pulse",
+      "category": "pantheon"
+    },
+    {
+      "id": "egy-sekhem",
+      "title": {
+        "zh": "塞赫美特·烈日母狮",
+        "en": "Sekhmet — lioness of the sun"
+      },
+      "description": {
+        "zh": "塞赫美特是侧面母狮首，鬃边围着脸，头顶沙金日盘和一条小圣蛇，左侧留一丛纸莎草。",
+        "en": "Sekhmet is a lioness head in profile, a ruff around the face, a sand-gold sun disk and small uraeus above, with a papyrus clump to the left."
+      },
+      "animation": "pulse",
+      "category": "pantheon"
+    },
+    {
+      "id": "egy-ptah",
+      "title": {
+        "zh": "普塔·神龛中的造物主",
+        "en": "Ptah — creator in his shrine"
+      },
+      "description": {
+        "zh": "普塔立在凹弧檐的神龛里，戴贴头的青金石小帽和直须，木乃伊形身体前合握一根复合权杖。",
+        "en": "Ptah stands inside a cavetto shrine, wearing a close lapis cap and a straight beard, both hands together on one composite staff."
+      },
+      "animation": "float",
+      "category": "pantheon"
+    },
+    {
+      "id": "egy-wedjat",
+      "title": {
+        "zh": "乌加特·荷鲁斯之眼",
+        "en": "Wedjat — eye of Horus"
+      },
+      "description": {
+        "zh": "荷鲁斯之眼横放在小台座上：粗眉用青金石，眼白是骨色，眼线拉长，下面垂着一枚卷纹。",
+        "en": "The Eye of Horus rests on a small stand: a heavy lapis brow, bone white, a long cosmetic line and a curl hanging below."
+      },
+      "animation": "pulse",
+      "category": "pantheon"
+    },
+    {
+      "id": "egy-was-scepter",
+      "title": {
+        "zh": "瓦斯权杖与安卡",
+        "en": "Was sceptre & ankh"
+      },
+      "description": {
+        "zh": "两根兽首、叉足的瓦斯杖夹着一枚大安卡，安卡下有一小段杰德，最上是缀了三颗星的天空横条，最下是地平线。",
+        "en": "Two animal-headed, forked was sceptres frame a large ankh, a short djed beneath it, a sky bar with three stars above and a ground line below."
+      },
+      "animation": "pop",
+      "category": "pantheon"
+    },
+    {
+      "id": "anubis-anubis",
+      "title": {
+        "zh": "阿努比斯",
+        "en": "Anubis"
+      },
+      "description": {
+        "zh": "侧身而立的黑色胡狼头引路神，金领饰白短裙，手持金杖凝视前方。",
+        "en": "A black jackal-headed guide god in profile with gold collar, white kilt and a gold staff, gazing ahead."
+      },
+      "animation": "float",
+      "category": "anubis",
+      "tags": [
+        "egyptian-myth",
+        "weighing-of-the-heart",
+        "duat",
+        "gods",
+        "anubis"
+      ]
+    },
+    {
+      "id": "anubis-thoth",
+      "title": {
+        "zh": "托特",
+        "en": "Thoth"
+      },
+      "description": {
+        "zh": "侧身的朱鹭头书记神，长喙微点，旁边是墨盘。",
+        "en": "The ibis-headed scribe god in profile, long beak nodding beside an ink palette."
+      },
+      "animation": "sway",
+      "category": "anubis",
+      "tags": [
+        "egyptian-myth",
+        "weighing-of-the-heart",
+        "duat",
+        "gods",
+        "thoth"
+      ]
+    },
+    {
+      "id": "anubis-osiris",
+      "title": {
+        "zh": "奥西里斯",
+        "en": "Osiris"
+      },
+      "description": {
+        "zh": "端坐青金王座的绿脸冥界之王，戴白冠，执弯钩与连枷。",
+        "en": "The green-faced king of the underworld on a lapis throne, white crown, crook and flail."
+      },
+      "animation": "float",
+      "category": "anubis",
+      "tags": [
+        "egyptian-myth",
+        "weighing-of-the-heart",
+        "duat",
+        "gods",
+        "osiris"
+      ]
+    },
+    {
+      "id": "anubis-ankh",
+      "title": {
+        "zh": "安卡",
+        "en": "Ankh"
+      },
+      "description": {
+        "zh": "金色生命之符，背后柔和光晕。",
+        "en": "A gold ankh, the sign of life, with a soft glow behind."
+      },
+      "animation": "pulse",
+      "category": "anubis",
+      "tags": [
+        "egyptian-myth",
+        "weighing-of-the-heart",
+        "duat",
+        "relics",
+        "ankh"
+      ]
+    },
+    {
+      "id": "anubis-scarab",
+      "title": {
+        "zh": "圣甲虫",
+        "en": "Scarab"
+      },
+      "description": {
+        "zh": "绿色圣甲虫向上推举红色太阳圆盘。",
+        "en": "A green scarab pushing up a red sun disc."
+      },
+      "animation": "float",
+      "category": "anubis",
+      "tags": [
+        "egyptian-myth",
+        "weighing-of-the-heart",
+        "duat",
+        "relics",
+        "scarab"
+      ]
+    },
+    {
+      "id": "anubis-book-of-dead",
+      "title": {
+        "zh": "亡灵书",
+        "en": "Book of the Dead"
+      },
+      "description": {
+        "zh": "展开的莎草纸卷轴，抽象几何记号，书页翻动，无可读咒文。",
+        "en": "An unrolled papyrus scroll with abstract geometric marks and a turning page, no readable spells."
+      },
+      "animation": "sway",
+      "category": "anubis",
+      "tags": [
+        "egyptian-myth",
+        "weighing-of-the-heart",
+        "duat",
+        "relics",
+        "book"
+      ]
+    },
+    {
+      "id": "ra-ra",
+      "title": {
+        "zh": "太阳神拉",
+        "en": "Ra"
+      },
+      "description": {
+        "zh": "鹰首太阳神戴青金假发与金领饰，头顶红色圣蛇护着金日轮。",
+        "en": "The falcon-headed sun god with lapis wig and gold collar, a cobra-guarded sun disk above."
+      },
+      "animation": "pulse",
+      "category": "ra",
+      "tags": [
+        "ra",
+        "太阳神拉",
+        "egyptian",
+        "ra"
+      ]
+    },
+    {
+      "id": "ra-bastet-cat",
+      "title": {
+        "zh": "猫神巴斯特",
+        "en": "Bastet Cat"
+      },
+      "description": {
+        "zh": "端坐的黑猫戴金耳环与青金项坠。",
+        "en": "A seated black cat with a gold earring and a lapis pendant."
+      },
+      "animation": "pop",
+      "category": "ra",
+      "tags": [
+        "bastet cat",
+        "猫神巴斯特",
+        "egyptian",
+        "ra"
+      ]
+    },
+    {
+      "id": "ra-solar-barque",
+      "title": {
+        "zh": "太阳船",
+        "en": "Solar Barque"
+      },
+      "description": {
+        "zh": "金色弯船载着青金船舱与日轮，在尼罗河夜波上航行。",
+        "en": "A curved golden boat carrying a lapis shrine and sun disk over night waves."
+      },
+      "animation": "float",
+      "category": "ra",
+      "tags": [
+        "solar barque",
+        "太阳船",
+        "egyptian",
+        "ra"
+      ]
+    },
+    {
+      "id": "ra-rising-sun-disk",
+      "title": {
+        "zh": "黎明日轮",
+        "en": "Rising Sun Disk"
+      },
+      "description": {
+        "zh": "带青金双翼的金日轮从地平线升起，放射光芒。",
+        "en": "A winged golden sun disk rising over the horizon with radiating rays."
+      },
+      "animation": "pulse",
+      "category": "ra",
+      "tags": [
+        "rising sun disk",
+        "黎明日轮",
+        "egyptian",
+        "ra"
+      ]
+    },
+    {
+      "id": "ra-apep-serpent",
+      "title": {
+        "zh": "巨蛇阿佩普",
+        "en": "Apep Serpent"
+      },
+      "description": {
+        "zh": "盘绕的混沌巨蛇，橄榄鳞纹与红眼，风格化而不血腥。",
+        "en": "The coiled serpent of chaos with olive scales and red eye, stylized and bloodless."
+      },
+      "animation": "sway",
+      "category": "ra",
+      "tags": [
+        "apep serpent",
+        "巨蛇阿佩普",
+        "egyptian",
+        "ra"
+      ]
+    },
+    {
+      "id": "ra-papyrus-scroll",
+      "title": {
+        "zh": "纸莎草卷轴",
+        "en": "Papyrus Scroll"
+      },
+      "description": {
+        "zh": "展开的纸莎草卷，绘着日轮、山形与装饰纹线。",
+        "en": "An unrolled papyrus with a sun, hill motif and decorative dashed lines."
+      },
+      "animation": "float",
+      "category": "ra",
+      "tags": [
+        "papyrus scroll",
+        "纸莎草卷轴",
+        "egyptian",
+        "ra"
+      ]
+    },
+    {
+      "id": "bastet-cat-goddess",
+      "title": {
+        "zh": "猫神贝斯特",
+        "en": "Bastet Cat Goddess"
+      },
+      "description": {
+        "zh": "戴金耳环和宽项圈的圆胖黑猫女神，俏皮地眨眼。",
+        "en": "A round chibi black cat goddess with gold earrings and a broad collar, giving a playful wink."
+      },
+      "animation": "pop",
+      "category": "bastet",
+      "tags": [
+        "bastet",
+        "cat-goddess",
+        "egyptian-myth",
+        "goddess",
+        "wink"
+      ]
+    },
+    {
+      "id": "bastet-kitten-litter",
+      "title": {
+        "zh": "小猫群",
+        "en": "Kitten Litter"
+      },
+      "description": {
+        "zh": "三只圆滚滚的守护小猫挤在一起跳跃。",
+        "en": "Three plump guardian kittens bouncing together."
+      },
+      "animation": "pop",
+      "category": "bastet",
+      "tags": [
+        "bastet",
+        "cat-goddess",
+        "egyptian-myth",
+        "goddess",
+        "bounce"
+      ]
+    },
+    {
+      "id": "bastet-sistrum",
+      "title": {
+        "zh": "叉铃",
+        "en": "Sistrum"
+      },
+      "description": {
+        "zh": "顶端有小猫装饰的金色叉铃，铃片叮当摇响。",
+        "en": "A golden sistrum topped with a tiny cat, its jingles rattling."
+      },
+      "animation": "pop",
+      "category": "bastet",
+      "tags": [
+        "bastet",
+        "cat-goddess",
+        "egyptian-myth",
+        "sacred",
+        "rattle"
+      ]
+    },
+    {
+      "id": "bastet-lotus",
+      "title": {
+        "zh": "蓝莲花",
+        "en": "Blue Lotus"
+      },
+      "description": {
+        "zh": "浮在水面绽放的蓝莲花。",
+        "en": "A blue lotus blooming on the water."
+      },
+      "animation": "pop",
+      "category": "bastet",
+      "tags": [
+        "bastet",
+        "cat-goddess",
+        "egyptian-myth",
+        "nile",
+        "bloom"
+      ]
+    },
+    {
+      "id": "bastet-cobra-uraeus",
+      "title": {
+        "zh": "圣蛇冠",
+        "en": "Cobra Uraeus"
+      },
+      "description": {
+        "zh": "金色头冠上竖起的圆眼小眼镜蛇饰。",
+        "en": "A round-eyed little cobra ornament rearing up on a golden crown band."
+      },
+      "animation": "sway",
+      "category": "bastet",
+      "tags": [
+        "bastet",
+        "cat-goddess",
+        "egyptian-myth",
+        "sacred",
+        "rear"
+      ]
+    },
+    {
+      "id": "bastet-palm-fan",
+      "title": {
+        "zh": "棕榈扇",
+        "en": "Palm Fan"
+      },
+      "description": {
+        "zh": "长柄棕榈羽扇来回扇动。",
+        "en": "A long-handled palm-frond fan swishing back and forth."
+      },
+      "animation": "sway",
+      "category": "bastet",
+      "tags": [
+        "bastet",
+        "cat-goddess",
+        "egyptian-myth",
+        "goddess",
+        "fan"
+      ]
+    }
+  ]
+}

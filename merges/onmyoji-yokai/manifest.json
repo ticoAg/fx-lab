@@ -1,0 +1,1066 @@
+{
+  "id": "onmyoji-yokai",
+  "title": {
+    "zh": "日本妖怪",
+    "en": "Japanese Yokai"
+  },
+  "description": {
+    "zh": "阴阳师图鉴与鵺、雷兽、猫又、络新妇、雪女、天狗、座敷童子、尼彦收在一套里，共 54 件。",
+    "en": "The onmyoji field guide plus nue, raiju, bakeneko, jorogumo, yuki-onna, tengu, zashiki-warashi, and amabie, 54 icons in one kit."
+  },
+  "cover": "onmyo-paper-shikigami",
+  "categories": {
+    "bureau": {
+      "zh": "阴阳寮",
+      "en": "Onmyo Bureau"
+    },
+    "night": {
+      "zh": "夜行",
+      "en": "Night Parade"
+    },
+    "storm": {
+      "zh": "雷",
+      "en": "Thunder"
+    },
+    "mountain": {
+      "zh": "山",
+      "en": "Mountain"
+    },
+    "water": {
+      "zh": "水",
+      "en": "Water"
+    },
+    "house": {
+      "zh": "家与雪",
+      "en": "House and Snow"
+    }
+  },
+  "icons": [
+    {
+      "id": "onmyo-ofuda-talisman",
+      "title": {
+        "zh": "镇妖符",
+        "en": "Warding talisman"
+      },
+      "description": {
+        "zh": "竖挂的和纸符：月白纸身、朱砂双框、圆印与抽象笔痕，右下角折过一角，顶上用旧金钉固定。",
+        "en": "A vertical washi talisman: moon-white sheet, cinnabar double frame, round seal and abstract strokes, with a folded lower corner and an old-gold pin."
+      },
+      "animation": "sway",
+      "category": "bureau"
+    },
+    {
+      "id": "onmyo-paper-shikigami",
+      "title": {
+        "zh": "纸人式神",
+        "en": "Paper shikigami"
+      },
+      "description": {
+        "zh": "张开双臂的人形剪纸：月白纸身、中线折痕、细长眼和胸口朱印，身后还压着一张更淡的纸人。",
+        "en": "A spread-arm paper figure in moon-white, with a center crease, narrow eyes and a cinnabar chest seal. A paler sheet stands behind it."
+      },
+      "animation": "float",
+      "category": "bureau"
+    },
+    {
+      "id": "onmyo-kagura-bell",
+      "title": {
+        "zh": "神乐铃",
+        "en": "Kagura bell tree"
+      },
+      "description": {
+        "zh": "神乐铃串：三、五、七共十五枚旧金铃挂在三道弧上，朱漆短柄下垂着朱、金、青三缕短穗。",
+        "en": "A kagura suzu cluster: fifteen old-gold bells in rows of three, five and seven on three arcs, with a short lacquer handle and three short tassels."
+      },
+      "animation": "sway",
+      "category": "bureau"
+    },
+    {
+      "id": "onmyo-sealed-scroll",
+      "title": {
+        "zh": "封印卷轴",
+        "en": "Sealed scroll"
+      },
+      "description": {
+        "zh": "展开的手卷：木轴黑头，月白纸面上只有抽象竖痕，一条朱砂封条斜压在卷面上，封条中有一枚小圆印。",
+        "en": "An open handscroll on wooden rollers with dark end caps. The moon-white sheet carries abstract vertical marks under a diagonal cinnabar seal strip and a small round stamp."
+      },
+      "animation": "float",
+      "category": "bureau"
+    },
+    {
+      "id": "onmyo-fox-mask",
+      "title": {
+        "zh": "祭典狐面",
+        "en": "Festival fox mask"
+      },
+      "description": {
+        "zh": "一张祭典用的白狐面：立耳、窄眼缝、短吻、小金额饰，两侧垂着朱绳。不是某一角色的脸。",
+        "en": "A festival fox mask: upright ears, narrow eye slits, a short muzzle and a small gold brow mark, with cinnabar cords at the cheeks. Not a specific character."
+      },
+      "animation": "float",
+      "category": "bureau"
+    },
+    {
+      "id": "onmyo-oni-mask",
+      "title": {
+        "zh": "赤鬼面",
+        "en": "Oni mask"
+      },
+      "description": {
+        "zh": "一张赤鬼面：朱砂面色、两只旧金角、浓眉圆目、咧开的牙口。是通用鬼面，不是具名角色。",
+        "en": "A red oni mask with a cinnabar face, two old-gold horns, heavy brows, round eyes and a toothy grin. A generic mask, not a named character."
+      },
+      "animation": "pop",
+      "category": "bureau"
+    },
+    {
+      "id": "nue-nue-body",
+      "title": {
+        "zh": "鵺全身",
+        "en": "Nue"
+      },
+      "description": {
+        "zh": "猿面、金色狸身、虎纹利爪腿与蓝色蛇尾的Q版鵺全身，悬浮",
+        "en": "A chibi nue with a red ape face, golden tanuki body, striped tiger legs with claws and a blue snake tail."
+      },
+      "animation": "float",
+      "category": "night",
+      "tags": [
+        "nue",
+        "鵺",
+        "nue",
+        "鵺"
+      ]
+    },
+    {
+      "id": "nue-ape-face",
+      "title": {
+        "zh": "猿面",
+        "en": "Ape Face"
+      },
+      "description": {
+        "zh": "红色猿面、米色脸庞与倒竖眉毛",
+        "en": "A big red ape face with cream muzzle, scowling brows and bristly crown fur."
+      },
+      "animation": "pop",
+      "category": "night",
+      "tags": [
+        "ape",
+        "猿",
+        "nue",
+        "鵺"
+      ]
+    },
+    {
+      "id": "nue-tanuki-body",
+      "title": {
+        "zh": "狸身",
+        "en": "Tanuki Body"
+      },
+      "description": {
+        "zh": "圆滚金色狸身与米色肚皮，左右摇摆",
+        "en": "A round golden tanuki torso with a cream striped belly and stubby arms."
+      },
+      "animation": "sway",
+      "category": "night",
+      "tags": [
+        "tanuki",
+        "狸",
+        "nue",
+        "鵺"
+      ]
+    },
+    {
+      "id": "nue-lightning",
+      "title": {
+        "zh": "闪电",
+        "en": "Lightning"
+      },
+      "description": {
+        "zh": "金色锯齿闪电",
+        "en": "A bold zigzag gold lightning bolt."
+      },
+      "animation": "pulse",
+      "category": "night",
+      "tags": [
+        "lightning",
+        "闪电",
+        "nue",
+        "鵺"
+      ]
+    },
+    {
+      "id": "nue-tachi",
+      "title": {
+        "zh": "太刀",
+        "en": "Tachi Sword"
+      },
+      "description": {
+        "zh": "金镡黑柄的弧形太刀，刃光闪亮",
+        "en": "A curved pale tachi blade with a gold guard and dark wrapped hilt, glinting."
+      },
+      "animation": "sway",
+      "category": "night",
+      "tags": [
+        "sword",
+        "刀",
+        "nue",
+        "鵺"
+      ]
+    },
+    {
+      "id": "nue-torii",
+      "title": {
+        "zh": "鸟居",
+        "en": "Torii"
+      },
+      "description": {
+        "zh": "弧形笠木的红色鸟居",
+        "en": "A red torii gate with curved top beam and dark post feet."
+      },
+      "animation": "none",
+      "category": "night",
+      "tags": [
+        "torii",
+        "鸟居",
+        "nue",
+        "鵺"
+      ]
+    },
+    {
+      "id": "bake-twin-tail",
+      "title": {
+        "zh": "双尾",
+        "en": "Twin tail"
+      },
+      "description": {
+        "zh": "分叉的两条白色猫尾高举，尾尖靛蓝，根部一簇灯火。",
+        "en": "Two white forked cat tails raised high with indigo tips and a small lantern flame at the root."
+      },
+      "animation": "sway",
+      "category": "night",
+      "tags": [
+        "tail",
+        "nekomata",
+        "cat"
+      ]
+    },
+    {
+      "id": "bake-cat-silhouette",
+      "title": {
+        "zh": "屋脊猫影",
+        "en": "Rooftop cat"
+      },
+      "description": {
+        "zh": "靛蓝瓦顶上一只黑猫剪影，琥珀竖瞳在夜里闪亮。",
+        "en": "A black cat silhouette sitting on an indigo tiled roof, amber slit eyes glowing."
+      },
+      "animation": "pulse",
+      "category": "night",
+      "tags": [
+        "silhouette",
+        "roof",
+        "cat"
+      ]
+    },
+    {
+      "id": "bake-dancing-cat",
+      "title": {
+        "zh": "舞猫",
+        "en": "Dancing cat"
+      },
+      "description": {
+        "zh": "头顶红手巾、双臂高举直立跳舞的白猫。",
+        "en": "A white cat standing upright and dancing with arms raised, red cloth on its head."
+      },
+      "animation": "sway",
+      "category": "night",
+      "tags": [
+        "dance",
+        "bakeneko",
+        "cat"
+      ]
+    },
+    {
+      "id": "bake-tenugui",
+      "title": {
+        "zh": "手巾",
+        "en": "Tenugui"
+      },
+      "description": {
+        "zh": "横杆上挂着的靛蓝白点花布手巾。",
+        "en": "An indigo dotted tenugui cloth hanging from a wooden rod."
+      },
+      "animation": "sway",
+      "category": "night",
+      "tags": [
+        "cloth",
+        "tenugui",
+        "towel"
+      ]
+    },
+    {
+      "id": "bake-bell-collar",
+      "title": {
+        "zh": "铃铛项圈",
+        "en": "Bell collar"
+      },
+      "description": {
+        "zh": "红色项圈挂着一只金色铃铛。",
+        "en": "A red collar with a golden bell."
+      },
+      "animation": "pulse",
+      "category": "night",
+      "tags": [
+        "bell",
+        "collar",
+        "suzu"
+      ]
+    },
+    {
+      "id": "bake-folding-fan",
+      "title": {
+        "zh": "折扇",
+        "en": "Folding fan"
+      },
+      "description": {
+        "zh": "展开的红色舞扇，扇面有淡金圆月。",
+        "en": "An opened red dancing fan with a pale gold moon on it."
+      },
+      "animation": "sway",
+      "category": "night",
+      "tags": [
+        "fan",
+        "sensu",
+        "dance"
+      ]
+    },
+    {
+      "id": "raiju-raiju-wolf",
+      "title": {
+        "zh": "雷兽狼形",
+        "en": "Raijū Wolf"
+      },
+      "description": {
+        "zh": "蓝白电光的小狼，尾巴带闪电纹。",
+        "en": "A little blue-white electric wolf with a sparking tail."
+      },
+      "animation": "sway",
+      "category": "storm",
+      "tags": [
+        "raiju",
+        "thunder",
+        "yokai",
+        "japan",
+        "beast",
+        "wolf"
+      ]
+    },
+    {
+      "id": "raiju-raiju-cat",
+      "title": {
+        "zh": "雷兽猫形",
+        "en": "Raijū Cat"
+      },
+      "description": {
+        "zh": "圆滚滚的雷光猫团子，耳间有闪电纹。",
+        "en": "A round thunder-cat dumpling with lightning stripes."
+      },
+      "animation": "pop",
+      "category": "storm",
+      "tags": [
+        "raiju",
+        "thunder",
+        "yokai",
+        "japan",
+        "beast",
+        "cat"
+      ]
+    },
+    {
+      "id": "raiju-raiju-weasel",
+      "title": {
+        "zh": "雷兽鼬形",
+        "en": "Raijū Weasel"
+      },
+      "description": {
+        "zh": "拖着闪电尾巴飞奔的小鼬。",
+        "en": "A little weasel dashing with a lightning tail."
+      },
+      "animation": "sway",
+      "category": "storm",
+      "tags": [
+        "raiju",
+        "thunder",
+        "yokai",
+        "japan",
+        "beast",
+        "weasel"
+      ]
+    },
+    {
+      "id": "raiju-raijin-drums",
+      "title": {
+        "zh": "雷神太鼓",
+        "en": "Thunder Drums"
+      },
+      "description": {
+        "zh": "环形排列的五面红色太鼓，中间有闪电。",
+        "en": "A ring of five red thunder drums around a bolt."
+      },
+      "animation": "pop",
+      "category": "storm",
+      "tags": [
+        "raiju",
+        "thunder",
+        "yokai",
+        "japan",
+        "raijin",
+        "drums"
+      ]
+    },
+    {
+      "id": "raiju-mosquito-net",
+      "title": {
+        "zh": "蚊帐",
+        "en": "Mosquito Net"
+      },
+      "description": {
+        "zh": "夏夜挂起的浅绿蚊帐，里面一只萤火虫。",
+        "en": "A pale green summer mosquito net with a firefly inside."
+      },
+      "animation": "sway",
+      "category": "storm",
+      "tags": [
+        "raiju",
+        "thunder",
+        "yokai",
+        "japan",
+        "village",
+        "net"
+      ]
+    },
+    {
+      "id": "raiju-emakimono",
+      "title": {
+        "zh": "绘卷",
+        "en": "Picture Scroll"
+      },
+      "description": {
+        "zh": "展开的绘卷，只有云纹、山与太阳的抽象图样，无文字。",
+        "en": "An unrolled picture scroll with abstract clouds, hills and sun, no text."
+      },
+      "animation": "sway",
+      "category": "storm",
+      "tags": [
+        "raiju",
+        "thunder",
+        "yokai",
+        "japan",
+        "village",
+        "emakimono"
+      ]
+    },
+    {
+      "id": "tengu-karasu-tengu",
+      "title": {
+        "zh": "鸦天狗",
+        "en": "Karasu tengu"
+      },
+      "description": {
+        "zh": "长鼻鸦天狗剪影（民俗面具风），双翼微展悬浮。",
+        "en": "A stylized folk-mask crow tengu silhouette with half-open wings, hovering."
+      },
+      "animation": "float",
+      "category": "mountain",
+      "tags": [
+        "tengu",
+        "yamabushi",
+        "japanese-folklore",
+        "mountain",
+        "hover"
+      ]
+    },
+    {
+      "id": "tengu-tengu-mask",
+      "title": {
+        "zh": "长鼻面具",
+        "en": "Tengu mask"
+      },
+      "description": {
+        "zh": "大红长鼻天狗面具，挂绳轻摇。",
+        "en": "A big red long-nosed folk tengu mask swaying on its cord."
+      },
+      "animation": "sway",
+      "category": "mountain",
+      "tags": [
+        "tengu",
+        "yamabushi",
+        "japanese-folklore",
+        "mountain",
+        "sway"
+      ]
+    },
+    {
+      "id": "tengu-uba-fan",
+      "title": {
+        "zh": "羽团扇",
+        "en": "Feather fan"
+      },
+      "description": {
+        "zh": "羽毛装饰的天狗团扇，左右扇动。",
+        "en": "A tengu hand fan of layered feathers, fanning side to side."
+      },
+      "animation": "sway",
+      "category": "mountain",
+      "tags": [
+        "tengu",
+        "yamabushi",
+        "japanese-folklore",
+        "mountain",
+        "fan"
+      ]
+    },
+    {
+      "id": "tengu-sword-training",
+      "title": {
+        "zh": "剑术修行",
+        "en": "Sword training"
+      },
+      "description": {
+        "zh": "两把交叉木剑对练，交击脉动。",
+        "en": "Two crossed wooden practice swords clashing with a soft pulse."
+      },
+      "animation": "pulse",
+      "category": "mountain",
+      "tags": [
+        "tengu",
+        "yamabushi",
+        "japanese-folklore",
+        "mountain",
+        "clash"
+      ]
+    },
+    {
+      "id": "tengu-red-mask",
+      "title": {
+        "zh": "红面面具",
+        "en": "Red mask"
+      },
+      "description": {
+        "zh": "挂在木架上的红色天狗面具，侧视长鼻。",
+        "en": "A red tengu mask hanging from a wooden peg, side view."
+      },
+      "animation": "sway",
+      "category": "mountain",
+      "tags": [
+        "tengu",
+        "yamabushi",
+        "japanese-folklore",
+        "mountain",
+        "sway"
+      ]
+    },
+    {
+      "id": "tengu-tengu-bow",
+      "title": {
+        "zh": "天狗礼",
+        "en": "Tengu bow"
+      },
+      "description": {
+        "zh": "双手合十鞠躬问候的修行者剪影。",
+        "en": "A robed figure bowing in greeting with palms together."
+      },
+      "animation": "pop",
+      "category": "mountain",
+      "tags": [
+        "tengu",
+        "yamabushi",
+        "japanese-folklore",
+        "mountain",
+        "bow"
+      ]
+    },
+    {
+      "id": "joro-web-falls",
+      "title": {
+        "zh": "净莲瀑布",
+        "en": "Silk-Veiled Falls"
+      },
+      "description": {
+        "zh": "岩崖间落下的银色瀑布，前方挂着一张闪光蛛丝网。",
+        "en": "A silver waterfall pouring between rocky cliffs, a shimmering silk web strung across the front."
+      },
+      "animation": "float",
+      "category": "water",
+      "tags": [
+        "jorogumo",
+        "yokai",
+        "japanese-folklore",
+        "silk",
+        "web"
+      ]
+    },
+    {
+      "id": "joro-dewdrop-web",
+      "title": {
+        "zh": "露珠蛛网",
+        "en": "Dewdrop Web"
+      },
+      "description": {
+        "zh": "挂在两根枝条间的圆形蛛网，丝线上缀着闪光露珠。",
+        "en": "A round orb web strung between two twigs, its threads beaded with sparkling dewdrops."
+      },
+      "animation": "pulse",
+      "category": "water",
+      "tags": [
+        "jorogumo",
+        "yokai",
+        "japanese-folklore",
+        "silk",
+        "dewdrop"
+      ]
+    },
+    {
+      "id": "joro-broken-web",
+      "title": {
+        "zh": "断网",
+        "en": "Broken Web"
+      },
+      "description": {
+        "zh": "被挣破的蛛网，一侧断开的丝线垂下随风飘荡。",
+        "en": "A torn web where the woodcutter broke free, loose strands dangling and drifting."
+      },
+      "animation": "sway",
+      "category": "water",
+      "tags": [
+        "jorogumo",
+        "yokai",
+        "japanese-folklore",
+        "silk",
+        "broken"
+      ]
+    },
+    {
+      "id": "joro-jorogumo-face",
+      "title": {
+        "zh": "络新妇面容",
+        "en": "Jorogumo Face"
+      },
+      "description": {
+        "zh": "黑发盘髻、插金簪的优雅女妖，额上点着两对小小蛛眼红点，温柔微笑。",
+        "en": "An elegant yokai lady with a dark topknot and gold hairpins, two pairs of tiny red spider-eye dots on her brow, smiling softly."
+      },
+      "animation": "pulse",
+      "category": "water",
+      "tags": [
+        "jorogumo",
+        "yokai",
+        "japanese-folklore",
+        "tale",
+        "jorogumo"
+      ]
+    },
+    {
+      "id": "joro-axe-stump",
+      "title": {
+        "zh": "斧与树桩",
+        "en": "Axe in Stump"
+      },
+      "description": {
+        "zh": "劈在年轮树桩上的樵夫斧头，斧柄轻轻摇晃。",
+        "en": "A woodcutter’s axe sunk into a ringed tree stump, its handle wobbling."
+      },
+      "animation": "sway",
+      "category": "water",
+      "tags": [
+        "jorogumo",
+        "yokai",
+        "japanese-folklore",
+        "tale",
+        "axe"
+      ]
+    },
+    {
+      "id": "joro-silk-fan",
+      "title": {
+        "zh": "丝扇",
+        "en": "Silk Fan"
+      },
+      "description": {
+        "zh": "蛛丝织成的折扇展开成半圆，扇面有银色网纹与红叶。",
+        "en": "A folding fan of woven spider silk opened in a half circle, silvery web lines and a maple leaf on its face."
+      },
+      "animation": "sway",
+      "category": "water",
+      "tags": [
+        "jorogumo",
+        "yokai",
+        "japanese-folklore",
+        "weave",
+        "silk"
+      ]
+    },
+    {
+      "id": "amabie-amabie-hop",
+      "title": {
+        "zh": "阿玛比埃现身",
+        "en": "Amabie Appears"
+      },
+      "description": {
+        "zh": "长发三足、身披鳞片的阿玛比埃从浪花中跃出。",
+        "en": "The long-haired, three-legged, scaly Amabie leaping up out of the waves."
+      },
+      "animation": "pop",
+      "category": "water",
+      "tags": [
+        "amabie",
+        "yokai",
+        "ukiyo-e",
+        "yokai",
+        "amabie"
+      ]
+    },
+    {
+      "id": "amabie-scale-glow",
+      "title": {
+        "zh": "发光鳞片",
+        "en": "Glowing Scale"
+      },
+      "description": {
+        "zh": "夜海中一片金色鱼鳞，层层鳞纹泛着微光。",
+        "en": "A single golden scale in the night sea, its layered ridges softly glowing."
+      },
+      "animation": "pulse",
+      "category": "water",
+      "tags": [
+        "amabie",
+        "yokai",
+        "ukiyo-e",
+        "yokai",
+        "scale"
+      ]
+    },
+    {
+      "id": "amabie-three-legs",
+      "title": {
+        "zh": "三足踏浪",
+        "en": "Three Fin-Legs"
+      },
+      "description": {
+        "zh": "阿玛比埃的三只鳍足轮流踏在浪头上。",
+        "en": "The three fin-feet of Amabie stepping on a wave crest."
+      },
+      "animation": "pop",
+      "category": "water",
+      "tags": [
+        "amabie",
+        "yokai",
+        "ukiyo-e",
+        "yokai",
+        "three"
+      ]
+    },
+    {
+      "id": "amabie-prophecy-scroll",
+      "title": {
+        "zh": "预言卷轴",
+        "en": "Prophecy Scroll"
+      },
+      "description": {
+        "zh": "展开的和纸卷轴，只画着阿玛比埃的小像，无文字。",
+        "en": "An unrolled washi scroll bearing only a small Amabie portrait, no writing."
+      },
+      "animation": "pop",
+      "category": "water",
+      "tags": [
+        "amabie",
+        "yokai",
+        "ukiyo-e",
+        "prophecy",
+        "prophecy"
+      ]
+    },
+    {
+      "id": "amabie-woodblock-print",
+      "title": {
+        "zh": "瓦版画",
+        "en": "Kawaraban Print"
+      },
+      "description": {
+        "zh": "雕好的木版压在和纸上，印出朱色阿玛比埃剪影。",
+        "en": "A carved woodblock pressed onto washi, printing a vermilion Amabie silhouette."
+      },
+      "animation": "pop",
+      "category": "water",
+      "tags": [
+        "amabie",
+        "yokai",
+        "ukiyo-e",
+        "prophecy",
+        "woodblock"
+      ]
+    },
+    {
+      "id": "amabie-reed-hat",
+      "title": {
+        "zh": "斗笠",
+        "en": "Reed Hat"
+      },
+      "description": {
+        "zh": "渔夫的芦苇斗笠，编纹一圈圈，系着朱红绳。",
+        "en": "A fisherman's woven reed hat with ringed weave and a vermilion cord."
+      },
+      "animation": "sway",
+      "category": "water",
+      "tags": [
+        "amabie",
+        "yokai",
+        "ukiyo-e",
+        "blessing",
+        "reed"
+      ]
+    },
+    {
+      "id": "yuki-yukionna",
+      "title": {
+        "zh": "雪女",
+        "en": "Yuki-onna"
+      },
+      "description": {
+        "zh": "白发飘扬、身着白衣的冰雪美女妖怪。",
+        "en": "Snow woman spirit with flowing white hair and white robes."
+      },
+      "animation": "sway",
+      "category": "house",
+      "tags": [
+        "yukionna",
+        "snow",
+        "japan",
+        "figures",
+        "yukionna"
+      ]
+    },
+    {
+      "id": "yuki-snow-breath",
+      "title": {
+        "zh": "冰霜吐息",
+        "en": "Snow Breath"
+      },
+      "description": {
+        "zh": "雪女吐出带雪花的白色寒气。",
+        "en": "Snow woman blowing a white puff of freezing breath with snowflakes."
+      },
+      "animation": "float",
+      "category": "house",
+      "tags": [
+        "yukionna",
+        "snow",
+        "japan",
+        "magic",
+        "breath"
+      ]
+    },
+    {
+      "id": "yuki-blizzard",
+      "title": {
+        "zh": "暴风雪",
+        "en": "Blizzard"
+      },
+      "description": {
+        "zh": "暗云下雪花与风线横飞。",
+        "en": "Dark cloud with snowflakes and wind streaks blowing sideways."
+      },
+      "animation": "float",
+      "category": "house",
+      "tags": [
+        "yukionna",
+        "snow",
+        "japan",
+        "winter",
+        "blizzard"
+      ]
+    },
+    {
+      "id": "yuki-axe",
+      "title": {
+        "zh": "伐木斧",
+        "en": "Axe"
+      },
+      "description": {
+        "zh": "立在木桩上的伐木斧。",
+        "en": "Woodcutter axe standing on a stump."
+      },
+      "animation": "sway",
+      "category": "house",
+      "tags": [
+        "yukionna",
+        "snow",
+        "japan",
+        "village",
+        "axe"
+      ]
+    },
+    {
+      "id": "yuki-ferry-boat",
+      "title": {
+        "zh": "渡船",
+        "en": "Ferry Boat"
+      },
+      "description": {
+        "zh": "落雪的木渡船与撑篙，在水面摇晃。",
+        "en": "Snow-dusted wooden ferry with a pole rocking on the water."
+      },
+      "animation": "sway",
+      "category": "house",
+      "tags": [
+        "yukionna",
+        "snow",
+        "japan",
+        "village",
+        "boat"
+      ]
+    },
+    {
+      "id": "yuki-icicle",
+      "title": {
+        "zh": "冰柱",
+        "en": "Icicles"
+      },
+      "description": {
+        "zh": "积雪屋檐下垂挂的冰凌与水滴。",
+        "en": "Icicles hanging under a snowy eave with a glinting drip."
+      },
+      "animation": "pulse",
+      "category": "house",
+      "tags": [
+        "yukionna",
+        "snow",
+        "japan",
+        "winter",
+        "icicle"
+      ]
+    },
+    {
+      "id": "zashiki-warashi-girl",
+      "title": {
+        "zh": "座敷童子女孩",
+        "en": "House Child Girl"
+      },
+      "description": {
+        "zh": "穿红和服、娃娃头的小女孩从隔扇后探出头来。",
+        "en": "A red-kimono girl with a bobbed doll haircut peeking out from behind a sliding door."
+      },
+      "animation": "none",
+      "category": "house",
+      "tags": [
+        "zashiki-warashi",
+        "japanese-folklore",
+        "old-house",
+        "luck",
+        "warashi-girl"
+      ]
+    },
+    {
+      "id": "zashiki-warashi-boy",
+      "title": {
+        "zh": "座敷童子男孩",
+        "en": "House Child Boy"
+      },
+      "description": {
+        "zh": "短发蓝衣的小男孩开心地蹦跳。",
+        "en": "A short-haired boy in a blue kimono hopping happily."
+      },
+      "animation": "pop",
+      "category": "house",
+      "tags": [
+        "zashiki-warashi",
+        "japanese-folklore",
+        "old-house",
+        "luck",
+        "warashi-boy"
+      ]
+    },
+    {
+      "id": "zashiki-footprints",
+      "title": {
+        "zh": "小脚印",
+        "en": "Little Footprints"
+      },
+      "description": {
+        "zh": "榻榻米上一串小小的赤脚脚印。",
+        "en": "A trail of tiny bare footprints across a tatami mat."
+      },
+      "animation": "none",
+      "category": "house",
+      "tags": [
+        "zashiki-warashi",
+        "japanese-folklore",
+        "old-house",
+        "luck",
+        "footprints"
+      ]
+    },
+    {
+      "id": "zashiki-fusuma",
+      "title": {
+        "zh": "隔扇门",
+        "en": "Fusuma Door"
+      },
+      "description": {
+        "zh": "绘着山与花的隔扇门自己开了一条缝，暗处有一双眼睛。",
+        "en": "A painted fusuma door slid open by itself, a pair of eyes in the gap."
+      },
+      "animation": "none",
+      "category": "house",
+      "tags": [
+        "zashiki-warashi",
+        "japanese-folklore",
+        "old-house",
+        "luck",
+        "fusuma"
+      ]
+    },
+    {
+      "id": "zashiki-tatami",
+      "title": {
+        "zh": "榻榻米",
+        "en": "Tatami"
+      },
+      "description": {
+        "zh": "三张拼铺、包着深蓝边的草编榻榻米。",
+        "en": "Three straw tatami mats laid together with navy borders."
+      },
+      "animation": "none",
+      "category": "house",
+      "tags": [
+        "zashiki-warashi",
+        "japanese-folklore",
+        "old-house",
+        "luck",
+        "tatami"
+      ]
+    },
+    {
+      "id": "zashiki-coin-sack",
+      "title": {
+        "zh": "钱袋",
+        "en": "Coin Sack"
+      },
+      "description": {
+        "zh": "红色福袋旁散落着方孔金币。",
+        "en": "A red lucky sack with square-holed gold coins spilling out."
+      },
+      "animation": "sway",
+      "category": "house",
+      "tags": [
+        "zashiki-warashi",
+        "japanese-folklore",
+        "old-house",
+        "luck",
+        "coin-sack"
+      ]
+    }
+  ]
+}

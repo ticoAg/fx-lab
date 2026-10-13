@@ -1,0 +1,22 @@
+<svg id="egyptian-egy-wedjat-root" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none" role="img" aria-labelledby="egyptian-egy-wedjat-title egyptian-egy-wedjat-desc" class="egyptian-egy-wedjat-root" style="animation-play-state:inherit">
+<title id="egyptian-egy-wedjat-title">乌加特·荷鲁斯之眼 / Wedjat — eye of Horus</title>
+<desc id="egyptian-egy-wedjat-desc">荷鲁斯之眼横放在小台座上：粗眉用青金石，眼白是骨色，眼线拉长，下面垂着一枚卷纹。 The Eye of Horus rests on a small stand: a heavy lapis brow, bone white, a long cosmetic line and a curl hanging below.</desc>
+<style>.egyptian-egy-wedjat-root,.egyptian-egy-wedjat-root *{animation-play-state:inherit}.egyptian-egy-wedjat-motion{animation:egyptian-egy-wedjat-pulse 4.8s ease-in-out infinite;animation-play-state:inherit;transform-box:view-box;transform-origin:40px 42px}@keyframes egyptian-egy-wedjat-pulse{0%,100%{transform:scale(.992);opacity:.95}50%{transform:scale(1);opacity:1}}@media(prefers-reduced-motion:reduce){.egyptian-egy-wedjat-motion{animation:none!important;transform:none!important}}</style>
+<defs>
+<linearGradient id="egyptian-egy-wedjat-gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".48" stop-color="#C4922A"/><stop offset="1" stop-color="#C4922A"/></linearGradient><linearGradient id="egyptian-egy-wedjat-lapis" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1F4E79"/><stop offset=".45" stop-color="#1F4E79"/><stop offset="1" stop-color="#16324F"/></linearGradient><linearGradient id="egyptian-egy-wedjat-clay" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C4652F"/><stop offset=".5" stop-color="#C4652F"/><stop offset="1" stop-color="#C4652F"/></linearGradient><linearGradient id="egyptian-egy-wedjat-stone" x1="0" y1="0" x2=".15" y2="1"><stop stop-color="#E7D3A1"/><stop offset=".55" stop-color="#E7D3A1"/><stop offset="1" stop-color="#C4922A"/></linearGradient><radialGradient id="egyptian-egy-wedjat-shade"><stop stop-color="#3A2C22" stop-opacity=".24"/><stop offset="1" stop-color="#3A2C22" stop-opacity="0"/></radialGradient>
+</defs>
+<g class="egyptian-egy-wedjat-motion" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="40" cy="73.4" rx="16" ry="1.5" fill="url(#egyptian-egy-wedjat-shade)"/>
+<path d="M16.2 34.6c9.2-9.6 24.6-12.8 38.2-6.4" fill="none" stroke="#1F4E79" stroke-width="3.1"/>
+<path d="M18.4 37.2c8.4-6.2 20.6-8.2 32.4-3.6 4.6 1.8 9.6 2.4 14.2 1.2" fill="none" stroke="currentColor" stroke-width="1.15"/>
+<path d="M20.4 40.6c7.6-5.2 18.4-6.6 28.6-2.4 4.2 1.8 7.2 2.2 11.4 1.2 1.6 3.6-2.4 7.2-7.2 8.4-8.6 2.2-20.6 1.2-29.2-3.2-2.4-1.2-4.6-3-3.6-4z" fill="#E7D3A1" stroke="currentColor" stroke-width=".9"/>
+<ellipse cx="36.4" cy="41.6" rx="8.4" ry="5.6" fill="url(#egyptian-egy-wedjat-lapis)" stroke="currentColor" stroke-width=".7"/>
+<circle cx="38.6" cy="41.8" r="2.5" fill="#3A2C22"/>
+<circle cx="39.6" cy="40.8" r="0.8" fill="#E7D3A1"/>
+<path d="M48.6 39.4c6.4 1.2 12.4 1.6 18.6.2" fill="none" stroke="#3A2C22" stroke-width="1.35"/>
+<path d="M30.2 49.6c-1.6 6.4-1.2 10.6 2.4 12.4 2.2-3.6 1.6-7.6.4-11.2z" fill="url(#egyptian-egy-wedjat-lapis)" stroke="currentColor" stroke-width=".7"/>
+<path d="M36.4 56.4c4.6 3.6 6.4 7.2 4.2 9.6-3.2-1.6-6.4-5.2-7.6-8.8z" fill="url(#egyptian-egy-wedjat-gold)" stroke="currentColor" stroke-width=".65"/>
+<path d="M22.4 68.4h36.2v3H22.4z" fill="url(#egyptian-egy-wedjat-stone)" stroke="currentColor" stroke-width=".7"/>
+<path d="M28.4 69.6h4.2M40.2 69.6h3.2" fill="none" stroke="#16324F" stroke-width=".55"/>
+</g>
+</svg>

@@ -1,0 +1,1137 @@
+{
+  "id": "world-dragons",
+  "title": {
+    "zh": "世界龙族",
+    "en": "Dragons of the World"
+  },
+  "description": {
+    "zh": "欧亚、东南亚、非洲、美洲与大洋洲的龙和巨蛇收在一套里，共 55 件。",
+    "en": "Dragons and great serpents from Europe, Asia, Africa, the Americas, and Oceania, 55 icons in one kit."
+  },
+  "cover": "zmey-zmey-gorynych",
+  "categories": {
+    "europe": {
+      "zh": "欧洲龙",
+      "en": "European Dragons"
+    },
+    "slavic": {
+      "zh": "斯拉夫与波罗的",
+      "en": "Slavic and Baltic"
+    },
+    "se-asia": {
+      "zh": "东南亚巨蛇",
+      "en": "Southeast Asian Serpents"
+    },
+    "africa": {
+      "zh": "非洲巨蛇",
+      "en": "African Serpent"
+    },
+    "americas": {
+      "zh": "美洲羽蛇",
+      "en": "American Serpent"
+    },
+    "oceania": {
+      "zh": "大洋洲守护者",
+      "en": "Oceanian Guardian"
+    }
+  },
+  "icons": [
+    {
+      "id": "lind-lindworm-coil",
+      "title": {
+        "zh": "林德沃姆盘身",
+        "en": "Coiled Lindworm"
+      },
+      "description": {
+        "zh": "无翼双足的长龙盘成一圈，龙首昂起，金色符文线沿背脊。",
+        "en": "A wingless two-legged dragon coiled in a ring, head raised, a gold rune line along its back."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "lindworm",
+        "nordic",
+        "fairy-tale",
+        "form",
+        "lindworm"
+      ]
+    },
+    {
+      "id": "lind-lindworm-head",
+      "title": {
+        "zh": "龙首",
+        "en": "Lindworm Head"
+      },
+      "description": {
+        "zh": "正面的林德沃姆龙头，金色弯角、碧绿鳞眉和温和的大眼。",
+        "en": "A front view of the lindworm head with curved gold horns, green scaled brows and gentle large eyes."
+      },
+      "animation": "pulse",
+      "category": "europe",
+      "tags": [
+        "lindworm",
+        "nordic",
+        "fairy-tale",
+        "form",
+        "lindworm"
+      ]
+    },
+    {
+      "id": "lind-lindworm-claws",
+      "title": {
+        "zh": "前爪",
+        "en": "Fore Claws"
+      },
+      "description": {
+        "zh": "林德沃姆仅有的两只前足，金爪抓住岩石。",
+        "en": "The lindworm's only two forelegs, gold talons gripping a rock."
+      },
+      "animation": "pulse",
+      "category": "europe",
+      "tags": [
+        "lindworm",
+        "nordic",
+        "fairy-tale",
+        "form",
+        "lindworm"
+      ]
+    },
+    {
+      "id": "lind-queen-crown",
+      "title": {
+        "zh": "王后冠",
+        "en": "Queen Crown"
+      },
+      "description": {
+        "zh": "北欧式金冠，五个尖顶上嵌红宝石，冠带刻缠枝纹。",
+        "en": "A Nordic gold crown with five points set with red gems and an interlace band."
+      },
+      "animation": "pulse",
+      "category": "europe",
+      "tags": [
+        "lindworm",
+        "nordic",
+        "fairy-tale",
+        "palace",
+        "queen"
+      ]
+    },
+    {
+      "id": "lind-red-rose",
+      "title": {
+        "zh": "红玫瑰",
+        "en": "Red Rose"
+      },
+      "description": {
+        "zh": "智慧婆婆所给的魔法红玫瑰，长茎带两片叶。",
+        "en": "The magic red rose from the wise woman, on a long stem with two leaves."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "lindworm",
+        "nordic",
+        "fairy-tale",
+        "palace",
+        "red"
+      ]
+    },
+    {
+      "id": "tara-tarasque",
+      "title": {
+        "zh": "塔拉斯克全身",
+        "en": "Tarasque"
+      },
+      "description": {
+        "zh": "Q版塔拉斯克：蓝色龟甲带奶白尖刺，金色狮脸橙色鬃毛，六条短腿与蝎尾。",
+        "en": "A cute Q-version Tarasque: blue turtle shell with cream spikes, golden lion face with orange mane, six stubby legs and a scorpion tail."
+      },
+      "animation": "float",
+      "category": "europe",
+      "tags": [
+        "tarasque",
+        "tarascon",
+        "provence",
+        "dragon",
+        "tarasque"
+      ]
+    },
+    {
+      "id": "tara-shell-spikes",
+      "title": {
+        "zh": "龟甲背刺",
+        "en": "Shell Spikes"
+      },
+      "description": {
+        "zh": "蓝色六角纹龟甲，背上一排奶白圆尖刺。",
+        "en": "A blue hex-patterned turtle shell crowned with cream spikes."
+      },
+      "animation": "pulse",
+      "category": "europe",
+      "tags": [
+        "tarasque",
+        "tarascon",
+        "provence",
+        "dragon",
+        "shell"
+      ]
+    },
+    {
+      "id": "tara-lion-fangs",
+      "title": {
+        "zh": "狮头獠牙",
+        "en": "Lion Fangs"
+      },
+      "description": {
+        "zh": "张口露出两颗小白牙的金色狮头，橙色鬃毛，凶萌。",
+        "en": "A golden lion head with an orange mane showing two little white fangs, fierce but cute."
+      },
+      "animation": "pulse",
+      "category": "europe",
+      "tags": [
+        "tarasque",
+        "tarascon",
+        "provence",
+        "dragon",
+        "lion"
+      ]
+    },
+    {
+      "id": "tara-rhone-waves",
+      "title": {
+        "zh": "罗讷河波浪",
+        "en": "Rhône Waves"
+      },
+      "description": {
+        "zh": "浅蓝、蓝、深灰蓝三层罗讷河波浪。",
+        "en": "Three layered Rhône river waves in sky, blue and slate."
+      },
+      "animation": "float",
+      "category": "europe",
+      "tags": [
+        "tarasque",
+        "tarascon",
+        "provence",
+        "town",
+        "rhone"
+      ]
+    },
+    {
+      "id": "tara-belltower",
+      "title": {
+        "zh": "钟楼",
+        "en": "Bell Tower"
+      },
+      "description": {
+        "zh": "奶白钟楼橙色尖顶，拱窗里金钟摇摆。",
+        "en": "A cream bell tower with an orange spire and a swinging golden bell."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "tarasque",
+        "tarascon",
+        "provence",
+        "festival",
+        "belltower"
+      ]
+    },
+    {
+      "id": "wawel-wawel-dragon",
+      "title": {
+        "zh": "瓦维尔龙",
+        "en": "Wawel Dragon"
+      },
+      "description": {
+        "zh": "圆滚滚的绿色Q版龙，奶黄肚皮、红色背刺、小角，笑眯眯坐着。",
+        "en": "A chubby cute green dragon with a pale belly, red spikes and little horns."
+      },
+      "animation": "float",
+      "category": "europe",
+      "tags": [
+        "wawel",
+        "dragon",
+        "krakow",
+        "folklore",
+        "dragon",
+        "dragon"
+      ]
+    },
+    {
+      "id": "wawel-wawel-castle",
+      "title": {
+        "zh": "瓦维尔城堡",
+        "en": "Wawel Castle"
+      },
+      "description": {
+        "zh": "奶油色城墙与红色尖顶的山丘城堡，金色顶尖。",
+        "en": "A cream castle with battlements and a red spire topped in gold."
+      },
+      "animation": "float",
+      "category": "europe",
+      "tags": [
+        "wawel",
+        "dragon",
+        "krakow",
+        "folklore",
+        "castle",
+        "castle"
+      ]
+    },
+    {
+      "id": "wawel-king-krak",
+      "title": {
+        "zh": "克拉克国王",
+        "en": "King Krak"
+      },
+      "description": {
+        "zh": "白胡子、金王冠、红长袍的国王。",
+        "en": "A kindly king with a white beard, gold crown and red robe."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "wawel",
+        "dragon",
+        "krakow",
+        "folklore",
+        "castle",
+        "krak"
+      ]
+    },
+    {
+      "id": "wawel-knight-shield",
+      "title": {
+        "zh": "骑士盾",
+        "en": "Knight Shield"
+      },
+      "description": {
+        "zh": "红白分色骑士盾，中间一块金色方饰，无文字纹章。",
+        "en": "A red-and-white knight shield with a gold boss, no lettering."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "wawel",
+        "dragon",
+        "krakow",
+        "folklore",
+        "knights",
+        "shield"
+      ]
+    },
+    {
+      "id": "wawel-broken-sword",
+      "title": {
+        "zh": "断剑",
+        "en": "Broken Sword"
+      },
+      "description": {
+        "zh": "断成两截的骑士剑，金色剑格。",
+        "en": "A knight sword snapped in two with a gold crossguard."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "wawel",
+        "dragon",
+        "krakow",
+        "folklore",
+        "knights",
+        "sword"
+      ]
+    },
+    {
+      "id": "basil-basilisk",
+      "title": {
+        "zh": "蛇怪",
+        "en": "Basilisk"
+      },
+      "description": {
+        "zh": "盘卷的绿鳞蛇身顶着公鸡头与红鸡冠，金色小冠点缀，红信子一伸一缩。",
+        "en": "A coiled green-scaled serpent with a rooster head, red comb and tiny gold crown, flicking a red tongue."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "basilisk",
+        "serpent",
+        "rooster",
+        "吐信",
+        "basilisk",
+        "石化凝视"
+      ]
+    },
+    {
+      "id": "basil-cockatrice",
+      "title": {
+        "zh": "鸡蛇",
+        "en": "Cockatrice"
+      },
+      "description": {
+        "zh": "公鸡身子长着蝙蝠般的绿翅与卷曲蛇尾，双翅扑扇。",
+        "en": "A rooster-bodied cockatrice with leathery green wings and a curling serpent tail, flapping its wings."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "cockatrice",
+        "rooster",
+        "wings",
+        "扑翅",
+        "basilisk",
+        "石化凝视"
+      ]
+    },
+    {
+      "id": "basil-comb-crown",
+      "title": {
+        "zh": "王冠鸡冠",
+        "en": "Comb crown"
+      },
+      "description": {
+        "zh": "金色小王冠顶上长出红色锯齿鸡冠，宝石与星芒闪光。",
+        "en": "A small gold crown sprouting a red serrated cockscomb, its gem and star glints shining."
+      },
+      "animation": "pulse",
+      "category": "europe",
+      "tags": [
+        "comb",
+        "crown",
+        "king of serpents",
+        "闪光",
+        "basilisk",
+        "石化凝视"
+      ]
+    },
+    {
+      "id": "basil-mirror-shield",
+      "title": {
+        "zh": "镜盾",
+        "en": "Mirror shield"
+      },
+      "description": {
+        "zh": "金边鸢形盾牌，盾面是一面银镜，一道光斜扫而过。",
+        "en": "A gold-rimmed kite shield whose face is a silver mirror, a gleam sweeping across it."
+      },
+      "animation": "pulse",
+      "category": "europe",
+      "tags": [
+        "mirror",
+        "shield",
+        "reflect",
+        "反光",
+        "basilisk",
+        "石化凝视"
+      ]
+    },
+    {
+      "id": "basil-bestiary-book",
+      "title": {
+        "zh": "动物寓言书",
+        "en": "Bestiary book"
+      },
+      "description": {
+        "zh": "摊开的羊皮动物寓言书，只有抽象的小动物涂画与金色装饰框，一页正在翻起。",
+        "en": "An open vellum bestiary with only abstract little animal doodles and gilt borders, one page turning."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "book",
+        "bestiary",
+        "vellum",
+        "翻页",
+        "basilisk",
+        "石化凝视"
+      ]
+    },
+    {
+      "id": "zmey-zmey-gorynych",
+      "title": {
+        "zh": "蛇妖戈雷内奇",
+        "en": "Zmey Gorynych"
+      },
+      "description": {
+        "zh": "三头绿龙，红翼金腹，霍赫洛马卷纹",
+        "en": "A cute green three-headed dragon with red wings, gold belly and Khokhloma curls."
+      },
+      "animation": "sway",
+      "category": "slavic",
+      "tags": [
+        "dragon",
+        "龙",
+        "zmey gorynych",
+        "蛇妖戈雷内奇"
+      ]
+    },
+    {
+      "id": "zmey-dragon-head",
+      "title": {
+        "zh": "龙头特写",
+        "en": "Dragon Head"
+      },
+      "description": {
+        "zh": "金角绿龙头特写",
+        "en": "A close-up green dragon head with gold horns, curls and a red mouth."
+      },
+      "animation": "sway",
+      "category": "slavic",
+      "tags": [
+        "dragon",
+        "龙头",
+        "zmey gorynych",
+        "蛇妖戈雷内奇"
+      ]
+    },
+    {
+      "id": "zmey-flame-breath",
+      "title": {
+        "zh": "火焰吐息",
+        "en": "Flame Breath"
+      },
+      "description": {
+        "zh": "红金白三层火焰",
+        "en": "Layered red, gold and white flame tongues."
+      },
+      "animation": "pulse",
+      "category": "slavic",
+      "tags": [
+        "fire",
+        "火焰",
+        "zmey gorynych",
+        "蛇妖戈雷内奇"
+      ]
+    },
+    {
+      "id": "zmey-wolf-mace",
+      "title": {
+        "zh": "狼牙棒",
+        "en": "Spiked Mace"
+      },
+      "description": {
+        "zh": "金柄红握把的钢狼牙棒",
+        "en": "A steel spiked mace on a gold handle with a red grip."
+      },
+      "animation": "sway",
+      "category": "slavic",
+      "tags": [
+        "mace",
+        "狼牙棒",
+        "zmey gorynych",
+        "蛇妖戈雷内奇"
+      ]
+    },
+    {
+      "id": "zmey-round-shield",
+      "title": {
+        "zh": "圆盾",
+        "en": "Round Shield"
+      },
+      "description": {
+        "zh": "金纹红色圆盾",
+        "en": "A red round shield with gold cross, rim, boss and curls."
+      },
+      "animation": "pulse",
+      "category": "slavic",
+      "tags": [
+        "shield",
+        "盾",
+        "zmey gorynych",
+        "蛇妖戈雷内奇"
+      ]
+    },
+    {
+      "id": "aitva-aitvaras-fire",
+      "title": {
+        "zh": "火尾艾特瓦拉斯",
+        "en": "Fire-tail Aitvaras"
+      },
+      "description": {
+        "zh": "圆滚滚的红色Q版公鸡龙精灵，红冠金喙，拖着橙黄火焰长尾。",
+        "en": "A chubby red rooster-dragon sprite with a red comb, gold beak and a long orange flame tail."
+      },
+      "animation": "float",
+      "category": "slavic",
+      "tags": [
+        "aitvaras",
+        "lithuanian",
+        "baltic",
+        "folklore",
+        "sprite",
+        "fire"
+      ]
+    },
+    {
+      "id": "aitva-aitvaras-rooster",
+      "title": {
+        "zh": "公鸡形态",
+        "en": "Rooster Form"
+      },
+      "description": {
+        "zh": "白天化身的黑色公鸡，红冠黄眼，墨绿高尾。",
+        "en": "The daytime black rooster form with a red comb, yellow eye and tall dark tail."
+      },
+      "animation": "pop",
+      "category": "slavic",
+      "tags": [
+        "aitvaras",
+        "lithuanian",
+        "baltic",
+        "folklore",
+        "sprite",
+        "rooster"
+      ]
+    },
+    {
+      "id": "aitva-aitvaras-dragon",
+      "title": {
+        "zh": "飞龙形态",
+        "en": "Dragon Form"
+      },
+      "description": {
+        "zh": "展开橙色翅膀的红色小飞龙，尾尖燃着小火苗。",
+        "en": "A small red flying dragon with an orange wing and a little flame at its tail tip."
+      },
+      "animation": "float",
+      "category": "slavic",
+      "tags": [
+        "aitvaras",
+        "lithuanian",
+        "baltic",
+        "folklore",
+        "sprite",
+        "dragon"
+      ]
+    },
+    {
+      "id": "aitva-grain-sack",
+      "title": {
+        "zh": "粮食麻袋",
+        "en": "Grain Sack"
+      },
+      "description": {
+        "zh": "红绳扎口的鼓胀麻袋，口上飘着金色谷粒。",
+        "en": "A plump straw sack tied with red cord, gold grains above the neck."
+      },
+      "animation": "pop",
+      "category": "slavic",
+      "tags": [
+        "aitvaras",
+        "lithuanian",
+        "baltic",
+        "folklore",
+        "farm",
+        "sack"
+      ]
+    },
+    {
+      "id": "aitva-gold-coin",
+      "title": {
+        "zh": "金币",
+        "en": "Gold Coin"
+      },
+      "description": {
+        "zh": "带橙色星纹的金币，左上有高光。",
+        "en": "A gold coin with an orange star emblem and a highlight."
+      },
+      "animation": "spin",
+      "category": "slavic",
+      "tags": [
+        "aitvaras",
+        "lithuanian",
+        "baltic",
+        "folklore",
+        "farm",
+        "coin"
+      ]
+    },
+    {
+      "id": "baku-bakunawa-coil",
+      "title": {
+        "zh": "巴库纳瓦盘身",
+        "en": "Bakunawa Coil"
+      },
+      "description": {
+        "zh": "深蓝海龙在浪上盘成两圈，银色腹鳞，龙头昂起。",
+        "en": "The deep-blue sea serpent coiled twice above the waves, silver belly scales, head raised."
+      },
+      "animation": "sway",
+      "category": "se-asia",
+      "tags": [
+        "bakunawa",
+        "philippine-folklore",
+        "moon",
+        "serpent",
+        "bakunawa-coil"
+      ]
+    },
+    {
+      "id": "baku-bakunawa-head",
+      "title": {
+        "zh": "龙首张口",
+        "en": "Bakunawa Head"
+      },
+      "description": {
+        "zh": "张大嘴的海龙头侧影，银角、金色竖瞳和小尖牙，表情调皮。",
+        "en": "Side view of the serpent head with jaws open, silver horns, golden slit eye and tiny fangs, more mischievous than scary."
+      },
+      "animation": "pulse",
+      "category": "se-asia",
+      "tags": [
+        "bakunawa",
+        "philippine-folklore",
+        "moon",
+        "serpent",
+        "bakunawa-head"
+      ]
+    },
+    {
+      "id": "baku-bakunawa-fin",
+      "title": {
+        "zh": "背鳍",
+        "en": "Dorsal Fin"
+      },
+      "description": {
+        "zh": "露出海面的锯齿背鳍，青色鳍膜间有银色鳍骨。",
+        "en": "A jagged dorsal fin rising from the sea, teal membrane with silver spines."
+      },
+      "animation": "sway",
+      "category": "se-asia",
+      "tags": [
+        "bakunawa",
+        "philippine-folklore",
+        "moon",
+        "serpent",
+        "bakunawa-fin"
+      ]
+    },
+    {
+      "id": "baku-eclipse",
+      "title": {
+        "zh": "月食",
+        "en": "Lunar Eclipse"
+      },
+      "description": {
+        "zh": "红铜色的月面，四周一圈金色光晕射线。",
+        "en": "A copper-red eclipsed moon ringed with golden corona rays."
+      },
+      "animation": "spin",
+      "category": "se-asia",
+      "tags": [
+        "bakunawa",
+        "philippine-folklore",
+        "moon",
+        "sky",
+        "eclipse"
+      ]
+    },
+    {
+      "id": "baku-bathala",
+      "title": {
+        "zh": "天神巴塔拉",
+        "en": "Bathala"
+      },
+      "description": {
+        "zh": "金色光芒中一个发光的天神剪影，张开双臂守护月亮。",
+        "en": "A glowing divine silhouette in golden radiance, arms open to guard the moon."
+      },
+      "animation": "float",
+      "category": "se-asia",
+      "tags": [
+        "bakunawa",
+        "philippine-folklore",
+        "moon",
+        "sky",
+        "bathala"
+      ]
+    },
+    {
+      "id": "naga-naga-seven-head",
+      "title": {
+        "zh": "七头那伽",
+        "en": "Seven-Headed Naga"
+      },
+      "description": {
+        "zh": "七个蛇首如扇张开，金色蛇冠下绿鳞蛇身挺立。",
+        "en": "Seven serpent heads fan out above a golden hood on an upright green-scaled body."
+      },
+      "animation": "sway",
+      "category": "se-asia",
+      "tags": [
+        "naga",
+        "serpent",
+        "seven heads"
+      ]
+    },
+    {
+      "id": "naga-naga-coil",
+      "title": {
+        "zh": "盘身",
+        "en": "Naga Coil"
+      },
+      "description": {
+        "zh": "绿鳞蛇身盘成圆环，蛇首从盘绕中昂起。",
+        "en": "A green-scaled body coiled in a ring with the head rising from the loops."
+      },
+      "animation": "sway",
+      "category": "se-asia",
+      "tags": [
+        "coil",
+        "serpent"
+      ]
+    },
+    {
+      "id": "naga-naga-crest",
+      "title": {
+        "zh": "冠饰",
+        "en": "Naga Crest"
+      },
+      "description": {
+        "zh": "火焰形金冠，中央镶红宝石，两侧绿玉。",
+        "en": "A flame-shaped golden crest set with a central ruby and two green jewels."
+      },
+      "animation": "pulse",
+      "category": "se-asia",
+      "tags": [
+        "crest",
+        "gold",
+        "jewel"
+      ]
+    },
+    {
+      "id": "naga-naga-eye",
+      "title": {
+        "zh": "宝石眼",
+        "en": "Jewel Eye"
+      },
+      "description": {
+        "zh": "鳞纹包围的金色眼圈，中央是红宝石竖瞳。",
+        "en": "A golden eye ring framed by scales with a ruby slit pupil."
+      },
+      "animation": "pulse",
+      "category": "se-asia",
+      "tags": [
+        "eye",
+        "ruby"
+      ]
+    },
+    {
+      "id": "naga-jewel-orb",
+      "title": {
+        "zh": "宝珠",
+        "en": "Jewel Orb"
+      },
+      "description": {
+        "zh": "绿色宝珠立在金座上，顶端闪着星光。",
+        "en": "A green jewel orb on a golden stand with a sparkle on top."
+      },
+      "animation": "pulse",
+      "category": "se-asia",
+      "tags": [
+        "orb",
+        "jewel"
+      ]
+    },
+    {
+      "id": "groot-grootslang-coil",
+      "title": {
+        "zh": "象蛇盘身",
+        "en": "Grootslang Coil"
+      },
+      "description": {
+        "zh": "象首蛇身的格鲁特斯朗盘绕在钻石旁。",
+        "en": "The elephant-headed Grootslang coiled beside a diamond."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "grootslang",
+        "south-africa",
+        "treasure",
+        "serpent",
+        "coil"
+      ]
+    },
+    {
+      "id": "groot-grootslang-head",
+      "title": {
+        "zh": "象蛇头",
+        "en": "Grootslang Head"
+      },
+      "description": {
+        "zh": "长着獠牙的友善象首。",
+        "en": "A friendly elephant head with a curling tusk."
+      },
+      "animation": "float",
+      "category": "africa",
+      "tags": [
+        "grootslang",
+        "south-africa",
+        "treasure",
+        "serpent",
+        "head"
+      ]
+    },
+    {
+      "id": "groot-grootslang-trunk",
+      "title": {
+        "zh": "象鼻",
+        "en": "Trunk"
+      },
+      "description": {
+        "zh": "卷曲的长鼻托着一颗钻石。",
+        "en": "A curling trunk holding a diamond."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "grootslang",
+        "south-africa",
+        "treasure",
+        "serpent",
+        "trunk"
+      ]
+    },
+    {
+      "id": "groot-wonder-hole",
+      "title": {
+        "zh": "无底洞",
+        "en": "Wonder Hole"
+      },
+      "description": {
+        "zh": "石缘环绕的深洞入口，底部微光闪烁。",
+        "en": "A deep stone-rimmed pit glimmering far below."
+      },
+      "animation": "pulse",
+      "category": "africa",
+      "tags": [
+        "grootslang",
+        "south-africa",
+        "treasure",
+        "cave",
+        "hole"
+      ]
+    },
+    {
+      "id": "groot-explorer-hat",
+      "title": {
+        "zh": "探险帽",
+        "en": "Explorer Hat"
+      },
+      "description": {
+        "zh": "带深色帽带的宽檐探险帽。",
+        "en": "A wide-brimmed explorer hat with a dark band."
+      },
+      "animation": "pop",
+      "category": "africa",
+      "tags": [
+        "grootslang",
+        "south-africa",
+        "treasure",
+        "quest",
+        "hat"
+      ]
+    },
+    {
+      "id": "quetz-serpent-coil",
+      "title": {
+        "zh": "盘绕羽蛇",
+        "en": "Coiled Serpent"
+      },
+      "description": {
+        "zh": "玉绿身躯盘绕、头顶绿松石羽冠的羽蛇。",
+        "en": "A jade-green serpent coiled up, crowned with turquoise feathers."
+      },
+      "animation": "float",
+      "category": "americas",
+      "tags": [
+        "quetzalcoatl",
+        "feathered-serpent",
+        "mesoamerican",
+        "serpent",
+        "serpent"
+      ]
+    },
+    {
+      "id": "quetz-feather-crest",
+      "title": {
+        "zh": "羽冠",
+        "en": "Feather Crest"
+      },
+      "description": {
+        "zh": "金扣束起的绿松石与玉色扇形羽冠。",
+        "en": "A fan of turquoise and jade plumes bound by a gold clasp."
+      },
+      "animation": "sway",
+      "category": "americas",
+      "tags": [
+        "quetzalcoatl",
+        "feathered-serpent",
+        "mesoamerican",
+        "serpent",
+        "feather"
+      ]
+    },
+    {
+      "id": "quetz-jade-mask",
+      "title": {
+        "zh": "玉面具",
+        "en": "Jade Mask"
+      },
+      "description": {
+        "zh": "抽象的玉石面具，绿松石耳饰。",
+        "en": "An abstract jade mask with turquoise ear spools."
+      },
+      "animation": "float",
+      "category": "americas",
+      "tags": [
+        "quetzalcoatl",
+        "feathered-serpent",
+        "mesoamerican",
+        "serpent",
+        "jade"
+      ]
+    },
+    {
+      "id": "quetz-rain-drop",
+      "title": {
+        "zh": "雨滴",
+        "en": "Rain Drop"
+      },
+      "description": {
+        "zh": "带高光的绿松石雨滴。",
+        "en": "A glossy turquoise raindrop."
+      },
+      "animation": "pop",
+      "category": "americas",
+      "tags": [
+        "quetzalcoatl",
+        "feathered-serpent",
+        "mesoamerican",
+        "sky",
+        "rain"
+      ]
+    },
+    {
+      "id": "quetz-feather-shield",
+      "title": {
+        "zh": "羽饰圆盾",
+        "en": "Feather Shield"
+      },
+      "description": {
+        "zh": "边缘饰满羽毛的玉色圆盾。",
+        "en": "A round jade shield fringed with feathers."
+      },
+      "animation": "pulse",
+      "category": "americas",
+      "tags": [
+        "quetzalcoatl",
+        "feathered-serpent",
+        "mesoamerican",
+        "beasts",
+        "feather"
+      ]
+    },
+    {
+      "id": "tani-bone-carving",
+      "title": {
+        "zh": "鲸骨纹",
+        "en": "Spiral Bone Carving"
+      },
+      "description": {
+        "zh": "刻着双螺旋纹的骨白色挂坠。",
+        "en": "A bone-white pendant carved with a double spiral."
+      },
+      "animation": "pulse",
+      "category": "oceania",
+      "tags": [
+        "taniwha",
+        "maori",
+        "aotearoa",
+        "guardian",
+        "bone"
+      ]
+    },
+    {
+      "id": "tani-greenstone",
+      "title": {
+        "zh": "绿石坠",
+        "en": "Greenstone Pendant"
+      },
+      "description": {
+        "zh": "泛着光泽的深翠绿石水滴形护身坠。",
+        "en": "A glossy deep-jade teardrop pendant."
+      },
+      "animation": "pulse",
+      "category": "oceania",
+      "tags": [
+        "taniwha",
+        "maori",
+        "aotearoa",
+        "guardian",
+        "greenstone"
+      ]
+    },
+    {
+      "id": "tani-scales",
+      "title": {
+        "zh": "鳞片",
+        "en": "Guardian Scales"
+      },
+      "description": {
+        "zh": "守护兽身上层层叠叠的翠色鳞片。",
+        "en": "Overlapping jade-and-teal scales from the guardian’s hide."
+      },
+      "animation": "pulse",
+      "category": "oceania",
+      "tags": [
+        "taniwha",
+        "maori",
+        "aotearoa",
+        "guardian",
+        "scales"
+      ]
+    },
+    {
+      "id": "tani-tide",
+      "title": {
+        "zh": "潮汐",
+        "en": "Rising Tide"
+      },
+      "description": {
+        "zh": "一层层起伏的潮汐线涌上沙滩。",
+        "en": "Layered tide lines rolling up onto the sand."
+      },
+      "animation": "float",
+      "category": "oceania",
+      "tags": [
+        "taniwha",
+        "maori",
+        "aotearoa",
+        "waters",
+        "tide"
+      ]
+    },
+    {
+      "id": "tani-fishing-net",
+      "title": {
+        "zh": "渔网",
+        "en": "Flax Fishing Net"
+      },
+      "description": {
+        "zh": "挂在木杆上、亚麻编成的渔网。",
+        "en": "A woven flax fishing net hanging from a wooden pole."
+      },
+      "animation": "sway",
+      "category": "oceania",
+      "tags": [
+        "taniwha",
+        "maori",
+        "aotearoa",
+        "voyage",
+        "fishing"
+      ]
+    }
+  ]
+}

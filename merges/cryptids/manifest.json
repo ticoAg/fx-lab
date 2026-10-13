@@ -1,0 +1,1150 @@
+{
+  "id": "cryptids",
+  "title": {
+    "zh": "世界秘兽",
+    "en": "Cryptids"
+  },
+  "description": {
+    "zh": "湖怪、雪人、毛人、莫克拉姆班贝与滴熊等秘兽收在一套里，共 55 件。",
+    "en": "Lake monsters, yeti, bigfoot, mokele-mbembe, drop bears, and other cryptids, 55 icons in one kit."
+  },
+  "cover": "ness-nessie",
+  "categories": {
+    "europe": {
+      "zh": "欧洲湖怪",
+      "en": "European Lake"
+    },
+    "north-america": {
+      "zh": "北美",
+      "en": "North America"
+    },
+    "latin-america": {
+      "zh": "拉丁美洲",
+      "en": "Latin America"
+    },
+    "asia": {
+      "zh": "亚洲",
+      "en": "Asia"
+    },
+    "africa": {
+      "zh": "非洲",
+      "en": "Africa"
+    },
+    "oceania": {
+      "zh": "大洋洲",
+      "en": "Oceania"
+    }
+  },
+  "icons": [
+    {
+      "id": "ness-nessie",
+      "title": {
+        "zh": "尼斯湖水怪",
+        "en": "Nessie"
+      },
+      "description": {
+        "zh": "长脖子青绿Q版水怪探出湖面，身后两个驼峰和一截尾巴，笑眯眯的。",
+        "en": "A cute teal long-necked Nessie peeking from the loch with two humps and a tail tip."
+      },
+      "animation": "float",
+      "category": "europe",
+      "tags": [
+        "nessie",
+        "loch-ness",
+        "scotland",
+        "beast",
+        "nessie"
+      ]
+    },
+    {
+      "id": "ness-hump-wave",
+      "title": {
+        "zh": "驼峰波浪",
+        "en": "Humps in the Waves"
+      },
+      "description": {
+        "zh": "三个由大到小的青绿驼峰露出水面。",
+        "en": "Three teal humps of decreasing size breaking the water."
+      },
+      "animation": "float",
+      "category": "europe",
+      "tags": [
+        "nessie",
+        "loch-ness",
+        "scotland",
+        "beast",
+        "hump"
+      ]
+    },
+    {
+      "id": "ness-long-neck",
+      "title": {
+        "zh": "长脖子",
+        "en": "Long Neck"
+      },
+      "description": {
+        "zh": "弯弯的长脖子顶着圆脑袋，带浅色斑点。",
+        "en": "A gently curved long neck with a round smiling head and pale spots."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "nessie",
+        "loch-ness",
+        "scotland",
+        "beast",
+        "long"
+      ]
+    },
+    {
+      "id": "ness-telescope",
+      "title": {
+        "zh": "望远镜",
+        "en": "Telescope"
+      },
+      "description": {
+        "zh": "三脚架上指向湖面的金色望远镜。",
+        "en": "A golden telescope on a tripod aimed at the loch."
+      },
+      "animation": "sway",
+      "category": "europe",
+      "tags": [
+        "nessie",
+        "loch-ness",
+        "scotland",
+        "gear",
+        "telescope"
+      ]
+    },
+    {
+      "id": "ness-sonar-screen",
+      "title": {
+        "zh": "声呐屏幕",
+        "en": "Sonar Screen"
+      },
+      "description": {
+        "zh": "深蓝圆形声呐屏上扫描线旋转，亮起一个金色光点。",
+        "en": "A round dark sonar screen with a sweeping beam and a gold blip."
+      },
+      "animation": "spin",
+      "category": "europe",
+      "tags": [
+        "nessie",
+        "loch-ness",
+        "scotland",
+        "night",
+        "sonar"
+      ]
+    },
+    {
+      "id": "squatch-sasquatch",
+      "title": {
+        "zh": "大脚怪",
+        "en": "Sasquatch"
+      },
+      "description": {
+        "zh": "毛茸茸的棕色大脚怪站着挥手打招呼。",
+        "en": "A fluffy brown sasquatch standing and waving hello."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "sasquatch",
+        "bigfoot",
+        "camping",
+        "bigfoot",
+        "sasquatch"
+      ]
+    },
+    {
+      "id": "squatch-giant-footprint",
+      "title": {
+        "zh": "巨型脚印",
+        "en": "Giant Footprint"
+      },
+      "description": {
+        "zh": "泥地上两枚五趾大脚印，旁边一枚小靴印作对比。",
+        "en": "Two huge five-toed footprints in mud next to a tiny boot print for scale."
+      },
+      "animation": "pop",
+      "category": "north-america",
+      "tags": [
+        "sasquatch",
+        "bigfoot",
+        "camping",
+        "evidence",
+        "giant"
+      ]
+    },
+    {
+      "id": "squatch-plaster-cast",
+      "title": {
+        "zh": "石膏脚模",
+        "en": "Plaster Cast"
+      },
+      "description": {
+        "zh": "米白石膏板上倒出的大脚印模型，挂着橙色标签。",
+        "en": "A cream plaster cast of a giant footprint with an orange tag."
+      },
+      "animation": "pulse",
+      "category": "north-america",
+      "tags": [
+        "sasquatch",
+        "bigfoot",
+        "camping",
+        "evidence",
+        "plaster"
+      ]
+    },
+    {
+      "id": "squatch-tent",
+      "title": {
+        "zh": "帐篷",
+        "en": "Tent"
+      },
+      "description": {
+        "zh": "橙色三角帐篷被晃动，门口有一枚大脚印。",
+        "en": "An orange A-frame tent wobbling with a big footprint by the door."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "sasquatch",
+        "bigfoot",
+        "camping",
+        "forest",
+        "tent"
+      ]
+    },
+    {
+      "id": "squatch-ranger-hat",
+      "title": {
+        "zh": "护林员帽",
+        "en": "Ranger Hat"
+      },
+      "description": {
+        "zh": "宽檐护林员帽，绿色帽带别着脚印徽章。",
+        "en": "A wide-brim ranger hat with a green band and a footprint pin."
+      },
+      "animation": "pop",
+      "category": "north-america",
+      "tags": [
+        "sasquatch",
+        "bigfoot",
+        "camping",
+        "gear",
+        "ranger"
+      ]
+    },
+    {
+      "id": "moth-mothman",
+      "title": {
+        "zh": "天蛾人",
+        "en": "Mothman"
+      },
+      "description": {
+        "zh": "展开灰黑巨翼的天蛾人，身形修长，头部一对红眼发光，翼面带半调网点。",
+        "en": "Mothman spreading huge charcoal wings, a tall slim body with two glowing red eyes and halftone dots on the wings."
+      },
+      "animation": "pulse",
+      "category": "north-america",
+      "tags": [
+        "mothman",
+        "cryptid",
+        "point-pleasant",
+        "retro-comic",
+        "creature",
+        "mothman"
+      ]
+    },
+    {
+      "id": "moth-red-eyes",
+      "title": {
+        "zh": "红色双眼",
+        "en": "Red Eyes"
+      },
+      "description": {
+        "zh": "漆黑夜色里的一团暗影，只露出两只猩红发光的眼睛。",
+        "en": "A dark shadow in the night with only two glowing crimson eyes showing."
+      },
+      "animation": "pulse",
+      "category": "north-america",
+      "tags": [
+        "mothman",
+        "cryptid",
+        "point-pleasant",
+        "retro-comic",
+        "creature",
+        "red"
+      ]
+    },
+    {
+      "id": "moth-moth-wing",
+      "title": {
+        "zh": "蛾翼",
+        "en": "Moth Wing"
+      },
+      "description": {
+        "zh": "一片带圆形眼斑的蛾翅，前翼宽大后翼圆润，轻轻颤动。",
+        "en": "A single moth wing with a round eyespot, broad forewing and rounded hindwing, gently trembling."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "mothman",
+        "cryptid",
+        "point-pleasant",
+        "retro-comic",
+        "creature",
+        "moth"
+      ]
+    },
+    {
+      "id": "moth-silver-bridge",
+      "title": {
+        "zh": "银桥",
+        "en": "Silver Bridge"
+      },
+      "description": {
+        "zh": "横跨俄亥俄河的银色眼杆链吊桥，两座桥塔顶上的航标灯一闪一闪。",
+        "en": "The silver eyebar-chain suspension bridge over the Ohio River, beacon lights blinking atop its two towers."
+      },
+      "animation": "pulse",
+      "category": "north-america",
+      "tags": [
+        "mothman",
+        "cryptid",
+        "point-pleasant",
+        "retro-comic",
+        "town",
+        "silver"
+      ]
+    },
+    {
+      "id": "moth-tnt-bunker",
+      "title": {
+        "zh": "旧弹药库",
+        "en": "TNT Bunker"
+      },
+      "description": {
+        "zh": "野草间废弃的混凝土穹顶弹药库，铁门半掩，门缝透出琥珀光。",
+        "en": "An abandoned concrete dome igloo in the weeds, its iron door ajar with amber light leaking from the gap."
+      },
+      "animation": "pulse",
+      "category": "north-america",
+      "tags": [
+        "mothman",
+        "cryptid",
+        "point-pleasant",
+        "retro-comic",
+        "town",
+        "tnt"
+      ]
+    },
+    {
+      "id": "jersey-jd-silhouette",
+      "title": {
+        "zh": "恶魔剪影",
+        "en": "Devil Silhouette"
+      },
+      "description": {
+        "zh": "月下的泽西恶魔：马形长脸、小角、蝠翼与分叉尾，双足站立，红眼圆圆的。",
+        "en": "The Jersey Devil under the moon: long horse-like face, little horns, bat wings and a forked tail, standing on two legs with round red eyes."
+      },
+      "animation": "float",
+      "category": "north-america",
+      "tags": [
+        "jersey-devil",
+        "cryptid",
+        "halloween",
+        "devil",
+        "jd-silhouette"
+      ]
+    },
+    {
+      "id": "jersey-jd-hoof",
+      "title": {
+        "zh": "分趾蹄印",
+        "en": "Cloven Hoofprint"
+      },
+      "description": {
+        "zh": "泥地上一枚分趾蹄印，旁边溅起几滴泥点。",
+        "en": "A cloven hoofprint pressed into mud, with a few small splashes around it."
+      },
+      "animation": "pop",
+      "category": "north-america",
+      "tags": [
+        "jersey-devil",
+        "cryptid",
+        "halloween",
+        "devil",
+        "jd-hoof"
+      ]
+    },
+    {
+      "id": "jersey-jd-wings",
+      "title": {
+        "zh": "蝠翼",
+        "en": "Bat Wings"
+      },
+      "description": {
+        "zh": "一对展开的皮膜蝠翼，冷蓝翼膜带莓红翼骨尖。",
+        "en": "A pair of spread leathery bat wings, cold blue membranes with berry-red bone tips."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "jersey-devil",
+        "cryptid",
+        "halloween",
+        "devil",
+        "jd-wings"
+      ]
+    },
+    {
+      "id": "jersey-pine-barrens",
+      "title": {
+        "zh": "松林荒原",
+        "en": "Pine Barrens"
+      },
+      "description": {
+        "zh": "沙地上三棵矮小的刚松，枝叶稀疏，在夜风里轻摇。",
+        "en": "Three short pitch pines on sandy ground, sparse boughs swaying in the night wind."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "jersey-devil",
+        "cryptid",
+        "halloween",
+        "barrens",
+        "pine-barrens"
+      ]
+    },
+    {
+      "id": "jersey-trap-net",
+      "title": {
+        "zh": "捕兽网",
+        "en": "Trap Net"
+      },
+      "description": {
+        "zh": "挂在树枝下的圆形绳网，网口收紧，里面空空的。",
+        "en": "A round rope net hanging from a branch, its mouth drawn tight and nothing inside."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "jersey-devil",
+        "cryptid",
+        "halloween",
+        "gear",
+        "trap-net"
+      ]
+    },
+    {
+      "id": "hodag-hodag",
+      "title": {
+        "zh": "霍达格",
+        "en": "Hodag"
+      },
+      "description": {
+        "zh": "绿皮白刺的胖霍达格全身，獠牙笑脸、牛角和矛尖尾巴。",
+        "en": "A chubby green hodag with white back spikes, tusked grin, bull horns and a spear-tipped tail."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "hodag",
+        "lumberjack",
+        "wisconsin",
+        "beast",
+        "hodag"
+      ]
+    },
+    {
+      "id": "hodag-tusk-grin",
+      "title": {
+        "zh": "獠牙笑脸",
+        "en": "Tusk Grin"
+      },
+      "description": {
+        "zh": "霍达格大头特写，红嘴咧笑露出两颗黄獠牙。",
+        "en": "A close-up hodag head with a wide red grin and two yellow tusks."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "hodag",
+        "lumberjack",
+        "wisconsin",
+        "beast",
+        "tusk"
+      ]
+    },
+    {
+      "id": "hodag-spine-spikes",
+      "title": {
+        "zh": "背脊尖刺",
+        "en": "Spine Spikes"
+      },
+      "description": {
+        "zh": "绿色背脊上一排白色三角尖刺。",
+        "en": "A row of white triangle spikes along a green back."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "hodag",
+        "lumberjack",
+        "wisconsin",
+        "beast",
+        "spine"
+      ]
+    },
+    {
+      "id": "hodag-spear-tail",
+      "title": {
+        "zh": "长尾矛尖",
+        "en": "Spear Tail"
+      },
+      "description": {
+        "zh": "弯曲绿尾末端的白色矛尖。",
+        "en": "A curling green tail ending in a white spearhead."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "hodag",
+        "lumberjack",
+        "wisconsin",
+        "beast",
+        "spear"
+      ]
+    },
+    {
+      "id": "hodag-lumber-axe",
+      "title": {
+        "zh": "伐木斧",
+        "en": "Lumber Axe"
+      },
+      "description": {
+        "zh": "木柄钢刃伐木斧，红色绑带。",
+        "en": "A wooden-handled steel lumber axe with a red band."
+      },
+      "animation": "sway",
+      "category": "north-america",
+      "tags": [
+        "hodag",
+        "lumberjack",
+        "wisconsin",
+        "camp",
+        "lumber"
+      ]
+    },
+    {
+      "id": "chupa-cryptid-head",
+      "title": {
+        "zh": "奇兽头",
+        "en": "Cryptid Head"
+      },
+      "description": {
+        "zh": "紫色大眼尖耳的丘帕卡布拉萌脸，荧光绿眼睛眨呀眨。",
+        "en": "The cute chupacabra face with big glowing green eyes and pointed ears."
+      },
+      "animation": "pulse",
+      "category": "latin-america",
+      "tags": [
+        "chupacabra",
+        "cryptid",
+        "desert-night",
+        "creature",
+        "cryptid"
+      ]
+    },
+    {
+      "id": "chupa-spine-back",
+      "title": {
+        "zh": "背刺",
+        "en": "Spine Back"
+      },
+      "description": {
+        "zh": "弓起的紫色脊背上竖着一排荧光绿尖刺。",
+        "en": "An arched purple back bristling with a row of neon-green spines."
+      },
+      "animation": "pulse",
+      "category": "latin-america",
+      "tags": [
+        "chupacabra",
+        "cryptid",
+        "desert-night",
+        "creature",
+        "spine"
+      ]
+    },
+    {
+      "id": "chupa-glow-eyes",
+      "title": {
+        "zh": "荧光双眼",
+        "en": "Glowing Eyes"
+      },
+      "description": {
+        "zh": "漆黑灌木丛里亮起的两点荧光绿眼睛。",
+        "en": "Two neon-green eyes glowing from a pitch-dark bush."
+      },
+      "animation": "pulse",
+      "category": "latin-america",
+      "tags": [
+        "chupacabra",
+        "cryptid",
+        "desert-night",
+        "creature",
+        "glow"
+      ]
+    },
+    {
+      "id": "chupa-cactus",
+      "title": {
+        "zh": "仙人掌",
+        "en": "Saguaro Cactus"
+      },
+      "description": {
+        "zh": "两臂高举的柱状巨人柱仙人掌，顶上开一朵小花。",
+        "en": "A saguaro cactus with both arms raised and a tiny blossom on top."
+      },
+      "animation": "sway",
+      "category": "latin-america",
+      "tags": [
+        "chupacabra",
+        "cryptid",
+        "desert-night",
+        "desert",
+        "cactus"
+      ]
+    },
+    {
+      "id": "chupa-tumbleweed",
+      "title": {
+        "zh": "风滚草",
+        "en": "Tumbleweed"
+      },
+      "description": {
+        "zh": "被夜风吹着滚动的干枯风滚草团。",
+        "en": "A dry tumbleweed ball rolling in the night wind."
+      },
+      "animation": "spin",
+      "category": "latin-america",
+      "tags": [
+        "chupacabra",
+        "cryptid",
+        "desert-night",
+        "desert",
+        "tumbleweed"
+      ]
+    },
+    {
+      "id": "tsuchi-tsuchinoko",
+      "title": {
+        "zh": "槌之子",
+        "en": "Tsuchinoko"
+      },
+      "description": {
+        "zh": "啤酒瓶般胖嘟嘟的短身小蛇，黄肚皮、腮红、圆眼。",
+        "en": "A chubby beer-bottle-shaped short snake with a yellow belly, blush and round eye."
+      },
+      "animation": "float",
+      "category": "asia",
+      "tags": [
+        "tsuchinoko",
+        "cryptid",
+        "japanese",
+        "beast",
+        "tsuchinoko"
+      ]
+    },
+    {
+      "id": "tsuchi-roll-hill",
+      "title": {
+        "zh": "滚下山坡",
+        "en": "Roll Downhill"
+      },
+      "description": {
+        "zh": "蜷成圆球的槌之子沿绿色山坡滚下。",
+        "en": "A tsuchinoko curled into a ball rolling down a green slope."
+      },
+      "animation": "spin",
+      "category": "asia",
+      "tags": [
+        "tsuchinoko",
+        "cryptid",
+        "japanese",
+        "beast",
+        "roll"
+      ]
+    },
+    {
+      "id": "tsuchi-jump-leap",
+      "title": {
+        "zh": "弹跳",
+        "en": "Jump Leap"
+      },
+      "description": {
+        "zh": "沿弧线高高跃起的槌之子。",
+        "en": "A tsuchinoko springing high along a dotted arc."
+      },
+      "animation": "pop",
+      "category": "asia",
+      "tags": [
+        "tsuchinoko",
+        "cryptid",
+        "japanese",
+        "beast",
+        "jump"
+      ]
+    },
+    {
+      "id": "tsuchi-net-catch",
+      "title": {
+        "zh": "捕虫网",
+        "en": "Catch Net"
+      },
+      "description": {
+        "zh": "木柄长网，网兜米白。",
+        "en": "A long wooden-handled net with a cream mesh bag."
+      },
+      "animation": "sway",
+      "category": "asia",
+      "tags": [
+        "tsuchinoko",
+        "cryptid",
+        "japanese",
+        "gear",
+        "net"
+      ]
+    },
+    {
+      "id": "tsuchi-straw-hat",
+      "title": {
+        "zh": "草帽",
+        "en": "Straw Hat"
+      },
+      "description": {
+        "zh": "系红带的猎人草帽。",
+        "en": "A hunter's straw hat with a red band."
+      },
+      "animation": "sway",
+      "category": "asia",
+      "tags": [
+        "tsuchinoko",
+        "cryptid",
+        "japanese",
+        "gear",
+        "straw"
+      ]
+    },
+    {
+      "id": "yeti-yeti",
+      "title": {
+        "zh": "耶提雪人",
+        "en": "Yeti"
+      },
+      "description": {
+        "zh": "毛茸茸的白色雪人，冰蓝圆脸，憨萌友好。",
+        "en": "A fluffy white yeti with a round ice-blue face, cute and friendly."
+      },
+      "animation": "float",
+      "category": "asia",
+      "tags": [
+        "yeti",
+        "himalaya",
+        "snowfolk",
+        "yeti",
+        "yeti"
+      ]
+    },
+    {
+      "id": "yeti-yeti-footprint",
+      "title": {
+        "zh": "雪人足印",
+        "en": "Yeti Footprint"
+      },
+      "description": {
+        "zh": "雪地上冰蓝色的大脚印，四个圆脚趾。",
+        "en": "A big ice-blue footprint in the snow with four round toes."
+      },
+      "animation": "pop",
+      "category": "asia",
+      "tags": [
+        "yeti",
+        "himalaya",
+        "snowfolk",
+        "yeti",
+        "yeti"
+      ]
+    },
+    {
+      "id": "yeti-yeti-scalp-relic",
+      "title": {
+        "zh": "雪人毛发圣匣",
+        "en": "Yeti Fur Relic"
+      },
+      "description": {
+        "zh": "木匣中一缕柔光白毛，温和而庄重。",
+        "en": "A gentle glowing lock of white fur resting in a wooden box, kept respectfully."
+      },
+      "animation": "pulse",
+      "category": "asia",
+      "tags": [
+        "yeti",
+        "himalaya",
+        "snowfolk",
+        "yeti",
+        "yeti"
+      ]
+    },
+    {
+      "id": "yeti-crevasse",
+      "title": {
+        "zh": "冰隙",
+        "en": "Crevasse"
+      },
+      "description": {
+        "zh": "裂开的冰川冰隙，冰面闪光。",
+        "en": "A crack splitting the glacier ice, with a sparkle on the ice."
+      },
+      "animation": "pulse",
+      "category": "asia",
+      "tags": [
+        "yeti",
+        "himalaya",
+        "snowfolk",
+        "peaks",
+        "crevasse"
+      ]
+    },
+    {
+      "id": "yeti-ice-axe",
+      "title": {
+        "zh": "冰镐",
+        "en": "Ice Axe"
+      },
+      "description": {
+        "zh": "木柄钢头的登山冰镐，系红色腕带。",
+        "en": "A wooden-shafted mountaineering ice axe with a red wrist loop."
+      },
+      "animation": "sway",
+      "category": "asia",
+      "tags": [
+        "yeti",
+        "himalaya",
+        "snowfolk",
+        "gear",
+        "ice"
+      ]
+    },
+    {
+      "id": "mokele-mokele-head",
+      "title": {
+        "zh": "莫克勒姆边贝头像",
+        "en": "Mokele-mbembe Head"
+      },
+      "description": {
+        "zh": "长脖子的友善河兽侧脸，背上一排金色小棘。",
+        "en": "Friendly side view of the long-necked river beast with small golden back spikes."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "mokele-mbembe",
+        "congo",
+        "river",
+        "beast",
+        "mokele"
+      ]
+    },
+    {
+      "id": "mokele-dugout-canoe",
+      "title": {
+        "zh": "独木舟",
+        "en": "Dugout Canoe"
+      },
+      "description": {
+        "zh": "漂在河面上的陶褐色木舟。",
+        "en": "A clay-brown dugout canoe floating on the river."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "mokele-mbembe",
+        "congo",
+        "river",
+        "river",
+        "dugout"
+      ]
+    },
+    {
+      "id": "mokele-paddle",
+      "title": {
+        "zh": "船桨",
+        "en": "Paddle"
+      },
+      "description": {
+        "zh": "一支长柄木桨，桨叶圆润。",
+        "en": "A long wooden paddle with a rounded blade."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "mokele-mbembe",
+        "congo",
+        "river",
+        "river",
+        "paddle"
+      ]
+    },
+    {
+      "id": "mokele-fishing-net",
+      "title": {
+        "zh": "渔网",
+        "en": "Fishing Net"
+      },
+      "description": {
+        "zh": "木柄抄网里兜着一条小鱼。",
+        "en": "A wooden-handled net holding a small fish."
+      },
+      "animation": "sway",
+      "category": "africa",
+      "tags": [
+        "mokele-mbembe",
+        "congo",
+        "river",
+        "river",
+        "fishing"
+      ]
+    },
+    {
+      "id": "mokele-explorer-hat",
+      "title": {
+        "zh": "探险帽",
+        "en": "Explorer Hat"
+      },
+      "description": {
+        "zh": "系绿色帽带的米色探险遮阳帽。",
+        "en": "A beige pith helmet with a green band."
+      },
+      "animation": "pop",
+      "category": "africa",
+      "tags": [
+        "mokele-mbembe",
+        "congo",
+        "river",
+        "explorer",
+        "explorer"
+      ]
+    },
+    {
+      "id": "drop-drop-bear",
+      "title": {
+        "zh": "坠落熊",
+        "en": "Drop Bear"
+      },
+      "description": {
+        "zh": "长着小獠牙的凶萌考拉张开四爪，从树枝上扑落而下。",
+        "en": "A fierce-cute fanged koala dropping from a branch, all four paws spread wide."
+      },
+      "animation": "float",
+      "category": "oceania",
+      "tags": [
+        "drop-bear",
+        "outback",
+        "australia",
+        "prank",
+        "bear",
+        "drop-bear"
+      ]
+    },
+    {
+      "id": "drop-eucalyptus",
+      "title": {
+        "zh": "桉树",
+        "en": "Eucalyptus Tree"
+      },
+      "description": {
+        "zh": "坠落熊埋伏的桉树，枝叶间露出一对闪光的眼睛。",
+        "en": "The eucalyptus where drop bears lurk, a pair of glinting eyes peeking from the leaves."
+      },
+      "animation": "sway",
+      "category": "oceania",
+      "tags": [
+        "drop-bear",
+        "outback",
+        "australia",
+        "prank",
+        "bear",
+        "eucalyptus"
+      ]
+    },
+    {
+      "id": "drop-fangs",
+      "title": {
+        "zh": "小獠牙",
+        "en": "Tiny Fangs"
+      },
+      "description": {
+        "zh": "夸张的考拉大嘴，两颗尖尖的小獠牙闪着星光。",
+        "en": "An exaggerated koala grin with two pointy little fangs flashing a star glint."
+      },
+      "animation": "pulse",
+      "category": "oceania",
+      "tags": [
+        "drop-bear",
+        "outback",
+        "australia",
+        "prank",
+        "bear",
+        "fangs"
+      ]
+    },
+    {
+      "id": "drop-bush-hat",
+      "title": {
+        "zh": "软木塞帽",
+        "en": "Cork Hat"
+      },
+      "description": {
+        "zh": "宽檐丛林帽沿挂着一圈晃荡的软木塞，赶苍蝇也\"防熊\"。",
+        "en": "A wide-brim bush hat with dangling corks swinging from the brim, for flies and \"bears\"."
+      },
+      "animation": "sway",
+      "category": "oceania",
+      "tags": [
+        "drop-bear",
+        "outback",
+        "australia",
+        "prank",
+        "remedy",
+        "bush-hat"
+      ]
+    },
+    {
+      "id": "drop-helmet",
+      "title": {
+        "zh": "防熊头盔",
+        "en": "Anti-Bear Helmet"
+      },
+      "description": {
+        "zh": "夸张的护具头盔顶着尖刺，盔面闪过一道反光。",
+        "en": "An over-the-top protective helmet bristling with spikes, a glint flashing across it."
+      },
+      "animation": "pulse",
+      "category": "oceania",
+      "tags": [
+        "drop-bear",
+        "outback",
+        "australia",
+        "prank",
+        "remedy",
+        "helmet"
+      ]
+    },
+    {
+      "id": "bunyip-swamp",
+      "title": {
+        "zh": "沼泽",
+        "en": "Swamp"
+      },
+      "description": {
+        "zh": "月夜芦苇间静静漂浮的睡莲。",
+        "en": "A water lily floating among reeds in the night swamp."
+      },
+      "animation": "float",
+      "category": "oceania",
+      "tags": [
+        "bunyip",
+        "billabong",
+        "australia",
+        "night",
+        "swamp"
+      ]
+    },
+    {
+      "id": "bunyip-billabong",
+      "title": {
+        "zh": "水潭",
+        "en": "Billabong"
+      },
+      "description": {
+        "zh": "桉树倒映的弯月形水潭，水面泛起涟漪。",
+        "en": "A crescent waterhole under a gum tree with gentle ripples."
+      },
+      "animation": "pulse",
+      "category": "oceania",
+      "tags": [
+        "bunyip",
+        "billabong",
+        "australia",
+        "night",
+        "billabong"
+      ]
+    },
+    {
+      "id": "bunyip-bunyip",
+      "title": {
+        "zh": "本耶普",
+        "en": "Bunyip"
+      },
+      "description": {
+        "zh": "圆滚滚、毛茸茸的可爱水潭精灵本耶普。",
+        "en": "A round, fluffy and friendly bunyip water spirit."
+      },
+      "animation": "float",
+      "category": "oceania",
+      "tags": [
+        "bunyip",
+        "billabong",
+        "australia",
+        "creature",
+        "bunyip"
+      ]
+    },
+    {
+      "id": "bunyip-flipper",
+      "title": {
+        "zh": "鳍足",
+        "en": "Flipper"
+      },
+      "description": {
+        "zh": "本耶普带蹼的青绿色鳍足。",
+        "en": "The bunyip's webbed teal flipper."
+      },
+      "animation": "sway",
+      "category": "oceania",
+      "tags": [
+        "bunyip",
+        "billabong",
+        "australia",
+        "creature",
+        "flipper"
+      ]
+    },
+    {
+      "id": "bunyip-reed",
+      "title": {
+        "zh": "香蒲",
+        "en": "Bulrush Reeds"
+      },
+      "description": {
+        "zh": "水边摇曳的三根香蒲。",
+        "en": "Three bulrushes swaying at the water's edge."
+      },
+      "animation": "sway",
+      "category": "oceania",
+      "tags": [
+        "bunyip",
+        "billabong",
+        "australia",
+        "bush",
+        "reed"
+      ]
+    }
+  ]
+}

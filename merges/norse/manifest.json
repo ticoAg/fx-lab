@@ -1,0 +1,642 @@
+{
+  "id": "norse",
+  "title": {
+    "zh": "北欧神话",
+    "en": "Norse Myth"
+  },
+  "description": {
+    "zh": "北欧诸神与四则传说（新娘锤、鲑鱼网、世界树松鼠、法夫纳指环）收在一套里，共 30 件。",
+    "en": "The Norse gods plus the bride-hammer, the salmon net, Ratatoskr, and Sigurd's ring, 30 icons in one kit."
+  },
+  "cover": "aesir-odin",
+  "categories": {
+    "aesir": {
+      "zh": "阿萨诸神",
+      "en": "The Aesir"
+    },
+    "thor": {
+      "zh": "托尔夺锤",
+      "en": "Thor's Hammer"
+    },
+    "loki": {
+      "zh": "洛基与网",
+      "en": "Loki's Net"
+    },
+    "ratatoskr": {
+      "zh": "拉塔托斯克",
+      "en": "Ratatoskr"
+    },
+    "sigurd": {
+      "zh": "西古尔德",
+      "en": "Sigurd"
+    }
+  },
+  "icons": [
+    {
+      "id": "aesir-odin",
+      "title": {
+        "zh": "奥丁",
+        "en": "Odin"
+      },
+      "description": {
+        "zh": "独眼的众神之父奥丁：宽檐旅人帽、眼罩与一只金光独眼、层叠长须、深色斗篷配瓦尔克努特（三角结）胸针、渡鸦羽领，肩后斜倚刻有如尼文的长枪。",
+        "en": "Odin, the one-eyed Allfather: wide-brimmed wanderer hat, eye patch and single gold-lit eye, long layered beard, dark cloak with valknut brooch, raven-feather collar and a rune-etched spear behind his shoulder."
+      },
+      "animation": "float",
+      "category": "aesir",
+      "tags": [
+        "norse",
+        "viking",
+        "allfather",
+        "valknut",
+        "spear"
+      ]
+    },
+    {
+      "id": "aesir-freya",
+      "title": {
+        "zh": "芙蕾雅",
+        "en": "Freya"
+      },
+      "description": {
+        "zh": "爱与塞兹魔法女神芙蕾雅：飘逸金色长发、细碎花冠、金珠项链布里希嘉曼、层叠鹰羽披风与柔和琥珀光晕。",
+        "en": "Freya, goddess of love and seidr: long flowing golden hair, a crown of tiny flowers, the gold-bead Brisingamen necklace, a falcon-feather cloak with layered plumes and a soft amber glow."
+      },
+      "animation": "float",
+      "category": "aesir",
+      "tags": [
+        "norse",
+        "viking",
+        "love",
+        "seidr",
+        "brisingamen"
+      ]
+    },
+    {
+      "id": "aesir-loki",
+      "title": {
+        "zh": "洛基",
+        "en": "Loki"
+      },
+      "description": {
+        "zh": "变形诡计之神洛基：火焰般后掠的发型、细长斜眼与狡黠歪笑，身后燃着火舌光环，一条带鳞青蛇盘绕双肩。",
+        "en": "Loki, the shape-shifting trickster: swept flame-like hair, narrow slanted eyes and a sly crooked smile, a halo of licking fire behind him and a scaled green serpent coiled across his shoulders."
+      },
+      "animation": "sway",
+      "category": "aesir",
+      "tags": [
+        "norse",
+        "viking",
+        "trickster",
+        "fire",
+        "serpent"
+      ]
+    },
+    {
+      "id": "aesir-gungnir",
+      "title": {
+        "zh": "永恒之枪",
+        "en": "Gungnir"
+      },
+      "description": {
+        "zh": "奥丁的永恒之枪冈格尼尔：螺旋皮缠的白蜡长杆、刻有如尼文与中脊的叶形枪刃、带交织纹的金色翼形枪銎，以及鸦羽流苏。",
+        "en": "Gungnir, Odin's never-missing spear: a long ash shaft with spiral leather wrapping, a leaf-shaped blade engraved with runes and a central fuller, a gold winged socket with interlace, and a raven-feather tassel."
+      },
+      "animation": "sway",
+      "category": "aesir",
+      "tags": [
+        "norse",
+        "viking",
+        "spear",
+        "odin",
+        "relic"
+      ]
+    },
+    {
+      "id": "aesir-norn-spindle",
+      "title": {
+        "zh": "诺恩纺锤",
+        "en": "Norn Spindle"
+      },
+      "description": {
+        "zh": "诺恩的纺锤：骨色纺杆、旧金纺轮，冰青丝线从顶端绕下。命运之线的器物，不是三位女神的人像。",
+        "en": "The Norns' spindle: a bone shaft, an old-gold whorl, and an ice-blue thread. The tool of fate, not a portrait of the three women."
+      },
+      "animation": "sway",
+      "category": "aesir",
+      "tags": [
+        "norse",
+        "viking",
+        "norns",
+        "spindle",
+        "fate"
+      ]
+    },
+    {
+      "id": "aesir-skadi-bow",
+      "title": {
+        "zh": "斯卡蒂猎弓",
+        "en": "Skadi's Bow"
+      },
+      "description": {
+        "zh": "斯卡蒂的猎弓：焦木反曲弓竖着，弦上搭一支骨色箭，弓梢有一小簇冰霜。这是弓，不是长枪。",
+        "en": "Skadi's hunting bow: a charred recurve stood upright, a bone-colored arrow on the string, and a small frost tuft at the tip. A bow, not a spear."
+      },
+      "animation": "sway",
+      "category": "aesir",
+      "tags": [
+        "norse",
+        "viking",
+        "bow",
+        "skadi",
+        "hunt"
+      ]
+    },
+    {
+      "id": "thor-mjolnir",
+      "title": {
+        "zh": "雷神之锤",
+        "en": "Mjolnir"
+      },
+      "description": {
+        "zh": "刻满符文的短柄战锤。",
+        "en": "A short-handled war hammer etched with golden runes."
+      },
+      "animation": "pulse",
+      "category": "thor",
+      "tags": [
+        "thor",
+        "norse",
+        "myth",
+        "thrymskvida",
+        "heroes",
+        "mjolnir"
+      ]
+    },
+    {
+      "id": "thor-thor",
+      "title": {
+        "zh": "雷神托尔",
+        "en": "Thor"
+      },
+      "description": {
+        "zh": "红胡子、戴翼盔的雷神半身像。",
+        "en": "Bust of red-bearded Thor in a winged helmet."
+      },
+      "animation": "sway",
+      "category": "thor",
+      "tags": [
+        "thor",
+        "norse",
+        "myth",
+        "thrymskvida",
+        "heroes",
+        "thor"
+      ]
+    },
+    {
+      "id": "thor-goat-chariot",
+      "title": {
+        "zh": "山羊战车",
+        "en": "Goat Chariot"
+      },
+      "description": {
+        "zh": "两只山羊拉着的木战车，车轮转动。",
+        "en": "A wooden chariot pulled by two goats, wheel turning."
+      },
+      "animation": "spin",
+      "category": "thor",
+      "tags": [
+        "thor",
+        "norse",
+        "myth",
+        "thrymskvida",
+        "heroes",
+        "chariot"
+      ]
+    },
+    {
+      "id": "thor-bridal-veil",
+      "title": {
+        "zh": "新娘面纱",
+        "en": "Bridal Veil"
+      },
+      "description": {
+        "zh": "缀着花冠的白色新娘头纱。",
+        "en": "A white bridal veil topped with a flower crown."
+      },
+      "animation": "sway",
+      "category": "thor",
+      "tags": [
+        "thor",
+        "norse",
+        "myth",
+        "thrymskvida",
+        "wedding",
+        "veil"
+      ]
+    },
+    {
+      "id": "thor-brisingamen",
+      "title": {
+        "zh": "布里希嘉曼项链",
+        "en": "Brisingamen"
+      },
+      "description": {
+        "zh": "镶红蓝宝石与金坠的项链。",
+        "en": "A necklace of red and blue gems with a gold pendant."
+      },
+      "animation": "sway",
+      "category": "thor",
+      "tags": [
+        "thor",
+        "norse",
+        "myth",
+        "thrymskvida",
+        "wedding",
+        "brisingamen"
+      ]
+    },
+    {
+      "id": "thor-wedding-feast",
+      "title": {
+        "zh": "婚宴长桌",
+        "en": "Wedding Feast"
+      },
+      "description": {
+        "zh": "摆着盘子与蜡烛的长桌。",
+        "en": "A long feast table with plates and a lit candle."
+      },
+      "animation": "sway",
+      "category": "thor",
+      "tags": [
+        "thor",
+        "norse",
+        "myth",
+        "thrymskvida",
+        "wedding",
+        "feast"
+      ]
+    },
+    {
+      "id": "loki-loki-grin",
+      "title": {
+        "zh": "洛基坏笑",
+        "en": "Loki grin"
+      },
+      "description": {
+        "zh": "红发诡计之神身穿绿衣、头戴金色角翼，坏笑眨眼。",
+        "en": "The red-haired trickster god grins and winks in a green tunic with gold horn-like helm wings."
+      },
+      "animation": "pop",
+      "category": "loki",
+      "tags": [
+        "loki",
+        "norse",
+        "loki",
+        "北欧"
+      ]
+    },
+    {
+      "id": "loki-salmon-form",
+      "title": {
+        "zh": "变身鲑鱼",
+        "en": "Salmon form"
+      },
+      "description": {
+        "zh": "洛基变成的橙粉色鲑鱼浮在蓝色水波与水滴之上。",
+        "en": "Loki as a pink-orange salmon floating above blue ripples and water drops."
+      },
+      "animation": "float",
+      "category": "loki",
+      "tags": [
+        "salmon",
+        "norse",
+        "loki",
+        "北欧"
+      ]
+    },
+    {
+      "id": "loki-franang-falls",
+      "title": {
+        "zh": "弗拉南瀑布",
+        "en": "Franang falls"
+      },
+      "description": {
+        "zh": "浅蓝瀑布从两侧灰岩间倾泻进蓝色水潭，洛基藏身于此。",
+        "en": "A pale blue waterfall pours between grey rocks into a blue pool where Loki hides."
+      },
+      "animation": "float",
+      "category": "loki",
+      "tags": [
+        "franang",
+        "norse",
+        "loki",
+        "北欧"
+      ]
+    },
+    {
+      "id": "loki-first-net",
+      "title": {
+        "zh": "第一张渔网",
+        "en": "The first net"
+      },
+      "description": {
+        "zh": "洛基亲手编织的第一张渔网挂在木杆上，底缘系着金色坠结。",
+        "en": "The first fishing net, woven by Loki, hanging from a wooden pole with gold knot weights."
+      },
+      "animation": "sway",
+      "category": "loki",
+      "tags": [
+        "first",
+        "norse",
+        "loki",
+        "北欧"
+      ]
+    },
+    {
+      "id": "loki-net-ashes",
+      "title": {
+        "zh": "渔网灰烬",
+        "en": "Net ashes"
+      },
+      "description": {
+        "zh": "交叉木柴上的灰烬仍留着网格印，余烬闪烁渐熄。",
+        "en": "Grey ashes on crossed logs still show the net grid, with glowing embers fading."
+      },
+      "animation": "pulse",
+      "category": "loki",
+      "tags": [
+        "net",
+        "norse",
+        "loki",
+        "北欧"
+      ]
+    },
+    {
+      "id": "loki-hearth-fire",
+      "title": {
+        "zh": "炉火",
+        "en": "Hearth fire"
+      },
+      "description": {
+        "zh": "石圈围着交叉木柴，仓促点起的橙金火焰跳动。",
+        "en": "A hurried fire of crossed logs ringed by stones, its orange-gold flame flickering."
+      },
+      "animation": "pulse",
+      "category": "loki",
+      "tags": [
+        "hearth",
+        "norse",
+        "loki",
+        "北欧"
+      ]
+    },
+    {
+      "id": "rata-ratatoskr",
+      "title": {
+        "zh": "拉塔托斯克",
+        "en": "Ratatoskr"
+      },
+      "description": {
+        "zh": "蓬松大尾巴的橙色传话松鼠，一脸坏笑。",
+        "en": "A fluffy-tailed orange gossip squirrel with a cheeky look."
+      },
+      "animation": "pop",
+      "category": "ratatoskr",
+      "tags": [
+        "ratatoskr",
+        "squirrel",
+        "norse",
+        "world-tree",
+        "cast",
+        "ratatoskr"
+      ]
+    },
+    {
+      "id": "rata-eagle-crown",
+      "title": {
+        "zh": "树顶巨鹰",
+        "en": "Crown Eagle"
+      },
+      "description": {
+        "zh": "站在树枝上展翅、皱眉生气的金色鹰。",
+        "en": "A golden eagle on a branch, wings raised and brows furrowed."
+      },
+      "animation": "sway",
+      "category": "ratatoskr",
+      "tags": [
+        "ratatoskr",
+        "squirrel",
+        "norse",
+        "world-tree",
+        "cast",
+        "eagle"
+      ]
+    },
+    {
+      "id": "rata-nidhogg",
+      "title": {
+        "zh": "尼德霍格",
+        "en": "Nidhogg"
+      },
+      "description": {
+        "zh": "盘在树根下的绿色小龙蛇，龇着小牙。",
+        "en": "A green serpent-dragon coiled under the roots, baring tiny fangs."
+      },
+      "animation": "sway",
+      "category": "ratatoskr",
+      "tags": [
+        "ratatoskr",
+        "squirrel",
+        "norse",
+        "world-tree",
+        "cast",
+        "nidhogg"
+      ]
+    },
+    {
+      "id": "rata-yggdrasil",
+      "title": {
+        "zh": "世界树",
+        "en": "Yggdrasil"
+      },
+      "description": {
+        "zh": "树冠浓密、根系舒展的魔法大树。",
+        "en": "A magical great tree with a lush canopy and spreading roots."
+      },
+      "animation": "sway",
+      "category": "ratatoskr",
+      "tags": [
+        "ratatoskr",
+        "squirrel",
+        "norse",
+        "world-tree",
+        "tree",
+        "yggdrasil"
+      ]
+    },
+    {
+      "id": "rata-root-well",
+      "title": {
+        "zh": "树根之泉",
+        "en": "Root Well"
+      },
+      "description": {
+        "zh": "树根环绕的一汪蓝色泉水与涟漪。",
+        "en": "A blue spring with a ripple, circled by tree roots."
+      },
+      "animation": "pulse",
+      "category": "ratatoskr",
+      "tags": [
+        "ratatoskr",
+        "squirrel",
+        "norse",
+        "world-tree",
+        "tree",
+        "root"
+      ]
+    },
+    {
+      "id": "rata-trunk-climb",
+      "title": {
+        "zh": "树干攀爬",
+        "en": "Trunk Climb"
+      },
+      "description": {
+        "zh": "沿着粗树干上下奔跑的小松鼠。",
+        "en": "A tiny squirrel racing up and down a thick trunk."
+      },
+      "animation": "float",
+      "category": "ratatoskr",
+      "tags": [
+        "ratatoskr",
+        "squirrel",
+        "norse",
+        "world-tree",
+        "tree",
+        "trunk"
+      ]
+    },
+    {
+      "id": "sigurd-sigurd",
+      "title": {
+        "zh": "齐格鲁德",
+        "en": "Sigurd"
+      },
+      "description": {
+        "zh": "披青色斗篷、手握长剑的金发屠龙英雄。",
+        "en": "Blond dragon-slaying hero in a teal cloak holding a long sword."
+      },
+      "animation": "sway",
+      "category": "sigurd",
+      "tags": [
+        "sigurd",
+        "volsunga",
+        "norse",
+        "hero",
+        "sigurd"
+      ]
+    },
+    {
+      "id": "sigurd-gram-sword",
+      "title": {
+        "zh": "宝剑格拉姆",
+        "en": "Gram"
+      },
+      "description": {
+        "zh": "重铸的宝剑，金色护手与青铜握柄。",
+        "en": "The reforged sword with gold crossguard and bronze grip."
+      },
+      "animation": "sway",
+      "category": "sigurd",
+      "tags": [
+        "sigurd",
+        "volsunga",
+        "norse",
+        "hero",
+        "gram-sword"
+      ]
+    },
+    {
+      "id": "sigurd-grani",
+      "title": {
+        "zh": "骏马格拉尼",
+        "en": "Grani"
+      },
+      "description": {
+        "zh": "灰色骏马，黑色鬃毛与尾巴。",
+        "en": "A grey steed with black mane and tail."
+      },
+      "animation": "sway",
+      "category": "sigurd",
+      "tags": [
+        "sigurd",
+        "volsunga",
+        "norse",
+        "hero",
+        "grani"
+      ]
+    },
+    {
+      "id": "sigurd-shield",
+      "title": {
+        "zh": "圆盾",
+        "en": "Round Shield"
+      },
+      "description": {
+        "zh": "青铜色木圆盾，金色盾钉。",
+        "en": "A bronze-toned round shield with a gold boss."
+      },
+      "animation": "sway",
+      "category": "sigurd",
+      "tags": [
+        "sigurd",
+        "volsunga",
+        "norse",
+        "hero",
+        "shield"
+      ]
+    },
+    {
+      "id": "sigurd-helmet",
+      "title": {
+        "zh": "头盔",
+        "en": "Helmet"
+      },
+      "description": {
+        "zh": "钢制圆顶头盔，金色护箍与护鼻。",
+        "en": "A steel dome helmet with gold band and nose guard."
+      },
+      "animation": "pulse",
+      "category": "sigurd",
+      "tags": [
+        "sigurd",
+        "volsunga",
+        "norse",
+        "hero",
+        "helmet"
+      ]
+    },
+    {
+      "id": "sigurd-andvaranaut",
+      "title": {
+        "zh": "安德瓦拉诺特",
+        "en": "Andvaranaut"
+      },
+      "description": {
+        "zh": "镶红宝石的金指环，刻有符文。",
+        "en": "A gold ring set with a red gem and carved runes."
+      },
+      "animation": "pulse",
+      "category": "sigurd",
+      "tags": [
+        "sigurd",
+        "volsunga",
+        "norse",
+        "dwarf-curse",
+        "andvaranaut"
+      ]
+    }
+  ]
+}
