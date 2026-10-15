@@ -5,8 +5,8 @@
     "en": "Pastoral"
   },
   "description": {
-    "zh": "62 个田园图标，分为花园菜圃、农场劳作、乡野风光、农场动物与丰收餐桌五类：草帽、风车、谷仓、奶牛、绵羊、山羊、马、蜂巢、玉米、手推车、彩虹、南瓜、苹果派等。透明底，外轮廓随页面变色（currentColor），麦金、叶绿、陶土红与奶油色平涂，加上明暗、高光和草编、木纹、砖瓦等质感。每个图标自带 pastoral-<id>- 前缀的轻柔 CSS 动画（漂浮 / 摇摆 / 旋转 / 呼吸 / 弹跳），可由宿主暂停，并尊重减少动态效果设置。80×80 画布，单文件自包含，可直接内联。",
-    "en": "62 countryside icons in five groups (garden, farm work, countryside, farm animals and the harvest table), from straw hat, windmill and barn to cow, sheep, goat, horse, beehive, corn, wheelbarrow, rainbow, pumpkin and apple pie. Transparent ground with outlines that follow the page color (currentColor), flat wheat gold, leaf green, terracotta and cream fills with shading, highlights and textures such as weave, wood grain and tiles. Each icon ships a gentle pastoral-<id>- prefixed CSS animation (float / sway / spin / pulse / pop) that the host can pause and that honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
+    "zh": "87 个田园图标，分为花园菜圃、农场劳作、乡野风光、农场动物与丰收餐桌五类：草帽、风车、谷仓、奶牛、绵羊、山羊、马、小猪仔、蜜蜂、蜂巢、玉米、手推车、彩虹、乡村邮箱、南瓜、苹果派等。透明底，外轮廓随页面变色（currentColor），麦金、叶绿、陶土红与奶油色平涂，加上明暗、高光和草编、木纹、砖瓦等质感。每个图标自带 pastoral-<id>- 前缀的轻柔 CSS 动画（漂浮 / 摇摆 / 旋转 / 呼吸 / 弹跳），可由宿主暂停，并尊重减少动态效果设置。80×80 画布，单文件自包含，可直接内联。",
+    "en": "87 countryside icons in five groups (garden, farm work, countryside, farm animals and the harvest table), from straw hat, windmill and barn to cow, sheep, goat, horse, piglets, honeybee, beehive, corn, wheelbarrow, rainbow, mailbox, pumpkin and apple pie. Transparent ground with outlines that follow the page color (currentColor), flat wheat gold, leaf green, terracotta and cream fills with shading, highlights and textures such as weave, wood grain and tiles. Each icon ships a gentle pastoral-<id>- prefixed CSS animation (float / sway / spin / pulse / pop) that the host can pause and that honors prefers-reduced-motion. 80×80 viewBox, self-contained single files ready to inline."
   },
   "cover": "windmill",
   "categories": {
@@ -1288,6 +1288,506 @@
         "vineyard",
         "葡萄",
         "秋收"
+      ]
+    },
+    {
+      "id": "calf",
+      "title": {
+        "zh": "小牛犊",
+        "en": "Calf"
+      },
+      "description": {
+        "zh": "白底褐斑的小牛犊，粉色口鼻、颈上浅蓝蝴蝶结，头部轻轻摆动。用于牧场、春天新生与可爱动物。",
+        "en": "White calf with brown patches, a pink muzzle and a pale blue bow at its neck, its head gently swaying. For pastures, spring births and cute animals."
+      },
+      "animation": "sway",
+      "category": "animals",
+      "tags": [
+        "calf",
+        "cow",
+        "baby animal",
+        "小牛",
+        "牛犊"
+      ]
+    },
+    {
+      "id": "piglet",
+      "title": {
+        "zh": "小猪仔",
+        "en": "Piglets"
+      },
+      "description": {
+        "zh": "三只粉色小猪仔挤在泥坑边，中间那只轻轻一跳。用于农场、童趣与小动物。",
+        "en": "Three pink piglets huddled at a mud puddle, the middle one giving a hop. For farms, playful themes and baby animals."
+      },
+      "animation": "pop",
+      "category": "animals",
+      "tags": [
+        "piglet",
+        "pig",
+        "mud",
+        "小猪",
+        "猪仔"
+      ]
+    },
+    {
+      "id": "barn-cat",
+      "title": {
+        "zh": "谷仓猫",
+        "en": "Barn cat"
+      },
+      "description": {
+        "zh": "橘色虎斑谷仓猫端坐着，奶油色胸口和爪子，尾巴轻轻摆动。用于农家、看仓捕鼠与宠物。",
+        "en": "Orange tabby barn cat sitting upright with a cream chest and paws, its tail gently swishing. For farmhouses, mousers and pets."
+      },
+      "animation": "sway",
+      "category": "animals",
+      "tags": [
+        "cat",
+        "tabby",
+        "barn",
+        "猫",
+        "橘猫"
+      ]
+    },
+    {
+      "id": "honeybee",
+      "title": {
+        "zh": "小蜜蜂",
+        "en": "Honeybee"
+      },
+      "description": {
+        "zh": "黄黑条纹的小蜜蜂，透明翅膀和触角，身后一道虚线飞行轨迹，下方一朵小白花，蜜蜂轻轻漂浮。用于授粉、花园与春天。",
+        "en": "Striped yellow-and-black honeybee with clear wings and antennae, a dotted flight trail behind it and a small white flower below, gently hovering. For pollination, gardens and spring."
+      },
+      "animation": "float",
+      "category": "animals",
+      "tags": [
+        "bee",
+        "honeybee",
+        "pollination",
+        "蜜蜂",
+        "授粉"
+      ]
+    },
+    {
+      "id": "turkey",
+      "title": {
+        "zh": "火鸡",
+        "en": "Turkey"
+      },
+      "description": {
+        "zh": "开屏的火鸡，陶土、金黄与棕色相间的扇形尾羽，红色肉垂，尾羽轻轻呼吸。用于秋天、感恩节与农场家禽。",
+        "en": "Turkey with a fanned tail of terracotta, gold and brown feathers and a red wattle, the fan gently breathing. For autumn, Thanksgiving and farm poultry."
+      },
+      "animation": "pulse",
+      "category": "animals",
+      "tags": [
+        "turkey",
+        "poultry",
+        "autumn",
+        "火鸡",
+        "家禽"
+      ]
+    },
+    {
+      "id": "field-mouse",
+      "title": {
+        "zh": "田鼠",
+        "en": "Field mouse"
+      },
+      "description": {
+        "zh": "灰色小田鼠抱着一粒麦子，圆耳朵粉内衬，旁边一株麦穗，轻轻一跳。用于麦田、秋收与小动物。",
+        "en": "Little grey field mouse holding a grain with round pink-lined ears next to a stalk of wheat, giving a hop. For wheat fields, harvest and small creatures."
+      },
+      "animation": "pop",
+      "category": "animals",
+      "tags": [
+        "mouse",
+        "field mouse",
+        "wheat",
+        "田鼠",
+        "老鼠"
+      ]
+    },
+    {
+      "id": "lavender",
+      "title": {
+        "zh": "薰衣草",
+        "en": "Lavender"
+      },
+      "description": {
+        "zh": "陶土盆里种着几枝紫色薰衣草，花穗随风轻摆。用于香草园、夏天与芳香植物。",
+        "en": "Several sprigs of purple lavender in a terracotta pot, the spikes swaying in the breeze. For herb gardens, summer and fragrant plants."
+      },
+      "animation": "sway",
+      "category": "garden",
+      "tags": [
+        "lavender",
+        "herb",
+        "flower",
+        "薰衣草",
+        "香草"
+      ]
+    },
+    {
+      "id": "tulip",
+      "title": {
+        "zh": "郁金香",
+        "en": "Tulips"
+      },
+      "description": {
+        "zh": "红、粉、黄三朵郁金香和两片长叶，轻轻摇摆。用于春天花园、花束与节日。",
+        "en": "Three tulips in red, pink and yellow with two long leaves, gently swaying. For spring gardens, bouquets and celebrations."
+      },
+      "animation": "sway",
+      "category": "garden",
+      "tags": [
+        "tulip",
+        "flower",
+        "spring",
+        "郁金香",
+        "春天"
+      ]
+    },
+    {
+      "id": "radish",
+      "title": {
+        "zh": "小红萝卜",
+        "en": "Radish"
+      },
+      "description": {
+        "zh": "圆润的玫红小萝卜，白色尖底和细根，顶着三片绿叶，轻轻摇摆。用于菜园、蔬菜与沙拉。",
+        "en": "Round rose-red radish with a white tip and thin root under three green leaves, gently swaying. For vegetable gardens, produce and salads."
+      },
+      "animation": "sway",
+      "category": "garden",
+      "tags": [
+        "radish",
+        "vegetable",
+        "root",
+        "萝卜",
+        "蔬菜"
+      ]
+    },
+    {
+      "id": "potato",
+      "title": {
+        "zh": "土豆",
+        "en": "Potatoes"
+      },
+      "description": {
+        "zh": "麻布袋装满土豆，袋口麻绳扎紧，地上一颗带芽眼的土豆轻轻一跳。用于秋收、根茎菜与农家储藏。",
+        "en": "Burlap sack of potatoes tied with twine, one loose potato with eyes on the ground giving a hop. For harvest, root vegetables and farm storage."
+      },
+      "animation": "pop",
+      "category": "garden",
+      "tags": [
+        "potato",
+        "sack",
+        "vegetable",
+        "土豆",
+        "马铃薯"
+      ]
+    },
+    {
+      "id": "onion",
+      "title": {
+        "zh": "洋葱",
+        "en": "Onion"
+      },
+      "description": {
+        "zh": "褐色外皮的洋葱，顶上两根干叶、底下几缕须根，旁边半个切开的洋葱露出圈层，整颗轻轻摇摆。用于菜园、厨房与烹饪。",
+        "en": "Brown-skinned onion with two dry tops and wispy roots beside a cut half showing its rings, the whole onion gently swaying. For gardens, kitchens and cooking."
+      },
+      "animation": "sway",
+      "category": "garden",
+      "tags": [
+        "onion",
+        "vegetable",
+        "kitchen",
+        "洋葱",
+        "蔬菜"
+      ]
+    },
+    {
+      "id": "ladybug-leaf",
+      "title": {
+        "zh": "叶上瓢虫",
+        "en": "Ladybug on leaf"
+      },
+      "description": {
+        "zh": "绿叶上停着一只红色七星瓢虫，叶尖挂着一颗露珠，瓢虫轻轻漂浮。用于花园、益虫与夏日。",
+        "en": "Red spotted ladybug resting on a green leaf with a dewdrop at the tip, the ladybug gently floating. For gardens, helpful insects and summer."
+      },
+      "animation": "float",
+      "category": "garden",
+      "tags": [
+        "ladybug",
+        "leaf",
+        "insect",
+        "瓢虫",
+        "益虫"
+      ]
+    },
+    {
+      "id": "sickle",
+      "title": {
+        "zh": "镰刀",
+        "en": "Sickle"
+      },
+      "description": {
+        "zh": "木柄弯月镰刀，旁边一束用红绳扎好的麦穗，镰刀轻轻摆动。用于割麦、秋收与农具。",
+        "en": "Crescent sickle with a wooden handle beside a bundle of wheat tied with red string, the sickle gently swinging. For reaping, autumn harvest and farm tools."
+      },
+      "animation": "sway",
+      "category": "farm",
+      "tags": [
+        "sickle",
+        "harvest",
+        "farm tool",
+        "镰刀",
+        "割麦"
+      ]
+    },
+    {
+      "id": "rake",
+      "title": {
+        "zh": "耙子",
+        "en": "Rake"
+      },
+      "description": {
+        "zh": "木柄铁齿耙子，地上散落橙、红、金色落叶，耙子轻轻摆动。用于秋天、扫落叶与园艺。",
+        "en": "Wooden-handled rake with steel tines among fallen orange, red and gold leaves, the rake gently rocking. For autumn, leaf raking and gardening."
+      },
+      "animation": "sway",
+      "category": "farm",
+      "tags": [
+        "rake",
+        "leaves",
+        "garden tool",
+        "耙子",
+        "落叶"
+      ]
+    },
+    {
+      "id": "hoe",
+      "title": {
+        "zh": "锄头",
+        "en": "Hoe"
+      },
+      "description": {
+        "zh": "木柄锄头正在松土，土垄上冒出两棵嫩芽，锄头轻轻摆动。用于锄地、播种与农具。",
+        "en": "Wooden hoe loosening soil where two sprouts poke up from the row, the hoe gently swinging. For hoeing, planting and farm tools."
+      },
+      "animation": "sway",
+      "category": "farm",
+      "tags": [
+        "hoe",
+        "soil",
+        "farm tool",
+        "锄头",
+        "锄地"
+      ]
+    },
+    {
+      "id": "seed-sack",
+      "title": {
+        "zh": "种子袋",
+        "en": "Seed sack"
+      },
+      "description": {
+        "zh": "麻布种子袋，标签上画着嫩芽，袋口飘出几粒种子，地上撒落几粒，种子轻轻漂浮。用于播种、春耕与园艺。",
+        "en": "Burlap seed sack with a sprout label, a few seeds floating up from the opening and some spilled on the ground. For sowing, spring planting and gardening."
+      },
+      "animation": "float",
+      "category": "farm",
+      "tags": [
+        "seeds",
+        "sack",
+        "sowing",
+        "种子",
+        "播种"
+      ]
+    },
+    {
+      "id": "feed-bucket",
+      "title": {
+        "zh": "饲料桶",
+        "en": "Feed bucket"
+      },
+      "description": {
+        "zh": "装满谷粒的铁皮饲料桶，提手弯弯，旁边一只小黄鸡轻轻一跳。用于喂鸡、农场日常与家禽。",
+        "en": "Tin feed bucket full of grain with a curved handle, a little yellow chick hopping beside it. For feeding chickens, farm chores and poultry."
+      },
+      "animation": "pop",
+      "category": "farm",
+      "tags": [
+        "feed",
+        "bucket",
+        "chick",
+        "饲料",
+        "小鸡"
+      ]
+    },
+    {
+      "id": "mailbox",
+      "title": {
+        "zh": "乡村邮箱",
+        "en": "Mailbox"
+      },
+      "description": {
+        "zh": "木桩上的蓝色乡村邮箱，门口探出一封信，红色小旗轻轻摆动，脚下开着小花。用于来信、乡间小路与问候。",
+        "en": "Blue rural mailbox on a wooden post with a letter peeking out and a red flag gently waving, little flowers at its foot. For letters, country lanes and greetings."
+      },
+      "animation": "sway",
+      "category": "countryside",
+      "tags": [
+        "mailbox",
+        "letter",
+        "mail",
+        "邮箱",
+        "信件"
+      ]
+    },
+    {
+      "id": "lantern",
+      "title": {
+        "zh": "马灯",
+        "en": "Lantern"
+      },
+      "description": {
+        "zh": "挂起的老式马灯，深木色顶盖和底座，玻璃罩里燃着暖黄火焰，轻轻摇晃。用于夜晚、农舍与温暖时光。",
+        "en": "Hanging old-fashioned lantern with dark wood cap and base and a warm yellow flame inside the glass, gently swinging. For evenings, farmhouses and cozy moments."
+      },
+      "animation": "sway",
+      "category": "countryside",
+      "tags": [
+        "lantern",
+        "light",
+        "night",
+        "马灯",
+        "灯"
+      ]
+    },
+    {
+      "id": "picnic-blanket",
+      "title": {
+        "zh": "野餐",
+        "en": "Picnic"
+      },
+      "description": {
+        "zh": "红白格子野餐布上放着一只编织篮，篮里有面包和红苹果，食物轻轻一跳。用于野餐、郊游与夏日午后。",
+        "en": "Red-and-white gingham picnic blanket with a woven basket holding bread and a red apple, the food giving a little hop. For picnics, outings and summer afternoons."
+      },
+      "animation": "pop",
+      "category": "countryside",
+      "tags": [
+        "picnic",
+        "blanket",
+        "basket",
+        "野餐",
+        "郊游"
+      ]
+    },
+    {
+      "id": "birdhouse",
+      "title": {
+        "zh": "鸟屋",
+        "en": "Birdhouse"
+      },
+      "description": {
+        "zh": "立杆上的浅蓝小鸟屋，红色屋顶和圆洞口，屋顶上站着一只橙色小鸟，小鸟轻轻一跳。用于花园、鸟类与乡间生活。",
+        "en": "Pale blue birdhouse on a pole with a red roof and round entrance, an orange bird perched on the roof giving a hop. For gardens, birds and country life."
+      },
+      "animation": "pop",
+      "category": "countryside",
+      "tags": [
+        "birdhouse",
+        "bird",
+        "garden",
+        "鸟屋",
+        "小鸟"
+      ]
+    },
+    {
+      "id": "signpost",
+      "title": {
+        "zh": "路标",
+        "en": "Signpost"
+      },
+      "description": {
+        "zh": "木杆上两块指向相反方向的木牌，杆底缠着一根绿藤，路标轻轻摆动。用于乡间小路、方向与旅行。",
+        "en": "Wooden post with two signboards pointing opposite ways and a green vine curling at its base, gently swaying. For country lanes, directions and travel."
+      },
+      "animation": "sway",
+      "category": "countryside",
+      "tags": [
+        "signpost",
+        "direction",
+        "path",
+        "路标",
+        "指示牌"
+      ]
+    },
+    {
+      "id": "pear",
+      "title": {
+        "zh": "梨",
+        "en": "Pear"
+      },
+      "description": {
+        "zh": "黄绿色的梨，带棕色细茎和一片叶子，轻轻摇摆。用于秋天水果、果园与健康饮食。",
+        "en": "Yellow-green pear with a thin brown stem and a leaf, gently swaying. For autumn fruit, orchards and healthy eating."
+      },
+      "animation": "sway",
+      "category": "harvest",
+      "tags": [
+        "pear",
+        "fruit",
+        "orchard",
+        "梨",
+        "水果"
+      ]
+    },
+    {
+      "id": "cherries",
+      "title": {
+        "zh": "樱桃",
+        "en": "Cherries"
+      },
+      "description": {
+        "zh": "一对红樱桃挂在相连的绿茎上，顶端一片叶子，轻轻摇摆。用于初夏水果、甜点与可爱主题。",
+        "en": "Pair of red cherries on joined green stems with a leaf at the top, gently swaying. For early summer fruit, desserts and cute themes."
+      },
+      "animation": "sway",
+      "category": "harvest",
+      "tags": [
+        "cherry",
+        "cherries",
+        "fruit",
+        "樱桃",
+        "水果"
+      ]
+    },
+    {
+      "id": "lemonade",
+      "title": {
+        "zh": "柠檬水",
+        "en": "Lemonade"
+      },
+      "description": {
+        "zh": "一壶浅黄柠檬水，里面浮着柠檬片和冰块，壶口上方飘着两片薄荷叶。用于夏天、饮品与农家午后。",
+        "en": "Pitcher of pale yellow lemonade with lemon slices and an ice cube, two mint leaves floating above the rim. For summer, drinks and farmhouse afternoons."
+      },
+      "animation": "float",
+      "category": "harvest",
+      "tags": [
+        "lemonade",
+        "drink",
+        "summer",
+        "柠檬水",
+        "饮品"
       ]
     }
   ]
